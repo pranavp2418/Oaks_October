@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2026-10-02",
+    "end_inclusive": "2027-05-01",
+    "target_per_day": 2,
+    "target_total": 424
+  },
+  "difficulty_target": {
+    "intermediate": 0.6,
+    "advanced": 0.4
+  },
+  "monthly_repositories": {
+    "2026-10": "pranavp2418/Oaks_October"
+  },
+  "counted_projects": [],
+  "dry_runs": [
+    {
+      "title": "WorkOrder Triage",
+      "folder": "WorkOrder-Triage",
+      "date": "2026-10-02",
+      "counted": false,
+      "industry": "Property operations",
+      "language": "JavaScript",
+      "stack": [
+        "Node.js",
+        "HTML",
+        "CSS"
+      ],
+      "status": "deployed_core_flow_verified",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/WorkOrder-Triage",
+      "live_url": "https://oaksoctober1002.vercel.app/",
+      "verified_commit": "8d15e3015de13ca3faf69b5fef19ef8f2fb77ddd",
+      "deployment_id": "dpl_frxpX3Gohib9b6mpFDMT67xFSdv6",
+      "verification": {
+        "local_tests": "Policy and API handler tests passed",
+        "live_passed": [
+          "Public app loaded without login",
+          "Backend health connected",
+          "Create request: ongoing damage -> urgent, score 80, target 2 hours",
+          "Explanation shows ongoing damage reason",
+          "Resolve and reload preserved status",
+          "Resolved filter displayed resolved ticket",
+          "Reopen restored open count",
+          "Three fictional sample tickets loaded with urgent/high/normal priorities",
+          "GitHub main push triggered READY production deployment from original Oaks_October"
+        ],
+        "not_verified": [
+          "CSV download: browser download observer timed out; no file inspected",
+          "Live invalid-input API response (covered locally)"
+        ]
+      },
+      "limitations": [
+        "Browser-local storage only",
+        "No authentication or shared database",
+        "Illustrative response targets, not emergency dispatch",
+        "Dry run does not satisfy intermediate/advanced daily quota"
+      ]
+    }
+  ],
+  "automation": {
+    "status": "enabled",
+    "title": "Daily Project Build Cycle",
+    "timezone": "America/Chicago",
+    "start": "2026-10-02",
+    "end_inclusive": "2027-05-01",
+    "approximate_local_time": "19:00",
+    "flexible_window": "within one hour",
+    "delivery_guarantee": false,
+    "first_run_verified": false,
+    "linkedin": "drafts_only",
+    "supabase": "excluded_pending_account_email_verification"
+  }
+}
