@@ -18,4 +18,4 @@ Node.js 24. Run `npm test` for policy and handler tests. Deploy this directory t
 This checks the source → GitHub → Vercel → public app pipeline. It is not counted as one of the planned intermediate/advanced daily projects. Supabase and scheduled builds are not part of this dry run.
 
 ## Deployment wiring
-Vercel project `oaks_october_1002` in the `resnesmee` team is connected to `pranavp2418/Oaks_October`, branch `main`, with root directory `WorkOrder-Triage`. The initial cloned repository is not the source for this app. Public deployment verification is pending.
+Vercel project `oaks_october_1002` in the `resnesmee` team is connected to `pranavp2418/Oaks_October`, branch `main`, with root directory `WorkOrder-Triage`. The initial cloned repository is not the source for this app. Live demo: https://oaksoctober1002.vercel.app/ . Core flow verified on October 2, 2026: backend health, server-scored request creation, explanations, resolve/reopen, reload persistence, filtering and sample loading. CSV download verification timed out; that feature is not claimed as verified. See the repository root ledger for deployment evidence and remaining limits.
