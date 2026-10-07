@@ -1,8 +1,16 @@
 {
   "date": "2026-10-07",
   "owner": "oct7-build-1",
-  "status": "running",
+  "status": "complete",
   "started_at": "2026-10-07T20:15:15Z",
-  "lease_expires_at": "2026-10-08T00:15:15Z",
-  "completed_projects": 0
+  "lease_expires_at": "2026-10-07T21:14:57.828315+00:00",
+  "completed_projects": 3,
+  "completed_at": "2026-10-07T21:14:57.828315+00:00",
+  "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+  "release_order": {
+    "PermitWeave": "21dfd166b3c05880937fa6dbe699909259169b61",
+    "DeltaLens": "2d3cf1c3af912867a08dc655c443c5ccd63c7f4d",
+    "Kiln": "d932b2c7f35ee7724895592c6fba653162a62a51"
+  },
+  "blockers": []
 }

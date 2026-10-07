@@ -1,0 +1,62 @@
+[
+  {
+    "project": "PermitWeave",
+    "file": "index.html",
+    "matches": true
+  },
+  {
+    "project": "PermitWeave",
+    "file": "app.js",
+    "matches": true
+  },
+  {
+    "project": "PermitWeave",
+    "file": "style.css",
+    "matches": true
+  },
+  {
+    "project": "PermitWeave",
+    "file": "data/seed.json",
+    "matches": true
+  },
+  {
+    "project": "DeltaLens",
+    "file": "index.html",
+    "matches": true
+  },
+  {
+    "project": "DeltaLens",
+    "file": "app.js",
+    "matches": true
+  },
+  {
+    "project": "DeltaLens",
+    "file": "style.css",
+    "matches": true
+  },
+  {
+    "project": "DeltaLens",
+    "file": "data/seed.json",
+    "matches": true
+  },
+  {
+    "project": "Kiln",
+    "file": "index.html",
+    "matches": true
+  },
+  {
+    "project": "Kiln",
+    "file": "app.js",
+    "matches": true
+  },
+  {
+    "project": "Kiln",
+    "file": "style.css",
+    "matches": true
+  },
+  {
+    "project": "Kiln",
+    "file": "data/seed.json",
+    "matches": true
+  }
+]

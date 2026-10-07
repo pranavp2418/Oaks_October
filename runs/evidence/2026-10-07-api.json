@@ -1,0 +1,20 @@
+[
+  {
+    "project": "PermitWeave",
+    "valid_status": 200,
+    "repeat_equal": true,
+    "invalid_status": 400
+  },
+  {
+    "project": "DeltaLens",
+    "valid_status": 200,
+    "repeat_equal": true,
+    "invalid_status": 400
+  },
+  {
+    "project": "Kiln",
+    "valid_status": 200,
+    "repeat_equal": true,
+    "invalid_status": 400
+  }
+]

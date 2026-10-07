@@ -13,7 +13,159 @@
   "monthly_repositories": {
     "2026-10": "pranavp2418/Oaks_October"
   },
-  "counted_projects": [],
+  "counted_projects": [
+    {
+      "date": "2026-10-07",
+      "title": "PermitWeave",
+      "industry": "Healthcare operations",
+      "problem": "Unit-demand interval capacity allocation and event replay",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "core_language": "Python",
+      "classification": "resume",
+      "visual_theme": "forest green, serif editorial sidebar",
+      "path": "Oaks_October/2026-10-07-PermitWeave",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-PermitWeave",
+      "live_url": "https://permitweave-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_2yTC9iqMEygBXgjfDNFShfHfQA3E",
+      "source_commit": "21dfd166b3c05880937fa6dbe699909259169b61",
+      "counted": true,
+      "tests": {
+        "command": "npm test",
+        "passed": 5,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
+          "Gap filter showed 14 baseline uncovered visits",
+          "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ],
+      "status": "complete",
+      "deployed_source_commit": "7f9796155fbe6db01f9e4ca558212bda5f0bb809",
+      "deployment_id": "dpl_B9fKze3SNYxWhHSRNdpHHCu6evht",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "DeltaLens",
+      "industry": "Infrastructure reliability",
+      "problem": "Control-adjusted release telemetry effect analysis",
+      "stack": [
+        "Node.js",
+        "JavaScript",
+        "SVG"
+      ],
+      "core_language": "JavaScript",
+      "classification": "resume",
+      "visual_theme": "midnight navy, violet, monospace timeline",
+      "path": "Oaks_October/2026-10-07-DeltaLens",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-DeltaLens",
+      "live_url": "https://deltalens-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_GhLe4JUW8ywcpXD7SVahHUiKKWAX",
+      "source_commit": "2d3cf1c3af912867a08dc655c443c5ccd63c7f4d",
+      "counted": true,
+      "tests": {
+        "command": "npm test",
+        "passed": 4,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "225 synthetic telemetry samples analyzed",
+          "10-minute and 25-minute windows recomputed with adjusted regression signal",
+          "Reload preserved selected window",
+          "Mobile viewport recompute passed without horizontal overflow",
+          "Malformed JSON surfaced error; sample reset recovered"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ],
+      "status": "complete",
+      "deployed_source_commit": "d932b2c7f35ee7724895592c6fba653162a62a51",
+      "deployment_id": "dpl_6R9JdfTfZAXh22ZYzduzE6KsaSJb",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Kiln",
+      "industry": "Industrial operations",
+      "problem": "Precedence-constrained single-machine weighted tardiness search",
+      "stack": [
+        "Lua",
+        "Fengari",
+        "Node.js"
+      ],
+      "core_language": "Lua",
+      "classification": "new",
+      "visual_theme": "warm ivory, burnt orange, machine-lane Gantt",
+      "path": "Oaks_October/2026-10-07-Kiln",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln",
+      "live_url": "https://kiln-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_QYEDzNVZbarJeWUxiVWz6ovYC1zB",
+      "source_commit": "d932b2c7f35ee7724895592c6fba653162a62a51",
+      "counted": true,
+      "tests": {
+        "command": "npm test",
+        "passed": 6,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "Baseline penalty 245 versus verified optimum 108",
+          "Search exhausted at 88 nodes with 19 pruned subtrees",
+          "Budget 1 reported feasible incumbent with optimality unproven",
+          "Mobile viewport solve and reload worked without horizontal overflow"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "input_safety": "Unknown JSON fields stripped before generating Lua literals; injection isolation test passed",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ],
+      "status": "complete",
+      "deployed_source_commit": "7f9796155fbe6db01f9e4ca558212bda5f0bb809",
+      "deployment_id": "dpl_CWpiSHdXVhksGCzZbZgbRYoFbeUM",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+    }
+  ],
   "dry_runs": [
     {
       "title": "WorkOrder Triage",
@@ -65,7 +217,7 @@
     "start": "2026-10-07",
     "end_inclusive": "2027-03-07",
     "delivery_guarantee": false,
-    "first_run_verified": false,
+    "first_run_verified": true,
     "linkedin": "drafts_only",
     "supabase": "excluded_pending_account_email_verification",
     "target_per_day": 3
@@ -73,12 +225,18 @@
   "runs": [
     {
       "date": "2026-10-07",
-      "status": "source_release_in_progress",
+      "status": "complete",
       "target": 3,
       "local_and_live_verified": 3,
       "portfolio_source_recovered": true,
       "portfolio_source_recovery_evidence": "46/46 editable source/assets SHA1 digests matched latest original deployment",
-      "portfolio_integration": "prepared_not_deployed"
+      "portfolio_integration": "verified",
+      "completed": 3,
+      "portfolio_url": "https://pranav-patel.vercel.app/#project-archive",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "completed_at": "2026-10-07T21:14:57.828315+00:00",
+      "blockers": []
     }
   ],
   "profile_baseline": {
@@ -106,13 +264,13 @@
       "path": "Oaks_October/2026-10-07-PermitWeave",
       "implementation": "implemented",
       "verification": "local_and_live_passed",
-      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
-      "integration": "pending",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-PermitWeave",
       "live_url": "https://permitweave-20261007.vercel.app/",
       "verification_deployment_id": "dpl_2yTC9iqMEygBXgjfDNFShfHfQA3E",
-      "source_commit": null,
-      "counted": false,
+      "source_commit": "21dfd166b3c05880937fa6dbe699909259169b61",
+      "counted": true,
       "tests": {
         "command": "npm test",
         "passed": 5,
@@ -123,13 +281,21 @@
           "Gap filter showed 14 baseline uncovered visits",
           "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
         ],
-        "mobile_method": "390px iframe viewport, not physical-device testing"
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
       },
       "limitations": [
         "Synthetic demonstration data",
         "Browser-only workspace persistence; no shared database/authentication",
         "Bounded model described in README"
-      ]
+      ],
+      "status": "complete",
+      "deployed_source_commit": "7f9796155fbe6db01f9e4ca558212bda5f0bb809",
+      "deployment_id": "dpl_B9fKze3SNYxWhHSRNdpHHCu6evht",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
     },
     {
       "date": "2026-10-07",
@@ -147,13 +313,13 @@
       "path": "Oaks_October/2026-10-07-DeltaLens",
       "implementation": "implemented",
       "verification": "local_and_live_passed",
-      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
-      "integration": "pending",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-DeltaLens",
       "live_url": "https://deltalens-20261007.vercel.app/",
       "verification_deployment_id": "dpl_GhLe4JUW8ywcpXD7SVahHUiKKWAX",
-      "source_commit": null,
-      "counted": false,
+      "source_commit": "2d3cf1c3af912867a08dc655c443c5ccd63c7f4d",
+      "counted": true,
       "tests": {
         "command": "npm test",
         "passed": 4,
@@ -166,13 +332,21 @@
           "Mobile viewport recompute passed without horizontal overflow",
           "Malformed JSON surfaced error; sample reset recovered"
         ],
-        "mobile_method": "390px iframe viewport, not physical-device testing"
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
       },
       "limitations": [
         "Synthetic demonstration data",
         "Browser-only workspace persistence; no shared database/authentication",
         "Bounded model described in README"
-      ]
+      ],
+      "status": "complete",
+      "deployed_source_commit": "d932b2c7f35ee7724895592c6fba653162a62a51",
+      "deployment_id": "dpl_6R9JdfTfZAXh22ZYzduzE6KsaSJb",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
     },
     {
       "date": "2026-10-07",
@@ -190,13 +364,13 @@
       "path": "Oaks_October/2026-10-07-Kiln",
       "implementation": "implemented",
       "verification": "local_and_live_passed",
-      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
-      "integration": "pending",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "portfolio_verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln",
       "live_url": "https://kiln-20261007.vercel.app/",
       "verification_deployment_id": "dpl_QYEDzNVZbarJeWUxiVWz6ovYC1zB",
-      "source_commit": null,
-      "counted": false,
+      "source_commit": "d932b2c7f35ee7724895592c6fba653162a62a51",
+      "counted": true,
       "tests": {
         "command": "npm test",
         "passed": 6,
@@ -209,13 +383,50 @@
           "Mobile viewport solve and reload worked without horizontal overflow"
         ],
         "mobile_method": "390px iframe viewport, not physical-device testing",
-        "input_safety": "Unknown JSON fields stripped before generating Lua literals; injection isolation test passed"
+        "input_safety": "Unknown JSON fields stripped before generating Lua literals; injection isolation test passed",
+        "static_source_integrity": "Live index.html, app.js, style.css and seed data SHA256 matched local source (4 files per project)",
+        "build_logs": "Production build completion logs inspected; source commit identified in deployment metadata"
       },
       "limitations": [
         "Synthetic demonstration data",
         "Browser-only workspace persistence; no shared database/authentication",
         "Bounded model described in README"
-      ]
+      ],
+      "status": "complete",
+      "deployed_source_commit": "7f9796155fbe6db01f9e4ca558212bda5f0bb809",
+      "deployment_id": "dpl_CWpiSHdXVhksGCzZbZgbRYoFbeUM",
+      "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+      "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+      "verified_at": "2026-10-07T21:14:57.828315+00:00"
     }
-  ]
+  ],
+  "collection_repository": "pranavp2418/Oaks_October",
+  "month_directories": {
+    "2026-10": "Oaks_October",
+    "2026-11": "Nebula_November",
+    "2026-12": "Drift_December",
+    "2027-01": "Janus_January",
+    "2027-02": "Flux_February",
+    "2027-03": "Mirage_March"
+  },
+  "portfolio": {
+    "path": "portfolio-site",
+    "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+    "deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+    "source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+    "alias": "https://pranav-patel.vercel.app/",
+    "verification": [
+      "3 entries and all source/live links visible",
+      "Month/search filter, singular count and reset passed",
+      "Kiln live iframe returned optimal result",
+      "Mobile search and project dialog passed; 390px viewport no horizontal overflow",
+      "CraftsmanAI Design workflow still worked",
+      "Distinct SVG covers; lazy media and opt-in live embeds",
+      "Original source/assets preserved, film reconstructed with SHA256 verification"
+    ],
+    "limits": [
+      "Mobile browser viewport simulation; no physical device testing",
+      "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
+    ]
+  }
 }
