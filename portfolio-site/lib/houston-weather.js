@@ -1,5 +1,6 @@
 export const OBSERVATION_URL='https://api.weather.gov/stations/KIAH/observations/latest';
 export const MAX_OBSERVATION_AGE_MS=90*60*1000;
+export const MAX_USABLE_OBSERVATION_AGE_MS=3*60*60*1000;
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 function quantity(q){return typeof q?.value==='number'&&Number.isFinite(q.value)?q.value:null;}
 function windKmh(q){const n=quantity(q);if(n===null)return 0;return clamp(q.unitCode==='wmoUnit:m_s-1'?n*3.6:q.unitCode==='wmoUnit:kn'?n*1.852:n,0,220);}
@@ -21,6 +22,6 @@ export function normalizeObservation(data,now=Date.now()){
 }
 export function weatherFreshness(weather,now=Date.now()){
   if(!weather?.observedAt)return 'unavailable';const t=Date.parse(weather.observedAt);
-  if(!Number.isFinite(t)||t>now+300000)return 'unavailable';
+  if(!Number.isFinite(t)||t>now+300000||now-t>MAX_USABLE_OBSERVATION_AGE_MS)return 'unavailable';
   return weather.status==='stale'||now-t>MAX_OBSERVATION_AGE_MS?'stale':'fresh';
 }

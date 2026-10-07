@@ -34,6 +34,7 @@ test('Delayed or missing observations are labeled, without stopping the solar cl
   const report=normalizeObservation(observation('Light Rain'),stamp);assert.equal(weatherFreshness(report,stamp+91*60000),'stale');
   const state=environmentState(new Date(stamp+91*60000),report);assert.equal(state.weatherStatus,'stale');assert.ok(state.rain>0);assert.ok(state.sunset);
   const missing=environmentState(new Date(stamp),null);assert.equal(missing.weatherStatus,'unavailable');assert.equal(missing.rain,0);assert.equal(missing.storm,false);
+  const expired=environmentState(new Date(stamp+181*60000),report);assert.equal(expired.weatherStatus,'unavailable');assert.equal(expired.rain,0);assert.equal(expired.storm,false);
 });
 test('Weather API coalesces concurrent requests, caches, and preserves honest stale data on upstream failure',async()=>{
   let n=0,clock=stamp+60000,fail=false,release;const waiting=new Promise(r=>release=r);
