@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "suncalc": "2.1.1",
     "three": "^0.180.0",
     "vite": "^7.1.0"
   }

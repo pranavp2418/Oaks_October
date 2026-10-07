@@ -32,8 +32,12 @@
       </div>
     </section>
     <div class="atlas-view-controls atlas-glass" role="group" aria-label="Map controls">
-      <button id="city-overview" title="Show the whole country (Home)">Country view</button><button id="city-top" title="View the terrain from above">Top down</button><button id="city-night" aria-pressed="false">Night</button><button id="city-motion" aria-pressed="false">Motion on</button>
+      <button id="city-overview" title="Show the whole country (Home)">Country view</button><button id="city-top" title="View the terrain from above">Top down</button>
     </div>
+    <details id="island-atmosphere" class="atlas-atmosphere atlas-glass">
+      <summary aria-label="Houston time, lighting and current weather"><span id="island-phase-icon" aria-hidden="true">☀</span><span><strong id="island-phase">Houston daylight</strong><span id="island-clock">Synchronizing Central Time…</span></span><span class="weather-short" id="island-weather-short">Weather loading</span><span aria-hidden="true" class="atmosphere-chevron">⌄</span></summary>
+      <div class="atmosphere-body"><p id="island-sun-times"></p><p id="island-weather-detail" role="status">Loading the latest Houston-area observation.</p><p class="atmosphere-note">Lighting follows Houston's sun. Clouds, wind and precipitation follow the latest reported conditions.</p><div class="atmosphere-sources"><a href="https://www.weather.gov/hgx/" target="_blank" rel="noopener">NWS Houston</a><a href="/assets/island/CREDITS.md" target="_blank" rel="noopener">Art & data credits</a></div></div>
+    </details>
     <div class="atlas-zoom atlas-glass" role="group" aria-label="Zoom"><button id="city-zoom-in" aria-label="Zoom in">+</button><button id="city-zoom-out" aria-label="Zoom out">−</button></div>
     <div class="atlas-coordinate"><span id="city-location">COUNTRY VIEW</span><span id="city-flight-status" role="status" aria-live="polite">Drag to orbit · scroll to zoom · right-drag to pan</span></div>
     <section id="city-detail" class="atlas-detail atlas-glass" hidden aria-labelledby="city-detail-title"><button class="atlas-close" id="detail-close" aria-label="Close project details">×</button><div id="city-detail-content"></div></section>

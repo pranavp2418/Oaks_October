@@ -1,10 +1,10 @@
 import './city.css';
 import { createCatalog, assignBuildings, DISTRICTS, findProjects } from './city-model.js';
+import {environmentState,formatHoustonTime} from './island-environment.js';
 
 const $=id=>document.getElementById(id), esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const isMobile=matchMedia('(max-width:700px)').matches,reduced=matchMedia('(prefers-reduced-motion:reduce)');
-let storedMotion;try{storedMotion=localStorage.getItem('portfolio-motion')}catch{}
-let motion=storedMotion?storedMotion==='on':!reduced.matches,night=false,catalog=[],world=null,selected=null,page=0,hovered=null;
+const isMobile=matchMedia('(max-width:700px)').matches;
+let catalog=[],world=null,selected=null,page=0,hovered=null,weather=null,weatherFailed=false;
 const pageSize=10,labels=new Map();let minimapLast=0,returnFocus=null,tourIndex=-1;
 function message(text){$('city-access-status').textContent=text;}
 function setDirectory(open){$('directory-body').hidden=!open;$('city-directory').classList.toggle('collapsed',!open);$('directory-toggle').setAttribute('aria-expanded',String(open));$('directory-toggle').setAttribute('aria-label',open?'Collapse project directory':'Expand project directory');$('directory-toggle').textContent=open?'−':'+';}
@@ -45,10 +45,7 @@ function openPreview(p){
 }
 $('preview-close').onclick=()=>$('city-preview').close();$('city-preview').addEventListener('close',()=>{$('city-preview-frame').replaceChildren();returnFocus?.focus()});
 $('city-preview').addEventListener('click',e=>{if(e.target===$('city-preview')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
-function setMotion(value){motion=value;world?.setMotion(value);$('city-motion').textContent=value?'Motion on':'Motion off';$('city-motion').setAttribute('aria-pressed',String(!value));try{localStorage.setItem('portfolio-motion',value?'on':'off')}catch{}}
-setMotion(motion);$('city-motion').onclick=()=>setMotion(!motion);reduced.addEventListener('change',e=>setMotion(!e.matches));
 $('city-overview').onclick=()=>{world?.overview();$('city-detail').hidden=true;selected=null;renderDirectory();};$('city-top').onclick=()=>world?.overview(true);
-$('city-night').onclick=()=>{night=!night;world?.setNight(night);$('city-night').setAttribute('aria-pressed',String(night));$('city-night').textContent=night?'Day':'Night';};
 $('city-zoom-in').onclick=()=>world?.zoom(.77);$('city-zoom-out').onclick=()=>world?.zoom(1.3);$('city-north').onclick=()=>world?.north();
 $('city-viewport').addEventListener('keydown',e=>{if(e.target!==$('city-viewport'))return;if(e.key==='Home'){world?.overview();}else if(e.key==='+'||e.key==='='){world?.zoom(.8)}else if(e.key==='-'){world?.zoom(1.25)}else if(e.key==='ArrowLeft'){world?.rotate(.1,0)}else if(e.key==='ArrowRight'){world?.rotate(-.1,0)}else if(e.key==='ArrowUp'){world?.rotate(0,-.08)}else if(e.key==='ArrowDown'){world?.rotate(0,.08)}else return;e.preventDefault();});
 const mini=$('city-minimap'),miniCtx=mini.getContext('2d');let miniBase=null;
@@ -76,6 +73,7 @@ function tour(){
 }
 function askPip(query){
   const q=query.trim();if(!q)return;const text=q.toLowerCase();
+  if(/weather|sunrise|sunset|\bnight\b|\bdaylight\b|houston time|central time/.test(text)){const state=environmentState(new Date(),weather);pipSay(`The island follows Houston: ${state.localTime}, ${state.phase.toLowerCase()}. Sunrise is ${formatHoustonTime(state.sunrise)} and sunset is ${formatHoustonTime(state.sunset)}. ${state.weather?`${state.weather.description}, reported at ${formatHoustonTime(state.weather.observedAt)} (${state.weather.station}).`:'The latest weather observation is unavailable; the solar clock still works.'} Open the atmosphere readout for its update status.`,[{label:'View atmosphere',action:()=>{$('island-atmosphere').open=true;$('island-atmosphere').querySelector('summary').focus();}}]);return;}
   if(/contact|email|resume|résumé|\bcv\b|who is pranav/.test(text)){pipSay('Pranav is the engineer behind this country and Founder & Lead Product Architect at CraftsmanAI. His portfolio has the full experience, résumé and contact details.',[{label:'Visit the portfolio',action:()=>location.assign('/#about')},{label:'Contact Pranav',action:()=>location.assign('/#contact')}]);return;}
   if(/all projects|every project|how many|what.*district/.test(text)){pipSay(`There are ${catalog.length} projects across ${new Set(catalog.map(p=>p.district)).size} occupied districts. Care Gardens holds healthcare work, Exchange District holds finance and CRM, Foundry Reach holds industrial systems, and Signal Harbor holds infrastructure. Choose a building or use the directory.`,[{label:'Browse projects',action:()=>{setDirectory(true);$('city-search').value='';$('city-district').value='all';$('city-month').value='all';renderDirectory();setPip(false);world?.overview();}}]);return;}
   if(/tour|show me around|show the city/.test(text)){tourIndex=-1;tour();return;}
@@ -93,6 +91,24 @@ function askPip(query){
 }
 $('pip-city-form').onsubmit=e=>{e.preventDefault();const input=$('pip-city-input');askPip(input.value);input.value='';};
 document.querySelectorAll('[data-pip]').forEach(b=>b.onclick=()=>askPip(b.dataset.pip));
+function updateEnvironment(){
+  const state=environmentState(new Date(),weather),dark=state.night>.45,phase=state.phase;
+  $('island-phase').textContent=`${dark?'NIGHT':'DAY'}${phase!=='Day'&&phase!=='Night'?' · '+phase.toUpperCase():''}`;
+  $('island-phase-icon').textContent=dark?'☾':'☀';$('island-clock').textContent=`Houston · ${state.localDate} · ${state.localTime}`;
+  $('island-sun-times').textContent=`Sunrise ${formatHoustonTime(state.sunrise)} · Sunset ${formatHoustonTime(state.sunset)} · Central Time`;
+  const status=weatherFailed&&state.weather?'stale':state.weatherStatus;
+  if(state.weather){const temp=state.weather.temperatureC===null?'':` · ${Math.round(state.weather.temperatureC*9/5+32)}°F`; $('island-weather-short').textContent=`${status==='stale'?'Last report · ':''}${state.weather.description}${temp}`;
+    $('island-weather-detail').textContent=`${status==='stale'?'Last available':'Latest'} NWS report · ${state.weather.station} · ${formatHoustonTime(state.weather.observedAt)} · wind ${Math.round(state.weather.windKmh)} km/h.${status==='stale'?' Updates delayed; scenery uses the last reported conditions.':''}`;
+  }else{$('island-weather-short').textContent=weatherFailed?'Weather unavailable':'Weather loading';$('island-weather-detail').textContent=weatherFailed?'Houston weather is temporarily unavailable. Sun position remains synchronized; no current weather is assumed.':'Loading the latest Houston-area observation.';}
+  $('island-atmosphere').dataset.phase=dark?'night':'day';$('island-atmosphere').dataset.weather=status;world?.setEnvironment(state);
+}
+async function refreshWeather(){
+  if(document.hidden)return;
+  try{const response=await fetch('/api/island-weather',{signal:AbortSignal.timeout(11000)});if(!response.ok)throw new Error('Weather unavailable');const data=await response.json();if(!['fresh','stale'].includes(data.status)||typeof data.observedAt!=='string'||!Number.isFinite(data.cloudCover))throw new Error('Invalid weather report');weather=data;weatherFailed=false;}
+  catch{weatherFailed=true;}updateEnvironment();
+}
+updateEnvironment();refreshWeather();setInterval(updateEnvironment,15000);setInterval(refreshWeather,300000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden){updateEnvironment();refreshWeather();}});
 try{
   const data=await Promise.all(['/projects.json','/featured-projects.json'].map(async path=>{const r=await fetch(path);if(!r.ok)throw new Error('The project directory could not load. Please reload.');return r.json();}));
   catalog=assignBuildings(createCatalog(data[0],data[1]));
@@ -106,7 +122,8 @@ try{
     view:name=>$('city-location').textContent=name.toUpperCase(),travel:text=>$('city-flight-status').textContent=text,
     contextLost:()=>{$('city-render-message').hidden=false;$('city-render-message').textContent='The 3D view paused. You can still browse every project in the directory; reload to restore the map.';setDirectory(true);},
     frame:(positions,camera,target)=>{renderLabels(positions);if(performance.now()-minimapLast>180){drawMinimap(camera,target);minimapLast=performance.now();}}
-  },{motion});
+  });
+  updateEnvironment();
   const image=miniCtx.createImageData(230,155);for(let y=0;y<155;y++)for(let x=0;x<230;x++){const h=landHeight(x/230*450-225,y/155*370-185),i=(y*230+x)*4;const color=h<.5?[21,48,62]:h>25?[123,145,139]:[70+h,99+h,94+h];image.data.set([...color,255],i);}miniBase=image;
   $('city-loading').hidden=true;renderDirectory();message('The project country is ready. Choose a building or ask Pip.');
   const requested=new URLSearchParams(location.search).get('project');if(requested&&catalog.some(p=>p.slug===requested))selectProject(requested);else if(isMobile)setPip(false);
