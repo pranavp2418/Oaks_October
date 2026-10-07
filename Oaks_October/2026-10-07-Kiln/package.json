@@ -1,0 +1,14 @@
+{
+  "name": "kiln",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "fengari": "0.1.5"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "mkdir -p public && cp index.html app.js style.css public/ && cp -r data public/ && cp tests/mobile.html public/mobile.html",
+    "start": "node local.js"
+  }
+}

@@ -1,0 +1,70 @@
+import fs from 'node:fs';
+// Deterministic fixture seed 7102026; explicit jobs allow reproducible constraints.
+const data={
+  "setup": 4,
+  "budget": 30000,
+  "jobs": [
+    {
+      "id": "CAST-1",
+      "family": "alloy",
+      "duration": 7,
+      "release": 0,
+      "due": 12,
+      "weight": 4,
+      "predecessors": []
+    },
+    {
+      "id": "CAST-2",
+      "family": "alloy",
+      "duration": 5,
+      "release": 0,
+      "due": 18,
+      "weight": 3,
+      "predecessors": []
+    },
+    {
+      "id": "COAT-1",
+      "family": "ceramic",
+      "duration": 6,
+      "release": 3,
+      "due": 17,
+      "weight": 6,
+      "predecessors": []
+    },
+    {
+      "id": "CURE-1",
+      "family": "ceramic",
+      "duration": 8,
+      "release": 0,
+      "due": 28,
+      "weight": 2,
+      "predecessors": [
+        "COAT-1"
+      ]
+    },
+    {
+      "id": "FINISH-1",
+      "family": "alloy",
+      "duration": 4,
+      "release": 0,
+      "due": 31,
+      "weight": 5,
+      "predecessors": [
+        "CAST-1"
+      ]
+    },
+    {
+      "id": "TEST-1",
+      "family": "test",
+      "duration": 3,
+      "release": 5,
+      "due": 35,
+      "weight": 7,
+      "predecessors": [
+        "CURE-1",
+        "FINISH-1"
+      ]
+    }
+  ]
+};
+fs.writeFileSync('data/seed.json',JSON.stringify(data,null,2));
