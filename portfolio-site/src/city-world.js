@@ -54,10 +54,10 @@ export function buildWorld(host, buildings, callbacks, {motion=true}={}) {
   renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;
   host.append(renderer.domElement);renderer.domElement.setAttribute('aria-hidden','true');
   const scene=new THREE.Scene();scene.background=new THREE.Color(software?'#286474':'#93acb8');scene.fog=new THREE.FogExp2('#93acb8',.00145);
-  const camera=new THREE.PerspectiveCamera(40,host.clientWidth/host.clientHeight,.3,1800);
-  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.screenSpacePanning=false;controls.minDistance=12;controls.maxDistance=760;controls.minPolarAngle=.035;controls.maxPolarAngle=1.34;controls.zoomSpeed=.72;controls.rotateSpeed=.65;
+  const camera=new THREE.PerspectiveCamera(mobile?45:40,host.clientWidth/host.clientHeight,.3,1800);
+  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.screenSpacePanning=false;controls.minDistance=12;controls.maxDistance=mobile?1200:760;controls.minPolarAngle=.035;controls.maxPolarAngle=1.34;controls.zoomSpeed=.72;controls.rotateSpeed=.65;
   controls.touches.ONE=THREE.TOUCH.ROTATE;controls.touches.TWO=THREE.TOUCH.DOLLY_PAN;
-  const overviewPosition=mobile?v3(330,430,420):v3(295,360,350),overviewTarget=v3(0,3,0);
+  const overviewPosition=mobile?v3(500,650,720):v3(295,360,350),overviewTarget=v3(0,3,0);
   camera.position.copy(overviewPosition);controls.target.copy(overviewTarget);controls.update();
   const sun=new THREE.DirectionalLight('#fff0dc',software?1.25:3.25);sun.position.set(-135,230,90);sun.castShadow=!mobile&&!software;
   sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-210;sun.shadow.camera.right=210;sun.shadow.camera.top=210;sun.shadow.camera.bottom=-210;sun.shadow.camera.near=1;sun.shadow.camera.far=620;sun.shadow.normalBias=.35;sun.shadow.bias=-.0001;scene.add(sun,sun.target);
@@ -181,6 +181,7 @@ export function buildWorld(host, buildings, callbacks, {motion=true}={}) {
   function fly(position,target,duration=1400){flight={from:camera.position.clone(),targetFrom:controls.target.clone(),to:position,target,start:performance.now(),duration:enabledMotion?duration:0};}
   function focus(slug,{guide=true}={}){
     const site=sites.get(slug);if(!site)return;selected=slug;selectionRing.visible=true;selectionRing.position.set(site.p.x,site.base+.7,site.p.z);
+    if(mobile)camera.setViewOffset(host.clientWidth,host.clientHeight,0,host.clientHeight*.15,host.clientWidth,host.clientHeight);
     const target=v3(site.p.x,site.base+site.height*.36,site.p.z),distance=mobile?site.height*2.5+30:site.height*1.5+28;
     fly(target.clone().add(v3(distance*.85,distance*.82,distance)),target);
     if(guide)navigatePip(site);callbacks.view?.(site.p.title);
@@ -191,13 +192,13 @@ export function buildWorld(host, buildings, callbacks, {motion=true}={}) {
     const trace=curve.getPoints(130).map(p=>v3(p.x,Math.max(landHeight(p.x,p.z)+.6,1),p.z));routeLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(trace),new THREE.LineDashedMaterial({color:'#99f0ff',dashSize:1.2,gapSize:.7,transparent:true,opacity:.8}));routeLine.computeLineDistances();scene.add(routeLine);
     pipTrip={curve,start:performance.now(),duration:enabledMotion?clamp(curve.getLength()*27,1800,6000):0};callbacks.travel?.('Pip is taking you to '+site.p.title+'.');
   }
-  function overview(top=false){selected=null;selectionRing.visible=false;fly(top?v3(0,520,.5):overviewPosition.clone(),overviewTarget.clone(),1600);callbacks.view?.(top?'TOP DOWN':'COUNTRY VIEW');}
+  function overview(top=false){selected=null;selectionRing.visible=false;camera.clearViewOffset();fly(top?v3(0,mobile?1120:520,.5):overviewPosition.clone(),overviewTarget.clone(),1600);callbacks.view?.(top?'TOP DOWN':'COUNTRY VIEW');}
   function setNight(value){night=value;scene.background.set(value?'#123648':software?'#286474':'#93acb8');scene.fog.color.copy(scene.background);sun.intensity=value?.32:software?1.25:3.25;sun.color.set(value?'#8caeff':'#fff0dc');hemi.intensity=value?.58:1.5;if(software){seaMaterial.color.set(value?'#123648':'#286474');softAmbient.intensity=value?.24:.6;}else seaMaterial.uniforms.uNight.value=value?1:0;renderer.toneMappingExposure=value?1.0:1.1;bloom.strength=value?.5:.24;for(const m of facadeMats.values()){m.emissiveIntensity=value?1.5:.12;if(software)m.emissive.set(value?'#14272f':'#03080b');}background.material.emissiveIntensity=value?1.15:.12;for(const m of lightMaterials)m.emissiveIntensity=value?2.3:1.8;}
   function panTo(x,z){const target=v3(clamp(x,-210,210),landHeight(x,z)+3,clamp(z,-160,160)),offset=camera.position.clone().sub(controls.target);fly(target.clone().add(offset),target,800);}
   function zoom(factor){const diff=camera.position.clone().sub(controls.target),distance=clamp(diff.length()*factor,controls.minDistance,controls.maxDistance);camera.position.copy(controls.target).add(diff.setLength(distance));flight=null;controls.update();}
   function setVisible(slugs){visibleSlugs=new Set(slugs);for(const [slug,s]of sites)s.beacon.visible=visibleSlugs.has(slug);}
   function labelPositions(){const result=[];for(const [slug,s]of sites){if(!visibleSlugs.has(slug))continue;const w=v3(s.p.x,s.base+s.height+7,s.p.z),screen=w.clone().project(camera);result.push({slug,x:(screen.x*.5+.5)*host.clientWidth,y:(-.5*screen.y+.5)*host.clientHeight,visible:screen.z<1&&screen.z>-1&&Math.abs(screen.x)<.94&&Math.abs(screen.y)<.94,distance:w.distanceTo(camera.position)})}return result.sort((a,b)=>a.distance-b.distance);}
-  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);composer.setSize(w,h);};const observer=new ResizeObserver(resize);observer.observe(host);
+  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;if(camera.view?.enabled)camera.setViewOffset(w,h,0,h*.15,w,h);camera.updateProjectionMatrix();renderer.setSize(w,h);composer.setSize(w,h);};const observer=new ResizeObserver(resize);observer.observe(host);
   renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();callbacks.contextLost?.();});
   renderer.domElement.addEventListener('webglcontextrestored',()=>location.reload());
   function animate(now){requestAnimationFrame(animate);if(document.hidden||now-lastDraw<(software?65:mobile?33:22))return;lastDraw=now;

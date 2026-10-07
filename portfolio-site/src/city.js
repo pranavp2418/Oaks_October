@@ -15,7 +15,8 @@ if(isMobile)setDirectory(false);
 function filtered(){const q=$('city-search').value.trim().toLowerCase(),district=$('city-district').value,month=$('city-month').value;return catalog.filter(p=>(district==='all'||p.district===district)&&(month==='all'||p.month===month)&&(!q||[p.title,p.domain,p.description,...p.stack].join(' ').toLowerCase().includes(q)));}
 function renderDirectory(){
   const list=filtered(),pages=Math.max(1,Math.ceil(list.length/pageSize));page=Math.min(page,pages-1);
-  $('city-count').textContent=`${list.length} ${list.length===1?'project':'projects'} · ${new Set(list.map(p=>p.district)).size} districts`;
+  const districtCount=new Set(list.map(p=>p.district)).size;
+  $('city-count').textContent=`${list.length} ${list.length===1?'project':'projects'} · ${districtCount} ${districtCount===1?'district':'districts'}`;
   $('city-project-list').innerHTML=list.slice(page*pageSize,(page+1)*pageSize).map(p=>`<button class="atlas-project-button" data-city-project="${esc(p.slug)}" style="--district:${p.color}" aria-pressed="${p.slug===selected}"><i aria-hidden="true"></i><span><strong>${esc(p.title)}</strong><small>${esc(DISTRICTS.find(d=>d.id===p.district).name)}${p.historical?' · historical':p.delivery_mode==='github_only'?' · code-only':''}</small></span></button>`).join('')||'<p class="atlas-empty">No buildings match. Try another project, district or technology.</p>';
   $('city-pagination').hidden=pages===1;$('city-page').textContent=`${page+1} / ${pages}`;$('city-prev').disabled=page===0;$('city-next').disabled=page===pages-1;
   document.querySelectorAll('[data-city-project]').forEach(b=>b.onclick=()=>selectProject(b.dataset.cityProject));
@@ -75,6 +76,8 @@ function tour(){
 }
 function askPip(query){
   const q=query.trim();if(!q)return;const text=q.toLowerCase();
+  if(/contact|email|resume|résumé|\bcv\b|who is pranav/.test(text)){pipSay('Pranav is the engineer behind this country and Founder & Lead Product Architect at CraftsmanAI. His portfolio has the full experience, résumé and contact details.',[{label:'Visit the portfolio',action:()=>location.assign('/#about')},{label:'Contact Pranav',action:()=>location.assign('/#contact')}]);return;}
+  if(/all projects|every project|how many|what.*district/.test(text)){pipSay(`There are ${catalog.length} projects across ${new Set(catalog.map(p=>p.district)).size} occupied districts. Care Gardens holds healthcare work, Exchange District holds finance and CRM, Foundry Reach holds industrial systems, and Signal Harbor holds infrastructure. Choose a building or use the directory.`,[{label:'Browse projects',action:()=>{setDirectory(true);$('city-search').value='';$('city-district').value='all';$('city-month').value='all';renderDirectory();setPip(false);world?.overview();}}]);return;}
   if(/tour|show me around|show the city/.test(text)){tourIndex=-1;tour();return;}
   if(/zoom|rotate|control|how.*(move|navigate)|top down|overhead|country view|whole (map|country)/.test(text)){
     if(/top down|overhead/.test(text))world?.overview(true);else if(/country|whole/.test(text))world?.overview();
