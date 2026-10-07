@@ -32,12 +32,12 @@ export function terrainSurface(maps,software){
   };material.customProgramCacheKey=()=> 'island-surface-v2';return material;
 }
 export function curvedTowerGeometry(width,height,depth,{software=false,bend=.12}={}){
-  const geometry=new THREE.CylinderGeometry(.43,.52,1,software?12:32,software?3:12,false),p=geometry.attributes.position;
+  const geometry=new THREE.CylinderGeometry(.43,.52,1,software?10:32,software?2:12,false),p=geometry.attributes.position;
   for(let i=0;i<p.count;i++){const t=p.getY(i)+.5;p.setXYZ(i,p.getX(i)*width+Math.sin(t*Math.PI/2)*width*bend,p.getY(i)*height,p.getZ(i)*depth);}
   geometry.computeVertexNormals();geometry.type='BufferGeometry';return geometry;
 }
 export function addSkyline(scene,{software,mobile,landHeight,districts,buildings,facadeMats}){
-  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?125:mobile?180:260;
+  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?100:mobile?180:260;
   for(let i=0,attempts=0;i<count&&attempts<count*40;attempts++){
     const district=districts[Math.floor(random()*districts.length)],x=district.x+(random()-.5)*67,z=district.z+(random()-.5)*67;
     if(buildings.some(p=>Math.hypot(p.x-x,p.z-z)<10)||Math.hypot(x-district.x,z-district.z)<9)continue;
@@ -110,13 +110,13 @@ function palmGeometry(detail=8){
   return {trunk:mergeGeometries(trunk),leaves:mergeGeometries(leaves)};
 }
 export function addVegetation(scene,{software,mobile,landHeight,maps,districts,buildings}){
-  const random=randomSeed(425773),trunks=[],palms=[],crowns=[],palm=palmGeometry(software?4:12),count=software?90:mobile?360:700;
+  const random=randomSeed(425773),trunks=[],palms=[],crowns=[],palm=palmGeometry(software?4:12),count=software?60:mobile?360:700;
   const bark=new THREE.MeshStandardMaterial({color:'#887657',roughness:.93,map:software?null:maps['bark-color']}),leafMat=new THREE.MeshStandardMaterial({vertexColors:true,color:'#759c58',roughness:.82,side:THREE.DoubleSide});
   for(let i=0,tries=0;i<count&&tries<count*25;tries++){const x=(random()-.5)*385,z=(random()-.5)*305,h=landHeight(x,z);if(h<3||h>38||districts.some(d=>Math.abs(x-d.x)<40&&Math.abs(z-d.z)<40)||buildings.some(p=>Math.hypot(p.x-x,p.z-z)<9))continue;i++;
     const size=.65+random()*.65,matrix=new THREE.Matrix4().compose(new THREE.Vector3(x,h,z),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),random()*TAU),new THREE.Vector3(size,size,size));
     if(random()<.55){trunks.push(palm.trunk.clone().applyMatrix4(matrix));palms.push(typedColor(palm.leaves.clone().applyMatrix4(matrix),new THREE.Color().setHSL(.23+random()*.1,.32+random()*.25,.25+random()*.11)));}
     else{const g=new THREE.CylinderGeometry(.09,.25,3.9,software?5:8).translate(0,1.9,0).applyMatrix4(matrix);trunks.push(g);
-      for(let b=0;b<(software?4:7);b++){const crown=new THREE.SphereGeometry(1,software?6:10,software?4:7);crown.scale(1.2+random(),.8+random()*.7,1.1+random());crown.translate((random()-.5)*2,3.5+random()*1.7,(random()-.5)*2);crown.applyMatrix4(matrix);typedColor(crown,new THREE.Color().setHSL(.25+random()*.09,.35+random()*.2,.21+random()*.13));crowns.push(crown);}
+      for(let b=0;b<(software?3:7);b++){const crown=new THREE.SphereGeometry(1,software?5:10,software?3:7);crown.scale(1.2+random(),.8+random()*.7,1.1+random());crown.translate((random()-.5)*2,3.5+random()*1.7,(random()-.5)*2);crown.applyMatrix4(matrix);typedColor(crown,new THREE.Color().setHSL(.25+random()*.09,.35+random()*.2,.21+random()*.13));crowns.push(crown);}
     }
   }
   // Small palms line the district plazas without hiding the project buildings.

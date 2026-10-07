@@ -71,7 +71,7 @@ export function buildWorld(host, buildings, callbacks) {
   let composer,bloom;
   if(software){composer={render:()=>renderer.render(scene,camera),setSize:()=>{}};bloom={strength:0};}
   else{composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));bloom=new UnrealBloomPass(new THREE.Vector2(host.clientWidth,host.clientHeight),.24,.7,1.15);composer.addPass(bloom);composer.addPass(new OutputPass());}
-  const terrainGeometry=new THREE.PlaneGeometry(490,410,software?80:mobile?180:300,software?66:mobile?150:250);terrainGeometry.rotateX(-Math.PI/2);
+  const terrainGeometry=new THREE.PlaneGeometry(490,410,software?64:mobile?180:300,software?54:mobile?150:250);terrainGeometry.rotateX(-Math.PI/2);
   const position=terrainGeometry.attributes.position,colors=new Float32Array(position.count*3);
   const forest=new THREE.Color(software?'#71945f':'#bac7ab'),rock=new THREE.Color(software?'#a7a08a':'#d0cdc0'),sand=new THREE.Color(software?'#e2d8b6':'#fbf3db'),undersea=new THREE.Color('#54bcb0');
   for(let i=0;i<position.count;i++){
@@ -214,6 +214,8 @@ export function buildWorld(host, buildings, callbacks) {
     ocean.update(now*.001);vegetation.update(now*.001,environment);atmosphere.update(now*.001,environment);
     pip.position.y+=Math.sin(now*.002)*.006;if(selectionRing.material.emissive)selectionRing.material.emissiveIntensity=1.8+Math.sin(now*.003)*.4;
     controls.update();for(const s of sites.values())if(s.lod){const near=s.p.slug===selected||camera.position.distanceTo(s.group.position)<130;s.lod.visible=!near;for(const child of s.details)child.visible=near;}composer.render();callbacks.frame?.(labelPositions(),camera.position,controls.target,renderer.info.render);
+    // Leave a real input-processing gap after expensive software drawing, while motion stays active.
+    if(software)lastDraw=performance.now();
   }
   requestAnimationFrame(animate);
   return {focus,overview,setEnvironment,zoom,panTo,setVisible,sites,camera,controls,renderer,

@@ -7,7 +7,7 @@ const isMobile=matchMedia('(max-width:700px)').matches;
 let catalog=[],world=null,selected=null,page=0,hovered=null,weather=null,weatherFailed=false;
 const pageSize=10,labels=new Map();let minimapLast=0,returnFocus=null,tourIndex=-1;
 function message(text){$('city-access-status').textContent=text;}
-function setDirectory(open){$('directory-body').hidden=!open;$('city-directory').classList.toggle('collapsed',!open);$('directory-toggle').setAttribute('aria-expanded',String(open));$('directory-toggle').setAttribute('aria-label',open?'Collapse project directory':'Expand project directory');$('directory-toggle').textContent=open?'−':'+';}
+function setDirectory(open){$('directory-body').hidden=!open;$('city-directory').classList.toggle('collapsed',!open);document.body.classList.toggle('directory-expanded',open);$('directory-toggle').setAttribute('aria-expanded',String(open));$('directory-toggle').setAttribute('aria-label',open?'Collapse project directory':'Expand project directory');$('directory-toggle').textContent=open?'−':'+';}
 function setPip(open){$('pip-city-content').hidden=!open;$('city-pip').classList.toggle('collapsed',!open);document.body.classList.toggle('pip-collapsed',!open);$('pip-city-toggle').setAttribute('aria-expanded',String(open));$('pip-city-toggle').querySelector('.pip-collapse').textContent=open?'−':'+';}
 $('directory-toggle').onclick=()=>setDirectory($('directory-body').hidden);
 $('pip-city-toggle').onclick=()=>setPip($('pip-city-content').hidden);
@@ -99,7 +99,7 @@ function updateEnvironment(){
   const status=weatherFailed&&state.weather?'stale':state.weatherStatus;
   if(state.weather){const temp=state.weather.temperatureC===null?'':` · ${Math.round(state.weather.temperatureC*9/5+32)}°F`; $('island-weather-short').textContent=`${status==='stale'?'Last report · ':''}${state.weather.description}${temp}`;
     $('island-weather-detail').textContent=`${status==='stale'?'Last available':'Latest'} NWS report · ${state.weather.station} · ${formatHoustonTime(state.weather.observedAt)} · wind ${Math.round(state.weather.windKmh)} km/h.${status==='stale'?' Updates delayed; scenery uses the last reported conditions.':''}`;
-  }else{$('island-weather-short').textContent=weatherFailed?'Weather unavailable':'Weather loading';$('island-weather-detail').textContent=weatherFailed?'Houston weather is temporarily unavailable. Sun position remains synchronized; no current weather is assumed.':'Loading the latest Houston-area observation.';}
+  }else{$('island-weather-short').textContent=weatherFailed||weather?'Weather unavailable':'Weather loading';$('island-weather-detail').textContent=weatherFailed||weather?'Houston weather is temporarily unavailable. Sun position remains synchronized; no current weather is assumed.':'Loading the latest Houston-area observation.';}
   $('island-atmosphere').dataset.phase=dark?'night':'day';$('island-atmosphere').dataset.weather=status;world?.setEnvironment(state);
 }
 async function refreshWeather(){
