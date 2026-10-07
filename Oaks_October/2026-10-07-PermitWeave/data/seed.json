@@ -1,0 +1,614 @@
+{
+  "authorizations": [
+    {
+      "id": "A0-0",
+      "member": "M0",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 3
+    },
+    {
+      "id": "A0-1",
+      "member": "M0",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 3
+    },
+    {
+      "id": "A1-0",
+      "member": "M1",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 4
+    },
+    {
+      "id": "A1-1",
+      "member": "M1",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 6
+    },
+    {
+      "id": "A2-0",
+      "member": "M2",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 2
+    },
+    {
+      "id": "A2-1",
+      "member": "M2",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 3
+    },
+    {
+      "id": "A3-0",
+      "member": "M3",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 4
+    },
+    {
+      "id": "A3-1",
+      "member": "M3",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 2
+    },
+    {
+      "id": "A4-0",
+      "member": "M4",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 6
+    },
+    {
+      "id": "A4-1",
+      "member": "M4",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 6
+    },
+    {
+      "id": "A5-0",
+      "member": "M5",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 5
+    },
+    {
+      "id": "A5-1",
+      "member": "M5",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 5
+    },
+    {
+      "id": "A6-0",
+      "member": "M6",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 6
+    },
+    {
+      "id": "A6-1",
+      "member": "M6",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 4
+    },
+    {
+      "id": "A7-0",
+      "member": "M7",
+      "service": "therapy",
+      "start": "2026-10-01",
+      "end": "2026-10-18",
+      "units": 6
+    },
+    {
+      "id": "A7-1",
+      "member": "M7",
+      "service": "therapy",
+      "start": "2026-10-12",
+      "end": "2026-10-31",
+      "units": 3
+    }
+  ],
+  "visits": [
+    {
+      "id": "V0-0",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V0-1",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V0-2",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V0-3",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V0-4",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V0-5",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V0-6",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V0-7",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V0-8",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V0-9",
+      "member": "M0",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V1-0",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V1-1",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V1-2",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V1-3",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V1-4",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V1-5",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V1-6",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V1-7",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V1-8",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V1-9",
+      "member": "M1",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V2-0",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V2-1",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V2-2",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V2-3",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V2-4",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V2-5",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V2-6",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V2-7",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V2-8",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V2-9",
+      "member": "M2",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V3-0",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V3-1",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V3-2",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V3-3",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V3-4",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V3-5",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V3-6",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V3-7",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V3-8",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V3-9",
+      "member": "M3",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V4-0",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V4-1",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V4-2",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V4-3",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V4-4",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V4-5",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V4-6",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V4-7",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V4-8",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V4-9",
+      "member": "M4",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V5-0",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V5-1",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V5-2",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V5-3",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V5-4",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V5-5",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V5-6",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V5-7",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V5-8",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V5-9",
+      "member": "M5",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V6-0",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V6-1",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V6-2",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V6-3",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V6-4",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V6-5",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V6-6",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V6-7",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V6-8",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V6-9",
+      "member": "M6",
+      "service": "therapy",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "V7-0",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "V7-1",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "V7-2",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "V7-3",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "V7-4",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "V7-5",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-17"
+    },
+    {
+      "id": "V7-6",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "V7-7",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "V7-8",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "V7-9",
+      "member": "M7",
+      "service": "therapy",
+      "date": "2026-10-29"
+    }
+  ]
+}

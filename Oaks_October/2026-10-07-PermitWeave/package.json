@@ -1,0 +1,10 @@
+{
+  "name": "permitweave",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p public && cp index.html app.js style.css public/ && cp -r data public/",
+    "test": "python -m unittest discover -s tests",
+    "start": "python local.py"
+  }
+}

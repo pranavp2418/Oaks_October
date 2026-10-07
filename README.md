@@ -14,19 +14,9 @@ WorkOrder Triage is a deployment dry run, not part of the daily intermediate/adv
 
 ## Collection plan
 
-- Target: two distinct projects per build day, one directly related to backend/full-stack/AI implementation and one adjacent.
-- Rotate languages and problem domains; avoid repackaging the same app.
-- Overall target mix: 60% intermediate and 40% advanced.
-- Label independent feature concepts honestly; inspiration does not imply affiliation with a company.
-- Before reporting a project complete: test its main user flow, error handling, backend integration, and public deployment; document limitations and reproduction steps.
-- Keep project and build status explicit. Failed or blocked deliveries are not complete projects.
-- Prepare daily source/demo links, test results, and LinkedIn copy for review. LinkedIn publishing is not connected or automated.
+Three distinct advanced projects per day, October 7, 2026 through March 7, 2027: 152 dates and a target of 456. Two resume-grounded stacks and one substantive new core language; different algorithms, domains, architectures and visual styles. Every project must pass local and live checks before completion. Portfolio integration follows only after all three pass.
 
-## Automation status
-
-Daily Project Build Cycle is enabled for October 2, 2026 through May 1, 2027, near 7 p.m. America/Chicago (within one hour). It is instructed to build, deploy, verify and report two projects per run, with blockers reported honestly. The first scheduled run has not yet been verified; this is a target, not a guarantee of 424 completed projects.
-
-[PROJECT_LEDGER.json](./PROJECT_LEDGER.json) is the durable project/verification index. No daily portfolio projects are counted yet. Supabase is excluded pending account-email verification. LinkedIn output is draft-only; publishing is not connected. Never commit credentials or production customer data.
+See [PROJECT_BUILD_BRIEF.md](./PROJECT_BUILD_BRIEF.md) and [PROJECT_LEDGER.json](./PROJECT_LEDGER.json) for requirements and actual evidence. Targets do not guarantee delivery. Preserve the deployment dry run below; it is excluded from daily counts.
 
 ## Dry-run verification — October 2, 2026
 

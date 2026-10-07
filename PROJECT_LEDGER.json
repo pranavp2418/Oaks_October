@@ -1,14 +1,14 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "period": {
-    "start": "2026-10-02",
-    "end_inclusive": "2027-05-01",
-    "target_per_day": 2,
-    "target_total": 424
+    "start": "2026-10-07",
+    "end_inclusive": "2027-03-07",
+    "dates": 152,
+    "target_per_day": 3,
+    "target_total": 456
   },
   "difficulty_target": {
-    "intermediate": 0.6,
-    "advanced": 0.4
+    "advanced": 1
   },
   "monthly_repositories": {
     "2026-10": "pranavp2418/Oaks_October"
@@ -60,15 +60,15 @@
   ],
   "automation": {
     "status": "enabled",
-    "title": "Daily Project Build Cycle",
+    "title": "Three Advanced Projects",
     "timezone": "America/Chicago",
-    "start": "2026-10-02",
-    "end_inclusive": "2027-05-01",
-    "approximate_local_time": "19:00",
-    "flexible_window": "within one hour",
+    "start": "2026-10-07",
+    "end_inclusive": "2027-03-07",
     "delivery_guarantee": false,
     "first_run_verified": false,
     "linkedin": "drafts_only",
-    "supabase": "excluded_pending_account_email_verification"
-  }
+    "supabase": "excluded_pending_account_email_verification",
+    "target_per_day": 3
+  },
+  "runs": []
 }
