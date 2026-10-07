@@ -1,0 +1,59 @@
+[
+  {
+    "title": "PermitWeave",
+    "slug": "permitweave",
+    "domain": "Care operations",
+    "stack": [
+      "Python",
+      "Event replay",
+      "JavaScript"
+    ],
+    "description": "Allocate visits against overlapping capacity windows, inspect gaps, and replay versioned decisions.",
+    "theme": "weave",
+    "visual": "Capacity \u2192 Coverage",
+    "details": "Earliest-expiring capacity allocation with idempotency keys, revision checks and a replayable audit chain. Synthetic visits; browser-saved workspace.",
+    "date": "2026-10-07",
+    "month": "2026-10",
+    "live": "https://permitweave-20261007.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-PermitWeave",
+    "cover": "/assets/permitweave-cover.svg"
+  },
+  {
+    "title": "DeltaLens",
+    "slug": "deltalens",
+    "domain": "Infrastructure reliability",
+    "stack": [
+      "Node.js",
+      "Statistical analysis",
+      "SVG"
+    ],
+    "description": "Investigate release-associated latency shifts with control-adjusted effects and visible uncertainty.",
+    "theme": "delta",
+    "visual": "Change \u2192 Evidence",
+    "details": "Deduplicated telemetry, release windows, exploratory confidence intervals and overlapping-change warnings. Synthetic telemetry; correlation does not establish causation.",
+    "date": "2026-10-07",
+    "month": "2026-10",
+    "live": "https://deltalens-20261007.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-DeltaLens",
+    "cover": "/assets/deltalens-cover.svg"
+  },
+  {
+    "title": "Kiln",
+    "slug": "kiln",
+    "domain": "Industrial scheduling",
+    "stack": [
+      "Lua",
+      "Branch and bound",
+      "Fengari"
+    ],
+    "description": "Search constrained batch sequences and inspect resource, precedence and lateness decisions.",
+    "theme": "kiln",
+    "visual": "Constraints \u2192 Sequence",
+    "details": "Real Lua optimization with an admissible lower bound, feasible incumbent and honest search-budget certificate. Single-machine synthetic model; optimum tested against an independent oracle.",
+    "date": "2026-10-07",
+    "month": "2026-10",
+    "live": "https://kiln-20261007.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln",
+    "cover": "/assets/kiln-cover.svg"
+  }
+]

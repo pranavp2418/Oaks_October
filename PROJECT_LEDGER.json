@@ -199,7 +199,7 @@
       "counted": false,
       "tests": {
         "command": "npm test",
-        "passed": 5,
+        "passed": 6,
         "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
         "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
         "browser_flows": [
@@ -208,7 +208,8 @@
           "Budget 1 reported feasible incumbent with optimality unproven",
           "Mobile viewport solve and reload worked without horizontal overflow"
         ],
-        "mobile_method": "390px iframe viewport, not physical-device testing"
+        "mobile_method": "390px iframe viewport, not physical-device testing",
+        "input_safety": "Unknown JSON fields stripped before generating Lua literals; injection isolation test passed"
       },
       "limitations": [
         "Synthetic demonstration data",

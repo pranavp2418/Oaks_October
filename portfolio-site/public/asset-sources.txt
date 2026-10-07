@@ -1,0 +1,7 @@
+User-supplied: CraftsmanAI logo, icon, loader video, and resume.
+Fidelity logo: https://www.fidelity.com/bin-public/060_www_fidelity_com/images/Fidelity-footer-logo.png
+Stripe wordmark: https://stripe.com/newsroom/information
+Valorant, Instagram, Chess.com marks: Simple Icons v16, https://github.com/simple-icons/simple-icons
+Houston Texans logo: https://a.espncdn.com/i/teamlogos/nfl/500/hou.png
+Interface and general hobby icons: Lucide 0.468.0, https://lucide.dev (ISC license)
+Brands and trademarks belong to their respective owners. Logos identify experience and personal interests; no endorsement is implied.

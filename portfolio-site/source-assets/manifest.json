@@ -1,0 +1,27 @@
+{
+  "output": "public/assets/craftsmanai-film.mp4",
+  "sha256": "ca9cc44ce5df12a0b387abca4dbaceb8905fca189ae73c7cf8e7413fc92a4f34",
+  "bytes": 11632776,
+  "parts": [
+    "source-assets/film/000.part",
+    "source-assets/film/001.part",
+    "source-assets/film/002.part",
+    "source-assets/film/003.part",
+    "source-assets/film/004.part",
+    "source-assets/film/005.part",
+    "source-assets/film/006.part",
+    "source-assets/film/007.part",
+    "source-assets/film/008.part",
+    "source-assets/film/009.part",
+    "source-assets/film/010.part",
+    "source-assets/film/011.part",
+    "source-assets/film/012.part",
+    "source-assets/film/013.part",
+    "source-assets/film/014.part",
+    "source-assets/film/015.part",
+    "source-assets/film/016.part",
+    "source-assets/film/017.part",
+    "source-assets/film/018.part",
+    "source-assets/film/019.part"
+  ]
+}

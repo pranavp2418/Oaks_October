@@ -22,6 +22,6 @@ Node 24, Fengari 0.1.5, Lua core, JavaScript adapter/UI. No environment variable
 Original deterministic fixture seed 7102026, six fictional jobs, available under MIT. Generator writes explicit fixture rather than drawing random values. Schema jobs {id, family, duration, release, due, weight, predecessors}; setup; budget. Integer minute time units. Maximum nine jobs and 100,000 search nodes. Validate acyclic precedence, bounded times and safe identifiers before Lua execution. No user Lua source is executed. No real factory records or claimed production use.
 
 ## Verification
-Five tests: Lua solution compared against independent JavaScript exhaustive oracle, release/setup/resource/precedence invariants, honest budget cutoff, invalid/cyclic/missing predecessors, deterministic repeated solves. Actual browser/live and clean build evidence lives in root PROJECT_LEDGER.json. Measured example results are fixture-specific and are not industrial benchmarks.
+Six tests: Lua solution compared against independent JavaScript exhaustive oracle, release/setup/resource/precedence invariants, honest budget cutoff, invalid/cyclic/missing predecessors, deterministic repeated solves and unknown-field injection isolation. Actual browser/live and clean build evidence lives in root PROJECT_LEDGER.json. Measured example results are fixture-specific and are not industrial benchmarks.
 
 [Source](https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln) · [Demo](https://kiln-20261007.vercel.app)

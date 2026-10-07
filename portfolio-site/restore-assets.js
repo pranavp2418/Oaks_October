@@ -1,0 +1,2 @@
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+const m=JSON.parse(fs.readFileSync('source-assets/manifest.json'));const data=Buffer.concat(m.parts.map(x=>fs.readFileSync(x)));if(data.length!==m.bytes||createHash('sha256').update(data).digest('hex')!==m.sha256)throw Error('Asset snapshot integrity mismatch');fs.mkdirSync('public/assets',{recursive:true});fs.writeFileSync(m.output,data);

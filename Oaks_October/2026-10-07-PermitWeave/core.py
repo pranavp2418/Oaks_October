@@ -43,7 +43,7 @@ def replay(data,events):
   if e['key'] in seen:
    if seen[e['key']]!=digest: raise Conflict('Idempotency key reused with different payload')
    continue
-  if e.get('expected_revision')!=revision: raise Conflict('Stale revision')
+  if type(e.get('expected_revision')) is not int or e.get('expected_revision')!=revision: raise Conflict('Stale revision')
   if e.get('type')!='capacity': raise ValueError('Unknown event')
   a=next((a for a in current['authorizations'] if a['id']==e.get('authorization')),None)
   if a is None or type(e.get('units')) is not int or not 0<=e['units']<=10000: raise ValueError('Invalid capacity edit')

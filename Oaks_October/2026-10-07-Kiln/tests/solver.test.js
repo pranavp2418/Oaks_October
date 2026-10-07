@@ -6,3 +6,5 @@ test('resource, release and precedence invariants',()=>{const r=solve(seed),done
 test('budget cutoff reports feasible incumbent without false optimality',()=>{const r=solve({...seed,budget:1});assert.equal(r.optimal,false);assert.equal(r.schedule.length,seed.jobs.length);assert.equal(r.objective,r.baselineObjective)});
 test('reject cycle, unknown predecessor, unsafe identifiers and malformed durations',()=>{for(const change of [{id:'bad"'},{duration:0},{predecessors:['UNKNOWN']},{predecessors:['CAST-1']}]){assert.throws(()=>solve({...seed,jobs:[{...seed.jobs[0],...change}]}))}const jobs=[{...seed.jobs[0],id:'a',predecessors:['b']},{...seed.jobs[1],id:'b',predecessors:['a']}];assert.throws(()=>solve({...seed,jobs}),/cycle/)});
 test('deterministic repeated requests',()=>assert.deepEqual(solve(seed),solve(seed)));
+
+test('unknown JSON fields never become Lua source',()=>{const jobs=seed.jobs.map(j=>({...j,["x=error('escaped'),y"]:1}));assert.deepEqual(solve({...seed,jobs}),solve(seed))});
