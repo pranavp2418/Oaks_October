@@ -130,6 +130,30 @@ export function addVegetation(scene,{software,mobile,landHeight,maps,districts,b
   const wind={value:0},strength={value:.025};if(!software)for(const m of [leafMat,crownMat]){m.onBeforeCompile=shader=>{shader.uniforms.islandWind=wind;shader.uniforms.islandWindStrength=strength;shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nuniform float islandWind;uniform float islandWindStrength;').replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed.x+=sin(islandWind+position.z*.4+position.x*.15)*islandWindStrength*max(0.,sin(position.y*.6));');};}
   return {update(t,e){wind.value=t;strength.value=.035+(e.wind||8)*.005;}};
 }
+export function scannedTreePlacements({mobile,landHeight,districts,buildings}){
+  const random=randomSeed(762821),placements=[],count=mobile?12:42;
+  for(let i=0;i<count*40&&placements.length<count;i++){
+    const x=(random()-.5)*350,z=(random()-.5)*265,h=landHeight(x,z);
+    if(h<4||h>34||districts.some(d=>Math.abs(x-d.x)<42&&Math.abs(z-d.z)<42)||buildings.some(p=>Math.hypot(p.x-x,p.z-z)<12)||placements.some(p=>Math.hypot(p.x-x,p.z-z)<9))continue;
+    placements.push({x,z,y:h,scale:1.6+random()*1.1,rotation:random()*TAU});
+  }return placements;
+}
+export async function addScannedTrees(scene,{software,mobile,landHeight,districts,buildings,host}){
+  if(software){host.dataset.treeDetail='procedural';return;}
+  host.dataset.treeDetail='loading';
+  try{
+    const [{GLTFLoader},{MeshoptDecoder}]=await Promise.all([import('three/addons/loaders/GLTFLoader.js'),import('three/addons/libs/meshopt_decoder.module.js')]);
+    const model=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('/assets/island/coastal-tree.glb');
+    model.scene.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(model.scene),center=bounds.getCenter(new THREE.Vector3());
+    const placements=scannedTreePlacements({mobile,landHeight,districts,buildings}),baseMatrices=placements.map(p=>new THREE.Matrix4().compose(new THREE.Vector3(p.x,p.y,p.z),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),p.rotation),new THREE.Vector3(p.scale,p.scale,p.scale)).multiply(new THREE.Matrix4().makeTranslation(-center.x,-bounds.min.y,-center.z)));
+    model.scene.traverse(part=>{if(!part.isMesh)return;const material=part.material.clone();if(material.alphaTest){material.transparent=false;material.depthWrite=true;}
+      const trees=new THREE.InstancedMesh(part.geometry,material,placements.length);
+      // Keep quantized vertices intact; compose the source node transform into each instance.
+      for(let i=0;i<placements.length;i++)trees.setMatrixAt(i,baseMatrices[i].clone().multiply(part.matrixWorld));
+      trees.instanceMatrix.needsUpdate=true;trees.computeBoundingSphere();trees.castShadow=!mobile;trees.receiveShadow=true;scene.add(trees);
+    });host.dataset.treeDetail='photogrammetry';
+  }catch(error){host.dataset.treeDetail='procedural-fallback';console.warn('Coastal tree detail could not load; the procedural forest remains available.',error);}
+}
 function cloudTexture(){const canvas=document.createElement('canvas');canvas.width=canvas.height=512;const c=canvas.getContext('2d'),random=randomSeed(7281);for(let i=0;i<65;i++){const x=60+random()*392,y=100+random()*310,r=30+random()*90,g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(255,255,255,.22)');g.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2);}return new THREE.CanvasTexture(canvas);}
 export function addAtmosphere(scene,{software,mobile,camera}){
   const random=randomSeed(128910),clouds=[],cloudGroup=new THREE.Group();scene.add(cloudGroup);let sky=null;

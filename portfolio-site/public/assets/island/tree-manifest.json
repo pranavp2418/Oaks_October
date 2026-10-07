@@ -1,0 +1,78 @@
+{
+  "file": "coastal-tree.glb",
+  "source_asset": "island_tree_02",
+  "license": "CC0-1.0",
+  "source": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/island_tree_02/island_tree_02_1k.gltf",
+    "md5": "825057164e987894cbfc6c462977fa71",
+    "size": 8545,
+    "include": {
+      "textures/island_tree_02_nor_gl_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_nor_gl_1k.jpg",
+        "md5": "d8b8bc86de9934a743fc9b0a5470e695",
+        "size": 1157226
+      },
+      "textures/island_tree_02_diff_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_diff_1k.jpg",
+        "md5": "b7435527d9628527ce47d89fc1468e9a",
+        "size": 738738
+      },
+      "textures/island_tree_02_arm_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_arm_1k.jpg",
+        "md5": "e487f91bcb37a2a1109ef6234f1db27e",
+        "size": 688305
+      },
+      "textures/island_tree_02_leaves_nor_gl_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_leaves_nor_gl_1k.jpg",
+        "md5": "a08ffb98b5ffb7dfa682e05a1639c642",
+        "size": 379443
+      },
+      "textures/island_tree_02_leaves_diff_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_leaves_diff_1k.jpg",
+        "md5": "1356cbb5a5dd1318f9f2a01eddbf03e1",
+        "size": 191886
+      },
+      "textures/island_tree_02_leaves_arm_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_leaves_arm_1k.jpg",
+        "md5": "27b06c4a53ff115ed7d51ee94e417257",
+        "size": 489476
+      },
+      "textures/island_tree_02_branches_nor_gl_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_branches_nor_gl_1k.jpg",
+        "md5": "789084affb01f4a22290a848558f5e12",
+        "size": 819101
+      },
+      "textures/island_tree_02_branches_diff_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_branches_diff_1k.jpg",
+        "md5": "7792907fe2b2b748c129a2384192a579",
+        "size": 528304
+      },
+      "textures/island_tree_02_branches_arm_1k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/island_tree_02/island_tree_02_branches_arm_1k.jpg",
+        "md5": "5b6f5b3838f4a8f60fea14fa3a3fef9f",
+        "size": 484806
+      },
+      "island_tree_02.bin": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/island_tree_02/island_tree_02.bin",
+        "md5": "7fa9d6ee752b670cabb65053a5c6395b",
+        "size": 40686576
+      }
+    },
+    "gltf_file": "tree.gltf"
+  },
+  "bytes": 2246804,
+  "sha256": "c7850cad4664ebd02466e23ed3c41c6e7a5eadf1b1792d309648d34c487289b9",
+  "triangles": 42691,
+  "texture_dimensions": "1024 \u00d7 1024",
+  "cli_version": "4.5.0",
+  "sdk_generator": "glTF-Transform v4.5.1",
+  "pipeline": [
+    "restore separate leaf mask as RGBA",
+    "weld",
+    "simplify --ratio 0.04 --error 0.007",
+    "tangents",
+    "webp --quality 82",
+    "meshopt"
+  ],
+  "validation": "glTF validator: no errors or warnings; EXT_meshopt_compression is unsupported by that validator, so decoder verification is separate"
+}

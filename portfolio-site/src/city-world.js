@@ -7,7 +7,7 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { SVGRenderer } from 'three/addons/renderers/SVGRenderer.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
-import {addOcean,addVegetation,addAtmosphere,addSkyline,loadIslandTextures,terrainSurface,curvedTowerGeometry} from './island-scenery.js';
+import {addOcean,addVegetation,addScannedTrees,addAtmosphere,addSkyline,loadIslandTextures,terrainSurface,curvedTowerGeometry} from './island-scenery.js';
 import {environmentState} from './island-environment.js';
 import { DISTRICTS, ROAD_LINKS, hash, routeBetween } from './city-model.js';
 
@@ -119,6 +119,7 @@ export function buildWorld(host, buildings, callbacks) {
   for(const d of DISTRICTS){const textures=facadeTextures(d.color),material=new THREE.MeshStandardMaterial({color:software?'#709fb6':'#a9c7db',...textures,emissive:software?'#03080b':'#fff',emissiveIntensity:.12,metalness:.78,roughness:.19});material.userData.facade=true;facadeMats.set(d.id,material);}
   addSkyline(scene,{software,mobile,landHeight,districts:DISTRICTS,buildings,facadeMats});
   const vegetation=addVegetation(scene,{software,mobile,landHeight,maps,districts:DISTRICTS,buildings});
+  addScannedTrees(scene,{software,mobile,landHeight,districts:DISTRICTS,buildings,host});
   const sites=new Map(),pickable=[],selectionRing=mesh(new THREE.TorusGeometry(6.2,.13,7,60),lightMat('#c8f8ff'));selectionRing.rotation.x=Math.PI/2;selectionRing.visible=false;
   for(const p of buildings){
     const group=new THREE.Group(),base=Math.max(2,landHeight(p.x,p.z));group.position.set(p.x,base,p.z);scene.add(group);
@@ -195,6 +196,7 @@ export function buildWorld(host, buildings, callbacks) {
     sun.position.set(value.sunDirection.x*270,Math.max(10,value.sunDirection.y*270),value.sunDirection.z*270);sun.intensity=(software?1.6:3.8)*light*(1-cloud*.7);sun.color.set('#fff4db').lerp(new THREE.Color('#ffb076'),warm*.8);
     hemi.intensity=mix(software?.38:.25,1.55,light)*(1-cloud*.2);hemi.color.set('#c9ebff').lerp(new THREE.Color('#315787'),dark);if(softAmbient)softAmbient.intensity=mix(.18,.45,light);
     renderer.toneMappingExposure=mix(.78,1.05,light);bloom.strength=mix(.48,.19,light);
+    scene.environmentIntensity=mix(.15,.9,light)*(1-cloud*.45);
     for(const material of facadeMats.values()){material.emissiveIntensity=.06+dark*1.2;if(software){material.emissive.set('#163348').lerp(new THREE.Color('#254b62'),dark);material.color.set('#76a9c0').lerp(new THREE.Color('#183451'),dark*.85);}}
     for(const material of lightMaterials)if(material.emissive)material.emissiveIntensity=.9+dark*2.4;
     host.dataset.lighting=dark>.45?'night':'day';host.dataset.weather=value.weatherStatus==='unavailable'?'unavailable':value.weather?.kind||'unavailable';

@@ -3,7 +3,11 @@ import assert from 'node:assert/strict';
 import {solarState,environmentState,houstonUtcOffset} from '../src/island-environment.js';
 import {normalizeObservation,weatherFreshness,OBSERVATION_URL} from '../lib/houston-weather.js';
 import {createWeatherHandler} from '../api/island-weather.js';
-import {shoreline,curvedTowerGeometry} from '../src/island-scenery.js';
+import {shoreline,curvedTowerGeometry,scannedTreePlacements} from '../src/island-scenery.js';
+import {DISTRICTS,assignBuildings,createCatalog} from '../src/city-model.js';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {landHeight} from '../src/city-world.js';
 const stamp=Date.parse('2026-10-07T23:05:00Z');
 const observation=(text='Clear')=>({properties:{timestamp:new Date(stamp).toISOString(),textDescription:text,cloudLayers:[{amount:'CLR'}],presentWeather:[],temperature:{value:25,unitCode:'wmoUnit:degC'},windSpeed:{value:3,unitCode:'wmoUnit:m_s-1'},windDirection:{value:120},windGust:{value:6,unitCode:'wmoUnit:m_s-1'}}});
@@ -49,4 +53,15 @@ test('Weather API returns an unavailable response for cold failures and corrupt 
 test('Coastal surf follows terrain contours and curved tower geometry preserves dimensions',()=>{
   for(const p of shoreline(landHeight,100)){assert.ok(Number.isFinite(p.x)&&Number.isFinite(p.z));assert.ok(Math.abs(landHeight(p.x,p.z)-.45)<.01);}
   for(const software of [false,true]){const g=curvedTowerGeometry(5,32,4,{software});g.computeBoundingBox();assert.ok(Math.abs(g.boundingBox.max.y-g.boundingBox.min.y-32)<.01);assert.ok(g.boundingBox.max.x-g.boundingBox.min.x>3);assert.equal(g.type,'BufferGeometry');g.dispose();}
+});
+test('Scanned coastal tree decodes with the shipped mesh optimizer and safe deterministic placements',async()=>{
+  const assets=new URL('../public/assets/island/',import.meta.url),binary=await readFile(new URL('coastal-tree.glb',assets)),manifest=JSON.parse(await readFile(new URL('tree-manifest.json',assets),'utf8'));
+  assert.equal(createHash('sha256').update(binary).digest('hex'),manifest.sha256);
+  assert.equal(binary.readUInt32LE(0),0x46546c67);assert.equal(binary.readUInt32LE(8),binary.length);
+  const size=binary.readUInt32LE(12),gltf=JSON.parse(binary.subarray(20,20+size).toString()),bin=binary.subarray(28+size);
+  await MeshoptDecoder.ready;let decoded=0;
+  for(const view of gltf.bufferViews){const e=view.extensions?.EXT_meshopt_compression;if(!e)continue;const target=new Uint8Array(e.count*e.byteStride);MeshoptDecoder.decodeGltfBuffer(target,e.count,e.byteStride,bin.subarray(e.byteOffset||0,(e.byteOffset||0)+e.byteLength),e.mode,e.filter);assert.equal(target.byteLength,view.byteLength);decoded++;}
+  assert.ok(decoded>=4);assert.equal(gltf.meshes.flatMap(m=>m.primitives).reduce((sum,p)=>sum+gltf.accessors[p.indices].count/3,0),manifest.triangles);
+  const daily=JSON.parse(await readFile(new URL('../public/projects.json',import.meta.url),'utf8')),featured=JSON.parse(await readFile(new URL('../public/featured-projects.json',import.meta.url),'utf8')),buildings=assignBuildings(createCatalog(daily,featured));
+  for(const mobile of [false,true]){const options={mobile,landHeight,districts:DISTRICTS,buildings},positions=scannedTreePlacements(options);assert.equal(positions.length,mobile?12:42);assert.deepEqual(positions,scannedTreePlacements(options));for(const p of positions){assert.ok(p.y>=4&&p.y<=34);assert.ok(buildings.every(b=>Math.hypot(b.x-p.x,b.z-p.z)>=12));}}
 });
