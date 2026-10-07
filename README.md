@@ -1,8 +1,8 @@
 # Oaks_October
 
-October 2026 software projects by **Pranav Chirag Patel**. Theme: property operations and adjacent workflows.
+October 2026 software projects by **Pranav Chirag Patel**. Advanced projects across distinct industries, algorithms and technologies.
 
-Each project lives directly under its title: `Oaks_October/Project-Title/`. Frontend, backend, tests, documentation, and deployment configuration belong together inside that folder.
+New projects live beneath month-themed folders, for example `Oaks_October/2026-10-07-PermitWeave/`. The older deployment dry run remains in its original location. Frontend, backend, tests, documentation, and deployment configuration belong together inside that folder.
 
 ## Project index
 
@@ -11,6 +11,16 @@ Each project lives directly under its title: `Oaks_October/Project-Title/`. Fron
 | [WorkOrder Triage](./WorkOrder-Triage) | Transparent maintenance prioritization and trade routing | JavaScript, Node.js, HTML/CSS | Deployed; core live flow verified | [Open demo](https://oaksoctober1002.vercel.app/) |
 
 WorkOrder Triage is a deployment dry run, not part of the daily intermediate/advanced project count. Its queue persists only in the current browser. It does not use Supabase.
+
+## October 7 projects
+
+| Project | Core workflow | Stack | Demo |
+|---|---|---|---|
+| [PermitWeave](./Oaks_October/2026-10-07-PermitWeave) | Capacity interval allocation and replayable audit | Python, JavaScript | [Demo](https://permitweave-20261007.vercel.app/) |
+| [DeltaLens](./Oaks_October/2026-10-07-DeltaLens) | Release-associated telemetry effect analysis | Node.js, SVG | [Demo](https://deltalens-20261007.vercel.app/) |
+| [Kiln](./Oaks_October/2026-10-07-Kiln) | Precedence-constrained batch optimization | Lua, Fengari | [Demo](https://kiln-20261007.vercel.app/) |
+
+Status and actual deployment/portfolio verification are recorded in the ledger. All datasets are synthetic. Complete recovered [portfolio source](./portfolio-site) is now durable in this repository.
 
 ## Collection plan
 
