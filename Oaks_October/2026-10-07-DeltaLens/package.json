@@ -1,10 +1,11 @@
 {
-  "name": "permitweave",
+  "name": "deltalens",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
+    "test": "node --test tests/*.test.js",
     "build": "mkdir -p public && cp index.html app.js style.css public/ && cp -r data public/ && cp tests/mobile.html public/mobile.html",
-    "test": "python -m unittest discover -s tests",
-    "start": "python local.py"
+    "start": "node local.js"
   }
 }

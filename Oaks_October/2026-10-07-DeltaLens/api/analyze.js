@@ -1,0 +1,2 @@
+import {analyze} from '../lib/analyze.js';
+export default function handler(req,res){res.setHeader('Cache-Control','no-store');if(req.method!=='POST')return res.status(405).json({error:'POST required'});try{let body=typeof req.body==='string'?JSON.parse(req.body):req.body;if(JSON.stringify(body).length>2000000)return res.status(413).json({error:'Body too large'});return res.status(200).json(analyze(body))}catch(e){return res.status(400).json({error:e.message})}}

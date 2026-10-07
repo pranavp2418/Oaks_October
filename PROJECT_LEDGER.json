@@ -70,5 +70,151 @@
     "supabase": "excluded_pending_account_email_verification",
     "target_per_day": 3
   },
-  "runs": []
+  "runs": [
+    {
+      "date": "2026-10-07",
+      "status": "source_release_in_progress",
+      "target": 3,
+      "local_and_live_verified": 3,
+      "portfolio_source_recovered": true,
+      "portfolio_source_recovery_evidence": "46/46 editable source/assets SHA1 digests matched latest original deployment",
+      "portfolio_integration": "prepared_not_deployed"
+    }
+  ],
+  "profile_baseline": {
+    "resume": "PRANAV CHIRAG PATEL(20261007-204125).pdf",
+    "resume_read": "2026-10-07",
+    "profile": "user-supplied current profile text and skill list",
+    "public_linkedin_fetch": "999; supplied text used instead",
+    "new_core_language": "Lua",
+    "language_absent_from_supplied_resume_and_profile": true
+  },
+  "projects": [
+    {
+      "date": "2026-10-07",
+      "title": "PermitWeave",
+      "industry": "Healthcare operations",
+      "problem": "Unit-demand interval capacity allocation and event replay",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "core_language": "Python",
+      "classification": "resume",
+      "visual_theme": "forest green, serif editorial sidebar",
+      "path": "Oaks_October/2026-10-07-PermitWeave",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-PermitWeave",
+      "live_url": "https://permitweave-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_2yTC9iqMEygBXgjfDNFShfHfQA3E",
+      "source_commit": null,
+      "counted": false,
+      "tests": {
+        "command": "npm test",
+        "passed": 5,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
+          "Gap filter showed 14 baseline uncovered visits",
+          "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "title": "DeltaLens",
+      "industry": "Infrastructure reliability",
+      "problem": "Control-adjusted release telemetry effect analysis",
+      "stack": [
+        "Node.js",
+        "JavaScript",
+        "SVG"
+      ],
+      "core_language": "JavaScript",
+      "classification": "resume",
+      "visual_theme": "midnight navy, violet, monospace timeline",
+      "path": "Oaks_October/2026-10-07-DeltaLens",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-DeltaLens",
+      "live_url": "https://deltalens-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_GhLe4JUW8ywcpXD7SVahHUiKKWAX",
+      "source_commit": null,
+      "counted": false,
+      "tests": {
+        "command": "npm test",
+        "passed": 4,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "225 synthetic telemetry samples analyzed",
+          "10-minute and 25-minute windows recomputed with adjusted regression signal",
+          "Reload preserved selected window",
+          "Mobile viewport recompute passed without horizontal overflow",
+          "Malformed JSON surfaced error; sample reset recovered"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Kiln",
+      "industry": "Industrial operations",
+      "problem": "Precedence-constrained single-machine weighted tardiness search",
+      "stack": [
+        "Lua",
+        "Fengari",
+        "Node.js"
+      ],
+      "core_language": "Lua",
+      "classification": "new",
+      "visual_theme": "warm ivory, burnt orange, machine-lane Gantt",
+      "path": "Oaks_October/2026-10-07-Kiln",
+      "implementation": "implemented",
+      "verification": "local_and_live_passed",
+      "deployment": "verification_deployment_ready_pending_pushed_source_reconciliation",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln",
+      "live_url": "https://kiln-20261007.vercel.app/",
+      "verification_deployment_id": "dpl_QYEDzNVZbarJeWUxiVWz6ovYC1zB",
+      "source_commit": null,
+      "counted": false,
+      "tests": {
+        "command": "npm test",
+        "passed": 5,
+        "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
+        "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
+        "browser_flows": [
+          "Baseline penalty 245 versus verified optimum 108",
+          "Search exhausted at 88 nodes with 19 pruned subtrees",
+          "Budget 1 reported feasible incumbent with optimality unproven",
+          "Mobile viewport solve and reload worked without horizontal overflow"
+        ],
+        "mobile_method": "390px iframe viewport, not physical-device testing"
+      },
+      "limitations": [
+        "Synthetic demonstration data",
+        "Browser-only workspace persistence; no shared database/authentication",
+        "Bounded model described in README"
+      ]
+    }
+  ]
 }
