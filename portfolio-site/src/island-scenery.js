@@ -77,7 +77,8 @@ export function addOcean(scene,{software,mobile,landHeight,maps}){
       color=mix(color,mix(vec3(.93,.99,.97),vec3(.24,.35,.46),uNight),surf*.72);
       gl_FragColor=vec4(color,mix(.97,.72,shallow)*(1.-surf*.1));}
   `});
-  const water=new THREE.Mesh(new THREE.PlaneGeometry(4200,4200,software?1:mobile?128:220,software?1:mobile?128:220),waterMaterial);water.rotation.x=-Math.PI/2;water.position.y=.4;if(software)water.renderOrder=-1000;scene.add(water);
+  // Smaller software faces survive SVGRenderer's near-plane clipping around the camera.
+  const water=new THREE.Mesh(new THREE.PlaneGeometry(4200,4200,software?32:mobile?128:220,software?32:mobile?128:220),waterMaterial);water.rotation.x=-Math.PI/2;water.position.y=.4;if(software)water.renderOrder=-1000;scene.add(water);
   // Five bands follow the actual sampled shoreline; their phases give incoming, receding surf.
   for(let band=0;band<(software?3:5);band++){
     const geom=new THREE.BufferGeometry(),positions=new Float32Array(coast.length*2*3),indices=[];
