@@ -34,6 +34,8 @@ Future finance, education and healthcare projects include at least two additiona
 
 See [PROJECT_BUILD_BRIEF.md](./PROJECT_BUILD_BRIEF.md) and [PROJECT_LEDGER.json](./PROJECT_LEDGER.json) for requirements and actual evidence. Targets do not guarantee delivery. Preserve the deployment dry run below; it is excluded from daily counts.
 
+[PROJECT_ENGINEERING_DIRECTIONS.md](./PROJECT_ENGINEERING_DIRECTIONS.md) records the October 7 follow-up priorities for future systems, developer tooling, AI/ML internals, infrastructure and founder-oriented work, with assessable correctness, failure and performance evidence.
+
 ## Dry-run verification — October 2, 2026
 
 The original repository now drives Vercel project `oaks_october_1002`, root `WorkOrder-Triage`. Commit `8d15e3015de13ca3faf69b5fef19ef8f2fb77ddd` triggered production deployment `dpl_frxpX3Gohib9b6mpFDMT67xFSdv6`. Verified public page load, backend health, request creation with urgent scoring and explanation, resolve/reload persistence, resolved filter, reopening, and fictional sample loading. Policy and API-handler tests passed locally. CSV download verification timed out in the browser and is not claimed as verified; live invalid-input API behavior was not separately tested.

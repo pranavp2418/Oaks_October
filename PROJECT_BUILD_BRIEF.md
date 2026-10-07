@@ -2,6 +2,8 @@
 
 Build three distinct advanced, functional projects each day from October 7, 2026 through March 7, 2027 inclusive: 152 dates, target 456 projects. Targets are not completed deliveries.
 
+Starting October 8, use [PROJECT_ENGINEERING_DIRECTIONS.md](./PROJECT_ENGINEERING_DIRECTIONS.md) as the ideation and depth reference. Prioritize assessable custom cores and complete systems/AI/ML/developer/product workflows from those directions. Select concepts and industries autonomously, rotate across the collection, and document independent correctness/failure evidence and reproducible measurements where relevant. Preserve all requirements below; performance examples are targets, never invented measurements.
+
 Two use substantively different resume-grounded stacks; one uses a new core language/framework absent from the verified resume and supplied/accessible profile. Verify current demand for the new technology using fresh primary hiring or employer engineering sources and keep dated evidence privately. Rotate substantive resume skills and new technologies across runs, using relevant skills when they improve the work. Exactly two original feature opportunities are researched from currently hiring directory companies; inspiration stays private and implies no affiliation. Synthetic data must disclose seeds and limitations.
 
 Repository: pranavp2418/Oaks_October. Month folders: Oaks_October, Nebula_November, Drift_December, Janus_January, Flux_February, Mirage_March. Projects use YYYY-MM-DD-Name folders. Preserve existing dry runs and their evidence.

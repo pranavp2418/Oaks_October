@@ -582,5 +582,32 @@
       "additional_domain_capabilities",
       "applicable_verification_evidence"
     ]
+  },
+  "engineering_depth_policy": {
+    "effective_from": "2026-10-08",
+    "source": "User directions supplied October 7, 2026",
+    "reference": "PROJECT_ENGINEERING_DIRECTIONS.md",
+    "priority_families": [
+      "Developer tooling and language/runtime internals",
+      "Low-level systems, storage and search",
+      "Distributed infrastructure and streaming",
+      "AI retrieval, orchestration, evaluation and tracing",
+      "ML training, mathematical internals and inference optimization",
+      "GPU/HPC, edge, embedded and robotics",
+      "Financial execution and exact usage accounting",
+      "Frontend frameworks and decentralized systems",
+      "Founder infrastructure, workflow products and lawful distribution"
+    ],
+    "selection": "Choose the strongest three distinct concepts and industries autonomously; rotate families, cores and stacks across the collection",
+    "depth_gate": [
+      "Substantive custom core and explicit invariants",
+      "Complete usable workflow and realistic persistence/failure semantics",
+      "Independent correctness/reference oracles or appropriate evaluations",
+      "Reproducible benchmarks and named baseline where relevant",
+      "Honest runtime/hardware boundaries; no invented performance or customer claims"
+    ],
+    "orchestration_tools": "LangChain and LangGraph are eligible when they materially serve the workflow; meaningful core integration and evaluation required",
+    "prior_requirements_preserved": true,
+    "changes_existing_completion_records": false
   }
 }
