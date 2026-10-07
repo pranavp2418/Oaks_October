@@ -16,7 +16,10 @@
     "month": "2026-10",
     "live": "https://permitweave-20261007.vercel.app/",
     "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-PermitWeave",
-    "cover": "/assets/permitweave-cover.svg"
+    "cover": "/assets/permitweave-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true
   },
   {
     "title": "DeltaLens",
@@ -35,7 +38,10 @@
     "month": "2026-10",
     "live": "https://deltalens-20261007.vercel.app/",
     "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-DeltaLens",
-    "cover": "/assets/deltalens-cover.svg"
+    "cover": "/assets/deltalens-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true
   },
   {
     "title": "Kiln",
@@ -54,6 +60,9 @@
     "month": "2026-10",
     "live": "https://kiln-20261007.vercel.app/",
     "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-07-Kiln",
-    "cover": "/assets/kiln-cover.svg"
+    "cover": "/assets/kiln-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "new",
+    "embed": true
   }
 ]

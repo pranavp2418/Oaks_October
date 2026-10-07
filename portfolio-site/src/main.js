@@ -45,6 +45,8 @@ function closeDialog(dialog){dialog.close()}
 document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const p=projectData[button.dataset.project];const content=document.querySelector('#dialog-content');content.innerHTML=`<p class="eyebrow">${p.label}</p><h2 id="project-title">${p.title}</h2><p>${p.intro}</p><h3>${p.heading}</h3><ul>${p.points.map(x=>`<li>${x}</li>`).join('')}</ul><div class="tags">${p.stack.map(x=>`<span>${x}</span>`).join('')}</div><p style="margin-top:24px;font-size:12px">${p.note}</p>`;projectDialog.setAttribute('aria-labelledby','project-title');openDialog(projectDialog)}));
 [projectDialog].forEach(dialog=>{dialog.querySelector('.dialog-close').addEventListener('click',()=>closeDialog(dialog));dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog(dialog)}});dialog.addEventListener('close',()=>{document.body.style.overflow='';returnFocus?.focus()})});
 document.querySelector('#copy-email').addEventListener('click',async()=>{const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText('pranavp2418@gmail.com');status.textContent='Email copied.'}catch{status.textContent='pranavp2418@gmail.com'}setTimeout(()=>status.textContent='',6000)});
+const requestedProject=new URLSearchParams(location.search).get('project');
+if(['crm','recon'].includes(requestedProject))document.querySelector(`[data-project="${requestedProject}"]`)?.click();
 initCore(() => motion);
 window.dispatchEvent(new Event("portfolio-ready"));
 window.addEventListener('load',()=>ScrollTrigger.refresh());

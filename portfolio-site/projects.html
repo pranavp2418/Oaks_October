@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#091722"/>
+  <title>Projects — Pranav Patel's Atlas</title>
+  <meta name="description" content="Explore Pranav Patel's projects as an interactive 3D country. Fly between city districts, step inside a project, and let Pip show you around."/>
+  <link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="/assets/fonts.css"/>
+</head>
+<body class="atlas-page">
+  <a class="atlas-skip" href="#city-directory">Skip map and browse projects</a>
+  <header class="atlas-header">
+    <a class="atlas-brand" href="/" aria-label="Pranav Patel home">p<span>p</span><i></i></a>
+    <nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/projects.html" aria-current="page">Projects</a><a href="/#about">About</a><a href="/outside-tech.html">Outside tech</a></nav>
+    <a class="atlas-home" href="/">Back to portfolio</a>
+  </header>
+  <main id="city-main">
+    <div id="city-viewport" tabindex="0" role="region" aria-label="Interactive 3D project country. Drag to orbit, scroll or pinch to zoom. Arrow keys rotate, plus and minus zoom. Home returns to the country view.">
+      <div id="city-canvas"></div><div id="city-labels"></div>
+      <div id="city-loading" role="status"><span class="loading-orbit"></span><strong>Charting the country…</strong><p>Preparing your first view.</p></div>
+      <p id="city-render-message" hidden role="status"></p>
+    </div>
+    <section class="atlas-directory atlas-glass" id="city-directory" aria-labelledby="atlas-title">
+      <div class="directory-heading"><div><p class="atlas-eyebrow">PRANAV PATEL / PROJECT ATLAS</p><h1 id="atlas-title">Projects</h1></div><button id="directory-toggle" aria-expanded="true" aria-controls="directory-body" aria-label="Collapse project directory">−</button></div>
+      <p class="atlas-intro">A country built around the work.<br/>Choose a building. Step inside.</p>
+      <div id="directory-body">
+        <label class="atlas-search"><span class="sr-only">Search projects, domains and technologies</span><input id="city-search" type="search" placeholder="Find a project or technology…" autocomplete="off"/></label>
+        <div class="atlas-filters"><label><span class="sr-only">District</span><select id="city-district"><option value="all">All districts</option></select></label><label><span class="sr-only">Month</span><select id="city-month"><option value="all">All months</option></select></label></div>
+        <p id="city-count" class="atlas-count" role="status" aria-live="polite"></p>
+        <div id="city-project-list" class="atlas-project-list"></div>
+        <div id="city-pagination" class="atlas-pagination" hidden><button id="city-prev">Previous</button><span id="city-page"></span><button id="city-next">Next</button></div>
+      </div>
+    </section>
+    <div class="atlas-view-controls atlas-glass" role="group" aria-label="Map controls">
+      <button id="city-overview" title="Show the whole country (Home)">Country view</button><button id="city-top" title="View the terrain from above">Top down</button><button id="city-night" aria-pressed="false">Night</button><button id="city-motion" aria-pressed="false">Motion on</button>
+    </div>
+    <div class="atlas-zoom atlas-glass" role="group" aria-label="Zoom"><button id="city-zoom-in" aria-label="Zoom in">+</button><button id="city-zoom-out" aria-label="Zoom out">−</button></div>
+    <div class="atlas-coordinate"><span id="city-location">COUNTRY VIEW</span><span id="city-flight-status" role="status" aria-live="polite">Drag to orbit · scroll to zoom · right-drag to pan</span></div>
+    <section id="city-detail" class="atlas-detail atlas-glass" hidden aria-labelledby="city-detail-title"><button class="atlas-close" id="detail-close" aria-label="Close project details">×</button><div id="city-detail-content"></div></section>
+    <div class="atlas-minimap atlas-glass"><button id="city-north" title="Face north" aria-label="Face north">N</button><canvas id="city-minimap" width="230" height="155" aria-label="Country overview. Click a location to move the camera."></canvas><span>COUNTRY / TAP TO TRAVEL</span></div>
+    <aside id="city-pip" class="atlas-pip atlas-glass" aria-label="Pip city guide">
+      <button id="pip-city-toggle" class="atlas-pip-launcher" aria-expanded="true" aria-controls="pip-city-content"><img src="/assets/bot.svg" alt=""/><span><strong>Pip</strong><small>Your local guide</small></span><span class="pip-collapse">−</span></button>
+      <div id="pip-city-content"><p id="pip-city-answer" aria-live="polite">Welcome to the country. Tell me what you'd like to explore, and I'll take you there.</p><div id="pip-city-options" class="atlas-pip-options"><button data-pip="tour">Take a tour</button><button data-pip="healthcare">Care district</button><button data-pip="new technology">New technology</button></div><form id="pip-city-form"><label class="sr-only" for="pip-city-input">Ask Pip about the projects or city</label><input id="pip-city-input" placeholder="Take me to the Lua project…" maxlength="400" autocomplete="off"/><button type="submit" aria-label="Ask Pip">Go</button></form><p class="atlas-pip-note">Answers from the projects here. Your questions stay in this browser.</p></div>
+    </aside>
+    <p id="city-access-status" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <dialog id="city-preview" aria-labelledby="city-preview-title"><div class="preview-header"><div><p class="atlas-eyebrow">PROJECT INTERIOR</p><h2 id="city-preview-title"></h2></div><a id="city-preview-external" target="_blank" rel="noopener">Open in a new tab</a><button id="preview-close" aria-label="Close live project">×</button></div><p class="preview-note">The project's own workspace. If a site doesn't permit embedding, open it in a new tab.</p><div id="city-preview-frame"></div></dialog>
+  <script type="module" src="/src/city.js"></script>
+</body></html>
