@@ -43,7 +43,7 @@
         "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
         "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
         "browser_flows": [
-          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
+          "Capacity edit increased coverage 66→69; revision 1 survived reload",
           "Gap filter showed 14 baseline uncovered visits",
           "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
         ],
@@ -61,7 +61,9 @@
       "deployment_id": "dpl_B9fKze3SNYxWhHSRNdpHHCu6evht",
       "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
       "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
-      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+      "verified_at": "2026-10-07T21:14:57.828315+00:00",
+      "delivery_mode": "web_deployed",
+      "completion_ordinal": 1
     },
     {
       "date": "2026-10-07",
@@ -112,7 +114,9 @@
       "deployment_id": "dpl_6R9JdfTfZAXh22ZYzduzE6KsaSJb",
       "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
       "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
-      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+      "verified_at": "2026-10-07T21:14:57.828315+00:00",
+      "delivery_mode": "web_deployed",
+      "completion_ordinal": 2
     },
     {
       "date": "2026-10-07",
@@ -163,7 +167,9 @@
       "deployment_id": "dpl_CWpiSHdXVhksGCzZbZgbRYoFbeUM",
       "portfolio_deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
       "portfolio_source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
-      "verified_at": "2026-10-07T21:14:57.828315+00:00"
+      "verified_at": "2026-10-07T21:14:57.828315+00:00",
+      "delivery_mode": "web_deployed",
+      "completion_ordinal": 3
     }
   ],
   "dry_runs": [
@@ -277,7 +283,7 @@
         "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
         "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
         "browser_flows": [
-          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
+          "Capacity edit increased coverage 66→69; revision 1 survived reload",
           "Gap filter showed 14 baseline uncovered visits",
           "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
         ],
@@ -427,6 +433,47 @@
     "limits": [
       "Mobile browser viewport simulation; no physical device testing",
       "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
+    ]
+  },
+  "delivery_policy": {
+    "effective_from": "2026-10-07 follow-up; future projects",
+    "target_web_deployed_share": 0.9,
+    "target_github_only_share": 0.1,
+    "cadence": "Plan every tenth counted completion as GitHub-only; exclude dry runs and reconcile actual totals before ideation.",
+    "target_web_deployed_total": 411,
+    "target_github_only_total": 45,
+    "mode_selected_before_implementation": true,
+    "failed_deployment_reclassification_allowed": false,
+    "github_only_standard": "Complete useful native/CLI/library/engine/backend workflow, clean-environment setup, meaningful tests and input-to-output execution evidence, rerun/recovery checks, complete README and source push.",
+    "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
+    "completed_counts": {
+      "web_deployed": 3,
+      "github_only": 0,
+      "total": 3
+    }
+  },
+  "domain_depth_policy": {
+    "effective_from": "future projects after October 7 follow-up",
+    "industries": [
+      "finance/quant",
+      "education/edtech",
+      "healthcare/RCM"
+    ],
+    "minimum_additional_connected_capabilities": 2,
+    "requirement": "Substantial connected functionality beyond the main advanced core workflow; verify real state transitions and complete outcomes. Cosmetic screens or code length do not qualify."
+  },
+  "technology_policy": {
+    "resume_grounded_per_day": 2,
+    "substantive_new_core_per_day": 1,
+    "new_technology_absence_baseline": "Current verified resume and supplied/accessible profile",
+    "current_demand_verification": "Fresh primary hiring or employer engineering sources before future selection; dated private evidence, no unsupported demand claims.",
+    "rotation": "Track substantive resume-skill coverage and new core technologies across runs; use relevant available skills when useful.",
+    "future_project_fields": [
+      "delivery_mode",
+      "completion_ordinal",
+      "substantive_skill_coverage",
+      "additional_domain_capabilities",
+      "applicable_verification_evidence"
     ]
   }
 }

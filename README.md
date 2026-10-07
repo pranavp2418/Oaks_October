@@ -24,7 +24,11 @@ Status and actual deployment/portfolio verification are recorded in the ledger. 
 
 ## Collection plan
 
-Three distinct advanced projects per day, October 7, 2026 through March 7, 2027: 152 dates and a target of 456. Two resume-grounded stacks and one substantive new core language; different algorithms, domains, architectures and visual styles. Every project must pass local and live checks before completion. Portfolio integration follows only after all three pass.
+Three distinct advanced projects per day, October 7, 2026 through March 7, 2027: 152 dates and a target of 456. Two resume-grounded stacks and one substantive new core technology with verified current demand; different algorithms, domains, architectures and visual styles. Rotate relevant resume skills across the collection.
+
+Approximately 90% are web-deployed and 10% are complete GitHub-only tools, libraries or engines, generally every tenth completed project. All require complete workflows, documentation and meaningful local verification; deployed products also require live checks. GitHub-only portfolio entries use a clear code-only label, source link and reproducible walkthrough. Portfolio integration follows only after all three pass their applicable checks.
+
+Future finance, education and healthcare projects include at least two additional substantial connected capabilities beyond their main advanced core workflow, with verified state transitions and outcomes.
 
 See [PROJECT_BUILD_BRIEF.md](./PROJECT_BUILD_BRIEF.md) and [PROJECT_LEDGER.json](./PROJECT_LEDGER.json) for requirements and actual evidence. Targets do not guarantee delivery. Preserve the deployment dry run below; it is excluded from daily counts.
 
