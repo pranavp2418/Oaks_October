@@ -57,7 +57,7 @@ Pip is a local data-aware city guide. It matches project names, domains, technol
 
 Append verified daily entries to `public/projects.json`; the original archive and project country consume that same file. Preserve existing slugs. Include `classification`, `delivery_mode`, date/month, purpose, stack, verified source/live links and cover. Optional `city: { district, archetype }` overrides the deterministic domain mapping. `public/featured-projects.json` contains the existing flagship/legacy projects and historical dry run. Do not duplicate those in the daily manifest.
 
-Districts group care, finance/CRM, creative products, infrastructure, industry, education and civic/property work. Collision resolution keeps lots unique, and appending entries preserves previous project positions. Directory pagination and capped visible map labels support a growing collection; supporting scenery uses instancing. The city renderer is loaded only on this page. A directory fallback remains usable if WebGL cannot start. Large terrain models, textures and live demos are not loaded on the home page for this feature.
+Districts group care, finance/CRM, creative products, infrastructure, industry, education and civic/property work. Collision resolution keeps lots unique, and appending entries preserves previous project positions. Directory pagination and capped visible map labels support a growing collection; supporting scenery uses GPU instancing or merged software meshes. The city renderer is loaded only on this page. The software 3D mode and directory remain usable if WebGL cannot start. Large terrain models, textures and live demos are not loaded on the home page for this feature.
 
 ```bash
 node --test tests/city-model.test.js

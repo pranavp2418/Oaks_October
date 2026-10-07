@@ -43,7 +43,7 @@
         "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
         "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
         "browser_flows": [
-          "Capacity edit increased coverage 66→69; revision 1 survived reload",
+          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
           "Gap filter showed 14 baseline uncovered visits",
           "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
         ],
@@ -226,7 +226,8 @@
     "first_run_verified": true,
     "linkedin": "drafts_only",
     "supabase": "excluded_pending_account_email_verification",
-    "target_per_day": 3
+    "target_per_day": 3,
+    "portfolio_country_maintenance": "included in existing enabled build task; original schedule preserved"
   },
   "runs": [
     {
@@ -283,7 +284,7 @@
         "clean_install_build": "npm ci --ignore-scripts && npm run build passed",
         "live_api": "HTTP 200 valid input, HTTP 400 invalid input, repeated response equality (excluding measured elapsed time)",
         "browser_flows": [
-          "Capacity edit increased coverage 66→69; revision 1 survived reload",
+          "Capacity edit increased coverage 66\u219269; revision 1 survived reload",
           "Gap filter showed 14 baseline uncovered visits",
           "390px iframe mobile viewport edit saved revision 2; no horizontal overflow"
         ],
@@ -418,8 +419,8 @@
   "portfolio": {
     "path": "portfolio-site",
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-    "deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
-    "source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+    "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
+    "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
     "alias": "https://pranav-patel.vercel.app/",
     "verification": [
       "3 entries and all source/live links visible",
@@ -428,12 +429,118 @@
       "Mobile search and project dialog passed; 390px viewport no horizontal overflow",
       "CraftsmanAI Design workflow still worked",
       "Distinct SVG covers; lazy media and opt-in live embeds",
-      "Original source/assets preserved, film reconstructed with SHA256 verification"
+      "Original source/assets preserved, film reconstructed with SHA256 verification",
+      "Separate Projects header link opens the public 3D country",
+      "Existing archive still shows 3 daily entries on production; original CraftsmanAI Design and CRM walkthrough passed on identical-source preview"
     ],
     "limits": [
       "Mobile browser viewport simulation; no physical device testing",
       "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
-    ]
+    ],
+    "history": [
+      {
+        "path": "portfolio-site",
+        "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+        "deployment_id": "dpl_3X9RE7Lfun5S2Bbo1jTg1vJwM3oG",
+        "source_commit": "100a8e05681fbec590bda50ee0590784a31fe9c2",
+        "alias": "https://pranav-patel.vercel.app/",
+        "verification": [
+          "3 entries and all source/live links visible",
+          "Month/search filter, singular count and reset passed",
+          "Kiln live iframe returned optimal result",
+          "Mobile search and project dialog passed; 390px viewport no horizontal overflow",
+          "CraftsmanAI Design workflow still worked",
+          "Distinct SVG covers; lazy media and opt-in live embeds",
+          "Original source/assets preserved, film reconstructed with SHA256 verification"
+        ],
+        "limits": [
+          "Mobile browser viewport simulation; no physical device testing",
+          "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
+        ]
+      }
+    ],
+    "city": {
+      "status": "published; software 3D main workflows verified",
+      "published_at": "2026-10-07T22:49:54.993107+00:00",
+      "path": "portfolio-site/projects.html",
+      "url": "https://pranav-patel.vercel.app/projects.html",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
+      "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
+      "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
+      "preview_deployment_id": "dpl_2b8N9WBptauXZFdMGhzGZuUD5JpU",
+      "counted_daily_project": false,
+      "catalog_entries": 7,
+      "daily_entries": 3,
+      "shared_daily_manifest": "portfolio-site/public/projects.json",
+      "featured_manifest": "portfolio-site/public/featured-projects.json",
+      "stack": [
+        "Three.js",
+        "Vite",
+        "JavaScript",
+        "SVGRenderer",
+        "OrbitControls"
+      ],
+      "implementation": [
+        "Procedural coastal country and mountains; connected seven-district roads",
+        "Stable collision-resolved project lots; append preserves existing positions",
+        "Distinct project buildings, directory/month/domain/stack search, opt-in real embeds",
+        "Local catalog-aware Pip matching and shortest-road robot navigation",
+        "WebGL2 physically based materials, reflective water, shadows, environment and bloom; software 3D alternative"
+      ],
+      "verification": [
+        {
+          "command": "npm ci --ignore-scripts --offline",
+          "result": "pass; clean dependency install"
+        },
+        {
+          "command": "node --test tests/city-model.test.js",
+          "result": "5 tests passed; catalog/links, Pip, independent shortest-path oracle, 456 unique lots with append stability, unsafe URL/code-only semantics"
+        },
+        {
+          "command": "npm run build",
+          "result": "pass; known Three.js 503.57kB chunk warning"
+        },
+        {
+          "command": "git diff --check",
+          "result": "pass"
+        },
+        {
+          "check": "Final preview desktop",
+          "result": "Real software 3D terrain rendered; drag orbit, zoom, top-down, day/night, directory Lua filter, Pip selection/camera/arrival and real Kiln embed passed"
+        },
+        {
+          "check": "Final preview mobile",
+          "result": "390x844 viewport simulation; full-country framing, no horizontal overflow, Pip Python healthcare route, details and real PermitWeave embed passed"
+        },
+        {
+          "check": "Original portfolio",
+          "result": "CraftsmanAI Design workflow, CRM original modal and daily archive filter/reset passed on final-source preview; production original archive remained 3 entries"
+        },
+        {
+          "check": "Production alias",
+          "result": "Public projects.html rendered; Projects header round trip passed; 7 entries across 6 occupied districts; Pip Lua route arrived; embedded real Kiln returned optimal sequence proven (88 nodes)"
+        },
+        {
+          "check": "Vercel source",
+          "result": "READY production metadata and project latest deployment match source 87b1613e300d07b5716cbcd18504e1de88598acb; alias pranav-patel.vercel.app; build logs show build and deployment completed"
+        },
+        {
+          "check": "Keyboard",
+          "result": "Public map accepted ArrowLeft and retained usable focus; controls have accessible labels"
+        }
+      ],
+      "evidence_report": "runs/evidence/2026-10-07-project-country.md",
+      "screenshot": "runs/evidence/2026-10-07-project-country.jpg",
+      "gpu_visual_verified": false,
+      "limits": [
+        "Browser WebGL vendor is Disabled; GPU materials, shadows, reflective water and bloom could not be visually verified. Software SVGRenderer 3D mode is visibly verified.",
+        "Mobile testing used an iframe viewport harness, not a physical device; pinch gesture and touch performance are unverified.",
+        "Pip is a local portfolio guide using catalog matching, not an unrestricted remote AI assistant.",
+        "Terrain and buildings are procedural artwork, not geographic survey, photogrammetry or real project offices.",
+        "External sites may forbid iframe embedding; new-tab links remain available."
+      ],
+      "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief"
+    }
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",

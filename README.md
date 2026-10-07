@@ -22,6 +22,8 @@ WorkOrder Triage is a deployment dry run, not part of the daily intermediate/adv
 
 Status and actual deployment/portfolio verification are recorded in the ledger. All datasets are synthetic. Complete recovered [portfolio source](./portfolio-site) is now durable in this repository.
 
+The portfolio also includes a separate [Projects country](https://pranav-patel.vercel.app/projects.html): interactive 3D terrain, district-based project buildings, source/demo details and Pip's local navigation. It uses the same daily project manifest as the existing archive, preserving the landing-page flow. This enhancement is not a counted daily project.
+
 ## Collection plan
 
 Three distinct advanced projects per day, October 7, 2026 through March 7, 2027: 152 dates and a target of 456. Two resume-grounded stacks and one substantive new core technology with verified current demand; different algorithms, domains, architectures and visual styles. Rotate relevant resume skills across the collection.
