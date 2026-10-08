@@ -5,7 +5,7 @@ import {createCatalog,assignBuildings,findProjects,DISTRICTS,ROAD_LINKS,routeBet
 const read=name=>JSON.parse(fs.readFileSync(new URL('../public/'+name,import.meta.url)));
 const catalog=assignBuildings(createCatalog(read('projects.json'),read('featured-projects.json')));
 test('all existing work is discoverable without duplicate IDs or invented deployments',()=>{
-  assert.equal(catalog.length,8);assert.equal(new Set(catalog.map(p=>p.slug)).size,8);
+  const expected=new Set([...read('projects.json'),...read('featured-projects.json')].map(p=>p.slug)).size;assert.equal(catalog.length,expected);assert.equal(new Set(catalog.map(p=>p.slug)).size,expected);
   assert.equal(catalog.find(p=>p.slug==='jmcrm-ai').live,'https://jmcrm-ai-copilot.vercel.app/');
   assert.equal(catalog.find(p=>p.slug==='reconciliation-engine').live,'https://reconciliation-engine-pranav.vercel.app/');
   for(const p of catalog)assert.ok(p.live||p.source||p.walkthrough);
@@ -18,6 +18,9 @@ test('Pip finds purpose, language and combined intent',()=>{
   assert.equal(findProjects('release latency telemetry',catalog)[0].slug,'deltalens');
   assert.equal(findProjects('sales revenue CRM',catalog)[0].slug,'jmcrm-ai');
   assert.equal(findProjects('news sentiment machine learning',catalog)[0].slug,'market-news-sentiments');
+  assert.equal(findProjects('Rust checkpoint',catalog)[0].slug,'tidemark');
+  assert.equal(findProjects('BM25 citations',catalog)[0].slug,'foliotrace');
+  assert.equal(findProjects('typed packing policies',catalog)[0].slug,'dockproof');
   assert.equal(findProjects('zzzz nonexistent',catalog).length,0);
 });
 test('every district has a shortest navigable route, checked against exhaustive simple paths',()=>{
@@ -40,7 +43,7 @@ test('catalog rejects unsafe URLs and suppresses live links for code-only produc
 });
 
 test('legacy upgrades follow the existing three cards, preserve city lots and have complete links/covers',()=>{
-  const daily=read('projects.json'),featured=read('featured-projects.json');assert.deepEqual(daily.map(x=>x.slug),['permitweave','deltalens','kiln','jmcrm-ai','reconciliation-engine','market-news-sentiments']);
+  const daily=read('projects.json'),featured=read('featured-projects.json');assert.deepEqual(daily.slice(0,6).map(x=>x.slug),['permitweave','deltalens','kiln','jmcrm-ai','reconciliation-engine','market-news-sentiments']);
   for(const p of daily.slice(3,5)){assert.ok(p.live&&p.source&&p.cover&&p.embed);assert.equal(p.counted_daily_project,false);assert.equal(p.legacy_upgrade,true);assert.ok(fs.existsSync(new URL('../public'+p.cover,import.meta.url)));}
   assert.equal(featured.some(p=>['jmcrm-ai','reconciliation-engine'].includes(p.slug)),false);
   assert.equal(featured.find(p=>p.slug==='craftsmanai').cover,'/assets/craftsmanai-island-logo.png');

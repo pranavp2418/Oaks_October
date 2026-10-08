@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
   "title": "FolioTrace",
-  "status": "live_verified",
+  "status": "live_verified_integration_pending",
   "tests": {
     "passed": 11,
     "command": "npm test",
@@ -26,6 +26,6 @@
   "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
   "project_id": "prj_VD2b0dQO6plII4h1e0DebCLH86Ju",
   "delivery_mode": "web_deployed",
-  "portfolio_integration": "pending_all_three",
-  "updated_at": "2026-10-08T20:47:59.494209+00:00"
+  "portfolio_integration": "source_prepared_production_pending",
+  "updated_at": "2026-10-08T22:59:11.520839+00:00"
 }

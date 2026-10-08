@@ -154,5 +154,83 @@
       "district": "commerce",
       "archetype": "exchange"
     }
+  },
+  {
+    "title": "DockProof",
+    "slug": "dockproof",
+    "domain": "Logistics compliance",
+    "stack": [
+      "TypeScript",
+      "Node.js",
+      "Bytecode VM"
+    ],
+    "description": "Compile typed packing policies, compare shipment impact, and approve passing cartons with traceable review.",
+    "details": "Typed AST, constant folding and a stack VM checked against an independent interpreter; policy and carton changes invalidate affected approvals. Synthetic cartons; browser-saved revision journal.",
+    "visual": "Policy \u2192 Proof",
+    "theme": "dockproof",
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "live": "https://dockproof-20261008.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-DockProof",
+    "cover": "/assets/dockproof-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "city": {
+      "district": "industry",
+      "archetype": "factory"
+    }
+  },
+  {
+    "title": "FolioTrace",
+    "slug": "foliotrace",
+    "domain": "Document operations",
+    "stack": [
+      "Python",
+      "SQLite",
+      "BM25"
+    ],
+    "description": "Search source regions with explainable scores and publish reviewed document corrections.",
+    "details": "Custom incremental postings, numeric BM25 reference and versioned page/box citations; draft correction, review and publication gates. Synthetic source documents; browser-saved journal.",
+    "visual": "Region \u2192 Citation",
+    "theme": "foliotrace",
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "live": "https://foliotrace-20261008.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-FolioTrace",
+    "cover": "/assets/foliotrace-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "city": {
+      "district": "learning",
+      "archetype": "campus"
+    }
+  },
+  {
+    "title": "Tidemark",
+    "slug": "tidemark",
+    "domain": "Industrial telemetry",
+    "stack": [
+      "Rust",
+      "WebAssembly",
+      "Binary codec"
+    ],
+    "description": "Process event-time windows, review alerts and recover exact telemetry state from compact checkpoints.",
+    "details": "Actual Rust WASM, monotonic watermarks, late-data quarantine, duplicate/conflict fencing and checksummed delta codec. Independent window oracle and recovery tests. Synthetic stream; browser persistence, no physical-device claims.",
+    "visual": "Stream \u2192 Checkpoint",
+    "theme": "tidemark",
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "live": "https://tidemark-20261008.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Tidemark",
+    "cover": "/assets/tidemark-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "new",
+    "embed": true,
+    "city": {
+      "district": "infrastructure",
+      "archetype": "signal"
+    }
   }
 ]

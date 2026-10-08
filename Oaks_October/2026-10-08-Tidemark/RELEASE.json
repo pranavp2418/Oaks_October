@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
   "title": "Tidemark",
-  "status": "local_verified_deployment_blocked",
+  "status": "live_verified_integration_pending",
   "native_tests": {
     "passed": 12,
     "command": "cargo test --locked"
@@ -11,16 +11,28 @@
     "command": "npm test",
     "core": "Actual Rust WASM module; independent JavaScript window oracle"
   },
-  "deployment": null,
+  "deployment": "dpl_BHZFBdJTC5HLWUP1KfMJyHEosG2D",
   "integration": "pending trio",
   "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
   "project_id": "prj_kDY3QFAhh0mBm3VKotbBSaERwnqr",
   "delivery_mode": "web_deployed",
-  "portfolio_integration": "pending_all_three",
-  "updated_at": "2026-10-08T20:47:59.494209+00:00",
-  "deployed_source_commit": null,
-  "live_url": null,
-  "blocker": {
+  "portfolio_integration": "source_prepared_production_pending",
+  "updated_at": "2026-10-08T22:59:11.520839+00:00",
+  "deployed_source_commit": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
+  "live_url": "https://tidemark-20261008.vercel.app/",
+  "browser_verification": "Desktop and 390px iframe core workflows passed; file-import observer stalled",
+  "browser": [
+    "Desktop ingested event 901: accepted 36 to 37; advanced watermark to 240: finalized 6 to 10",
+    "Empty alert review note rejected at revision 40; meaningful review acknowledged alert at revision 41",
+    "Checkpoint & resume preserved windows/watermark; reload retained reviewed window and revision 41",
+    "Corrupt snapshot rejected with checksum mismatch without changing saved engine",
+    "Exact repeated event retained accepted=37 and raised duplicates=2 at revision 42; changed event body rejected without changing revision",
+    "Checkpoint download completed; browser file-import observer stalled, so file-import UI path unverified",
+    "390x844 iframe recovery retained revision 42; html clientWidth=scrollWidth=375; mobile corrupt checkpoint rejection passed"
+  ],
+  "wasm_sha256": "b3a2ea0584a4a019e254d64b9c0c6228146600cd75681a1af99a0497b424c85c",
+  "first_verified_deployment": "dpl_C6nH6KuzmD649LfrfpSjZ87Xzach",
+  "historical_api_quota_blocker": {
     "stage": "deployment",
     "service": "Vercel",
     "code": "api-deployments-free-per-day",
@@ -36,5 +48,5 @@
     "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
     "paid_upgrade": false
   },
-  "browser_verification": "Not performed: initial hosted deployment blocked; local actual-WASM tests passed"
+  "quota_resolution": "Normal Git-connected deployments subsequently completed; no plan/team/provider change"
 }

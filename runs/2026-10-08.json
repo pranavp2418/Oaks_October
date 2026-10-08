@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
   "owner": "build-606d56d2-ace7-41e0-9c0f-518419b77c91",
-  "status": "blocked_transient",
+  "status": "portfolio_release_pending",
   "started_at": "2026-10-08T20:17:12.495801+00:00",
   "lease_expires_at": "2026-10-08T20:47:59.494209+00:00",
   "target": 3,
@@ -9,7 +9,7 @@
   "projects": [
     {
       "title": "DockProof",
-      "stage": "final_source_deployment_blocked",
+      "stage": "live_verified_integration_pending",
       "classification": "resume",
       "stack": [
         "TypeScript",
@@ -20,7 +20,7 @@
     },
     {
       "title": "FolioTrace",
-      "stage": "live_verified",
+      "stage": "live_verified_integration_pending",
       "classification": "resume",
       "stack": [
         "Python",
@@ -31,7 +31,7 @@
     },
     {
       "title": "Tidemark",
-      "stage": "initial_deployment_blocked",
+      "stage": "live_verified_integration_pending",
       "classification": "new",
       "stack": [
         "Rust",
@@ -41,7 +41,23 @@
       "planned_ordinal": 6
     }
   ],
-  "blockers": [
+  "blockers": [],
+  "baseline_commit": "83f049650cff48eb88c8f80883abe298f40613cf",
+  "legacy_projects_excluded": [
+    "JMCRM-AI Revenue Copilot",
+    "Reconciliation Engine"
+  ],
+  "updated_at": "2026-10-08T22:59:11.520839+00:00",
+  "lease_released_at": "2026-10-08T20:47:59.494209+00:00",
+  "local_verified_projects": 3,
+  "live_workflow_verified_projects": 3,
+  "portfolio_integration": "source_prepared_production_pending",
+  "source_release_commits": [
+    "0e6d732bb947263fb9500f32a3d55949ca361121",
+    "4329142108a853c6a345d908717c43f870029982",
+    "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4"
+  ],
+  "historical_blockers": [
     {
       "stage": "deployment",
       "service": "Vercel",
@@ -58,20 +74,5 @@
       "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
       "paid_upgrade": false
     }
-  ],
-  "baseline_commit": "83f049650cff48eb88c8f80883abe298f40613cf",
-  "legacy_projects_excluded": [
-    "JMCRM-AI Revenue Copilot",
-    "Reconciliation Engine"
-  ],
-  "updated_at": "2026-10-08T20:47:59.494209+00:00",
-  "lease_released_at": "2026-10-08T20:47:59.494209+00:00",
-  "local_verified_projects": 3,
-  "live_workflow_verified_projects": 2,
-  "portfolio_integration": "pending_all_three",
-  "source_release_commits": [
-    "0e6d732bb947263fb9500f32a3d55949ca361121",
-    "4329142108a853c6a345d908717c43f870029982",
-    "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4"
   ]
 }

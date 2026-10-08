@@ -1,6 +1,6 @@
 {
-  "status": "prepared_not_applied",
-  "gate": "All three final source deployments and applicable live/browser checks must pass before append",
+  "status": "applied_to_source_not_published",
+  "gate": "All three hosted core checks passed; production portfolio verification pending",
   "entries": [
     {
       "title": "DockProof",
@@ -51,7 +51,7 @@
       "classification": "new",
       "delivery_mode": "web_deployed",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Tidemark",
-      "live_url": null,
+      "live_url": "https://tidemark-20261008.vercel.app/",
       "cover": "Oaks_October/2026-10-08-Tidemark/cover.svg"
     }
   ]
