@@ -1,0 +1,513 @@
+{
+  "documents": [
+    {
+      "id": "F01",
+      "title": "Sensor installation guide",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Mount the vibration sensor on the pump housing. Avoid the rotating shaft."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Calibrate vibration baseline after mounting. Record temperature every minute."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "A sealed connector prevents moisture ingress during outdoor service."
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "Battery field note",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Battery health falls in cold weather. Charge cells before inspection."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Inspect terminals for corrosion. Replace the battery if voltage falls below threshold."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Keep spare batteries in a dry cabinet."
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "title": "Warehouse packing note",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Carton labels must be legible. Count units before sealing cartons."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Use shock isolation for fragile glass instruments."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Record packed weight and carrier reference."
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "title": "Pump maintenance log",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "The pump bearing shows elevated vibration at high speed."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Stop the pump before bearing replacement. Verify pressure is relieved."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "A loose mount can produce false vibration readings."
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "title": "Coastal enclosure manual",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Outdoor enclosures require moisture seals and corrosion protection."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Salt spray damages unprotected terminals. Inspect monthly."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Ventilation reduces temperature inside the enclosure."
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "title": "Network recovery sheet",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Retry failed sensor uploads with exponential backoff."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Persist checkpoints before restarting the gateway. Replay event IDs once."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Disconnected gateways buffer timestamped events."
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "Optical inspection guide",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Lens dust reduces image contrast. Clean optical surfaces."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Use stable lighting during inspection."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Record focus settings before replacing the camera."
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "title": "Cabinet airflow guide",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Monitor cabinet temperature near the fan intake."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Airflow blockage increases thermal stress on electronics."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Replace filters when pressure drop rises."
+        }
+      ]
+    },
+    {
+      "id": "F09",
+      "title": "Valve service note",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Verify valve position before pressure calibration."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Use a torque wrench on the valve stem."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "A leaking seal causes pressure drift."
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "title": "Data retention procedure",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Archive reviewed inspection records after thirty days."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Keep document versions and source page references."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Draft corrections require review before publication."
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "title": "Cable routing handbook",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Route signal cables away from power cables."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Ground shielding at the gateway to reduce electrical noise."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Inspect cable insulation after maintenance."
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "title": "Rotor balance procedure",
+      "blocks": [
+        {
+          "id": "B1",
+          "page": 1,
+          "box": [
+            0.06,
+            0.12,
+            0.46,
+            0.28
+          ],
+          "text": "Rotor imbalance appears as periodic vibration."
+        },
+        {
+          "id": "B2",
+          "page": 1,
+          "box": [
+            0.06,
+            0.32999999999999996,
+            0.46,
+            0.49
+          ],
+          "text": "Balance the rotor after replacing heavy components."
+        },
+        {
+          "id": "B3",
+          "page": 1,
+          "box": [
+            0.54,
+            0.12,
+            0.94,
+            0.4
+          ],
+          "text": "Verify bearing condition before a balance run."
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "query": "pump bearing vibration",
+  "mode": "any",
+  "qrels": [
+    {
+      "query": "pump bearing vibration",
+      "relevant": [
+        "F04"
+      ]
+    },
+    {
+      "query": "battery corrosion",
+      "relevant": [
+        "F02"
+      ]
+    },
+    {
+      "query": "gateway checkpoint retry",
+      "relevant": [
+        "F06"
+      ]
+    },
+    {
+      "query": "rotor balance",
+      "relevant": [
+        "F12"
+      ]
+    },
+    {
+      "query": "cabinet airflow temperature",
+      "relevant": [
+        "F08"
+      ]
+    },
+    {
+      "query": "document draft review",
+      "relevant": [
+        "F10"
+      ]
+    }
+  ]
+}

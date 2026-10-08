@@ -1,0 +1,1 @@
+{"name":"foliotrace","private":true,"version":"1.0.0","type":"module","scripts":{"test":"python3 -m unittest discover -s tests -v","build":"node build.mjs","start":"python3 local.py"}}

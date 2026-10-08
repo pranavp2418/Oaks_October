@@ -1,0 +1,1 @@
+{"date":"2026-10-08","title":"FolioTrace","status":"local_verified","tests":{"passed":11,"command":"npm test","evidence":["independent BM25 reference","SQLite candidate oracle","incremental rebuild equivalence","actual HTTP failure/replay checks"]},"deployment":null,"integration":"pending trio"}
