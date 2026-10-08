@@ -1,0 +1,377 @@
+{
+  "seed": 8102026,
+  "synthetic": true,
+  "asOf": "2026-10-08",
+  "books": [
+    {
+      "id": "B001",
+      "reference": "INV-0001",
+      "date": "2026-09-15",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "675.97"
+    },
+    {
+      "id": "B002",
+      "reference": "INV-0002",
+      "date": "2026-09-16",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "569.35"
+    },
+    {
+      "id": "B003",
+      "reference": "INV-0003",
+      "date": "2026-09-17",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "366.96"
+    },
+    {
+      "id": "B004",
+      "reference": "INV-0004",
+      "date": "2026-09-18",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "160.72"
+    },
+    {
+      "id": "B005",
+      "reference": "INV-0005",
+      "date": "2026-09-19",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "796.76"
+    },
+    {
+      "id": "B006",
+      "reference": "INV-0006",
+      "date": "2026-09-20",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "664.17"
+    },
+    {
+      "id": "B007",
+      "reference": "INV-0007",
+      "date": "2026-09-21",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "635.54"
+    },
+    {
+      "id": "B008",
+      "reference": "INV-0008",
+      "date": "2026-09-22",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "527.11"
+    },
+    {
+      "id": "B009",
+      "reference": "INV-0009",
+      "date": "2026-09-23",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "603.20"
+    },
+    {
+      "id": "B010",
+      "reference": "INV-0010",
+      "date": "2026-09-24",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "622.10"
+    },
+    {
+      "id": "B011",
+      "reference": "INV-0011",
+      "date": "2026-09-25",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "216.92"
+    },
+    {
+      "id": "B012",
+      "reference": "INV-0012",
+      "date": "2026-09-26",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "655.91"
+    },
+    {
+      "id": "B013",
+      "reference": "INV-0013",
+      "date": "2026-09-27",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "509.75"
+    },
+    {
+      "id": "B014",
+      "reference": "INV-0014",
+      "date": "2026-09-28",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "631.43"
+    },
+    {
+      "id": "B015",
+      "reference": "INV-0015",
+      "date": "2026-09-29",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "525.28"
+    },
+    {
+      "id": "B016",
+      "reference": "INV-0016",
+      "date": "2026-09-30",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "523.78"
+    },
+    {
+      "id": "B017",
+      "reference": "INV-0017",
+      "date": "2026-10-01",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "462.80"
+    },
+    {
+      "id": "B018",
+      "reference": "INV-0018",
+      "date": "2026-10-02",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "632.05"
+    },
+    {
+      "id": "B001",
+      "reference": "INV-0001",
+      "date": "2026-09-15",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "675.97"
+    }
+  ],
+  "bank": [
+    {
+      "id": "S001",
+      "reference": "inv 0001",
+      "date": "2026-09-15",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "675.97"
+    },
+    {
+      "id": "S002",
+      "reference": "inv 0002",
+      "date": "2026-09-17",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "569.35"
+    },
+    {
+      "id": "S003",
+      "reference": "inv 0003",
+      "date": "2026-09-19",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "366.96"
+    },
+    {
+      "id": "S004",
+      "reference": "inv 0004",
+      "date": "2026-09-18",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "160.72"
+    },
+    {
+      "id": "S005",
+      "reference": "inv 0005",
+      "date": "2026-09-20",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "796.76"
+    },
+    {
+      "id": "S006",
+      "reference": "inv 0006",
+      "date": "2026-09-22",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "664.17"
+    },
+    {
+      "id": "S007",
+      "reference": "inv 0007",
+      "date": "2026-09-21",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "635.54"
+    },
+    {
+      "id": "S008",
+      "reference": "inv 0008",
+      "date": "2026-09-23",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "527.11"
+    },
+    {
+      "id": "S009",
+      "reference": "inv 0009",
+      "date": "2026-09-25",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "603.20"
+    },
+    {
+      "id": "S010",
+      "reference": "inv 0010",
+      "date": "2026-09-24",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "622.10"
+    },
+    {
+      "id": "S011",
+      "reference": "inv 0011",
+      "date": "2026-09-26",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "216.92"
+    },
+    {
+      "id": "S012",
+      "reference": "inv 0012",
+      "date": "2026-09-28",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "655.91"
+    },
+    {
+      "id": "S013",
+      "reference": "inv 0013",
+      "date": "2026-09-27",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "509.75"
+    },
+    {
+      "id": "S014",
+      "reference": "inv 0014",
+      "date": "2026-09-29",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "631.43"
+    },
+    {
+      "id": "S015",
+      "reference": "inv 0015",
+      "date": "2026-10-01",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "525.26"
+    },
+    {
+      "id": "S020",
+      "reference": "UNALLOCATED-1",
+      "date": "2026-10-01",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "175.00"
+    },
+    {
+      "id": "S021",
+      "reference": "INV-0016",
+      "date": "2026-10-01",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "523.78"
+    },
+    {
+      "id": "S022",
+      "reference": "INV-0016",
+      "date": "2026-10-01",
+      "account": "OPERATING",
+      "currency": "USD",
+      "amount": "523.78"
+    }
+  ],
+  "prices": [
+    {
+      "sku": "GOLD-14K",
+      "date": "2026-09-01",
+      "price": "42.00"
+    },
+    {
+      "sku": "GOLD-14K",
+      "date": "2026-09-20",
+      "price": "44.50"
+    },
+    {
+      "sku": "GOLD-14K",
+      "date": "2026-10-10",
+      "price": "48.00"
+    },
+    {
+      "sku": "STONE-OVAL",
+      "date": "2026-09-01",
+      "price": "125.00"
+    }
+  ],
+  "movements": [
+    {
+      "id": "R01",
+      "sku": "GOLD-14K",
+      "date": "2026-09-16",
+      "type": "receipt",
+      "quantity": 30,
+      "unitCost": "42.00"
+    },
+    {
+      "id": "R02",
+      "sku": "GOLD-14K",
+      "date": "2026-09-22",
+      "type": "receipt",
+      "quantity": 20,
+      "unitCost": "44.50"
+    },
+    {
+      "id": "I01",
+      "sku": "GOLD-14K",
+      "date": "2026-09-25",
+      "type": "issue",
+      "quantity": 37,
+      "unitCost": "43.00"
+    },
+    {
+      "id": "R03",
+      "sku": "STONE-OVAL",
+      "date": "2026-09-20",
+      "type": "receipt",
+      "quantity": 10,
+      "unitCost": "124.00"
+    },
+    {
+      "id": "I02",
+      "sku": "STONE-OVAL",
+      "date": "2026-09-27",
+      "type": "issue",
+      "quantity": 14,
+      "unitCost": "125.00"
+    },
+    {
+      "id": "R04",
+      "sku": "CHAIN-NEW",
+      "date": "2026-09-26",
+      "type": "receipt",
+      "quantity": 8,
+      "unitCost": "90.00"
+    }
+  ]
+}

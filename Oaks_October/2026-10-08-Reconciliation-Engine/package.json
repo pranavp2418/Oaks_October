@@ -1,0 +1,1 @@
+{"name":"reconciliation-engine-portfolio","version":"1.0.0","type":"module","private":true,"scripts":{"build":"node scripts/build.js","test":"python -m unittest discover -s tests -v","start":"python scripts/dev.py"},"engines":{"node":"24.x"}}
