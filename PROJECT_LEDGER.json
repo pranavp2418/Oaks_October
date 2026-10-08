@@ -948,7 +948,10 @@
       "daily_manifest_entries": 5,
       "oct8_new_trio_entries": 0
     },
-    "pending_run": "2026-10-08"
+    "pending_run": "2026-10-08",
+    "pending_existing_projects": [
+      "market-news-sentiments"
+    ]
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
@@ -1211,6 +1214,53 @@
         "runs/evidence/2026-10-08-legacy-cards-public.jpg",
         "runs/evidence/2026-10-08-island-logo-public.jpg"
       ]
+    }
+  ],
+  "existing_project_integrations": [
+    {
+      "title": "Market Analysis on News Sentiments",
+      "slug": "market-news-sentiments",
+      "type": "existing_research_project_integration",
+      "date": "2026-10-08",
+      "original_project_date": "2024-11-10",
+      "counted_daily_project": false,
+      "source_url": "https://github.com/pranavp2418/Market-Analysis-on-News-Sentiments",
+      "source_review_commit": "47d5861fe888d63bea2a3b0eaa12356fae618306",
+      "documentation_commit": "4feb9e29ebf493ac7f1f475e04d3a085516d7891",
+      "delivery_mode": "github_only",
+      "status": "portfolio_source_verified_release_pending",
+      "portfolio_manifest": "portfolio-site/public/projects.json",
+      "portfolio_cover": "portfolio-site/public/assets/market-news-cover.svg",
+      "portfolio_surfaces": [
+        "homepage_archive",
+        "projects_island",
+        "pip_project_search"
+      ],
+      "verified_source_features": [
+        "per-ticker sentiment count CSVs",
+        "technical feature and sentiment date joins",
+        "logistic regression, decision trees, random forests, XGBoost",
+        "maximum-score ensemble",
+        "2018-2022 training, 2023 test, 2024+ out-of-sample source windows",
+        "archived plots and return exports"
+      ],
+      "local_validation": {
+        "tests_command": "node --test tests/*.test.js (portfolio-site)",
+        "passed": 18,
+        "failed": 0,
+        "build": "npm run build passed"
+      },
+      "limits": [
+        "Current source feature list comments out sentiment inputs; no newly verified sentiment uplift",
+        "Original research execution not independently reproduced",
+        "Browser cannot reach local preview server; live UI verification pending deployment"
+      ],
+      "deployment": {
+        "status": "pending",
+        "prior_blocker": "api-deployments-free-per-day",
+        "current_public_entry": false
+      },
+      "preservation": "Existing cards and city lots preserved; excluded from all daily project counts"
     }
   ]
 }

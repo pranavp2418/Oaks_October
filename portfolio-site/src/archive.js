@@ -1,10 +1,57 @@
 import './archive.css';
-const $=x=>document.getElementById(x);let items=[],page=0;const pageSize=6;const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function filtered(){const month=$('archive-month').value,q=$('archive-search').value.toLowerCase();return items.filter(x=>(month==='all'||x.month===month)&&[x.title,x.domain,...x.stack].join(' ').toLowerCase().includes(q))}
-function render(){const list=filtered(),pages=Math.max(1,Math.ceil(list.length/pageSize));page=Math.min(page,pages-1);$('archive-count').textContent=`${list.length} ${list.length===1?'project':'projects'}`;$('archive-page').textContent=`${page+1} / ${pages}`;$('archive-prev').disabled=page===0;$('archive-next').disabled=page===pages-1;$('archive-grid').innerHTML=list.slice(page*pageSize,(page+1)*pageSize).map(x=>`<article class="project-card lab-card ${esc(x.theme)}"><button class="lab-visual" data-preview="${esc(x.slug)}" aria-label="Explore ${esc(x.title)}"><img src="${esc(x.cover)}" loading="lazy" width="600" height="350" alt="${esc(x.visual)}"><span class="preview-prompt">Inspect the workflow +</span></button><div class="project-info"><span class="mono muted">${esc(x.date)} / ${esc(x.domain)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><div class="tags">${x.stack.map(s=>`<span>${esc(s)}</span>`).join('')}</div><div class="lab-links"><a href="${esc(x.live)}" target="_blank" rel="noopener">Open live project ↗</a><a href="${esc(x.source)}" target="_blank" rel="noopener">Source ↗</a></div></div></article>`).join('')||'<p>No projects match this filter.</p>';document.querySelectorAll('[data-preview]').forEach(b=>b.onclick=()=>open(b.dataset.preview,b))}
-let previous;function open(slug,button){const x=items.find(x=>x.slug===slug);previous=button;$('archive-dialog-content').innerHTML=`<p class="eyebrow">${esc(x.domain)} / ${esc(x.date)}</p><h2 id="archive-dialog-title">${esc(x.title)}</h2><p>${esc(x.details)}</p><img src="${esc(x.cover)}" alt="${esc(x.visual)}" width="600" height="350" class="dialog-cover"><div class="lab-links"><a href="${esc(x.live)}" target="_blank" rel="noopener">Open working demo ↗</a><a href="${esc(x.source)}" target="_blank" rel="noopener">Read code and verification ↗</a></div><button id="load-live-preview" class="project-details">Load interactive live preview +</button><div id="live-preview"></div>`;$('archive-dialog').setAttribute('aria-labelledby','archive-dialog-title');$('archive-dialog').showModal();$('archive-dialog').querySelector('.dialog-close').focus();$('load-live-preview').onclick=()=>{$('live-preview').innerHTML=`<iframe src="${esc(x.live)}" title="${esc(x.title)} live workspace" loading="lazy"></iframe>`;$('load-live-preview').hidden=true}}
-$('archive-dialog').querySelector('.dialog-close').onclick=()=>$('archive-dialog').close();$('archive-dialog').addEventListener('close',()=>{$('live-preview')?.replaceChildren();previous?.focus()});$('archive-month').onchange=$('archive-search').oninput=()=>{page=0;render()};$('archive-prev').onclick=()=>{page--;render()};$('archive-next').onclick=()=>{page++;render()};
-try{const r=await fetch('/projects.json');if(!r.ok)throw Error('Archive unavailable');items=await r.json();$('archive-month').innerHTML='<option value="all">All months</option>'+[...new Set(items.map(x=>x.month))].sort().reverse().map(m=>`<option value="${esc(m)}">${esc(m)}</option>`).join('');render()}catch(e){$('archive-count').textContent=e.message}
-// Keep bookmarked legacy project routes pointed at their completed, linked archive cards.
-const legacySlug={crm:'jmcrm-ai',recon:'reconciliation-engine'}[new URLSearchParams(location.search).get('project')];
-if(legacySlug&&items.some(x=>x.slug===legacySlug)){const button=document.querySelector(`[data-preview="${legacySlug}"]`);if(button){button.scrollIntoView({block:'center'});open(legacySlug,button);}}
+import {archiveCard,archiveDetails,livePreviewURL,esc} from './archive-view.js';
+
+const $=id=>document.getElementById(id);
+let items=[],page=0,previous;
+const pageSize=6;
+function filtered(){
+  const month=$('archive-month').value,q=$('archive-search').value.toLowerCase();
+  return items.filter(x=>(month==='all'||x.month===month)&&[x.title,x.domain,...x.stack].join(' ').toLowerCase().includes(q));
+}
+function render(){
+  const list=filtered(),pages=Math.max(1,Math.ceil(list.length/pageSize));
+  page=Math.min(page,pages-1);
+  $('archive-count').textContent=`${list.length} ${list.length===1?'project':'projects'}`;
+  $('archive-page').textContent=`${page+1} / ${pages}`;
+  $('archive-prev').disabled=page===0;
+  $('archive-next').disabled=page===pages-1;
+  $('archive-grid').innerHTML=list.slice(page*pageSize,(page+1)*pageSize).map(archiveCard).join('')||'<p>No projects match this filter.</p>';
+  document.querySelectorAll('[data-preview]').forEach(b=>b.onclick=()=>open(b.dataset.preview,b));
+}
+function open(slug,button){
+  const project=items.find(x=>x.slug===slug);
+  if(!project)return;
+  previous=button;
+  $('archive-dialog-content').innerHTML=archiveDetails(project);
+  $('archive-dialog').setAttribute('aria-labelledby','archive-dialog-title');
+  $('archive-dialog').showModal();
+  $('archive-dialog').querySelector('.dialog-close').focus();
+  const previewButton=$('load-live-preview'),live=livePreviewURL(project);
+  if(previewButton&&live)previewButton.onclick=()=>{
+    const frame=document.createElement('iframe');
+    frame.src=live;frame.title=`${project.title} live workspace`;frame.loading='lazy';
+    $('live-preview').replaceChildren(frame);
+    previewButton.hidden=true;
+  };
+}
+$('archive-dialog').querySelector('.dialog-close').onclick=()=>$('archive-dialog').close();
+$('archive-dialog').addEventListener('close',()=>{$('live-preview')?.replaceChildren();previous?.focus();});
+$('archive-month').onchange=$('archive-search').oninput=()=>{page=0;render();};
+$('archive-prev').onclick=()=>{page--;render();};
+$('archive-next').onclick=()=>{page++;render();};
+try{
+  const response=await fetch('/projects.json');
+  if(!response.ok)throw Error('Archive unavailable');
+  items=await response.json();
+  $('archive-month').innerHTML='<option value="all">All months</option>'+[...new Set(items.map(x=>x.month))].sort().reverse().map(month=>`<option value="${esc(month)}">${esc(month)}</option>`).join('');
+  render();
+}catch(error){$('archive-count').textContent=error.message;}
+// Keep bookmarked project routes pointed at their linked archive cards.
+const route=new URLSearchParams(location.search).get('project');
+const slug={crm:'jmcrm-ai',recon:'reconciliation-engine'}[route]||route;
+if(slug&&items.some(x=>x.slug===slug)){
+  const index=items.findIndex(x=>x.slug===slug);
+  page=Math.floor(index/pageSize);render();
+  const button=[...document.querySelectorAll('[data-preview]')].find(x=>x.dataset.preview===slug);
+  if(button){button.scrollIntoView({block:'center'});open(slug,button);}
+}

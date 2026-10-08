@@ -32,7 +32,7 @@ export function createCatalog(daily, featured=[]) {
     ...p,stack:Array.isArray(p.stack)?p.stack.filter(s=>typeof s==='string'):[],domain:p.domain||p.industry||'Independent systems',
     description:p.description||'',details:p.details||p.description||'',
     district:districtFor(p),live:p.delivery_mode==='github_only'?null:safeURL(p.live,false),source:safeURL(p.source,false),walkthrough:safeURL(p.walkthrough),cover:safeURL(p.cover),
-    embed:p.embed===true||Boolean(p.live&&!p.featured&&p.delivery_mode!=='github_only'),
+    embed:p.delivery_mode!=='github_only'&&(p.embed===true||Boolean(p.live&&!p.featured)),
     delivery_mode:p.delivery_mode||(p.live?'web_deployed':p.featured?'portfolio_overview':'github_only')
   }));
 }

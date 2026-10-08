@@ -122,5 +122,37 @@
       "district": "commerce",
       "archetype": "vault"
     }
+  },
+  {
+    "title": "Market Analysis on News Sentiments",
+    "slug": "market-news-sentiments",
+    "domain": "Quantitative finance research",
+    "stack": [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "XGBoost",
+      "Jupyter"
+    ],
+    "description": "Explore ticker-level news sentiment, technical indicators and comparative machine-learning backtests.",
+    "theme": "market-research",
+    "visual": "News context, market features and model comparison across training, test and out-of-sample periods",
+    "details": "Python notebooks merge daily sentiment summaries with technical features and compare logistic regression, decision trees, random forests and XGBoost. Includes archived with/without-news plots and 2023 test / 2024 out-of-sample artifacts. The current notebook feature list keeps sentiment columns commented out; the research guide explains the saved configuration and reproduction limits.",
+    "date": "2024-11-10",
+    "month": "2024-11",
+    "added_to_portfolio": "2026-10-08",
+    "source": "https://github.com/pranavp2418/Market-Analysis-on-News-Sentiments",
+    "walkthrough": "https://github.com/pranavp2418/Market-Analysis-on-News-Sentiments#readme",
+    "cover": "/assets/market-news-cover.svg",
+    "delivery_mode": "github_only",
+    "classification": "resume",
+    "embed": false,
+    "existing_project": true,
+    "research": true,
+    "counted_daily_project": false,
+    "city": {
+      "district": "commerce",
+      "archetype": "exchange"
+    }
   }
 ]
