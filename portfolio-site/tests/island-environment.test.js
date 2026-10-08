@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import {solarState,environmentState,houstonUtcOffset} from '../src/island-environment.js';
 import {normalizeObservation,weatherFreshness,OBSERVATION_URL} from '../lib/houston-weather.js';
 import {createWeatherHandler} from '../api/island-weather.js';
-import {shoreline,curvedTowerGeometry,scannedTreePlacements} from '../src/island-scenery.js';
+import {shoreline,curvedTowerGeometry,scannedTreePlacements,marineState,isletHeight,OFFSHORE_ISLETS,addOcean} from '../src/island-scenery.js';
 import {DISTRICTS,assignBuildings,createCatalog} from '../src/city-model.js';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import * as THREE from 'three';
 import {landHeight} from '../src/city-world.js';
 const stamp=Date.parse('2026-10-07T23:05:00Z');
 const observation=(text='Clear')=>({properties:{timestamp:new Date(stamp).toISOString(),textDescription:text,cloudLayers:[{amount:'CLR'}],presentWeather:[],temperature:{value:25,unitCode:'wmoUnit:degC'},windSpeed:{value:3,unitCode:'wmoUnit:m_s-1'},windDirection:{value:120},windGust:{value:6,unitCode:'wmoUnit:m_s-1'}}});
@@ -64,4 +65,14 @@ test('Scanned coastal tree decodes with the shipped mesh optimizer and safe dete
   assert.ok(decoded>=4);assert.equal(gltf.meshes.flatMap(m=>m.primitives).reduce((sum,p)=>sum+gltf.accessors[p.indices].count/3,0),manifest.triangles);
   const daily=JSON.parse(await readFile(new URL('../public/projects.json',import.meta.url),'utf8')),featured=JSON.parse(await readFile(new URL('../public/featured-projects.json',import.meta.url),'utf8')),buildings=assignBuildings(createCatalog(daily,featured));
   for(const mobile of [false,true]){const options={mobile,landHeight,districts:DISTRICTS,buildings},positions=scannedTreePlacements(options);assert.equal(positions.length,mobile?12:42);assert.deepEqual(positions,scannedTreePlacements(options));for(const p of positions){assert.ok(p.y>=4&&p.y<=34);assert.ok(buildings.every(b=>Math.hypot(b.x-p.x,b.z-p.z)>=12));}}
+});
+
+test('visible ocean geometry, glints and shore foam keep moving; islets remain offshore',()=>{
+  const scene=new THREE.Scene(),ocean=addOcean(scene,{software:true,mobile:false,landHeight,maps:{}}),e=environmentState(new Date('2026-10-08T18:00:00Z'),null);ocean.setEnvironment(e);ocean.update(0);
+  const first=Array.from(ocean.water.geometry.attributes.position.array),colors=Array.from(ocean.water.geometry.attributes.color.array),surf=Array.from(ocean.foam[0].geom.attributes.position.array);ocean.update(3.5);
+  assert.notDeepEqual(Array.from(ocean.water.geometry.attributes.position.array),first);assert.notDeepEqual(Array.from(ocean.water.geometry.attributes.color.array),colors);assert.notDeepEqual(Array.from(ocean.foam[0].geom.attributes.position.array),surf);assert.equal(ocean.foam.length,6);
+  for(const obj of scene.children){const p=obj.geometry?.attributes.position;if(p)assert.ok(Array.from(p.array).every(Number.isFinite));}
+  assert.notEqual(marineState(260,90,0).height,marineState(260,90,5).height);assert.ok(Math.abs(marineState(0,0,30).tide)<=.2);
+  for(const [x,z,r,h] of OFFSHORE_ISLETS){assert.ok(landHeight(x,z)<0);assert.ok(isletHeight(0,0,r,h)>1);assert.ok(isletHeight(r*2,0,r,h)<0);}
+  const rough=marineState(50,80,2,{wind:70,storm:true}),calm=marineState(50,80,2,{wind:1});assert.ok(Math.abs(rough.height-.4-rough.tide)>Math.abs(calm.height-.4-calm.tide));
 });

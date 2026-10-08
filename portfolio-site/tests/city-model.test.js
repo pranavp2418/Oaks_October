@@ -6,8 +6,8 @@ const read=name=>JSON.parse(fs.readFileSync(new URL('../public/'+name,import.met
 const catalog=assignBuildings(createCatalog(read('projects.json'),read('featured-projects.json')));
 test('all existing work is discoverable without duplicate IDs or invented deployments',()=>{
   assert.equal(catalog.length,7);assert.equal(new Set(catalog.map(p=>p.slug)).size,7);
-  assert.equal(catalog.find(p=>p.slug==='jmcrm-ai').live,null);
-  assert.equal(catalog.find(p=>p.slug==='reconciliation-engine').live,null);
+  assert.equal(catalog.find(p=>p.slug==='jmcrm-ai').live,'https://jmcrm-ai-copilot.vercel.app/');
+  assert.equal(catalog.find(p=>p.slug==='reconciliation-engine').live,'https://reconciliation-engine-pranav.vercel.app/');
   for(const p of catalog)assert.ok(p.live||p.source||p.walkthrough);
 });
 test('Pip finds purpose, language and combined intent',()=>{
@@ -34,4 +34,13 @@ test('catalog rejects unsafe URLs and suppresses live links for code-only produc
   assert.equal(safeURL('javascript:alert(1)'),null);assert.equal(safeURL('//untrusted.example'),null);assert.equal(safeURL('http://untrusted.example'),null);
   const [p]=createCatalog([{slug:'safe',title:'Tool',live:'https://example.com',source:'javascript:alert(1)',delivery_mode:'github_only'}]);assert.equal(p.live,null);assert.equal(p.source,null);
   assert.throws(()=>createCatalog(null),/array/);
+});
+
+test('legacy upgrades follow the existing three cards, preserve city lots and have complete links/covers',()=>{
+  const daily=read('projects.json'),featured=read('featured-projects.json');assert.deepEqual(daily.map(x=>x.slug),['permitweave','deltalens','kiln','jmcrm-ai','reconciliation-engine']);
+  for(const p of daily.slice(3)){assert.ok(p.live&&p.source&&p.cover&&p.embed);assert.equal(p.counted_daily_project,false);assert.equal(p.legacy_upgrade,true);assert.ok(fs.existsSync(new URL('../public'+p.cover,import.meta.url)));}
+  assert.equal(featured.some(p=>['jmcrm-ai','reconciliation-engine'].includes(p.slug)),false);
+  assert.equal(featured.find(p=>p.slug==='craftsmanai').cover,'/assets/craftsmanai-island-logo.png');
+  const previous=assignBuildings(createCatalog(daily.slice(0,3),[{slug:'craftsmanai',title:'CraftsmanAI',city:{district:'creative',archetype:'gem'}},{slug:'jmcrm-ai',title:'JMCRM',city:{district:'commerce',archetype:'exchange'}},{slug:'reconciliation-engine',title:'Reconciliation',city:{district:'commerce',archetype:'vault'}},featured.find(x=>x.slug==='workorder-triage')]));
+  for(const p of previous){const next=catalog.find(x=>x.slug===p.slug);assert.deepEqual([next.x,next.z,next.archetype],[p.x,p.z,p.archetype]);}
 });

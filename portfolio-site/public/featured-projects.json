@@ -1,6 +1,42 @@
 [
-  {"slug":"craftsmanai","title":"CraftsmanAI","domain":"Creative products","stack":["TypeScript","Python","OpenAI","Gemini"],"description":"A connected custom-jewelry workflow, from intake and AI-assisted design to quotes, approvals and manufacturer handoff.","details":"Pranav's flagship product. Explore the original portfolio's interactive gemstone and product journey, or visit the live platform.","live":"https://craftsmanai.app","walkthrough":"/#craft-explorer","cover":"/assets/craftsmanai-poster.jpg","city":{"district":"creative","archetype":"gem"},"featured":true},
-  {"slug":"jmcrm-ai","title":"JMCRM-AI Revenue Copilot","domain":"Customer operations","stack":["C#","ASP.NET Core MVC","EF Core","SQLite"],"description":"Rank sales opportunities, search customers, edit outreach and keep workflow activity and statuses.","details":"Functional CRM prototype with duplicate-safe opportunity generation and deterministic scoring across six categories. The original portfolio contains the project walkthrough; no public deployment is asserted here.","walkthrough":"/?project=crm#work","city":{"district":"commerce","archetype":"exchange"},"featured":true},
-  {"slug":"reconciliation-engine","title":"Reconciliation Engine","domain":"Finance operations","stack":["Python","SQL","Excel","VBA"],"description":"Reconcile operational records, align historical prices, trace inventory aging and route exceptions.","details":"A schema-first operations reconciliation and pricing framework with transformations and audit trails. Read the original project overview; no public deployment is asserted here.","walkthrough":"/?project=recon#work","city":{"district":"commerce","archetype":"vault"},"featured":true},
-  {"slug":"workorder-triage","title":"WorkOrder Triage","domain":"Property operations","stack":["Node.js","JavaScript"],"description":"Prioritize maintenance requests, inspect the reasons and move tickets through a browser-saved queue.","details":"Historical deployment dry run, excluded from the daily advanced-project count. Fictional requests and browser-local persistence; no shared database or emergency dispatch.","live":"https://oaksoctober1002.vercel.app/","source":"https://github.com/pranavp2418/Oaks_October/tree/main/WorkOrder-Triage","embed":true,"city":{"district":"civic","archetype":"civic"},"historical":true}
+  {
+    "slug": "craftsmanai",
+    "title": "CraftsmanAI",
+    "domain": "Creative products",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "OpenAI",
+      "Gemini"
+    ],
+    "description": "A connected custom-jewelry workflow, from intake and AI-assisted design to quotes, approvals and manufacturer handoff.",
+    "details": "Pranav's flagship product. Explore the original portfolio's interactive gemstone and product journey, or visit the live platform.",
+    "live": "https://craftsmanai.app",
+    "walkthrough": "/#craft-explorer",
+    "cover": "/assets/craftsmanai-island-logo.png",
+    "city": {
+      "district": "creative",
+      "archetype": "gem"
+    },
+    "featured": true
+  },
+  {
+    "slug": "workorder-triage",
+    "title": "WorkOrder Triage",
+    "domain": "Property operations",
+    "stack": [
+      "Node.js",
+      "JavaScript"
+    ],
+    "description": "Prioritize maintenance requests, inspect the reasons and move tickets through a browser-saved queue.",
+    "details": "Historical deployment dry run, excluded from the daily advanced-project count. Fictional requests and browser-local persistence; no shared database or emergency dispatch.",
+    "live": "https://oaksoctober1002.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/WorkOrder-Triage",
+    "embed": true,
+    "city": {
+      "district": "civic",
+      "archetype": "civic"
+    },
+    "historical": true
+  }
 ]

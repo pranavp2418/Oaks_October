@@ -734,5 +734,134 @@
     "orchestration_tools": "LangChain and LangGraph are eligible when they materially serve the workflow; meaningful core integration and evaluation required",
     "prior_requirements_preserved": true,
     "changes_existing_completion_records": false
-  }
+  },
+  "legacy_upgrades": [
+    {
+      "date": "2026-10-08",
+      "title": "JMCRM-AI Revenue Copilot",
+      "type": "legacy_project_completion",
+      "counted_daily_project": false,
+      "status": "local_and_live_verified",
+      "source_commit": "e4295f08161eededbc1d5d83353d445c3fea7e8c",
+      "deployment_id": "dpl_7ex1fhLmpLMYqQDMBYa2yx3TPWaJ",
+      "project_id": "prj_KkYiApD3WZKV2qt8PLzCjlqTKc8S",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-JMCRM-AI",
+      "live_url": "https://jmcrm-ai-copilot.vercel.app/",
+      "tests": {
+        "command": "npm test",
+        "passed": 6,
+        "failed": 0,
+        "core": "Actual compiled C# / EF Core / SQLite"
+      },
+      "clean_install": "npm ci --ignore-scripts passed",
+      "build": "Self-contained .NET 10.0.401 SDK publish passed; SDK SHA512 checked; 90,421,062 runtime bytes",
+      "browser": [
+        "54 recommendations across all six categories loaded from the native core",
+        "Edited draft saved; New\u2192Contacted; refresh created zero duplicate rows and preserved draft/status",
+        "Reload replayed revision 3; 390px mobile view retained the same saved draft",
+        "Mobile Contacted\u2192Replied persisted at revision 4; audit showed all four operations",
+        "Mobile html clientWidth=scrollWidth=375 within the 390px iframe"
+      ],
+      "mobile_method": "390x844 iframe viewport; not a physical device",
+      "deployment_fix": "Initial production native path ENOENT fixed by resolving the executable relative to the function module; final live workflows passed",
+      "limits": [
+        "Synthetic customers and inventory",
+        "Browser-local operation journal, stateless server rebuild; no shared account/database",
+        "Deterministic scoring and draft templates; no external model or automatic messaging"
+      ],
+      "portfolio_integration": "pending",
+      "industry": "Customer operations",
+      "problem": "Explainable six-category opportunity scoring and replayable inventory-aware sales workflow",
+      "stack": [
+        "C#",
+        "EF Core",
+        "SQLite",
+        "Node.js"
+      ],
+      "core_language": "C#",
+      "classification": "resume",
+      "visual_theme": "Ivory/rose/plum relationship workspace",
+      "path": "Oaks_October/2026-10-08-JMCRM-AI",
+      "implementation": "complete",
+      "verification": "local_and_live_passed",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "pending"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Reconciliation Engine",
+      "type": "legacy_project_completion",
+      "counted_daily_project": false,
+      "status": "local_and_live_verified",
+      "source_commit": "d7f2e693fb5b41cf4653cf55f937a3ebbd73c3dc",
+      "deployment_id": "dpl_J9uyab1AobqbdtyWkw5bZEBBRaGZ",
+      "project_id": "prj_PBGhrpY70HjexPVoK7ESySdzdHSr",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Reconciliation-Engine",
+      "live_url": "https://reconciliation-engine-pranav.vercel.app/",
+      "tests": {
+        "command": "npm test",
+        "passed": 14,
+        "failed": 0,
+        "independent_oracle": "80 seeded small matching graphs compared with exhaustive solutions",
+        "api": "Real Python HTTP 200/400/405/409, replay and conflict checks"
+      },
+      "clean_install": "npm ci --ignore-scripts passed",
+      "build": "npm run build passed; actual Python API compiled and deployed",
+      "browser": [
+        "14 initial confirmed pairs, duplicate ignored, ambiguous pairing held",
+        "Two-cent tolerance produced 15 pairs; reviewed B016\u2192S021 with a note produced 16",
+        "Reload and mobile retained reviewed match and policy",
+        "Historical pricing showed the September 1/20 values and missing prior CHAIN price; future October 10 price was excluded",
+        "Mobile FIFO view showed 31 units/$2,538.50 and I01 allocations 30\u00d7R01 + 7\u00d7R02 = $1,571.50; I02 shortage stayed quarantined",
+        "Mobile assignment persisted at revision 2 and appeared in audit; inventory unchanged",
+        "Mobile html clientWidth=scrollWidth=375 within the 390px iframe"
+      ],
+      "mobile_method": "390x844 iframe viewport; not a physical device",
+      "limits": [
+        "Reproducible synthetic data, seed 8102026",
+        "Browser-local workspace and stateless Python endpoint; no authentication or bank connection",
+        "Exact reference/account/currency matching; no split settlement",
+        "Scenic portfolio tide is unrelated to financial data"
+      ],
+      "portfolio_integration": "pending",
+      "industry": "Finance operations",
+      "problem": "Exact-cent minimum-cost matching, historical prices, FIFO lots and reviewed exceptions",
+      "stack": [
+        "Python",
+        "SQLite",
+        "JavaScript"
+      ],
+      "core_language": "Python",
+      "classification": "resume",
+      "visual_theme": "Forest green/gold analytical close workspace",
+      "path": "Oaks_October/2026-10-08-Reconciliation-Engine",
+      "implementation": "complete",
+      "verification": "local_and_live_passed",
+      "deployment": "production_ready_and_live_verified",
+      "integration": "pending"
+    }
+  ],
+  "maintenance_runs": [
+    {
+      "date": "2026-10-08",
+      "task": "Complete JMCRM and Reconciliation; scoped island scenery/cover improvements",
+      "status": "portfolio_preview_pending",
+      "counted_daily_project": false,
+      "projects": 2,
+      "daily_quota_unchanged": true,
+      "portfolio_integration": "pending",
+      "requested_scope": [
+        "Complete/move JMCRM and Reconciliation cards after existing three",
+        "Continuous ocean waves/shore surf, offshore reefs/hills, smoother architectural detail",
+        "CraftsmanAI island-only attached logo cover"
+      ],
+      "local_checks": [
+        "JMCRM 6/6 core/API tests",
+        "Reconciliation 14/14 core/API tests",
+        "Portfolio 15/15 catalog/route/environment/scenery tests",
+        "Clean installs/builds passed; portfolio offline cache attempt failed and normal clean install recovered"
+      ],
+      "gpu_visual_verification": "pending; existing browser used software renderer"
+    }
+  ]
 }

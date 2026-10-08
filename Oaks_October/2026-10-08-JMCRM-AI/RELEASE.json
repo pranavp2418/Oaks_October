@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "title": "JMCRM-AI Revenue Copilot",
+  "type": "legacy_project_completion",
+  "counted_daily_project": false,
+  "status": "local_and_live_verified",
+  "source_commit": "e4295f08161eededbc1d5d83353d445c3fea7e8c",
+  "deployment_id": "dpl_7ex1fhLmpLMYqQDMBYa2yx3TPWaJ",
+  "project_id": "prj_KkYiApD3WZKV2qt8PLzCjlqTKc8S",
+  "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-JMCRM-AI",
+  "live_url": "https://jmcrm-ai-copilot.vercel.app/",
+  "tests": {
+    "command": "npm test",
+    "passed": 6,
+    "failed": 0,
+    "core": "Actual compiled C# / EF Core / SQLite"
+  },
+  "clean_install": "npm ci --ignore-scripts passed",
+  "build": "Self-contained .NET 10.0.401 SDK publish passed; SDK SHA512 checked; 90,421,062 runtime bytes",
+  "browser": [
+    "54 recommendations across all six categories loaded from the native core",
+    "Edited draft saved; New→Contacted; refresh created zero duplicate rows and preserved draft/status",
+    "Reload replayed revision 3; 390px mobile view retained the same saved draft",
+    "Mobile Contacted→Replied persisted at revision 4; audit showed all four operations",
+    "Mobile html clientWidth=scrollWidth=375 within the 390px iframe"
+  ],
+  "mobile_method": "390x844 iframe viewport; not a physical device",
+  "deployment_fix": "Initial production native path ENOENT fixed by resolving the executable relative to the function module; final live workflows passed",
+  "limits": [
+    "Synthetic customers and inventory",
+    "Browser-local operation journal, stateless server rebuild; no shared account/database",
+    "Deterministic scoring and draft templates; no external model or automatic messaging"
+  ],
+  "portfolio_integration": "pending"
+}

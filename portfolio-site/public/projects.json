@@ -64,5 +64,63 @@
     "delivery_mode": "web_deployed",
     "classification": "new",
     "embed": true
+  },
+  {
+    "title": "JMCRM-AI Revenue Copilot",
+    "slug": "jmcrm-ai",
+    "domain": "Customer operations",
+    "stack": [
+      "C#",
+      "EF Core",
+      "SQLite",
+      "Node.js"
+    ],
+    "description": "Explain six sales signals, review outreach and move conversations through a persistent, inventory-aware workflow.",
+    "theme": "crm",
+    "visual": "Signal \u2192 Conversation",
+    "details": "The actual C# and EF Core core produces duplicate-safe recommendations, preserves edited drafts, enforces workflow transitions and replays audited decisions. Fictional customers; browser-saved journal.",
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "live": "https://jmcrm-ai-copilot.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-JMCRM-AI",
+    "cover": "/assets/jmcrm-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "legacy_upgrade": true,
+    "counted_daily_project": false,
+    "city": {
+      "district": "commerce",
+      "archetype": "exchange"
+    }
+  },
+  {
+    "title": "Reconciliation Engine",
+    "slug": "reconciliation-engine",
+    "domain": "Finance operations",
+    "stack": [
+      "Python",
+      "SQLite",
+      "Minimum-cost matching",
+      "FIFO"
+    ],
+    "description": "Match exact-cent records, inspect historical prices and FIFO lots, and keep every exception decision traceable.",
+    "theme": "recon",
+    "visual": "Records \u2192 Evidence",
+    "details": "Maximum-cardinality minimum-cost matching with equal-optimum holdback, strict account/currency boundaries, as-of pricing and FIFO shortage quarantine. Synthetic close; browser-saved review journal.",
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "live": "https://reconciliation-engine-pranav.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Reconciliation-Engine",
+    "cover": "/assets/reconciliation-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "legacy_upgrade": true,
+    "counted_daily_project": false,
+    "city": {
+      "district": "commerce",
+      "archetype": "vault"
+    }
   }
 ]

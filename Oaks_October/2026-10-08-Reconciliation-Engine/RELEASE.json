@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-08",
+  "title": "Reconciliation Engine",
+  "type": "legacy_project_completion",
+  "counted_daily_project": false,
+  "status": "local_and_live_verified",
+  "source_commit": "d7f2e693fb5b41cf4653cf55f937a3ebbd73c3dc",
+  "deployment_id": "dpl_J9uyab1AobqbdtyWkw5bZEBBRaGZ",
+  "project_id": "prj_PBGhrpY70HjexPVoK7ESySdzdHSr",
+  "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Reconciliation-Engine",
+  "live_url": "https://reconciliation-engine-pranav.vercel.app/",
+  "tests": {
+    "command": "npm test",
+    "passed": 14,
+    "failed": 0,
+    "independent_oracle": "80 seeded small matching graphs compared with exhaustive solutions",
+    "api": "Real Python HTTP 200/400/405/409, replay and conflict checks"
+  },
+  "clean_install": "npm ci --ignore-scripts passed",
+  "build": "npm run build passed; actual Python API compiled and deployed",
+  "browser": [
+    "14 initial confirmed pairs, duplicate ignored, ambiguous pairing held",
+    "Two-cent tolerance produced 15 pairs; reviewed B016→S021 with a note produced 16",
+    "Reload and mobile retained reviewed match and policy",
+    "Historical pricing showed the September 1/20 values and missing prior CHAIN price; future October 10 price was excluded",
+    "Mobile FIFO view showed 31 units/$2,538.50 and I01 allocations 30×R01 + 7×R02 = $1,571.50; I02 shortage stayed quarantined",
+    "Mobile assignment persisted at revision 2 and appeared in audit; inventory unchanged",
+    "Mobile html clientWidth=scrollWidth=375 within the 390px iframe"
+  ],
+  "mobile_method": "390x844 iframe viewport; not a physical device",
+  "limits": [
+    "Reproducible synthetic data, seed 8102026",
+    "Browser-local workspace and stateless Python endpoint; no authentication or bank connection",
+    "Exact reference/account/currency matching; no split settlement",
+    "Scenic portfolio tide is unrelated to financial data"
+  ],
+  "portfolio_integration": "pending"
+}
