@@ -1,0 +1,58 @@
+{
+  "status": "prepared_not_applied",
+  "gate": "All three final source deployments and applicable live/browser checks must pass before append",
+  "entries": [
+    {
+      "title": "DockProof",
+      "date": "2026-10-08",
+      "path": "Oaks_October/2026-10-08-DockProof",
+      "industry": "Logistics compliance",
+      "problem": "Compile typed packing policies and review shipment impact before policy activation",
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "HTML/CSS"
+      ],
+      "classification": "resume",
+      "delivery_mode": "web_deployed",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-DockProof",
+      "live_url": "https://dockproof-20261008.vercel.app/",
+      "cover": "Oaks_October/2026-10-08-DockProof/cover.svg"
+    },
+    {
+      "title": "FolioTrace",
+      "date": "2026-10-08",
+      "path": "Oaks_October/2026-10-08-FolioTrace",
+      "industry": "Document operations",
+      "problem": "Incrementally index document regions with explainable BM25 citations and reviewed corrections",
+      "stack": [
+        "Python",
+        "SQLite",
+        "HTML/CSS"
+      ],
+      "classification": "resume",
+      "delivery_mode": "web_deployed",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-FolioTrace",
+      "live_url": "https://foliotrace-20261008.vercel.app/",
+      "cover": "Oaks_October/2026-10-08-FolioTrace/cover.svg"
+    },
+    {
+      "title": "Tidemark",
+      "date": "2026-10-08",
+      "path": "Oaks_October/2026-10-08-Tidemark",
+      "industry": "Industrial telemetry",
+      "problem": "Event-time window aggregation with late-data quarantine, compact checkpoints and alert review",
+      "stack": [
+        "Rust",
+        "WebAssembly",
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "classification": "new",
+      "delivery_mode": "web_deployed",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Tidemark",
+      "live_url": null,
+      "cover": "Oaks_October/2026-10-08-Tidemark/cover.svg"
+    }
+  ]
+}

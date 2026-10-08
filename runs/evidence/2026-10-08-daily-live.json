@@ -1,0 +1,34 @@
+{
+  "DockProof": {
+    "api_codes": [
+      200,
+      200,
+      400,
+      405
+    ],
+    "repeat_equal": true,
+    "static_source_sha256": {
+      "index.html": "b49eedc8d076ef1d6953c70e6b68d8a3886ac3f35d5de639eb979a307031c884",
+      "app.js": "b4420c64ab63e2a96761b8d93c18ab5cadd67d8edcd8b04c890d4af98dad78e2",
+      "style.css": "af4d03484ba4ba49ffdf0ab44aeddd4448472da86e28da5a6562e785d0d9874e",
+      "data/seed.json": "7f73e6c77eea185081d012c6a3d636113c9c2408ba3bcda3ed38a7b54d128e09",
+      "mobile.html": "21d65dff627ca6c33e409e8617ab24803a72a006f6fb2557adea199d69724c37"
+    }
+  },
+  "FolioTrace": {
+    "api_codes": [
+      200,
+      200,
+      400,
+      405
+    ],
+    "repeat_equal": true,
+    "static_source_sha256": {
+      "index.html": "0fe20c200702fc925fe4ed0c7f4402994b328f140003b5e0c6d5e9204dfcac45",
+      "app.js": "29a81f5ecb4d359493b545553cb1b6842c81421ec1d7f3d9353673a2ae250761",
+      "style.css": "a9044e38cb472d64d811eff808e84124f4697e16df25f7200e09fd9c18e6ab70",
+      "data/seed.json": "8100e68be153d183a5190d9ccbeaa88d4fa619d6881f8eb77097eba40eb7dc01",
+      "mobile.html": "21d65dff627ca6c33e409e8617ab24803a72a006f6fb2557adea199d69724c37"
+    }
+  }
+}

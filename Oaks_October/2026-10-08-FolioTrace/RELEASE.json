@@ -22,5 +22,10 @@
     "Decision survived reload",
     "390x844 iframe workflow; clientWidth=scrollWidth=375",
     "Invalid transition/input preserved saved work"
-  ]
+  ],
+  "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
+  "project_id": "prj_VD2b0dQO6plII4h1e0DebCLH86Ju",
+  "delivery_mode": "web_deployed",
+  "portfolio_integration": "pending_all_three",
+  "updated_at": "2026-10-08T20:47:59.494209+00:00"
 }
