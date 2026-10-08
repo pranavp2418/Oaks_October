@@ -247,15 +247,32 @@
     },
     {
       "date": "2026-10-08",
-      "status": "portfolio_release_pending",
+      "status": "blocked_transient_portfolio_release",
       "target": 3,
       "completed_projects": 0,
       "local_verified_projects": 3,
       "live_workflow_verified_projects": 3,
-      "portfolio_integration": "source_prepared_production_pending",
-      "blockers": [],
-      "updated_at": "2026-10-08T22:59:11.520839+00:00",
-      "run_record": "runs/2026-10-08.json"
+      "portfolio_integration": "source_pushed_build_verified_production_blocked",
+      "blockers": [
+        {
+          "stage": "portfolio_deployment",
+          "service": "Vercel",
+          "http_status": 402,
+          "code": "api-deployments-free-per-day",
+          "message": "Resource is limited - try again in 24 hours (more than 100)",
+          "retry_after_seconds": 86400,
+          "transient": true,
+          "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+          "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+          "observed_at": "2026-10-08T23:00:36.637181+00:00",
+          "production_integration_verified": false,
+          "cli_fallback": "No installed/authenticated Vercel CLI available",
+          "paid_upgrade": false
+        }
+      ],
+      "updated_at": "2026-10-08T23:00:36.637181+00:00",
+      "run_record": "runs/2026-10-08.json",
+      "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552"
     }
   ],
   "profile_baseline": {
@@ -443,7 +460,7 @@
       "implementation": "implemented_and_pushed",
       "verification": "local_and_live_core_workflows_passed",
       "deployment": "ready_and_live_verified",
-      "integration": "source_prepared_production_pending",
+      "integration": "source_pushed_build_verified_production_blocked",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-DockProof",
       "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
       "deployed_source_commit": "2d2c14c8dabd88bf6cc6ca8fe4ef8d833ef581ab",
@@ -483,13 +500,30 @@
         ],
         "mobile_method": "390x844 iframe, not a physical device",
         "live_api_evidence": "runs/evidence/2026-10-08-daily-live.json",
-        "benchmark": null
+        "benchmark": null,
+        "file_import_ui": "Not claimed"
       },
       "limitations": [
         "Reproducible synthetic data; no real customer/patient data",
         "Browser-local workspace; no shared authentication/database"
       ],
-      "blockers": [],
+      "blockers": [
+        {
+          "stage": "portfolio_deployment",
+          "service": "Vercel",
+          "http_status": 402,
+          "code": "api-deployments-free-per-day",
+          "message": "Resource is limited - try again in 24 hours (more than 100)",
+          "retry_after_seconds": 86400,
+          "transient": true,
+          "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+          "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+          "observed_at": "2026-10-08T23:00:36.637181+00:00",
+          "production_integration_verified": false,
+          "cli_fallback": "No installed/authenticated Vercel CLI available",
+          "paid_upgrade": false
+        }
+      ],
       "historical_api_quota_blocker": {
         "stage": "deployment",
         "service": "Vercel",
@@ -505,7 +539,8 @@
         "observed_at": "2026-10-08T20:47:59.494209+00:00",
         "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
         "paid_upgrade": false
-      }
+      },
+      "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552"
     },
     {
       "date": "2026-10-08",
@@ -529,7 +564,7 @@
       "implementation": "implemented_and_pushed",
       "verification": "local_and_live_core_workflows_passed",
       "deployment": "ready_and_live_verified",
-      "integration": "source_prepared_production_pending",
+      "integration": "source_pushed_build_verified_production_blocked",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-FolioTrace",
       "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
       "deployed_source_commit": "4329142108a853c6a345d908717c43f870029982",
@@ -569,14 +604,32 @@
         ],
         "mobile_method": "390x844 iframe, not a physical device",
         "live_api_evidence": "runs/evidence/2026-10-08-daily-live.json",
-        "benchmark": null
+        "benchmark": null,
+        "file_import_ui": "Not claimed"
       },
       "limitations": [
         "Reproducible synthetic data; no real customer/patient data",
         "Browser-local workspace; no shared authentication/database"
       ],
-      "blockers": [],
-      "historical_api_quota_blocker": null
+      "blockers": [
+        {
+          "stage": "portfolio_deployment",
+          "service": "Vercel",
+          "http_status": 402,
+          "code": "api-deployments-free-per-day",
+          "message": "Resource is limited - try again in 24 hours (more than 100)",
+          "retry_after_seconds": 86400,
+          "transient": true,
+          "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+          "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+          "observed_at": "2026-10-08T23:00:36.637181+00:00",
+          "production_integration_verified": false,
+          "cli_fallback": "No installed/authenticated Vercel CLI available",
+          "paid_upgrade": false
+        }
+      ],
+      "historical_api_quota_blocker": null,
+      "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552"
     },
     {
       "date": "2026-10-08",
@@ -601,7 +654,7 @@
       "implementation": "implemented_and_pushed",
       "verification": "local_and_live_core_workflows_passed",
       "deployment": "ready_and_live_verified",
-      "integration": "source_prepared_production_pending",
+      "integration": "source_pushed_build_verified_production_blocked",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-Tidemark",
       "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
       "deployed_source_commit": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
@@ -645,14 +698,31 @@
         ],
         "mobile_method": "390x844 iframe, not a physical device",
         "live_api_evidence": null,
-        "benchmark": "Oaks_October/2026-10-08-Tidemark/BENCHMARK.json"
+        "benchmark": "Oaks_October/2026-10-08-Tidemark/BENCHMARK.json",
+        "file_import_ui": "Unverified: browser file-chooser observer stalled"
       },
       "limitations": [
         "Reproducible synthetic data; no real customer/patient data",
         "Browser-local workspace; no shared authentication/database",
         "CRC32 detects corruption, not authenticity; bounded simulation, no physical sensor validation"
       ],
-      "blockers": [],
+      "blockers": [
+        {
+          "stage": "portfolio_deployment",
+          "service": "Vercel",
+          "http_status": 402,
+          "code": "api-deployments-free-per-day",
+          "message": "Resource is limited - try again in 24 hours (more than 100)",
+          "retry_after_seconds": 86400,
+          "transient": true,
+          "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+          "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+          "observed_at": "2026-10-08T23:00:36.637181+00:00",
+          "production_integration_verified": false,
+          "cli_fallback": "No installed/authenticated Vercel CLI available",
+          "paid_upgrade": false
+        }
+      ],
       "historical_api_quota_blocker": {
         "stage": "deployment",
         "service": "Vercel",
@@ -668,7 +738,8 @@
         "observed_at": "2026-10-08T20:47:59.494209+00:00",
         "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
         "paid_upgrade": false
-      }
+      },
+      "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -1036,8 +1107,24 @@
         "passed": 18,
         "failed": 0
       },
-      "production": "pending",
-      "preserved_newer_source_head": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9"
+      "production": "blocked_transient_api_quota",
+      "preserved_newer_source_head": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
+      "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+      "blocker": {
+        "stage": "portfolio_deployment",
+        "service": "Vercel",
+        "http_status": 402,
+        "code": "api-deployments-free-per-day",
+        "message": "Resource is limited - try again in 24 hours (more than 100)",
+        "retry_after_seconds": 86400,
+        "transient": true,
+        "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+        "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+        "observed_at": "2026-10-08T23:00:36.637181+00:00",
+        "production_integration_verified": false,
+        "cli_fallback": "No installed/authenticated Vercel CLI available",
+        "paid_upgrade": false
+      }
     }
   },
   "delivery_policy": {

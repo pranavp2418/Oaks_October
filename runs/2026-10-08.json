@@ -1,9 +1,9 @@
 {
   "date": "2026-10-08",
   "owner": "build-606d56d2-ace7-41e0-9c0f-518419b77c91",
-  "status": "portfolio_release_pending",
+  "status": "blocked_transient_portfolio_release",
   "started_at": "2026-10-08T20:17:12.495801+00:00",
-  "lease_expires_at": "2026-10-08T20:47:59.494209+00:00",
+  "lease_expires_at": "2026-10-08T23:00:36.637181+00:00",
   "target": 3,
   "completed_projects": 0,
   "projects": [
@@ -41,17 +41,33 @@
       "planned_ordinal": 6
     }
   ],
-  "blockers": [],
+  "blockers": [
+    {
+      "stage": "portfolio_deployment",
+      "service": "Vercel",
+      "http_status": 402,
+      "code": "api-deployments-free-per-day",
+      "message": "Resource is limited - try again in 24 hours (more than 100)",
+      "retry_after_seconds": 86400,
+      "transient": true,
+      "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+      "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+      "observed_at": "2026-10-08T23:00:36.637181+00:00",
+      "production_integration_verified": false,
+      "cli_fallback": "No installed/authenticated Vercel CLI available",
+      "paid_upgrade": false
+    }
+  ],
   "baseline_commit": "83f049650cff48eb88c8f80883abe298f40613cf",
   "legacy_projects_excluded": [
     "JMCRM-AI Revenue Copilot",
     "Reconciliation Engine"
   ],
-  "updated_at": "2026-10-08T22:59:11.520839+00:00",
-  "lease_released_at": "2026-10-08T20:47:59.494209+00:00",
+  "updated_at": "2026-10-08T23:00:36.637181+00:00",
+  "lease_released_at": "2026-10-08T23:00:36.637181+00:00",
   "local_verified_projects": 3,
   "live_workflow_verified_projects": 3,
-  "portfolio_integration": "source_prepared_production_pending",
+  "portfolio_integration": "source_pushed_build_verified_production_blocked",
   "source_release_commits": [
     "0e6d732bb947263fb9500f32a3d55949ca361121",
     "4329142108a853c6a345d908717c43f870029982",
@@ -74,5 +90,6 @@
       "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
       "paid_upgrade": false
     }
-  ]
+  ],
+  "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552"
 }

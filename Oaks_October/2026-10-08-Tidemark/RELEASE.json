@@ -16,7 +16,7 @@
   "source_commit": "76631bc9a9e3653dbec2f4efb35c74ab4189cdc4",
   "project_id": "prj_kDY3QFAhh0mBm3VKotbBSaERwnqr",
   "delivery_mode": "web_deployed",
-  "portfolio_integration": "source_prepared_production_pending",
+  "portfolio_integration": "source_pushed_build_verified_production_blocked",
   "updated_at": "2026-10-08T22:59:11.520839+00:00",
   "deployed_source_commit": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
   "live_url": "https://tidemark-20261008.vercel.app/",
@@ -48,5 +48,21 @@
     "portfolio_integration": "Withheld until all three applicable delivery checks pass; no entries appended",
     "paid_upgrade": false
   },
-  "quota_resolution": "Normal Git-connected deployments subsequently completed; no plan/team/provider change"
+  "quota_resolution": "Normal Git-connected deployments subsequently completed; no plan/team/provider change",
+  "portfolio_source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+  "portfolio_blocker": {
+    "stage": "portfolio_deployment",
+    "service": "Vercel",
+    "http_status": 402,
+    "code": "api-deployments-free-per-day",
+    "message": "Resource is limited - try again in 24 hours (more than 100)",
+    "retry_after_seconds": 86400,
+    "transient": true,
+    "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+    "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+    "observed_at": "2026-10-08T23:00:36.637181+00:00",
+    "production_integration_verified": false,
+    "cli_fallback": "No installed/authenticated Vercel CLI available",
+    "paid_upgrade": false
+  }
 }
