@@ -6,7 +6,19 @@
   "lease_expires_at": "2026-10-08T22:17:12.495801+00:00",
   "target": 3,
   "completed_projects": 0,
-  "projects": [],
+  "projects": [
+    {
+      "title": "DockProof",
+      "stage": "local_verified",
+      "classification": "resume",
+      "stack": [
+        "TypeScript",
+        "Node.js"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 4
+    }
+  ],
   "blockers": [],
   "baseline_commit": "83f049650cff48eb88c8f80883abe298f40613cf",
   "legacy_projects_excluded": [

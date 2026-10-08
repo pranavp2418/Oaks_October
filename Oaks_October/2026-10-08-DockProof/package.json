@@ -1,0 +1,1 @@
+{"name":"dockproof","version":"1.0.0","private":true,"type":"module","scripts":{"build":"tsc && node build.mjs","test":"tsc && node --test tests/*.test.js","start":"node local.mjs"},"devDependencies":{"typescript":"5.9.3"}}

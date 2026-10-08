@@ -1,0 +1,66 @@
+{
+  "policy": "# Packing policy 1 \u2014 synthetic Harbor dispatch\nrequire mass: weight <= 25 message \"Carton must weigh at most 25 kg\";\nrequire label: labels == units message \"One label per unit\";\nrequire hazard: not hazmat or seal == true message \"Hazardous cartons need a seal\";\nrequire cold: temperature <= 8 message \"Keep cold-chain shipment at or below 8 C\";",
+  "shipments": [
+    {
+      "id": "DP-101",
+      "weight": 18,
+      "units": 6,
+      "labels": 6,
+      "temperature": 4,
+      "hazmat": false,
+      "seal": true,
+      "carrier": "Harbor"
+    },
+    {
+      "id": "DP-102",
+      "weight": 20,
+      "units": 6,
+      "labels": 6,
+      "temperature": 4,
+      "hazmat": true,
+      "seal": true,
+      "carrier": "Harbor"
+    },
+    {
+      "id": "DP-103",
+      "weight": 22,
+      "units": 6,
+      "labels": 5,
+      "temperature": 4,
+      "hazmat": false,
+      "seal": true,
+      "carrier": "Harbor"
+    },
+    {
+      "id": "DP-104",
+      "weight": 24,
+      "units": 6,
+      "labels": 6,
+      "temperature": 4,
+      "hazmat": true,
+      "seal": false,
+      "carrier": "Harbor"
+    },
+    {
+      "id": "DP-105",
+      "weight": 26,
+      "units": 6,
+      "labels": 6,
+      "temperature": 10,
+      "hazmat": false,
+      "seal": true,
+      "carrier": "Harbor"
+    },
+    {
+      "id": "DP-106",
+      "weight": 28,
+      "units": 6,
+      "labels": 6,
+      "temperature": 4,
+      "hazmat": true,
+      "seal": true,
+      "carrier": "Harbor"
+    }
+  ],
+  "events": []
+}

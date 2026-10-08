@@ -1,0 +1,1 @@
+{"date":"2026-10-08","title":"DockProof","status":"local_verified","local_tests":{"command":"npm test","passed":8,"oracle":"500 seeded shipment inputs: AST interpreter equals bytecode VM"},"browser":"pending live public deployment; localhost inaccessible to checking browser","deployment":null,"integration":"pending trio"}
