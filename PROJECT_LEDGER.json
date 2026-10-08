@@ -419,8 +419,8 @@
   "portfolio": {
     "path": "portfolio-site",
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-    "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
-    "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
+    "deployment_id": "dpl_GX9nTmxff8DpLkikabQRVuxRwRxf",
+    "source_commit": "3c62d64ad499b2ef59ad0790abbe3dbb76d335b3",
     "alias": "https://pranav-patel.vercel.app/",
     "verification": [
       "3 entries and all source/live links visible",
@@ -431,7 +431,9 @@
       "Distinct SVG covers; lazy media and opt-in live embeds",
       "Original source/assets preserved, film reconstructed with SHA256 verification",
       "Separate Projects header link opens the public 3D country",
-      "Existing archive still shows 3 daily entries on production; original CraftsmanAI Design and CRM walkthrough passed on identical-source preview"
+      "Existing archive still shows 3 daily entries on production; original CraftsmanAI Design and CRM walkthrough passed on identical-source preview",
+      "Houston solar clock and real KIAH observation verified on public Projects page; automatic golden-hour to sunset change observed",
+      "Project covers contained and visible on desktop/mobile; original CraftsmanAI Design workflow and archive retained on final-source preview"
     ],
     "limits": [
       "Mobile browser viewport simulation; no physical device testing",
@@ -457,17 +459,39 @@
           "Mobile browser viewport simulation; no physical device testing",
           "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
         ]
+      },
+      {
+        "path": "portfolio-site",
+        "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+        "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
+        "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
+        "alias": "https://pranav-patel.vercel.app/",
+        "verification": [
+          "3 entries and all source/live links visible",
+          "Month/search filter, singular count and reset passed",
+          "Kiln live iframe returned optimal result",
+          "Mobile search and project dialog passed; 390px viewport no horizontal overflow",
+          "CraftsmanAI Design workflow still worked",
+          "Distinct SVG covers; lazy media and opt-in live embeds",
+          "Original source/assets preserved, film reconstructed with SHA256 verification",
+          "Separate Projects header link opens the public 3D country",
+          "Existing archive still shows 3 daily entries on production; original CraftsmanAI Design and CRM walkthrough passed on identical-source preview"
+        ],
+        "limits": [
+          "Mobile browser viewport simulation; no physical device testing",
+          "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
+        ]
       }
     ],
     "city": {
-      "status": "published; software 3D main workflows verified",
-      "published_at": "2026-10-07T22:49:54.993107+00:00",
+      "status": "published; weather API and software 3D workflows verified; GPU appearance unverified",
+      "published_at": "2026-10-08T00:06:21.777171+00:00",
       "path": "portfolio-site/projects.html",
       "url": "https://pranav-patel.vercel.app/projects.html",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
-      "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
-      "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
-      "preview_deployment_id": "dpl_2b8N9WBptauXZFdMGhzGZuUD5JpU",
+      "source_commit": "3c62d64ad499b2ef59ad0790abbe3dbb76d335b3",
+      "deployment_id": "dpl_GX9nTmxff8DpLkikabQRVuxRwRxf",
+      "preview_deployment_id": "dpl_FtP5J17SyGAxHFbDpMf3y8ycoJmN",
       "counted_daily_project": false,
       "catalog_entries": 7,
       "daily_entries": 3,
@@ -478,14 +502,24 @@
         "Vite",
         "JavaScript",
         "SVGRenderer",
-        "OrbitControls"
+        "OrbitControls",
+        "SunCalc 2.1.1",
+        "Node.js weather function",
+        "National Weather Service observations",
+        "GLTFLoader",
+        "Meshopt"
       ],
       "implementation": [
         "Procedural coastal country and mountains; connected seven-district roads",
         "Stable collision-resolved project lots; append preserves existing positions",
         "Distinct project buildings, directory/month/domain/stack search, opt-in real embeds",
         "Local catalog-aware Pip matching and shortest-road robot navigation",
-        "WebGL2 physically based materials, reflective water, shadows, environment and bloom; software 3D alternative"
+        "WebGL2 physically based materials, reflective water, shadows, environment and bloom; software 3D alternative",
+        "Automatically synchronized Houston sun position, sunrise/sunset and explicit DAY/NIGHT phase; America/Chicago including CST/CDT; no manual time/weather/motion switches",
+        "Real fixed-station KIAH weather API; five-minute caching, concurrent request coalescing, timestamp/freshness labels and explicit unavailable states; stale observations expire from scene effects after three hours",
+        "Wind-driven shallow-water shader, caustics, coastline-sampled animated surf, limestone headlands and coral",
+        "Detailed curved glass towers, floor joints/mullions, photographic CC0 sand/rock/grass/foliage, procedural palms and optimized scanned coastal trees (42,691 triangles; 2,246,804-byte self-hosted GLB)",
+        "Contained cover framing on desktop and mobile; expanded mobile directory keeps atmosphere/controls out of its way; background-tab animation pauses while visible-page motion remains enabled"
       ],
       "verification": [
         {
@@ -493,53 +527,144 @@
           "result": "pass; clean dependency install"
         },
         {
-          "command": "node --test tests/city-model.test.js",
-          "result": "5 tests passed; catalog/links, Pip, independent shortest-path oracle, 456 unique lots with append stability, unsafe URL/code-only semantics"
+          "command": "node --test tests/city-model.test.js tests/island-environment.test.js",
+          "result": "13/13 pass: existing catalog/route/lot/link invariants; CST/CDT and UTC rollover; sunrise/sunset boundaries; observed storm/rain/cloud/fog/snow mapping; caching/coalescence/405/cold failures; observation expiry; shore contours and curved towers; actual Meshopt buffer decoding, checksum and safe deterministic scanned-tree placements"
         },
         {
           "command": "npm run build",
-          "result": "pass; known Three.js 503.57kB chunk warning"
+          "result": "pass; 49 modules; shared Three.js chunk 555.27kB (141.09kB gzip) warning retained; no load-time or FPS benchmark claimed"
         },
         {
-          "command": "git diff --check",
-          "result": "pass"
+          "command": "git diff --cached --stat origin/island-atmosphere-20261007; git diff --cached --check",
+          "result": "empty diff against exact pushed source 3c62d64ad499b2ef59ad0790abbe3dbb76d335b3; no whitespace errors"
         },
         {
-          "check": "Final preview desktop",
-          "result": "Real software 3D terrain rendered; drag orbit, zoom, top-down, day/night, directory Lua filter, Pip selection/camera/arrival and real Kiln embed passed"
+          "check": "Scanned tree asset",
+          "result": "Poly Haven source downloads MD5 verified; simplified/tangent-generated/masked/compressed model; glTF validator reported no errors or warnings and an unsupported-Meshopt-extension info, which is separately decoded by shipped MeshoptDecoder in tests"
         },
         {
-          "check": "Final preview mobile",
-          "result": "390x844 viewport simulation; full-country framing, no horizontal overflow, Pip Python healthcare route, details and real PermitWeave embed passed"
+          "check": "Final-source preview desktop",
+          "result": "software 3D coastal scene visible; controls and keyboard work; 7 catalog entries; all three daily covers load with object-fit contain; actual project embed works; Pip weather answer uses current solar/observation values"
+        },
+        {
+          "check": "Final-source preview mobile",
+          "result": "390x844 iframe viewport; directory search/select works without weather overlay; PermitWeave full cover visible (310x150 contained frame); clientWidth=scrollWidth=390; actual live healthcare workspace loads with 66 covered visits and 14 gaps"
         },
         {
           "check": "Original portfolio",
-          "result": "CraftsmanAI Design workflow, CRM original modal and daily archive filter/reset passed on final-source preview; production original archive remained 3 entries"
+          "result": "CraftsmanAI 02 Design selected and correct workflow copy displayed; original archive still contains three dated projects and source/live links"
         },
         {
-          "check": "Production alias",
-          "result": "Public projects.html rendered; Projects header round trip passed; 7 entries across 6 occupied districts; Pip Lua route arrived; embedded real Kiln returned optimal sequence proven (88 nodes)"
+          "check": "Public alias and atmosphere",
+          "result": "public projects.html loads; visible Houston clock/CDT, sunrise 7:18AM and sunset 6:59PM for Oct7; latest KIAH report at 6:40PM (23:40Z), Clear, 86F and wind15km/h; Pip Lua navigation works; automatic golden-hour to sunset phase observed"
         },
         {
-          "check": "Vercel source",
-          "result": "READY production metadata and project latest deployment match source 87b1613e300d07b5716cbcd18504e1de88598acb; alias pranav-patel.vercel.app; build logs show build and deployment completed"
+          "check": "Live API GET / POST / GET",
+          "result": "200 / 405 Allow:GET / 200; repeated GET returns same cached observation/servedAt; no weather mutation; observedAt 2026-10-07T23:40:00Z, servedAt 2026-10-08T00:02:20.721Z"
         },
         {
-          "check": "Keyboard",
-          "result": "Public map accepted ArrowLeft and retained usable focus; controls have accessible labels"
+          "check": "Vercel source and build",
+          "result": "public alias resolves to READY dpl_GX9nTmxff8DpLkikabQRVuxRwRxf; exact Git source 3c62d64ad499b2ef59ad0790abbe3dbb76d335b3; logs show build and deployment completed"
         }
       ],
-      "evidence_report": "runs/evidence/2026-10-07-project-country.md",
-      "screenshot": "runs/evidence/2026-10-07-project-country.jpg",
+      "evidence_report": "runs/evidence/2026-10-07-island-atmosphere.md",
+      "screenshot": "runs/evidence/2026-10-07-island-atmosphere.jpg",
       "gpu_visual_verified": false,
       "limits": [
-        "Browser WebGL vendor is Disabled; GPU materials, shadows, reflective water and bloom could not be visually verified. Software SVGRenderer 3D mode is visibly verified.",
-        "Mobile testing used an iframe viewport harness, not a physical device; pinch gesture and touch performance are unverified.",
-        "Pip is a local portfolio guide using catalog matching, not an unrestricted remote AI assistant.",
-        "Terrain and buildings are procedural artwork, not geographic survey, photogrammetry or real project offices.",
-        "External sites may forbid iframe embedding; new-tab links remain available."
+        "The verification browser has GL_VENDOR Disabled. GPU photographic materials, scanned trees, reflections, shadows, sky and vegetation deformation are implemented but could not be visually verified; software SVGRenderer geometry and workflows are visibly verified.",
+        "Surface colour maps are 2K and normal/bark/tree maps are 1K; no 8K photographic reconstruction or photorealistic fidelity is asserted. The island and architecture are fictional procedural scenery with scanned tree assets.",
+        "Houston weather is the latest reported KIAH airport observation, refreshed every five minutes; reporting can lag and conditions can differ elsewhere in Houston. Delays/outages are labeled; reports older than three hours stop driving weather effects.",
+        "Mobile verification uses a 390x844 viewport harness, not a physical device; touch performance/pinch gestures remain unverified.",
+        "The original home-page motion preference remains; only the island has always-enabled motion while visible.",
+        "Pip remains a local catalog guide; questions are not sent to an external model.",
+        "External applications may deny iframe embedding; their new-tab links remain available."
       ],
-      "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief"
+      "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief",
+      "history": [
+        {
+          "status": "published; software 3D main workflows verified",
+          "published_at": "2026-10-07T22:49:54.993107+00:00",
+          "path": "portfolio-site/projects.html",
+          "url": "https://pranav-patel.vercel.app/projects.html",
+          "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
+          "source_commit": "87b1613e300d07b5716cbcd18504e1de88598acb",
+          "deployment_id": "dpl_DJv2aw1ESg7QTtY5vJgocFqrFbea",
+          "preview_deployment_id": "dpl_2b8N9WBptauXZFdMGhzGZuUD5JpU",
+          "counted_daily_project": false,
+          "catalog_entries": 7,
+          "daily_entries": 3,
+          "shared_daily_manifest": "portfolio-site/public/projects.json",
+          "featured_manifest": "portfolio-site/public/featured-projects.json",
+          "stack": [
+            "Three.js",
+            "Vite",
+            "JavaScript",
+            "SVGRenderer",
+            "OrbitControls"
+          ],
+          "implementation": [
+            "Procedural coastal country and mountains; connected seven-district roads",
+            "Stable collision-resolved project lots; append preserves existing positions",
+            "Distinct project buildings, directory/month/domain/stack search, opt-in real embeds",
+            "Local catalog-aware Pip matching and shortest-road robot navigation",
+            "WebGL2 physically based materials, reflective water, shadows, environment and bloom; software 3D alternative"
+          ],
+          "verification": [
+            {
+              "command": "npm ci --ignore-scripts --offline",
+              "result": "pass; clean dependency install"
+            },
+            {
+              "command": "node --test tests/city-model.test.js",
+              "result": "5 tests passed; catalog/links, Pip, independent shortest-path oracle, 456 unique lots with append stability, unsafe URL/code-only semantics"
+            },
+            {
+              "command": "npm run build",
+              "result": "pass; known Three.js 503.57kB chunk warning"
+            },
+            {
+              "command": "git diff --check",
+              "result": "pass"
+            },
+            {
+              "check": "Final preview desktop",
+              "result": "Real software 3D terrain rendered; drag orbit, zoom, top-down, day/night, directory Lua filter, Pip selection/camera/arrival and real Kiln embed passed"
+            },
+            {
+              "check": "Final preview mobile",
+              "result": "390x844 viewport simulation; full-country framing, no horizontal overflow, Pip Python healthcare route, details and real PermitWeave embed passed"
+            },
+            {
+              "check": "Original portfolio",
+              "result": "CraftsmanAI Design workflow, CRM original modal and daily archive filter/reset passed on final-source preview; production original archive remained 3 entries"
+            },
+            {
+              "check": "Production alias",
+              "result": "Public projects.html rendered; Projects header round trip passed; 7 entries across 6 occupied districts; Pip Lua route arrived; embedded real Kiln returned optimal sequence proven (88 nodes)"
+            },
+            {
+              "check": "Vercel source",
+              "result": "READY production metadata and project latest deployment match source 87b1613e300d07b5716cbcd18504e1de88598acb; alias pranav-patel.vercel.app; build logs show build and deployment completed"
+            },
+            {
+              "check": "Keyboard",
+              "result": "Public map accepted ArrowLeft and retained usable focus; controls have accessible labels"
+            }
+          ],
+          "evidence_report": "runs/evidence/2026-10-07-project-country.md",
+          "screenshot": "runs/evidence/2026-10-07-project-country.jpg",
+          "gpu_visual_verified": false,
+          "limits": [
+            "Browser WebGL vendor is Disabled; GPU materials, shadows, reflective water and bloom could not be visually verified. Software SVGRenderer 3D mode is visibly verified.",
+            "Mobile testing used an iframe viewport harness, not a physical device; pinch gesture and touch performance are unverified.",
+            "Pip is a local portfolio guide using catalog matching, not an unrestricted remote AI assistant.",
+            "Terrain and buildings are procedural artwork, not geographic survey, photogrammetry or real project offices.",
+            "External sites may forbid iframe embedding; new-tab links remain available."
+          ],
+          "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief"
+        }
+      ],
+      "mobile_screenshot": "runs/evidence/2026-10-07-island-covers-mobile.jpg"
     }
   },
   "delivery_policy": {
