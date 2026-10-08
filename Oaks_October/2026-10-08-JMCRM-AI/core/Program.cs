@@ -96,11 +96,12 @@ sealed class WorkspaceEngine
     void ValidateCommand(Command command)
     {
         if (command is null || command.Type is null) throw new DemoError(400, "Operation object and type required.");
+        if (command.Type is not ("generate" or "stock" or "draft" or "regenerate" or "status")) throw new DemoError(400, "Unknown operation type.");
         if (string.IsNullOrWhiteSpace(command.Key) || command.Key.Length > 80 || command.Key.Any(c => !char.IsAsciiLetterOrDigit(c) && c is not '-' and not '_')) throw new DemoError(400, "Operation key must contain 1–80 letters, numbers, underscores or hyphens.");
         if (command.Payload.ValueKind != JsonValueKind.Object) throw new DemoError(400, "Operation payload must be an object.");
     }
     static int Number(JsonElement p, string name)
-    { if (!p.TryGetProperty(name, out var v) || !v.TryGetInt32(out var n)) throw new DemoError(400, $"{name} must be an integer."); return n; }
+    { if (!p.TryGetProperty(name, out var v) || v.ValueKind != JsonValueKind.Number || !v.TryGetInt32(out var n)) throw new DemoError(400, $"{name} must be an integer."); return n; }
     static string Text(JsonElement p, string name)
     { if (!p.TryGetProperty(name, out var v) || v.ValueKind != JsonValueKind.String) throw new DemoError(400, $"{name} must be text."); return v.GetString()!.Trim(); }
     DateTime Now => origin.AddSeconds(sequence);
@@ -127,7 +128,8 @@ sealed class WorkspaceEngine
             var quantity = Number(p, "quantity"); if (quantity is < 0 or > 9999) throw new DemoError(400, "Stock must be between 0 and 9999.");
             product.QuantityAvailable = quantity; await db.SaveChangesAsync(); return new { quantity };
         }
-        var row = await db.SalesOpportunities.Include(x => x.Customer).Include(x => x.Product).Include(x => x.Activities).FirstOrDefaultAsync(x => x.Id == Number(p, "id")) ?? throw new DemoError(404, "Opportunity not found.");
+        var id = Number(p, "id");
+        var row = await db.SalesOpportunities.Include(x => x.Customer).Include(x => x.Product).Include(x => x.Activities).FirstOrDefaultAsync(x => x.Id == id) ?? throw new DemoError(404, "Opportunity not found.");
         string note; ActivityType activity;
         switch (cmd.Type)
         {
