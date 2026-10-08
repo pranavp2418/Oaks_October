@@ -37,7 +37,7 @@ export function curvedTowerGeometry(width,height,depth,{software=false,bend=.12}
   geometry.computeVertexNormals();geometry.type='BufferGeometry';return geometry;
 }
 export function addSkyline(scene,{software,mobile,landHeight,districts,buildings,facadeMats}){
-  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?100:mobile?180:260;
+  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?60:mobile?180:260;
   for(let i=0,attempts=0;i<count&&attempts<count*40;attempts++){
     const district=districts[Math.floor(random()*districts.length)],x=district.x+(random()-.5)*67,z=district.z+(random()-.5)*67;
     if(buildings.some(p=>Math.hypot(p.x-x,p.z-z)<10)||Math.hypot(x-district.x,z-district.z)<9)continue;
@@ -45,7 +45,7 @@ export function addSkyline(scene,{software,mobile,landHeight,districts,buildings
     const geometry=curved?curvedTowerGeometry(width,height,depth,{software,bend:.15+random()*.12}):new THREE.BoxGeometry(width,height,depth),base=landHeight(x,z);
     geometry.translate(x,base+height/2,z);byDistrict.get(district.id).push(geometry);
     // Actual facade floor joints and vertical mullions remain legible without texture support.
-    const floors=Math.floor(height/1.35),radial=curved?(software?16:32):4;
+    const floors=Math.floor(height/1.35),radial=curved?(software?8:32):4;
     for(let f=1;f<floors;f++){const y=base+f*1.35,t=f/floors,rx=curved?width*(.52-.09*t):width*.51,rz=curved?depth*(.52-.09*t):depth*.51,cx=x+(curved?Math.sin(t*Math.PI/2)*width*.19:0);for(let j=0;j<radial;j++){const a=j/radial*TAU,b=(j+1)/radial*TAU;edges.push(cx+(curved?Math.cos(a):Math.cos(a)+Math.sin(a))*rx,y,z+(curved?Math.sin(a):Math.sin(a)-Math.cos(a))*rz,cx+(curved?Math.cos(b):Math.cos(b)+Math.sin(b))*rx,y,z+(curved?Math.sin(b):Math.sin(b)-Math.cos(b))*rz);}}
     for(let j=0;j<(curved?6:4);j++){const a=j/(curved?6:4)*TAU;edges.push(x+Math.cos(a)*width*.52,base,z+Math.sin(a)*depth*.52,x+Math.cos(a)*width*.43+(curved?width*.19:0),base+height,z+Math.sin(a)*depth*.43);}
     if(!curved&&random()>.5){const roof=new THREE.BoxGeometry(width*.65,.65,depth*.7);roof.translate(x,base+height+.32,z);byDistrict.get(district.id).push(roof);}
@@ -64,7 +64,7 @@ export function marineState(x,z,t,{wind=8,windDirection=150,storm=false}={}){
 export const OFFSHORE_ISLETS=[[-268,-100,17,11],[250,-139,20,16],[273,87,13,8],[-187,229,22,14],[-69,-240,14,18],[143,250,16,9]];
 export function isletHeight(x,z,radius,height){const r=Math.hypot(x,z)/radius,a=Math.atan2(z,x),edge=1+.07*Math.sin(a*5)+.04*Math.cos(a*9);return r>edge?-3:-2+height*Math.max(0,1-(r/edge)**2)**.6*(.82+.18*Math.sin(a*3+r*6))+.38*Math.sin(x*.7+z*.4);}
 export function addOcean(scene,{software,mobile,landHeight,maps}){
-  const coast=shoreline(landHeight),random=randomSeed(781026),foam=[];
+  const coast=shoreline(landHeight,software?64:144),random=randomSeed(781026),foam=[];
   const uniforms={uTime:{value:0},uNight:{value:0},uDay:{value:1},uCloud:{value:0},uWind:{value:new THREE.Vector2(.5,-.866)},uWave:{value:.45},uSun:{value:new THREE.Vector3(-.5,.6,.6)},uWarm:{value:0},uTide:{value:0},uReefs:{value:OFFSHORE_ISLETS.map(([x,z])=>new THREE.Vector2(x,z))}};
   const waterMaterial=software?new THREE.MeshBasicMaterial({color:'#fff',vertexColors:true}):new THREE.ShaderMaterial({uniforms,transparent:true,depthWrite:false,vertexShader:`
     uniform float uTime;uniform float uWave;uniform float uTide;uniform vec2 uWind;varying vec3 vWorld;
@@ -91,7 +91,7 @@ export function addOcean(scene,{software,mobile,landHeight,maps}){
       float haze=1.-exp(-distance(cameraPosition,vWorld)*.00025);color=mix(color,mix(sky,vec3(.014,.028,.066),uNight),haze*.55);
       gl_FragColor=vec4(color,mix(.99,.73,shallow)*(1.-surf*.12));}
   `});
-  const waterGeometry=new THREE.PlaneGeometry(4200,4200,software?28:mobile?180:280,software?28:mobile?180:280),water=new THREE.Mesh(waterGeometry,waterMaterial);
+  const waterGeometry=new THREE.PlaneGeometry(4200,4200,software?12:mobile?180:280,software?12:mobile?180:280),water=new THREE.Mesh(waterGeometry,waterMaterial);
   water.rotation.x=-Math.PI/2;water.position.y=.4;if(software)water.renderOrder=-1000;scene.add(water);
   const cpuSurfaces=[];
   if(software){
@@ -110,7 +110,7 @@ export function addOcean(scene,{software,mobile,landHeight,maps}){
   for(let i=0;i<(software?22:65);i++){const point=coast[Math.floor(random()*coast.length)],angle=Math.atan2(point.z,point.x),offset=2+random()*11,x=point.x+Math.cos(angle)*offset,z=point.z+Math.sin(angle)*offset;if(landHeight(x,z)>3)continue;const g=new THREE.SphereGeometry(1,software?10:24,software?7:18),p=g.attributes.position;
     for(let j=0;j<p.count;j++){const px=p.getX(j),py=p.getY(j),pz=p.getZ(j),k=.9+.12*Math.sin(px*8+pz*5)*Math.cos(py*6);p.setXYZ(j,px*k,py*(.9+.1*Math.sin(px*7)),pz*k);}g.computeVertexNormals();g.scale(1.5+random()*2.7,2+random()*5,1.5+random()*2.5);g.translate(x,-.5,z);rocks.push(g);
   }mergeInto(scene,rocks,rockMat);
-  for(const [x,z,r,h]of OFFSHORE_ISLETS){const g=new THREE.BufferGeometry(),positions=[],colors=[],indices=[],segments=software?36:72,rings=software?6:24;
+  for(const [x,z,r,h]of OFFSHORE_ISLETS){const g=new THREE.BufferGeometry(),positions=[],colors=[],indices=[],segments=software?24:72,rings=software?4:24;
     for(let ring=0;ring<=rings;ring++)for(let i=0;i<segments;i++){const a=i/segments*TAU,edge=1+.07*Math.sin(a*5)+.04*Math.cos(a*9),radius=r*edge*ring/rings,px=Math.cos(a)*radius,pz=Math.sin(a)*radius,y=isletHeight(px,pz,r,h);positions.push(px,y,pz);new THREE.Color(y<1.8?'#efe3c7':y>h*.6?'#aaa894':'#76916b').multiplyScalar(.96+.04*Math.sin(px*2+pz)).toArray(colors,colors.length);}
     for(let ring=0;ring<rings;ring++)for(let i=0;i<segments;i++){const j=(i+1)%segments,a=ring*segments+i,b=ring*segments+j,c=(ring+1)*segments+i,d=(ring+1)*segments+j;indices.push(a,b,c,b,d,c);}
     g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));g.setIndex(indices);g.computeVertexNormals();const island=new THREE.Mesh(g,terrainSurface(maps,software));island.name='offshore-islet';island.position.set(x,0,z);island.receiveShadow=true;island.castShadow=!mobile&&!software;scene.add(island);
