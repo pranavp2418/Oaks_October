@@ -1228,7 +1228,7 @@
       "source_review_commit": "47d5861fe888d63bea2a3b0eaa12356fae618306",
       "documentation_commit": "4feb9e29ebf493ac7f1f475e04d3a085516d7891",
       "delivery_mode": "github_only",
-      "status": "portfolio_source_verified_release_pending",
+      "status": "source_pushed_deployment_blocked_transient",
       "portfolio_manifest": "portfolio-site/public/projects.json",
       "portfolio_cover": "portfolio-site/public/assets/market-news-cover.svg",
       "portfolio_surfaces": [
@@ -1256,11 +1256,21 @@
         "Browser cannot reach local preview server; live UI verification pending deployment"
       ],
       "deployment": {
-        "status": "pending",
-        "prior_blocker": "api-deployments-free-per-day",
-        "current_public_entry": false
+        "status": "blocked_transient",
+        "operation": "POST /v13/deployments",
+        "http_status": 402,
+        "code": "api-deployments-free-per-day",
+        "message": "Resource is limited - try again in 24 hours (more than 100)",
+        "retry_after_seconds": 86400,
+        "attempted_at": "2026-10-08T21:50:13Z",
+        "request_id": "cle1:sfo1::2nllh-1791496213093-3f101630bc1e",
+        "source_commit": "2d2c14c8dabd88bf6cc6ca8fe4ef8d833ef581ab",
+        "current_public_entry": false,
+        "existing_production_preserved": "dpl_65BYjEa7yWLqCAHUARDEMGnkyxhT",
+        "recovery": "Publish the current portfolio source after Vercel permits deployment, verify homepage card/dialog and island research entry, then confirm completion. Preserve this non-counted existing project during daily trio integration."
       },
-      "preservation": "Existing cards and city lots preserved; excluded from all daily project counts"
+      "preservation": "Existing cards and city lots preserved; excluded from all daily project counts",
+      "portfolio_source_commit": "2d2c14c8dabd88bf6cc6ca8fe4ef8d833ef581ab"
     }
   ]
 }
