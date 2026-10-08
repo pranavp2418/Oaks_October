@@ -72,6 +72,10 @@ test('visible ocean geometry, glints and shore foam keep moving; islets remain o
   const first=Array.from(ocean.water.geometry.attributes.position.array),colors=Array.from(ocean.water.geometry.attributes.color.array),surf=Array.from(ocean.foam[0].geom.attributes.position.array);ocean.update(3.5);
   assert.notDeepEqual(Array.from(ocean.water.geometry.attributes.position.array),first);assert.notDeepEqual(Array.from(ocean.water.geometry.attributes.color.array),colors);assert.notDeepEqual(Array.from(ocean.foam[0].geom.attributes.position.array),surf);assert.equal(ocean.foam.length,6);
   for(const obj of scene.children){const p=obj.geometry?.attributes.position;if(p)assert.ok(Array.from(p.array).every(Number.isFinite));}
+  const coastal=scene.getObjectByName('coastal-water'),position=coastal.geometry.attributes.position,index=coastal.geometry.index;
+  for(let i=0;i<index.count;i+=3){const a=new THREE.Vector3().fromBufferAttribute(position,index.getX(i)),b=new THREE.Vector3().fromBufferAttribute(position,index.getX(i+1)),c=new THREE.Vector3().fromBufferAttribute(position,index.getX(i+2));assert.ok(new THREE.Vector3().crossVectors(b.sub(a),c.sub(a)).y>0,'Coastal faces must face upward so the water is visible.');}
+  const islets=scene.children.filter(o=>o.name==='offshore-islet');assert.equal(islets.length,6);
+  for(let j=0;j<islets.length;j++){const p=islets[j].geometry.attributes.position,r=OFFSHORE_ISLETS[j][2];for(let i=0;i<p.count;i++)assert.ok(Math.hypot(p.getX(i),p.getZ(i))<=r*1.12,'Islets follow a radial coastline without square underwater corners.');}
   assert.notEqual(marineState(260,90,0).height,marineState(260,90,5).height);assert.ok(Math.abs(marineState(0,0,30).tide)<=.2);
   for(const [x,z,r,h] of OFFSHORE_ISLETS){assert.ok(landHeight(x,z)<0);assert.ok(isletHeight(0,0,r,h)>1);assert.ok(isletHeight(r*2,0,r,h)<0);}
   const rough=marineState(50,80,2,{wind:70,storm:true}),calm=marineState(50,80,2,{wind:1});assert.ok(Math.abs(rough.height-.4-rough.tide)>Math.abs(calm.height-.4-calm.tide));
