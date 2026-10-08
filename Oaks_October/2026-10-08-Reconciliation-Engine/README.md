@@ -24,6 +24,8 @@ SQLite's composite primary key indexes SKU/effective-date pricing. A determinist
 
 Each browser workspace stores the dataset, policy and operation journal in local storage. A request replays the journal; the Python process is stateless, and SQLite is intentionally in memory. Operation keys prevent duplicate effects, conflicting key reuse fails, and expected revisions reject stale writes. Web Locks serialize writes in supporting browsers; a storage listener reloads sibling tabs. Without Web Locks, concurrent tab writes can still overwrite one another: export before sharing work between tabs. SHA256 hash chains plus an exported head detect changed exports when compared, but do not prove authorship or prevent a malicious user from recomputing a chain. This is not a shared, authenticated financial system.
 
+Browsers may partition storage between embedded previews and the standalone demo. Export/import the journal to move a workspace between those contexts.
+
 ## Stack
 
 Python 3.12+, SQLite, Decimal, minimum-cost flow, FIFO lot allocation, vanilla JavaScript, SVG, semantic HTML and responsive CSS. Vercel's Python function hosts the real core. No external AI, banking API, database subscription or paid integration is required.

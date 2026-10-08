@@ -18,6 +18,8 @@ The browser sends its operation journal → a Node.js 24 Vercel function runs a 
 
 The hosted workspace is **browser-local**. Its journal is persisted in localStorage; SQLite is reconstructed for every request and discarded afterward. No shared cloud database, login, production CRM installation or server-side durability is claimed. Web Locks serialize writes across tabs where supported; storage events reload the latest journal. The fallback without Web Locks is one active tab. Revisions and operation-key receipts detect repeats and conflicts within the supplied journal. They are not account authentication or cross-device locking. Hash chains support export comparisons, not tamper-proof identity.
 
+Browsers may partition storage between embedded previews and the standalone demo. Export/import the journal to move a workspace between those contexts.
+
 The original `(CustomerId, ProductId, OpportunityType)` database uniqueness constraint remains. C# validates stock, legal transitions, draft lengths and operation keys. Journal limit: 500 operations; request limit: 1 MB. All six category eligibility checks are original rule-based recommendations. Templates are deterministic assistance; no remote LLM is called.
 
 ## Stack and local commands
@@ -39,7 +41,7 @@ Synthetic deterministic seed `8102026`, model date `2026-10-08`; `WorkspaceEngin
 
 ## Verification
 
-`npm test` runs the real compiled core: six tests cover deterministic six-category creation, relational uniqueness, refresh preserving drafts and status, repeated keys and revision conflicts, full state progression/stock decrement, illegal transitions, missing records, stock/draft bounds and HTTP failure paths. Clean restore/build and public browser/API evidence are recorded in the root ledger after release. The test suite has no mocked scoring implementation. Do not infer production scale or performance guarantees from this bounded demo.
+`npm test` runs the real compiled core: seven tests cover deterministic six-category creation, relational uniqueness, refresh preserving drafts and status, repeated keys and revision conflicts, full state progression/stock decrement, illegal transitions, missing records, stock/draft bounds, missing or wrongly typed IDs and HTTP failure paths. Clean restore/build and public browser/API evidence are recorded in the root ledger after release. The test suite has no mocked scoring implementation. Do not infer production scale or performance guarantees from this bounded demo.
 
 Source: https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-08-JMCRM-AI
 

@@ -3,7 +3,7 @@
   "title": "Reconciliation Engine",
   "type": "legacy_project_completion",
   "counted_daily_project": false,
-  "status": "local_and_live_verified",
+  "status": "complete",
   "source_commit": "d7f2e693fb5b41cf4653cf55f937a3ebbd73c3dc",
   "deployment_id": "dpl_J9uyab1AobqbdtyWkw5bZEBBRaGZ",
   "project_id": "prj_PBGhrpY70HjexPVoK7ESySdzdHSr",
@@ -20,19 +20,27 @@
   "build": "npm run build passed; actual Python API compiled and deployed",
   "browser": [
     "14 initial confirmed pairs, duplicate ignored, ambiguous pairing held",
-    "Two-cent tolerance produced 15 pairs; reviewed B016→S021 with a note produced 16",
+    "Two-cent tolerance produced 15 pairs; reviewed B016\u2192S021 with a note produced 16",
     "Reload and mobile retained reviewed match and policy",
     "Historical pricing showed the September 1/20 values and missing prior CHAIN price; future October 10 price was excluded",
-    "Mobile FIFO view showed 31 units/$2,538.50 and I01 allocations 30×R01 + 7×R02 = $1,571.50; I02 shortage stayed quarantined",
+    "Mobile FIFO view showed 31 units/$2,538.50 and I01 allocations 30\u00d7R01 + 7\u00d7R02 = $1,571.50; I02 shortage stayed quarantined",
     "Mobile assignment persisted at revision 2 and appeared in audit; inventory unchanged",
-    "Mobile html clientWidth=scrollWidth=375 within the 390px iframe"
+    "Mobile html clientWidth=scrollWidth=375 within the 390px iframe",
+    "An invalid 31-day matching-window import was rejected and preserved the saved workspace"
   ],
   "mobile_method": "390x844 iframe viewport; not a physical device",
   "limits": [
     "Reproducible synthetic data, seed 8102026",
     "Browser-local workspace and stateless Python endpoint; no authentication or bank connection",
-    "Exact reference/account/currency matching; no split settlement",
-    "Scenic portfolio tide is unrelated to financial data"
+    "Exact reference/account/currency matching; no split settlement"
   ],
-  "portfolio_integration": "pending"
+  "portfolio_integration": "verified",
+  "portfolio_release": {
+    "source_commit": "d3bec73404a86a39eae782414f32535d09194446",
+    "deployment_id": "dpl_65BYjEa7yWLqCAHUARDEMGnkyxhT",
+    "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+    "live_url": "https://pranav-patel.vercel.app/",
+    "island_url": "https://pranav-patel.vercel.app/projects.html",
+    "status": "public_alias_and_workflows_verified"
+  }
 }
