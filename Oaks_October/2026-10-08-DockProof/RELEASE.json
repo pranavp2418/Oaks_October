@@ -1,1 +1,21 @@
-{"date":"2026-10-08","title":"DockProof","status":"local_verified","local_tests":{"command":"npm test","passed":8,"oracle":"500 seeded shipment inputs: AST interpreter equals bytecode VM"},"browser":"pending live public deployment; localhost inaccessible to checking browser","deployment":null,"integration":"pending trio"}
+{
+  "date": "2026-10-08",
+  "title": "DockProof",
+  "status": "live_verified",
+  "local_tests": {
+    "command": "npm test",
+    "passed": 8,
+    "oracle": "500 seeded shipment inputs: AST interpreter equals bytecode VM"
+  },
+  "browser": [
+    "Desktop workflow connected to actual core",
+    "Decision survived reload",
+    "390x844 iframe workflow; clientWidth=scrollWidth=375",
+    "Invalid transition/input preserved saved work"
+  ],
+  "deployment": "dpl_Hnn1EJmGR2WmiBG7KNDFhSdaU88u",
+  "integration": "pending trio",
+  "deployed_source_commit": "4329142108a853c6a345d908717c43f870029982",
+  "live_url": "https://dockproof-20261008.vercel.app/",
+  "clean_install_build": "npm ci --ignore-scripts; npm test; npm run build passed"
+}

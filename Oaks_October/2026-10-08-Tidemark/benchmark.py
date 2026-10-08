@@ -1,0 +1,3 @@
+import subprocess,json,platform,pathlib
+r=subprocess.run(['cargo','run','--locked','--offline','--release','--example','codec_bench'],capture_output=True,text=True,check=True)
+v=json.loads(r.stdout);v['hardware']={'os':platform.platform(),'cpu':next((line.split(':',1)[1].strip() for line in pathlib.Path('/proc/cpuinfo').read_text().splitlines() if line.startswith('model name')),'unknown'),'compiler':subprocess.check_output(['rustc','--version'],text=True).strip(),'runtime':'native single process, shared container; not embedded hardware','flags':'cargo release; opt-level=s; LTO=true'};pathlib.Path('BENCHMARK.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v,indent=2))

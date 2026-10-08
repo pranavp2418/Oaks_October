@@ -36,7 +36,7 @@ class Parser {
     } if (s[0] === '"')
         return { kind: 'lit', value: JSON.parse(s) }; if (/^\d/.test(s))
         return { kind: 'lit', value: Number(s) }; if (s === 'true' || s === 'false')
-        return { kind: 'lit', value: s === 'true' }; if (!(s in fields))
+        return { kind: 'lit', value: s === 'true' }; if (!Object.hasOwn(fields, s))
         throw Error(`Unknown field ${s}`); return { kind: 'field', name: s }; }
     expr(min, depth = 0) { let left = this.atom(depth); const precedence = { or: 1, and: 2, '==': 3, '!=': 3, '<': 3, '>': 3, '<=': 3, '>=': 3 }; while ((precedence[this.peek() || ''] || 0) > min) {
         const op = this.take();

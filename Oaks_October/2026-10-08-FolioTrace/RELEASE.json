@@ -1,1 +1,26 @@
-{"date":"2026-10-08","title":"FolioTrace","status":"local_verified","tests":{"passed":11,"command":"npm test","evidence":["independent BM25 reference","SQLite candidate oracle","incremental rebuild equivalence","actual HTTP failure/replay checks"]},"deployment":null,"integration":"pending trio"}
+{
+  "date": "2026-10-08",
+  "title": "FolioTrace",
+  "status": "live_verified",
+  "tests": {
+    "passed": 11,
+    "command": "npm test",
+    "evidence": [
+      "independent BM25 reference",
+      "SQLite candidate oracle",
+      "incremental rebuild equivalence",
+      "actual HTTP failure/replay checks"
+    ]
+  },
+  "deployment": "dpl_5u42xBqaf57vVCKNpjocLeS9onMi",
+  "integration": "pending trio",
+  "deployed_source_commit": "4329142108a853c6a345d908717c43f870029982",
+  "live_url": "https://foliotrace-20261008.vercel.app/",
+  "clean_install_build": "npm ci --ignore-scripts; npm test; npm run build passed",
+  "browser": [
+    "Desktop workflow connected to actual core",
+    "Decision survived reload",
+    "390x844 iframe workflow; clientWidth=scrollWidth=375",
+    "Invalid transition/input preserved saved work"
+  ]
+}

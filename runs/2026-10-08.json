@@ -9,7 +9,7 @@
   "projects": [
     {
       "title": "DockProof",
-      "stage": "local_verified",
+      "stage": "live_verified_pending_final_source_fix",
       "classification": "resume",
       "stack": [
         "TypeScript",
@@ -17,6 +17,28 @@
       ],
       "delivery_mode": "web_deployed",
       "planned_ordinal": 4
+    },
+    {
+      "title": "FolioTrace",
+      "stage": "live_verified",
+      "classification": "resume",
+      "stack": [
+        "Python",
+        "SQLite"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 5
+    },
+    {
+      "title": "Tidemark",
+      "stage": "local_verified",
+      "classification": "new",
+      "stack": [
+        "Rust",
+        "WebAssembly"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 6
     }
   ],
   "blockers": [],

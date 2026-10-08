@@ -1,0 +1,25 @@
+{
+  "codec_bytes": 25003,
+  "codec_encode_ns": {
+    "p50": 50677,
+    "p95": 122355
+  },
+  "correctness": "100% record equality after codec decode",
+  "fixed_bytes": 75000,
+  "fixed_encode_ns": {
+    "p50": 63265,
+    "p95": 164588
+  },
+  "method": "single-thread release encode wall-clock; allocation included; black_box prevents elision",
+  "records": 5000,
+  "repetitions": 100,
+  "seed": 81026,
+  "warmup": 10,
+  "hardware": {
+    "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "compiler": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+    "runtime": "native single process, shared container; not embedded hardware",
+    "flags": "cargo release; opt-level=s; LTO=true"
+  }
+}

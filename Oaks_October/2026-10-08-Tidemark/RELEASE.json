@@ -1,0 +1,1 @@
+{"date":"2026-10-08","title":"Tidemark","status":"local_verified","native_tests":{"passed":12,"command":"cargo test --locked"},"wasm_tests":{"passed":5,"command":"npm test","core":"Actual Rust WASM module; independent JavaScript window oracle"},"deployment":null,"integration":"pending trio"}

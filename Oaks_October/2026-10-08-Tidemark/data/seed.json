@@ -1,0 +1,427 @@
+{
+  "config": {
+    "width": 60,
+    "lag": 30,
+    "threshold": 5000
+  },
+  "commands": [
+    {
+      "id": "seed-0",
+      "revision": 0,
+      "type": "ingest",
+      "event": {
+        "id": 1,
+        "sensor": 2,
+        "time": 5,
+        "value": 3137
+      }
+    },
+    {
+      "id": "seed-1",
+      "revision": 1,
+      "type": "ingest",
+      "event": {
+        "id": 2,
+        "sensor": 3,
+        "time": 10,
+        "value": 3274
+      }
+    },
+    {
+      "id": "seed-2",
+      "revision": 2,
+      "type": "ingest",
+      "event": {
+        "id": 3,
+        "sensor": 1,
+        "time": 15,
+        "value": 3411
+      }
+    },
+    {
+      "id": "seed-3",
+      "revision": 3,
+      "type": "ingest",
+      "event": {
+        "id": 4,
+        "sensor": 2,
+        "time": 20,
+        "value": 3548
+      }
+    },
+    {
+      "id": "seed-4",
+      "revision": 4,
+      "type": "ingest",
+      "event": {
+        "id": 5,
+        "sensor": 3,
+        "time": 25,
+        "value": 3685
+      }
+    },
+    {
+      "id": "seed-5",
+      "revision": 5,
+      "type": "ingest",
+      "event": {
+        "id": 6,
+        "sensor": 1,
+        "time": 30,
+        "value": 3822
+      }
+    },
+    {
+      "id": "seed-6",
+      "revision": 6,
+      "type": "ingest",
+      "event": {
+        "id": 7,
+        "sensor": 2,
+        "time": 35,
+        "value": 3959
+      }
+    },
+    {
+      "id": "seed-7",
+      "revision": 7,
+      "type": "ingest",
+      "event": {
+        "id": 8,
+        "sensor": 3,
+        "time": 40,
+        "value": 4096
+      }
+    },
+    {
+      "id": "seed-8",
+      "revision": 8,
+      "type": "ingest",
+      "event": {
+        "id": 9,
+        "sensor": 1,
+        "time": 45,
+        "value": 4233
+      }
+    },
+    {
+      "id": "seed-9",
+      "revision": 9,
+      "type": "ingest",
+      "event": {
+        "id": 10,
+        "sensor": 2,
+        "time": 50,
+        "value": 4370
+      }
+    },
+    {
+      "id": "seed-10",
+      "revision": 10,
+      "type": "ingest",
+      "event": {
+        "id": 13,
+        "sensor": 2,
+        "time": 65,
+        "value": 4781
+      }
+    },
+    {
+      "id": "seed-11",
+      "revision": 11,
+      "type": "ingest",
+      "event": {
+        "id": 12,
+        "sensor": 1,
+        "time": 60,
+        "value": 4644
+      }
+    },
+    {
+      "id": "seed-12",
+      "revision": 12,
+      "type": "ingest",
+      "event": {
+        "id": 11,
+        "sensor": 3,
+        "time": 55,
+        "value": 4507
+      }
+    },
+    {
+      "id": "seed-13",
+      "revision": 13,
+      "type": "ingest",
+      "event": {
+        "id": 14,
+        "sensor": 3,
+        "time": 70,
+        "value": 4918
+      }
+    },
+    {
+      "id": "seed-14",
+      "revision": 14,
+      "type": "ingest",
+      "event": {
+        "id": 15,
+        "sensor": 1,
+        "time": 75,
+        "value": 5055
+      }
+    },
+    {
+      "id": "seed-15",
+      "revision": 15,
+      "type": "ingest",
+      "event": {
+        "id": 16,
+        "sensor": 2,
+        "time": 80,
+        "value": 5192
+      }
+    },
+    {
+      "id": "seed-16",
+      "revision": 16,
+      "type": "ingest",
+      "event": {
+        "id": 17,
+        "sensor": 3,
+        "time": 85,
+        "value": 5329
+      }
+    },
+    {
+      "id": "seed-17",
+      "revision": 17,
+      "type": "ingest",
+      "event": {
+        "id": 18,
+        "sensor": 1,
+        "time": 90,
+        "value": 5466
+      }
+    },
+    {
+      "id": "seed-18",
+      "revision": 18,
+      "type": "ingest",
+      "event": {
+        "id": 19,
+        "sensor": 2,
+        "time": 95,
+        "value": 5603
+      }
+    },
+    {
+      "id": "seed-19",
+      "revision": 19,
+      "type": "ingest",
+      "event": {
+        "id": 20,
+        "sensor": 3,
+        "time": 100,
+        "value": 5740
+      }
+    },
+    {
+      "id": "seed-20",
+      "revision": 20,
+      "type": "ingest",
+      "event": {
+        "id": 21,
+        "sensor": 1,
+        "time": 105,
+        "value": 5877
+      }
+    },
+    {
+      "id": "seed-21",
+      "revision": 21,
+      "type": "ingest",
+      "event": {
+        "id": 22,
+        "sensor": 2,
+        "time": 110,
+        "value": 3014
+      }
+    },
+    {
+      "id": "seed-22",
+      "revision": 22,
+      "type": "ingest",
+      "event": {
+        "id": 23,
+        "sensor": 3,
+        "time": 115,
+        "value": 3151
+      }
+    },
+    {
+      "id": "seed-23",
+      "revision": 23,
+      "type": "ingest",
+      "event": {
+        "id": 24,
+        "sensor": 1,
+        "time": 120,
+        "value": 3288
+      }
+    },
+    {
+      "id": "seed-24",
+      "revision": 24,
+      "type": "ingest",
+      "event": {
+        "id": 25,
+        "sensor": 2,
+        "time": 125,
+        "value": 3425
+      }
+    },
+    {
+      "id": "seed-25",
+      "revision": 25,
+      "type": "ingest",
+      "event": {
+        "id": 26,
+        "sensor": 3,
+        "time": 130,
+        "value": 3562
+      }
+    },
+    {
+      "id": "seed-26",
+      "revision": 26,
+      "type": "ingest",
+      "event": {
+        "id": 27,
+        "sensor": 1,
+        "time": 135,
+        "value": 3699
+      }
+    },
+    {
+      "id": "seed-27",
+      "revision": 27,
+      "type": "ingest",
+      "event": {
+        "id": 28,
+        "sensor": 2,
+        "time": 140,
+        "value": 3836
+      }
+    },
+    {
+      "id": "seed-28",
+      "revision": 28,
+      "type": "ingest",
+      "event": {
+        "id": 29,
+        "sensor": 3,
+        "time": 145,
+        "value": 3973
+      }
+    },
+    {
+      "id": "seed-29",
+      "revision": 29,
+      "type": "ingest",
+      "event": {
+        "id": 30,
+        "sensor": 1,
+        "time": 150,
+        "value": 4110
+      }
+    },
+    {
+      "id": "seed-30",
+      "revision": 30,
+      "type": "ingest",
+      "event": {
+        "id": 31,
+        "sensor": 2,
+        "time": 155,
+        "value": 4247
+      }
+    },
+    {
+      "id": "seed-31",
+      "revision": 31,
+      "type": "ingest",
+      "event": {
+        "id": 32,
+        "sensor": 3,
+        "time": 160,
+        "value": 4384
+      }
+    },
+    {
+      "id": "seed-32",
+      "revision": 32,
+      "type": "ingest",
+      "event": {
+        "id": 33,
+        "sensor": 1,
+        "time": 165,
+        "value": 4521
+      }
+    },
+    {
+      "id": "seed-33",
+      "revision": 33,
+      "type": "ingest",
+      "event": {
+        "id": 34,
+        "sensor": 2,
+        "time": 170,
+        "value": 4658
+      }
+    },
+    {
+      "id": "seed-34",
+      "revision": 34,
+      "type": "ingest",
+      "event": {
+        "id": 35,
+        "sensor": 3,
+        "time": 175,
+        "value": 4795
+      }
+    },
+    {
+      "id": "seed-35",
+      "revision": 35,
+      "type": "ingest",
+      "event": {
+        "id": 36,
+        "sensor": 1,
+        "time": 180,
+        "value": 4932
+      }
+    },
+    {
+      "id": "seed-36",
+      "revision": 36,
+      "type": "ingest",
+      "event": {
+        "id": 900,
+        "sensor": 1,
+        "time": 20,
+        "value": 7000
+      }
+    },
+    {
+      "id": "seed-37",
+      "revision": 37,
+      "type": "ingest",
+      "event": {
+        "id": 6,
+        "sensor": 1,
+        "time": 30,
+        "value": 3822
+      }
+    }
+  ]
+}
