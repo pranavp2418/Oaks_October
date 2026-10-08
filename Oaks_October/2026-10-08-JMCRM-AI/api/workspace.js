@@ -1,6 +1,8 @@
 import {spawn} from 'node:child_process';
-import {resolve} from 'node:path';
-export function evaluateCore(body,{timeout=15000,binary=resolve(process.cwd(),'runtime/JMCRM.Core')}={}){
+import {fileURLToPath} from 'node:url';
+// Resolve next to the deployed module: a monorepo function's cwd can be the repository root.
+const coreBinary=fileURLToPath(new URL('../runtime/JMCRM.Core',import.meta.url));
+export function evaluateCore(body,{timeout=15000,binary=coreBinary}={}){
   return new Promise((resolve,reject)=>{
     const p=spawn(binary,[],{stdio:['pipe','pipe','pipe'],env:{...process.env,DOTNET_SYSTEM_GLOBALIZATION_INVARIANT:'1',DOTNET_EnableDiagnostics:'0'}});
     let output='',errors='',settled=false;const timer=setTimeout(()=>{p.kill();reject(Error('Core evaluation timed out'));},timeout);
