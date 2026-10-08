@@ -694,7 +694,7 @@
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
     "deployment_id": "dpl_GX9nTmxff8DpLkikabQRVuxRwRxf",
     "source_commit": "3c62d64ad499b2ef59ad0790abbe3dbb76d335b3",
-    "alias": "https://pranav-patel.vercel.app/",
+    "alias": "https://impranavpatel.com/",
     "verification": [
       "3 entries and all source/live links visible",
       "Month/search filter, singular count and reset passed",
@@ -946,12 +946,92 @@
       "verified_from": "Latest project/deployment metadata and maintenance_runs evidence",
       "date": "2026-10-08",
       "daily_manifest_entries": 5,
-      "oct8_new_trio_entries": 0
+      "oct8_new_trio_entries": 0,
+      "canonical_url": "https://impranavpatel.com/"
     },
     "pending_run": "2026-10-08",
     "pending_existing_projects": [
       "market-news-sentiments"
-    ]
+    ],
+    "legacy_alias": "https://pranav-patel.vercel.app/",
+    "canonical_projects_url": "https://impranavpatel.com/projects.html",
+    "custom_domain": {
+      "date": "2026-10-08",
+      "updated_at": "2026-10-08T22:14:33.838892+00:00",
+      "status": "connected_redirect_verified",
+      "counted_daily_project": false,
+      "canonical_url": "https://impranavpatel.com/",
+      "projects_url": "https://impranavpatel.com/projects.html",
+      "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+      "team_id": "team_jdvw58qMPvxbKy0SCSJYCVY2",
+      "root_directory": "portfolio-site",
+      "production_deployment_id": "dpl_65BYjEa7yWLqCAHUARDEMGnkyxhT",
+      "production_source_commit": "d3bec73404a86a39eae782414f32535d09194446",
+      "source_head_before_record": "5a1fc5e19a9c16d651d3566274d9faa0be7b166b",
+      "dns": {
+        "provider": "GoDaddy",
+        "record": {
+          "type": "A",
+          "name": "@",
+          "value": "216.198.79.1",
+          "ttl": "1 Hour"
+        },
+        "previous_value": "WebsiteBuilder Site",
+        "nameservers": [
+          "ns19.domaincontrol.com",
+          "ns20.domaincontrol.com"
+        ],
+        "unrelated_records_preserved": true,
+        "save_confirmed": true,
+        "vercel_configuration": "Valid Configuration"
+      },
+      "redirects": [
+        {
+          "from": "pranav-patel.vercel.app",
+          "to": "impranavpatel.com",
+          "status_code": 308
+        },
+        {
+          "from": "www.impranavpatel.com",
+          "to": "impranavpatel.com",
+          "status_code": 308
+        }
+      ],
+      "verification": [
+        {
+          "check": "GoDaddy authoritative record save",
+          "result": "Success message and A @ 216.198.79.1 visible"
+        },
+        {
+          "check": "Vercel domain settings and project API",
+          "result": "Canonical domain valid and assigned to existing production; both redirects confirmed at 308"
+        },
+        {
+          "check": "HTTPS homepage fetch through Vercel connector",
+          "result": "200; 14529-byte actual Pranav portfolio HTML with project archive"
+        },
+        {
+          "check": "HTTPS projects page fetch through Vercel connector",
+          "result": "200; 7174-byte Projects page HTML"
+        },
+        {
+          "check": "Old domain projects.json request",
+          "result": "308 redirect response"
+        },
+        {
+          "check": "Browser old deep link navigation",
+          "result": "https://pranav-patel.vercel.app/projects.html?project=kiln reached https://impranavpatel.com/projects.html?project=kiln; path and query preserved"
+        }
+      ],
+      "limits": [
+        "The cloud browser showed a transient 502 at the new domain after DNS changed; actual portfolio HTML was returned by Vercel HTTPS fetch. Full DNS propagation across every resolver is not asserted.",
+        "No new production deployment was created. The pending Market Analysis entry and October 8 trio are still subject to their recorded publication blockers."
+      ],
+      "automation_id": "6ac6a4e71e708191b6ca433d010d1699",
+      "automation_prompt_updated": true,
+      "evidence_screenshot": "2026-10-08-portfolio-domain-connected.jpg",
+      "evidence_library_id": "libfile_97cebe83e0888191a474f85fd6d086ce"
+    }
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
