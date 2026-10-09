@@ -232,5 +232,83 @@
       "district": "infrastructure",
       "archetype": "signal"
     }
+  },
+  {
+    "title": "RelayLab",
+    "slug": "relaylab",
+    "domain": "Developer infrastructure",
+    "stack": [
+      "TypeScript",
+      "Node.js",
+      "State machine"
+    ],
+    "description": "Rehearse webhook retries, lease expiry and circuit cooldowns with a deterministic, replayable delivery journal.",
+    "details": "Custom typed queue core, tenant concurrency caps, stale-worker fencing and reviewed dead-letter redrive. Synthetic responses; browser-local journal, no external delivery or authentication claims.",
+    "theme": "relaylab",
+    "visual": "Rehearse tenant-scoped delivery failure with logical-clock retry/circuit semantics and fenced workers",
+    "date": "2026-10-09",
+    "month": "2026-10",
+    "live": "https://relaylab-20261009.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RelayLab",
+    "cover": "/assets/relaylab-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "city": {
+      "district": "infrastructure",
+      "archetype": "signal"
+    }
+  },
+  {
+    "title": "RivetSync",
+    "slug": "rivetsync",
+    "domain": "Construction data operations",
+    "stack": [
+      "Python",
+      "SQLite",
+      "Three-way merge"
+    ],
+    "description": "Merge construction records against a common history, resolve conflicting fields and commit dependency-safe changes.",
+    "details": "Three-way field/record merging, parent-order validation, real atomic SQLite materialization, snapshot hash checks, audit and undo. Synthetic records; browser journal and per-request in-memory database.",
+    "theme": "rivetsync",
+    "visual": "Resolve divergent construction master-data edits while preserving relational dependencies and atomic reviewed commits",
+    "date": "2026-10-09",
+    "month": "2026-10",
+    "live": "https://rivetsync-20261009.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RivetSync",
+    "cover": "/assets/rivetsync-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "resume",
+    "embed": true,
+    "city": {
+      "district": "industry",
+      "archetype": "factory"
+    }
+  },
+  {
+    "title": "PrismIndex",
+    "slug": "prismindex",
+    "domain": "Creative asset tooling",
+    "stack": [
+      "Go",
+      "WebAssembly",
+      "VP-tree"
+    ],
+    "description": "Search exact descriptor neighbors, inspect radius groups and review duplicates before exporting canonical assets.",
+    "details": "Actual Go WASM vantage-point tree, triangle-inequality pruning, deterministic ties, union-find suggestions and reviewed canonical export. Synthetic numeric descriptors; proximity is not semantic image similarity.",
+    "theme": "prismindex",
+    "visual": "Exact numeric-descriptor neighbor search with reviewed duplicate canonicalization and reproducible index maintenance",
+    "date": "2026-10-09",
+    "month": "2026-10",
+    "live": "https://prismindex-20261009.vercel.app/",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-PrismIndex",
+    "cover": "/assets/prismindex-cover.svg",
+    "delivery_mode": "web_deployed",
+    "classification": "new",
+    "embed": true,
+    "city": {
+      "district": "creative",
+      "archetype": "studio"
+    }
   }
 ]

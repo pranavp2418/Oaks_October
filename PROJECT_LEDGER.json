@@ -589,18 +589,31 @@
       "last_updated_at": "2026-10-09T20:16:56.517750+00:00",
       "portfolio_deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo",
       "portfolio_deployed_source_commit": "b49491244a777071ef1169eaacf1d61c9e648fe0"
+    },
+    {
+      "date": "2026-10-09",
+      "status": "portfolio_integration_build",
+      "target": 3,
+      "completed_projects": 0,
+      "local_verified_projects": 3,
+      "live_workflow_verified_projects": 3,
+      "portfolio_integration": "source_pending_release",
+      "run_record": "runs/2026-10-09.json",
+      "last_updated_at": "2026-10-09T20:34:03.998447+00:00",
+      "blockers": []
     }
   ],
   "profile_baseline": {
     "resume": "PRANAV CHIRAG PATEL(20261007-204125).pdf",
     "resume_read": "2026-10-07",
     "profile": "user-supplied current profile text and skill list",
-    "public_linkedin_fetch": "999 on October 8; resume and current supplied text used; public profile comparison unverified",
+    "public_linkedin_fetch": "999 on October 9; current resume and supplied text read, direct profile comparison unverified",
     "new_core_language": "Lua",
     "language_absent_from_supplied_resume_and_profile": true,
     "last_current_materialized_read": "2026-10-08",
-    "new_core_language_this_run": "Rust",
-    "new_language_absent_from_current_verified_resume_and_supplied_profile": true
+    "new_core_language_this_run": "Go",
+    "new_language_absent_from_current_verified_resume_and_supplied_profile": true,
+    "last_current_read": "2026-10-09"
   },
   "projects": [
     {
@@ -1014,6 +1027,227 @@
       "portfolio_source_commit": "b49491244a777071ef1169eaacf1d61c9e648fe0",
       "portfolio_deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo",
       "verified_at": "2026-10-09T20:16:56.517750+00:00"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "RelayLab",
+      "industry": "Developer infrastructure",
+      "problem": "Rehearse tenant-scoped delivery failure with logical-clock retry/circuit semantics and fenced workers",
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "State machine"
+      ],
+      "core_language": "TypeScript",
+      "classification": "resume",
+      "visual_theme": "dark forest, lime and apricot, monospace delivery trace",
+      "path": "Oaks_October/2026-10-09-RelayLab",
+      "delivery_mode": "web_deployed",
+      "planned_completion_ordinal": 7,
+      "completion_ordinal": null,
+      "counted": false,
+      "status": "live_verified_integration_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "local_and_live_workflows_passed",
+      "deployment": "ready_and_live_verified",
+      "integration": "source_build_pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RelayLab",
+      "live_url": "https://relaylab-20261009.vercel.app/",
+      "source_commit": "30e67607145ce156d85da5eda615ec8433ff80a0",
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "deployment_id": "dpl_9mZrZNUmTbe5EE6Rn5xKz2XViRHL",
+      "project_id": "prj_NYvixakKY4ZJEhmyTNqs0z5u4xiB",
+      "core_technical_contribution": "Rehearse tenant-scoped delivery failure with logical-clock retry/circuit semantics and fenced workers",
+      "invariants_and_independent_evidence": [
+        "One active lease per tenant",
+        "Monotonic token rejects expired/replaced workers",
+        "Maximum four delivery attempts; reviewed redrive only on dead letters",
+        "Exact operation retry is idempotent; conflicting IDs and stale revisions rejected"
+      ],
+      "tests": {
+        "passed": 6,
+        "fault_schedules": 150,
+        "clean_install_build": "passed",
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "500 \u2192 queued retry; 429 \u2192 endpoint cooldown; claim rejected during cooldown; 200 \u2192 delivered",
+          "Reload preserved revision10 and delivered state",
+          "390x844 iframe queue passed, width375 no overflow",
+          "Final overlapping UI mutation lock enabled"
+        ],
+        "local_http": "node local.mjs: replay HTTP response verified in same process namespace"
+      },
+      "substantive_skill_coverage": [
+        "TypeScript",
+        "Node.js",
+        "REST",
+        "state machines",
+        "idempotency",
+        "leases/retries"
+      ],
+      "additional_domain_capabilities": [],
+      "limitations": [
+        "Synthetic/sample data only",
+        "Browser-local journal; no authenticated/shared hosted database",
+        "Bounded model documented in README"
+      ],
+      "verified_at": "2026-10-09T20:34:03.998447+00:00",
+      "public_source_integrity": "runs/evidence/2026-10-09-live.json",
+      "blockers": []
+    },
+    {
+      "date": "2026-10-09",
+      "title": "RivetSync",
+      "industry": "Construction data operations",
+      "problem": "Resolve divergent construction master-data edits while preserving relational dependencies and atomic reviewed commits",
+      "stack": [
+        "Python",
+        "SQLite",
+        "Three-way merge"
+      ],
+      "core_language": "Python",
+      "classification": "resume",
+      "visual_theme": "ivory workshop, oxide orange, serif split-pane merge bench",
+      "path": "Oaks_October/2026-10-09-RivetSync",
+      "delivery_mode": "web_deployed",
+      "planned_completion_ordinal": 8,
+      "completion_ordinal": null,
+      "counted": false,
+      "status": "live_verified_integration_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "local_and_live_workflows_passed",
+      "deployment": "ready_and_live_verified",
+      "integration": "source_build_pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RivetSync",
+      "live_url": "https://rivetsync-20261009.vercel.app/",
+      "source_commit": "1ba17704ff2d0e1cd16d56fccc0523606ca7e870",
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "deployment_id": "dpl_ETM39cMv9zy3rCYmRDaumHn7yJVT",
+      "project_id": "prj_ONNdHphE0B3VndduFoRHgfz5Kji0",
+      "core_technical_contribution": "Resolve divergent construction master-data edits while preserving relational dependencies and atomic reviewed commits",
+      "invariants_and_independent_evidence": [
+        "Divergent field/delete-modify changes require explicit resolution",
+        "Merged hierarchy must be cycle-free and reference valid parents",
+        "Preview current hash and operation revision fence changed snapshots",
+        "SQLite materialization is atomic; latest undo restores exact previous records"
+      ],
+      "tests": {
+        "passed": 9,
+        "oracle_cases": 400,
+        "clean_install_build": "passed",
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "Resolved lift.capacity 3 vs 5 to incoming; committed revision1 persisted through reload",
+          "Undo restored capacity3 and original zone name at revision2",
+          "Malformed JSON rejected without altering saved records",
+          "Mobile conflict review passed; clientWidth=scrollWidth=375",
+          "Loading-state buttons disabled until initial workspace is reconstructed"
+        ],
+        "local_http": "python local.py: actual plan HTTP response verified"
+      },
+      "substantive_skill_coverage": [
+        "Python",
+        "SQL",
+        "SQLite",
+        "REST",
+        "transaction validation",
+        "data models"
+      ],
+      "additional_domain_capabilities": [],
+      "limitations": [
+        "Synthetic/sample data only",
+        "Browser-local journal; no authenticated/shared hosted database",
+        "Bounded model documented in README"
+      ],
+      "verified_at": "2026-10-09T20:34:03.998447+00:00",
+      "public_source_integrity": "runs/evidence/2026-10-09-live.json",
+      "blockers": []
+    },
+    {
+      "date": "2026-10-09",
+      "title": "PrismIndex",
+      "industry": "Creative asset tooling",
+      "problem": "Exact numeric-descriptor neighbor search with reviewed duplicate canonicalization and reproducible index maintenance",
+      "stack": [
+        "Go",
+        "WebAssembly",
+        "VP-tree"
+      ],
+      "core_language": "Go",
+      "classification": "new",
+      "visual_theme": "plum studio, coral/violet scatterplot, rounded query panels",
+      "path": "Oaks_October/2026-10-09-PrismIndex",
+      "delivery_mode": "web_deployed",
+      "planned_completion_ordinal": 9,
+      "completion_ordinal": null,
+      "counted": false,
+      "status": "live_verified_integration_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "local_and_live_workflows_passed",
+      "deployment": "ready_and_live_verified",
+      "integration": "source_build_pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-PrismIndex",
+      "live_url": "https://prismindex-20261009.vercel.app/",
+      "source_commit": "3ed4a45db2ccc6f2d3f43da96d1386428653f99e",
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "deployment_id": "dpl_9YFwuLXTUan4M42Nm2agbmqwzFZT",
+      "project_id": "prj_4EuKU0p8ef5g3PZuTR4K25279jRE",
+      "core_technical_contribution": "Exact numeric-descriptor neighbor search with reviewed duplicate canonicalization and reproducible index maintenance",
+      "invariants_and_independent_evidence": [
+        "Metric partitions preserve inner/outer radius bounds",
+        "Exact nearest hits match exhaustive oracle with ID tie order",
+        "Descriptor mutation invalidates reviewed duplicate decisions",
+        "Radius suggestions never remove assets; contradictory distinct/duplicate chains rejected",
+        "Idempotent replay and revision checks preserve recovery semantics"
+      ],
+      "tests": {
+        "passed": 10,
+        "native_tests": 7,
+        "wasm_tests": 3,
+        "native_oracle_cases": 400,
+        "wasm_oracle_cases": 100,
+        "clean_install_build": "passed",
+        "commands": [
+          "go test ./...",
+          "sh build-wasm.sh",
+          "go run ./cmd/bench",
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "Actual Go engine loaded and returned exact search results",
+          "Review asset000/variant-a reduced canonical count82 to81; reload preserved review",
+          "Upsert raised point count to83, rebuilt index and invalidated obsolete reviews",
+          "k=0 rejected; k=5 recovered",
+          "390x844 iframe delete maintained82 assets; clientWidth=scrollWidth=375"
+        ],
+        "benchmark": "Oaks_October/2026-10-09-PrismIndex/BENCHMARK.json"
+      },
+      "substantive_skill_coverage": [
+        "Go",
+        "WebAssembly",
+        "metric indexing",
+        "differential testing",
+        "benchmarking"
+      ],
+      "additional_domain_capabilities": [],
+      "limitations": [
+        "Synthetic/sample data only",
+        "Browser-local journal; no authenticated/shared hosted database",
+        "Bounded model documented in README"
+      ],
+      "verified_at": "2026-10-09T20:34:03.998447+00:00",
+      "public_source_integrity": "runs/evidence/2026-10-09-live.json",
+      "blockers": []
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -1715,5 +1949,12 @@
       "verified_at": "2026-10-09T20:16:56.517750+00:00",
       "portfolio_deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo"
     }
-  ]
+  ],
+  "release_policy": {
+    "date": "2026-10-09",
+    "git_automatic_deployments": false,
+    "release_method": "Explicit authenticated API Git source SHA, correct project/root/team, live verification",
+    "reason": "Avoid repeated unrelated collection deployments and quota exhaustion",
+    "existing_domains_preserved": true
+  }
 }

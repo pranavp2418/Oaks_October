@@ -1,16 +1,16 @@
 {
   "date": "2026-10-09",
   "owner": "build-20261009-recovery",
-  "status": "implementing",
+  "status": "portfolio_integration_build",
   "started_at": "2026-10-09T20:12:04.750Z",
-  "last_updated_at": "2026-10-09T20:26:04.567233+00:00",
+  "last_updated_at": "2026-10-09T20:34:55.751260+00:00",
   "lease_expires_at": "2026-10-09T23:12:04.750Z",
   "target": 3,
   "completed_projects": 0,
   "projects": [
     {
       "title": "RelayLab",
-      "stage": "live_verified",
+      "stage": "live_verified_integration_source",
       "classification": "resume",
       "stack": [
         "TypeScript",
@@ -21,19 +21,35 @@
       "tests": {
         "passed": 6,
         "fault_schedules": 150,
-        "clean_install_build": "passed"
+        "clean_install_build": "passed",
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "500 \u2192 queued retry; 429 \u2192 endpoint cooldown; claim rejected during cooldown; 200 \u2192 delivered",
+          "Reload preserved revision10 and delivered state",
+          "390x844 iframe queue passed, width375 no overflow",
+          "Final overlapping UI mutation lock enabled"
+        ],
+        "local_http": "node local.mjs: replay HTTP response verified in same process namespace"
       },
       "source_commit": "30e67607145ce156d85da5eda615ec8433ff80a0",
-      "deployment_id": "dpl_BrGLwvbm4f2ntGGin47Yq9LKR88M",
+      "deployment_id": "dpl_9mZrZNUmTbe5EE6Rn5xKz2XViRHL",
       "browser": [
         "500/429 circuit cooldown rejection then 200 delivered",
         "reload preserved revision10",
         "390x844 iframe enqueue passed; clientWidth=scrollWidth=375"
-      ]
+      ],
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "project_id": "prj_NYvixakKY4ZJEhmyTNqs0z5u4xiB",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RelayLab",
+      "live_url": "https://relaylab-20261009.vercel.app/"
     },
     {
       "title": "RivetSync",
-      "stage": "source_pushed_deployment_requested",
+      "stage": "live_verified_integration_source",
       "classification": "resume",
       "stack": [
         "Python",
@@ -44,14 +60,31 @@
       "tests": {
         "passed": 9,
         "oracle_cases": 400,
-        "clean_install_build": "passed"
+        "clean_install_build": "passed",
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "Resolved lift.capacity 3 vs 5 to incoming; committed revision1 persisted through reload",
+          "Undo restored capacity3 and original zone name at revision2",
+          "Malformed JSON rejected without altering saved records",
+          "Mobile conflict review passed; clientWidth=scrollWidth=375",
+          "Loading-state buttons disabled until initial workspace is reconstructed"
+        ],
+        "local_http": "python local.py: actual plan HTTP response verified"
       },
       "source_commit": "1ba17704ff2d0e1cd16d56fccc0523606ca7e870",
-      "deployment_id": "dpl_62xbWbNkZdB9DctaCLcVxSn7kTx6"
+      "deployment_id": "dpl_ETM39cMv9zy3rCYmRDaumHn7yJVT",
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "project_id": "prj_ONNdHphE0B3VndduFoRHgfz5Kji0",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RivetSync",
+      "live_url": "https://rivetsync-20261009.vercel.app/"
     },
     {
       "title": "PrismIndex",
-      "stage": "local_verified",
+      "stage": "live_verified_integration_source",
       "classification": "new",
       "stack": [
         "Go",
@@ -60,12 +93,35 @@
       "delivery_mode": "web_deployed",
       "planned_ordinal": 9,
       "tests": {
+        "passed": 10,
         "native_tests": 7,
         "wasm_tests": 3,
         "native_oracle_cases": 400,
         "wasm_oracle_cases": 100,
-        "clean_install_build": "passed"
-      }
+        "clean_install_build": "passed",
+        "commands": [
+          "go test ./...",
+          "sh build-wasm.sh",
+          "go run ./cmd/bench",
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "browser": [
+          "Actual Go engine loaded and returned exact search results",
+          "Review asset000/variant-a reduced canonical count82 to81; reload preserved review",
+          "Upsert raised point count to83, rebuilt index and invalidated obsolete reviews",
+          "k=0 rejected; k=5 recovered",
+          "390x844 iframe delete maintained82 assets; clientWidth=scrollWidth=375"
+        ],
+        "benchmark": "Oaks_October/2026-10-09-PrismIndex/BENCHMARK.json"
+      },
+      "source_commit": "3ed4a45db2ccc6f2d3f43da96d1386428653f99e",
+      "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
+      "deployment_id": "dpl_9YFwuLXTUan4M42Nm2agbmqwzFZT",
+      "project_id": "prj_4EuKU0p8ef5g3PZuTR4K25279jRE",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-PrismIndex",
+      "live_url": "https://prismindex-20261009.vercel.app/"
     }
   ],
   "previous_day_recovery": {
@@ -74,5 +130,14 @@
     "completed": 3,
     "deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo"
   },
-  "blockers": []
+  "blockers": [],
+  "local_verified_projects": 3,
+  "live_workflow_verified_projects": 3,
+  "portfolio_integration": "local_build_passed_release_pending",
+  "portfolio_tests": {
+    "passed": 18,
+    "build": "passed"
+  },
+  "public_source_integrity": "13 files including actual WASM matched final local source",
+  "local_install_test_total": 25
 }

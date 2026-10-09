@@ -1,0 +1,29 @@
+{
+  "RelayLab": {
+    "public_source_integrity": {
+      "index.html": "73991312f847c6d7923a2d16c93012680bbaa5fd9b533b7c4d3991580c4d53ba",
+      "app.js": "4bb90a649d3e80ee63ce7ee9e8327ca789c081cca82baa6194c65f96f71bd194",
+      "style.css": "f81c5f460d5093289f2a5d8db121638b351479e87f1f78b3a06c6d205d0677df",
+      "cover.svg": "9ccb63317c6b89001c2612b64b4df1d04634178a5cf0563c5f4a7d560d47e3d4"
+    },
+    "api": "200 valid request; equal repeated responses; 400 invalid request"
+  },
+  "RivetSync": {
+    "public_source_integrity": {
+      "index.html": "618890b903f54096eea4394dbd8ab6d8adb89fbbc73b7ec2ea223bb8fa9f85b3",
+      "app.js": "18df046729a3618857c30ae598b5b4a3015bb87df140232b404f1cb0bff51dd4",
+      "style.css": "d5ebbd1545819be10f045d4780273dfe7d17e680ed382536df05c54132fe5c6f",
+      "cover.svg": "2e0c1a3a46eeaacf546893f10c66e7d5a9e3f553ce73494a61eee348d098689a"
+    },
+    "api": "200 valid request; equal repeated responses; 400 invalid request"
+  },
+  "PrismIndex": {
+    "public_source_integrity": {
+      "index.html": "482a3f2ed71f86e0a5cdc6bafb93fc3a31de1fa15d5d1f00bb50690e5b93441b",
+      "app.js": "170e767d029391e683679f9cc0906a5796da610fb6674759f598425b01aa7b35",
+      "style.css": "b36fdf7ff7ebf624938e29a735507eb87e411b1eb955877dfc6c25a971d686bc",
+      "cover.svg": "7fe83dc35b0ed960e541522dcf30edf52458cef48fd92acaab63d542ba2e40ff",
+      "wasm/prism.wasm": "c8b51c931972379092e67b84e1ebdd3dae647a89f19acf0bd1679371a8ffa74f"
+    }
+  }
+}

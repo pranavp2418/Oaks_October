@@ -1,1 +1,12 @@
-{"buildCommand":"npm run build","outputDirectory":"public","functions":{"api/*.js":{"includeFiles":"lib/**"}}}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "lib/**"
+    }
+  },
+  "git": {
+    "deploymentEnabled": false
+  }
+}
