@@ -1,16 +1,16 @@
 {
   "date": "2026-10-09",
   "owner": "build-20261009-recovery",
-  "status": "portfolio_integration_build",
+  "status": "complete",
   "started_at": "2026-10-09T20:12:04.750Z",
-  "last_updated_at": "2026-10-09T20:34:55.751260+00:00",
-  "lease_expires_at": "2026-10-09T23:12:04.750Z",
+  "last_updated_at": "2026-10-09T20:40:46.893948+00:00",
+  "lease_expires_at": "2026-10-09T20:40:46.893948+00:00",
   "target": 3,
-  "completed_projects": 0,
+  "completed_projects": 3,
   "projects": [
     {
       "title": "RelayLab",
-      "stage": "live_verified_integration_source",
+      "stage": "complete",
       "classification": "resume",
       "stack": [
         "TypeScript",
@@ -45,11 +45,15 @@
       "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
       "project_id": "prj_NYvixakKY4ZJEhmyTNqs0z5u4xiB",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RelayLab",
-      "live_url": "https://relaylab-20261009.vercel.app/"
+      "live_url": "https://relaylab-20261009.vercel.app/",
+      "counted": true,
+      "completion_ordinal": 7,
+      "portfolio_integration": "verified",
+      "completed_at": "2026-10-09T20:40:46.893948+00:00"
     },
     {
       "title": "RivetSync",
-      "stage": "live_verified_integration_source",
+      "stage": "complete",
       "classification": "resume",
       "stack": [
         "Python",
@@ -80,11 +84,15 @@
       "deployed_source_commit": "b1fc61d9d5f5796a30aecda81cc31d714624a8c5",
       "project_id": "prj_ONNdHphE0B3VndduFoRHgfz5Kji0",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-RivetSync",
-      "live_url": "https://rivetsync-20261009.vercel.app/"
+      "live_url": "https://rivetsync-20261009.vercel.app/",
+      "counted": true,
+      "completion_ordinal": 8,
+      "portfolio_integration": "verified",
+      "completed_at": "2026-10-09T20:40:46.893948+00:00"
     },
     {
       "title": "PrismIndex",
-      "stage": "live_verified_integration_source",
+      "stage": "complete",
       "classification": "new",
       "stack": [
         "Go",
@@ -121,7 +129,11 @@
       "deployment_id": "dpl_9YFwuLXTUan4M42Nm2agbmqwzFZT",
       "project_id": "prj_4EuKU0p8ef5g3PZuTR4K25279jRE",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-09-PrismIndex",
-      "live_url": "https://prismindex-20261009.vercel.app/"
+      "live_url": "https://prismindex-20261009.vercel.app/",
+      "counted": true,
+      "completion_ordinal": 9,
+      "portfolio_integration": "verified",
+      "completed_at": "2026-10-09T20:40:46.893948+00:00"
     }
   ],
   "previous_day_recovery": {
@@ -133,11 +145,24 @@
   "blockers": [],
   "local_verified_projects": 3,
   "live_workflow_verified_projects": 3,
-  "portfolio_integration": "local_build_passed_release_pending",
+  "portfolio_integration": "live_verified",
   "portfolio_tests": {
     "passed": 18,
     "build": "passed"
   },
   "public_source_integrity": "13 files including actual WASM matched final local source",
-  "local_install_test_total": 25
+  "local_install_test_total": 25,
+  "completed_at": "2026-10-09T20:40:46.893948+00:00",
+  "lease_released_at": "2026-10-09T20:40:46.893948+00:00",
+  "portfolio_source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
+  "portfolio_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
+  "portfolio_verification": [
+    "18 portfolio tests and clean build passed; original film restored with checksum validation",
+    "All three homepage archive cards, source/live links and RelayLab opt-in real embed verified",
+    "Island/Pip matches all three purposes and stacks; project navigation passed",
+    "390px mobile country Pip navigation for all three passed; clientWidth=scrollWidth=390",
+    "Existing 12 manifest entries plus 2 featured catalog entries preserved; existing Market research remains code-only",
+    "Canonical HTTPS production domain verified; both old and www redirects preserve /projects.html?project=kiln"
+  ],
+  "report": "runs/2026-10-09-report.md"
 }
