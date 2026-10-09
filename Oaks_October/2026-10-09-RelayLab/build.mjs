@@ -1,0 +1,1 @@
+import{mkdir,copyFile,rm}from'node:fs/promises';await rm('public',{recursive:true,force:true});await mkdir('public/lib',{recursive:true});for(const f of['index.html','app.js','style.css','cover.svg','mobile.html'])await copyFile(f,`public/${f}`);await copyFile('lib/core.js','public/lib/core.js');
