@@ -10,7 +10,7 @@ The browser persists seed + operation journal; serverless Python reconstructs a 
 Load conflicting sample. Preview highlights `lift.capacity`; choose current or incoming. Commit with review note, inspect changed records/audit, reload and undo latest merge. Export/recover full workspace; audit can be exported separately. Invalid input leaves saved records intact. Changing input invalidates the current preview.
 
 ## Local commands
-Python 3.12+, Node 24: `npm ci --ignore-scripts && npm test && npm run build`. `npx vercel dev` serves the Python function and static UI. No environment variables, third-party Python packages or paid resources required. Standard-library dependencies are pinned by the documented runtime; npm lockfile included.
+Python 3.12+, Node 24: `npm ci --ignore-scripts && npm test && npm run build`. Run `python local.py` to serve the Python function and static UI. No environment variables, third-party Python packages or paid resources required. Standard-library dependencies are pinned by the documented runtime; npm lockfile included.
 
 ## Tests and limits
 Tests cover field conflicts, deletion versus modification, merge-only cycles/orphans, SQLite materialization, preview CAS, replay/idempotency/undo and schema failures. 400 seed-109 field cases compare against an independent scalar oracle; input permutations check dependency-order independence. Browser/live evidence recorded in collection run. Maximum 100 records and 100 operations; parent hierarchy only, no real vendor adapters or financial records. UI localStorage loss loses history. No production-scale/performance claims.

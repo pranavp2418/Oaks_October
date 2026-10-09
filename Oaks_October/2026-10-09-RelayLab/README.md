@@ -8,7 +8,7 @@ Queue a synthetic inventory fixture, claim it and return its first 500 response.
 TypeScript core and Node serverless replay API. Browser localStorage persists the journal; server independently reconstructs it on every request. No external webhooks are sent. Only one active worker per tenant; at most four attempts before dead letter; terminal delivery cannot be acknowledged twice. Exact operation retries are idempotent, conflicting IDs and stale revisions fail without modifying state. Circuit failures are endpoint-scoped. Logical clock and fixture responses are deliberate simulation boundaries, not real network delivery guarantees or authenticated tenant isolation.
 
 ## Run
-`npm ci --ignore-scripts && npm test && npm run build`. Use `npx vercel dev` for the API and static UI. No environment variables or paid services needed. Vercel deploys `public/` and `api/workspace.js`; complete core is included in the function.
+`npm ci --ignore-scripts && npm test && npm run build`. Run `node local.mjs` for the API and static UI. No environment variables or paid services needed. Vercel deploys `public/` and `api/workspace.js`; complete core is included in the function.
 
 ## Verification
 Node tests cover circuit/retry timing, expired leases, retry idempotency, tenant cap, redrive, invalid inputs, and 150 deterministic fault schedules with exact replay checks. Browser/live evidence is in the collection dated run record. No performance claims.
