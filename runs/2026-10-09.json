@@ -3,14 +3,14 @@
   "owner": "build-20261009-recovery",
   "status": "implementing",
   "started_at": "2026-10-09T20:12:04.750Z",
-  "last_updated_at": "2026-10-09T20:20:39.805519+00:00",
+  "last_updated_at": "2026-10-09T20:26:04.567233+00:00",
   "lease_expires_at": "2026-10-09T23:12:04.750Z",
   "target": 3,
   "completed_projects": 0,
   "projects": [
     {
       "title": "RelayLab",
-      "stage": "source_pushed_deployment_requested",
+      "stage": "live_verified",
       "classification": "resume",
       "stack": [
         "TypeScript",
@@ -24,11 +24,16 @@
         "clean_install_build": "passed"
       },
       "source_commit": "30e67607145ce156d85da5eda615ec8433ff80a0",
-      "deployment_id": "dpl_BrGLwvbm4f2ntGGin47Yq9LKR88M"
+      "deployment_id": "dpl_BrGLwvbm4f2ntGGin47Yq9LKR88M",
+      "browser": [
+        "500/429 circuit cooldown rejection then 200 delivered",
+        "reload preserved revision10",
+        "390x844 iframe enqueue passed; clientWidth=scrollWidth=375"
+      ]
     },
     {
       "title": "RivetSync",
-      "stage": "local_verified",
+      "stage": "source_pushed_deployment_requested",
       "classification": "resume",
       "stack": [
         "Python",
@@ -40,18 +45,27 @@
         "passed": 9,
         "oracle_cases": 400,
         "clean_install_build": "passed"
-      }
+      },
+      "source_commit": "1ba17704ff2d0e1cd16d56fccc0523606ca7e870",
+      "deployment_id": "dpl_62xbWbNkZdB9DctaCLcVxSn7kTx6"
     },
     {
       "title": "PrismIndex",
-      "stage": "selected",
+      "stage": "local_verified",
       "classification": "new",
       "stack": [
         "Go",
         "WebAssembly"
       ],
       "delivery_mode": "web_deployed",
-      "planned_ordinal": 9
+      "planned_ordinal": 9,
+      "tests": {
+        "native_tests": 7,
+        "wasm_tests": 3,
+        "native_oracle_cases": 400,
+        "wasm_oracle_cases": 100,
+        "clean_install_build": "passed"
+      }
     }
   ],
   "previous_day_recovery": {

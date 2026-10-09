@@ -1,0 +1,10 @@
+{
+  "name": "prismindex",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node build.mjs && node --test tests/wasm.test.js",
+    "build": "node build.mjs"
+  }
+}

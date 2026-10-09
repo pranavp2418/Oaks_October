@@ -1,0 +1,23 @@
+{
+  "arch": "amd64",
+  "cpu_count": 9,
+  "dimensions": 3,
+  "k": 10,
+  "method": "single-process native wall-clock query only; build excluded; fixed query",
+  "oracle_equal": true,
+  "os": "linux",
+  "points": 1000,
+  "repetitions": 100,
+  "runtime": "go1.25.2",
+  "scan_p50_ns": 118229,
+  "scan_p95_ns": 176728,
+  "seed": 109,
+  "visited": 160,
+  "vp_p50_ns": 23927,
+  "vp_p95_ns": 51668,
+  "warmup": 20,
+  "hardware_cpu": "AMD EPYC 9V74 80-Core Processor",
+  "kernel": "6.18.44",
+  "compiler_flags": "default native go run; release WASM -trimpath -ldflags=-s -w",
+  "memory": "not measured"
+}
