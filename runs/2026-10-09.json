@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "owner": "build-20261009-recovery",
+  "status": "reconciling",
+  "started_at": "2026-10-09T20:12:04.750Z",
+  "last_updated_at": "2026-10-09T20:12:04.750Z",
+  "lease_expires_at": "2026-10-09T23:12:04.750Z",
+  "target": 3,
+  "completed_projects": 0,
+  "projects": [],
+  "previous_day_recovery": {
+    "date": "2026-10-08",
+    "stage": "portfolio_deployment_requested",
+    "deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo"
+  },
+  "blockers": []
+}
