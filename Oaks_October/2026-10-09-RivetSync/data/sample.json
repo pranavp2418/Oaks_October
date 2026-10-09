@@ -1,0 +1,82 @@
+{
+  "seed": [
+    {
+      "id": "site",
+      "parent": null,
+      "name": "West construction site",
+      "capacity": 0
+    },
+    {
+      "id": "lift",
+      "parent": "site",
+      "name": "Scissor lift",
+      "capacity": 2
+    },
+    {
+      "id": "zone",
+      "parent": "site",
+      "name": "East staging zone",
+      "capacity": 8
+    }
+  ],
+  "base": [
+    {
+      "id": "site",
+      "parent": null,
+      "name": "West construction site",
+      "capacity": 0
+    },
+    {
+      "id": "lift",
+      "parent": "site",
+      "name": "Scissor lift",
+      "capacity": 2
+    },
+    {
+      "id": "zone",
+      "parent": "site",
+      "name": "East staging zone",
+      "capacity": 8
+    }
+  ],
+  "current": [
+    {
+      "id": "site",
+      "parent": null,
+      "name": "West construction site",
+      "capacity": 0
+    },
+    {
+      "id": "lift",
+      "parent": "site",
+      "name": "Scissor lift",
+      "capacity": 3
+    },
+    {
+      "id": "zone",
+      "parent": "site",
+      "name": "East staging zone",
+      "capacity": 8
+    }
+  ],
+  "incoming": [
+    {
+      "id": "site",
+      "parent": null,
+      "name": "West construction site",
+      "capacity": 0
+    },
+    {
+      "id": "lift",
+      "parent": "site",
+      "name": "Scissor lift",
+      "capacity": 5
+    },
+    {
+      "id": "zone",
+      "parent": "site",
+      "name": "East materials zone",
+      "capacity": 8
+    }
+  ]
+}
