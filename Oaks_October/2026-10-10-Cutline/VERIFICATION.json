@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-10-10T20:28:23.064910+00:00",
+  "tests_passed": 9,
+  "exhaustive_oracle_cases": 100,
+  "clean_install_build": true,
+  "actual_local_http": {
+    "status": 200,
+    "optimal": true,
+    "bars": 3,
+    "nodes": 48
+  },
+  "browser": "pending",
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run build"
+  ]
+}

@@ -1,0 +1,1 @@
+{"buildCommand":"npm run build","outputDirectory":"public","functions":{"api/*.py":{"includeFiles":"core.py"}},"git":{"deploymentEnabled":false}}

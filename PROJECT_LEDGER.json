@@ -661,6 +661,69 @@
       "completed_at": "2026-10-09T20:40:46.893948+00:00",
       "portfolio_source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
       "portfolio_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa"
+    },
+    {
+      "title": "StrataLog",
+      "stage": "source_pushed_verified",
+      "industry": "Data infrastructure",
+      "classification": "new",
+      "core_language": "Elixir",
+      "stack": [
+        "Elixir",
+        "OTP GenServer",
+        "Custom framed WAL"
+      ],
+      "delivery_mode": "github_only",
+      "planned_ordinal": 10,
+      "path": "Oaks_October/2026-10-10-StrataLog",
+      "core_technical_contribution": "Checksummed atomic batch WAL, actor-serialized stream offsets and duplicate-conflict fencing; torn-tail recovery and durable snapshots",
+      "invariants": [
+        "Only fully validated/fsynced frames committed",
+        "Per-stream contiguous offsets",
+        "Operation ID exactly-once or conflict",
+        "Corruption fails closed; truncated final frame recoverable"
+      ],
+      "tests": {
+        "verified_at": "2026-10-10T20:23:12.531329+00:00",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "core": "Elixir 1.14.0 / Erlang OTP25",
+        "unit_tests_passed": 10,
+        "oracle_changes": 400,
+        "concurrent_calls": 40,
+        "cli_scenarios_passed": 9,
+        "clean_commands": [
+          "mix deps.get",
+          "mix test",
+          "mix escript.build",
+          "python3 tools/verify_cli.py"
+        ],
+        "clean_copy_build": true,
+        "delivery": "github_only",
+        "limits": [
+          "Process-interruption tested; power-loss/parent-directory sync not verified",
+          "No multi-node or performance claim"
+        ]
+      },
+      "date": "2026-10-10",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "clean_cli_and_recovery_passed",
+      "deployment": "intentionally_not_required",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
+      "live_url": null,
+      "deployment_id": null,
+      "source_commit": "edfde88acfa33246f7ab3456cc54e88d7d5968d8",
+      "counted": true,
+      "completion_ordinal": 10,
+      "visual_theme": "Plum/acid-lime terminal and framed log diagram",
+      "substantive_skill_coverage": [
+        "Elixir",
+        "OTP GenServer",
+        "Custom framed WAL"
+      ],
+      "additional_domain_capabilities": [],
+      "portfolio_integration": "pending"
     }
   ],
   "dry_runs": [
@@ -1501,7 +1564,7 @@
     },
     {
       "title": "StrataLog",
-      "stage": "local_verified_source_pending",
+      "stage": "source_pushed_verified",
       "industry": "Data infrastructure",
       "classification": "new",
       "core_language": "Elixir",
@@ -1542,28 +1605,29 @@
         ]
       },
       "date": "2026-10-10",
-      "status": "in_progress",
-      "implementation": "local_verified_source_pending",
-      "verification": "local_passed",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "clean_cli_and_recovery_passed",
       "deployment": "intentionally_not_required",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
       "live_url": null,
       "deployment_id": null,
-      "source_commit": null,
-      "counted": false,
-      "completion_ordinal": null,
+      "source_commit": "edfde88acfa33246f7ab3456cc54e88d7d5968d8",
+      "counted": true,
+      "completion_ordinal": 10,
       "visual_theme": "Plum/acid-lime terminal and framed log diagram",
       "substantive_skill_coverage": [
         "Elixir",
         "OTP GenServer",
         "Custom framed WAL"
       ],
-      "additional_domain_capabilities": []
+      "additional_domain_capabilities": [],
+      "portfolio_integration": "pending"
     },
     {
       "title": "Cutline",
-      "stage": "implementing",
+      "stage": "local_core_build_verified_browser_pending",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -1584,8 +1648,8 @@
       ],
       "date": "2026-10-10",
       "status": "in_progress",
-      "implementation": "implementing",
-      "verification": "pending",
+      "implementation": "local_implemented",
+      "verification": "core_clean_build_passed_browser_pending",
       "deployment": "pending",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
@@ -1600,7 +1664,26 @@
         "SQLite",
         "JavaScript/SVG"
       ],
-      "additional_domain_capabilities": []
+      "additional_domain_capabilities": [],
+      "project_id": "prj_WrKAu2IewoPKouk6aObtoWByBcb5",
+      "tests": {
+        "verified_at": "2026-10-10T20:28:23.064910+00:00",
+        "tests_passed": 9,
+        "exhaustive_oracle_cases": 100,
+        "clean_install_build": true,
+        "actual_local_http": {
+          "status": 200,
+          "optimal": true,
+          "bars": 3,
+          "nodes": 48
+        },
+        "browser": "pending",
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ]
+      }
     },
     {
       "title": "VectorGarden",
@@ -2028,8 +2111,8 @@
     "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
     "completed_counts": {
       "web_deployed": 9,
-      "github_only": 0,
-      "total": 9
+      "github_only": 1,
+      "total": 10
     },
     "next_planned_completion_ordinal": 10,
     "next_planned_delivery_mode": "github_only"
