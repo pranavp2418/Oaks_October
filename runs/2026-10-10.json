@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-10",
+  "owner": "build-20261010-60a62b51f5f7",
+  "status": "researching",
+  "started_at": "2026-10-10T20:13:32.307777+00:00",
+  "last_updated_at": "2026-10-10T20:13:32.307777+00:00",
+  "lease_expires_at": "2026-10-10T22:13:32.307777+00:00",
+  "target": 3,
+  "completed_projects": 0,
+  "projects": [],
+  "reconciliation": {
+    "main_source_commit": "2fe9e7448541758e6354c11af576f51b2d643e93",
+    "production_source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
+    "production_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
+    "prior_completed_projects": 9,
+    "delivery_counts": {
+      "web_deployed": 9,
+      "github_only": 0
+    },
+    "prior_runs_complete": true,
+    "island_policy": "Preserve main island scenery; declined island-city-plan revisions excluded."
+  },
+  "profile_comparison": {
+    "resume_read_current": true,
+    "supplied_profile_read_current": true,
+    "public_profile": "HTTP999; unverified direct comparison"
+  }
+}
