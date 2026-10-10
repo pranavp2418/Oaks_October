@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+if [ "$#" -lt 2 ]; then echo 'Usage: bin/stratalog COMMAND STORE [ARGS]' >&2; exit 2; fi
+command=$1
+store=$2
+shift 2
+mkdir -p "$store"
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec flock -n "$store/.writer-lock" "$project_dir/stratalog" "$command" "$store" "$@"
