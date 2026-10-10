@@ -1,0 +1,6 @@
+# id	stream	offset	put/delete	key	value
+op-1	parts	1	put	P-101	bracket-revA
+op-2	parts	2	put	P-102	plate-revB
+op-3	parts	3	put	P-101	bracket-revC
+op-4	parts	4	delete	P-102	-
+op-5	locations	1	put	RACK-A	ready

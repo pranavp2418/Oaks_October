@@ -834,6 +834,14 @@
       "completed_at": "2026-10-09T20:40:46.893948+00:00",
       "portfolio_source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
       "portfolio_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa"
+    },
+    {
+      "date": "2026-10-10",
+      "status": "implementing",
+      "target": 3,
+      "completed_projects": 0,
+      "run_record": "runs/2026-10-10.json",
+      "last_updated_at": "2026-10-10T20:25:09.158122+00:00"
     }
   ],
   "profile_baseline": {
@@ -1490,6 +1498,152 @@
       "completed_at": "2026-10-09T20:40:46.893948+00:00",
       "portfolio_source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
       "portfolio_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa"
+    },
+    {
+      "title": "StrataLog",
+      "stage": "local_verified_source_pending",
+      "industry": "Data infrastructure",
+      "classification": "new",
+      "core_language": "Elixir",
+      "stack": [
+        "Elixir",
+        "OTP GenServer",
+        "Custom framed WAL"
+      ],
+      "delivery_mode": "github_only",
+      "planned_ordinal": 10,
+      "path": "Oaks_October/2026-10-10-StrataLog",
+      "core_technical_contribution": "Checksummed atomic batch WAL, actor-serialized stream offsets and duplicate-conflict fencing; torn-tail recovery and durable snapshots",
+      "invariants": [
+        "Only fully validated/fsynced frames committed",
+        "Per-stream contiguous offsets",
+        "Operation ID exactly-once or conflict",
+        "Corruption fails closed; truncated final frame recoverable"
+      ],
+      "tests": {
+        "verified_at": "2026-10-10T20:23:12.531329+00:00",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "core": "Elixir 1.14.0 / Erlang OTP25",
+        "unit_tests_passed": 10,
+        "oracle_changes": 400,
+        "concurrent_calls": 40,
+        "cli_scenarios_passed": 9,
+        "clean_commands": [
+          "mix deps.get",
+          "mix test",
+          "mix escript.build",
+          "python3 tools/verify_cli.py"
+        ],
+        "clean_copy_build": true,
+        "delivery": "github_only",
+        "limits": [
+          "Process-interruption tested; power-loss/parent-directory sync not verified",
+          "No multi-node or performance claim"
+        ]
+      },
+      "date": "2026-10-10",
+      "status": "in_progress",
+      "implementation": "local_verified_source_pending",
+      "verification": "local_passed",
+      "deployment": "intentionally_not_required",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
+      "live_url": null,
+      "deployment_id": null,
+      "source_commit": null,
+      "counted": false,
+      "completion_ordinal": null,
+      "visual_theme": "Plum/acid-lime terminal and framed log diagram",
+      "substantive_skill_coverage": [
+        "Elixir",
+        "OTP GenServer",
+        "Custom framed WAL"
+      ],
+      "additional_domain_capabilities": []
+    },
+    {
+      "title": "Cutline",
+      "stage": "implementing",
+      "industry": "Industrial fabrication",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "JavaScript/SVG"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 11,
+      "path": "Oaks_October/2026-10-10-Cutline",
+      "core_technical_contribution": "Bounded exact branch-and-bound 1D stock assignment with kerf; reservation/completion transactions and remnant reuse",
+      "invariants": [
+        "Every piece placed once",
+        "Used length plus kerf never exceeds stock",
+        "Reserved stock not reused",
+        "Completion conserves material including kerf/remnant"
+      ],
+      "date": "2026-10-10",
+      "status": "in_progress",
+      "implementation": "implementing",
+      "verification": "pending",
+      "deployment": "pending",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
+      "live_url": null,
+      "deployment_id": null,
+      "source_commit": null,
+      "counted": false,
+      "completion_ordinal": null,
+      "visual_theme": "Navy/amber industrial cutting strips",
+      "substantive_skill_coverage": [
+        "Python",
+        "SQLite",
+        "JavaScript/SVG"
+      ],
+      "additional_domain_capabilities": []
+    },
+    {
+      "title": "VectorGarden",
+      "stage": "planned",
+      "industry": "Machine learning tooling",
+      "classification": "resume",
+      "core_language": "TypeScript",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Web Worker",
+        "Custom two-tower network/Adam"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 12,
+      "path": "Oaks_October/2026-10-10-VectorGarden",
+      "core_technical_contribution": "Manual two-tower backpropagation, symmetric contrastive loss, deterministic Adam/resume and held-out retrieval evaluation",
+      "invariants": [
+        "Train/holdout partition disjoint",
+        "Gradients match independent finite differences",
+        "Checkpoint resume equals uninterrupted training",
+        "Nonfinite and inconsistent imports leave workspace intact"
+      ],
+      "date": "2026-10-10",
+      "status": "in_progress",
+      "implementation": "planned",
+      "verification": "pending",
+      "deployment": "pending",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
+      "live_url": null,
+      "deployment_id": null,
+      "source_commit": null,
+      "counted": false,
+      "completion_ordinal": null,
+      "visual_theme": "Sage/cream/coral botanical learning curves",
+      "substantive_skill_coverage": [
+        "TypeScript",
+        "React",
+        "Web Worker",
+        "Custom two-tower network/Adam"
+      ],
+      "additional_domain_capabilities": []
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",

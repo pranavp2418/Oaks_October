@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-10T20:23:12.531329+00:00",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "core": "Elixir 1.14.0 / Erlang OTP25",
+  "unit_tests_passed": 10,
+  "oracle_changes": 400,
+  "concurrent_calls": 40,
+  "cli_scenarios_passed": 9,
+  "clean_commands": [
+    "mix deps.get",
+    "mix test",
+    "mix escript.build",
+    "python3 tools/verify_cli.py"
+  ],
+  "clean_copy_build": true,
+  "delivery": "github_only",
+  "limits": [
+    "Process-interruption tested; power-loss/parent-directory sync not verified",
+    "No multi-node or performance claim"
+  ]
+}
