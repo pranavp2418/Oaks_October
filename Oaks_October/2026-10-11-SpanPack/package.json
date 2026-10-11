@@ -1,0 +1,1 @@
+{"name":"spanpack","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/*.mjs","dev":"npm run build && python3 -m http.server 8133 -d public"}}

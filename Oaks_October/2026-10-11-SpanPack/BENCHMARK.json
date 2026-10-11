@@ -1,0 +1,89 @@
+{
+  "measured_at": "2026-10-11T20:32:43.617Z",
+  "platform": "linux",
+  "release": "6.18.44",
+  "architecture": "x64",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "runtime": "v24.19.0",
+  "compiler": "Zig 0.14.1 ReleaseSafe wasm32-freestanding",
+  "warmup": 30,
+  "repetitions": 200,
+  "method": "performance.now around synchronous bridge calls; includes JS/WASM copies; baseline raw Int32Array copy stores uncompressed data",
+  "workloads": [
+    {
+      "mode": "steps",
+      "samples": 4096,
+      "block_size": 64,
+      "seed": 10112026,
+      "raw_bytes": 16384,
+      "archive_bytes": 1676,
+      "encode": {
+        "median_ms": 0.05083499999999219,
+        "p95_ms": 0.11219499999999982,
+        "minimum_ms": 0.04898300000000688
+      },
+      "decode": {
+        "median_ms": 0.1440629999999885,
+        "p95_ms": 0.3505579999999924,
+        "minimum_ms": 0.12468499999999949
+      },
+      "baseline_raw_copy": {
+        "median_ms": 0.001882000000009043,
+        "p95_ms": 0.005468000000007578,
+        "minimum_ms": 0.0009709999999927277
+      }
+    },
+    {
+      "mode": "ramp",
+      "samples": 4096,
+      "block_size": 64,
+      "seed": 10112026,
+      "raw_bytes": 16384,
+      "archive_bytes": 9360,
+      "encode": {
+        "median_ms": 0.09070399999998813,
+        "p95_ms": 0.10788900000000012,
+        "minimum_ms": 0.0564340000000243
+      },
+      "decode": {
+        "median_ms": 0.27934300000001144,
+        "p95_ms": 0.4086239999999748,
+        "minimum_ms": 0.15618099999997526
+      },
+      "baseline_raw_copy": {
+        "median_ms": 0.0023339999999905103,
+        "p95_ms": 0.005758999999983416,
+        "minimum_ms": 0.0010110000000054242
+      }
+    },
+    {
+      "mode": "noise",
+      "samples": 4096,
+      "block_size": 64,
+      "seed": 10112026,
+      "raw_bytes": 16384,
+      "archive_bytes": 17141,
+      "encode": {
+        "median_ms": 0.09661299999999073,
+        "p95_ms": 0.17617100000001074,
+        "minimum_ms": 0.0932369999999878
+      },
+      "decode": {
+        "median_ms": 0.19598999999999478,
+        "p95_ms": 0.3037490000000389,
+        "minimum_ms": 0.18564399999999637
+      },
+      "baseline_raw_copy": {
+        "median_ms": 0.0015620000000353684,
+        "p95_ms": 0.004606999999964501,
+        "minimum_ms": 0.0009009999999989304
+      }
+    }
+  ],
+  "limits": [
+    "Shared container",
+    "No disk/network I/O",
+    "CRC32 not cryptographic",
+    "No native codec throughput claim"
+  ]
+}

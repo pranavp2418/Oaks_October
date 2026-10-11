@@ -1,0 +1,53 @@
+{
+  "verified_at": "2026-10-11T20:31:23.356815+00:00",
+  "native_tests_passed": 2,
+  "wasm_test_groups_passed": 5,
+  "independent_oracle_workloads": 180,
+  "seek_comparisons": 540,
+  "clean_install_build": true,
+  "commands": [
+    "zig test src/codec.zig",
+    "python3 compile.py",
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run build",
+    "node benchmark.mjs"
+  ],
+  "compiler_artifact": {
+    "compiler": "0.14.1",
+    "target": "wasm32-freestanding",
+    "optimization": "ReleaseSafe",
+    "source_sha256": "ca51e89dfce27cfa674e826712fb90ccfa1a67938a386704e58c5c0570ed7a6c",
+    "wasm_sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca",
+    "bytes": 59543
+  },
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "runtime": "Node v24.19.0",
+  "browser": {
+    "verified_at": "2026-10-11T20:33:43.389Z",
+    "name": "SpanPack",
+    "base": "http://127.0.0.1:8133",
+    "status": "passed",
+    "desktop": true,
+    "mobile_viewport": 390,
+    "physical_device": false,
+    "flows": [
+      "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+      "mobile noise/raw codec/block size controls/invalid input and index"
+    ],
+    "page_errors": [],
+    "width": {
+      "viewport": 390,
+      "document": 390
+    }
+  },
+  "benchmark": "BENCHMARK.json",
+  "limits": [
+    "Synthetic integer signals",
+    "Shared container benchmarks",
+    "Mobile viewport simulation",
+    "CRC32 not cryptographic authenticity"
+  ],
+  "clean_recompiled_wasm_sha256_equal": true,
+  "clean_recompiled_tests_passed": true
+}

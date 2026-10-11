@@ -3,8 +3,8 @@
   "owner": "build-20261011-4f7c0817b92a",
   "status": "implementing",
   "started_at": "2026-10-11T20:13:29.249235+00:00",
-  "last_updated_at": "2026-10-11T20:33:43.121525+00:00",
-  "lease_expires_at": "2026-10-11T22:33:43.121533+00:00",
+  "last_updated_at": "2026-10-11T20:34:44.206643+00:00",
+  "lease_expires_at": "2026-10-11T22:34:44.206650+00:00",
   "target": 3,
   "completed_projects": 2,
   "projects": [
@@ -24,9 +24,9 @@
       "path": "Oaks_October/2026-10-11-GrainLab",
       "core_technical_contribution": "Sparse dimensional cube with exact retractions, distribution counts and row lineage",
       "visual_theme": "Paper white, electric cobalt, editorial matrix",
-      "source_commit": "ffd2aefbd967edb450a4a2a8029cf0f851370910",
+      "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://grainlab-20261011.vercel.app/",
-      "deployment_id": "dpl_HyT1MzVtuT6nS8Ca1hTMkk2kdgxM",
+      "deployment_id": "dpl_FpPdPikRHJa95YnARGoF3Nfggzx9",
       "portfolio_integration": "pending",
       "counted": true,
       "tests": {
@@ -122,9 +122,9 @@
       "path": "Oaks_October/2026-10-11-VeilLedger",
       "core_technical_contribution": "Transactional scope projection, independent review, version fencing and hash-linked audit receipts",
       "visual_theme": "Plum ink, mint, case file workspace",
-      "source_commit": "e774c3c5a14c941fcc1d3991fa60ee559352878e",
+      "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://veilledger-20261011.vercel.app/",
-      "deployment_id": "dpl_A9hfyBbfvy4TWnGQazHxsXQhYfyt",
+      "deployment_id": "dpl_42GnxoS8dBNn1qcg4D17fLRrSVEe",
       "portfolio_integration": "pending",
       "counted": true,
       "tests": {
@@ -208,7 +208,7 @@
     },
     {
       "title": "SpanPack",
-      "stage": "implementing",
+      "stage": "local_verified",
       "industry": "Telemetry infrastructure",
       "classification": "new",
       "core_language": "Zig",
@@ -226,7 +226,81 @@
       "live_url": null,
       "deployment_id": null,
       "portfolio_integration": "pending",
-      "counted": false
+      "counted": false,
+      "tests": {
+        "verified_at": "2026-10-11T20:31:23.356815+00:00",
+        "native_tests_passed": 2,
+        "wasm_test_groups_passed": 5,
+        "independent_oracle_workloads": 180,
+        "seek_comparisons": 540,
+        "clean_install_build": true,
+        "commands": [
+          "zig test src/codec.zig",
+          "python3 compile.py",
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build",
+          "node benchmark.mjs"
+        ],
+        "compiler_artifact": {
+          "compiler": "0.14.1",
+          "target": "wasm32-freestanding",
+          "optimization": "ReleaseSafe",
+          "source_sha256": "ca51e89dfce27cfa674e826712fb90ccfa1a67938a386704e58c5c0570ed7a6c",
+          "wasm_sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca",
+          "bytes": 59543
+        },
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "runtime": "Node v24.19.0",
+        "browser": {
+          "verified_at": "2026-10-11T20:27:45.417Z",
+          "name": "SpanPack",
+          "base": "http://127.0.0.1:8133",
+          "status": "passed",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false,
+          "flows": [
+            "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+            "mobile noise/raw codec/block size controls/invalid input and index"
+          ],
+          "page_errors": [],
+          "width": {
+            "viewport": 390,
+            "document": 390
+          }
+        },
+        "benchmark": "BENCHMARK.json",
+        "limits": [
+          "Synthetic integer signals",
+          "Shared container benchmarks",
+          "Mobile viewport simulation",
+          "CRC32 not cryptographic authenticity"
+        ],
+        "clean_recompiled_wasm_sha256_equal": true,
+        "clean_recompiled_tests_passed": true
+      },
+      "invariants": [
+        "Exact signed i32 roundtrip including extrema",
+        "Directory covers precisely bounded archive",
+        "Strict failure does not commit partial samples",
+        "Damaged blocks quarantine only their original indices",
+        "Seek validates requested block; metadata corruption fails closed"
+      ],
+      "substantive_skill_coverage": [
+        "Zig",
+        "WebAssembly ABI",
+        "Binary serialization",
+        "Bounded buffers",
+        "CRC32",
+        "Differential decoding",
+        "Corruption recovery",
+        "Benchmarks"
+      ],
+      "additional_domain_capabilities": [
+        "Random block seek",
+        "Explicit damaged block quarantine and recoverable binary archives"
+      ]
     }
   ]
 }

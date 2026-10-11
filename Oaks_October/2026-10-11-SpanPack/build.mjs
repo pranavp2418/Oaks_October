@@ -1,0 +1,3 @@
+import fs from 'node:fs';import {spawnSync} from 'node:child_process';import {createHash} from 'node:crypto';
+fs.mkdirSync('public',{recursive:true});for(const f of ['index.html','app.js','style.css','bridge.js','cover.svg'])fs.copyFileSync(f,'public/'+f);
+const spec=JSON.parse(fs.readFileSync('codec-artifact.json'));const b=Buffer.from(fs.readFileSync('codec.wasm.b64','utf8').trim(),'base64');if(createHash('sha256').update(b).digest('hex')!==spec.wasm_sha256)throw Error('WASM checksum mismatch');if(createHash('sha256').update(fs.readFileSync('src/codec.zig')).digest('hex')!==spec.source_sha256)throw Error('Source/WASM binding stale; rebuild the core');fs.writeFileSync('public/codec.wasm',b);

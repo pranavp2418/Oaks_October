@@ -1,0 +1,8 @@
+{
+  "compiler": "0.14.1",
+  "target": "wasm32-freestanding",
+  "optimization": "ReleaseSafe",
+  "source_sha256": "ca51e89dfce27cfa674e826712fb90ccfa1a67938a386704e58c5c0570ed7a6c",
+  "wasm_sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca",
+  "bytes": 59543
+}
