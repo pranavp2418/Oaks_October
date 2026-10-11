@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-10-10T20:38:58.307715+00:00",
+  "verified_at": "2026-10-11T15:36:38.813052+00:00",
   "core_tests_passed": 8,
   "finite_difference_comparisons": 126,
   "independent_forward_loss_oracle": true,
@@ -13,5 +13,7 @@
   "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
   "node": "v24.19.0",
   "browser": "pending",
-  "dataset": "original synthetic seed10102026"
+  "dataset": "original synthetic seed10102026",
+  "toolchain": "React19.1.1 / TypeScript5.9.2 / Vite7.3.7",
+  "dependency_update": "Pinned compatible patched Vite release after current registry advisory check; npm ci/test/build repeated successfully"
 }

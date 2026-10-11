@@ -18,7 +18,7 @@ A 2D plot displays only the first two coordinates of three-dimensional normalize
 The lab supports up to5000 training steps; each core call handles at most500; browser worker updates/persists in10-step chunks. Rate0.0001..0.1, temperature0.05..1, seeds1..2^32−1. Checkpoint imports cap750KB. Persistence is browser localStorage only, no account/cross-device service. Storage loss loses unsaved history; exports support recovery. Resource/quality results apply to this bounded synthetic task; no hardware throughput or production-readiness claim.
 
 ## Verification/local commands
-Node24; pinned React19.1.1, Vite7.1.5, TypeScript5.9.2 and type packages in lockfile. No environment variables/secrets.
+Node24; pinned React19.1.1, Vite7.3.7, TypeScript5.9.2 and type packages in lockfile. No environment variables/secrets.
 
 ```sh
 npm ci --ignore-scripts
