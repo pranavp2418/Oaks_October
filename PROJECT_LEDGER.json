@@ -935,7 +935,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://grainlab-20261011.vercel.app/",
       "deployment_id": "dpl_FpPdPikRHJa95YnARGoF3Nfggzx9",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:27:12.353093+00:00",
@@ -1039,7 +1039,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://veilledger-20261011.vercel.app/",
       "deployment_id": "dpl_42GnxoS8dBNn1qcg4D17fLRrSVEe",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:29:33.581988+00:00",
@@ -1145,7 +1145,7 @@
       "source_commit": "effa3091f0e96ba8c4014320061be218b552378d",
       "live_url": "https://spanpack-20261011.vercel.app/",
       "deployment_id": "dpl_7giJmT9YGrT9hMN32CgcGZEkjdU2",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "date": "2026-10-11",
       "problem": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
@@ -1461,13 +1461,14 @@
     },
     {
       "date": "2026-10-11",
-      "status": "portfolio_local_verified",
+      "status": "complete",
       "record": "runs/2026-10-11.json",
       "completed_projects": 3,
       "target": 3,
       "run_record": "runs/2026-10-11.json",
-      "last_updated_at": "2026-10-11T20:42:29.833406+00:00",
-      "portfolio_integration": "local_verified_release_pending"
+      "last_updated_at": "2026-10-11T20:48:39.591057+00:00",
+      "portfolio_integration": "production_verified",
+      "completed_at": "2026-10-11T20:48:39.591057+00:00"
     }
   ],
   "profile_baseline": {
@@ -2398,7 +2399,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://grainlab-20261011.vercel.app/",
       "deployment_id": "dpl_FpPdPikRHJa95YnARGoF3Nfggzx9",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:27:12.353093+00:00",
@@ -2502,7 +2503,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://veilledger-20261011.vercel.app/",
       "deployment_id": "dpl_42GnxoS8dBNn1qcg4D17fLRrSVEe",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:29:33.581988+00:00",
@@ -2608,7 +2609,7 @@
       "source_commit": "effa3091f0e96ba8c4014320061be218b552378d",
       "live_url": "https://spanpack-20261011.vercel.app/",
       "deployment_id": "dpl_7giJmT9YGrT9hMN32CgcGZEkjdU2",
-      "portfolio_integration": "local_verified_release_pending",
+      "portfolio_integration": "production_verified",
       "counted": true,
       "date": "2026-10-11",
       "problem": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
@@ -3243,7 +3244,19 @@
       "daily_task_prompt_updated": true,
       "release_status": "published_verified"
     },
-    "pending_maintenance": null
+    "pending_maintenance": null,
+    "latest_daily_integration": {
+      "date": "2026-10-11",
+      "source_commit": "14d978e26a24f7c2cc014fd61bcc9aa651554c9c",
+      "deployment_id": "dpl_6RJwwyr6vqY9bfYngxGZUU9M4ke3",
+      "status": "production_verified",
+      "verification": "runs/2026-10-11-trio-portfolio-public.json",
+      "entries": [
+        "grainlab",
+        "veilledger",
+        "spanpack"
+      ]
+    }
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
