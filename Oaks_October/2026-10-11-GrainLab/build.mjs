@@ -1,0 +1,1 @@
+import fs from 'node:fs';fs.mkdirSync('public',{recursive:true});for(const f of ['index.html','app.js','style.css','cover.svg'])fs.copyFileSync(f,'public/'+f);for(const f of ['core.js','worker.js'])fs.copyFileSync('lib/'+f,'public/'+f);
