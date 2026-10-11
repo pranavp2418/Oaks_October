@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-10T20:38:58.307715+00:00",
+  "core_tests_passed": 8,
+  "finite_difference_comparisons": 126,
+  "independent_forward_loss_oracle": true,
+  "checkpoint_resume_exact": true,
+  "clean_install_build": true,
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run build"
+  ],
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "node": "v24.19.0",
+  "browser": "pending",
+  "dataset": "original synthetic seed10102026"
+}

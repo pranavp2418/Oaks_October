@@ -900,11 +900,11 @@
     },
     {
       "date": "2026-10-10",
-      "status": "implementing",
+      "status": "recovering_interrupted_verification",
       "target": 3,
-      "completed_projects": 0,
+      "completed_projects": 1,
       "run_record": "runs/2026-10-10.json",
-      "last_updated_at": "2026-10-10T20:25:09.158122+00:00"
+      "last_updated_at": "2026-10-11T15:33:11.113175+00:00"
     }
   ],
   "profile_baseline": {
@@ -1627,7 +1627,7 @@
     },
     {
       "title": "Cutline",
-      "stage": "local_core_build_verified_browser_pending",
+      "stage": "live_main_flows_verified_recovery_check_pending",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -1653,9 +1653,9 @@
       "deployment": "pending",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
-      "live_url": null,
-      "deployment_id": null,
-      "source_commit": null,
+      "live_url": "https://cutline-20261010.vercel.app/",
+      "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
+      "source_commit": "a4b3adbc3ac360addaa1f4e9dcbaf9bde06da60d",
       "counted": false,
       "completion_ordinal": null,
       "visual_theme": "Navy/amber industrial cutting strips",
@@ -1677,7 +1677,12 @@
           "bars": 3,
           "nodes": 48
         },
-        "browser": "pending",
+        "browser": {
+          "desktop": "edit/solve/reserve/complete/reload passed; 6400=5770+24+606+0 mm",
+          "mobile": "390px view invalid length rejected, reserve/cancel restores all stock",
+          "recovery": "tool timed out; repeat pending",
+          "physical_device": false
+        },
         "commands": [
           "npm ci --ignore-scripts",
           "npm test",
@@ -1687,7 +1692,7 @@
     },
     {
       "title": "VectorGarden",
-      "stage": "planned",
+      "stage": "clean_install_core_build_verified",
       "industry": "Machine learning tooling",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -1726,7 +1731,25 @@
         "Web Worker",
         "Custom two-tower network/Adam"
       ],
-      "additional_domain_capabilities": []
+      "additional_domain_capabilities": [],
+      "tests": {
+        "verified_at": "2026-10-10T20:38:58.307715+00:00",
+        "core_tests_passed": 8,
+        "finite_difference_comparisons": 126,
+        "independent_forward_loss_oracle": true,
+        "checkpoint_resume_exact": true,
+        "clean_install_build": true,
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "node": "v24.19.0",
+        "browser": "pending",
+        "dataset": "original synthetic seed10102026"
+      },
+      "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -2114,8 +2137,8 @@
       "github_only": 1,
       "total": 10
     },
-    "next_planned_completion_ordinal": 10,
-    "next_planned_delivery_mode": "github_only"
+    "next_planned_completion_ordinal": 11,
+    "next_planned_delivery_mode": "web_deployed"
   },
   "domain_depth_policy": {
     "effective_from": "future projects after October 7 follow-up",

@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {create,dataset,train,evaluate,validate,gradientCheck,lossGradient,embedding,D,H,E,P,COUNT} from '../test-lib/engine.js';
+test('analytical backprop agrees with finite differences across both towers',()=>{for(const seed of [1,1010,77]){const g=gradientCheck(create(seed));assert(g.passed,JSON.stringify(g));assert.equal(g.checked,42)}});
+test('independent forward/softmax reference loss agrees',()=>{const c=create(1010),d=dataset(),qs=d.train.filter(x=>x.id.endsWith('-0')).map(x=>x.x);
+ const ref=(x,off)=>{const h=[];for(let i=0;i<H;i++){let v=c.weights[off+D*H+i];for(let j=0;j<D;j++)v+=x[j]*c.weights[off+j*H+i];h.push(Math.tanh(v))}const z=[];for(let i=0;i<E;i++){let v=c.weights[off+P-E+i];for(let j=0;j<H;j++)v+=h[j]*c.weights[off+D*H+H+j*E+i];z.push(v)}const n=Math.sqrt(z.map(v=>v*v).reduce((a,b)=>a+b,0)+1e-8);return z.map(v=>v/n)};
+ const q=qs.map(x=>ref(x,0)),v=d.items.map(x=>ref(x,P));const scores=q.map(a=>v.map(b=>a.reduce((s,x,i)=>s+x*b[i],0)/c.temperature));let loss=0;
+ for(let i=0;i<8;i++){loss+=Math.log(scores[i].map(Math.exp).reduce((a,b)=>a+b,0))-scores[i][i];loss+=Math.log(scores.map(row=>Math.exp(row[i])).reduce((a,b)=>a+b,0))-scores[i][i]}
+ assert(Math.abs(loss/16-lossGradient(c,qs,d.items).loss)<1e-10)
+});
+test('JSON checkpoint resumes bit-identically including Adam and RNG',()=>{const c=create(),full=train(c,120),part=train(JSON.parse(JSON.stringify(train(c,40))),80);assert.deepEqual(full,part);assert.equal(c.step,0)});
+test('actual model improves synthetic held-out ranking',()=>{const c=create();const before=evaluate(c),after=evaluate(train(c,120));assert(after.recall1>before.recall1);assert(after.recall1>=.875)});
+test('holdout data disjoint from training and split reproducible',()=>{const d=dataset();assert.equal(d.train.length,64);assert.equal(d.holdout.length,32);const set=new Set(d.train.map(q=>q.id));assert(d.holdout.every(q=>!set.has(q.id)));assert.deepEqual(d,dataset())});
+test('nonfinite/shape/negative variance/inconsistent checkpoints rejected',()=>{for(const mutate of [c=>c.weights[0]=NaN,c=>c.m.pop(),c=>c.v[0]=-1,c=>c.step=4,c=>c.dataset='other',c=>c.rng=0,c=>c.rate=1,c=>c.temperature=0]){const c=create();mutate(c);assert.throws(()=>validate(c))}});
+test('resource budgets and failed requests preserve model',()=>{const c=create();for(const n of [0,-1,501,1.5])assert.throws(()=>train(c,n));assert.equal(c.step,0);assert.throws(()=>lossGradient(c,[[0]],[[0]]))});
+test('normalized embeddings and deterministic seeded initialization',()=>{const c=create();assert.equal(c.weights.length,COUNT);assert.deepEqual(c,create());assert.notDeepEqual(c.weights,create(2).weights);for(const x of dataset().items){const e=embedding(c,x,'item');assert(e.every(Number.isFinite));assert(Math.abs(Math.hypot(...e)-1)<1e-5)}});

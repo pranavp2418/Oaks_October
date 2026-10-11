@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"noEmit":false,"outDir":"test-lib","module":"NodeNext","moduleResolution":"NodeNext"},"include":["src/engine.ts"]}

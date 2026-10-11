@@ -1,10 +1,10 @@
 {
   "date": "2026-10-10",
   "owner": "build-20261010-60a62b51f5f7",
-  "status": "implementing",
+  "status": "recovering_interrupted_verification",
   "started_at": "2026-10-10T20:13:32.307777+00:00",
-  "last_updated_at": "2026-10-10T20:30:41.412007+00:00",
-  "lease_expires_at": "2026-10-10T22:13:32.307777+00:00",
+  "last_updated_at": "2026-10-11T15:33:11.113175+00:00",
+  "lease_expires_at": "2026-10-11T17:33:11.113175+00:00",
   "target": 3,
   "completed_projects": 1,
   "projects": [
@@ -60,7 +60,7 @@
     },
     {
       "title": "Cutline",
-      "stage": "local_core_build_verified_browser_pending",
+      "stage": "live_main_flows_verified_recovery_check_pending",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -91,17 +91,25 @@
           "bars": 3,
           "nodes": 48
         },
-        "browser": "pending",
+        "browser": {
+          "desktop": "edit/solve/reserve/complete/reload passed; 6400=5770+24+606+0 mm",
+          "mobile": "390px view invalid length rejected, reserve/cancel restores all stock",
+          "recovery": "tool timed out; repeat pending",
+          "physical_device": false
+        },
         "commands": [
           "npm ci --ignore-scripts",
           "npm test",
           "npm run build"
         ]
-      }
+      },
+      "source_commit": "a4b3adbc3ac360addaa1f4e9dcbaf9bde06da60d",
+      "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
+      "live_url": "https://cutline-20261010.vercel.app/"
     },
     {
       "title": "VectorGarden",
-      "stage": "planned",
+      "stage": "clean_install_core_build_verified",
       "industry": "Machine learning tooling",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -120,7 +128,25 @@
         "Gradients match independent finite differences",
         "Checkpoint resume equals uninterrupted training",
         "Nonfinite and inconsistent imports leave workspace intact"
-      ]
+      ],
+      "tests": {
+        "verified_at": "2026-10-10T20:38:58.307715+00:00",
+        "core_tests_passed": 8,
+        "finite_difference_comparisons": 126,
+        "independent_forward_loss_oracle": true,
+        "checkpoint_resume_exact": true,
+        "clean_install_build": true,
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "node": "v24.19.0",
+        "browser": "pending",
+        "dataset": "original synthetic seed10102026"
+      },
+      "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk"
     }
   ],
   "reconciliation": {
@@ -139,5 +165,7 @@
     "resume_read_current": true,
     "supplied_profile_read_current": true,
     "public_profile": "HTTP999; unverified direct comparison"
-  }
+  },
+  "recovered_at": "2026-10-11T15:33:11.113175+00:00",
+  "interruption": "Cloud browser file recovery call timed out; continuing same dated projects, no duplicate projects."
 }

@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-10T20:34:32.578Z",
+  "runtime": "v24.19.0",
+  "os": "linux 6.18.44",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "dataset": "synthetic-permuted-8class-v1-seed10102026",
+  "seed": 1010,
+  "steps": 120,
+  "before": {
+    "recall1": 0.0625,
+    "mrr": 0.293154761904762,
+    "count": 32
+  },
+  "after": {
+    "recall1": 1,
+    "mrr": 1,
+    "count": 32
+  },
+  "gradientCheck": {
+    "checked": 42,
+    "maxError": 2.4100998974319054e-10,
+    "worst": 245,
+    "passed": true,
+    "epsilon": 0.00001
+  },
+  "limits": "Synthetic permutation/noise task only; not natural-language or unseen-class retrieval."
+}
