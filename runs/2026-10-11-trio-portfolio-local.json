@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-11T20:41:59.384Z",
+  "base": "http://127.0.0.1:4191",
+  "status": "passed",
+  "flows": [
+    "1100px all 18 cards/details date-free, three covers/source/demo/real embeds; technology filters and CraftsmanAI preserved",
+    "1100px island three entries/Pip/source/real Zig seek; map pause/resume; keyboard/zoom; code-only controls",
+    "390px all 18 cards/details date-free, three covers/source/demo/real embeds; technology filters and CraftsmanAI preserved",
+    "390px island three entries/Pip/source/real Zig seek; map pause/resume; keyboard/zoom; code-only controls"
+  ],
+  "page_errors": [],
+  "exact_manifest": true,
+  "limits": [
+    "Software GPU",
+    "Mobile viewport simulation; no physical-device frame-rate claim"
+  ]
+}

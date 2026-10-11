@@ -1,0 +1,7 @@
+node_modules/
+public/
+lib/
+__pycache__/
+.zig-cache/
+codec.wasm
+codec.wasm.o

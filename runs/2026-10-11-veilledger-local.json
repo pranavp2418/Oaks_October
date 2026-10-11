@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-10-11T20:34:07.497Z",
+  "name": "VeilLedger",
+  "base": "http://127.0.0.1:8132",
+  "status": "passed",
+  "desktop": true,
+  "mobile_viewport": 390,
+  "physical_device": false,
+  "flows": [
+    "desktop scope/prepare/two approvals/release/reload/receipt verify/revoke/export/recovery/tamper reject",
+    "mobile reject/narrow/reprocess; actual HTTP stale/method errors"
+  ],
+  "page_errors": [],
+  "width": {
+    "viewport": 390,
+    "document": 390
+  }
+}

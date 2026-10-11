@@ -49,5 +49,50 @@
     "CRC32 not cryptographic authenticity"
   ],
   "clean_recompiled_wasm_sha256_equal": true,
-  "clean_recompiled_tests_passed": true
+  "clean_recompiled_tests_passed": true,
+  "public_browser": {
+    "asset_checks": [
+      {
+        "file": "index.html",
+        "sha256": "6449653dd466540d37460110b71b6747a89213e4174f1146cfe7e2ab6da48143"
+      },
+      {
+        "file": "app.js",
+        "sha256": "fa10636db3ffde5ccfc1ab3485434ae512de3fd200bfd55dfb2dd44599ea5ad7"
+      },
+      {
+        "file": "style.css",
+        "sha256": "44594ada49f32e53f8610326ff5f43d92eebf65711aa55f027f07143b6c08a65"
+      },
+      {
+        "file": "cover.svg",
+        "sha256": "2ef446ef49bc0e7653fbd9c8bca317e104f6f23bb3d352a74e2d6c61276142d6"
+      },
+      {
+        "file": "bridge.js",
+        "sha256": "70a01cb1b11ea2125c915d7abf318eec2cc70f32ec2a1b2a307d5206bc8043fc"
+      },
+      {
+        "file": "codec.wasm",
+        "sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca"
+      }
+    ],
+    "verified_at": "2026-10-11T20:37:59.295Z",
+    "name": "SpanPack",
+    "base": "https://spanpack-20261011.vercel.app",
+    "status": "passed",
+    "desktop": true,
+    "mobile_viewport": 390,
+    "physical_device": false,
+    "flows": [
+      "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+      "mobile noise/raw codec/block size controls/invalid input and index"
+    ],
+    "page_errors": [],
+    "width": {
+      "viewport": 390,
+      "document": 390
+    }
+  },
+  "source_correspondence": "../../runs/2026-10-11-source-correspondence.json"
 }

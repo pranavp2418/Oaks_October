@@ -935,7 +935,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://grainlab-20261011.vercel.app/",
       "deployment_id": "dpl_FpPdPikRHJa95YnARGoF3Nfggzx9",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "local_verified_release_pending",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:27:12.353093+00:00",
@@ -972,7 +972,7 @@
           "No production OLAP throughput claim"
         ],
         "public_browser": {
-          "verified_at": "2026-10-11T20:31:32.138Z",
+          "verified_at": "2026-10-11T20:35:28.527Z",
           "name": "GrainLab",
           "base": "https://grainlab-20261011.vercel.app",
           "status": "passed",
@@ -989,7 +989,8 @@
             "document": 390
           }
         },
-        "build_logs_inspected": true
+        "build_logs_inspected": true,
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json"
       },
       "invariants": [
         "All 8 rollups conserve current contributions",
@@ -1015,7 +1016,8 @@
       "additional_domain_capabilities": [
         "Correction/retraction journal",
         "Lineage and sparse-cohort display suppression"
-      ]
+      ],
+      "live_verified_at": "2026-10-11T20:39:30.142431+00:00"
     },
     {
       "title": "VeilLedger",
@@ -1037,7 +1039,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://veilledger-20261011.vercel.app/",
       "deployment_id": "dpl_42GnxoS8dBNn1qcg4D17fLRrSVEe",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "local_verified_release_pending",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:29:33.581988+00:00",
@@ -1075,7 +1077,7 @@
           "Checksum receipt not signature"
         ],
         "public_browser": {
-          "verified_at": "2026-10-11T20:32:51.492Z",
+          "verified_at": "2026-10-11T20:35:39.904Z",
           "name": "VeilLedger",
           "base": "https://veilledger-20261011.vercel.app",
           "status": "passed",
@@ -1092,7 +1094,8 @@
             "document": 390
           }
         },
-        "build_logs_inspected": true
+        "build_logs_inspected": true,
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json"
       },
       "invariants": [
         "Projection subset of declared subjects/fields/range",
@@ -1120,7 +1123,158 @@
       "implementation": "implemented",
       "project_id": "prj_AE3Ul4hyOEMAcFT0RBFyMPgSofD9",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-11-VeilLedger",
-      "completion_ordinal": 14
+      "completion_ordinal": 14,
+      "live_verified_at": "2026-10-11T20:39:30.142460+00:00"
+    },
+    {
+      "title": "SpanPack",
+      "stage": "live_verified",
+      "industry": "Telemetry infrastructure",
+      "classification": "new",
+      "core_language": "Zig",
+      "stack": [
+        "Zig",
+        "WebAssembly",
+        "JavaScript"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 15,
+      "path": "Oaks_October/2026-10-11-SpanPack",
+      "core_technical_contribution": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
+      "visual_theme": "Graphite, signal amber, instrument panel",
+      "source_commit": "effa3091f0e96ba8c4014320061be218b552378d",
+      "live_url": "https://spanpack-20261011.vercel.app/",
+      "deployment_id": "dpl_7giJmT9YGrT9hMN32CgcGZEkjdU2",
+      "portfolio_integration": "local_verified_release_pending",
+      "counted": true,
+      "date": "2026-10-11",
+      "problem": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
+      "status": "complete",
+      "implementation": "implemented",
+      "tests": {
+        "verified_at": "2026-10-11T20:31:23.356815+00:00",
+        "native_tests_passed": 2,
+        "wasm_test_groups_passed": 5,
+        "independent_oracle_workloads": 180,
+        "seek_comparisons": 540,
+        "clean_install_build": true,
+        "commands": [
+          "zig test src/codec.zig",
+          "python3 compile.py",
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build",
+          "node benchmark.mjs"
+        ],
+        "compiler_artifact": {
+          "compiler": "0.14.1",
+          "target": "wasm32-freestanding",
+          "optimization": "ReleaseSafe",
+          "source_sha256": "ca51e89dfce27cfa674e826712fb90ccfa1a67938a386704e58c5c0570ed7a6c",
+          "wasm_sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca",
+          "bytes": 59543
+        },
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "runtime": "Node v24.19.0",
+        "browser": {
+          "verified_at": "2026-10-11T20:27:45.417Z",
+          "name": "SpanPack",
+          "base": "http://127.0.0.1:8133",
+          "status": "passed",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false,
+          "flows": [
+            "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+            "mobile noise/raw codec/block size controls/invalid input and index"
+          ],
+          "page_errors": [],
+          "width": {
+            "viewport": 390,
+            "document": 390
+          }
+        },
+        "benchmark": "BENCHMARK.json",
+        "limits": [
+          "Synthetic integer signals",
+          "Shared container benchmarks",
+          "Mobile viewport simulation",
+          "CRC32 not cryptographic authenticity"
+        ],
+        "clean_recompiled_wasm_sha256_equal": true,
+        "clean_recompiled_tests_passed": true,
+        "public_browser": {
+          "asset_checks": [
+            {
+              "file": "index.html",
+              "sha256": "6449653dd466540d37460110b71b6747a89213e4174f1146cfe7e2ab6da48143"
+            },
+            {
+              "file": "app.js",
+              "sha256": "fa10636db3ffde5ccfc1ab3485434ae512de3fd200bfd55dfb2dd44599ea5ad7"
+            },
+            {
+              "file": "style.css",
+              "sha256": "44594ada49f32e53f8610326ff5f43d92eebf65711aa55f027f07143b6c08a65"
+            },
+            {
+              "file": "cover.svg",
+              "sha256": "2ef446ef49bc0e7653fbd9c8bca317e104f6f23bb3d352a74e2d6c61276142d6"
+            },
+            {
+              "file": "bridge.js",
+              "sha256": "70a01cb1b11ea2125c915d7abf318eec2cc70f32ec2a1b2a307d5206bc8043fc"
+            },
+            {
+              "file": "codec.wasm",
+              "sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca"
+            }
+          ],
+          "verified_at": "2026-10-11T20:37:59.295Z",
+          "name": "SpanPack",
+          "base": "https://spanpack-20261011.vercel.app",
+          "status": "passed",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false,
+          "flows": [
+            "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+            "mobile noise/raw codec/block size controls/invalid input and index"
+          ],
+          "page_errors": [],
+          "width": {
+            "viewport": 390,
+            "document": 390
+          }
+        },
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json",
+        "build_logs_inspected": true
+      },
+      "invariants": [
+        "Exact signed i32 roundtrip including extrema",
+        "Directory covers precisely bounded archive",
+        "Strict failure does not commit partial samples",
+        "Damaged blocks quarantine only their original indices",
+        "Seek validates requested block; metadata corruption fails closed"
+      ],
+      "substantive_skill_coverage": [
+        "Zig",
+        "WebAssembly ABI",
+        "Binary serialization",
+        "Bounded buffers",
+        "CRC32",
+        "Differential decoding",
+        "Corruption recovery",
+        "Benchmarks"
+      ],
+      "additional_domain_capabilities": [
+        "Random block seek",
+        "Explicit damaged block quarantine and recoverable binary archives"
+      ],
+      "project_id": "prj_Js4ibOyB5hSP6qRMEHuUgJAQRF9m",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-11-SpanPack",
+      "completion_ordinal": 15,
+      "live_verified_at": "2026-10-11T20:39:30.142484+00:00"
     }
   ],
   "dry_runs": [
@@ -1307,13 +1461,13 @@
     },
     {
       "date": "2026-10-11",
-      "status": "implementing",
+      "status": "portfolio_local_verified",
       "record": "runs/2026-10-11.json",
-      "completed_projects": 2,
+      "completed_projects": 3,
       "target": 3,
       "run_record": "runs/2026-10-11.json",
-      "last_updated_at": "2026-10-11T20:34:44.206643+00:00",
-      "portfolio_integration": "pending"
+      "last_updated_at": "2026-10-11T20:42:29.833406+00:00",
+      "portfolio_integration": "local_verified_release_pending"
     }
   ],
   "profile_baseline": {
@@ -2244,7 +2398,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://grainlab-20261011.vercel.app/",
       "deployment_id": "dpl_FpPdPikRHJa95YnARGoF3Nfggzx9",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "local_verified_release_pending",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:27:12.353093+00:00",
@@ -2281,7 +2435,7 @@
           "No production OLAP throughput claim"
         ],
         "public_browser": {
-          "verified_at": "2026-10-11T20:31:32.138Z",
+          "verified_at": "2026-10-11T20:35:28.527Z",
           "name": "GrainLab",
           "base": "https://grainlab-20261011.vercel.app",
           "status": "passed",
@@ -2298,7 +2452,8 @@
             "document": 390
           }
         },
-        "build_logs_inspected": true
+        "build_logs_inspected": true,
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json"
       },
       "invariants": [
         "All 8 rollups conserve current contributions",
@@ -2324,7 +2479,8 @@
       "additional_domain_capabilities": [
         "Correction/retraction journal",
         "Lineage and sparse-cohort display suppression"
-      ]
+      ],
+      "live_verified_at": "2026-10-11T20:39:30.142431+00:00"
     },
     {
       "title": "VeilLedger",
@@ -2346,7 +2502,7 @@
       "source_commit": "b2a2ba2781da0cda02b9f201f5f770a953f588ba",
       "live_url": "https://veilledger-20261011.vercel.app/",
       "deployment_id": "dpl_42GnxoS8dBNn1qcg4D17fLRrSVEe",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "local_verified_release_pending",
       "counted": true,
       "tests": {
         "verified_at": "2026-10-11T20:29:33.581988+00:00",
@@ -2384,7 +2540,7 @@
           "Checksum receipt not signature"
         ],
         "public_browser": {
-          "verified_at": "2026-10-11T20:32:51.492Z",
+          "verified_at": "2026-10-11T20:35:39.904Z",
           "name": "VeilLedger",
           "base": "https://veilledger-20261011.vercel.app",
           "status": "passed",
@@ -2401,7 +2557,8 @@
             "document": 390
           }
         },
-        "build_logs_inspected": true
+        "build_logs_inspected": true,
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json"
       },
       "invariants": [
         "Projection subset of declared subjects/fields/range",
@@ -2429,11 +2586,12 @@
       "implementation": "implemented",
       "project_id": "prj_AE3Ul4hyOEMAcFT0RBFyMPgSofD9",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-11-VeilLedger",
-      "completion_ordinal": 14
+      "completion_ordinal": 14,
+      "live_verified_at": "2026-10-11T20:39:30.142460+00:00"
     },
     {
       "title": "SpanPack",
-      "stage": "local_verified",
+      "stage": "live_verified",
       "industry": "Telemetry infrastructure",
       "classification": "new",
       "core_language": "Zig",
@@ -2447,14 +2605,14 @@
       "path": "Oaks_October/2026-10-11-SpanPack",
       "core_technical_contribution": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
       "visual_theme": "Graphite, signal amber, instrument panel",
-      "source_commit": null,
-      "live_url": null,
-      "deployment_id": null,
-      "portfolio_integration": "pending",
-      "counted": false,
+      "source_commit": "effa3091f0e96ba8c4014320061be218b552378d",
+      "live_url": "https://spanpack-20261011.vercel.app/",
+      "deployment_id": "dpl_7giJmT9YGrT9hMN32CgcGZEkjdU2",
+      "portfolio_integration": "local_verified_release_pending",
+      "counted": true,
       "date": "2026-10-11",
       "problem": "Adaptive raw/delta-RLE blocks, CRC32 validation, random seek and damaged-block quarantine",
-      "status": "local_verified",
+      "status": "complete",
       "implementation": "implemented",
       "tests": {
         "verified_at": "2026-10-11T20:31:23.356815+00:00",
@@ -2507,7 +2665,53 @@
           "CRC32 not cryptographic authenticity"
         ],
         "clean_recompiled_wasm_sha256_equal": true,
-        "clean_recompiled_tests_passed": true
+        "clean_recompiled_tests_passed": true,
+        "public_browser": {
+          "asset_checks": [
+            {
+              "file": "index.html",
+              "sha256": "6449653dd466540d37460110b71b6747a89213e4174f1146cfe7e2ab6da48143"
+            },
+            {
+              "file": "app.js",
+              "sha256": "fa10636db3ffde5ccfc1ab3485434ae512de3fd200bfd55dfb2dd44599ea5ad7"
+            },
+            {
+              "file": "style.css",
+              "sha256": "44594ada49f32e53f8610326ff5f43d92eebf65711aa55f027f07143b6c08a65"
+            },
+            {
+              "file": "cover.svg",
+              "sha256": "2ef446ef49bc0e7653fbd9c8bca317e104f6f23bb3d352a74e2d6c61276142d6"
+            },
+            {
+              "file": "bridge.js",
+              "sha256": "70a01cb1b11ea2125c915d7abf318eec2cc70f32ec2a1b2a307d5206bc8043fc"
+            },
+            {
+              "file": "codec.wasm",
+              "sha256": "a00d3e360d4729a448ff4da3a86c5f1bc6a63548e6942b09a0617e9a79d2deca"
+            }
+          ],
+          "verified_at": "2026-10-11T20:37:59.295Z",
+          "name": "SpanPack",
+          "base": "https://spanpack-20261011.vercel.app",
+          "status": "passed",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false,
+          "flows": [
+            "desktop real WASM encode/strict roundtrip/random seek/export/corrupt/quarantine/import/reload/benchmark/reject invalid",
+            "mobile noise/raw codec/block size controls/invalid input and index"
+          ],
+          "page_errors": [],
+          "width": {
+            "viewport": 390,
+            "document": 390
+          }
+        },
+        "source_correspondence": "runs/2026-10-11-source-correspondence.json",
+        "build_logs_inspected": true
       },
       "invariants": [
         "Exact signed i32 roundtrip including extrema",
@@ -2529,7 +2733,11 @@
       "additional_domain_capabilities": [
         "Random block seek",
         "Explicit damaged block quarantine and recoverable binary archives"
-      ]
+      ],
+      "project_id": "prj_Js4ibOyB5hSP6qRMEHuUgJAQRF9m",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-11-SpanPack",
+      "completion_ordinal": 15,
+      "live_verified_at": "2026-10-11T20:39:30.142484+00:00"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -3049,11 +3257,11 @@
     "github_only_standard": "Complete useful native/CLI/library/engine/backend workflow, clean-environment setup, meaningful tests and input-to-output execution evidence, rerun/recovery checks, complete README and source push.",
     "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
     "completed_counts": {
-      "web_deployed": 13,
+      "web_deployed": 14,
       "github_only": 1,
-      "total": 14
+      "total": 15
     },
-    "next_planned_completion_ordinal": 15,
+    "next_planned_completion_ordinal": 16,
     "next_planned_delivery_mode": "web_deployed"
   },
   "domain_depth_policy": {
