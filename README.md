@@ -32,7 +32,7 @@ The portfolio also includes a separate [Projects country](https://impranavpatel.
 | [Cutline](./Oaks_October/2026-10-10-Cutline) | Exact cutting plans, reservations and remnant conservation | Python, SQLite, JavaScript | [Demo](https://cutline-20261010.vercel.app/) |
 | [VectorGarden](./Oaks_October/2026-10-10-VectorGarden) | Two-tower backpropagation, exact resume and held-out retrieval | TypeScript, React, Web Worker | [Demo](https://vectorgarden-20261010.vercel.app/) |
 
-All three passed applicable delivery checks. [Run evidence](./runs/2026-10-10.json) records actual release and portfolio stages; the browser evidence includes 390px workflows and real export/recovery. The interrupted October 10 batch resumed October 11; these remain October 10 projects. Portfolio integration is recorded only after its public release passes verification.
+All three passed applicable delivery checks. [Run evidence](./runs/2026-10-10.json) records actual release and portfolio stages; the browser evidence includes 390px workflows and real export/recovery. The interrupted October 10 batch resumed October 11; these remain October 10 projects. All three are now verified on the live portfolio archive and Projects island, including Pip, source controls and applicable opt-in live embeds. The published island scenery is preserved. See [completion report](./runs/2026-10-10-report.md) and [portfolio proof](./runs/2026-10-10-portfolio-proof.png).
 
 ## Collection plan
 

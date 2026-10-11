@@ -664,7 +664,7 @@
     },
     {
       "title": "StrataLog",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Data infrastructure",
       "classification": "new",
       "core_language": "Elixir",
@@ -705,11 +705,11 @@
         ]
       },
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "intentionally_not_required",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
       "live_url": null,
       "deployment_id": null,
@@ -728,12 +728,15 @@
       "additional_domain_capabilities": [
         "Checkpoint/replay and atomic exports"
       ],
-      "portfolio_integration": "pending",
-      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations."
+      "portfolio_integration": "verified",
+      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     },
     {
       "title": "Cutline",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -753,11 +756,11 @@
         "Completion conserves material including kerf/remnant"
       ],
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "public_workflows_verified",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
       "live_url": "https://cutline-20261010.vercel.app/",
       "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
@@ -817,13 +820,16 @@
           "discarded": 0
         }
       },
-      "portfolio_integration": "pending",
+      "portfolio_integration": "verified",
       "completed_at": "2026-10-11T15:45:34.247518+00:00",
-      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants."
+      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     },
     {
       "title": "VectorGarden",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Machine learning tooling",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -844,11 +850,11 @@
         "Nonfinite and inconsistent imports leave workspace intact"
       ],
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "public_workflows_verified",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
       "live_url": "https://vectorgarden-20261010.vercel.app/",
       "deployment_id": "dpl_Aa2ReL3XTMJC9S3J4316q9n8CtCa",
@@ -903,9 +909,12 @@
         "live_gradient_max_error": 1.54e-11
       },
       "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "verified",
       "completed_at": "2026-10-11T15:45:34.247518+00:00",
-      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable."
+      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     }
   ],
   "dry_runs": [
@@ -1082,11 +1091,13 @@
     },
     {
       "date": "2026-10-10",
-      "status": "portfolio_local_verified_release_pending",
+      "status": "complete",
       "target": 3,
       "completed_projects": 3,
       "run_record": "runs/2026-10-10.json",
-      "last_updated_at": "2026-10-11T15:49:02.299071+00:00"
+      "last_updated_at": "2026-10-11T16:23:54.479158+00:00",
+      "completed_at": "2026-10-11T16:19:11.751161+00:00",
+      "report": "runs/2026-10-10-report.md"
     }
   ],
   "profile_baseline": {
@@ -1746,7 +1757,7 @@
     },
     {
       "title": "StrataLog",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Data infrastructure",
       "classification": "new",
       "core_language": "Elixir",
@@ -1787,11 +1798,11 @@
         ]
       },
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "intentionally_not_required",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
       "live_url": null,
       "deployment_id": null,
@@ -1810,12 +1821,15 @@
       "additional_domain_capabilities": [
         "Checkpoint/replay and atomic exports"
       ],
-      "portfolio_integration": "pending",
-      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations."
+      "portfolio_integration": "verified",
+      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     },
     {
       "title": "Cutline",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -1835,11 +1849,11 @@
         "Completion conserves material including kerf/remnant"
       ],
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "public_workflows_verified",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
       "live_url": "https://cutline-20261010.vercel.app/",
       "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
@@ -1899,13 +1913,16 @@
           "discarded": 0
         }
       },
-      "portfolio_integration": "pending",
+      "portfolio_integration": "verified",
       "completed_at": "2026-10-11T15:45:34.247518+00:00",
-      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants."
+      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     },
     {
       "title": "VectorGarden",
-      "stage": "delivery_verified_portfolio_pending",
+      "stage": "complete",
       "industry": "Machine learning tooling",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -1926,11 +1943,11 @@
         "Nonfinite and inconsistent imports leave workspace intact"
       ],
       "date": "2026-10-10",
-      "status": "delivery_complete_portfolio_pending",
+      "status": "complete",
       "implementation": "implemented_and_pushed",
       "verification": "passed",
       "deployment": "public_workflows_verified",
-      "integration": "pending",
+      "integration": "verified",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
       "live_url": "https://vectorgarden-20261010.vercel.app/",
       "deployment_id": "dpl_Aa2ReL3XTMJC9S3J4316q9n8CtCa",
@@ -1985,9 +2002,12 @@
         "live_gradient_max_error": 1.54e-11
       },
       "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk",
-      "portfolio_integration": "pending",
+      "portfolio_integration": "verified",
       "completed_at": "2026-10-11T15:45:34.247518+00:00",
-      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable."
+      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable.",
+      "portfolio_source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "portfolio_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "integration_verified_at": "2026-10-11T16:19:11.751161+00:00"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -2002,17 +2022,61 @@
   "portfolio": {
     "path": "portfolio-site",
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-    "deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
-    "source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
+    "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+    "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
     "alias": "https://impranavpatel.com/",
-    "verification": [
-      "18 portfolio tests and clean build passed; original film restored with checksum validation",
-      "All three homepage archive cards, source/live links and RelayLab opt-in real embed verified",
-      "Island/Pip matches all three purposes and stacks; project navigation passed",
-      "390px mobile country Pip navigation for all three passed; clientWidth=scrollWidth=390",
-      "Existing 12 manifest entries plus 2 featured catalog entries preserved; existing Market research remains code-only",
-      "Canonical HTTPS production domain verified; both old and www redirects preserve /projects.html?project=kiln"
-    ],
+    "verification": {
+      "local_tests_passed": 18,
+      "clean_install_build": true,
+      "public": {
+        "verified_at": "2026-10-11T16:15:08.055Z",
+        "browser": "153.0.8010.0",
+        "renderer": "headless software SwiftShader; physical GPU not verified",
+        "flows": [
+          {
+            "name": "Exact live manifest/covers and permanent path/query redirects",
+            "passed": true,
+            "manifest": 15
+          },
+          {
+            "name": "Homepage archive all three cards/details/source actions/opt-in real embeds; flagship and research preserved",
+            "passed": true,
+            "url": "https://impranavpatel.com/",
+            "page": "3 / 3"
+          },
+          {
+            "name": "Island StrataLog details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=stratalog"
+          },
+          {
+            "name": "Island Cutline details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=cutline"
+          },
+          {
+            "name": "Island VectorGarden details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=vectorgarden"
+          },
+          {
+            "name": "390px homepage card/dialog and island/Pip/source-only navigation",
+            "passed": true,
+            "homeWidth": {
+              "width": 390,
+              "scroll": 390
+            },
+            "cityWidth": {
+              "width": 390,
+              "scroll": 390
+            }
+          }
+        ],
+        "visual_capture_limit": "Desktop software 3D screenshot timed out; physical GPU visual rendering remains unverified",
+        "page_errors": [],
+        "status": "passed"
+      }
+    },
     "limits": [
       "Mobile browser viewport simulation; no physical device testing",
       "Existing large Three.js bundle warning remains; no load-time benchmark claimed"
@@ -2077,20 +2141,70 @@
           "Houston solar clock and real KIAH observation verified on public Projects page; automatic golden-hour to sunset change observed",
           "Project covers contained and visible on desktop/mobile; original CraftsmanAI Design workflow and archive retained on final-source preview"
         ]
+      },
+      {
+        "type": "resolved_prior_pending_marker",
+        "resolved_at": "2026-10-11T16:19:11.751161+00:00",
+        "record": {
+          "date": "2026-10-08",
+          "source_manifest_entries": 9,
+          "new_entries": [
+            "dockproof",
+            "foliotrace",
+            "tidemark"
+          ],
+          "clean_install_build": "passed",
+          "catalog_route_environment_tests": {
+            "passed": 18,
+            "failed": 0
+          },
+          "production": "blocked_transient_api_quota",
+          "preserved_newer_source_head": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
+          "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+          "blocker": {
+            "stage": "portfolio_deployment",
+            "service": "Vercel",
+            "http_status": 402,
+            "code": "api-deployments-free-per-day",
+            "message": "Resource is limited - try again in 24 hours (more than 100)",
+            "retry_after_seconds": 86400,
+            "transient": true,
+            "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
+            "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+            "observed_at": "2026-10-08T23:00:36.637181+00:00",
+            "production_integration_verified": false,
+            "cli_fallback": "No installed/authenticated Vercel CLI available",
+            "paid_upgrade": false
+          }
+        },
+        "evidence": "Prior run already completed October9; current production manifest and catalog preserve all October8 entries."
+      },
+      {
+        "date": "2026-10-10",
+        "published_at": "2026-10-11T16:19:11.751161+00:00",
+        "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+        "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+        "entries": [
+          "stratalog",
+          "cutline",
+          "vectorgarden"
+        ],
+        "verification_report": "runs/2026-10-10-portfolio-evidence.json",
+        "scenery_changed": false
       }
     ],
     "city": {
-      "status": "published_and_catalog_workflows_verified",
-      "published_at": "2026-10-09T20:40:46.893948+00:00",
+      "status": "production_verified",
+      "published_at": "2026-10-11T16:19:11.751161+00:00",
       "path": "portfolio-site/projects.html",
       "url": "https://impranavpatel.com/projects.html",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
-      "source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
-      "deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
+      "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
       "preview_deployment_id": "dpl_FtP5J17SyGAxHFbDpMf3y8ycoJmN",
       "counted_daily_project": false,
-      "catalog_entries": 14,
-      "daily_entries": 9,
+      "catalog_entries": 17,
+      "daily_entries": 15,
       "shared_daily_manifest": "portfolio-site/public/projects.json",
       "featured_manifest": "portfolio-site/public/featured-projects.json",
       "stack": [
@@ -2117,25 +2231,61 @@
         "Detailed curved glass towers, floor joints/mullions, photographic CC0 sand/rock/grass/foliage, procedural palms and optimized scanned coastal trees (42,691 triangles; 2,246,804-byte self-hosted GLB)",
         "Contained cover framing on desktop and mobile; expanded mobile directory keeps atmosphere/controls out of its way; background-tab animation pauses while visible-page motion remains enabled"
       ],
-      "verification": [
-        "18 portfolio tests and clean build passed; original film restored with checksum validation",
-        "All three homepage archive cards, source/live links and RelayLab opt-in real embed verified",
-        "Island/Pip matches all three purposes and stacks; project navigation passed",
-        "390px mobile country Pip navigation for all three passed; clientWidth=scrollWidth=390",
-        "Existing 12 manifest entries plus 2 featured catalog entries preserved; existing Market research remains code-only",
-        "Canonical HTTPS production domain verified; both old and www redirects preserve /projects.html?project=kiln"
-      ],
-      "evidence_report": "runs/evidence/2026-10-07-island-atmosphere.md",
+      "verification": {
+        "verified_at": "2026-10-11T16:15:08.055Z",
+        "browser": "153.0.8010.0",
+        "renderer": "headless software SwiftShader; physical GPU not verified",
+        "flows": [
+          {
+            "name": "Exact live manifest/covers and permanent path/query redirects",
+            "passed": true,
+            "manifest": 15
+          },
+          {
+            "name": "Homepage archive all three cards/details/source actions/opt-in real embeds; flagship and research preserved",
+            "passed": true,
+            "url": "https://impranavpatel.com/",
+            "page": "3 / 3"
+          },
+          {
+            "name": "Island StrataLog details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=stratalog"
+          },
+          {
+            "name": "Island Cutline details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=cutline"
+          },
+          {
+            "name": "Island VectorGarden details/Pip/source and applicable live core",
+            "passed": true,
+            "url": "https://impranavpatel.com/projects.html?project=vectorgarden"
+          },
+          {
+            "name": "390px homepage card/dialog and island/Pip/source-only navigation",
+            "passed": true,
+            "homeWidth": {
+              "width": 390,
+              "scroll": 390
+            },
+            "cityWidth": {
+              "width": 390,
+              "scroll": 390
+            }
+          }
+        ],
+        "visual_capture_limit": "Desktop software 3D screenshot timed out; physical GPU visual rendering remains unverified",
+        "page_errors": [],
+        "status": "passed"
+      },
+      "evidence_report": "runs/2026-10-10-portfolio-evidence.json",
       "screenshot": "runs/evidence/2026-10-07-island-atmosphere.jpg",
       "gpu_visual_verified": false,
       "limits": [
-        "The verification browser has GL_VENDOR Disabled. GPU photographic materials, scanned trees, reflections, shadows, sky and vegetation deformation are implemented but could not be visually verified; software SVGRenderer geometry and workflows are visibly verified.",
-        "Surface colour maps are 2K and normal/bark/tree maps are 1K; no 8K photographic reconstruction or photorealistic fidelity is asserted. The island and architecture are fictional procedural scenery with scanned tree assets.",
-        "Houston weather is the latest reported KIAH airport observation, refreshed every five minutes; reporting can lag and conditions can differ elsewhere in Houston. Delays/outages are labeled; reports older than three hours stop driving weather effects.",
-        "Mobile verification uses a 390x844 viewport harness, not a physical device; touch performance/pinch gestures remain unverified.",
-        "The original home-page motion preference remains; only the island has always-enabled motion while visible.",
-        "Pip remains a local catalog guide; questions are not sent to an external model.",
-        "External applications may deny iframe embedding; their new-tab links remain available."
+        "Physical GPU visual rendering unverified; desktop software 3D screenshot capture timed out.",
+        "Functional desktop/mobile catalog, Pip and real embedded cores verified.",
+        "The cancelled island redesign was excluded; existing scene source preserved."
       ],
       "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief",
       "history": [
@@ -2227,24 +2377,32 @@
           "catalog_entries": 7,
           "daily_entries": 3,
           "status": "published; weather API and software 3D workflows verified; GPU appearance unverified"
+        },
+        {
+          "published_at": "2026-10-09T20:40:46.893948+00:00",
+          "source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
+          "deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
+          "catalog_entries": 14
         }
       ],
-      "mobile_screenshot": "runs/evidence/2026-10-07-island-covers-mobile.jpg"
+      "mobile_screenshot": "runs/evidence/2026-10-07-island-covers-mobile.jpg",
+      "shared_manifest_entries": 15,
+      "counted_daily_entries": 12,
+      "prior_building_positions_preserved": 14,
+      "scenery_changed": false
     },
     "reconciled_current_release": {
-      "source_commit": "d3bec73404a86a39eae782414f32535d09194446",
-      "deployment_id": "dpl_65BYjEa7yWLqCAHUARDEMGnkyxhT",
+      "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+      "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
       "root_directory": "portfolio-site",
-      "verified_from": "Latest project/deployment metadata and maintenance_runs evidence",
-      "date": "2026-10-08",
-      "daily_manifest_entries": 5,
-      "oct8_new_trio_entries": 0,
+      "verified_from": "Deployment source metadata, build logs, exact live manifest and browser workflows",
+      "date": "2026-10-11",
+      "shared_manifest_entries": 15,
+      "counted_collection_projects": 12,
       "canonical_url": "https://impranavpatel.com/"
     },
-    "pending_run": "2026-10-08",
-    "pending_existing_projects": [
-      "market-news-sentiments"
-    ],
+    "pending_run": null,
+    "pending_existing_projects": [],
     "legacy_alias": "https://pranav-patel.vercel.app/",
     "canonical_projects_url": "https://impranavpatel.com/projects.html",
     "custom_domain": {
@@ -2324,50 +2482,10 @@
       "evidence_screenshot": "2026-10-08-portfolio-domain-connected.jpg",
       "evidence_library_id": "libfile_97cebe83e0888191a474f85fd6d086ce"
     },
-    "pending_trio_integration": {
-      "date": "2026-10-08",
-      "source_manifest_entries": 9,
-      "new_entries": [
-        "dockproof",
-        "foliotrace",
-        "tidemark"
-      ],
-      "clean_install_build": "passed",
-      "catalog_route_environment_tests": {
-        "passed": 18,
-        "failed": 0
-      },
-      "production": "blocked_transient_api_quota",
-      "preserved_newer_source_head": "5fd4b804b7a93193017d5cbbeecc86a992bc93a9",
-      "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
-      "blocker": {
-        "stage": "portfolio_deployment",
-        "service": "Vercel",
-        "http_status": 402,
-        "code": "api-deployments-free-per-day",
-        "message": "Resource is limited - try again in 24 hours (more than 100)",
-        "retry_after_seconds": 86400,
-        "transient": true,
-        "source_commit": "8bdffb5e2632af23975af533ed1653d91a2e4552",
-        "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-        "observed_at": "2026-10-08T23:00:36.637181+00:00",
-        "production_integration_verified": false,
-        "cli_fallback": "No installed/authenticated Vercel CLI available",
-        "paid_upgrade": false
-      }
-    },
+    "pending_trio_integration": null,
     "canonical_url": "https://impranavpatel.com/",
-    "verified_at": "2026-10-09T20:40:46.893948+00:00",
-    "pending_daily_integration": {
-      "date": "2026-10-10",
-      "stage": "local_verified_release_pending",
-      "entries": [
-        "stratalog",
-        "cutline",
-        "vectorgarden"
-      ],
-      "local_tests_passed": 18
-    }
+    "verified_at": "2026-10-11T16:19:11.751161+00:00",
+    "pending_daily_integration": null
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
@@ -2682,7 +2800,7 @@
       "portfolio_source_commit": "2d2c14c8dabd88bf6cc6ca8fe4ef8d833ef581ab",
       "verified_at": "2026-10-09T20:16:56.517750+00:00",
       "portfolio_deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo",
-      "latest_preserved_deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa"
+      "latest_preserved_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC"
     }
   ],
   "release_policy": {

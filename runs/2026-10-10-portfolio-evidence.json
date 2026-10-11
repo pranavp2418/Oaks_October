@@ -1,0 +1,48 @@
+{
+  "verified_at": "2026-10-11T16:15:08.055Z",
+  "browser": "153.0.8010.0",
+  "renderer": "headless software SwiftShader; physical GPU not verified",
+  "flows": [
+    {
+      "name": "Exact live manifest/covers and permanent path/query redirects",
+      "passed": true,
+      "manifest": 15
+    },
+    {
+      "name": "Homepage archive all three cards/details/source actions/opt-in real embeds; flagship and research preserved",
+      "passed": true,
+      "url": "https://impranavpatel.com/",
+      "page": "3 / 3"
+    },
+    {
+      "name": "Island StrataLog details/Pip/source and applicable live core",
+      "passed": true,
+      "url": "https://impranavpatel.com/projects.html?project=stratalog"
+    },
+    {
+      "name": "Island Cutline details/Pip/source and applicable live core",
+      "passed": true,
+      "url": "https://impranavpatel.com/projects.html?project=cutline"
+    },
+    {
+      "name": "Island VectorGarden details/Pip/source and applicable live core",
+      "passed": true,
+      "url": "https://impranavpatel.com/projects.html?project=vectorgarden"
+    },
+    {
+      "name": "390px homepage card/dialog and island/Pip/source-only navigation",
+      "passed": true,
+      "homeWidth": {
+        "width": 390,
+        "scroll": 390
+      },
+      "cityWidth": {
+        "width": 390,
+        "scroll": 390
+      }
+    }
+  ],
+  "visual_capture_limit": "Desktop software 3D screenshot timed out; physical GPU visual rendering remains unverified",
+  "page_errors": [],
+  "status": "passed"
+}
