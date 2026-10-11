@@ -162,7 +162,7 @@ export function scannedTreePlacements({mobile,landHeight,districts,buildings}){
     placements.push({x,z,y:h,scale:1.6+random()*1.1,rotation:random()*TAU});
   }return placements;
 }
-export async function addScannedTrees(scene,{software,mobile,landHeight,districts,buildings,host}){
+export async function addScannedTrees(scene,{software,mobile,landHeight,districts,buildings,host,renderer,camera}){
   if(software){host.dataset.treeDetail='procedural';return;}
   host.dataset.treeDetail='loading';
   try{
@@ -170,12 +170,18 @@ export async function addScannedTrees(scene,{software,mobile,landHeight,district
     const model=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('/assets/island/coastal-tree.glb');
     model.scene.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(model.scene),center=bounds.getCenter(new THREE.Vector3());
     const placements=scannedTreePlacements({mobile,landHeight,districts,buildings}),baseMatrices=placements.map(p=>new THREE.Matrix4().compose(new THREE.Vector3(p.x,p.y,p.z),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),p.rotation),new THREE.Vector3(p.scale,p.scale,p.scale)).multiply(new THREE.Matrix4().makeTranslation(-center.x,-bounds.min.y,-center.z)));
+    const group=new THREE.Group(),parts=[];
     model.scene.traverse(part=>{if(!part.isMesh)return;const material=part.material.clone();if(material.alphaTest){material.transparent=false;material.depthWrite=true;}
       const trees=new THREE.InstancedMesh(part.geometry,material,placements.length);
       // Keep quantized vertices intact; compose the source node transform into each instance.
       for(let i=0;i<placements.length;i++)trees.setMatrixAt(i,baseMatrices[i].clone().multiply(part.matrixWorld));
-      trees.instanceMatrix.needsUpdate=true;trees.computeBoundingSphere();trees.castShadow=!mobile;trees.receiveShadow=true;scene.add(trees);
-    });host.dataset.treeDetail='photogrammetry';
+      trees.instanceMatrix.needsUpdate=true;trees.computeBoundingSphere();trees.castShadow=false;trees.receiveShadow=true;trees.count=0;parts.push({trees,matrix:part.matrixWorld.clone()});group.add(trees);
+    });
+    // Warm the scanned materials before admission; the procedural forest stays available while they compile.
+    if(renderer&&camera)await renderer.compileAsync(group,camera,scene);
+    scene.add(group);host.dataset.treeDetail='photogrammetry';
+    return {update(view){const visible=placements.map((p,i)=>({i,distance:view.position.distanceTo(new THREE.Vector3(p.x,p.y,p.z))})).filter(p=>p.distance<(mobile?135:175)).sort((a,b)=>a.distance-b.distance).slice(0,mobile?8:16);
+      for(const {trees,matrix}of parts){trees.count=visible.length;for(let j=0;j<visible.length;j++)trees.setMatrixAt(j,baseMatrices[visible[j].i].clone().multiply(matrix));trees.instanceMatrix.needsUpdate=true;}host.dataset.scannedTreeInstances=String(visible.length);}};
   }catch(error){host.dataset.treeDetail='procedural-fallback';console.warn('Coastal tree detail could not load; the procedural forest remains available.',error);}
 }
 function cloudTexture(){const canvas=document.createElement('canvas');canvas.width=canvas.height=512;const c=canvas.getContext('2d'),random=randomSeed(7281);for(let i=0;i<65;i++){const x=60+random()*392,y=100+random()*310,r=30+random()*90,g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(255,255,255,.22)');g.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2);}return new THREE.CanvasTexture(canvas);}

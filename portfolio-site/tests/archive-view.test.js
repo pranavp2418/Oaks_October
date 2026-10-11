@@ -27,3 +27,11 @@ test('archive ignores unsafe links and escapes repository-derived text',()=>{
   assert.doesNotMatch(html,/href=|src=|load-live-preview|<script>|<img>/);
   assert.match(html,/&lt;script&gt;/);
 });
+test('every independent project card and detail omits dates while retaining title and delivery links',()=>{
+ for(const project of projects){
+  for(const html of [archiveCard(project),archiveDetails(project)]){
+   const visible=html.replace(/<[^>]*>/g,'');assert.ok(!visible.includes(project.date));assert.doesNotMatch(visible,/\b20\d\d-\d\d-\d\d\b/);
+   assert.ok(html.includes(project.title));
+  }
+ }
+});

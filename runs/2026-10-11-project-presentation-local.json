@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-10-11T17:04:10.393Z",
+  "base": "http://127.0.0.1:4191",
+  "browser": "153.0.8010.0",
+  "flows": [
+    "1100px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved (verified in preceding local pass)",
+    "1100px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes",
+    "390px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved",
+    "390px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes"
+  ],
+  "limits": [
+    "Software GPU; physical device frame rate and visual rendering unverified"
+  ],
+  "page_errors": [],
+  "status": "passed"
+}

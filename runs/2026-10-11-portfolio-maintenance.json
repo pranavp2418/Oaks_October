@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-11",
+  "type": "portfolio_maintenance",
+  "counted_daily_project": false,
+  "status": "local_verified_release_pending",
+  "last_updated_at": "2026-10-11T17:07:11.907848+00:00",
+  "scope": [
+    "Remove independent-project dates/timelines, preserve CraftsmanAI",
+    "Improve island interaction performance without cancelled redesign"
+  ],
+  "tests_passed": 21,
+  "build": "passed",
+  "browser": "desktop/mobile passed",
+  "performance_report": "runs/2026-10-11-island-performance.json",
+  "automation_updated": true,
+  "browser_evidence": "runs/2026-10-11-project-presentation-local.json",
+  "preserved_catalog_entries": 17,
+  "base_source_commit": "5ab8a7405634d85c1ff6e0b59209d506caa2e97f"
+}

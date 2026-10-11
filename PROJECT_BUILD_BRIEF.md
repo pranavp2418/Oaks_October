@@ -48,3 +48,7 @@ This domain connection did not publish the pending Market Analysis integration o
 
 ## Explicit collection release control — October 9
 Project `vercel.json` disables Git-triggered automatic deployments for counted projects and portfolio source. Use authenticated Vercel deployment creation with a reviewed pushed commit and the correct root/team/project. This prevents each run-ledger commit from redeploying all prior projects and consuming deployment/concurrency quotas. Existing public deployments/domains remain intact. Never count a canceled redundant build as a project release. New projects should retain this explicit release policy. Official configuration reference: https://vercel.com/docs/project-configuration/git-configuration .
+
+
+## Project presentation — October 11 user correction
+Independent projects must have no visible creation/build dates, times, month/year labels or development timelines in portfolio cards, dialogs, island directory or Pip. CraftsmanAI retains its current presentation and timeline. Keep date/month metadata, dated repository paths, ledgers and run records internally; never break source/demo links. Use technology/domain filtering with pagination instead of visible month filters. Preserve the Houston atmosphere/weather clock and unrelated career/education dates. Preserve the approved island scenery and responsiveness improvements; exclude the declined redesign.

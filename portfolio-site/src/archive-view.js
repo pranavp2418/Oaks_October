@@ -21,10 +21,10 @@ function cover(project,detail=false) {
 }
 
 export function archiveCard(project) {
-  return `<article class="project-card lab-card ${esc(project.theme)}"><button class="lab-visual" data-preview="${esc(project.slug)}" aria-label="Explore ${esc(project.title)}">${cover(project)}<span class="preview-prompt">${project.research?'Explore the research':'Inspect the workflow'} +</span></button><div class="project-info"><span class="mono muted">${esc(project.date)} / ${esc(project.domain)}</span><h3>${esc(project.title)}</h3><p>${esc(project.description)}</p><div class="tags">${project.stack.map(s=>`<span>${esc(s)}</span>`).join('')}</div>${status(project)}${actions(project)}</div></article>`;
+  return `<article class="project-card lab-card ${esc(project.theme)}"><button class="lab-visual" data-preview="${esc(project.slug)}" aria-label="Explore ${esc(project.title)}">${cover(project)}<span class="preview-prompt">${project.research?'Explore the research':'Inspect the workflow'} +</span></button><div class="project-info"><span class="mono muted">${esc(project.domain)}</span><h3>${esc(project.title)}</h3><p>${esc(project.description)}</p><div class="tags">${project.stack.map(s=>`<span>${esc(s)}</span>`).join('')}</div>${status(project)}${actions(project)}</div></article>`;
 }
 
 export function archiveDetails(project) {
   const live=livePreviewURL(project);
-  return `<p class="eyebrow">${esc(project.domain)} / ${esc(project.date)}</p><h2 id="archive-dialog-title">${esc(project.title)}</h2><p>${esc(project.details)}</p>${cover(project,true)}${status(project)}${actions(project,true)}${live&&project.embed!==false?'<button id="load-live-preview" class="project-details">Load interactive live preview +</button><div id="live-preview"></div>':''}`;
+  return `<p class="eyebrow">${esc(project.domain)}</p><h2 id="archive-dialog-title">${esc(project.title)}</h2><p>${esc(project.details)}</p>${cover(project,true)}${status(project)}${actions(project,true)}${live&&project.embed!==false?'<button id="load-live-preview" class="project-details">Load interactive live preview +</button><div id="live-preview"></div>':''}`;
 }

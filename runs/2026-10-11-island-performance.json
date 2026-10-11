@@ -1,0 +1,140 @@
+{
+  "baseline_commit": "5ab8a7405634d85c1ff6e0b59209d506caa2e97f",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "before": {
+    "renderer": "webgl-3d",
+    "profile": {
+      "raf": [
+        164.5,
+        27.299999999813735,
+        31.799999999813735,
+        40.89999999944121,
+        13.700000000186265,
+        10.599999999627471,
+        7.2000000001862645,
+        11.5,
+        8.5,
+        12,
+        9.400000000372529,
+        7.3999999994412065,
+        7.599999999627471,
+        18
+      ],
+      "long": [
+        6693,
+        165
+      ]
+    },
+    "viewportRect": {
+      "x": 0,
+      "y": 76,
+      "width": 1100,
+      "height": 684,
+      "top": 76,
+      "right": 1100,
+      "bottom": 760,
+      "left": 0
+    },
+    "fallback": false,
+    "render": {
+      "renderer": "webgl-3d",
+      "surfaceDetail": "photographic",
+      "treeDetail": "photogrammetry",
+      "lighting": "day",
+      "weather": "unavailable"
+    },
+    "input_ms": [
+      105,
+      59,
+      29,
+      16,
+      63,
+      18
+    ],
+    "browser": "153.0.8010.0",
+    "viewport": {
+      "width": 1100,
+      "height": 760
+    },
+    "measured_at": "2026-10-11T16:53:27.845Z",
+    "runtime": "v24.19.0",
+    "method": "6s idle after 12s warmup; six real search fills; same Chromium software GPU and viewport; RAF callback and long-task durations, not physical GPU FPS"
+  },
+  "after": {
+    "renderer": "webgl-3d",
+    "profile": {
+      "raf": [
+        8.600000000558794,
+        5.5,
+        8.100000000558794
+      ],
+      "long": []
+    },
+    "viewportRect": {
+      "x": 0,
+      "y": 76,
+      "width": 1100,
+      "height": 684,
+      "top": 76,
+      "right": 1100,
+      "bottom": 760,
+      "left": 0
+    },
+    "fallback": false,
+    "render": {
+      "renderer": "webgl-3d",
+      "surfaceDetail": "photographic",
+      "treeDetail": "photogrammetry",
+      "lighting": "day",
+      "weather": "unavailable",
+      "shaderReady": "true",
+      "resolutionScale": "1.00",
+      "drawCalls": "439",
+      "scannedTreeInstances": "0"
+    },
+    "input_ms": [
+      85,
+      16,
+      14,
+      19,
+      16,
+      13
+    ],
+    "browser": "153.0.8010.0",
+    "viewport": {
+      "width": 1100,
+      "height": 760
+    },
+    "measured_at": "2026-10-11T16:54:46.124Z",
+    "runtime": "v24.19.0",
+    "method": "6s idle after 12s warmup; six real search fills; same Chromium software GPU and viewport; RAF callback and long-task durations, not physical GPU FPS"
+  },
+  "method": "6s idle after 12s warmup; six real search fills; same Chromium software GPU and viewport; RAF callback and long-task durations, not physical GPU FPS",
+  "repetitions": 1,
+  "input_samples_each": 6,
+  "median_input_ms": {
+    "before": 44.0,
+    "after": 16.0
+  },
+  "limits": [
+    "Single observed sample per version, software SwiftShader GPU; not a physical-device FPS guarantee",
+    "Real user hardware and network conditions vary",
+    "High-detail scanned tree instances admitted only near camera; procedural forest remains present"
+  ],
+  "changes": [
+    "Native antialiasing and tone mapping replaces the offscreen MSAA/bloom passes",
+    "Asynchronous shader warmup before tree admission",
+    "Scanned trees have bounded camera-distance detail and no extra shadow pass",
+    "Adaptive pixel budget; reuse static shadows",
+    "Batched label layout reads, 10Hz label updates, hover throttling",
+    "Suspend map rendering only while full live-preview modal covers it"
+  ],
+  "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "toolchain": {
+    "node": "v24.19.0",
+    "vite": "7.3.7",
+    "three": "0.180.0",
+    "chromium": "153.0.8010.0",
+    "gpu": "Forced software SwiftShader"
+  }
+}

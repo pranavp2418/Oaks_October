@@ -2485,7 +2485,18 @@
     "pending_trio_integration": null,
     "canonical_url": "https://impranavpatel.com/",
     "verified_at": "2026-10-11T16:19:11.751161+00:00",
-    "pending_daily_integration": null
+    "pending_daily_integration": null,
+    "project_presentation_policy": {
+      "effective_date": "2026-10-11",
+      "project_dates_visible": false,
+      "project_timelines_visible": false,
+      "exception": "CraftsmanAI unchanged",
+      "internal_date_metadata_preserved": true,
+      "filter": "technology/domain instead of month",
+      "daily_task_prompt_updated": true,
+      "release_status": "local_verified_pending_publication"
+    },
+    "pending_maintenance": "runs/2026-10-11-portfolio-maintenance.json"
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
@@ -2750,6 +2761,13 @@
         "runs/evidence/2026-10-08-legacy-cards-public.jpg",
         "runs/evidence/2026-10-08-island-logo-public.jpg"
       ]
+    },
+    {
+      "date": "2026-10-11",
+      "type": "project_presentation_and_island_performance",
+      "counted_daily_project": false,
+      "status": "local_verified_release_pending",
+      "record": "runs/2026-10-11-portfolio-maintenance.json"
     }
   ],
   "existing_project_integrations": [

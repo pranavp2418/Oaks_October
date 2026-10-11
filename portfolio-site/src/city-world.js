@@ -1,10 +1,7 @@
+import {pixelRatioFor,ResolutionGovernor} from './render-budget.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { SVGRenderer } from 'three/addons/renderers/SVGRenderer.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {addOcean,addVegetation,addScannedTrees,addAtmosphere,addSkyline,loadIslandTextures,terrainSurface,curvedTowerGeometry} from './island-scenery.js';
@@ -63,8 +60,9 @@ export function buildWorld(host, buildings, callbacks) {
   const renderer=software?new SVGRenderer():new THREE.WebGLRenderer({canvas,context,antialias:true,alpha:false,powerPreference:'high-performance'});
   if(software){renderer.setPrecision(1);renderer.setQuality('high');}
   host.dataset.renderer=software?'software-3d':'webgl-3d';
-  renderer.setPixelRatio(Math.min(devicePixelRatio,mobile?1.8:2.25));renderer.setSize(host.clientWidth,host.clientHeight);
-  if(!software){renderer.shadowMap.enabled=!mobile;renderer.shadowMap.type=THREE.PCFSoftShadowMap;}
+  const governor=new ResolutionGovernor();
+  renderer.setPixelRatio(pixelRatioFor(host.clientWidth,host.clientHeight,devicePixelRatio,mobile));renderer.setSize(host.clientWidth,host.clientHeight);
+  if(!software){renderer.shadowMap.enabled=!mobile;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;}
   renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;
   host.append(renderer.domElement);renderer.domElement.setAttribute('aria-hidden','true');
   const scene=new THREE.Scene();scene.background=new THREE.Color(software?'#80c6e7':'#86b4d8');scene.fog=new THREE.FogExp2('#86b4d8',.00065);
@@ -74,13 +72,11 @@ export function buildWorld(host, buildings, callbacks) {
   const overviewPosition=mobile?v3(500,650,720):v3(295,360,350),overviewTarget=v3(0,3,0);
   camera.position.copy(overviewPosition);controls.target.copy(overviewTarget);controls.update();
   const sun=new THREE.DirectionalLight('#fff0dc',software?1.25:3.25);sun.position.set(-135,230,90);sun.castShadow=!mobile&&!software;
-  sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-210;sun.shadow.camera.right=210;sun.shadow.camera.top=210;sun.shadow.camera.bottom=-210;sun.shadow.camera.near=1;sun.shadow.camera.far=620;sun.shadow.normalBias=.35;sun.shadow.bias=-.0001;scene.add(sun,sun.target);
+  sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-210;sun.shadow.camera.right=210;sun.shadow.camera.top=210;sun.shadow.camera.bottom=-210;sun.shadow.camera.near=1;sun.shadow.camera.far=620;sun.shadow.normalBias=.35;sun.shadow.bias=-.0001;scene.add(sun,sun.target);
   const hemi=new THREE.HemisphereLight('#cbe9fc','#6a7b55',1.5);scene.add(hemi);
   const softAmbient=software?new THREE.AmbientLight('#c4deef',.6):null;
   if(!software){const pmrem=new THREE.PMREMGenerator(renderer),environment=new RoomEnvironment();scene.environment=pmrem.fromScene(environment,.04).texture;environment.dispose();pmrem.dispose();}else scene.add(softAmbient);
-  let composer,bloom;
-  if(software){composer={render:()=>renderer.render(scene,camera),setSize:()=>{}};bloom={strength:0};}
-  else{const target=new THREE.WebGLRenderTarget(host.clientWidth,host.clientHeight,{type:THREE.HalfFloatType});target.samples=4;composer=new EffectComposer(renderer,target);composer.addPass(new RenderPass(scene,camera));bloom=new UnrealBloomPass(new THREE.Vector2(host.clientWidth,host.clientHeight),.24,.7,1.15);composer.addPass(bloom);composer.addPass(new OutputPass());}
+  // Native antialiasing/tone mapping avoids multisampled offscreen targets and full-screen bloom passes.
   const terrainGeometry=new THREE.PlaneGeometry(490,410,software?48:mobile?180:300,software?40:mobile?150:250);terrainGeometry.rotateX(-Math.PI/2);
   const position=terrainGeometry.attributes.position,colors=new Float32Array(position.count*3);
   const forest=new THREE.Color(software?'#71945f':'#bac7ab'),rock=new THREE.Color(software?'#a7a08a':'#d0cdc0'),sand=new THREE.Color(software?'#e2d8b6':'#fbf3db'),undersea=new THREE.Color('#54bcb0');
@@ -130,7 +126,7 @@ export function buildWorld(host, buildings, callbacks) {
   for(const d of DISTRICTS){const textures=sharedFacade,material=new THREE.MeshPhysicalMaterial({color:software?'#759da9':'#d2e1e7',...textures,emissive:software?'#03080b':'#fff',emissiveIntensity:.08,metalness:.42,roughness:.34,clearcoat:1,clearcoatRoughness:.08,envMapIntensity:.85});material.userData.facade=true;facadeMats.set(d.id,material);}
   addSkyline(scene,{software,mobile,landHeight,districts:DISTRICTS,buildings,facadeMats});
   const vegetation=addVegetation(scene,{software,mobile,landHeight,maps,districts:DISTRICTS,buildings});
-  addScannedTrees(scene,{software,mobile,landHeight,districts:DISTRICTS,buildings,host});
+  let scannedTrees=null;addScannedTrees(scene,{software,mobile,landHeight,districts:DISTRICTS,buildings,host,renderer,camera}).then(value=>{scannedTrees=value;});
   const sites=new Map(),pickable=[],selectionRing=mesh(new THREE.TorusGeometry(6.2,.13,7,60),lightMat('#c8f8ff'));selectionRing.rotation.x=Math.PI/2;selectionRing.visible=false;
   for(const p of buildings){
     const group=new THREE.Group(),base=Math.max(2,landHeight(p.x,p.z));group.position.set(p.x,base,p.z);scene.add(group);
@@ -178,12 +174,12 @@ export function buildWorld(host, buildings, callbacks) {
   mesh(new THREE.SphereGeometry(1.5,24,16),pipShell,pip);box(pip,2.3,.9,.25,0,.15,1.3,pipFace);for(const x of [-.58,.58])box(pip,.35,.28,.1,x,.2,1.48,pipLight);
   const halo=mesh(new THREE.TorusGeometry(1.8,.06,6,40),pipLight,pip);halo.rotation.x=Math.PI/2;halo.position.y=-.6;scene.add(pip);
   pip.position.set(-18,landHeight(-18,-5)+3.5,-5);
-  let pipDistrict='creative',pipTrip=null,routeLine=null,flight=null,environment=environmentState(new Date(),null),enabledMotion=true,selected=null,visibleSlugs=new Set(buildings.map(p=>p.slug)),lastDraw=0,hover=null;
+  let pipDistrict='creative',pipTrip=null,routeLine=null,flight=null,environment=environmentState(new Date(),null),enabledMotion=true,selected=null,visibleSlugs=new Set(buildings.map(p=>p.slug)),lastDraw=0,hover=null,paused=false,lastLabels=0,lastHover=0,lastShadow=0,lastTreeUpdate=0,shadowAssets='',shadersReady=software;
   const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let down=null;
   function cast(e){const r=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);return raycaster.intersectObjects(pickable,false).find(hit=>visibleSlugs.has(hit.object.userData.slug))?.object.userData.slug;}
   renderer.domElement.addEventListener('pointerdown',e=>{down={x:e.clientX,y:e.clientY,time:performance.now()}});
   renderer.domElement.addEventListener('pointerup',e=>{if(down&&Math.hypot(e.clientX-down.x,e.clientY-down.y)<7&&performance.now()-down.time<900){const slug=cast(e);if(slug)callbacks.select(slug)}down=null;});
-  renderer.domElement.addEventListener('pointermove',e=>{if(down)return;const slug=cast(e);if(slug!==hover){hover=slug;renderer.domElement.style.cursor=slug?'pointer':'grab';callbacks.hover?.(slug)}});
+  renderer.domElement.addEventListener('pointermove',e=>{if(down||performance.now()-lastHover<80)return;lastHover=performance.now();const slug=cast(e);if(slug!==hover){hover=slug;renderer.domElement.style.cursor=slug?'pointer':'grab';callbacks.hover?.(slug)}});
   controls.addEventListener('start',()=>{flight=null;});
   function fly(position,target,duration=1400){flight={from:camera.position.clone(),targetFrom:controls.target.clone(),to:position,target,start:performance.now(),duration:enabledMotion?duration:0};}
   function focus(slug,{guide=true}={}){
@@ -206,7 +202,7 @@ export function buildWorld(host, buildings, callbacks) {
     scene.background.copy(skyColor);scene.fog.color.copy(skyColor);scene.fog.density=value.fog?.0038:.00065+cloud*.00065;
     sun.position.set(value.sunDirection.x*270,Math.max(10,value.sunDirection.y*270),value.sunDirection.z*270);sun.intensity=(software?1.6:3.8)*light*(1-cloud*.7);sun.color.set('#fff4db').lerp(new THREE.Color('#ffb076'),warm*.8);
     hemi.intensity=mix(software?.38:.25,1.55,light)*(1-cloud*.2);hemi.color.set('#c9ebff').lerp(new THREE.Color('#315787'),dark);if(softAmbient)softAmbient.intensity=mix(.18,.45,light);
-    renderer.toneMappingExposure=mix(.78,1.05,light);bloom.strength=mix(.48,.19,light);
+    renderer.toneMappingExposure=mix(.78,1.05,light);if(!software)renderer.shadowMap.needsUpdate=true;
     scene.environmentIntensity=mix(.15,.9,light)*(1-cloud*.45);
     if(skyPmrem&&atmosphere.skyScene&&(!reflectionState||Math.abs(reflectionState.altitude-value.altitude)>1||Math.abs(reflectionState.cloudCover-cloud)>.1||Math.abs(reflectionState.night-dark)>.05)){atmosphere.update(0,value);const next=skyPmrem.fromScene(atmosphere.skyScene,.025,.1,2500);scene.environment=next.texture;if(outdoorEnvironment)outdoorEnvironment.dispose();outdoorEnvironment=next;reflectionState=value;}
     for(const material of facadeMats.values()){material.emissiveIntensity=.035+dark*.65;if(software){material.emissive.set('#163348').lerp(new THREE.Color('#254b62'),dark);material.color.set('#76a9c0').lerp(new THREE.Color('#183451'),dark*.85);}}
@@ -219,20 +215,27 @@ export function buildWorld(host, buildings, callbacks) {
   function zoom(factor){const diff=camera.position.clone().sub(controls.target),distance=clamp(diff.length()*factor,controls.minDistance,controls.maxDistance);camera.position.copy(controls.target).add(diff.setLength(distance));flight=null;controls.update();}
   function setVisible(slugs){visibleSlugs=new Set(slugs);for(const [slug,s]of sites)s.beacon.visible=visibleSlugs.has(slug);}
   function labelPositions(){const result=[];for(const [slug,s]of sites){if(!visibleSlugs.has(slug))continue;const w=v3(s.p.x,s.base+s.height+7,s.p.z),screen=w.clone().project(camera);result.push({slug,x:(screen.x*.5+.5)*host.clientWidth,y:(-.5*screen.y+.5)*host.clientHeight,visible:screen.z<1&&screen.z>-1&&Math.abs(screen.x)<.94&&Math.abs(screen.y)<.94,distance:w.distanceTo(camera.position)})}return result.sort((a,b)=>a.distance-b.distance);}
-  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;if(camera.view?.enabled)camera.setViewOffset(w,h,0,h*.15,w,h);camera.updateProjectionMatrix();renderer.setSize(w,h);composer.setSize(w,h);};const observer=new ResizeObserver(resize);observer.observe(host);
+  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;if(camera.view?.enabled)camera.setViewOffset(w,h,0,h*.15,w,h);camera.updateProjectionMatrix();renderer.setPixelRatio(pixelRatioFor(w,h,devicePixelRatio,mobile,governor.scale));renderer.setSize(w,h);};const observer=new ResizeObserver(resize);observer.observe(host);
   renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();callbacks.contextLost?.();});
   renderer.domElement.addEventListener('webglcontextrestored',()=>location.reload());
-  function animate(now){requestAnimationFrame(animate);if(document.hidden||now-lastDraw<(software?125:mobile?33:22))return;lastDraw=now;
+  function animate(now){requestAnimationFrame(animate);if(document.hidden||paused||!shadersReady||now-lastDraw<(software?125:16))return;lastDraw=now;const drawStarted=performance.now();
     if(flight){const t=flight.duration?clamp((now-flight.start)/flight.duration,0,1):1,e=1-(1-t)**3;camera.position.lerpVectors(flight.from,flight.to,e);controls.target.lerpVectors(flight.targetFrom,flight.target,e);if(t===1)flight=null;}
     if(pipTrip){const t=pipTrip.duration?clamp((now-pipTrip.start)/pipTrip.duration,0,1):1,pos=pipTrip.curve.getPointAt(t);pos.y=Math.max(landHeight(pos.x,pos.z)+3.5,pos.y);pip.position.copy(pos);const next=pipTrip.curve.getPointAt(Math.min(1,t+.005));pip.rotation.y=Math.atan2(next.x-pos.x,next.z-pos.z);if(t===1){pipTrip=null;callbacks.travel?.('You have arrived. Select Step inside to open the project.');}}
     ocean.update(now*.001);vegetation.update(now*.001,environment);atmosphere.update(now*.001,environment);
     pip.position.y+=Math.sin(now*.002)*.006;if(selectionRing.material.emissive)selectionRing.material.emissiveIntensity=1.8+Math.sin(now*.003)*.4;
-    controls.update();for(const s of sites.values())if(s.lod){const near=s.p.slug===selected||camera.position.distanceTo(s.group.position)<130;s.lod.visible=!near;for(const child of s.details)child.visible=near;}composer.render();callbacks.frame?.(labelPositions(),camera.position,controls.target,renderer.info.render);
+    controls.update();for(const s of sites.values())if(s.lod){const near=s.p.slug===selected||camera.position.distanceTo(s.group.position)<130;s.lod.visible=!near;for(const child of s.details)child.visible=near;}
+    if(scannedTrees&&now-lastTreeUpdate>250){scannedTrees.update(camera);lastTreeUpdate=now;}
+    const assets=host.dataset.surfaceDetail+'|'+host.dataset.treeDetail;if(!software&&(assets!==shadowAssets||(pipTrip&&now-lastShadow>500))){renderer.shadowMap.needsUpdate=true;shadowAssets=assets;lastShadow=now;}
+    renderer.render(scene,camera);
+    if(now-lastLabels>100){callbacks.frame?.(labelPositions(),camera.position,controls.target,renderer.info.render);lastLabels=now;}
+    const cost=performance.now()-drawStarted;if(!software&&governor.observe(cost))resize();
+    host.dataset.resolutionScale=governor.scale.toFixed(2);host.dataset.drawCalls=String(renderer.info.render.calls);
     // Leave a real input-processing gap after expensive software drawing, while motion stays active.
     if(software)lastDraw=performance.now();
   }
+  if(!software)renderer.compileAsync(scene,camera).then(()=>{shadersReady=true;host.dataset.shaderReady='true';}).catch(error=>{console.warn('Island shader warmup failed; using on-demand rendering.',error);shadersReady=true;});
   requestAnimationFrame(animate);
-  return {focus,overview,setEnvironment,zoom,panTo,setVisible,sites,camera,controls,renderer,
+  return {focus,overview,setEnvironment,zoom,panTo,setVisible,sites,camera,controls,renderer,setPaused(value){paused=Boolean(value);host.dataset.paused=String(paused);},
     north(){const offset=camera.position.clone().sub(controls.target);fly(controls.target.clone().add(v3(0,offset.y,Math.hypot(offset.x,offset.z))),controls.target.clone(),800);},
     rotate(x,y){const s=new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls.target));s.theta+=x;s.phi=clamp(s.phi+y,.04,1.3);camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(s));flight=null;controls.update();}
   };
