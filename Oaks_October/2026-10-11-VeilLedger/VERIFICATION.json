@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-10-11T20:29:33.581988+00:00",
+  "unit_tests_passed": 9,
+  "oracle_scopes": 100,
+  "clean_install_build": true,
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run build"
+  ],
+  "runtime": "Python3.12 standard library SQLite / Node24",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "browser": {
+    "verified_at": "2026-10-11T20:27:45.511Z",
+    "name": "VeilLedger",
+    "base": "http://127.0.0.1:8132",
+    "status": "passed",
+    "desktop": true,
+    "mobile_viewport": 390,
+    "physical_device": false,
+    "flows": [
+      "desktop scope/prepare/two approvals/release/reload/receipt verify/revoke/export/recovery/tamper reject",
+      "mobile reject/narrow/reprocess; actual HTTP stale/method errors"
+    ],
+    "page_errors": [],
+    "width": {
+      "viewport": 390,
+      "document": 390
+    }
+  },
+  "limits": [
+    "Synthetic role rehearsal; no authentication",
+    "No server persistence; browser-owned operation log",
+    "Checksum receipt not signature"
+  ]
+}

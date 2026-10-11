@@ -1,0 +1,1 @@
+{"name":"veilledger","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"python3 -m unittest discover -s tests -v","dev":"python3 local.py"}}
