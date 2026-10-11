@@ -1,0 +1,203 @@
+{
+  "dataset": "synthetic-permuted-8class-v1-seed10102026",
+  "step": 130,
+  "evaluation": {
+    "recall1": 1,
+    "mrr": 1,
+    "count": 32,
+    "results": [
+      {
+        "id": "q-0-8",
+        "expected": "Camera",
+        "predicted": "Camera",
+        "position": 1
+      },
+      {
+        "id": "q-0-9",
+        "expected": "Camera",
+        "predicted": "Camera",
+        "position": 1
+      },
+      {
+        "id": "q-0-10",
+        "expected": "Camera",
+        "predicted": "Camera",
+        "position": 1
+      },
+      {
+        "id": "q-0-11",
+        "expected": "Camera",
+        "predicted": "Camera",
+        "position": 1
+      },
+      {
+        "id": "q-1-8",
+        "expected": "Sensor",
+        "predicted": "Sensor",
+        "position": 1
+      },
+      {
+        "id": "q-1-9",
+        "expected": "Sensor",
+        "predicted": "Sensor",
+        "position": 1
+      },
+      {
+        "id": "q-1-10",
+        "expected": "Sensor",
+        "predicted": "Sensor",
+        "position": 1
+      },
+      {
+        "id": "q-1-11",
+        "expected": "Sensor",
+        "predicted": "Sensor",
+        "position": 1
+      },
+      {
+        "id": "q-2-8",
+        "expected": "Cable",
+        "predicted": "Cable",
+        "position": 1
+      },
+      {
+        "id": "q-2-9",
+        "expected": "Cable",
+        "predicted": "Cable",
+        "position": 1
+      },
+      {
+        "id": "q-2-10",
+        "expected": "Cable",
+        "predicted": "Cable",
+        "position": 1
+      },
+      {
+        "id": "q-2-11",
+        "expected": "Cable",
+        "predicted": "Cable",
+        "position": 1
+      },
+      {
+        "id": "q-3-8",
+        "expected": "Motor",
+        "predicted": "Motor",
+        "position": 1
+      },
+      {
+        "id": "q-3-9",
+        "expected": "Motor",
+        "predicted": "Motor",
+        "position": 1
+      },
+      {
+        "id": "q-3-10",
+        "expected": "Motor",
+        "predicted": "Motor",
+        "position": 1
+      },
+      {
+        "id": "q-3-11",
+        "expected": "Motor",
+        "predicted": "Motor",
+        "position": 1
+      },
+      {
+        "id": "q-4-8",
+        "expected": "Switch",
+        "predicted": "Switch",
+        "position": 1
+      },
+      {
+        "id": "q-4-9",
+        "expected": "Switch",
+        "predicted": "Switch",
+        "position": 1
+      },
+      {
+        "id": "q-4-10",
+        "expected": "Switch",
+        "predicted": "Switch",
+        "position": 1
+      },
+      {
+        "id": "q-4-11",
+        "expected": "Switch",
+        "predicted": "Switch",
+        "position": 1
+      },
+      {
+        "id": "q-5-8",
+        "expected": "Battery",
+        "predicted": "Battery",
+        "position": 1
+      },
+      {
+        "id": "q-5-9",
+        "expected": "Battery",
+        "predicted": "Battery",
+        "position": 1
+      },
+      {
+        "id": "q-5-10",
+        "expected": "Battery",
+        "predicted": "Battery",
+        "position": 1
+      },
+      {
+        "id": "q-5-11",
+        "expected": "Battery",
+        "predicted": "Battery",
+        "position": 1
+      },
+      {
+        "id": "q-6-8",
+        "expected": "Relay",
+        "predicted": "Relay",
+        "position": 1
+      },
+      {
+        "id": "q-6-9",
+        "expected": "Relay",
+        "predicted": "Relay",
+        "position": 1
+      },
+      {
+        "id": "q-6-10",
+        "expected": "Relay",
+        "predicted": "Relay",
+        "position": 1
+      },
+      {
+        "id": "q-6-11",
+        "expected": "Relay",
+        "predicted": "Relay",
+        "position": 1
+      },
+      {
+        "id": "q-7-8",
+        "expected": "Panel",
+        "predicted": "Panel",
+        "position": 1
+      },
+      {
+        "id": "q-7-9",
+        "expected": "Panel",
+        "predicted": "Panel",
+        "position": 1
+      },
+      {
+        "id": "q-7-10",
+        "expected": "Panel",
+        "predicted": "Panel",
+        "position": 1
+      },
+      {
+        "id": "q-7-11",
+        "expected": "Panel",
+        "predicted": "Panel",
+        "position": 1
+      }
+    ]
+  }
+}

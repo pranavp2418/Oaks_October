@@ -1,0 +1,64 @@
+{
+  "verified_at": "2026-10-11T15:43:26.655Z",
+  "browser": "153.0.8010.0",
+  "platform": "linux",
+  "physical_device": false,
+  "flows": [
+    {
+      "name": "Cutline desktop edit/solve/reserve/complete/reload/export",
+      "passed": true,
+      "url": "https://cutline-20261010.vercel.app/",
+      "conservation": {
+        "job": "Batch-001",
+        "input": 6400,
+        "products": 5770,
+        "kerf": 24,
+        "retained": 606,
+        "discarded": 0
+      }
+    },
+    {
+      "name": "Cutline newer-tab workspace fence",
+      "passed": true
+    },
+    {
+      "name": "Cutline mobile invalid/reserve/cancel/recover/reject-invalid",
+      "passed": true,
+      "width": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "Cutline live API replay/invalid/stale/method",
+      "passed": true,
+      "statuses": [
+        200,
+        400,
+        409,
+        405
+      ]
+    },
+    {
+      "name": "VectorGarden desktop train/gradient/reload/resume/export/recover/reject-invalid",
+      "passed": true,
+      "url": "https://vectorgarden-20261010.vercel.app/",
+      "initialRecall": "6.3%",
+      "trainedRecall": "100.0%",
+      "gradients": "PASS\n42 sampled derivatives\nmax error 1.54e-11",
+      "step": 130,
+      "synthetic_only": true
+    },
+    {
+      "name": "VectorGarden mobile keyboard query/gradient/train/pause/resume and newer-tab fence",
+      "passed": true,
+      "width": {
+        "viewport": 390,
+        "document": 390
+      },
+      "step": "150/5000"
+    }
+  ],
+  "page_errors": [],
+  "status": "passed"
+}

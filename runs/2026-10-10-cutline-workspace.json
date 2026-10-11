@@ -1,0 +1,137 @@
+{
+  "seed": {
+    "schema_version": 1,
+    "synthetic": true,
+    "seed": 10102026,
+    "stocks": [
+      {
+        "id": "AL-01",
+        "material": "Aluminium",
+        "length": 2400
+      },
+      {
+        "id": "AL-02",
+        "material": "Aluminium",
+        "length": 2400
+      },
+      {
+        "id": "AL-03",
+        "material": "Aluminium",
+        "length": 1800
+      },
+      {
+        "id": "AL-04",
+        "material": "Aluminium",
+        "length": 1200
+      },
+      {
+        "id": "ST-01",
+        "material": "Steel",
+        "length": 2200
+      }
+    ],
+    "pieces": [
+      {
+        "id": "Rail-A",
+        "material": "Aluminium",
+        "length": 920
+      },
+      {
+        "id": "Rail-B",
+        "material": "Aluminium",
+        "length": 920
+      },
+      {
+        "id": "Brace-A",
+        "material": "Aluminium",
+        "length": 610
+      },
+      {
+        "id": "Brace-B",
+        "material": "Aluminium",
+        "length": 610
+      },
+      {
+        "id": "Tab-A",
+        "material": "Aluminium",
+        "length": 280
+      },
+      {
+        "id": "Tab-B",
+        "material": "Aluminium",
+        "length": 280
+      },
+      {
+        "id": "Post-A",
+        "material": "Steel",
+        "length": 1050
+      },
+      {
+        "id": "Post-B",
+        "material": "Steel",
+        "length": 1050
+      }
+    ]
+  },
+  "operations": [
+    {
+      "kind": "reserve",
+      "id": "ed1690ba-dd38-4cd6-ad30-fdf8d9b63c01",
+      "job": "Batch-001",
+      "note": "Cut plan reviewed",
+      "expected_revision": 0,
+      "pieces": [
+        {
+          "id": "Rail-A",
+          "material": "Aluminium",
+          "length": 970
+        },
+        {
+          "id": "Rail-B",
+          "material": "Aluminium",
+          "length": 920
+        },
+        {
+          "id": "Brace-A",
+          "material": "Aluminium",
+          "length": 610
+        },
+        {
+          "id": "Brace-B",
+          "material": "Aluminium",
+          "length": 610
+        },
+        {
+          "id": "Tab-A",
+          "material": "Aluminium",
+          "length": 280
+        },
+        {
+          "id": "Tab-B",
+          "material": "Aluminium",
+          "length": 280
+        },
+        {
+          "id": "Post-A",
+          "material": "Steel",
+          "length": 1050
+        },
+        {
+          "id": "Post-B",
+          "material": "Steel",
+          "length": 1050
+        }
+      ],
+      "kerf": 3,
+      "budget": 150000,
+      "plan_hash": "fb946503208492d66f2936f6ff4dc3953d62e654b2bf48f995419ea43090f869"
+    },
+    {
+      "kind": "complete",
+      "id": "504a5237-0ff5-4854-836c-b8f0bfef17e7",
+      "job": "Batch-001",
+      "note": "Cut plan reviewed",
+      "expected_revision": 1
+    }
+  ]
+}

@@ -9,10 +9,31 @@
     "bars": 3,
     "nodes": 48
   },
-  "browser": "pending",
+  "browser": {
+    "status": "passed",
+    "evidence": "runs/2026-10-10-browser-evidence.json",
+    "desktop": true,
+    "mobile_viewport": 390,
+    "physical_device": false
+  },
   "commands": [
     "npm ci --ignore-scripts",
     "npm test",
     "npm run build"
-  ]
+  ],
+  "live_checked_at": "2026-10-11T15:45:34.247518+00:00",
+  "page_errors": 0,
+  "live_api_statuses": [
+    200,
+    400,
+    409,
+    405
+  ],
+  "conservation": {
+    "input": 6400,
+    "products": 5770,
+    "kerf": 24,
+    "retained": 606,
+    "discarded": 0
+  }
 }

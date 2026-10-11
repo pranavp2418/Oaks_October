@@ -22,7 +22,17 @@ WorkOrder Triage is a deployment dry run, not part of the daily intermediate/adv
 
 Status and actual deployment/portfolio verification are recorded in the ledger. All datasets are synthetic. Complete recovered [portfolio source](./portfolio-site) is now durable in this repository.
 
-The portfolio also includes a separate [Projects country](https://pranav-patel.vercel.app/projects.html): interactive 3D terrain, district-based project buildings, source/demo details and Pip's local navigation. It uses the same daily project manifest as the existing archive, preserving the landing-page flow. This enhancement is not a counted daily project.
+The portfolio also includes a separate [Projects country](https://impranavpatel.com/projects.html): interactive 3D terrain, district-based project buildings, source/demo details and Pip's local navigation. It uses the same daily project manifest as the existing archive, preserving the landing-page flow. This enhancement is not a counted daily project.
+
+## October 10 projects
+
+| Project | Core workflow | Stack | Delivery |
+|---|---|---|---|
+| [StrataLog](./Oaks_October/2026-10-10-StrataLog) | Ordered WAL ingestion, checkpoint and crash recovery | Elixir, OTP | Code-only · [CLI walkthrough](./Oaks_October/2026-10-10-StrataLog#walkthrough) |
+| [Cutline](./Oaks_October/2026-10-10-Cutline) | Exact cutting plans, reservations and remnant conservation | Python, SQLite, JavaScript | [Demo](https://cutline-20261010.vercel.app/) |
+| [VectorGarden](./Oaks_October/2026-10-10-VectorGarden) | Two-tower backpropagation, exact resume and held-out retrieval | TypeScript, React, Web Worker | [Demo](https://vectorgarden-20261010.vercel.app/) |
+
+All three passed applicable delivery checks. [Run evidence](./runs/2026-10-10.json) records actual release and portfolio stages; the browser evidence includes 390px workflows and real export/recovery. The interrupted October 10 batch resumed October 11; these remain October 10 projects. Portfolio integration is recorded only after its public release passes verification.
 
 ## Collection plan
 

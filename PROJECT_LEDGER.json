@@ -664,7 +664,7 @@
     },
     {
       "title": "StrataLog",
-      "stage": "source_pushed_verified",
+      "stage": "delivery_verified_portfolio_pending",
       "industry": "Data infrastructure",
       "classification": "new",
       "core_language": "Elixir",
@@ -707,7 +707,7 @@
       "date": "2026-10-10",
       "status": "delivery_complete_portfolio_pending",
       "implementation": "implemented_and_pushed",
-      "verification": "clean_cli_and_recovery_passed",
+      "verification": "passed",
       "deployment": "intentionally_not_required",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
@@ -720,10 +720,192 @@
       "substantive_skill_coverage": [
         "Elixir",
         "OTP GenServer",
-        "Custom framed WAL"
+        "WAL and checksums",
+        "Stream offsets",
+        "Idempotency",
+        "Process fault recovery"
       ],
-      "additional_domain_capabilities": [],
-      "portfolio_integration": "pending"
+      "additional_domain_capabilities": [
+        "Checkpoint/replay and atomic exports"
+      ],
+      "portfolio_integration": "pending",
+      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations."
+    },
+    {
+      "title": "Cutline",
+      "stage": "delivery_verified_portfolio_pending",
+      "industry": "Industrial fabrication",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "JavaScript/SVG"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 11,
+      "path": "Oaks_October/2026-10-10-Cutline",
+      "core_technical_contribution": "Bounded exact branch-and-bound 1D stock assignment with kerf; reservation/completion transactions and remnant reuse",
+      "invariants": [
+        "Every piece placed once",
+        "Used length plus kerf never exceeds stock",
+        "Reserved stock not reused",
+        "Completion conserves material including kerf/remnant"
+      ],
+      "date": "2026-10-10",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "passed",
+      "deployment": "public_workflows_verified",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
+      "live_url": "https://cutline-20261010.vercel.app/",
+      "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
+      "source_commit": "a4b3adbc3ac360addaa1f4e9dcbaf9bde06da60d",
+      "counted": true,
+      "completion_ordinal": 11,
+      "visual_theme": "Navy/amber industrial cutting strips",
+      "substantive_skill_coverage": [
+        "Python",
+        "SQL/SQLite transactions",
+        "JavaScript",
+        "REST API",
+        "Branch-and-bound optimization",
+        "Material conservation and audit"
+      ],
+      "additional_domain_capabilities": [
+        "Reservation lifecycle",
+        "Remnant reuse and conservation audit exports"
+      ],
+      "project_id": "prj_WrKAu2IewoPKouk6aObtoWByBcb5",
+      "tests": {
+        "verified_at": "2026-10-10T20:28:23.064910+00:00",
+        "tests_passed": 9,
+        "exhaustive_oracle_cases": 100,
+        "clean_install_build": true,
+        "actual_local_http": {
+          "status": 200,
+          "optimal": true,
+          "bars": 3,
+          "nodes": 48
+        },
+        "browser": {
+          "status": "passed",
+          "evidence": "runs/2026-10-10-browser-evidence.json",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false
+        },
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "live_checked_at": "2026-10-11T15:45:34.247518+00:00",
+        "page_errors": 0,
+        "live_api_statuses": [
+          200,
+          400,
+          409,
+          405
+        ],
+        "conservation": {
+          "input": 6400,
+          "products": 5770,
+          "kerf": 24,
+          "retained": 606,
+          "discarded": 0
+        }
+      },
+      "portfolio_integration": "pending",
+      "completed_at": "2026-10-11T15:45:34.247518+00:00",
+      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants."
+    },
+    {
+      "title": "VectorGarden",
+      "stage": "delivery_verified_portfolio_pending",
+      "industry": "Machine learning tooling",
+      "classification": "resume",
+      "core_language": "TypeScript",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Web Worker",
+        "Custom two-tower network/Adam"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 12,
+      "path": "Oaks_October/2026-10-10-VectorGarden",
+      "core_technical_contribution": "Manual two-tower backpropagation, symmetric contrastive loss, deterministic Adam/resume and held-out retrieval evaluation",
+      "invariants": [
+        "Train/holdout partition disjoint",
+        "Gradients match independent finite differences",
+        "Checkpoint resume equals uninterrupted training",
+        "Nonfinite and inconsistent imports leave workspace intact"
+      ],
+      "date": "2026-10-10",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "passed",
+      "deployment": "public_workflows_verified",
+      "integration": "pending",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
+      "live_url": "https://vectorgarden-20261010.vercel.app/",
+      "deployment_id": "dpl_Aa2ReL3XTMJC9S3J4316q9n8CtCa",
+      "source_commit": "cbc6e83494c76cfe50d65c7e58f9de524b81d4f0",
+      "counted": true,
+      "completion_ordinal": 12,
+      "visual_theme": "Sage/cream/coral botanical learning curves",
+      "substantive_skill_coverage": [
+        "TypeScript",
+        "React",
+        "Web Workers",
+        "Neural-network mathematics",
+        "Manual backpropagation",
+        "Adam",
+        "Retrieval evaluation",
+        "Checkpoint validation"
+      ],
+      "additional_domain_capabilities": [
+        "Finite-difference gradient diagnostics",
+        "Checkpoint export/recovery and held-out per-class evaluation"
+      ],
+      "tests": {
+        "verified_at": "2026-10-11T15:36:38.813052+00:00",
+        "core_tests_passed": 8,
+        "finite_difference_comparisons": 126,
+        "independent_forward_loss_oracle": true,
+        "checkpoint_resume_exact": true,
+        "clean_install_build": true,
+        "commands": [
+          "npm ci --ignore-scripts",
+          "npm test",
+          "npm run build"
+        ],
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "node": "v24.19.0",
+        "browser": {
+          "status": "passed",
+          "evidence": "runs/2026-10-10-browser-evidence.json",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false
+        },
+        "dataset": "original synthetic seed10102026",
+        "toolchain": "React19.1.1 / TypeScript5.9.2 / Vite7.3.7",
+        "dependency_update": "Pinned compatible patched Vite release after current registry advisory check; npm ci/test/build repeated successfully",
+        "live_checked_at": "2026-10-11T15:45:34.247518+00:00",
+        "page_errors": 0,
+        "live_synthetic_recall1": {
+          "before": 0.0625,
+          "after_120_steps": 1.0
+        },
+        "live_gradient_max_error": 1.54e-11
+      },
+      "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk",
+      "portfolio_integration": "pending",
+      "completed_at": "2026-10-11T15:45:34.247518+00:00",
+      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable."
     }
   ],
   "dry_runs": [
@@ -900,11 +1082,11 @@
     },
     {
       "date": "2026-10-10",
-      "status": "recovering_interrupted_verification",
+      "status": "portfolio_local_verified_release_pending",
       "target": 3,
-      "completed_projects": 1,
+      "completed_projects": 3,
       "run_record": "runs/2026-10-10.json",
-      "last_updated_at": "2026-10-11T15:33:11.113175+00:00"
+      "last_updated_at": "2026-10-11T15:49:02.299071+00:00"
     }
   ],
   "profile_baseline": {
@@ -1564,7 +1746,7 @@
     },
     {
       "title": "StrataLog",
-      "stage": "source_pushed_verified",
+      "stage": "delivery_verified_portfolio_pending",
       "industry": "Data infrastructure",
       "classification": "new",
       "core_language": "Elixir",
@@ -1607,7 +1789,7 @@
       "date": "2026-10-10",
       "status": "delivery_complete_portfolio_pending",
       "implementation": "implemented_and_pushed",
-      "verification": "clean_cli_and_recovery_passed",
+      "verification": "passed",
       "deployment": "intentionally_not_required",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
@@ -1620,14 +1802,20 @@
       "substantive_skill_coverage": [
         "Elixir",
         "OTP GenServer",
-        "Custom framed WAL"
+        "WAL and checksums",
+        "Stream offsets",
+        "Idempotency",
+        "Process fault recovery"
       ],
-      "additional_domain_capabilities": [],
-      "portfolio_integration": "pending"
+      "additional_domain_capabilities": [
+        "Checkpoint/replay and atomic exports"
+      ],
+      "portfolio_integration": "pending",
+      "problem": "Recover ordered event ingestion without advancing offsets on partial writes or replaying duplicate operations."
     },
     {
       "title": "Cutline",
-      "stage": "live_main_flows_verified_recovery_check_pending",
+      "stage": "delivery_verified_portfolio_pending",
       "industry": "Industrial fabrication",
       "classification": "resume",
       "core_language": "Python",
@@ -1647,24 +1835,30 @@
         "Completion conserves material including kerf/remnant"
       ],
       "date": "2026-10-10",
-      "status": "in_progress",
-      "implementation": "local_implemented",
-      "verification": "core_clean_build_passed_browser_pending",
-      "deployment": "pending",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "passed",
+      "deployment": "public_workflows_verified",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
       "live_url": "https://cutline-20261010.vercel.app/",
       "deployment_id": "dpl_FVQNz5SXdord2ix2c4kWLiSiyCUD",
       "source_commit": "a4b3adbc3ac360addaa1f4e9dcbaf9bde06da60d",
-      "counted": false,
-      "completion_ordinal": null,
+      "counted": true,
+      "completion_ordinal": 11,
       "visual_theme": "Navy/amber industrial cutting strips",
       "substantive_skill_coverage": [
         "Python",
-        "SQLite",
-        "JavaScript/SVG"
+        "SQL/SQLite transactions",
+        "JavaScript",
+        "REST API",
+        "Branch-and-bound optimization",
+        "Material conservation and audit"
       ],
-      "additional_domain_capabilities": [],
+      "additional_domain_capabilities": [
+        "Reservation lifecycle",
+        "Remnant reuse and conservation audit exports"
+      ],
       "project_id": "prj_WrKAu2IewoPKouk6aObtoWByBcb5",
       "tests": {
         "verified_at": "2026-10-10T20:28:23.064910+00:00",
@@ -1678,21 +1872,40 @@
           "nodes": 48
         },
         "browser": {
-          "desktop": "edit/solve/reserve/complete/reload passed; 6400=5770+24+606+0 mm",
-          "mobile": "390px view invalid length rejected, reserve/cancel restores all stock",
-          "recovery": "tool timed out; repeat pending",
+          "status": "passed",
+          "evidence": "runs/2026-10-10-browser-evidence.json",
+          "desktop": true,
+          "mobile_viewport": 390,
           "physical_device": false
         },
         "commands": [
           "npm ci --ignore-scripts",
           "npm test",
           "npm run build"
-        ]
-      }
+        ],
+        "live_checked_at": "2026-10-11T15:45:34.247518+00:00",
+        "page_errors": 0,
+        "live_api_statuses": [
+          200,
+          400,
+          409,
+          405
+        ],
+        "conservation": {
+          "input": 6400,
+          "products": 5770,
+          "kerf": 24,
+          "retained": 606,
+          "discarded": 0
+        }
+      },
+      "portfolio_integration": "pending",
+      "completed_at": "2026-10-11T15:45:34.247518+00:00",
+      "problem": "Turn a finite material inventory into explainable cutting plans, committed reservations and conserved remnants."
     },
     {
       "title": "VectorGarden",
-      "stage": "clean_install_core_build_verified",
+      "stage": "delivery_verified_portfolio_pending",
       "industry": "Machine learning tooling",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -1713,27 +1926,34 @@
         "Nonfinite and inconsistent imports leave workspace intact"
       ],
       "date": "2026-10-10",
-      "status": "in_progress",
-      "implementation": "planned",
-      "verification": "pending",
-      "deployment": "pending",
+      "status": "delivery_complete_portfolio_pending",
+      "implementation": "implemented_and_pushed",
+      "verification": "passed",
+      "deployment": "public_workflows_verified",
       "integration": "pending",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
-      "live_url": null,
-      "deployment_id": null,
-      "source_commit": null,
-      "counted": false,
-      "completion_ordinal": null,
+      "live_url": "https://vectorgarden-20261010.vercel.app/",
+      "deployment_id": "dpl_Aa2ReL3XTMJC9S3J4316q9n8CtCa",
+      "source_commit": "cbc6e83494c76cfe50d65c7e58f9de524b81d4f0",
+      "counted": true,
+      "completion_ordinal": 12,
       "visual_theme": "Sage/cream/coral botanical learning curves",
       "substantive_skill_coverage": [
         "TypeScript",
         "React",
-        "Web Worker",
-        "Custom two-tower network/Adam"
+        "Web Workers",
+        "Neural-network mathematics",
+        "Manual backpropagation",
+        "Adam",
+        "Retrieval evaluation",
+        "Checkpoint validation"
       ],
-      "additional_domain_capabilities": [],
+      "additional_domain_capabilities": [
+        "Finite-difference gradient diagnostics",
+        "Checkpoint export/recovery and held-out per-class evaluation"
+      ],
       "tests": {
-        "verified_at": "2026-10-10T20:38:58.307715+00:00",
+        "verified_at": "2026-10-11T15:36:38.813052+00:00",
         "core_tests_passed": 8,
         "finite_difference_comparisons": 126,
         "independent_forward_loss_oracle": true,
@@ -1746,10 +1966,28 @@
         ],
         "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
         "node": "v24.19.0",
-        "browser": "pending",
-        "dataset": "original synthetic seed10102026"
+        "browser": {
+          "status": "passed",
+          "evidence": "runs/2026-10-10-browser-evidence.json",
+          "desktop": true,
+          "mobile_viewport": 390,
+          "physical_device": false
+        },
+        "dataset": "original synthetic seed10102026",
+        "toolchain": "React19.1.1 / TypeScript5.9.2 / Vite7.3.7",
+        "dependency_update": "Pinned compatible patched Vite release after current registry advisory check; npm ci/test/build repeated successfully",
+        "live_checked_at": "2026-10-11T15:45:34.247518+00:00",
+        "page_errors": 0,
+        "live_synthetic_recall1": {
+          "before": 0.0625,
+          "after_120_steps": 1.0
+        },
+        "live_gradient_max_error": 1.54e-11
       },
-      "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk"
+      "project_id": "prj_SbOLR7TbNwQFBfs9iAp0NpbVw3bk",
+      "portfolio_integration": "pending",
+      "completed_at": "2026-10-11T15:45:34.247518+00:00",
+      "problem": "Make small-network training mathematics, checkpoint state and held-out retrieval inspectable."
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -2119,7 +2357,17 @@
       }
     },
     "canonical_url": "https://impranavpatel.com/",
-    "verified_at": "2026-10-09T20:40:46.893948+00:00"
+    "verified_at": "2026-10-09T20:40:46.893948+00:00",
+    "pending_daily_integration": {
+      "date": "2026-10-10",
+      "stage": "local_verified_release_pending",
+      "entries": [
+        "stratalog",
+        "cutline",
+        "vectorgarden"
+      ],
+      "local_tests_passed": 18
+    }
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
@@ -2133,11 +2381,11 @@
     "github_only_standard": "Complete useful native/CLI/library/engine/backend workflow, clean-environment setup, meaningful tests and input-to-output execution evidence, rerun/recovery checks, complete README and source push.",
     "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
     "completed_counts": {
-      "web_deployed": 9,
+      "web_deployed": 11,
       "github_only": 1,
-      "total": 10
+      "total": 12
     },
-    "next_planned_completion_ordinal": 11,
+    "next_planned_completion_ordinal": 13,
     "next_planned_delivery_mode": "web_deployed"
   },
   "domain_depth_policy": {

@@ -310,5 +310,90 @@
       "district": "creative",
       "archetype": "studio"
     }
+  },
+  {
+    "title": "StrataLog",
+    "slug": "stratalog",
+    "domain": "Data infrastructure",
+    "stack": [
+      "Elixir",
+      "OTP GenServer",
+      "Framed WAL"
+    ],
+    "description": "Ingest ordered event batches, recover interrupted writes and export verified snapshots from a durable local CLI.",
+    "details": "Checksummed atomic batch WAL, contiguous stream offsets, duplicate-conflict fencing and actor serialization. Torn-tail recovery, checkpoint compaction and process-fault verification. Native code-only tool; no hosted service or multi-node durability claim.",
+    "visual": "Ordered batches \u2192 checksummed frames \u2192 recovered offsets and snapshots",
+    "theme": "stratalog",
+    "classification": "new",
+    "delivery_mode": "github_only",
+    "live": null,
+    "embed": false,
+    "walkthrough": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog#walkthrough",
+    "city": {
+      "district": "infrastructure",
+      "archetype": "signal"
+    },
+    "date": "2026-10-10",
+    "month": "2026-10",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-StrataLog",
+    "cover": "/assets/stratalog-cover.svg",
+    "counted_daily_project": true
+  },
+  {
+    "title": "Cutline",
+    "slug": "cutline",
+    "domain": "Industrial fabrication",
+    "stack": [
+      "Python",
+      "SQLite",
+      "JavaScript",
+      "Branch and bound"
+    ],
+    "description": "Optimize finite cutting stock, reserve bars, record completed cuts and return reusable remnants to inventory.",
+    "details": "Bounded exact stock assignment with kerf, honest search certificates, transactional reservation/completion and material conservation. Independent exhaustive oracle and failure checks. Original synthetic stock; browser-saved journal replayed through the real Python/SQLite core.",
+    "visual": "Finite stock \u2192 proven cut placement \u2192 conserved products, kerf and remnants",
+    "theme": "cutline",
+    "classification": "resume",
+    "delivery_mode": "web_deployed",
+    "live": "https://cutline-20261010.vercel.app/",
+    "embed": true,
+    "city": {
+      "district": "industry",
+      "archetype": "factory"
+    },
+    "date": "2026-10-10",
+    "month": "2026-10",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-Cutline",
+    "cover": "/assets/cutline-cover.svg",
+    "counted_daily_project": true
+  },
+  {
+    "title": "VectorGarden",
+    "slug": "vectorgarden",
+    "domain": "Machine learning tooling",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Web Worker",
+      "Manual backpropagation",
+      "Adam"
+    ],
+    "description": "Train two tiny neural towers, inspect real gradients and evaluate retrieval on held-out synthetic queries.",
+    "details": "Actual symmetric contrastive loss, normalized embeddings, manual backpropagation and deterministic Adam in a Web Worker. Finite-difference checks, complete optimizer/RNG checkpoints and per-class holdout evaluation. Synthetic numeric vectors; no natural-language model or real-world accuracy claim.",
+    "visual": "Paired towers \u2192 real learning curve \u2192 held-out retrieval and verified gradients",
+    "theme": "vectorgarden",
+    "classification": "resume",
+    "delivery_mode": "web_deployed",
+    "live": "https://vectorgarden-20261010.vercel.app/",
+    "embed": true,
+    "city": {
+      "district": "creative",
+      "archetype": "studio"
+    },
+    "date": "2026-10-10",
+    "month": "2026-10",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-10-VectorGarden",
+    "cover": "/assets/vectorgarden-cover.svg",
+    "counted_daily_project": true
   }
 ]
