@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-10-11T17:10:03.211Z",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "technology_filter": true
+    },
+    {
+      "path": "/projects.html",
+      "status": 200,
+      "technology_filter": true
+    },
+    {
+      "domain": "https://pranav-patel.vercel.app",
+      "status": 308,
+      "path_query_preserved": true
+    },
+    {
+      "domain": "https://www.impranavpatel.com",
+      "status": 308,
+      "path_query_preserved": true
+    },
+    {
+      "exact_source_manifest": true,
+      "count": 15
+    },
+    {
+      "path": "/assets/projects-CK8oWBhF.js",
+      "source_build_match": true
+    },
+    {
+      "path": "/assets/projects-DB_8sgfo.css",
+      "source_build_match": true
+    },
+    {
+      "path": "/assets/city-world-BQPv2l7U.js",
+      "source_build_match": true
+    }
+  ],
+  "status": "passed"
+}

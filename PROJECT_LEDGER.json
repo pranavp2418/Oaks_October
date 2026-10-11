@@ -2022,60 +2022,71 @@
   "portfolio": {
     "path": "portfolio-site",
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-    "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
-    "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+    "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
+    "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
     "alias": "https://impranavpatel.com/",
     "verification": {
-      "local_tests_passed": 18,
+      "local_tests_passed": 21,
       "clean_install_build": true,
       "public": {
-        "verified_at": "2026-10-11T16:15:08.055Z",
+        "verified_at": "2026-10-11T17:09:14.584Z",
+        "base": "https://impranavpatel.com",
         "browser": "153.0.8010.0",
-        "renderer": "headless software SwiftShader; physical GPU not verified",
         "flows": [
-          {
-            "name": "Exact live manifest/covers and permanent path/query redirects",
-            "passed": true,
-            "manifest": 15
-          },
-          {
-            "name": "Homepage archive all three cards/details/source actions/opt-in real embeds; flagship and research preserved",
-            "passed": true,
-            "url": "https://impranavpatel.com/",
-            "page": "3 / 3"
-          },
-          {
-            "name": "Island StrataLog details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=stratalog"
-          },
-          {
-            "name": "Island Cutline details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=cutline"
-          },
-          {
-            "name": "Island VectorGarden details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=vectorgarden"
-          },
-          {
-            "name": "390px homepage card/dialog and island/Pip/source-only navigation",
-            "passed": true,
-            "homeWidth": {
-              "width": 390,
-              "scroll": 390
-            },
-            "cityWidth": {
-              "width": 390,
-              "scroll": 390
-            }
-          }
+          "1100px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved",
+          "1100px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes",
+          "390px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved",
+          "390px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes"
         ],
-        "visual_capture_limit": "Desktop software 3D screenshot timed out; physical GPU visual rendering remains unverified",
+        "limits": [
+          "Software GPU; physical device frame rate and visual rendering unverified"
+        ],
         "page_errors": [],
         "status": "passed"
-      }
+      },
+      "release": {
+        "verified_at": "2026-10-11T17:10:03.211Z",
+        "checks": [
+          {
+            "path": "/",
+            "status": 200,
+            "technology_filter": true
+          },
+          {
+            "path": "/projects.html",
+            "status": 200,
+            "technology_filter": true
+          },
+          {
+            "domain": "https://pranav-patel.vercel.app",
+            "status": 308,
+            "path_query_preserved": true
+          },
+          {
+            "domain": "https://www.impranavpatel.com",
+            "status": 308,
+            "path_query_preserved": true
+          },
+          {
+            "exact_source_manifest": true,
+            "count": 15
+          },
+          {
+            "path": "/assets/projects-CK8oWBhF.js",
+            "source_build_match": true
+          },
+          {
+            "path": "/assets/projects-DB_8sgfo.css",
+            "source_build_match": true
+          },
+          {
+            "path": "/assets/city-world-BQPv2l7U.js",
+            "source_build_match": true
+          }
+        ],
+        "status": "passed"
+      },
+      "performance_evidence": "runs/2026-10-11-island-performance.json"
     },
     "limits": [
       "Mobile browser viewport simulation; no physical device testing",
@@ -2191,16 +2202,30 @@
         ],
         "verification_report": "runs/2026-10-10-portfolio-evidence.json",
         "scenery_changed": false
+      },
+      {
+        "date": "2026-10-11",
+        "type": "project_presentation_and_island_performance",
+        "counted_daily_project": false,
+        "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+        "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
+        "previous_release": {
+          "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+          "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+          "type": "prior_verified_release_before_project_presentation_change"
+        },
+        "verified_at": "2026-10-11T17:13:02.855090+00:00",
+        "evidence": "runs/2026-10-11-portfolio-release.json"
       }
     ],
     "city": {
       "status": "production_verified",
-      "published_at": "2026-10-11T16:19:11.751161+00:00",
+      "published_at": "2026-10-11T17:13:02.855090+00:00",
       "path": "portfolio-site/projects.html",
       "url": "https://impranavpatel.com/projects.html",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
-      "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
-      "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+      "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
       "preview_deployment_id": "dpl_FtP5J17SyGAxHFbDpMf3y8ycoJmN",
       "counted_daily_project": false,
       "catalog_entries": 17,
@@ -2224,7 +2249,7 @@
         "Stable collision-resolved project lots; append preserves existing positions",
         "Distinct project buildings, directory/month/domain/stack search, opt-in real embeds",
         "Local catalog-aware Pip matching and shortest-road robot navigation",
-        "WebGL2 physically based materials, reflective water, shadows, environment and bloom; software 3D alternative",
+        "WebGL2 physically based materials, reflective water, shadows, environment and native tone mapping; software 3D alternative",
         "Automatically synchronized Houston sun position, sunrise/sunset and explicit DAY/NIGHT phase; America/Chicago including CST/CDT; no manual time/weather/motion switches",
         "Real fixed-station KIAH weather API; five-minute caching, concurrent request coalescing, timestamp/freshness labels and explicit unavailable states; stale observations expire from scene effects after three hours",
         "Wind-driven shallow-water shader, caustics, coastline-sampled animated surf, limestone headlands and coral",
@@ -2232,60 +2257,28 @@
         "Contained cover framing on desktop and mobile; expanded mobile directory keeps atmosphere/controls out of its way; background-tab animation pauses while visible-page motion remains enabled"
       ],
       "verification": {
-        "verified_at": "2026-10-11T16:15:08.055Z",
+        "verified_at": "2026-10-11T17:09:14.584Z",
+        "base": "https://impranavpatel.com",
         "browser": "153.0.8010.0",
-        "renderer": "headless software SwiftShader; physical GPU not verified",
         "flows": [
-          {
-            "name": "Exact live manifest/covers and permanent path/query redirects",
-            "passed": true,
-            "manifest": 15
-          },
-          {
-            "name": "Homepage archive all three cards/details/source actions/opt-in real embeds; flagship and research preserved",
-            "passed": true,
-            "url": "https://impranavpatel.com/",
-            "page": "3 / 3"
-          },
-          {
-            "name": "Island StrataLog details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=stratalog"
-          },
-          {
-            "name": "Island Cutline details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=cutline"
-          },
-          {
-            "name": "Island VectorGarden details/Pip/source and applicable live core",
-            "passed": true,
-            "url": "https://impranavpatel.com/projects.html?project=vectorgarden"
-          },
-          {
-            "name": "390px homepage card/dialog and island/Pip/source-only navigation",
-            "passed": true,
-            "homeWidth": {
-              "width": 390,
-              "scroll": 390
-            },
-            "cityWidth": {
-              "width": 390,
-              "scroll": 390
-            }
-          }
+          "1100px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved",
+          "1100px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes",
+          "390px all 15 cards/details date-free; technology search; CraftsmanAI timeline/design preserved",
+          "390px island/Pip/code-only/filter/keyboard navigation; actual Cutline core; map pauses only behind live preview and resumes"
         ],
-        "visual_capture_limit": "Desktop software 3D screenshot timed out; physical GPU visual rendering remains unverified",
+        "limits": [
+          "Software GPU; physical device frame rate and visual rendering unverified"
+        ],
         "page_errors": [],
         "status": "passed"
       },
-      "evidence_report": "runs/2026-10-10-portfolio-evidence.json",
+      "evidence_report": "runs/2026-10-11-project-presentation-public.json",
       "screenshot": "runs/evidence/2026-10-07-island-atmosphere.jpg",
       "gpu_visual_verified": false,
       "limits": [
-        "Physical GPU visual rendering unverified; desktop software 3D screenshot capture timed out.",
-        "Functional desktop/mobile catalog, Pip and real embedded cores verified.",
-        "The cancelled island redesign was excluded; existing scene source preserved."
+        "Software SwiftShader desktop/mobile viewport checks; physical-device frame rates and visual rendering unverified.",
+        "One observed timing sample per version; no universal FPS or speedup guarantee.",
+        "Distant scanned detail uses the procedural forest; bloom halos removed. Original building shapes, lot positions, palettes and coastline preserved."
       ],
       "future_additions": "Shared daily manifest updates both the existing archive and the separate country; maintenance added to existing build task and durable brief",
       "history": [
@@ -2383,19 +2376,43 @@
           "source_commit": "63c8cde28cfcfbfb56b489f7c5bb6cc584e85d6c",
           "deployment_id": "dpl_AkkhLVETG93Xm3wumWmVbBVWJ7xa",
           "catalog_entries": 14
+        },
+        {
+          "published_at": "2026-10-11T16:19:11.751161+00:00",
+          "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
+          "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+          "catalog_entries": 17,
+          "type": "previous_island_release"
         }
       ],
       "mobile_screenshot": "runs/evidence/2026-10-07-island-covers-mobile.jpg",
       "shared_manifest_entries": 15,
       "counted_daily_entries": 12,
       "prior_building_positions_preserved": 14,
-      "scenery_changed": false
+      "scenery_changed": false,
+      "performance_evidence": "runs/2026-10-11-island-performance.json",
+      "project_lots_preserved": 17,
+      "scenery_layout_changed": false,
+      "rendering_policy": {
+        "native_antialiasing": true,
+        "multisampled_bloom_removed": true,
+        "async_shader_warmup": true,
+        "near_camera_scanned_tree_limits": {
+          "desktop": 16,
+          "mobile": 8
+        },
+        "adaptive_resolution": true,
+        "static_shadow_reuse": true,
+        "label_updates_hz": 10,
+        "pause_only_when_hidden_or_full_preview_covers_map": true,
+        "zoom_controls_no_longer_obscured": true
+      }
     },
     "reconciled_current_release": {
-      "source_commit": "0e3b6a116d98075741553ddd930fea6cd514e79b",
-      "deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC",
+      "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+      "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
       "root_directory": "portfolio-site",
-      "verified_from": "Deployment source metadata, build logs, exact live manifest and browser workflows",
+      "verified_from": "Vercel metadata/build logs, exact compiled-asset hashes and desktop/mobile public workflows",
       "date": "2026-10-11",
       "shared_manifest_entries": 15,
       "counted_collection_projects": 12,
@@ -2484,7 +2501,7 @@
     },
     "pending_trio_integration": null,
     "canonical_url": "https://impranavpatel.com/",
-    "verified_at": "2026-10-11T16:19:11.751161+00:00",
+    "verified_at": "2026-10-11T17:13:02.855090+00:00",
     "pending_daily_integration": null,
     "project_presentation_policy": {
       "effective_date": "2026-10-11",
@@ -2494,9 +2511,9 @@
       "internal_date_metadata_preserved": true,
       "filter": "technology/domain instead of month",
       "daily_task_prompt_updated": true,
-      "release_status": "local_verified_pending_publication"
+      "release_status": "published_verified"
     },
-    "pending_maintenance": "runs/2026-10-11-portfolio-maintenance.json"
+    "pending_maintenance": null
   },
   "delivery_policy": {
     "effective_from": "2026-10-07 follow-up; future projects",
@@ -2766,8 +2783,11 @@
       "date": "2026-10-11",
       "type": "project_presentation_and_island_performance",
       "counted_daily_project": false,
-      "status": "local_verified_release_pending",
-      "record": "runs/2026-10-11-portfolio-maintenance.json"
+      "status": "complete",
+      "record": "runs/2026-10-11-portfolio-maintenance.json",
+      "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+      "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
+      "completed_at": "2026-10-11T17:13:02.855090+00:00"
     }
   ],
   "existing_project_integrations": [
@@ -2818,7 +2838,7 @@
       "portfolio_source_commit": "2d2c14c8dabd88bf6cc6ca8fe4ef8d833ef581ab",
       "verified_at": "2026-10-09T20:16:56.517750+00:00",
       "portfolio_deployment_id": "dpl_AAGRJNTnQf32QidjhvKBroxfcDoo",
-      "latest_preserved_deployment_id": "dpl_3fLsQRcARGTtBJvFvzeDdLi4MKhC"
+      "latest_preserved_deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks"
     }
   ],
   "release_policy": {
