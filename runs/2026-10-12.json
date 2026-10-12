@@ -3,14 +3,14 @@
   "owner": "build-20261012-codex",
   "status": "implementing",
   "started_at": "2026-10-12T20:15:51Z",
-  "last_updated_at": "2026-10-12T20:34:00Z",
+  "last_updated_at": "2026-10-12T20:39:00Z",
   "lease_expires_at": "2026-10-12T23:15:51Z",
   "target": 3,
   "completed_projects": 0,
   "projects": [
     {
       "title": "BoundedRun",
-      "stage": "local_verified",
+      "stage": "deployment_config_corrected",
       "industry": "AI infrastructure",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -36,7 +36,8 @@
       "core_technical_contribution": "Leakage-safe point-in-time joins with correction-aware backfills, lineage and deterministic materialization",
       "visual_theme": "Warm sand, vermilion, blueprint timeline",
       "counted": false,
-      "tests": {"tests_passed": 8, "oracle_comparisons": 120, "clean_install_build": true, "desktop": true, "mobile_viewport": 390}
+      "tests": {"tests_passed": 8, "oracle_comparisons": 120, "clean_install_build": true, "desktop": true, "mobile_viewport": 390},
+      "failed_deployment": {"id": "dpl_67qzzujSTK6CYHt7f4h1vePm6VH4", "error": "invalid_function_runtime", "remediation": "removed obsolete explicit runtime override"}
     },
     {
       "title": "TwinTrace",
