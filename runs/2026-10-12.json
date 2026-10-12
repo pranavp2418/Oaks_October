@@ -1,16 +1,16 @@
 {
   "date": "2026-10-12",
   "owner": "build-20261012-codex",
-  "status": "implementing",
+  "status": "projects_live_verified",
   "started_at": "2026-10-12T20:15:51Z",
-  "last_updated_at": "2026-10-12T20:44:00Z",
+  "last_updated_at": "2026-10-12T21:08:00Z",
   "lease_expires_at": "2026-10-12T23:15:51Z",
   "target": 3,
-  "completed_projects": 0,
+  "completed_projects": 3,
   "projects": [
     {
       "title": "BoundedRun",
-      "stage": "deployment_config_corrected",
+      "stage": "live_verified",
       "industry": "AI infrastructure",
       "classification": "resume",
       "core_language": "TypeScript",
@@ -20,12 +20,17 @@
       "path": "Oaks_October/2026-10-12-BoundedRun",
       "core_technical_contribution": "Capability-limited DAG execution with deterministic retries, budgets, idempotency and checkpoint replay",
       "visual_theme": "Midnight indigo, electric lime, execution trace console",
-      "counted": false,
-      "tests": {"tests_passed": 7, "clean_install_build": true, "desktop": true, "mobile_viewport": 390}
+      "counted": true,
+      "source_commit": "31ef232ffa89f4f88abf3643f33c79ab7a7d4bb1",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-12-BoundedRun",
+      "live_url": "https://boundedrun-20261012.vercel.app/",
+      "project_id": "prj_dDwdMVLx5jfF014kyzNddioeCg4P",
+      "deployment_id": "dpl_34gZQprNXfUtJVUMugZZm3HVJvKM",
+      "tests": {"tests_passed": 7, "clean_install_build": true, "desktop": true, "mobile_viewport": 390, "public_workflows": ["bounded completion with retry", "denied-capability failure"], "build_logs_inspected": true}
     },
     {
       "title": "TemporalMint",
-      "stage": "local_verified",
+      "stage": "live_verified",
       "industry": "Logistics analytics",
       "classification": "resume",
       "core_language": "Python",
@@ -35,13 +40,18 @@
       "path": "Oaks_October/2026-10-12-TemporalMint",
       "core_technical_contribution": "Leakage-safe point-in-time joins with correction-aware backfills, lineage and deterministic materialization",
       "visual_theme": "Warm sand, vermilion, blueprint timeline",
-      "counted": false,
+      "counted": true,
+      "source_commit": "3620e739fd68722c14ba2b68a892b0b8e2217788",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-12-TemporalMint",
+      "live_url": "https://temporalmint-20261012.vercel.app/",
+      "project_id": "prj_J1HizEuTcWNwYFTTqdtdZZQOXSsl",
+      "deployment_id": "dpl_HPyTxkxrQLLhk1RcQVBm41zWoAqV",
       "tests": {"tests_passed": 8, "oracle_comparisons": 120, "clean_install_build": true, "desktop": true, "mobile_viewport": 390},
       "failed_deployment": {"id": "dpl_67qzzujSTK6CYHt7f4h1vePm6VH4", "error": "invalid_function_runtime", "remediation": "removed obsolete explicit runtime override"}
     },
     {
       "title": "TwinTrace",
-      "stage": "local_verified",
+      "stage": "live_verified",
       "industry": "Retrieval systems",
       "classification": "new",
       "core_language": "JavaScript",
@@ -51,10 +61,16 @@
       "path": "Oaks_October/2026-10-12-TwinTrace",
       "core_technical_contribution": "In-browser two-tower training with hard-negative mining, deterministic evaluation and counterfactual retrieval inspection",
       "visual_theme": "Near-black, ultraviolet, coral embedding observatory",
-      "counted": false,
+      "counted": true,
+      "source_commit": "36bf0a54bea4e79b82b206fb2d58af3d558d72eb",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-12-TwinTrace",
+      "live_url": "https://twintrace-20261012.vercel.app/",
+      "project_id": "prj_F37cLw1GXdvcAtlOVLmFXou3zpby",
+      "deployment_id": "dpl_bPmw1HgMjvtoHHgNV834qCjSBavw",
       "tests": {"tests_passed": 7, "oracle_ranking_comparisons": 84, "clean_install_build": true, "desktop": true, "mobile_viewport": 390, "training_epochs": 3, "npm_audit_high_or_critical": 0, "npm_audit_moderate": 0}
     }
   ],
-  "portfolio_integration": "pending",
+  "portfolio_integration": "local_verified",
+  "portfolio_verification": {"tests_passed": 21, "clean_build": true, "desktop": true, "mobile_viewport": 390, "flows": ["archive search and date-free details", "project country selection and verified links", "Pip purpose/stack lookup"], "island_scenery_changed": false},
   "blockers": []
 }

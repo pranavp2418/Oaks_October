@@ -1,10 +1,14 @@
 {
   "verified_at": "2026-10-12T20:24:11Z",
-  "status": "local_verified_after_deployment_config_fix",
+  "status": "live_verified_after_deployment_config_fix",
   "commands": ["npm ci --ignore-scripts", "npm test", "npm run build"],
   "tests_passed": 8,
   "oracle_comparisons": 120,
   "browser": {"desktop": true, "mobile_viewport": 390, "physical_device": false, "flows": ["safe baseline and lineage", "deliberate leakage audit", "correction backfill diff"], "page_errors": []},
   "failed_deployment": {"id": "dpl_67qzzujSTK6CYHt7f4h1vePm6VH4", "error": "invalid_function_runtime"},
+  "public_browser": {"url": "https://temporalmint-20261012.vercel.app/", "status": "passed", "future_references_caught": 149, "backfill_rows_changed": 6, "build_logs_inspected": true},
+  "source_commit": "3620e739fd68722c14ba2b68a892b0b8e2217788",
+  "deployment_id": "dpl_HPyTxkxrQLLhk1RcQVBm41zWoAqV",
+  "project_id": "prj_J1HizEuTcWNwYFTTqdtdZZQOXSsl",
   "limits": ["synthetic logistics events", "in-memory request database", "no production feature-store claim"]
 }

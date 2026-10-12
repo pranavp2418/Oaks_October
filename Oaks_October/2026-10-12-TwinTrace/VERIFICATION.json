@@ -1,6 +1,6 @@
 {
   "verified_at": "2026-10-12T20:34:00Z",
-  "status": "local_verified",
+  "status": "live_verified",
   "commands": [
     "npm ci --ignore-scripts",
     "npm test",
@@ -24,7 +24,9 @@
     "counterfactual exclusions never appear in ranked output",
     "hard negatives are non-positive items returned by the current model"
   ],
-  "source_commit": null,
-  "deployment_id": null,
-  "live_url": null
+  "public_browser": {"url": "https://twintrace-20261012.vercel.app/", "status": "passed", "ranked_results": 5, "observed_recall_at_5": 0.833, "counterfactual_points": 18, "build_logs_inspected": true},
+  "source_commit": "36bf0a54bea4e79b82b206fb2d58af3d558d72eb",
+  "deployment_id": "dpl_bPmw1HgMjvtoHHgNV834qCjSBavw",
+  "project_id": "prj_F37cLw1GXdvcAtlOVLmFXou3zpby",
+  "live_url": "https://twintrace-20261012.vercel.app/"
 }

@@ -1,6 +1,6 @@
 {
   "verified_at": "2026-10-12T20:21:35Z",
-  "status": "local_verified",
+  "status": "live_verified",
   "commands": ["npm ci --ignore-scripts", "npm test", "npm run build"],
   "tests_passed": 7,
   "browser": {
@@ -14,5 +14,9 @@
     ],
     "page_errors": []
   },
+  "public_browser": {"url": "https://boundedrun-20261012.vercel.app/", "status": "passed", "flows": ["bounded completion with retry", "denied-capability failure"], "build_logs_inspected": true},
+  "source_commit": "31ef232ffa89f4f88abf3643f33c79ab7a7d4bb1",
+  "deployment_id": "dpl_34gZQprNXfUtJVUMugZZm3HVJvKM",
+  "project_id": "prj_dDwdMVLx5jfF014kyzNddioeCg4P",
   "limits": ["synthetic tools", "single-browser persistence", "no external actions"]
 }
