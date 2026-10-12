@@ -12,6 +12,7 @@
     "oracle_ranking_comparisons": 84,
     "clean_install": true,
     "production_build": true,
+    "npm_audit_high_or_critical": 0,
     "browser_desktop": true,
     "browser_mobile_viewport_px": 390,
     "tensorflow_training_epochs": 3
