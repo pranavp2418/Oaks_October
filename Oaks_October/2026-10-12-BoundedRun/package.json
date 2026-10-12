@@ -1,0 +1,12 @@
+{
+  "name": "boundedrun",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node build.mjs",
+    "test": "tsc && node --test test/*.test.mjs",
+    "dev": "npm run build && python3 -m http.server 8141 -d public"
+  },
+  "devDependencies": {"typescript": "5.9.2"}
+}
