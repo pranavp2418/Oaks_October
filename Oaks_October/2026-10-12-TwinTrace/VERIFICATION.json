@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-10-12T20:34:00Z",
+  "status": "local_verified",
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run build",
+    "node /workspace/scratch/28070304952e/verify-o12-twin.mjs"
+  ],
+  "evidence": {
+    "tests_passed": 7,
+    "oracle_ranking_comparisons": 84,
+    "clean_install": true,
+    "production_build": true,
+    "browser_desktop": true,
+    "browser_mobile_viewport_px": 390,
+    "tensorflow_training_epochs": 3
+  },
+  "invariants_checked": [
+    "separate query and item towers emit equal-width embeddings",
+    "training loss remains finite",
+    "rankings match an independent brute-force dot-product oracle",
+    "counterfactual exclusions never appear in ranked output",
+    "hard negatives are non-positive items returned by the current model"
+  ],
+  "source_commit": null,
+  "deployment_id": null,
+  "live_url": null
+}

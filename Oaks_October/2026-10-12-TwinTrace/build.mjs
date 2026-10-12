@@ -1,0 +1,1 @@
+import {build} from 'esbuild';import {cp,mkdir} from 'node:fs/promises';await mkdir('public',{recursive:true});await build({entryPoints:['src/app.js'],bundle:true,minify:true,format:'esm',outfile:'public/app.js'});for(const f of ['index.html','style.css','cover.svg'])await cp(`web/${f}`,`public/${f}`);

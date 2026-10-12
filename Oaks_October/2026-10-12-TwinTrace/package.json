@@ -1,0 +1,5 @@
+{
+  "name":"twintrace","version":"1.0.0","private":true,"type":"module",
+  "scripts":{"build":"node build.mjs","test":"node --test tests/*.test.mjs","dev":"npm run build && python3 -m http.server 8143 -d public"},
+  "dependencies":{"@tensorflow/tfjs":"4.22.0"},"devDependencies":{"esbuild":"0.25.10"}
+}
