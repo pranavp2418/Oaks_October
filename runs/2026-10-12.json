@@ -3,7 +3,7 @@
   "owner": "build-20261012-codex",
   "status": "implementing",
   "started_at": "2026-10-12T20:15:51Z",
-  "last_updated_at": "2026-10-12T20:21:35Z",
+  "last_updated_at": "2026-10-12T20:24:11Z",
   "lease_expires_at": "2026-10-12T23:15:51Z",
   "target": 3,
   "completed_projects": 0,
@@ -25,7 +25,7 @@
     },
     {
       "title": "TemporalMint",
-      "stage": "selected",
+      "stage": "local_verified",
       "industry": "Logistics analytics",
       "classification": "resume",
       "core_language": "Python",
@@ -35,7 +35,8 @@
       "path": "Oaks_October/2026-10-12-TemporalMint",
       "core_technical_contribution": "Leakage-safe point-in-time joins with correction-aware backfills, lineage and deterministic materialization",
       "visual_theme": "Warm sand, vermilion, blueprint timeline",
-      "counted": false
+      "counted": false,
+      "tests": {"tests_passed": 8, "oracle_comparisons": 120, "clean_install_build": true, "desktop": true, "mobile_viewport": 390}
     },
     {
       "title": "TwinTrace",

@@ -1,0 +1,9 @@
+{
+  "verified_at": "2026-10-12T20:24:11Z",
+  "status": "local_verified",
+  "commands": ["npm ci --ignore-scripts", "npm test", "npm run build"],
+  "tests_passed": 8,
+  "oracle_comparisons": 120,
+  "browser": {"desktop": true, "mobile_viewport": 390, "physical_device": false, "flows": ["safe baseline and lineage", "deliberate leakage audit", "correction backfill diff"], "page_errors": []},
+  "limits": ["synthetic logistics events", "in-memory request database", "no production feature-store claim"]
+}
