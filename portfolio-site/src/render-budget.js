@@ -17,3 +17,9 @@ export class ResolutionGovernor {
     return old!==this.scale;
   }
 }
+
+// GPU stalls can delay animation frames even when JavaScript submits them quickly.
+export function framePressure(cpuMs,elapsedMs,budgetMs){
+  const missed=elapsedMs-budgetMs-5;
+  return Math.max(cpuMs,missed>0?14+missed:0);
+}

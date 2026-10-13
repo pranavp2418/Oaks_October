@@ -37,7 +37,7 @@ export function curvedTowerGeometry(width,height,depth,{software=false,bend=.12}
   geometry.computeVertexNormals();geometry.type='BufferGeometry';return geometry;
 }
 export function addSkyline(scene,{software,mobile,landHeight,districts,buildings,facadeMats}){
-  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?60:mobile?180:260;
+  const random=randomSeed(90210),byDistrict=new Map(districts.map(d=>[d.id,[]])),edges=[],count=software?40:mobile?180:260;
   for(let i=0,attempts=0;i<count&&attempts<count*40;attempts++){
     const district=districts[Math.floor(random()*districts.length)],x=district.x+(random()-.5)*67,z=district.z+(random()-.5)*67;
     if(buildings.some(p=>Math.hypot(p.x-x,p.z-z)<10)||Math.hypot(x-district.x,z-district.z)<9)continue;
@@ -78,7 +78,11 @@ export function addOcean(scene,{software,mobile,landHeight,maps}){
     void main(){vec2 p=vWorld.xz;float a=atan(p.y/163.,p.x/206.);float coast=1.+.058*sin(a*5.)+.035*cos(a*9.)-.028*sin(a*13.);float offshore=length(vec2(p.x/206.,p.y/163.))-coast;
       float reef=0.;for(int i=0;i<6;i++)reef=max(reef,exp(-length(p-uReefs[i])*.033));
       float shallow=max(exp(-max(offshore,0.)*6.8),reef*.85),bed=noise(p*.14)+noise(p*.35)*.35;
-      vec3 normal=normalize(vec3(-(swell(p+vec2(.2,0.))-swell(p))/.2,1.,-(swell(p+vec2(0.,.2))-swell(p))/.2));
+      vec2 slope=uWave*(cos(dot(p,uWind)*.075-uTime*1.05)*.60*.075*uWind
+        +cos(p.x*.62*.13-p.y*.78*.13-uTime*.73)*.25*.13*vec2(.62,-.78)
+        +cos(p.x*.93*.24+p.y*.37*.24-uTime*1.48)*.12*.24*vec2(.93,.37)
+        +cos(p.x*.49-p.y*.35+uTime*1.9)*.03*vec2(.49,-.35));
+      vec3 normal=normalize(vec3(-slope.x,1.,-slope.y));
       vec3 eye=normalize(cameraPosition-vWorld);float facing=max(dot(normal,eye),0.),fresnel=.025+.975*pow(1.-facing,5.);float reflection=pow(max(dot(reflect(-uSun,normal),eye),0.),200.);
       vec3 deep=vec3(.013,.22,.34),lagoon=vec3(.16,.73,.71);vec3 color=mix(deep,lagoon,shallow*.89);color+=vec3(.15,.12,.045)*bed*shallow*.15;
       float caustic=pow(abs(sin(p.x*.58+uTime*.8+sin(p.y*.41))*cos(p.y*.63-uTime*.54+sin(p.x*.29))),9.);color+=vec3(.33,.56,.42)*caustic*shallow*.16;
@@ -134,7 +138,7 @@ function palmGeometry(detail=8){
   return {trunk:mergeGeometries(trunk),leaves:mergeGeometries(leaves)};
 }
 export function addVegetation(scene,{software,mobile,landHeight,maps,districts,buildings}){
-  const random=randomSeed(425773),trunks=[],palms=[],crowns=[],palm=palmGeometry(software?4:12),count=software?60:mobile?360:700;
+  const random=randomSeed(425773),trunks=[],palms=[],crowns=[],palm=palmGeometry(software?4:12),count=software?40:mobile?360:700;
   const bark=new THREE.MeshStandardMaterial({color:'#887657',roughness:.93,map:software?null:maps['bark-color']}),leafMat=new THREE.MeshStandardMaterial({vertexColors:true,color:'#759c58',roughness:.82,side:THREE.DoubleSide});
   for(let i=0,tries=0;i<count&&tries<count*25;tries++){const x=(random()-.5)*385,z=(random()-.5)*305,h=landHeight(x,z);if(h<3||h>38||districts.some(d=>Math.abs(x-d.x)<40&&Math.abs(z-d.z)<40)||buildings.some(p=>Math.hypot(p.x-x,p.z-z)<9))continue;i++;
     const size=.65+random()*.65,matrix=new THREE.Matrix4().compose(new THREE.Vector3(x,h,z),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),random()*TAU),new THREE.Vector3(size,size,size));
@@ -180,7 +184,9 @@ export async function addScannedTrees(scene,{software,mobile,landHeight,district
     // Warm the scanned materials before admission; the procedural forest stays available while they compile.
     if(renderer&&camera)await renderer.compileAsync(group,camera,scene);
     scene.add(group);host.dataset.treeDetail='photogrammetry';
-    return {update(view){const visible=placements.map((p,i)=>({i,distance:view.position.distanceTo(new THREE.Vector3(p.x,p.y,p.z))})).filter(p=>p.distance<(mobile?135:175)).sort((a,b)=>a.distance-b.distance).slice(0,mobile?8:16);
+    let lastVisible='';
+    return {update(view,quality=1){const visible=placements.map((p,i)=>({i,distance:view.position.distanceTo(new THREE.Vector3(p.x,p.y,p.z))})).filter(p=>p.distance<(mobile?135:175)).sort((a,b)=>a.distance-b.distance).slice(0,quality<.8?(mobile?3:6):mobile?8:16);
+      const signature=visible.map(p=>p.i).join(',');if(signature===lastVisible)return;lastVisible=signature;
       for(const {trees,matrix}of parts){trees.count=visible.length;for(let j=0;j<visible.length;j++)trees.setMatrixAt(j,baseMatrices[visible[j].i].clone().multiply(matrix));trees.instanceMatrix.needsUpdate=true;}host.dataset.scannedTreeInstances=String(visible.length);}};
   }catch(error){host.dataset.treeDetail='procedural-fallback';console.warn('Coastal tree detail could not load; the procedural forest remains available.',error);}
 }

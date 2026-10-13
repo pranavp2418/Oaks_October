@@ -58,12 +58,12 @@ function drawMinimap(position,target){
 mini.addEventListener('click',e=>{const r=mini.getBoundingClientRect();world?.panTo((e.clientX-r.left)/r.width*450-225,(e.clientY-r.top)/r.height*370-185);});
 function renderLabels(positions){
   const occupied=[],left=$('city-directory').getBoundingClientRect(),right=$('city-detail').hidden?null:$('city-detail').getBoundingClientRect(),viewport=$('city-viewport').getBoundingClientRect();
-  const widths=new Map(positions.map(point=>[point.slug,Math.min(200,labels.get(point.slug)?.offsetWidth||140)]));
+  const widths=new Map(positions.map(point=>[point.slug,180]));
   for(const point of positions){const el=labels.get(point.slug);if(!el)continue;const x=point.x,y=point.y,w=widths.get(point.slug),h=34,rect={x:x-w/2,y:y-h,w,h};
     const covered=(x>left.left-viewport.left-10&&x<left.right-viewport.left+8&&y<left.bottom-viewport.top+18)||(right&&x>right.left-viewport.left-8&&y>right.top-viewport.top&&y<right.bottom-viewport.top);
     const overlap=occupied.some(a=>Math.abs(a.x-rect.x)<(a.w+rect.w)/2&&Math.abs(a.y-rect.y)<34);
     el.hidden=!point.visible||covered||(overlap&&point.slug!==selected)||occupied.length>18;
-    if(!el.hidden){el.style.left=x+'px';el.style.top=y+'px';occupied.push(rect);}
+    if(!el.hidden){el.style.transform=`translate3d(${Math.round(x)}px,${Math.round(y)}px,0) translate(-50%,-100%)`;occupied.push(rect);}
   }
 }
 function pipSay(text,options=[]){setPip(true);$('pip-city-answer').textContent=text;$('pip-city-options').replaceChildren();for(const option of options){const b=document.createElement('button');b.textContent=option.label;b.onclick=option.action;$('pip-city-options').append(b);}}

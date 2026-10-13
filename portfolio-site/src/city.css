@@ -19,3 +19,5 @@
 @media(max-width:700px){body.directory-expanded .atlas-view-controls,body.directory-expanded .atlas-atmosphere,body.directory-expanded .atlas-zoom{visibility:hidden;pointer-events:none}}
 
 .atlas-directory select{color-scheme:dark;background-color:#0c1c34;color:#edf3ff}.atlas-directory select option{background-color:#0c1c34;color:#edf3ff}
+
+.city-label{left:0;top:0;contain:layout style}

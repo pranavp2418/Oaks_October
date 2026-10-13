@@ -1,4 +1,5 @@
-import {pixelRatioFor,ResolutionGovernor} from './render-budget.js';
+import {batchStatic,batchPaths} from './static-batch.js';
+import {pixelRatioFor,ResolutionGovernor,framePressure} from './render-budget.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
@@ -77,7 +78,7 @@ export function buildWorld(host, buildings, callbacks) {
   const softAmbient=software?new THREE.AmbientLight('#c4deef',.6):null;
   if(!software){const pmrem=new THREE.PMREMGenerator(renderer),environment=new RoomEnvironment();scene.environment=pmrem.fromScene(environment,.04).texture;environment.dispose();pmrem.dispose();}else scene.add(softAmbient);
   // Native antialiasing/tone mapping avoids multisampled offscreen targets and full-screen bloom passes.
-  const terrainGeometry=new THREE.PlaneGeometry(490,410,software?48:mobile?180:300,software?40:mobile?150:250);terrainGeometry.rotateX(-Math.PI/2);
+  const terrainGeometry=new THREE.PlaneGeometry(490,410,software?28:mobile?180:300,software?24:mobile?150:250);terrainGeometry.rotateX(-Math.PI/2);
   const position=terrainGeometry.attributes.position,colors=new Float32Array(position.count*3);
   const forest=new THREE.Color(software?'#71945f':'#bac7ab'),rock=new THREE.Color(software?'#a7a08a':'#d0cdc0'),sand=new THREE.Color(software?'#e2d8b6':'#fbf3db'),undersea=new THREE.Color('#54bcb0');
   for(let i=0;i<position.count;i++){
@@ -107,12 +108,13 @@ export function buildWorld(host, buildings, callbacks) {
     return m;
   }
   function linePath(points,material,radius=.12,parent=scene){const c=new THREE.CatmullRomCurve3(points);return mesh(new THREE.TubeGeometry(c,Math.max(12,points.length*7),radius,5,false),material,parent)}
+  const roadMeshes=[],roadPaths=[],roadStripe=new THREE.LineDashedMaterial({color:'#b5b8a0',dashSize:1.2,gapSize:1.2});
   function road(points,width=3.1){
-    const dense=new THREE.CatmullRomCurve3(points.map(p=>v3(p.x,0,p.z))).getPoints(software?14:60).map(p=>v3(p.x,landHeight(p.x,p.z)+.25,p.z));
+    const dense=new THREE.CatmullRomCurve3(points.map(p=>v3(p.x,0,p.z))).getPoints(software?5:60).map(p=>v3(p.x,landHeight(p.x,p.z)+.25,p.z));
     const geom=new THREE.BufferGeometry(),vertices=[],indices=[];
     for(let i=0;i<dense.length;i++){const prev=dense[Math.max(0,i-1)],next=dense[Math.min(dense.length-1,i+1)],normal=v3(next.z-prev.z,0,prev.x-next.x).normalize().multiplyScalar(width/2);for(const sign of [-1,1]){const p=dense[i].clone().addScaledVector(normal,sign);vertices.push(p.x,p.y,p.z)}if(i){const a=(i-1)*2,b=i*2;indices.push(a,b,a+1,a+1,b,b+1)}}
-    geom.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geom.setIndex(indices);geom.computeVertexNormals();mesh(geom,roadMaterial).receiveShadow=true;
-    const stripe=new THREE.LineDashedMaterial({color:'#b5b8a0',dashSize:1.2,gapSize:1.2});const l=new THREE.Line(new THREE.BufferGeometry().setFromPoints(dense.map(p=>p.clone().add(v3(0,.04,0)))),stripe);l.computeLineDistances();scene.add(l);
+    geom.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geom.setIndex(indices);geom.computeVertexNormals();const surface=mesh(geom,roadMaterial);surface.receiveShadow=true;roadMeshes.push(surface);
+    const stripe=roadStripe;const l=new THREE.Line(new THREE.BufferGeometry().setFromPoints(dense.map(p=>p.clone().add(v3(0,.04,0)))),stripe);l.computeLineDistances();scene.add(l);roadPaths.push(l);
     return dense;
   }
   const roads=[];for(const [a,b]of ROAD_LINKS){const p=DISTRICTS.find(d=>d.id===a),q=DISTRICTS.find(d=>d.id===b);roads.push(road([p,q],3.5))}
@@ -167,8 +169,10 @@ export function buildWorld(host, buildings, callbacks) {
     const hit=mesh(new THREE.BoxGeometry(8,height+5,8),new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}),group);hit.position.y=(height+5)/2;hit.userData.slug=p.slug;pickable.push(hit);
     const beacon=mesh(new THREE.CylinderGeometry(.14,.14,5,8),accent,group);beacon.position.set(0,height+3.5,0);
     let lod=null,details=null;if(buildings.length>40){details=group.children.filter(c=>c!==hit&&c!==beacon);lod=mesh(new THREE.BoxGeometry(6,height,6),facade,group);lod.position.y=height/2;lod.visible=false;}
+    if(!lod)batchStatic(group,group.children.filter(c=>c!==hit&&c!==beacon));
     sites.set(p.slug,{p,group,height,base,beacon,lod,details});road([{x:p.x,z:p.z},{x:p.x,z:DISTRICTS.find(d=>d.id===p.district).z},{x:DISTRICTS.find(d=>d.id===p.district).x,z:DISTRICTS.find(d=>d.id===p.district).z}],1.4);
   }
+  const batchedRoads=batchStatic(scene,roadMeshes)+batchPaths(scene,roadPaths,roadStripe);host.dataset.batchedRoads=String(batchedRoads);roadMeshes.length=roadPaths.length=0;
   // Pip is a physical guide in the scene; its route follows the connected district roads.
   const pip=new THREE.Group(),pipShell=new THREE.MeshStandardMaterial({color:'#e1eded',metalness:.3,roughness:.25}),pipFace=new THREE.MeshStandardMaterial({color:'#102731',roughness:.3}),pipLight=lightMat('#88efff');
   mesh(new THREE.SphereGeometry(1.5,24,16),pipShell,pip);box(pip,2.3,.9,.25,0,.15,1.3,pipFace);for(const x of [-.58,.58])box(pip,.35,.28,.1,x,.2,1.48,pipLight);
@@ -218,18 +222,18 @@ export function buildWorld(host, buildings, callbacks) {
   const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;if(camera.view?.enabled)camera.setViewOffset(w,h,0,h*.15,w,h);camera.updateProjectionMatrix();renderer.setPixelRatio(pixelRatioFor(w,h,devicePixelRatio,mobile,governor.scale));renderer.setSize(w,h);};const observer=new ResizeObserver(resize);observer.observe(host);
   renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();callbacks.contextLost?.();});
   renderer.domElement.addEventListener('webglcontextrestored',()=>location.reload());
-  function animate(now){requestAnimationFrame(animate);if(document.hidden||paused||!shadersReady||now-lastDraw<(software?125:16))return;lastDraw=now;const drawStarted=performance.now();
+  function animate(now){requestAnimationFrame(animate);if(document.hidden||paused||!shadersReady){lastDraw=0;return;}const budget=software?125:down||flight?16:33,frameGap=lastDraw?now-lastDraw:budget;if(frameGap<budget)return;lastDraw=now;const drawStarted=performance.now();
     if(flight){const t=flight.duration?clamp((now-flight.start)/flight.duration,0,1):1,e=1-(1-t)**3;camera.position.lerpVectors(flight.from,flight.to,e);controls.target.lerpVectors(flight.targetFrom,flight.target,e);if(t===1)flight=null;}
     if(pipTrip){const t=pipTrip.duration?clamp((now-pipTrip.start)/pipTrip.duration,0,1):1,pos=pipTrip.curve.getPointAt(t);pos.y=Math.max(landHeight(pos.x,pos.z)+3.5,pos.y);pip.position.copy(pos);const next=pipTrip.curve.getPointAt(Math.min(1,t+.005));pip.rotation.y=Math.atan2(next.x-pos.x,next.z-pos.z);if(t===1){pipTrip=null;callbacks.travel?.('You have arrived. Select Step inside to open the project.');}}
     ocean.update(now*.001);vegetation.update(now*.001,environment);atmosphere.update(now*.001,environment);
     pip.position.y+=Math.sin(now*.002)*.006;if(selectionRing.material.emissive)selectionRing.material.emissiveIntensity=1.8+Math.sin(now*.003)*.4;
     controls.update();for(const s of sites.values())if(s.lod){const near=s.p.slug===selected||camera.position.distanceTo(s.group.position)<130;s.lod.visible=!near;for(const child of s.details)child.visible=near;}
-    if(scannedTrees&&now-lastTreeUpdate>250){scannedTrees.update(camera);lastTreeUpdate=now;}
+    if(scannedTrees&&now-lastTreeUpdate>250){scannedTrees.update(camera,governor.scale);lastTreeUpdate=now;}
     const assets=host.dataset.surfaceDetail+'|'+host.dataset.treeDetail;if(!software&&(assets!==shadowAssets||(pipTrip&&now-lastShadow>500))){renderer.shadowMap.needsUpdate=true;shadowAssets=assets;lastShadow=now;}
     renderer.render(scene,camera);
     if(now-lastLabels>100){callbacks.frame?.(labelPositions(),camera.position,controls.target,renderer.info.render);lastLabels=now;}
-    const cost=performance.now()-drawStarted;if(!software&&governor.observe(cost))resize();
-    host.dataset.resolutionScale=governor.scale.toFixed(2);host.dataset.drawCalls=String(renderer.info.render.calls);
+    const cost=performance.now()-drawStarted;host.dataset.frameCostMs=cost.toFixed(1);if(!software&&governor.observe(framePressure(cost,frameGap,budget)))resize();
+    host.dataset.resolutionScale=governor.scale.toFixed(2);host.dataset.drawCalls=String(renderer.info.render.calls);host.dataset.triangles=String(renderer.info.render.triangles);
     // Leave a real input-processing gap after expensive software drawing, while motion stays active.
     if(software)lastDraw=performance.now();
   }

@@ -1,0 +1,123 @@
+{
+  "scope": "Island rendering and interaction performance; catalog and project placement preserved",
+  "baseline_draw_calls": 507,
+  "batched_draw_calls": 233,
+  "measurement_environment": "Chromium 153 software GPU, 1100x760; counts and short interaction samples, not a physical-device FPS guarantee",
+  "baseline_search_input_ms": [
+    138,
+    50,
+    41,
+    18,
+    12,
+    12
+  ],
+  "batched_search_input_ms": [
+    63,
+    22,
+    15,
+    14,
+    20,
+    17
+  ],
+  "fallback_checks": [
+    {
+      "mode": {
+        "width": 1200,
+        "gpu": false
+      },
+      "diagnostics": {
+        "renderer": "software-3d",
+        "surfaceDetail": "geometry",
+        "treeDetail": "procedural",
+        "batchedRoads": "202",
+        "lighting": "day",
+        "weather": "unavailable",
+        "frameCostMs": "112.1",
+        "resolutionScale": "1.00",
+        "drawCalls": "undefined",
+        "triangles": "undefined",
+        "paused": "false"
+      },
+      "flows": "search, selection, zoom, camera buttons, keyboard, Pip, real-preview pause/resume, no overflow"
+    },
+    {
+      "mode": {
+        "width": 390,
+        "gpu": false
+      },
+      "diagnostics": {
+        "renderer": "software-3d",
+        "surfaceDetail": "geometry",
+        "treeDetail": "procedural",
+        "batchedRoads": "202",
+        "lighting": "day",
+        "weather": "unavailable",
+        "frameCostMs": "111.2",
+        "resolutionScale": "1.00",
+        "drawCalls": "undefined",
+        "triangles": "undefined",
+        "paused": "false"
+      },
+      "flows": "search, selection, zoom, camera buttons, keyboard, Pip, real-preview pause/resume, no overflow"
+    }
+  ],
+  "tests_passed": 24,
+  "changes": [
+    "Static solid and road-marking batches preserve geometry/materials and picking",
+    "Cached scanned-tree admission avoids repeated matrix uploads",
+    "Labels use transform positioning without width layout reads",
+    "30fps idle rendering, up to display-rate camera interaction",
+    "Resolution adapts to frame delay as well as JavaScript cost",
+    "Analytic ocean normals avoid repeated wave samples",
+    "Lighter decorative detail for software-only fallback"
+  ],
+  "limitations": [
+    "Physical user hardware not measured",
+    "Production verification pending"
+  ],
+  "gpu_workflow_checks": [
+    {
+      "mode": {
+        "width": 1200,
+        "gpu": true
+      },
+      "diagnostics": {
+        "renderer": "webgl-3d",
+        "surfaceDetail": "photographic",
+        "treeDetail": "photogrammetry",
+        "batchedRoads": "202",
+        "lighting": "day",
+        "weather": "unavailable",
+        "shaderReady": "true",
+        "frameCostMs": "4.3",
+        "resolutionScale": "0.64",
+        "drawCalls": "133",
+        "triangles": "1272374",
+        "scannedTreeInstances": "6",
+        "paused": "false"
+      },
+      "flows": "search, selection, zoom, camera buttons, keyboard, Pip, real-preview pause/resume, no overflow"
+    },
+    {
+      "mode": {
+        "width": 390,
+        "gpu": true
+      },
+      "diagnostics": {
+        "renderer": "webgl-3d",
+        "surfaceDetail": "photographic",
+        "treeDetail": "photogrammetry",
+        "batchedRoads": "202",
+        "lighting": "day",
+        "weather": "unavailable",
+        "shaderReady": "true",
+        "frameCostMs": "3.5",
+        "resolutionScale": "0.51",
+        "drawCalls": "126",
+        "triangles": "581064",
+        "paused": "false"
+      },
+      "flows": "search, selection, zoom, camera buttons, keyboard, Pip, real-preview pause/resume, no overflow"
+    }
+  ]
+}
