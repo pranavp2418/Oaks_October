@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-13",
+  "owner": "codex-build-20261013-2018",
+  "started_at": "2026-10-13T20:23:32.735441+00:00",
+  "last_updated_at": "2026-10-13T20:23:32.735441+00:00",
+  "lease_expires_at": "2026-10-13T23:23:32.735441+00:00",
+  "status": "acceptance_defined",
+  "target": 3,
+  "completed_projects": 0,
+  "projects": [
+    {
+      "title": "Loadstone",
+      "industry": "Energy operations",
+      "classification": "resume",
+      "core_language": "C++",
+      "stack": [
+        "C++",
+        "WebAssembly",
+        "React",
+        "TypeScript",
+        "IndexedDB"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 19,
+      "path": "Oaks_October/2026-10-13-Loadstone",
+      "stage": "acceptance_defined",
+      "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "capabilities": [
+        "Validated profile import and transactional local workspace",
+        "Exact dispatch solver with conservation and terminal reserve",
+        "Outage and tariff scenario comparison",
+        "Version-bound plan review and approval",
+        "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
+        "Digest-bound audit export and operating cost/SOC view"
+      ]
+    },
+    {
+      "title": "PatchBay",
+      "industry": "Software supply-chain security",
+      "classification": "new",
+      "core_language": "Kotlin",
+      "stack": [
+        "Kotlin",
+        "JVM",
+        "SQLite JDBC"
+      ],
+      "delivery_mode": "github_only",
+      "planned_ordinal": 20,
+      "path": "Oaks_October/2026-10-13-PatchBay",
+      "stage": "acceptance_defined",
+      "core": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "capabilities": [
+        "Atomic validated graph/advisory import into SQLite",
+        "SCC and shortest exposure-path analysis",
+        "Exact coverage/cost planning with independent subset oracle",
+        "Versioned plans and separate recorded approval",
+        "Transactional apply/rollback and crash/failure recovery",
+        "Provenance/audit export, status and integrity inspection"
+      ]
+    },
+    {
+      "title": "ProofHarbor",
+      "industry": "Infrastructure incident investigation",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "Angular",
+        "TypeScript"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 21,
+      "path": "Oaks_October/2026-10-13-ProofHarbor",
+      "stage": "acceptance_defined",
+      "core": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "capabilities": [
+        "Validated evidence ingestion and portable SQLite workspace persistence",
+        "Lexical/entity graph retrieval through LangChain Runnable pipeline",
+        "Multi-hop cited evidence synthesis with contradiction/supersession guards",
+        "LangGraph durable investigate/review/publish interrupts",
+        "Failed retrieval reprocessing and restart checkpoint resume",
+        "Exportable evidence dossier, retrieval evaluation and operational traces"
+      ]
+    }
+  ],
+  "blockers": [],
+  "portfolio_integration": "withheld_until_all_three_verified",
+  "source_baseline": "b27b676e0f90c15979678f57cdc28c3402b313b0",
+  "flagship_progress_ref": "pranavp2418/AtlasForge/PROGRESS.json",
+  "profile_public_access": "LinkedIn fetch HTTP 999; current Library resume and supplied profile read; no direct-profile claim"
+}
