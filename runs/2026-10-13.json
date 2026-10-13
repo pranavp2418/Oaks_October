@@ -2,7 +2,7 @@
   "date": "2026-10-13",
   "owner": "codex-build-20261013-2018",
   "started_at": "2026-10-13T20:23:32.735441+00:00",
-  "last_updated_at": "2026-10-13T20:23:32.735441+00:00",
+  "last_updated_at": "2026-10-13T20:33:56.216004+00:00",
   "lease_expires_at": "2026-10-13T23:23:32.735441+00:00",
   "status": "acceptance_defined",
   "target": 3,
@@ -23,7 +23,7 @@
       "delivery_mode": "web_deployed",
       "planned_ordinal": 19,
       "path": "Oaks_October/2026-10-13-Loadstone",
-      "stage": "acceptance_defined",
+      "stage": "core_and_clean_build_verified_browser_pending",
       "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
       "capabilities": [
         "Validated profile import and transactional local workspace",
@@ -32,7 +32,12 @@
         "Version-bound plan review and approval",
         "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
         "Digest-bound audit export and operating cost/SOC view"
-      ]
+      ],
+      "verification": {
+        "core_groups": 5,
+        "oracle_cases": 240,
+        "clean_install_build": true
+      }
     },
     {
       "title": "PatchBay",

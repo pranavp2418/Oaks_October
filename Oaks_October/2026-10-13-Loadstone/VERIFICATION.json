@@ -1,0 +1,8 @@
+{
+  "core_groups": 5,
+  "independent_oracle_cases": 240,
+  "clean_install_build": "passed",
+  "browser": "pending_replacement_runtime",
+  "live": "pending",
+  "assumptions": "single-user synthetic microgrid"
+}

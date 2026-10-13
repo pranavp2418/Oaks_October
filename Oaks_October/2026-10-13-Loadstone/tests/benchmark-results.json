@@ -1,0 +1,27 @@
+{
+  "environment": {
+    "os": "linux 6.18.44",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "node": "v24.19.0",
+    "compiler": "Zig 0.14.1 C++20 -O3 wasm32-freestanding",
+    "method": "20 full instantiate/solve runs after 3 warmups; wall time; no network"
+  },
+  "workload": {
+    "seed": 13102026,
+    "slots": 48,
+    "capacity": 32,
+    "generator": 12
+  },
+  "latency_ms": {
+    "min": 9.66096300000001,
+    "median": 10.80504400000001,
+    "p95": 12.560367000000014
+  },
+  "quality_baseline": {
+    "name": "no-storage greedy generator-first",
+    "feasible": true,
+    "cost": 12864,
+    "optimal_cost": 8664
+  },
+  "transitions": 1837698
+}

@@ -1,0 +1,11 @@
+import {chromium}from 'playwright';import assert from 'node:assert/strict';
+const base=process.env.BASE_URL||'http://127.0.0.1:8151',exe=process.env.CHROMIUM_EXECUTABLE;
+const browser=await chromium.launch({executablePath:exe,headless:true});const results=[];
+try{for(const viewport of [{width:1200,height:900},{width:390,height:844}]){
+ const c=await browser.newContext({viewport}),p=await c.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(base);await p.getByRole('button',{name:'Solve dispatch',exact:true}).click();await p.getByText(/Saved plan at revision/).waitFor();
+ await p.getByRole('button',{name:'Compare scenarios',exact:true}).click();await p.getByText(/Three profiles solved/).waitFor();assert.equal(await p.locator('.scenario-cards article').count(),3);
+ await p.getByRole('button',{name:'Review & run',exact:true}).click();await p.getByRole('button',{name:'Record review',exact:true}).click();await p.getByRole('button',{name:'Approve plan',exact:true}).click();await p.getByRole('button',{name:'Dispatch next slot',exact:true}).click();await p.getByRole('button',{name:'Inject interruption',exact:true}).click();await p.reload();await p.getByRole('button',{name:'Review & run',exact:true}).click();await p.getByRole('heading',{name:'INTERRUPTED',exact:true}).waitFor();await p.getByRole('button',{name:'Resume dispatch',exact:true}).click();for(let i=1;i<12;i++)await p.getByRole('button',{name:'Dispatch next slot',exact:true}).click();await p.getByRole('heading',{name:'COMPLETE',exact:true}).waitFor();
+ await p.getByRole('button',{name:'Evidence',exact:true}).click();const download=p.waitForEvent('download');await p.getByRole('button',{name:'Export evidence',exact:true}).click();await download;
+ await p.getByRole('button',{name:'Inputs',exact:true}).click();await p.getByLabel('Profile JSON').fill('{"schema":1}');await p.getByRole('button',{name:'Save profile',exact:true}).click();await p.getByText(/name are required/).waitFor();
+ assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);results.push({viewport:viewport.width,workflow:'solve/scenarios/review/approve/interrupt/reload/resume/complete/export/invalid-import',page_errors:errors});await c.close();}
+ console.log(JSON.stringify(results,null,2));}finally{await browser.close();}
