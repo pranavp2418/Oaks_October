@@ -72,8 +72,7 @@
     "Lighter decorative detail for software-only fallback"
   ],
   "limitations": [
-    "Physical user hardware not measured",
-    "Production verification pending"
+    "Physical user hardware not measured; software-only rendering retains lower frame rate than GPU rendering."
   ],
   "gpu_workflow_checks": [
     {
@@ -119,5 +118,13 @@
       },
       "flows": "search, selection, zoom, camera buttons, keyboard, Pip, real-preview pause/resume, no overflow"
     }
-  ]
+  ],
+  "production": {
+    "deployment_id": "dpl_4sGbwqjoEtUiqgzT6emzdsF2E56q",
+    "source_commit": "d9bb83941937d1bc796210694d14f76281b01748",
+    "ready": true,
+    "exact_build_assets": true,
+    "unchanged_catalogs": true,
+    "live_search_selection_zoom": true
+  }
 }
