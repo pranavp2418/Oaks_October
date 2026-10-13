@@ -11,7 +11,8 @@ function filtered(){
 function render(){
   const list=filtered(),pages=Math.max(1,Math.ceil(list.length/pageSize));
   page=Math.min(page,pages-1);
-  $('archive-count').textContent=`${list.length} ${list.length===1?'project':'projects'}`;
+  const isFiltered=$('archive-stack').value!=='all'||$('archive-search').value.trim()!=='';
+  $('archive-count').textContent=isFiltered?`${list.length} of ${items.length} archive projects`:`${items.length} archive projects`;
   $('archive-page').textContent=`${page+1} / ${pages}`;
   $('archive-prev').disabled=page===0;
   $('archive-next').disabled=page===pages-1;

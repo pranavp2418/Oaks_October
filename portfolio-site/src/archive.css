@@ -2,3 +2,6 @@
 @media(min-width:1000px){.archive .project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.archive .project-info{padding:24px}.archive .project-info h3{font-size:28px}}
 
 .project-delivery{display:inline-block;margin-top:20px;padding:7px 10px;border:1px solid #859a93;border-radius:3px;font-size:11px;color:inherit}#archive-dialog .project-delivery{display:block;width:fit-content}
+
+/* Explicit native menu colors keep options readable on Windows and mobile. */
+.archive-controls select{color-scheme:dark;background-color:#0c1c34;color:#edf3ff}.archive-controls select option{background-color:#0c1c34;color:#edf3ff}

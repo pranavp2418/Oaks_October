@@ -17,3 +17,5 @@
 @media(max-width:700px){.atlas-atmosphere{left:12px;right:12px;top:152px;width:auto}.atlas-atmosphere summary{padding:10px 12px;min-height:60px}.atlas-atmosphere strong{font-size:10px}#island-clock{font-size:9px}.weather-short{font-size:10px;max-width:100px}.atlas-view-controls{top:103px}.atlas-zoom{top:230px}.atlas-atmosphere[open]{box-shadow:0 25px 45px #0005}.atlas-detail{max-height:53%}.atlas-page.pip-collapsed .atlas-detail{max-height:53%}}
 
 @media(max-width:700px){body.directory-expanded .atlas-view-controls,body.directory-expanded .atlas-atmosphere,body.directory-expanded .atlas-zoom{visibility:hidden;pointer-events:none}}
+
+.atlas-directory select{color-scheme:dark;background-color:#0c1c34;color:#edf3ff}.atlas-directory select option{background-color:#0c1c34;color:#edf3ff}
