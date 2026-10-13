@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+patchbay_root="$(cd -- "$(dirname -- "$0")" && pwd)"
+if [ ! -f "$patchbay_root/build/classpath.txt" ]; then python3 "$patchbay_root/tools/build.py"; fi
+exec java -cp "$(cat "$patchbay_root/build/classpath.txt")" PatchBayKt "$@"

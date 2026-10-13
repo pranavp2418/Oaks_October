@@ -1,0 +1,21 @@
+{
+  "oracle_comparisons": 300,
+  "oracles": [
+    "Floyd-Warshall runtime reachability",
+    "exhaustive compatible remediation subsets"
+  ],
+  "cli_workflow": "passed",
+  "failure_tests": [
+    "malformed graph",
+    "stale revision",
+    "receipt collision",
+    "precommit rollback",
+    "six-process receipt race",
+    "killed writer rollback",
+    "audit corruption"
+  ],
+  "clean_build": "passed in a fresh copied checkout with checksum-verified compiler/runtime JARs; full oracle and CLI tests rerun",
+  "delivery_mode": "github_only",
+  "live_url": null,
+  "deployment_id": null
+}

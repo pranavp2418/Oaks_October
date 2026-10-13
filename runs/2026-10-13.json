@@ -2,7 +2,7 @@
   "date": "2026-10-13",
   "owner": "codex-build-20261013-2018",
   "started_at": "2026-10-13T20:23:32.735441+00:00",
-  "last_updated_at": "2026-10-13T20:33:56.216004+00:00",
+  "last_updated_at": "2026-10-13T20:44:02.278120+00:00",
   "lease_expires_at": "2026-10-13T23:23:32.735441+00:00",
   "status": "acceptance_defined",
   "target": 3,
@@ -23,7 +23,7 @@
       "delivery_mode": "web_deployed",
       "planned_ordinal": 19,
       "path": "Oaks_October/2026-10-13-Loadstone",
-      "stage": "core_and_clean_build_verified_browser_pending",
+      "stage": "live_desktop_verified_mobile_pending",
       "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
       "capabilities": [
         "Validated profile import and transactional local workspace",
@@ -36,8 +36,13 @@
       "verification": {
         "core_groups": 5,
         "oracle_cases": 240,
-        "clean_install_build": true
-      }
+        "clean_install_build": true,
+        "browser": "1200px and 390px complete local workflow passed; no page errors"
+      },
+      "source_commit": "94af62de10ed38da7fa4ff4ec4de9562cb0da63b",
+      "project_id": "prj_fUqT9ViEE0zTe5r8mcGfjF3BkVQM",
+      "deployment_id": "dpl_7AGBtHAmWfdRutTUFpgRd7r8m6cA",
+      "live_url": "https://loadstone-20261013.vercel.app/"
     },
     {
       "title": "PatchBay",
@@ -52,7 +57,7 @@
       "delivery_mode": "github_only",
       "planned_ordinal": 20,
       "path": "Oaks_October/2026-10-13-PatchBay",
-      "stage": "acceptance_defined",
+      "stage": "clean_cli_verified_ready_to_push",
       "core": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
       "capabilities": [
         "Atomic validated graph/advisory import into SQLite",
@@ -61,7 +66,20 @@
         "Versioned plans and separate recorded approval",
         "Transactional apply/rollback and crash/failure recovery",
         "Provenance/audit export, status and integrity inspection"
-      ]
+      ],
+      "verification": {
+        "oracle_cases": 300,
+        "cli": "import/replay/analysis/plan/review/apply/rollback/export",
+        "failure_cases": [
+          "invalid input",
+          "stale plan",
+          "conflicting ID",
+          "6-process concurrent receipt race",
+          "injected precommit failure",
+          "killed SQLite writer recovery",
+          "audit corruption rejection"
+        ]
+      }
     },
     {
       "title": "ProofHarbor",

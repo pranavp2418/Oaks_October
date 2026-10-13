@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "nodes": [
+    {
+      "id": "api",
+      "version": "1.0",
+      "root": true
+    },
+    {
+      "id": "worker",
+      "version": "1.0",
+      "root": true
+    },
+    {
+      "id": "codec",
+      "version": "1.2"
+    },
+    {
+      "id": "shared",
+      "version": "2.1"
+    },
+    {
+      "id": "parser",
+      "version": "0.7"
+    },
+    {
+      "id": "devtool",
+      "version": "9.0"
+    }
+  ],
+  "edges": [
+    {
+      "from": "api",
+      "to": "codec"
+    },
+    {
+      "from": "api",
+      "to": "shared"
+    },
+    {
+      "from": "worker",
+      "to": "shared"
+    },
+    {
+      "from": "shared",
+      "to": "parser"
+    },
+    {
+      "from": "parser",
+      "to": "shared"
+    },
+    {
+      "from": "api",
+      "to": "devtool",
+      "scope": "dev"
+    }
+  ],
+  "advisories": [
+    {
+      "id": "SYN-001",
+      "packageId": "codec",
+      "severity": 8
+    },
+    {
+      "id": "SYN-002",
+      "packageId": "parser",
+      "severity": 9
+    },
+    {
+      "id": "SYN-003",
+      "packageId": "devtool",
+      "severity": 10
+    }
+  ],
+  "actions": [
+    {
+      "id": "codec-only",
+      "cost": 4,
+      "fixes": [
+        "SYN-001"
+      ]
+    },
+    {
+      "id": "parser-only",
+      "cost": 7,
+      "fixes": [
+        "SYN-002"
+      ]
+    },
+    {
+      "id": "combined-upgrade",
+      "cost": 9,
+      "fixes": [
+        "SYN-001",
+        "SYN-002"
+      ],
+      "excludes": [
+        "codec-only",
+        "parser-only"
+      ]
+    },
+    {
+      "id": "dev-update",
+      "cost": 2,
+      "fixes": [
+        "SYN-003"
+      ]
+    }
+  ]
+}
