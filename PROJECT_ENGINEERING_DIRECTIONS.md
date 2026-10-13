@@ -42,3 +42,8 @@ Use the existing roughly 90% deployed/10% GitHub-only policy. A complete native 
 For founder work, choose a concrete operational pain and demonstrate the business workflow and cost assumptions. Do not invent customers, revenue, community adoption, compliance certification or product-market fit. Security monitoring produces findings and evidence, not automatic certification. Do not introduce paid resources or publish outbound messages solely because a growth-oriented example suggests them.
 
 Finance/quant, healthcare/RCM and education/edtech still require at least two substantial connected capabilities beyond the main core. Maintain clear synthetic-data provenance and honest limitations. Finish documentation, tests, reproducible examples, complete code and applicable UI; verify and release each project in completion order. Only then integrate the completed daily set into both the existing portfolio archive and separate Projects country.
+
+
+## October 13: expanded functional depth and long-horizon builds
+
+Follow DAILY_PROJECT_STANDARD_V2.md and SKILL_EVIDENCE_MATRIX.json. Prioritize substantive Java/Spring Boot/Angular, C/C++, real database/broker/cloud/CI integrations and the full user skill list where they serve the problem. New projects require larger connected capabilities, meaningful integration/recovery checks and reproducible performance/query evidence. Infrastructure configuration alone is not a verified skill. The separate AtlasForge repository holds AsterLedger and ForgePulse, target November 30. Their daily slices never count among the daily three; include verified flagship milestones in the combined final report. Preserve the current portfolio and latest island performance release.

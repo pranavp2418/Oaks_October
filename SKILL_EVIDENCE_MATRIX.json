@@ -1,0 +1,676 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-13",
+  "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
+  "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
+  "skills": [
+    {
+      "skill": "Debugging",
+      "aliases": [
+        "DeBugging"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Integration testing",
+      "aliases": [
+        "Integration Testing"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Query optimization",
+      "aliases": [
+        "Query Optimization"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Financial data processing",
+      "aliases": [
+        "Financial Data Processin"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Relational databases / SQL",
+      "aliases": [
+        "Relational Databases",
+        "dATABASES",
+        "SQL"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Infrastructure",
+      "aliases": [
+        "iNFRATSTURE"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Automation",
+      "aliases": [
+        "Automation"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Containerization",
+      "aliases": [
+        "COntainerization"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Automated deployment",
+      "aliases": [
+        "Automoated Deployment"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Git",
+      "aliases": [
+        "Git"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "CI/CD",
+      "aliases": [
+        "CI/CD pIPLEINES",
+        "CI/CD",
+        "DevOps & CI/CD"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Jenkins",
+      "aliases": [
+        "Jenkins"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "DevOps",
+      "aliases": [
+        "DevOps & CI/CD"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "OpenAI APIs",
+      "aliases": [
+        "Open AI APIS"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "LLMs",
+      "aliases": [
+        "LLMs"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Generative AI",
+      "aliases": [
+        "GenAI"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Predictive analysis",
+      "aliases": [
+        "Predictive Analysis"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Data transformation",
+      "aliases": [
+        "Data Transformation"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "JSON",
+      "aliases": [
+        "JSON"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "APIs",
+      "aliases": [
+        "API",
+        "REST"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Apache Kafka",
+      "aliases": [
+        "Apche Kafka"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Cloud-native development",
+      "aliases": [
+        "Cloud-Native Dev"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Kubernetes",
+      "aliases": [
+        "Kubernetes"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Docker",
+      "aliases": [
+        "Docker"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "AWS Lambda",
+      "aliases": [
+        "AWS Lambda",
+        "AWS LAMBDA"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Amazon S3",
+      "aliases": [
+        "AmazonS3"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "AWS CloudWatch",
+      "aliases": [
+        "AWS CloudWatch"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "AWS",
+      "aliases": [
+        "AWS"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Responsive UI development",
+      "aliases": [
+        "Responsive UI Development"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Responsive web design",
+      "aliases": [
+        "Respolnsive Web Design"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "CSS",
+      "aliases": [
+        "CSS"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "HTML5",
+      "aliases": [
+        "HTML5",
+        "HTML"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Angular",
+      "aliases": [
+        "ANgular"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "React",
+      "aliases": [
+        "React"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Front-end development",
+      "aliases": [
+        "React.Front-End"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Object-oriented design",
+      "aliases": [
+        "Oject Orited Design"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Event-driven architecture",
+      "aliases": [
+        "Event-driven"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Distributed systems",
+      "aliases": [
+        "Distributed Systems"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Express.js",
+      "aliases": [
+        "Express.js"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Microservices",
+      "aliases": [
+        "Microsevrices"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Spring Boot",
+      "aliases": [
+        "Spring Boot"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "C",
+      "aliases": [
+        "C"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "C++",
+      "aliases": [
+        "C++"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Java",
+      "aliases": [
+        "Java"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "TypeScript",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "JavaScript",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Python",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "C# / ASP.NET Core / EF Core",
+      "aliases": [
+        "earlier supplied profile"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Excel / VBA",
+      "aliases": [
+        "earlier supplied profile"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "PostgreSQL",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "OpenTelemetry / observability",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Terraform / infrastructure as code",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "RBAC / API security",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "Performance profiling / benchmarking",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    },
+    {
+      "skill": "AI evaluation / model lifecycle",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "prior_projects_require_source_audit",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+    }
+  ],
+  "scope": "Daily three-project collection; AtlasForge evidence tracked separately"
+}
