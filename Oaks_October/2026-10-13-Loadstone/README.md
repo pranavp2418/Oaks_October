@@ -32,9 +32,9 @@ Without `LOADSTONE_ZIG`, the build decodes the tracked compiled core. No API cre
 
 ## Verification
 
-- Five core/state test groups: **240 seeded independent exhaustive comparisons**, conservation, ramp/reserve constraints, invalid bounds/infeasible reserve, stale revisions/conflicting IDs, review/approval and interrupt/replay/completion.
+- Seven core/state test groups: **240 seeded independent exhaustive comparisons**, conservation, ramp/reserve constraints, invalid bounds/infeasible reserve, stale revisions/conflicting IDs, review/approval and interrupt/replay/completion.
 - Clean `npm ci --ignore-scripts` and production build passed.
-- Reproducible benchmark: `tests/benchmark-results.json` records hardware, OS, compiler flags, workload, three warmups and twenty full instantiate/solve repetitions. This machine measured median **10.81 ms**, p95 **12.56 ms** for 48 slots, 32 kWh capacity and 1,837,698 transitions. The generator-first/no-storage feasible baseline cost was 12,864 cents; optimum 8,664 cents. These are this synthetic workload's results, not device or fleet performance claims.
+- Reproducible benchmark: `tests/benchmark-results.json` records hardware, OS, compiler flags, workload, three warmups and twenty full instantiate/solve repetitions. This machine measured median **10.64 ms**, p95 **15.68 ms** for 48 slots, 32 kWh capacity and 1,837,698 transitions. The generator-first/no-storage feasible baseline cost was 12,864 cents; optimum 8,664 cents. These are this synthetic workload's results, not device or fleet performance claims.
 - Browser and public-release evidence is recorded separately in `VERIFICATION.json`; a missing/pending entry is not a passed check.
 
 ## Links and limits
@@ -42,3 +42,7 @@ Without `LOADSTONE_ZIG`, the build decodes the tracked compiled core. No API cre
 [Source](https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-Loadstone) · [Demo](https://loadstone-20261013.vercel.app/)
 
 Synthetic fixture and original code are MIT licensed. No third-party energy dataset, device integration, measured battery efficiency, real tariff or reliability guarantee. Model limits: 48 slots, capacity 32, generator output 12; lossless storage, no minimum-run-time or start-up cost, no export revenue and no uncertainty forecast. Integer prices are cents/kWh; unserved energy costs 10,000 cents/kWh. The optimum applies only to these assumptions. Inputs with an unattainable reserve reject rather than claim a feasible plan. Operational times inside the app are measured workflow data; the portfolio displays no project dates.
+
+## Release review fixes
+
+The solver rejects shortage beyond real demand so a battery cannot be charged from phantom load shedding. The baseline now enforces downward as well as upward generator ramps. Regression fixtures cover zero-supply reserve and abrupt demand drops. Motion Primitives TransitionPanel coordinates workbench transitions and honors reduced motion; BroadcastChannel handles close after notifications. See UI_PROVENANCE.md for component attribution.

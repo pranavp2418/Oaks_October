@@ -17,6 +17,6 @@ export async function solve(p,bytes){
  return {cost:Number(e.result_cost()),transitions:e.transitions(),slots,shed:slots.reduce((a,s)=>a+s.shed,0)};
 }
 export function greedy(p){let soc=p.initial,prev=0,cost=0;const slots=[];
- for(const [t,s]of p.slots.entries()){const g=Math.min(p.generator,prev+p.ramp,Math.max(0,s.demand-s.solar));prev=g;const net=s.demand-s.solar-g;const grid=Math.min(s.gridLimit,Math.max(0,net)),shed=Math.max(0,net-grid),step=grid*s.price+g*p.fuel+shed*10000;cost+=step;slots.push({slot:t+1,generator:g,battery:0,grid,spill:Math.max(0,-net),soc,shed,cost:step});}
+ for(const [t,s]of p.slots.entries()){const g=Math.max(0,prev-p.ramp,Math.min(p.generator,prev+p.ramp,Math.max(0,s.demand-s.solar)));prev=g;const net=s.demand-s.solar-g;const grid=Math.min(s.gridLimit,Math.max(0,net)),shed=Math.max(0,net-grid),step=grid*s.price+g*p.fuel+shed*10000;cost+=step;slots.push({slot:t+1,generator:g,battery:0,grid,spill:Math.max(0,-net),soc,shed,cost:step});}
  return {cost,slots,feasible:soc>=p.reserve};}
 export const seed={schema:1,name:'Harbor microgrid · synthetic seed 13102026',capacity:12,initial:6,reserve:4,power:3,generator:4,ramp:2,fuel:28,wear:2,slots:Array.from({length:12},(_,i)=>({demand:[6,5,5,7,8,9,8,7,9,7,6,5][i],solar:[0,0,1,3,5,7,6,3,1,0,0,0][i],price:[12,11,9,10,14,18,22,38,45,39,20,14][i],gridLimit:9}))};

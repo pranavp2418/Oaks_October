@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Loadstone transactional persistence QA</title><style>body{font:16px system-ui;padding:30px;max-width:800px;background:#f4f3ec;color:#17254b}button{font:inherit;padding:14px}pre{white-space:pre-wrap}</style><h1>Isolated IndexedDB verification</h1><p>Each test uses a fresh QA-only database; your application workspace is untouched.</p><button id="run">Run transaction checks</button><pre id="result" role="status">Ready.</pre><script type="module">
+import {openStore,apply,read} from './state.mjs';
+import {seed} from './engine.mjs';
+document.querySelector('#run').onclick=async()=>{
+ const name='loadstone-qa-'+crypto.randomUUID();let a,b;
+ try{
+  a=await openStore(name);b=await openStore(name);
+  const operations=[{id:'a',type:'import',expected:0,profile:{...seed,name:'A'}},{id:'b',type:'import',expected:0,profile:{...seed,name:'B'}}];
+  const results=await Promise.allSettled([apply(a,operations[0]),apply(b,operations[1])]);
+  if(results.filter(r=>r.status==='fulfilled').length!==1)throw Error('Race committed more or fewer than one revision.');
+  const winner=results[0].status==='fulfilled'?operations[0]:operations[1];
+  const snapshot=await read(a);if(snapshot.revision!==1)throw Error('Wrong persisted race revision.');
+  await apply(b,winner);if((await read(a)).revision!==1)throw Error('Replay applied twice.');
+  let conflict=false;try{await apply(a,{...winner,profile:{...seed,name:'conflict'}});}catch{conflict=true;}if(!conflict)throw Error('Conflicting ID accepted.');
+  a.close();a=await openStore(name);const reopened=await read(a);
+  if(reopened.profile.name!==winner.profile.name||reopened.revision!==1)throw Error('Reopen lost persisted winner.');
+  document.querySelector('#result').textContent=JSON.stringify({status:'PASS',concurrent_connections:2,successful_writes:1,revision:1,exact_replay:'idempotent',conflicting_id:'rejected',reopened:'persisted winner'},null,2);
+ }catch(error){document.querySelector('#result').textContent='FAIL: '+error.message;}finally{a?.close();b?.close();indexedDB.deleteDatabase(name);}
+};
+</script></html>

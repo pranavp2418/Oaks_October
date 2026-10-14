@@ -19,7 +19,7 @@ export function reduce(state,op){
  else throw Error('Unknown operation.');
  next.revision++;next.receipts[op.id]=payload;next.audit.push({revision:next.revision,type:op.type,id:op.id,status:next.plan?.status??'unplanned',slot:next.plan?.index??0});return next;
 }
-export function openStore(){return new Promise((resolve,reject)=>{const request=indexedDB.open('loadstone-workspace',1);request.onupgradeneeded=()=>request.result.createObjectStore('state');request.onerror=()=>reject(request.error);request.onsuccess=()=>resolve(request.result);});}
+export function openStore(name='loadstone-workspace'){return new Promise((resolve,reject)=>{const request=indexedDB.open(name,1);request.onupgradeneeded=()=>request.result.createObjectStore('state');request.onerror=()=>reject(request.error);request.onsuccess=()=>resolve(request.result);});}
 export async function read(db){return new Promise((resolve,reject)=>{const tx=db.transaction('state');const r=tx.objectStore('state').get('workspace');r.onsuccess=()=>resolve(r.result??initial());r.onerror=()=>reject(r.error);});}
 export async function apply(db,op){return new Promise((resolve,reject)=>{
  const tx=db.transaction('state','readwrite'),store=tx.objectStore('state'),r=store.get('workspace');let next;

@@ -4,5 +4,13 @@
   "clean_install_build": "passed",
   "browser": "pending_replacement_runtime",
   "live": "pending",
-  "assumptions": "single-user synthetic microgrid"
+  "assumptions": "single-user synthetic microgrid",
+  "test_groups": 7,
+  "oracle_cases": 240,
+  "review_fixes": [
+    "physical charging feasibility",
+    "downward baseline ramp",
+    "close notification channel"
+  ],
+  "public_workflow": "pending corrected source deployment"
 }

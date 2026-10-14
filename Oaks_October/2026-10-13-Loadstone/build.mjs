@@ -9,4 +9,6 @@ if(existsSync(zig)){
 else throw Error('Set LOADSTONE_ZIG to Zig 0.14.1 executable');
 writeFileSync('core/dispatch.wasm.b64',readFileSync('public/dispatch.wasm').toString('base64')+'\n');
 mkdirSync("public/qa",{recursive:true});copyFileSync("tests/mobile.html","public/qa/mobile.html");
+for(const name of ['state.mjs','engine.mjs'])copyFileSync('src/'+name,'public/qa/'+name);
+copyFileSync('tests/transactions.html','public/qa/transactions.html');
 await build();

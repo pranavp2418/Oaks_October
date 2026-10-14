@@ -13,9 +13,9 @@
     "generator": 12
   },
   "latency_ms": {
-    "min": 9.66096300000001,
-    "median": 10.80504400000001,
-    "p95": 12.560367000000014
+    "min": 8.704782999999992,
+    "median": 10.640595999999988,
+    "p95": 15.680324000000013
   },
   "quality_baseline": {
     "name": "no-storage greedy generator-first",

@@ -27,6 +27,8 @@ int solve(){
      int net=demand-solar-g+delta;
      int grid=net>0?(net<limit?net:limit):0;
      int shed=net>grid?net-grid:0;
+     // Only actual demand may be unserved; shortage cannot finance charging.
+     if(shed>demand)continue;
      long long tail=values[t+1][ns][g];if(tail==inf)continue;
      long long cost=tail+1LL*grid*price+1LL*g*fuel+1LL*(delta<0?-delta:delta)*wear+1LL*shed*10000;
      nodes++;if(cost<best){best=cost;bd=delta;bg=g;}
