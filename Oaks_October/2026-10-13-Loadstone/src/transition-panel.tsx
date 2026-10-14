@@ -1,4 +1,5 @@
 // Adapted from Motion Primitives (ibelick), MIT. See UI_PROVENANCE.md.
+import React from 'react';
 import {
   AnimatePresence,
   Transition,
