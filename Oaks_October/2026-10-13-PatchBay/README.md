@@ -56,3 +56,9 @@ Apply updates the synthetic advisory model only after an approved current plan. 
 [Source and this walkthrough](https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay#walkthrough)
 
 `data/sample.json` is original synthetic data, seed **13102026**, MIT licensed with the original code. Advisory IDs are fictional. This is neither an SBOM standard implementation nor a package manager, CVE feed, scanner, authenticated multiuser service or security certification. Supplied bundles' effectiveness is assumed by the model; verify real package updates independently. Local network downloads are limited to build dependencies. No telemetry leaves the CLI.
+
+## Release review and performance
+
+Approval receipts now use JSON tuples, preventing ambiguous reviewer/note delimiters. Status and evidence export run inside a consistent SQLite read transaction; four witnessed concurrent imports returned four consistent snapshots. Coverage is compacted by advisory with exact exposed-root counts and severity weights; precomputed suffix sets and admissible equal-weight cost pruning preserve the exact objective. The oracle now verifies the complete SCC partition and shortest distances as well as reachability and subset optima.
+
+`tests/review-benchmark.json` and `tests/benchmark-environment.json` record one warmup and three timed repetitions, preserved original source and current source hashes, an independent known optimum, and limits. The repeated-bundle 1-root/100-advisory/20-action workload moved from median 11,859 ms and 2,097,151 states to 3.50 ms and 41 states. Maximum supported exposure fanout (500 roots × 100 advisories) returned the same known optimal bundle in median 270.58 ms; the original was censored at 20 seconds. These are bounded synthetic workloads, not general complexity or performance guarantees. Exact planning remains exponential in the worst case.

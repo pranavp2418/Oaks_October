@@ -21,7 +21,7 @@ Synthetic rehearsal only. Local SQLite, file access is the security boundary.
  "approve"->{n(4);s.approve(a[3],a[0],a[1],a[2])}
  "apply"->{n(2);s.apply(a[1],a[0],a.getOrNull(2)=="--fail")}
  "rollback"->{n(2);s.rollback(a[1],a[0])}
- "status"->gson.toJson(mapOf("revision" to s.snapshot().revision,"hash" to s.snapshot().hash,"integrity" to s.integrity()))
+ "status"->gson.toJson(s.status())
  "export"->{n(1);val data=gson.toJson(s.export());val target=Path.of(a[0]).toAbsolutePath();val temp=Files.createTempFile(target.parent,"patchbay-",".json");Files.writeString(temp,data);Files.move(temp,target,java.nio.file.StandardCopyOption.ATOMIC_MOVE,java.nio.file.StandardCopyOption.REPLACE_EXISTING);gson.toJson(mapOf("exported" to target.toString(),"sha256" to digest(data)))}
  else->throw IllegalArgumentException("Unknown command")};println(out)}}catch(e:Throwable){System.err.println("PatchBay: "+(e.message?:e.javaClass.simpleName));exitProcess(2)}
 }

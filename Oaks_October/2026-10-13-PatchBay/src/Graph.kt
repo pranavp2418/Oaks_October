@@ -42,14 +42,33 @@ fun analyse(b:Bundle):Analysis{
  return Analysis(exposures,components.sortedBy{it.first()},b.edges.count{it.scope=="runtime"},b.edges.count{it.scope=="dev"})
 }
 fun optimise(b:Bundle,budget:Int):Plan{
- require(budget in 0..10000000){"Invalid budget"};val analysis=analyse(b);val targets=analysis.exposures.map{it.root+"/"+it.advisory}.toSet();val weights=analysis.exposures.associate{it.root+"/"+it.advisory to it.severity};val coverage=b.actions.associate{a->a.id to analysis.exposures.filter{it.advisory in a.fixes}.map{it.root+"/"+it.advisory}.toSet()}
- val actions=b.actions.sortedBy{it.id};var bestWeight=-1;var bestCost=Int.MAX_VALUE;var best=emptyList<String>();var coveredBest=0;var states=0
- fun search(i:Int,chosen:List<Action>,cost:Int,covered:Set<String>){states++;val weight=covered.sumOf{weights.getValue(it)};val names=chosen.map{it.id};if(weight>bestWeight||(weight==bestWeight&&(cost<bestCost||(cost==bestCost&&names.joinToString(",")<best.joinToString(","))))){bestWeight=weight;bestCost=cost;best=names;coveredBest=covered.size}
+ require(budget in 0..10000000){"Invalid budget"}
+ val analysis=analyse(b)
+ // Every bundle fixes an advisory across all exposed roots. Compact by advisory,
+ // preserving both total severity and the number of root/advisory exposures.
+ val groups=analysis.exposures.groupBy{it.advisory}
+ val weights=groups.mapValues{(_,v)->v.sumOf{it.severity}}
+ val coverage=b.actions.associate{a->a.id to a.fixes.filter{it in groups}.toSet()}
+ val actions=b.actions.sortedBy{it.id}
+ val suffix=Array(actions.size+1){emptySet<String>()}
+ for(i in actions.indices.reversed())suffix[i]=suffix[i+1]+coverage.getValue(actions[i].id)
+ var bestWeight=-1;var bestCost=Int.MAX_VALUE;var best=emptyList<String>();var coveredBest=0;var states=0
+ fun search(i:Int,chosen:List<Action>,cost:Int,covered:Set<String>){
+  states++
+  val weight=covered.sumOf{weights.getValue(it)};val names=chosen.map{it.id}
+  if(weight>bestWeight||(weight==bestWeight&&(cost<bestCost||(cost==bestCost&&names.joinToString(",")<best.joinToString(","))))){bestWeight=weight;bestCost=cost;best=names;coveredBest=covered.sumOf{groups.getValue(it).size}}
   if(i==actions.size)return
-  val remaining=(covered+actions.drop(i).flatMap{coverage.getValue(it.id)}).sumOf{weights.getValue(it)};if(remaining<bestWeight)return
-  val a=actions[i];if(cost+a.cost<=budget&&chosen.none{a.id in it.excludes||it.id in a.excludes})search(i+1,chosen+a,cost+a.cost,covered+coverage.getValue(a.id));search(i+1,chosen,cost,covered)
+  val upper=(covered+suffix[i]).sumOf{weights.getValue(it)}
+  // Costs are strictly positive: equal coverage at >= incumbent cost cannot
+  // improve by adding a bundle. The current lexicographic tie was checked above.
+  if(upper<bestWeight||(upper==bestWeight&&cost>=bestCost))return
+  val a=actions[i]
+  if(cost+a.cost<=budget&&chosen.none{a.id in it.excludes||it.id in a.excludes})search(i+1,chosen+a,cost+a.cost,covered+coverage.getValue(a.id))
+  search(i+1,chosen,cost,covered)
  }
- search(0,emptyList(),0,emptySet());return Plan(best,bestCost,coveredBest,targets.size,states)
+ search(0,emptyList(),0,emptySet())
+ return Plan(best,bestCost,coveredBest,analysis.exposures.size,states)
+
 }
 
 fun parseBundle(text:String):Bundle{

@@ -1,7 +1,7 @@
 {
   "oracle_comparisons": 300,
   "oracles": [
-    "Floyd-Warshall runtime reachability",
+    "Floyd-Warshall full SCC partition, reachability and shortest distances",
     "exhaustive compatible remediation subsets"
   ],
   "cli_workflow": "passed",
@@ -17,5 +17,15 @@
   "clean_build": "passed in a fresh copied checkout with checksum-verified compiler/runtime JARs; full oracle and CLI tests rerun",
   "delivery_mode": "github_only",
   "live_url": null,
-  "deployment_id": null
+  "deployment_id": null,
+  "release_review_fixes": [
+    "unambiguous approval receipt",
+    "consistent export/status snapshots",
+    "advisory-compressed exact search and admissible pruning"
+  ],
+  "additional_checks": [
+    "canonical approval receipt collision",
+    "four witnessed concurrent import/export races",
+    "maximum supported exposure fanout and independent known optimum"
+  ]
 }

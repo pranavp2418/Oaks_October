@@ -1,0 +1,222 @@
+{
+  "timings": [
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "baseline",
+      "warmup": true,
+      "ms": 11465.281115,
+      "states": 2097151,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 11741.816514,
+      "states": 2097151,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 11859.038402,
+      "states": 2097151,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 12156.75282,
+      "states": 2097151,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": true,
+      "ms": 5.283918,
+      "states": 41,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 3.852316,
+      "states": 41,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 3.495348,
+      "states": 41,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 1,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 2.90726,
+      "states": 41,
+      "cost": 1,
+      "covered": 100,
+      "total": 100
+    },
+    {
+      "roots": 500,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": true,
+      "ms": 307.950074,
+      "states": 41,
+      "cost": 1,
+      "covered": 50000,
+      "total": 50000
+    },
+    {
+      "roots": 500,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 300.681815,
+      "states": 41,
+      "cost": 1,
+      "covered": 50000,
+      "total": 50000
+    },
+    {
+      "roots": 500,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 270.578405,
+      "states": 41,
+      "cost": 1,
+      "covered": 50000,
+      "total": 50000
+    },
+    {
+      "roots": 500,
+      "advisories": 100,
+      "actions": 20,
+      "kind": "current",
+      "warmup": false,
+      "ms": 215.982169,
+      "states": 41,
+      "cost": 1,
+      "covered": 50000,
+      "total": 50000
+    }
+  ],
+  "export_races": [
+    {
+      "kind": "baseline",
+      "warmup": true,
+      "ms": 112.720307,
+      "snapshot_revision": 1,
+      "audit_events": 2,
+      "current_revision": 2
+    },
+    {
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 116.571282,
+      "snapshot_revision": 1,
+      "audit_events": 2,
+      "current_revision": 2
+    },
+    {
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 86.987125,
+      "snapshot_revision": 1,
+      "audit_events": 2,
+      "current_revision": 2
+    },
+    {
+      "kind": "baseline",
+      "warmup": false,
+      "ms": 97.45526,
+      "snapshot_revision": 1,
+      "audit_events": 2,
+      "current_revision": 2
+    },
+    {
+      "kind": "current",
+      "warmup": true,
+      "ms": 97.921373,
+      "snapshot_revision": 1,
+      "audit_events": 1,
+      "current_revision": 2
+    },
+    {
+      "kind": "current",
+      "warmup": false,
+      "ms": 111.489459,
+      "snapshot_revision": 1,
+      "audit_events": 1,
+      "current_revision": 2
+    },
+    {
+      "kind": "current",
+      "warmup": false,
+      "ms": 86.587802,
+      "snapshot_revision": 1,
+      "audit_events": 1,
+      "current_revision": 2
+    },
+    {
+      "kind": "current",
+      "warmup": false,
+      "ms": 79.286028,
+      "snapshot_revision": 1,
+      "audit_events": 1,
+      "current_revision": 2
+    }
+  ],
+  "maximum_fanout_baseline": {
+    "fixture": "500 roots,100 advisories,20 interchangeable actions,budget20",
+    "timeout_seconds": 20,
+    "elapsed_seconds": 20.045222614000068,
+    "status": "timed out; child killed; completion timing unavailable"
+  },
+  "verification": "12 hashes and clean build verified before initial review; current suite passed 300 full SCC/shortest path/subset cases; actual CLI integration, failure/race/crash/corruption and canonical approval collision regression passed.",
+  "timing_caveat": "Shared hosted container. CLI verification ran briefly alongside part of the baseline repeat phase; no universal latency or physical-device claim."
+}

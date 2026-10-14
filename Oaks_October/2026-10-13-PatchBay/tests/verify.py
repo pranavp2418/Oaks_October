@@ -34,3 +34,12 @@ with tempfile.TemporaryDirectory(prefix='patchbay-e2e-') as d:
  with sqlite3.connect(db)as c:c.execute("UPDATE audit SET hash='corrupted' WHERE seq=1")
  run('status',fail=True)
 print('CLI integration passed: import/replay/analyze/plan/review/apply/rollback/export; stale/conflict/invalid/6-process race/crash rollback/corruption checks passed.')
+
+with tempfile.TemporaryDirectory(prefix='patchbay-collision-') as d:
+ db=pathlib.Path(d)/'state.db'
+ run('import',root/'data/sample.json','i')
+ run('plan',9,'p')
+ first=run('approve','plan-p','a:b','ccc','ap')
+ assert run('approve','plan-p','a:b','ccc','ap')==first
+ assert 'Conflicting receipt' in run('approve','plan-p','a','b:ccc','ap',fail=True)
+print('Canonical approval receipt collision rejected.')

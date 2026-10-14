@@ -12,6 +12,12 @@ fun main(){
   for(k in 0..7)for(i in 0..7)for(j in 0..7)matrix[i][j]=matrix[i][j]||(matrix[i][k]&&matrix[k][j])
   val reachable=(0..1).flatMap{i->adv.filter{matrix[i][it.packageId.substring(1).toInt()]}.map{"p$i/"+it.id}}.toSet()
   check(a.exposures.map{it.root+"/"+it.advisory}.toSet()==reachable)
+  val partition=(0..7).map{i->(0..7).filter{j->matrix[i][j]&&matrix[j][i]}.map{"p$it"}}.distinct().sortedBy{it.first()}
+  check(a.components==partition)
+  val distance=Array(8){i->IntArray(8){j->if(i==j)0 else 999}}
+  edges.filter{it.scope=="runtime"}.forEach{distance[it.from.substring(1).toInt()][it.to.substring(1).toInt()]=minOf(1,distance[it.from.substring(1).toInt()][it.to.substring(1).toInt()])}
+  for(k in 0..7)for(i in 0..7)for(j in 0..7)distance[i][j]=minOf(distance[i][j],distance[i][k]+distance[k][j])
+  for(e in a.exposures)check(e.path.size-1==distance[e.root.substring(1).toInt()][e.packageId.substring(1).toInt()])
   for(c in a.components)for(x in c)for(y in c)check(matrix[x.substring(1).toInt()][y.substring(1).toInt()]&&matrix[y.substring(1).toInt()][x.substring(1).toInt()])
   for(e in a.exposures){check(e.path.first()==e.root&&e.path.last()==e.packageId);e.path.zipWithNext().forEach{(x,y)->check(edges.any{it.from==x&&it.to==y&&it.scope=="runtime"})}}
   val budget=r.nextInt(0,40);var weight=-1;var cost=Int.MAX_VALUE

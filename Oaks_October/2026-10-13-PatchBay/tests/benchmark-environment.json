@@ -1,0 +1,13 @@
+{
+  "platform": "Linux 2ed4ce80684a 6.18.44 #1 SMP Sat Sep 26 20:02:31 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "java": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "heap": "1536 MiB",
+  "baseline_provenance": "Original optimiser from reviewed source; preserved in Probe.kt as baseline(). No changed gates. Original export composition preserved in baseline harness.",
+  "hashes": {
+    "src/Graph.kt": "0000174fdc80716c6b608103b354ae97bdd872a1d26ea598ae8ac90682015de5",
+    "src/Store.kt": "ca077cf3bc6921630a9000f0992bd6d7b54aaf2fa6f5456cc2057bbff45695fc",
+    "build/patchbay.jar": "8d02a6512eace8d05327aa51d0c1199d0bb9fb3ad1a04c693cd7d0641859f32c",
+    "dependencies.lock.json": "f604d5149acaa08d41c96285a431a0a627946e3f9209dcb2da81c024e4245996"
+  }
+}
