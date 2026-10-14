@@ -1,0 +1,13 @@
+{
+  "core_test_groups": 8,
+  "independent_graph_oracles": 50,
+  "native_checkpoint_process_restart": "passed",
+  "citation_negative_cases": "passed",
+  "angular_aot_build": "passed",
+  "public_workflow": "pending",
+  "delivery_mode": "web_deployed",
+  "review_fixes": [
+    "compact journal backup separate from dossier",
+    "prefixed run IDs remain reviewable at maximum length"
+  ]
+}

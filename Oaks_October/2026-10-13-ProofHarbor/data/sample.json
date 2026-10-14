@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "documents": [
+    {"id":"gateway-release","title":"Gateway release record","body":"The gateway release changed payment routing from the legacy pool to worker-b. Rollout completed before the observed latency increase. Timing alone does not establish causality.","entities":["gateway","payments"],"links":["queue-metrics"]},
+    {"id":"gateway-latency","title":"Latency observation","body":"Gateway payment p95 latency rose from 120 ms to 950 ms in the synthetic observation window. The measurement contains no root-cause assertion.","entities":["gateway"],"links":["gateway-release"]},
+    {"id":"queue-metrics","title":"Queue depth observation","body":"The settlement queue accumulated 420 waiting jobs. Its oldest job reached 85 seconds. Worker service time also increased.","entities":["settlement","queue"],"links":["worker-b-log"]},
+    {"id":"worker-b-log","title":"Worker B connection errors","body":"Worker B recorded connection-pool exhaustion while settling payments. A retry ceiling of three prevented unlimited replay.","entities":["worker-b"],"links":["pool-config"]},
+    {"id":"pool-config","title":"Pool configuration receipt","body":"Worker B used a pool limit of four connections after deployment. The previous configured limit was sixteen. This is a configuration observation, not a proven incident cause.","entities":["worker-b"],"links":[]},
+    {"id":"cache-old","title":"Superseded cache note","body":"An early cache probe reported a healthy cache. This result was replaced by a corrected observation.","entities":["cache","payments"],"links":[],"claim":{"key":"cache-health","value":"healthy"}},
+    {"id":"cache-corrected","title":"Corrected cache probe","body":"A corrected cache probe reported degraded availability during payment routing. The early healthy result is superseded.","entities":["cache","payments"],"links":[],"supersedes":"cache-old","claim":{"key":"cache-health","value":"degraded"}},
+    {"id":"cache-independent","title":"Independent cache probe","body":"A second probe reported healthy cache availability during the same synthetic window. It conflicts with the corrected probe and requires human investigation.","entities":["cache","payments"],"links":[],"claim":{"key":"cache-health","value":"healthy"}},
+    {"id":"runbook","title":"Connection investigation checklist","body":"Inspect pool saturation, worker retry receipts and queue age before proposing a configuration change. Publishing a dossier never executes a mitigation.","entities":["worker-b"],"links":["worker-b-log"]}
+  ]
+}

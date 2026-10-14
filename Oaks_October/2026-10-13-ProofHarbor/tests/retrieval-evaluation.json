@@ -1,0 +1,89 @@
+{
+  "seed": 13102026,
+  "method": "Five independently specified synthetic questions, lexical top-3 versus bounded graph expansion. No production or statistical significance claim.",
+  "cases": [
+    {
+      "query": "gateway release routing",
+      "expected": [
+        "gateway-release",
+        "queue-metrics",
+        "worker-b-log"
+      ],
+      "retrieved": [
+        "cache-corrected",
+        "cache-independent",
+        "gateway-latency",
+        "gateway-release",
+        "queue-metrics",
+        "worker-b-log"
+      ],
+      "lexical_only_recall": 0.3333333333333333,
+      "graph_recall": 1.0,
+      "superseded_excluded": true
+    },
+    {
+      "query": "pool connections",
+      "expected": [
+        "pool-config",
+        "runbook",
+        "worker-b-log"
+      ],
+      "retrieved": [
+        "gateway-release",
+        "pool-config",
+        "queue-metrics",
+        "runbook",
+        "worker-b-log"
+      ],
+      "lexical_only_recall": 1.0,
+      "graph_recall": 1.0,
+      "superseded_excluded": true
+    },
+    {
+      "query": "cache availability",
+      "expected": [
+        "cache-corrected",
+        "cache-independent"
+      ],
+      "retrieved": [
+        "cache-corrected",
+        "cache-independent",
+        "gateway-latency",
+        "gateway-release",
+        "queue-metrics"
+      ],
+      "lexical_only_recall": 1.0,
+      "graph_recall": 1.0,
+      "superseded_excluded": true
+    },
+    {
+      "query": "settlement waiting jobs",
+      "expected": [
+        "pool-config",
+        "queue-metrics",
+        "worker-b-log"
+      ],
+      "retrieved": [
+        "cache-corrected",
+        "cache-independent",
+        "gateway-latency",
+        "gateway-release",
+        "pool-config",
+        "queue-metrics",
+        "runbook",
+        "worker-b-log"
+      ],
+      "lexical_only_recall": 0.3333333333333333,
+      "graph_recall": 1.0,
+      "superseded_excluded": true
+    },
+    {
+      "query": "quasarxylophone",
+      "expected": [],
+      "retrieved": [],
+      "lexical_only_recall": null,
+      "graph_recall": null,
+      "superseded_excluded": true
+    }
+  ]
+}

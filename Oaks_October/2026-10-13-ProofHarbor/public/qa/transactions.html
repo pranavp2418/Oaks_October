@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ProofHarbor journal persistence QA</title><style>body{font:16px system-ui;padding:30px;background:#f8f7f2;color:#17254b}button{font:inherit;padding:14px}pre{white-space:pre-wrap}</style><h1>Isolated journal transaction checks</h1><p>A fresh QA-only IndexedDB is used. The application workspace is untouched.</p><button id="run">Run journal race checks</button><pre id="result" role="status">Ready.</pre><script type="module">
+import {openStore,readJournal,saveJournal} from './storage.js';
+document.querySelector('#run').onclick=async()=>{
+ const name='proofharbor-qa-'+crypto.randomUUID();let a,b;
+ try{a=await openStore(name);b=await openStore(name);
+  const left=[{id:'left',type:'import',expected:0}],right=[{id:'right',type:'import',expected:0}];
+  const results=await Promise.allSettled([saveJournal(a,[],left),saveJournal(b,[],right)]);
+  if(results.filter(r=>r.status==='fulfilled').length!==1)throw Error('Race must persist exactly one winner.');
+  const winner=results[0].status==='fulfilled'?left:right,stored=await readJournal(a);
+  if(JSON.stringify(stored)!==JSON.stringify(winner))throw Error('Persisted log differs from winner.');
+  a.close();a=await openStore(name);if(JSON.stringify(await readJournal(a))!==JSON.stringify(winner))throw Error('Reopen lost winner.');
+  let stale=false;try{await saveJournal(a,[],[{id:'stale'}]);}catch{stale=true;}if(!stale)throw Error('Stale network response overwrote journal.');
+  document.querySelector('#result').textContent=JSON.stringify({status:'PASS',concurrent_connections:2,successful_writes:1,stale_response:'rejected',reopened:'persisted winner'},null,2);
+ }catch(error){document.querySelector('#result').textContent='FAIL: '+error.message;}finally{a?.close();b?.close();indexedDB.deleteDatabase(name);}
+};
+</script></html>

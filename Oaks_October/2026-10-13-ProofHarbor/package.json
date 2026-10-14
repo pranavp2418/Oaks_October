@@ -1,0 +1,24 @@
+{
+  "name": "proofharbor",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-qa.mjs && ng build",
+    "test": "python3 -m unittest discover -s tests -v"
+  },
+  "dependencies": {
+    "@angular/common": "22.2.2",
+    "@angular/compiler": "22.2.2",
+    "@angular/core": "22.2.2",
+    "@angular/forms": "22.2.2",
+    "@angular/platform-browser": "22.2.2",
+    "rxjs": "7.8.2",
+    "typescript": "6.0.2"
+  },
+  "devDependencies": {
+    "@angular/cli": "22.2.2",
+    "@angular/build": "22.2.2",
+    "@angular/compiler-cli": "22.2.2"
+  }
+}

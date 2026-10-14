@@ -1,0 +1,20 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "os": "Linux",
+    "machine": "x86_64"
+  },
+  "workload": {
+    "documents": 9,
+    "journal_operations": 9,
+    "investigations": 8,
+    "seed": 13102026
+  },
+  "method": "3 warmups, 20 full journal reconstructions, no network",
+  "latency_ms": {
+    "min": 32.94610400007514,
+    "median": 37.125056000149925,
+    "p95": 43.18213899978218
+  },
+  "limits": "Synthetic bounded demonstration; not a hosted latency SLA."
+}
