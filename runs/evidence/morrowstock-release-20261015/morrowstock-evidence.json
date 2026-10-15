@@ -1,0 +1,1278 @@
+{
+  "workspace": {
+    "schema": 1,
+    "journal": [
+      {
+        "id": "op-73990cd8-b53",
+        "kind": "import",
+        "args": {
+          "data": {
+            "lots": [
+              {
+                "id": "LOT-01",
+                "sku": "APPLE",
+                "quantity": 11,
+                "arrival": 0,
+                "expiry": 4,
+                "location": 0
+              },
+              {
+                "id": "LOT-02",
+                "sku": "LEAF",
+                "quantity": 9,
+                "arrival": 0,
+                "expiry": 5,
+                "location": 1
+              },
+              {
+                "id": "LOT-03",
+                "sku": "ROOT",
+                "quantity": 10,
+                "arrival": 0,
+                "expiry": 3,
+                "location": 2
+              },
+              {
+                "id": "LOT-04",
+                "sku": "CITRUS",
+                "quantity": 4,
+                "arrival": 0,
+                "expiry": 3,
+                "location": 3
+              },
+              {
+                "id": "LOT-05",
+                "sku": "APPLE",
+                "quantity": 8,
+                "arrival": 0,
+                "expiry": 2,
+                "location": 4
+              },
+              {
+                "id": "LOT-06",
+                "sku": "LEAF",
+                "quantity": 4,
+                "arrival": 0,
+                "expiry": 3,
+                "location": 0
+              },
+              {
+                "id": "LOT-07",
+                "sku": "ROOT",
+                "quantity": 8,
+                "arrival": 0,
+                "expiry": 2,
+                "location": 1
+              },
+              {
+                "id": "LOT-08",
+                "sku": "CITRUS",
+                "quantity": 4,
+                "arrival": 0,
+                "expiry": 2,
+                "location": 2
+              },
+              {
+                "id": "LOT-09",
+                "sku": "APPLE",
+                "quantity": 10,
+                "arrival": 2,
+                "expiry": 6,
+                "location": 3
+              },
+              {
+                "id": "LOT-10",
+                "sku": "LEAF",
+                "quantity": 6,
+                "arrival": 2,
+                "expiry": 3,
+                "location": 4
+              },
+              {
+                "id": "LOT-11",
+                "sku": "ROOT",
+                "quantity": 11,
+                "arrival": 2,
+                "expiry": 5,
+                "location": 0
+              },
+              {
+                "id": "LOT-12",
+                "sku": "CITRUS",
+                "quantity": 11,
+                "arrival": 2,
+                "expiry": 6,
+                "location": 1
+              }
+            ],
+            "orders": [
+              {
+                "id": "ORDER-01",
+                "sku": "APPLE",
+                "quantity": 11,
+                "due": 2,
+                "priority": 2,
+                "location": 2
+              },
+              {
+                "id": "ORDER-02",
+                "sku": "LEAF",
+                "quantity": 6,
+                "due": 3,
+                "priority": 4,
+                "location": 3
+              },
+              {
+                "id": "ORDER-03",
+                "sku": "ROOT",
+                "quantity": 9,
+                "due": 4,
+                "priority": 4,
+                "location": 4
+              },
+              {
+                "id": "ORDER-04",
+                "sku": "CITRUS",
+                "quantity": 6,
+                "due": 3,
+                "priority": 3,
+                "location": 0
+              },
+              {
+                "id": "ORDER-05",
+                "sku": "APPLE",
+                "quantity": 9,
+                "due": 3,
+                "priority": 4,
+                "location": 1
+              },
+              {
+                "id": "ORDER-06",
+                "sku": "LEAF",
+                "quantity": 11,
+                "due": 1,
+                "priority": 2,
+                "location": 2
+              },
+              {
+                "id": "ORDER-07",
+                "sku": "ROOT",
+                "quantity": 8,
+                "due": 2,
+                "priority": 4,
+                "location": 3
+              },
+              {
+                "id": "ORDER-08",
+                "sku": "CITRUS",
+                "quantity": 9,
+                "due": 2,
+                "priority": 2,
+                "location": 4
+              },
+              {
+                "id": "ORDER-09",
+                "sku": "APPLE",
+                "quantity": 6,
+                "due": 4,
+                "priority": 3,
+                "location": 0
+              },
+              {
+                "id": "ORDER-10",
+                "sku": "LEAF",
+                "quantity": 10,
+                "due": 5,
+                "priority": 3,
+                "location": 1
+              },
+              {
+                "id": "ORDER-11",
+                "sku": "ROOT",
+                "quantity": 7,
+                "due": 1,
+                "priority": 4,
+                "location": 2
+              },
+              {
+                "id": "ORDER-12",
+                "sku": "CITRUS",
+                "quantity": 9,
+                "due": 2,
+                "priority": 5,
+                "location": 3
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "op-263d7403-795",
+        "kind": "plan",
+        "args": {
+          "plan_id": "plan-4b8bb2ee-31c",
+          "expected_version": 1
+        }
+      },
+      {
+        "id": "op-db9d9815-8d0",
+        "kind": "review",
+        "args": {
+          "plan_id": "plan-4b8bb2ee-31c",
+          "plan_digest": "530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32",
+          "note": "Synthetic QA: reviewed expiry, order priority, allocation quantities and shortages."
+        }
+      },
+      {
+        "id": "op-d798d4a1-059",
+        "kind": "reserve",
+        "args": {
+          "plan_id": "plan-4b8bb2ee-31c",
+          "plan_digest": "530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32"
+        }
+      },
+      {
+        "id": "op-b909a3f1-f81",
+        "kind": "pick",
+        "args": {
+          "plan_id": "plan-4b8bb2ee-31c",
+          "line": 0
+        }
+      },
+      {
+        "id": "op-f3195e40-051",
+        "kind": "recall",
+        "args": {
+          "lot_id": "LOT-01",
+          "reason": "Synthetic QA supplier notice: preserve picked trace and block remaining lot."
+        }
+      },
+      {
+        "id": "op-6919e99b-5a6",
+        "kind": "release",
+        "args": {
+          "plan_id": "plan-4b8bb2ee-31c",
+          "note": "Release unpicked reservations after synthetic recall; preserve all picked quantities and history."
+        }
+      },
+      {
+        "id": "op-74772442-f1b",
+        "kind": "purchase",
+        "args": {
+          "purchase_id": "purchase-f38ea2c4-6aa",
+          "sku": "LEAF",
+          "quantity": 8,
+          "arrival": 1,
+          "expiry": 7,
+          "location": 0
+        }
+      },
+      {
+        "id": "op-2570c0f6-841",
+        "kind": "review_purchase",
+        "args": {
+          "purchase_id": "purchase-f38ea2c4-6aa",
+          "purchase_digest": "5414a5ca6f8f9a151cbbb6ee142a5906796650bd5cecd331ac360989d0f216ca",
+          "note": "Synthetic QA: eight LEAF cases fill the two current shortages; validate arrival and expiry before receipt."
+        }
+      },
+      {
+        "id": "op-35976cc7-a85",
+        "kind": "receive",
+        "args": {
+          "purchase_id": "purchase-f38ea2c4-6aa",
+          "lot_id": "received-4982043b-c00"
+        }
+      },
+      {
+        "id": "op-018c3f79-bfb",
+        "kind": "agent_start",
+        "args": {
+          "run_id": "run-d92b32f4-e01",
+          "goal": "Use trace_lot for LOT-01 to explain picked recall exposure. Then finish with evidence citations. Do not recall, reserve or purchase anything."
+        },
+        "decision": {
+          "choice": {
+            "tool": "trace_lot",
+            "arguments": {
+              "lot_id": "LOT-01"
+            }
+          },
+          "provider": {
+            "generation_id": "gen_01M509ZCC1A536FXTRX5ETHF0K",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 592,
+              "completion_tokens": 1268,
+              "total_tokens": 1860,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 1248,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        }
+      },
+      {
+        "id": "op-97d699c6-9f6",
+        "kind": "agent_continue",
+        "args": {
+          "run_id": "run-d92b32f4-e01"
+        },
+        "decision": {
+          "choice": {
+            "tool": "finish",
+            "arguments": {
+              "summary": "LOT-01 (SKU APPLE) is marked RECALLED with 11 units on hand. A picked order (ORDER-05) of 5 units exposes recalled stock, indicating recall exposure. No stock mutation was performed.",
+              "citations": [
+                "E1"
+              ]
+            }
+          },
+          "provider": {
+            "generation_id": "gen_01M50A10NMJJCEPPCBQ7YA5H6D",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 784,
+              "completion_tokens": 1156,
+              "total_tokens": 1940,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 1084,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        }
+      },
+      {
+        "id": "op-934ab32b-100",
+        "kind": "agent_review",
+        "args": {
+          "run_id": "run-d92b32f4-e01"
+        }
+      }
+    ]
+  },
+  "state": {
+    "schema": 1,
+    "inventory_version": 6,
+    "lots": [
+      {
+        "id": "LOT-01",
+        "sku": "APPLE",
+        "quantity": 11,
+        "arrival": 0,
+        "expiry": 4,
+        "location": 0,
+        "status": "RECALLED",
+        "reserved": 0,
+        "picked": 5,
+        "free": 6
+      },
+      {
+        "id": "LOT-02",
+        "sku": "LEAF",
+        "quantity": 9,
+        "arrival": 0,
+        "expiry": 5,
+        "location": 1,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 9
+      },
+      {
+        "id": "LOT-03",
+        "sku": "ROOT",
+        "quantity": 10,
+        "arrival": 0,
+        "expiry": 3,
+        "location": 2,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 10
+      },
+      {
+        "id": "LOT-04",
+        "sku": "CITRUS",
+        "quantity": 4,
+        "arrival": 0,
+        "expiry": 3,
+        "location": 3,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 4
+      },
+      {
+        "id": "LOT-05",
+        "sku": "APPLE",
+        "quantity": 8,
+        "arrival": 0,
+        "expiry": 2,
+        "location": 4,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 8
+      },
+      {
+        "id": "LOT-06",
+        "sku": "LEAF",
+        "quantity": 4,
+        "arrival": 0,
+        "expiry": 3,
+        "location": 0,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 4
+      },
+      {
+        "id": "LOT-07",
+        "sku": "ROOT",
+        "quantity": 8,
+        "arrival": 0,
+        "expiry": 2,
+        "location": 1,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 8
+      },
+      {
+        "id": "LOT-08",
+        "sku": "CITRUS",
+        "quantity": 4,
+        "arrival": 0,
+        "expiry": 2,
+        "location": 2,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 4
+      },
+      {
+        "id": "LOT-09",
+        "sku": "APPLE",
+        "quantity": 10,
+        "arrival": 2,
+        "expiry": 6,
+        "location": 3,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 10
+      },
+      {
+        "id": "LOT-10",
+        "sku": "LEAF",
+        "quantity": 6,
+        "arrival": 2,
+        "expiry": 3,
+        "location": 4,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 6
+      },
+      {
+        "id": "LOT-11",
+        "sku": "ROOT",
+        "quantity": 11,
+        "arrival": 2,
+        "expiry": 5,
+        "location": 0,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 11
+      },
+      {
+        "id": "LOT-12",
+        "sku": "CITRUS",
+        "quantity": 11,
+        "arrival": 2,
+        "expiry": 6,
+        "location": 1,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 11
+      },
+      {
+        "id": "received-4982043b-c00",
+        "sku": "LEAF",
+        "quantity": 8,
+        "arrival": 1,
+        "expiry": 7,
+        "location": 0,
+        "status": "ACTIVE",
+        "reserved": 0,
+        "picked": 0,
+        "free": 8
+      }
+    ],
+    "orders": [
+      {
+        "id": "ORDER-11",
+        "sku": "ROOT",
+        "quantity": 7,
+        "due": 1,
+        "priority": 4,
+        "location": 2
+      },
+      {
+        "id": "ORDER-06",
+        "sku": "LEAF",
+        "quantity": 11,
+        "due": 1,
+        "priority": 2,
+        "location": 2
+      },
+      {
+        "id": "ORDER-12",
+        "sku": "CITRUS",
+        "quantity": 9,
+        "due": 2,
+        "priority": 5,
+        "location": 3
+      },
+      {
+        "id": "ORDER-07",
+        "sku": "ROOT",
+        "quantity": 8,
+        "due": 2,
+        "priority": 4,
+        "location": 3
+      },
+      {
+        "id": "ORDER-01",
+        "sku": "APPLE",
+        "quantity": 11,
+        "due": 2,
+        "priority": 2,
+        "location": 2
+      },
+      {
+        "id": "ORDER-08",
+        "sku": "CITRUS",
+        "quantity": 9,
+        "due": 2,
+        "priority": 2,
+        "location": 4
+      },
+      {
+        "id": "ORDER-02",
+        "sku": "LEAF",
+        "quantity": 6,
+        "due": 3,
+        "priority": 4,
+        "location": 3
+      },
+      {
+        "id": "ORDER-05",
+        "sku": "APPLE",
+        "quantity": 9,
+        "due": 3,
+        "priority": 4,
+        "location": 1
+      },
+      {
+        "id": "ORDER-04",
+        "sku": "CITRUS",
+        "quantity": 6,
+        "due": 3,
+        "priority": 3,
+        "location": 0
+      },
+      {
+        "id": "ORDER-03",
+        "sku": "ROOT",
+        "quantity": 9,
+        "due": 4,
+        "priority": 4,
+        "location": 4
+      },
+      {
+        "id": "ORDER-09",
+        "sku": "APPLE",
+        "quantity": 6,
+        "due": 4,
+        "priority": 3,
+        "location": 0
+      },
+      {
+        "id": "ORDER-10",
+        "sku": "LEAF",
+        "quantity": 10,
+        "due": 5,
+        "priority": 3,
+        "location": 1
+      }
+    ],
+    "plans": [
+      {
+        "id": "plan-4b8bb2ee-31c",
+        "version": 1,
+        "digest": "530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32",
+        "body": {
+          "allocations": [
+            {
+              "lot": "LOT-01",
+              "order": "ORDER-05",
+              "quantity": 5,
+              "unit_cost": 4
+            },
+            {
+              "lot": "LOT-01",
+              "order": "ORDER-09",
+              "quantity": 6,
+              "unit_cost": 0
+            },
+            {
+              "lot": "LOT-02",
+              "order": "ORDER-10",
+              "quantity": 9,
+              "unit_cost": 0
+            },
+            {
+              "lot": "LOT-03",
+              "order": "ORDER-07",
+              "quantity": 3,
+              "unit_cost": 4
+            },
+            {
+              "lot": "LOT-03",
+              "order": "ORDER-11",
+              "quantity": 7,
+              "unit_cost": 2
+            },
+            {
+              "lot": "LOT-04",
+              "order": "ORDER-12",
+              "quantity": 4,
+              "unit_cost": 1
+            },
+            {
+              "lot": "LOT-05",
+              "order": "ORDER-01",
+              "quantity": 8,
+              "unit_cost": 6
+            },
+            {
+              "lot": "LOT-06",
+              "order": "ORDER-06",
+              "quantity": 4,
+              "unit_cost": 8
+            },
+            {
+              "lot": "LOT-07",
+              "order": "ORDER-07",
+              "quantity": 5,
+              "unit_cost": 6
+            },
+            {
+              "lot": "LOT-08",
+              "order": "ORDER-12",
+              "quantity": 4,
+              "unit_cost": 3
+            },
+            {
+              "lot": "LOT-09",
+              "order": "ORDER-01",
+              "quantity": 3,
+              "unit_cost": 7
+            },
+            {
+              "lot": "LOT-09",
+              "order": "ORDER-05",
+              "quantity": 4,
+              "unit_cost": 9
+            },
+            {
+              "lot": "LOT-10",
+              "order": "ORDER-02",
+              "quantity": 6,
+              "unit_cost": 3
+            },
+            {
+              "lot": "LOT-11",
+              "order": "ORDER-03",
+              "quantity": 9,
+              "unit_cost": 13
+            },
+            {
+              "lot": "LOT-12",
+              "order": "ORDER-04",
+              "quantity": 6,
+              "unit_cost": 6
+            },
+            {
+              "lot": "LOT-12",
+              "order": "ORDER-08",
+              "quantity": 4,
+              "unit_cost": 13
+            },
+            {
+              "lot": "LOT-12",
+              "order": "ORDER-12",
+              "quantity": 1,
+              "unit_cost": 10
+            }
+          ],
+          "inventory_version": 1,
+          "objective": 27462,
+          "served": 88,
+          "shortages": [
+            {
+              "due": 1,
+              "order": "ORDER-06",
+              "priority": 2,
+              "quantity": 7,
+              "sku": "LEAF"
+            },
+            {
+              "due": 2,
+              "order": "ORDER-08",
+              "priority": 2,
+              "quantity": 5,
+              "sku": "CITRUS"
+            },
+            {
+              "due": 5,
+              "order": "ORDER-10",
+              "priority": 3,
+              "quantity": 1,
+              "sku": "LEAF"
+            }
+          ]
+        },
+        "status": "CLOSED",
+        "review": "Synthetic QA: reviewed expiry, order priority, allocation quantities and shortages."
+      }
+    ],
+    "allocations": [
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 0,
+        "lot": "LOT-01",
+        "order_id": "ORDER-05",
+        "quantity": 5,
+        "status": "PICKED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 1,
+        "lot": "LOT-01",
+        "order_id": "ORDER-09",
+        "quantity": 6,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 2,
+        "lot": "LOT-02",
+        "order_id": "ORDER-10",
+        "quantity": 9,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 3,
+        "lot": "LOT-03",
+        "order_id": "ORDER-07",
+        "quantity": 3,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 4,
+        "lot": "LOT-03",
+        "order_id": "ORDER-11",
+        "quantity": 7,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 5,
+        "lot": "LOT-04",
+        "order_id": "ORDER-12",
+        "quantity": 4,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 6,
+        "lot": "LOT-05",
+        "order_id": "ORDER-01",
+        "quantity": 8,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 7,
+        "lot": "LOT-06",
+        "order_id": "ORDER-06",
+        "quantity": 4,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 8,
+        "lot": "LOT-07",
+        "order_id": "ORDER-07",
+        "quantity": 5,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 9,
+        "lot": "LOT-08",
+        "order_id": "ORDER-12",
+        "quantity": 4,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 10,
+        "lot": "LOT-09",
+        "order_id": "ORDER-01",
+        "quantity": 3,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 11,
+        "lot": "LOT-09",
+        "order_id": "ORDER-05",
+        "quantity": 4,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 12,
+        "lot": "LOT-10",
+        "order_id": "ORDER-02",
+        "quantity": 6,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 13,
+        "lot": "LOT-11",
+        "order_id": "ORDER-03",
+        "quantity": 9,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 14,
+        "lot": "LOT-12",
+        "order_id": "ORDER-04",
+        "quantity": 6,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 15,
+        "lot": "LOT-12",
+        "order_id": "ORDER-08",
+        "quantity": 4,
+        "status": "RELEASED"
+      },
+      {
+        "plan": "plan-4b8bb2ee-31c",
+        "line": 16,
+        "lot": "LOT-12",
+        "order_id": "ORDER-12",
+        "quantity": 1,
+        "status": "RELEASED"
+      }
+    ],
+    "purchases": [
+      {
+        "id": "purchase-f38ea2c4-6aa",
+        "body": {
+          "arrival": 1,
+          "expiry": 7,
+          "location": 0,
+          "quantity": 8,
+          "sku": "LEAF"
+        },
+        "status": "RECEIVED",
+        "review": "Synthetic QA: eight LEAF cases fill the two current shortages; validate arrival and expiry before receipt."
+      }
+    ],
+    "audit": [
+      {
+        "seq": 1,
+        "body": "{\"args\":{\"data\":{\"lots\":[{\"arrival\":0,\"expiry\":4,\"id\":\"LOT-01\",\"location\":0,\"quantity\":11,\"sku\":\"APPLE\"},{\"arrival\":0,\"expiry\":5,\"id\":\"LOT-02\",\"location\":1,\"quantity\":9,\"sku\":\"LEAF\"},{\"arrival\":0,\"expiry\":3,\"id\":\"LOT-03\",\"location\":2,\"quantity\":10,\"sku\":\"ROOT\"},{\"arrival\":0,\"expiry\":3,\"id\":\"LOT-04\",\"location\":3,\"quantity\":4,\"sku\":\"CITRUS\"},{\"arrival\":0,\"expiry\":2,\"id\":\"LOT-05\",\"location\":4,\"quantity\":8,\"sku\":\"APPLE\"},{\"arrival\":0,\"expiry\":3,\"id\":\"LOT-06\",\"location\":0,\"quantity\":4,\"sku\":\"LEAF\"},{\"arrival\":0,\"expiry\":2,\"id\":\"LOT-07\",\"location\":1,\"quantity\":8,\"sku\":\"ROOT\"},{\"arrival\":0,\"expiry\":2,\"id\":\"LOT-08\",\"location\":2,\"quantity\":4,\"sku\":\"CITRUS\"},{\"arrival\":2,\"expiry\":6,\"id\":\"LOT-09\",\"location\":3,\"quantity\":10,\"sku\":\"APPLE\"},{\"arrival\":2,\"expiry\":3,\"id\":\"LOT-10\",\"location\":4,\"quantity\":6,\"sku\":\"LEAF\"},{\"arrival\":2,\"expiry\":5,\"id\":\"LOT-11\",\"location\":0,\"quantity\":11,\"sku\":\"ROOT\"},{\"arrival\":2,\"expiry\":6,\"id\":\"LOT-12\",\"location\":1,\"quantity\":11,\"sku\":\"CITRUS\"}],\"orders\":[{\"due\":2,\"id\":\"ORDER-01\",\"location\":2,\"priority\":2,\"quantity\":11,\"sku\":\"APPLE\"},{\"due\":3,\"id\":\"ORDER-02\",\"location\":3,\"priority\":4,\"quantity\":6,\"sku\":\"LEAF\"},{\"due\":4,\"id\":\"ORDER-03\",\"location\":4,\"priority\":4,\"quantity\":9,\"sku\":\"ROOT\"},{\"due\":3,\"id\":\"ORDER-04\",\"location\":0,\"priority\":3,\"quantity\":6,\"sku\":\"CITRUS\"},{\"due\":3,\"id\":\"ORDER-05\",\"location\":1,\"priority\":4,\"quantity\":9,\"sku\":\"APPLE\"},{\"due\":1,\"id\":\"ORDER-06\",\"location\":2,\"priority\":2,\"quantity\":11,\"sku\":\"LEAF\"},{\"due\":2,\"id\":\"ORDER-07\",\"location\":3,\"priority\":4,\"quantity\":8,\"sku\":\"ROOT\"},{\"due\":2,\"id\":\"ORDER-08\",\"location\":4,\"priority\":2,\"quantity\":9,\"sku\":\"CITRUS\"},{\"due\":4,\"id\":\"ORDER-09\",\"location\":0,\"priority\":3,\"quantity\":6,\"sku\":\"APPLE\"},{\"due\":5,\"id\":\"ORDER-10\",\"location\":1,\"priority\":3,\"quantity\":10,\"sku\":\"LEAF\"},{\"due\":1,\"id\":\"ORDER-11\",\"location\":2,\"priority\":4,\"quantity\":7,\"sku\":\"ROOT\"},{\"due\":2,\"id\":\"ORDER-12\",\"location\":3,\"priority\":5,\"quantity\":9,\"sku\":\"CITRUS\"}]}},\"kind\":\"import\",\"operation\":\"op-73990cd8-b53\",\"result\":{\"lots\":12,\"orders\":12,\"version\":1}}",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "b3213bcec4ab8e04974ed5cf531b88d581bf9c877642db1636cfd4d80fbbf270"
+      },
+      {
+        "seq": 2,
+        "body": "{\"args\":{\"expected_version\":1,\"plan_id\":\"plan-4b8bb2ee-31c\"},\"kind\":\"plan\",\"operation\":\"op-263d7403-795\",\"result\":{\"allocations\":[{\"lot\":\"LOT-01\",\"order\":\"ORDER-05\",\"quantity\":5,\"unit_cost\":4},{\"lot\":\"LOT-01\",\"order\":\"ORDER-09\",\"quantity\":6,\"unit_cost\":0},{\"lot\":\"LOT-02\",\"order\":\"ORDER-10\",\"quantity\":9,\"unit_cost\":0},{\"lot\":\"LOT-03\",\"order\":\"ORDER-07\",\"quantity\":3,\"unit_cost\":4},{\"lot\":\"LOT-03\",\"order\":\"ORDER-11\",\"quantity\":7,\"unit_cost\":2},{\"lot\":\"LOT-04\",\"order\":\"ORDER-12\",\"quantity\":4,\"unit_cost\":1},{\"lot\":\"LOT-05\",\"order\":\"ORDER-01\",\"quantity\":8,\"unit_cost\":6},{\"lot\":\"LOT-06\",\"order\":\"ORDER-06\",\"quantity\":4,\"unit_cost\":8},{\"lot\":\"LOT-07\",\"order\":\"ORDER-07\",\"quantity\":5,\"unit_cost\":6},{\"lot\":\"LOT-08\",\"order\":\"ORDER-12\",\"quantity\":4,\"unit_cost\":3},{\"lot\":\"LOT-09\",\"order\":\"ORDER-01\",\"quantity\":3,\"unit_cost\":7},{\"lot\":\"LOT-09\",\"order\":\"ORDER-05\",\"quantity\":4,\"unit_cost\":9},{\"lot\":\"LOT-10\",\"order\":\"ORDER-02\",\"quantity\":6,\"unit_cost\":3},{\"lot\":\"LOT-11\",\"order\":\"ORDER-03\",\"quantity\":9,\"unit_cost\":13},{\"lot\":\"LOT-12\",\"order\":\"ORDER-04\",\"quantity\":6,\"unit_cost\":6},{\"lot\":\"LOT-12\",\"order\":\"ORDER-08\",\"quantity\":4,\"unit_cost\":13},{\"lot\":\"LOT-12\",\"order\":\"ORDER-12\",\"quantity\":1,\"unit_cost\":10}],\"digest\":\"530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32\",\"inventory_version\":1,\"objective\":27462,\"plan\":\"plan-4b8bb2ee-31c\",\"served\":88,\"shortages\":[{\"due\":1,\"order\":\"ORDER-06\",\"priority\":2,\"quantity\":7,\"sku\":\"LEAF\"},{\"due\":2,\"order\":\"ORDER-08\",\"priority\":2,\"quantity\":5,\"sku\":\"CITRUS\"},{\"due\":5,\"order\":\"ORDER-10\",\"priority\":3,\"quantity\":1,\"sku\":\"LEAF\"}]}}",
+        "previous": "b3213bcec4ab8e04974ed5cf531b88d581bf9c877642db1636cfd4d80fbbf270",
+        "hash": "69b6abeef33eb893e7dd5f2522b7e9d2c2203be73df008e6d5ed949533294061"
+      },
+      {
+        "seq": 3,
+        "body": "{\"args\":{\"note\":\"Synthetic QA: reviewed expiry, order priority, allocation quantities and shortages.\",\"plan_digest\":\"530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32\",\"plan_id\":\"plan-4b8bb2ee-31c\"},\"kind\":\"review\",\"operation\":\"op-db9d9815-8d0\",\"result\":{\"plan\":\"plan-4b8bb2ee-31c\",\"status\":\"REVIEWED\"}}",
+        "previous": "69b6abeef33eb893e7dd5f2522b7e9d2c2203be73df008e6d5ed949533294061",
+        "hash": "71209b9d47d757402563ca436c83188b3c3be427e1c5608f17d537e0909d7eca"
+      },
+      {
+        "seq": 4,
+        "body": "{\"args\":{\"plan_digest\":\"530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32\",\"plan_id\":\"plan-4b8bb2ee-31c\"},\"kind\":\"reserve\",\"operation\":\"op-d798d4a1-059\",\"result\":{\"lines\":17,\"plan\":\"plan-4b8bb2ee-31c\",\"status\":\"RESERVED\"}}",
+        "previous": "71209b9d47d757402563ca436c83188b3c3be427e1c5608f17d537e0909d7eca",
+        "hash": "4c6cb1fc82b1a7e7020512bbfa1c8904401477c9870ebf5421abc762ae492fdf"
+      },
+      {
+        "seq": 5,
+        "body": "{\"args\":{\"line\":0,\"plan_id\":\"plan-4b8bb2ee-31c\"},\"kind\":\"pick\",\"operation\":\"op-b909a3f1-f81\",\"result\":{\"line\":0,\"plan\":\"plan-4b8bb2ee-31c\",\"quantity\":5,\"status\":\"PICKING\"}}",
+        "previous": "4c6cb1fc82b1a7e7020512bbfa1c8904401477c9870ebf5421abc762ae492fdf",
+        "hash": "803b34ce614c06eabb6c0f920f2030ed1bfc111f4d7e80fa022f0523208c1877"
+      },
+      {
+        "seq": 6,
+        "body": "{\"args\":{\"lot_id\":\"LOT-01\",\"reason\":\"Synthetic QA supplier notice: preserve picked trace and block remaining lot.\"},\"kind\":\"recall\",\"operation\":\"op-f3195e40-051\",\"result\":{\"exposure\":[{\"line\":0,\"order_id\":\"ORDER-05\",\"plan\":\"plan-4b8bb2ee-31c\",\"quantity\":5,\"status\":\"PICKED\"},{\"line\":1,\"order_id\":\"ORDER-09\",\"plan\":\"plan-4b8bb2ee-31c\",\"quantity\":6,\"status\":\"RESERVED\"}],\"lot\":\"LOT-01\",\"reason\":\"Synthetic QA supplier notice: preserve picked trace and block remaining lot.\",\"status\":\"RECALLED\"}}",
+        "previous": "803b34ce614c06eabb6c0f920f2030ed1bfc111f4d7e80fa022f0523208c1877",
+        "hash": "41b470c0f85337317bf844fd64b70e25ef024071d43208bd8ec13e7b93cc46f1"
+      },
+      {
+        "seq": 7,
+        "body": "{\"args\":{\"note\":\"Release unpicked reservations after synthetic recall; preserve all picked quantities and history.\",\"plan_id\":\"plan-4b8bb2ee-31c\"},\"kind\":\"release\",\"operation\":\"op-6919e99b-5a6\",\"result\":{\"picked_preserved\":true,\"plan\":\"plan-4b8bb2ee-31c\",\"status\":\"CLOSED\"}}",
+        "previous": "41b470c0f85337317bf844fd64b70e25ef024071d43208bd8ec13e7b93cc46f1",
+        "hash": "396d15239202e9a1575042bb7dd437ede41b4db8e20a23b77caf4d225f6e1133"
+      },
+      {
+        "seq": 8,
+        "body": "{\"args\":{\"arrival\":1,\"expiry\":7,\"location\":0,\"purchase_id\":\"purchase-f38ea2c4-6aa\",\"quantity\":8,\"sku\":\"LEAF\"},\"kind\":\"purchase\",\"operation\":\"op-74772442-f1b\",\"result\":{\"arrival\":1,\"digest\":\"5414a5ca6f8f9a151cbbb6ee142a5906796650bd5cecd331ac360989d0f216ca\",\"expiry\":7,\"location\":0,\"purchase\":\"purchase-f38ea2c4-6aa\",\"quantity\":8,\"sku\":\"LEAF\",\"status\":\"PROPOSED\"}}",
+        "previous": "396d15239202e9a1575042bb7dd437ede41b4db8e20a23b77caf4d225f6e1133",
+        "hash": "8d0923d991c513b4407355621bf7fa1f3922e7f3b40dcc4c5d363ade823a535c"
+      },
+      {
+        "seq": 9,
+        "body": "{\"args\":{\"note\":\"Synthetic QA: eight LEAF cases fill the two current shortages; validate arrival and expiry before receipt.\",\"purchase_digest\":\"5414a5ca6f8f9a151cbbb6ee142a5906796650bd5cecd331ac360989d0f216ca\",\"purchase_id\":\"purchase-f38ea2c4-6aa\"},\"kind\":\"review_purchase\",\"operation\":\"op-2570c0f6-841\",\"result\":{\"purchase\":\"purchase-f38ea2c4-6aa\",\"status\":\"REVIEWED\"}}",
+        "previous": "8d0923d991c513b4407355621bf7fa1f3922e7f3b40dcc4c5d363ade823a535c",
+        "hash": "86194872cc7591fbc3d83ca07e61d00cab169eeb35b2ba9d5bcfdd34cd64dc4d"
+      },
+      {
+        "seq": 10,
+        "body": "{\"args\":{\"lot_id\":\"received-4982043b-c00\",\"purchase_id\":\"purchase-f38ea2c4-6aa\"},\"kind\":\"receive\",\"operation\":\"op-35976cc7-a85\",\"result\":{\"lot\":\"received-4982043b-c00\",\"purchase\":\"purchase-f38ea2c4-6aa\",\"status\":\"RECEIVED\"}}",
+        "previous": "86194872cc7591fbc3d83ca07e61d00cab169eeb35b2ba9d5bcfdd34cd64dc4d",
+        "hash": "f8d0822ba5a708956ccc148c7f3363d2449a9b373d6e4224e72eac3da90b1eb4"
+      }
+    ],
+    "receipts": 10,
+    "audit_head": "f8d0822ba5a708956ccc148c7f3363d2449a9b373d6e4224e72eac3da90b1eb4"
+  },
+  "agents": [
+    {
+      "id": "run-d92b32f4-e01",
+      "goal": "Use trace_lot for LOT-01 to explain picked recall exposure. Then finish with evidence citations. Do not recall, reserve or purchase anything.",
+      "inventory_version": 6,
+      "observations": [
+        {
+          "id": "E1",
+          "tool": "trace_lot",
+          "arguments": {
+            "lot_id": "LOT-01"
+          },
+          "result": {
+            "lot": {
+              "id": "LOT-01",
+              "sku": "APPLE",
+              "quantity": 11,
+              "arrival": 0,
+              "expiry": 4,
+              "location": 0,
+              "status": "RECALLED"
+            },
+            "exposure": [
+              {
+                "plan": "plan-4b8bb2ee-31c",
+                "line": 0,
+                "order_id": "ORDER-05",
+                "quantity": 5,
+                "status": "PICKED"
+              }
+            ],
+            "action": "Review exposure; no stock mutation performed"
+          },
+          "inventory_version": 6,
+          "result_digest": "d256755b88f004940a39a84a92562d9184566674d6dc0b96cbb0e3c71e790591"
+        }
+      ],
+      "decisions": [
+        {
+          "choice": {
+            "tool": "trace_lot",
+            "arguments": {
+              "lot_id": "LOT-01"
+            }
+          },
+          "provider": {
+            "generation_id": "gen_01M509ZCC1A536FXTRX5ETHF0K",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 592,
+              "completion_tokens": 1268,
+              "total_tokens": 1860,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 1248,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        },
+        {
+          "choice": {
+            "tool": "finish",
+            "arguments": {
+              "summary": "LOT-01 (SKU APPLE) is marked RECALLED with 11 units on hand. A picked order (ORDER-05) of 5 units exposes recalled stock, indicating recall exposure. No stock mutation was performed.",
+              "citations": [
+                "E1"
+              ]
+            }
+          },
+          "provider": {
+            "generation_id": "gen_01M50A10NMJJCEPPCBQ7YA5H6D",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 784,
+              "completion_tokens": 1156,
+              "total_tokens": 1940,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 1084,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        }
+      ],
+      "pending": {
+        "tool": "finish",
+        "arguments": {
+          "summary": "LOT-01 (SKU APPLE) is marked RECALLED with 11 units on hand. A picked order (ORDER-05) of 5 units exposes recalled stock, indicating recall exposure. No stock mutation was performed.",
+          "citations": [
+            "E1"
+          ]
+        }
+      },
+      "status": "REVIEWED_EVIDENCE",
+      "summary": {
+        "summary": "LOT-01 (SKU APPLE) is marked RECALLED with 11 units on hand. A picked order (ORDER-05) of 5 units exposes recalled stock, indicating recall exposure. No stock mutation was performed.",
+        "citations": [
+          "E1"
+        ]
+      },
+      "checkpoint_pending": [],
+      "provenance_boundary": "Restored journal metadata is user-editable; provider identity is not a signed attestation"
+    }
+  ],
+  "solution": {
+    "inventory_version": 6,
+    "allocations": [
+      {
+        "lot": "LOT-02",
+        "order": "ORDER-10",
+        "quantity": 9,
+        "unit_cost": 0
+      },
+      {
+        "lot": "LOT-03",
+        "order": "ORDER-07",
+        "quantity": 3,
+        "unit_cost": 4
+      },
+      {
+        "lot": "LOT-03",
+        "order": "ORDER-11",
+        "quantity": 7,
+        "unit_cost": 2
+      },
+      {
+        "lot": "LOT-04",
+        "order": "ORDER-12",
+        "quantity": 4,
+        "unit_cost": 1
+      },
+      {
+        "lot": "LOT-05",
+        "order": "ORDER-01",
+        "quantity": 8,
+        "unit_cost": 6
+      },
+      {
+        "lot": "LOT-06",
+        "order": "ORDER-06",
+        "quantity": 4,
+        "unit_cost": 8
+      },
+      {
+        "lot": "LOT-07",
+        "order": "ORDER-07",
+        "quantity": 5,
+        "unit_cost": 6
+      },
+      {
+        "lot": "LOT-08",
+        "order": "ORDER-12",
+        "quantity": 4,
+        "unit_cost": 3
+      },
+      {
+        "lot": "LOT-09",
+        "order": "ORDER-05",
+        "quantity": 4,
+        "unit_cost": 9
+      },
+      {
+        "lot": "LOT-09",
+        "order": "ORDER-09",
+        "quantity": 6,
+        "unit_cost": 11
+      },
+      {
+        "lot": "LOT-10",
+        "order": "ORDER-02",
+        "quantity": 6,
+        "unit_cost": 3
+      },
+      {
+        "lot": "LOT-11",
+        "order": "ORDER-03",
+        "quantity": 9,
+        "unit_cost": 13
+      },
+      {
+        "lot": "LOT-12",
+        "order": "ORDER-04",
+        "quantity": 6,
+        "unit_cost": 6
+      },
+      {
+        "lot": "LOT-12",
+        "order": "ORDER-08",
+        "quantity": 4,
+        "unit_cost": 13
+      },
+      {
+        "lot": "LOT-12",
+        "order": "ORDER-12",
+        "quantity": 1,
+        "unit_cost": 10
+      },
+      {
+        "lot": "received-4982043b-c00",
+        "order": "ORDER-06",
+        "quantity": 7,
+        "unit_cost": 12
+      },
+      {
+        "lot": "received-4982043b-c00",
+        "order": "ORDER-10",
+        "quantity": 1,
+        "unit_cost": 5
+      }
+    ],
+    "shortages": [
+      {
+        "order": "ORDER-01",
+        "sku": "APPLE",
+        "quantity": 3,
+        "due": 2,
+        "priority": 2
+      },
+      {
+        "order": "ORDER-08",
+        "sku": "CITRUS",
+        "quantity": 5,
+        "due": 2,
+        "priority": 2
+      }
+    ],
+    "objective": 16576,
+    "served": 88,
+    "metrics": {
+      "elapsed_ms": 1.741,
+      "nodes": 26,
+      "directed_arcs": 126,
+      "augmentations": 20,
+      "relaxations": 9193
+    }
+  },
+  "boundary": "Single-user browser journal; request-local SQLite, no shared hosted database"
+}

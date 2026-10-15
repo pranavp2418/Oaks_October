@@ -28,3 +28,11 @@ Hosted build failure: included requirements.lock parse failed in Vercel. Flatten
 | Hosted/browser/release | Partial | BLOCKED | Real provider account verification rejected; full browser/mobile/eval pending |
 
 VERDICT: INCOMPLETE. Existing verified model access, three-question live pilot, full desktop/mobile and browser-persistence acceptance, final review and release are unresolved. No completion ordinal or portfolio entry is granted.
+
+## Later verification checkpoint (supersedes the provider/browser status above)
+
+The provider account gate cleared. Three preregistered real hosted cases passed with eight zero-cost generations; two additional browser generations passed a checkpoint/interruption/continue/review workflow. Fresh checks passed 20 Python groups, four JavaScript tests, clean pinned installs and the production build. CI38777359033 passed at functional source bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb. Vercel deployment dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz completed its build and served byte-matching assets and the actual Python core.
+
+Desktop stock review/reservation rollback/retry/pick/reload/recall/release/replenishment, 390px real model review/recovery, eight-connection IndexedDB contention, actual stale-tab rejection/reopen, malformed/valid restore and both exported files passed. QA_REPORT.md records exact observations, file hashes and screenshots. Native review found a fifth concrete issue: a hidden-tab interruption contaminated visible-frame samples. A failing 5000ms regression reproduced it before repair; the repair and independent fix-only reread passed. No test was weakened or deleted.
+
+The same browser produced approximately one-second slow-tail frame gaps. This is retained, not relabelled as a performance pass. Physical touch, OS reduced-motion emulation, a complete focus-cycle/screen-reader audit, trusted runtime scanners and an authenticated outside-model review remain unavailable/unverified as stated in QA_REPORT.md. The functional delivery is verified with those concerns. The daily trio and portfolio integration remain incomplete; no portfolio entry has been added.

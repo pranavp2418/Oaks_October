@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "journal": [
+    {
+      "id": "op-73990cd8-b53",
+      "kind": "import",
+      "args": {
+        "data": {
+          "lots": [
+            {
+              "id": "LOT-01",
+              "sku": "APPLE",
+              "quantity": 11,
+              "arrival": 0,
+              "expiry": 4,
+              "location": 0
+            },
+            {
+              "id": "LOT-02",
+              "sku": "LEAF",
+              "quantity": 9,
+              "arrival": 0,
+              "expiry": 5,
+              "location": 1
+            },
+            {
+              "id": "LOT-03",
+              "sku": "ROOT",
+              "quantity": 10,
+              "arrival": 0,
+              "expiry": 3,
+              "location": 2
+            },
+            {
+              "id": "LOT-04",
+              "sku": "CITRUS",
+              "quantity": 4,
+              "arrival": 0,
+              "expiry": 3,
+              "location": 3
+            },
+            {
+              "id": "LOT-05",
+              "sku": "APPLE",
+              "quantity": 8,
+              "arrival": 0,
+              "expiry": 2,
+              "location": 4
+            },
+            {
+              "id": "LOT-06",
+              "sku": "LEAF",
+              "quantity": 4,
+              "arrival": 0,
+              "expiry": 3,
+              "location": 0
+            },
+            {
+              "id": "LOT-07",
+              "sku": "ROOT",
+              "quantity": 8,
+              "arrival": 0,
+              "expiry": 2,
+              "location": 1
+            },
+            {
+              "id": "LOT-08",
+              "sku": "CITRUS",
+              "quantity": 4,
+              "arrival": 0,
+              "expiry": 2,
+              "location": 2
+            },
+            {
+              "id": "LOT-09",
+              "sku": "APPLE",
+              "quantity": 10,
+              "arrival": 2,
+              "expiry": 6,
+              "location": 3
+            },
+            {
+              "id": "LOT-10",
+              "sku": "LEAF",
+              "quantity": 6,
+              "arrival": 2,
+              "expiry": 3,
+              "location": 4
+            },
+            {
+              "id": "LOT-11",
+              "sku": "ROOT",
+              "quantity": 11,
+              "arrival": 2,
+              "expiry": 5,
+              "location": 0
+            },
+            {
+              "id": "LOT-12",
+              "sku": "CITRUS",
+              "quantity": 11,
+              "arrival": 2,
+              "expiry": 6,
+              "location": 1
+            }
+          ],
+          "orders": [
+            {
+              "id": "ORDER-01",
+              "sku": "APPLE",
+              "quantity": 11,
+              "due": 2,
+              "priority": 2,
+              "location": 2
+            },
+            {
+              "id": "ORDER-02",
+              "sku": "LEAF",
+              "quantity": 6,
+              "due": 3,
+              "priority": 4,
+              "location": 3
+            },
+            {
+              "id": "ORDER-03",
+              "sku": "ROOT",
+              "quantity": 9,
+              "due": 4,
+              "priority": 4,
+              "location": 4
+            },
+            {
+              "id": "ORDER-04",
+              "sku": "CITRUS",
+              "quantity": 6,
+              "due": 3,
+              "priority": 3,
+              "location": 0
+            },
+            {
+              "id": "ORDER-05",
+              "sku": "APPLE",
+              "quantity": 9,
+              "due": 3,
+              "priority": 4,
+              "location": 1
+            },
+            {
+              "id": "ORDER-06",
+              "sku": "LEAF",
+              "quantity": 11,
+              "due": 1,
+              "priority": 2,
+              "location": 2
+            },
+            {
+              "id": "ORDER-07",
+              "sku": "ROOT",
+              "quantity": 8,
+              "due": 2,
+              "priority": 4,
+              "location": 3
+            },
+            {
+              "id": "ORDER-08",
+              "sku": "CITRUS",
+              "quantity": 9,
+              "due": 2,
+              "priority": 2,
+              "location": 4
+            },
+            {
+              "id": "ORDER-09",
+              "sku": "APPLE",
+              "quantity": 6,
+              "due": 4,
+              "priority": 3,
+              "location": 0
+            },
+            {
+              "id": "ORDER-10",
+              "sku": "LEAF",
+              "quantity": 10,
+              "due": 5,
+              "priority": 3,
+              "location": 1
+            },
+            {
+              "id": "ORDER-11",
+              "sku": "ROOT",
+              "quantity": 7,
+              "due": 1,
+              "priority": 4,
+              "location": 2
+            },
+            {
+              "id": "ORDER-12",
+              "sku": "CITRUS",
+              "quantity": 9,
+              "due": 2,
+              "priority": 5,
+              "location": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "op-263d7403-795",
+      "kind": "plan",
+      "args": {
+        "plan_id": "plan-4b8bb2ee-31c",
+        "expected_version": 1
+      }
+    },
+    {
+      "id": "op-db9d9815-8d0",
+      "kind": "review",
+      "args": {
+        "plan_id": "plan-4b8bb2ee-31c",
+        "plan_digest": "530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32",
+        "note": "Synthetic QA: reviewed expiry, order priority, allocation quantities and shortages."
+      }
+    },
+    {
+      "id": "op-d798d4a1-059",
+      "kind": "reserve",
+      "args": {
+        "plan_id": "plan-4b8bb2ee-31c",
+        "plan_digest": "530e64bca2fd98e514dc4cfb179b9542877e69a40d804fa24f3336231f382c32"
+      }
+    },
+    {
+      "id": "op-b909a3f1-f81",
+      "kind": "pick",
+      "args": {
+        "plan_id": "plan-4b8bb2ee-31c",
+        "line": 0
+      }
+    },
+    {
+      "id": "op-f3195e40-051",
+      "kind": "recall",
+      "args": {
+        "lot_id": "LOT-01",
+        "reason": "Synthetic QA supplier notice: preserve picked trace and block remaining lot."
+      }
+    },
+    {
+      "id": "op-6919e99b-5a6",
+      "kind": "release",
+      "args": {
+        "plan_id": "plan-4b8bb2ee-31c",
+        "note": "Release unpicked reservations after synthetic recall; preserve all picked quantities and history."
+      }
+    },
+    {
+      "id": "op-74772442-f1b",
+      "kind": "purchase",
+      "args": {
+        "purchase_id": "purchase-f38ea2c4-6aa",
+        "sku": "LEAF",
+        "quantity": 8,
+        "arrival": 1,
+        "expiry": 7,
+        "location": 0
+      }
+    },
+    {
+      "id": "op-2570c0f6-841",
+      "kind": "review_purchase",
+      "args": {
+        "purchase_id": "purchase-f38ea2c4-6aa",
+        "purchase_digest": "5414a5ca6f8f9a151cbbb6ee142a5906796650bd5cecd331ac360989d0f216ca",
+        "note": "Synthetic QA: eight LEAF cases fill the two current shortages; validate arrival and expiry before receipt."
+      }
+    },
+    {
+      "id": "op-35976cc7-a85",
+      "kind": "receive",
+      "args": {
+        "purchase_id": "purchase-f38ea2c4-6aa",
+        "lot_id": "received-4982043b-c00"
+      }
+    },
+    {
+      "id": "op-018c3f79-bfb",
+      "kind": "agent_start",
+      "args": {
+        "run_id": "run-d92b32f4-e01",
+        "goal": "Use trace_lot for LOT-01 to explain picked recall exposure. Then finish with evidence citations. Do not recall, reserve or purchase anything."
+      },
+      "decision": {
+        "choice": {
+          "tool": "trace_lot",
+          "arguments": {
+            "lot_id": "LOT-01"
+          }
+        },
+        "provider": {
+          "generation_id": "gen_01M509ZCC1A536FXTRX5ETHF0K",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 592,
+            "completion_tokens": 1268,
+            "total_tokens": 1860,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1248,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "provider_retention": "Free provider may retain synthetic prompts/responses"
+        }
+      }
+    },
+    {
+      "id": "op-97d699c6-9f6",
+      "kind": "agent_continue",
+      "args": {
+        "run_id": "run-d92b32f4-e01"
+      },
+      "decision": {
+        "choice": {
+          "tool": "finish",
+          "arguments": {
+            "summary": "LOT-01 (SKU APPLE) is marked RECALLED with 11 units on hand. A picked order (ORDER-05) of 5 units exposes recalled stock, indicating recall exposure. No stock mutation was performed.",
+            "citations": [
+              "E1"
+            ]
+          }
+        },
+        "provider": {
+          "generation_id": "gen_01M50A10NMJJCEPPCBQ7YA5H6D",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 784,
+            "completion_tokens": 1156,
+            "total_tokens": 1940,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1084,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "provider_retention": "Free provider may retain synthetic prompts/responses"
+        }
+      }
+    },
+    {
+      "id": "op-934ab32b-100",
+      "kind": "agent_review",
+      "args": {
+        "run_id": "run-d92b32f4-e01"
+      }
+    }
+  ]
+}

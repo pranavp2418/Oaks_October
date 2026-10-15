@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
   "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
   "skills": [
@@ -9,24 +9,58 @@
       "aliases": [
         "DeBugging"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/tests/verification.regression-1.test.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/ENGINEERING_REVIEW.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/tests/verification.regression-1.test.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/ENGINEERING_REVIEW.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Integration testing",
       "aliases": [
         "Integration Testing"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Query optimization",
@@ -59,12 +93,29 @@
         "dATABASES",
         "SQL"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Infrastructure",
@@ -181,24 +232,58 @@
       "aliases": [
         "LLMs"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Generative AI",
       "aliases": [
         "GenAI"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Predictive analysis",
@@ -217,24 +302,58 @@
       "aliases": [
         "Data Transformation"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_workspace.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_workspace.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "JSON",
       "aliases": [
         "JSON"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_workspace.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_workspace.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "APIs",
@@ -242,12 +361,29 @@
         "API",
         "REST"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/api/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/api/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Apache Kafka",
@@ -412,12 +548,29 @@
       "aliases": [
         "React"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/transition-panel.tsx"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/transition-panel.tsx"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Front-end development",
@@ -544,36 +697,89 @@
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/types.ts"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/types.ts"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "JavaScript",
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/journal.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/src/verification.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/journal.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/src/verification.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Python",
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "C# / ASP.NET Core / EF Core",
@@ -652,24 +858,60 @@
       "aliases": [
         "current primary hiring evidence"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "AI evaluation / model lifecycle",
       "aliases": [
         "current primary hiring evidence"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/EVAL_PREREG.md",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/EVAL_PREREG.md",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "RAG",
@@ -692,12 +934,29 @@
         "LangGraph"
       ],
       "purpose": "Stateful workflow graphs with checkpoints, recoverable execution and human review where the project calls for them.",
-      "status": "coverage_requested_evidence_pending",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "LangChain",
@@ -706,12 +965,29 @@
         "LangChain"
       ],
       "purpose": "Actual retrieval/model/tool integrations with evaluations and documented runtime limits.",
-      "status": "coverage_requested_evidence_pending",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "Node.js",
@@ -733,12 +1009,29 @@
         "earlier retained profile"
       ],
       "purpose": "Previously retained relational database; explicit matrix row.",
-      "status": "coverage_requested_evidence_pending",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        }
+      ]
     },
     {
       "skill": "MVC",

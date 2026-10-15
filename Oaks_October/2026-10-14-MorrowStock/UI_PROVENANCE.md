@@ -18,7 +18,7 @@ States implemented: opening, empty import, working, success receipt, invalid inp
 
 Initial static design risk scores (not browser-verified): information hierarchy 8/10, state completeness 7/10, journey continuity 7/10, domain specificity 8/10, token coherence 8/10, responsive/accessibility 6/10. Findings addressed in source: plan history was unreachable; modal errors were outside the inert boundary. Final visual/accessibility scores remain unassigned until actual desktop/mobile QA. No invented 10/10 or automated accessibility certification.
 
-Browser evidence, measured frame/input costs and complete keyboard/contrast QA are pending, not passed. gstack's local Chromium download failed; the permitted cloud browser will be the explicit substitute. Native scanner/security runtime checks are unavailable without trusted local Docker. These limitations do not count as a successful QA/security clearance.
+Later actual browser evidence is recorded in [QA_REPORT.md](QA_REPORT.md), with desktop and 390px screenshots under `runs/evidence/morrowstock-release-20261015/` at the repository root. Main operational/recovery/export flows, selected keyboard actions, dropdown contrast and document overflow were checked using the permitted cloud browser instead of unavailable gstack Chromium. The visible-frame sample had approximately one-second tail gaps; representative input timing, physical touch, OS reduced-motion emulation and a complete assistive-technology/focus-cycle audit are not passed. No final visual/accessibility score or performance certification is assigned. Native scanner/security runtime checks remain unavailable without trusted local Docker. Functional observations do not erase these limitations.
 
 ## Motion Primitives MIT notice
 

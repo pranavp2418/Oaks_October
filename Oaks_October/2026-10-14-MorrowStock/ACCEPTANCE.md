@@ -31,7 +31,7 @@ Core/unit, exhaustive differential, SQLite recovery/concurrency, API invalid/rep
 
 ## Art direction (before UI implementation)
 
-Audience: grocery inventory operators. A produce-market dispatch ledger: warm limestone paper, deep olive ink, tomato-red exceptions and crate-yellow selection. Use a wide allocation ribbon and compact lot/order rows, not a dashboard card-grid hero. System serif editorial headings and system sans operational labels; 16px body, 12px uppercase labels, 24/40/64px heading scale; 8px spacing base, 12-column desktop grid and one-column mobile. Native controls remain high contrast. Motion: 180ms opacity/8px transform between workbench panels, 240ms reservation-route emphasis, immediate error feedback; reduced-motion removes transforms. Motion Primitives provenance, actual palette exploration/export, applicable Haikei use, screenshots and performance evidence are release requirements, still pending.
+Audience: grocery inventory operators. A produce-market dispatch ledger: warm limestone paper, deep olive ink, tomato-red exceptions and crate-yellow selection. Use a wide allocation ribbon and compact lot/order rows, not a dashboard card-grid hero. System serif editorial headings and system sans operational labels; 16px body, 12px uppercase labels, 24/40/64px heading scale; 8px spacing base, 12-column desktop grid and one-column mobile. Native controls remain high contrast. Motion: 180ms opacity/8px transform between workbench panels, 240ms reservation-route emphasis, immediate error feedback; reduced-motion removes transforms. Actual component/asset/palette provenance is recorded in UI_PROVENANCE.md; desktop/mobile captures and measured performance limitations are recorded in QA_REPORT.md.
 
 ## Engineering review findings and dispositions
 
@@ -41,10 +41,12 @@ Scope fixed by the user's build brief and six-capability standard; no feature cu
 
 | Axis | Status | Required receipt |
 | --- | --- | --- |
-| Custom core | Pending | Exhaustive allocation oracle and conservation tests |
-| Persistence | Pending | SQLite reopen, rollback and concurrent receipt race |
-| Integrations | Pending | Real API, LangChain tools, LangGraph checkpoints, provider request |
-| Recovery/security | Pending | Stale approval, conflicting receipt, precommit fault, recall guards |
-| Evaluation/performance | Pending | Independent oracle and reproducible benchmark |
-| Operator workflow/UI | Pending | Main desktop/mobile flow, keyboard/reduced-motion, export |
-| Release | Pending | Clean build, sequential source push, source-matched live checks |
+| Custom core | Passed | core.py; tests/test_core.py: 400 independent exhaustive cases, conservation and feasibility checks |
+| Persistence | Passed within stated boundary | Real SQLite WAL reopen, six-process receipt race and killed-writer recovery; actual browser eight-connection CAS and stale-tab rejection/reopen |
+| Integrations | Passed | Real HTTP/CLI, LangChain tools, LangGraph SQLite checkpoint reopen; three hosted model pilot cases/eight real generations plus two browser generations |
+| Recovery/security | Passed scoped contracts; security assessment partial | Stale approval, conflicting receipts, precommit rollback, recall guards, 24 rejected unsafe/malformed choices and checkpoint retry; unavailable scanners are not clearance |
+| Evaluation/performance | Core evaluation passed; UI timing concern retained | benchmark.py: seed141022, 3 warmups/25 repetitions, exact and feasible-greedy baseline; visible cloud frame sample had approximately one-second tail gaps, not a performance pass |
+| Operator workflow/UI | Main desktop/390px and keyboard/export flows passed; audit limits retained | QA_REPORT.md and saved screenshots; real review/reserve/pick/recall/replenish/agent/recovery/export/restore; reduced-motion source implemented, OS preference emulation and physical touch testing unavailable |
+| Release | Web delivery verified; portfolio held | Clean installs/build, CI38777359033, pushed functional source bf936f0, source-matched deployment dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz and actual public workflows; portfolio awaits all three |
+
+These are bounded evidence dispositions, not claims of physical-mobile performance, a complete assistive-technology audit, prompt-injection immunity or security certification. The daily trio remains incomplete. See [release verification](QA_REPORT.md) for exact commands, receipts and unresolved UI timing evidence.
