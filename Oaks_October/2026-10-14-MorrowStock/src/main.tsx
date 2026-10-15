@@ -5,6 +5,7 @@ import { TransitionPanel } from "./transition-panel";
 import { openStore, read, save, empty } from "./journal.mjs";
 import { sample } from "./sample";
 import { resolveSku } from "./selection.mjs";
+import { PerformanceEvidence } from "./performance-evidence";
 import type { Result, Workspace } from "./types";
 import "./style.css";
 
@@ -70,12 +71,14 @@ function App() {
     [location, setLocation] = useState(0),
     [editor, setEditor] = useState<"dataset" | "workspace" | null>(null),
     [input, setInput] = useState(""),
-    [storageAvailable, setStorageAvailable] = useState(false);
+    [storageAvailable, setStorageAvailable] = useState(false),
+    [manualReducedMotion, setManualReducedMotion] = useState(false);
   const db = useRef<any>(null),
     locked = useRef(false),
     file = useRef<HTMLInputElement>(null),
     editorRef = useRef<HTMLDialogElement>(null),
-    reduceMotion = useReducedMotion();
+    preferredReducedMotion = useReducedMotion();
+  const reduceMotion = manualReducedMotion || preferredReducedMotion;
   useEffect(() => {
     let live = true;
     (async () => {
@@ -226,7 +229,7 @@ function App() {
     setEditor(mode);
   }
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig reducedMotion={reduceMotion ? "always" : "user"}>
       <div className="shell">
         <aside className="rail">
           <a
@@ -398,17 +401,17 @@ function App() {
                     role="img"
                     aria-label={`${free} free, ${reserved} reserved, ${picked} picked of ${total} cases`}
                   >
-                    <motion.span
+                    <span
                       className="free"
-                      animate={{ width: `${(free / total) * 100}%` }}
+                      style={{ width: `${(free / total) * 100}%` }}
                     />
-                    <motion.span
+                    <span
                       className="reserved"
-                      animate={{ width: `${(reserved / total) * 100}%` }}
+                      style={{ width: `${(reserved / total) * 100}%` }}
                     />
-                    <motion.span
+                    <span
                       className="picked"
-                      animate={{ width: `${(picked / total) * 100}%` }}
+                      style={{ width: `${(picked / total) * 100}%` }}
                     />
                   </div>
                   <div className="legend">
@@ -1229,6 +1232,8 @@ function App() {
               </TransitionPanel>
             </>
           )}
+          <label className="check"><input type="checkbox" checked={manualReducedMotion} onChange={e=>setManualReducedMotion(e.target.checked)}/>Reduce motion</label>
+          <PerformanceEvidence/>
           <footer>
             <span>MorrowStock / synthetic inventory workbench</span>
             <span>
