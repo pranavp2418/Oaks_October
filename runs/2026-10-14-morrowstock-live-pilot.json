@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-15T17:20:27.582776+00:00",
+  "source_core_commit": "b000b0df40899bf011c420a6027a2cccd33074d3",
+  "base_url": "https://morrowstock-20261014.vercel.app",
+  "command": "python live_pilot.py https://morrowstock-20261014.vercel.app",
+  "exit_code": 0,
+  "kind": "real_hosted_small_integration_pilot_not_held_out",
+  "passed": true,
+  "model": "nvidia/nemotron-3.5-lightning-free",
+  "catalog_input_price": "0",
+  "catalog_output_price": "0",
+  "cost_reported_total": 0,
+  "cases": [
+    {
+      "label": "shortage", "passed": true,
+      "tools": ["inspect_inventory", "optimize_allocation"],
+      "http_statuses": [200, 200, 200],
+      "elapsed_ms": [13621.23, 13369.46, 7009.4],
+      "generation_ids": ["gen_01M50992VCK0NJ4FY77JKA1WXM", "gen_01M5099P3YZHCCK13WJ5A03S8X", "gen_01M5099TQV1KRVMAE8JTK8XT5E"],
+      "total_tokens": [2121, 1038, 1718],
+      "tool_evidence": {"served": 10, "shortage_order": "ROOT-LOW", "shortage_cases": 2, "objective": 2034},
+      "citations": ["E1", "E2"], "final_status": "REVIEWED_EVIDENCE", "replay_equal": true, "stock_unchanged": true
+    },
+    {
+      "label": "replenishment", "passed": true,
+      "tools": ["inspect_inventory", "propose_replenishment"],
+      "http_statuses": [200, 200, 200],
+      "elapsed_ms": [9433.63, 5395.12, 9102.37],
+      "generation_ids": ["gen_01M509AEB4RFHKEN4T44NWM6K8", "gen_01M509AQ4M2AHKXT5CXD5MZXX8", "gen_01M509AZ9VXYH14Y9Q7AE5FY0N"],
+      "total_tokens": [2155, 1208, 1372],
+      "tool_evidence": {"suggested_cases": {"ROOT": 2}, "action": "Operator review and a separate purchase proposal are required"},
+      "citations": ["E1", "E2"], "final_status": "REVIEWED_EVIDENCE", "replay_equal": true, "stock_unchanged": true
+    },
+    {
+      "label": "exposure", "passed": true,
+      "tools": ["trace_lot"], "http_statuses": [200, 200], "elapsed_ms": [11990.71, 7923.57],
+      "generation_ids": ["gen_01M509BQHGT70Y9RKEDFEFNZV6", "gen_01M509C14KAB08P0CFR3RCCRTF"],
+      "total_tokens": [1981, 1887],
+      "tool_evidence": {"lot": "ROOT-EARLY", "lot_status": "ACTIVE", "exposure": []},
+      "citations": ["E1"], "final_status": "REVIEWED_EVIDENCE", "replay_equal": true, "stock_unchanged": true
+    }
+  ],
+  "limitations": [
+    "Three development-visible synthetic cases are integration evidence, not a held-out accuracy score.",
+    "The scorer checks tool relevance, receipt metadata, budget, review, replay and stock invariance; it does not prove prose factuality.",
+    "The replenishment summary mistyped one high-priority order identifier as ROOT-_HIGH; correct structured tool data remains inspectable and authoritative.",
+    "No reservation, purchase, recall or picking action was executed by model tools.",
+    "Provider may retain synthetic prompts and responses; no real customer inventory sent.",
+    "Earlier HTTP403 occurred before verification propagated; these later eight successful calls supersede that provider blocker, not the remaining browser/release gates."
+  ]
+}
