@@ -1,18 +1,73 @@
 {
   "date": "2026-10-14",
-  "last_updated_at": "2026-10-15T15:07:59Z",
-  "status": "requirements_recorded_not_implemented",
+  "last_updated_at": "2026-10-15T16:04:00Z",
+  "status": "implementation_in_progress",
+  "owner": "codex-resume-20261015",
+  "lease_expires_at": "2026-10-15T18:04:00Z",
   "target": 3,
   "completed_projects": 0,
-  "projects": [],
+  "projects": [
+    {
+      "title": "MorrowStock",
+      "path": "Oaks_October/2026-10-14-MorrowStock",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "React"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 22,
+      "stage": "local_core_api_cli_and_clean_build_passed_live_agent_gate_pending",
+      "acceptance": "Oaks_October/2026-10-14-MorrowStock/ACCEPTANCE.md",
+      "completed": false,
+      "verification": {
+        "python_test_groups": 20,
+        "javascript_tests": 2,
+        "independent_allocation_oracles": 400,
+        "adversarial_tool_choices": 24,
+        "sqlite_concurrent_processes": 6,
+        "clean_python_install": "passed /tmp/morrowstock-clean requirements.lock",
+        "clean_node_install": "passed npm ci --ignore-scripts",
+        "production_build": "passed tsc + Vite",
+        "provider_live": "not_run",
+        "browser": "not_run",
+        "portfolio": "withheld_until_all_three_delivery_checks_pass"
+      },
+      "vercel_project_id": "prj_lpAwyc4mHeLwXhrIWfgGv0fZUZVv",
+      "source_push": "checkpoint_pending_not_completed_release"
+    }
+  ],
   "product_direction": "Three distinct agent products; not development-worker delegation",
-  "required_stack_split": {"resume": 2, "new": 1},
+  "required_stack_split": {
+    "resume": 2,
+    "new": 1
+  },
   "required_private_hiring_opportunities": 2,
   "planned_delivery_mode": "web_deployed",
-  "planned_ordinals": [22, 23, 24],
+  "planned_ordinals": [
+    22,
+    23,
+    24
+  ],
   "ordinal_note": "Provisional until earlier completed projects are reconciled; not completion claims",
-  "next_stage": "Research and challenge distinct agent concepts, define acceptance contracts, verify runtime and persistence delivery paths before implementation",
-  "remaining": ["Ideation and private primary-source research", "Architecture and acceptance contracts", "Implementation", "Core/integration/failure and clean-build verification", "Sequential source pushes", "Live deployment and browser verification", "Portfolio/archive/country integration"],
+  "next_stage": "Push explicit incomplete implementation checkpoint, verify a source-matched diagnostic deployment and actual zero-price model access, then desktop/mobile workflows; finish remaining five agent products",
+  "remaining": [
+    "Ideation and private primary-source research",
+    "Architecture and acceptance contracts",
+    "Implementation",
+    "Core/integration/failure and clean-build verification",
+    "Sequential source pushes",
+    "Live deployment and browser verification",
+    "Portfolio/archive/country integration"
+  ],
   "external_blocker": null,
-  "limitations": ["No projects for this date have been implemented or completed; recording a requirement is not execution evidence", "No active lease or ongoing execution is asserted by this record"]
+  "limitations": [
+    "No October 14 project is complete; MorrowStock local core/API/CLI/clean-build checks pass but live model/browser/release gates remain",
+    "Provider fixtures do not establish real model access",
+    "Lease records ownership only, not proof of continuous execution"
+  ]
 }

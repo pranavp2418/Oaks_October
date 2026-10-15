@@ -1,0 +1,31 @@
+# Presentation provenance and review
+
+Before implementation, `ACCEPTANCE.md` fixed the operator audience, allocation-led grid, palette roles, hierarchy and reduced-motion behavior. This is an OPERATE workbench: the first useful view is stock conservation, current allocation and operator sign-off, not a marketing hero or a chat box.
+
+## Actual tool and asset use
+
+- Motion Primitives: `src/transition-panel.tsx` adapts the actual MIT TransitionPanel component by ibelick, originally retrieved from https://github.com/ibelick/motion-primitives/blob/main/components/core/transition-panel.tsx and reused from the collection's verified copy. Local class join replaces the framework-specific alias. `useReducedMotion` removes transforms/duration; MotionConfig honors reduced motion. Panel changes use 180ms opacity/8px movement with cubic-bezier(.22,.61,.36,1). Dependency pinned in package-lock.json. Component license notice below.
+- Realtime Colors: actually opened the palette at https://www.realtimecolors.com/?colors=252b1b-f5f2e8-4c6029-e3dfcc-a73a28&fonts=Georgia-Arial in the permitted browser and opened its CSS export. Exported text/background/primary/secondary/accent tokens are `#252b1b / #f5f2e8 / #4c6029 / #e3dfcc / #a73a28`, used in `src/style.css`. Its FAQ states palettes may be used commercially. No website code was copied. Typography was refined from that exploratory pairing to DM Sans operational labels and Fraunces headings, with system fallbacks.
+- Haikei: actually selected Stacked Steps in https://app.haikei.app, set endpoint colors `E3DFCC` and `4C6029`, and exported SVG. `public/stacked-steps-haikei.svg` SHA256 `ec2a83c94914686feb151d9f968d9a0ae64a664936e1b01dc0ef2007158edc9c`. Its paths are used in the original cover's inventory-layer illustration; they are not data or an algorithm visualization. Official https://haikei.app/pricing permits personal/client commercial use and editing without attribution, excluding generator resale. No generated raster/image-tool use is claimed.
+- `public/cover.svg`: original workflow illustration around those exported step paths. It explicitly labels synthetic inventory and does not invent measured performance or customer activity. Actual quantity bars in the app are independently authored, data-bound SVG/CSS, not Haikei output.
+- Fonts: Google Fonts-hosted DM Sans, Copyright 2014 The DM Sans Project Authors, https://github.com/google/fonts/blob/main/ofl/dmsans/OFL.txt (blob 4430b85ac62998e2edb914360f9ebdfe43f4deaa), and Fraunces, Copyright 2018 The Fraunces Project Authors, https://github.com/google/fonts/blob/main/ofl/fraunces/OFL.txt (blob 22fa7ce5733434d0c634f6e55116f410858e938c), both SIL OFL 1.1, read before incorporation. No font binary is redistributed in this folder. CSS uses font-display swap; CSP permits the exact Google CSS/font origins. A font-CDN request is made; inventory/model data is not sent to the font provider by application code.
+
+## Design-plan review dispositions
+
+Information hierarchy: numbered workbench navigation, stock equation ribbon, left allocation rows and right digest-bound sign-off. Progress and failures stay near the controls; exceptions use tomato red only with text, never color alone. Agent evidence uses sequential E identifiers and expandable exact tool results, not unexplained chat prose. The ledger uses readable 16px-equivalent text where appropriate and compact 10–13px metadata; mobile preserves labelled controls and horizontally scrollable data tables rather than shrinking controls below usable size.
+
+States implemented: opening, empty import, working, success receipt, invalid input, provider interruption, stale CAS, reviewed/draft/reserved/picking/blocked/closed, reviewed agent evidence, JSON inspection and export. Native dialog provides keyboard focus trapping/Escape; import feedback is inside the active dialog. Active-plan selection preserves access to older reservations when a new draft is created.
+
+Initial static design risk scores (not browser-verified): information hierarchy 8/10, state completeness 7/10, journey continuity 7/10, domain specificity 8/10, token coherence 8/10, responsive/accessibility 6/10. Findings addressed in source: plan history was unreachable; modal errors were outside the inert boundary. Final visual/accessibility scores remain unassigned until actual desktop/mobile QA. No invented 10/10 or automated accessibility certification.
+
+Browser evidence, measured frame/input costs and complete keyboard/contrast QA are pending, not passed. gstack's local Chromium download failed; the permitted cloud browser will be the explicit substitute. Native scanner/security runtime checks are unavailable without trusted local Docker. These limitations do not count as a successful QA/security clearance.
+
+## Motion Primitives MIT notice
+
+Copyright (c) ibelick
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
