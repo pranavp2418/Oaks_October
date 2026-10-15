@@ -1,0 +1,129 @@
+{
+  "recorded_at": "2026-10-15T16:23:38.878Z",
+  "project": "MorrowStock",
+  "completed": false,
+  "evidence": {
+    "core_commit": "b000b0df40899bf011c420a6027a2cccd33074d3",
+    "deployment_id": "dpl_GjA11LAdGA4qL7oJQGdQXnp1NG7S",
+    "immutable_deployment_url": "https://morrowstock-20261014-pwu59kiet-resnesmee.vercel.app/",
+    "verification_candidate_url": "https://morrowstock-20261014.vercel.app/",
+    "completion_claim": false,
+    "local": {
+      "python_test_groups": 20,
+      "javascript_tests": 3,
+      "independent_exhaustive_allocation_cases": 400,
+      "adversarial_tool_choices": 24,
+      "sqlite_racing_processes": 6,
+      "clean_python_install": "passed",
+      "clean_node_install": "passed",
+      "typescript_vite_build": "passed",
+      "sqlite_killed_writer_recovery": "passed",
+      "langgraph_sqlite_checkpoint_reopen": "passed"
+    },
+    "ci": {
+      "status": "success",
+      "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38766943221",
+      "commit": "b000b0df40899bf011c420a6027a2cccd33074d3"
+    },
+    "hosted": {
+      "service_get_status": 200,
+      "synthetic_import_status": 200,
+      "synthetic_allocation": {
+        "stock_cases": 4,
+        "demand_cases": 6,
+        "served": 4,
+        "shortage": 2,
+        "objective": 6020
+      },
+      "provider_request": "attempted_real_request_rejected",
+      "provider_error": "Gateway HTTP403: customer_verification_required; no paid fallback was attempted",
+      "build_logs": "deployment completion inspected",
+      "static_assets": [
+        {
+          "path": "/assets/index-CWcaOn0X.js",
+          "sha256": "bfe770959e2bd4a6737157667445dbea4b512ec3015e4da270556dd62a2421b6",
+          "local_equal": true
+        },
+        {
+          "path": "/assets/index-CgjDG7Yq.css",
+          "sha256": "8060c213115eca03c8da9bb8fe8bedce84d28c5b4700938fa07701d046ff0c12",
+          "local_equal": true
+        }
+      ]
+    },
+    "browser": {
+      "method": "permitted cloud browser; not native gstack Chromium",
+      "desktop_passed": [
+        "Invalid JSON produced dialog-local alert",
+        "Corrected ROOT-only custom dataset saved revision1 and closed modal",
+        "10 of12 cases allocated; two-case shortage shown with conserved inventory"
+      ],
+      "full_workflow": "not_completed",
+      "mobile": "not_run",
+      "indexeddb_race": "not_run",
+      "performance_accessibility_full": "not_run"
+    },
+    "gstack": {
+      "native_adversarial_passes": 3,
+      "findings_fixed": 4,
+      "zero_edit_last_native_pass": "no remaining substantiated defect before final runtime identity plumbing",
+      "concurrency_regression": "failed at intended ValueError assertion before repair; passed afterwards",
+      "test_value_audit": "five files screened, zero retirement candidates, no tests removed",
+      "cso_run": "1792079964614-fbfc07a251b6bd6d",
+      "cso_completeness": "partial",
+      "scanner_runtime_limitation": "trusted local Docker unavailable",
+      "outside_review": "unavailable; no authenticated outside CLI configured",
+      "final_review": "incomplete: provider/full browser gates blocked"
+    },
+    "benchmark": {
+      "environment": {
+        "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "python": "3.12.14",
+        "compiler": "Clang 22.1.3",
+        "machine": "x86_64",
+        "logical_cpu_count": 9,
+        "process_affinity_count": 9
+      },
+      "workload": {
+        "seed": 141022,
+        "lots": 24,
+        "orders": 24,
+        "lot_cases": 104,
+        "demand_cases": 114,
+        "warmup": 3,
+        "repetitions": 25,
+        "method": "Sequential perf_counter_ns wall clock; p95 nearest rank; separate tracemalloc run; shared container without CPU isolation"
+      },
+      "exact_min_cost_flow": {
+        "p50_ms": 5.5397,
+        "p95_ms": 6.2883,
+        "objective": 240430,
+        "served": 82,
+        "traced_peak_bytes": 37472
+      },
+      "priority_nearest_greedy": {
+        "p50_ms": 0.0645,
+        "p95_ms": 0.3685,
+        "objective": 257390,
+        "served": 77,
+        "traced_peak_bytes": 1680
+      },
+      "limits": "One small synthetic workload; greedy is not an optimal oracle; no production throughput/scale extrapolation"
+    }
+  },
+  "blocker": {
+    "stage": "live_agent_provider_acceptance",
+    "service": "Vercel AI Gateway",
+    "http_status": 403,
+    "code": "customer_verification_required",
+    "application_http_status": 503,
+    "message": "Gateway HTTP403: customer_verification_required; no paid fallback was attempted",
+    "observed_on": "2026-10-15",
+    "recorded_at": "2026-10-15T16:23:38.878Z",
+    "paid_fallback_attempted": false,
+    "payment_method_added": false,
+    "credits_purchased": false,
+    "required_action": "Complete account verification outside this run, or explicitly authorize an existing configured provider; no secret should be pasted into chat",
+    "transient": false
+  }
+}

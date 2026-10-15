@@ -4,7 +4,7 @@ A synthetic perishable-stock workbench: exact allocation, operator review, reser
 
 Source: https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-MorrowStock
 
-Release status: implementation and local checks in progress. A public demo and live model evaluation are not yet verified. Do not treat this README as a completion receipt; see the dated run record at the repository root.
+Release status: **incomplete, live agent blocked**. The verification build at https://morrowstock-20261014.vercel.app/ serves the real stock core, but the actual model request returned `Gateway HTTP403: customer_verification_required; no paid fallback was attempted`. No billing method, credits or paid fallback was added. Full desktop/mobile/live-agent acceptance is unfinished. This is not a completed project or portfolio entry; see runs/2026-10-14-report.md at the repository root.
 
 ## Walkthrough
 
@@ -73,7 +73,7 @@ npm run build
 .venv/bin/python benchmark.py
 ```
 
-Local evidence so far: 19 Python test groups, including 400 independently enumerated allocation cases, SQLite reopen, six-process duplicate receipt race, killed uncommitted writer recovery, stale approvals, recall/release, replenishment, real LangGraph checkpoint reopen, 24 unsafe/malformed tool decisions, fixture provider failure recovery, real HTTP requests and repeated multi-process CLI execution. Two JavaScript tests verify journal CAS/envelope logic. Browser-level IndexedDB races, desktop/mobile operator flows, hosted API/model evaluation and clean-environment release checks remain pending until separately recorded. Tests are not a bug-free guarantee.
+Local evidence so far: 20 Python test groups, including 400 independently enumerated allocation cases, SQLite reopen, six-process duplicate receipt race, killed uncommitted writer recovery, stale approvals, recall/release, replenishment, real LangGraph checkpoint reopen, 24 unsafe/malformed tool decisions, fixture provider failure recovery, real HTTP requests and repeated multi-process CLI execution. Three JavaScript tests verify journal CAS/envelope logic and custom SKU display/submission coherence. Current CI passed at https://github.com/pranavp2418/Oaks_October/actions/runs/38766943221 . Hosted import/allocation returned HTTP200; actual provider acceptance is blocked as described above. Browser-level IndexedDB races, desktop/mobile operator flows, hosted API/model evaluation remain pending until separately recorded. Clean Python/Node installs and the TypeScript/Vite build passed. Tests are not a bug-free guarantee.
 
 `benchmark.py` records OS/runtime/compiler, workload seed/size, warmup/repetitions, wall-clock latency distributions and separately measured traced memory. A feasible priority/nearest-cost heuristic is a quality/latency baseline, not an optimal oracle. Report only actual benchmark output, not extrapolated throughput or production scale. No SQL optimization speedup is claimed from merely adding indexes.
 
@@ -82,3 +82,6 @@ Local evidence so far: 19 Python test groups, including 400 independently enumer
 All data are original reproducible synthetic cases. `src/sample.ts` uses LCG seed `141022`; IDs, SKUs, quantities, planning offsets, locations and priorities are generated without customer/person data. Assumptions: sealed interchangeable cases within each SKU; integer quantities; synthetic location cost; no routing traffic, refrigeration physics, supplier lead-time prediction or real purchase integration. Sample code/data are included with this project; external datasets are not used.
 
 React, TypeScript, Motion Primitives, Motion, Python, LangChain, LangGraph and SQLite. `UI_PROVENANCE.md` records component/asset/palette/font provenance and honest tool-access limits. The art direction is a produce-market dispatch ledger, not a generic AI chat dashboard. The agent and operational paths share one inspectable inventory model.
+
+
+Runtime identity note: Vercel Function OIDC is request-scoped in `x-vercel-oidc-token`, passed only to the fixed Gateway origin; `VERCEL_OIDC_TOKEN` is the build/local fallback. No token is returned to the browser or journal. Current primary documentation: https://vercel.com/docs/oidc . A successful build or fixture response does not establish provider account verification.
