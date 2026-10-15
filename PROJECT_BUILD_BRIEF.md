@@ -96,3 +96,11 @@ The AsterLedger/ForgePulse long-horizon projects in pranavp2418/AtlasForge are s
 
 
 The supplied skills and aliases are retained in `SKILL_EVIDENCE_MATRIX.json`; prior project labels must be audited before claiming coverage. The separate flagship repository is https://github.com/pranavp2418/AtlasForge with AsterLedger and ForgePulse, target November 30, 2026. Read its PROGRESS.json and latest daily run report for the combined confirmation. These projects are additional to the daily three.
+
+## October 14 and October 15: agent-only daily trios
+
+The user explicitly requires all three projects assigned to October 14 and all three assigned to October 15 to be agents: six distinct agent products in total. This refers to the products being built, not permission to delegate development to worker agents.
+
+Each agent must perform a useful bounded goal-to-outcome workflow through real tools and an explicit state model. Require persisted checkpoints, inspectable tool inputs/results, authorization and human review before consequential actions, idempotency, failure/retry/recovery behavior, and evaluation of both successful and adversarial trajectories. A chat interface, hardcoded response, imported agent dependency, or renamed earlier project does not satisfy this direction. Verify real model calls before claiming an LLM integration; describe deterministic components accurately. Use LangGraph and LangChain where their requested capabilities materially serve the workflow.
+
+All existing requirements remain: three new projects per date, exactly two resume-grounded stacks and one substantive new core technology per date, exactly two privately researched original hiring-company opportunities per date, collection-wide uniqueness, standard-v2 depth, delivery mix, rigorous verification, sequential source releases and complete portfolio/archive/country integration. This revision does not count pending work as complete or remove the unfinished October 13 release and integration work.
