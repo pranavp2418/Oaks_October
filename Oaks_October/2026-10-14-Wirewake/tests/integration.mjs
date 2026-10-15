@@ -190,7 +190,7 @@ try {
     JSON.stringify(
       {
         passed: true,
-        go_native_groups: 8,
+        go_native_groups: 9,
         independent_oracles: 400,
         native_wasm_full_state_parity: true,
         actual_concurrent_cli_processes: 8,

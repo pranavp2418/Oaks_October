@@ -6,8 +6,10 @@ import (
 	"math/rand"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 	"testing"
+	"time"
 )
 
 func sample() (Machine, Machine) {
@@ -251,7 +253,18 @@ func TestFileLockConcurrencyAndStaleHead(t *testing.T) {
 	errs := make(chan error, 8)
 	for i := 0; i < 8; i++ {
 		wg.Add(1)
-		go func() { defer wg.Done(); _, err := UpdateFile(path, "", &c, nil); errs <- err }()
+		go func() {
+			defer wg.Done()
+			var err error
+			for attempt := 0; attempt < 8; attempt++ {
+				_, err = UpdateFile(path, "", &c, nil)
+				if err == nil || !strings.Contains(err.Error(), "Workspace busy") {
+					break
+				}
+				time.Sleep(10 * time.Millisecond)
+			}
+			errs <- err
+		}()
 	}
 	wg.Wait()
 	close(errs)
@@ -320,4 +333,35 @@ func TestLargeNativeSnapshotReopens(t *testing.T) {
 		t.Fatal("Committed snapshot failed reopen", err)
 	}
 	t.Logf("compact=%d indented=%d", len(compact), len(indented))
+}
+
+func TestBusyWriterFailureThenExplicitRetry(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "retry.json")
+	a, b := sample()
+	initial := command("import", "import", map[string]any{"spec": a, "candidate": b})
+	if _, err := UpdateFile(path, "", &initial, nil); err != nil {
+		t.Fatal(err)
+	}
+	held := command("held", "check", struct{}{})
+	retry := command("contended", "check", struct{}{})
+	prepared, release := make(chan struct{}), make(chan struct{})
+	done := make(chan error, 1)
+	go func() { _, err := UpdateFile(path, "", &held, func() { close(prepared); <-release }); done <- err }()
+	<-prepared
+	_, err := UpdateFile(path, "", &retry, nil)
+	close(release)
+	if err == nil || !strings.Contains(err.Error(), "Workspace busy") {
+		t.Fatal("Lock contention must fail closed with retry guidance", err)
+	}
+	if err := <-done; err != nil {
+		t.Fatal(err)
+	}
+	s, err := UpdateFile(path, "", &retry, nil)
+	if err != nil || len(s.Workspace.Journal) != 3 {
+		t.Fatal("Explicit same-command retry failed", err)
+	}
+	s, err = UpdateFile(path, "", &retry, nil)
+	if err != nil || len(s.Workspace.Journal) != 3 {
+		t.Fatal("Retry created duplicate receipt", err)
+	}
 }

@@ -36,6 +36,7 @@ Without WIREWAKE_GO, build downloads the official pinned Linux/amd64 archive and
 
 ```sh
 go build -o /tmp/wirewake ./cmd/wirewake
+/tmp/wirewake -workspace /tmp/proof.json tests/sample-import.json
 /tmp/wirewake -workspace /tmp/proof.json
 # Save commands as JSON files; import a spec/candidate first.
 printf '%s' '{"id":"check1","kind":"check","args":{}}' > /tmp/check.json
@@ -49,3 +50,5 @@ Import a spec/candidate first; an empty workspace cannot be checked. CLI command
 See ACCEPTANCE.md, QA_REPORT.md and EVAL_PREREG.md. Tests include400 independent trace-enumeration fixtures, native/WASM state parity, full repair lifecycle, invalid inputs, replay/tamper, eight real concurrent CLI processes, killed-writer recovery, large-snapshot reopen and ambiguous JSON regressions. Runnable benchmarks report environment/workload/warmup/repetitions and a bounded enumeration baseline; no production-scale claim. Hosted/browser verification is recorded separately after publication.
 
 [Complete source](https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Wirewake). Verified demo and release IDs are added only after actual delivery checks. Native UI uses semantic controls, keyboard navigation, SVG with text tables, reduced motion, explicit loading/error/recovery states and narrow-screen layouts. Physical-device and full assistive-technology certification are not claimed.
+
+Current release: complete source/local/CI evidence is pushed; first hosted deployment was rejected by the team daily deployment quota (HTTP402). No verified demo exists yet. Hosted provider, worker/browser desktop/mobile and live source identity checks remain required; this remains a web-planned project.
