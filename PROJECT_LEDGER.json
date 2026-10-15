@@ -1502,6 +1502,214 @@
           "No recommendation-quality claim"
         ]
       }
+    },
+    {
+      "title": "Loadstone",
+      "industry": "Energy operations",
+      "classification": "resume",
+      "core_language": "C++",
+      "stack": [
+        "C++",
+        "WebAssembly",
+        "React",
+        "TypeScript",
+        "IndexedDB"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 19,
+      "path": "Oaks_October/2026-10-13-Loadstone",
+      "stage": "complete",
+      "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "capabilities": [
+        "Validated profile import and transactional local workspace",
+        "Exact dispatch solver with conservation and terminal reserve",
+        "Outage and tariff scenario comparison",
+        "Version-bound plan review and approval",
+        "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
+        "Digest-bound audit export and operating cost/SOC view"
+      ],
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e",
+      "project_id": "prj_fUqT9ViEE0zTe5r8mcGfjF3BkVQM",
+      "deployment_id": "dpl_6jsqxZWprdHG828NZMckXsoJpJaU",
+      "live_url": "https://loadstone-20261013.vercel.app/",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-Loadstone",
+      "integration": "portfolio_verified",
+      "deployed_source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e",
+      "completion_ordinal": 19,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "public_workflows_verified",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "problem": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "visual_theme": "Ivory, ochre and charcoal dispatch workbench",
+      "tests": {
+        "core_groups": 5,
+        "oracle_cases": 240,
+        "clean_install_build": true,
+        "browser": "Live desktop and 390px iframe: solve, scenario comparison, review/approve, interruption/reload/resume to COMPLETE; real IndexedDB two-connection CAS and idempotency checks passed",
+        "test_groups": 7,
+        "source_integrity": "JS/CSS/WASM SHA256 matches current clean build; runs/2026-10-13-public-api-source.json"
+      },
+      "substantive_skill_coverage": [
+        "C++",
+        "WebAssembly",
+        "React",
+        "TypeScript",
+        "IndexedDB"
+      ],
+      "additional_domain_capabilities": [
+        "Validated profile import and transactional local workspace",
+        "Exact dispatch solver with conservation and terminal reserve",
+        "Outage and tariff scenario comparison",
+        "Version-bound plan review and approval",
+        "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
+        "Digest-bound audit export and operating cost/SOC view"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
+    },
+    {
+      "title": "PatchBay",
+      "industry": "Software supply-chain security",
+      "classification": "new",
+      "core_language": "Kotlin",
+      "stack": [
+        "Kotlin",
+        "JVM",
+        "SQLite JDBC"
+      ],
+      "delivery_mode": "github_only",
+      "planned_ordinal": 20,
+      "path": "Oaks_October/2026-10-13-PatchBay",
+      "stage": "complete",
+      "core": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "capabilities": [
+        "Atomic validated graph/advisory import into SQLite",
+        "SCC and shortest exposure-path analysis",
+        "Exact coverage/cost planning with independent subset oracle",
+        "Versioned plans and separate recorded approval",
+        "Transactional apply/rollback and crash/failure recovery",
+        "Provenance/audit export, status and integrity inspection"
+      ],
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "source_commit": "a74ef58f07bb2c57a80046669eea4807423da6e7",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay",
+      "integration": "portfolio_verified",
+      "live_url": null,
+      "deployment_id": null,
+      "completion_ordinal": 20,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "intentionally_not_required",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "problem": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "visual_theme": "Amber terminal with graph and receipt inspection",
+      "tests": {
+        "oracle_cases": 300,
+        "cli": "import/replay/analysis/plan/review/apply/rollback/export",
+        "failure_cases": [
+          "invalid input",
+          "stale plan",
+          "conflicting ID",
+          "6-process concurrent receipt race",
+          "injected precommit failure",
+          "killed SQLite writer recovery",
+          "audit corruption rejection"
+        ],
+        "ci": "https://github.com/pranavp2418/Oaks_October/actions/runs/38602773573"
+      },
+      "substantive_skill_coverage": [
+        "Kotlin",
+        "JVM",
+        "SQLite JDBC"
+      ],
+      "additional_domain_capabilities": [
+        "Atomic validated graph/advisory import into SQLite",
+        "SCC and shortest exposure-path analysis",
+        "Exact coverage/cost planning with independent subset oracle",
+        "Versioned plans and separate recorded approval",
+        "Transactional apply/rollback and crash/failure recovery",
+        "Provenance/audit export, status and integrity inspection"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
+    },
+    {
+      "title": "ProofHarbor",
+      "industry": "Infrastructure incident investigation",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "Angular",
+        "TypeScript"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 21,
+      "path": "Oaks_October/2026-10-13-ProofHarbor",
+      "stage": "complete",
+      "core": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "capabilities": [
+        "Validated evidence ingestion and portable SQLite workspace persistence",
+        "Lexical/entity graph retrieval through LangChain Runnable pipeline",
+        "Multi-hop cited evidence synthesis with contradiction/supersession guards",
+        "LangGraph durable investigate/review/publish interrupts",
+        "Failed retrieval reprocessing and restart checkpoint resume",
+        "Exportable evidence dossier, retrieval evaluation and operational traces"
+      ],
+      "source_commit": "e4d5bea2a47b4a775ee8d9fad199899339ebc2c8",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-ProofHarbor",
+      "integration": "portfolio_verified",
+      "project_id": "prj_XsZswAMJs9QQXiVtIMTpD9MIMjPN",
+      "deployment_id": "dpl_7Lwv2M6K4EY3hoyAzyiEts9jEJBK",
+      "deployed_source_commit": "3abef7d7250af01604af6b935cc6722a34803874",
+      "live_url": "https://proofharbor-20261013.vercel.app/",
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "completion_ordinal": 21,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "public_workflows_verified",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "problem": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "visual_theme": "Ink, paper and sea-green evidence desk",
+      "tests": {
+        "browser": "Live desktop and 390px iframe import, failed retrieval, reload/retry, six exact citations, contradiction review and publication passed; portable workspace downloaded as valid schema-1 journal; real IndexedDB race passed",
+        "api": "HTTP 200 reviewed replay, stable semantic state on repeated request; schema and missing-acknowledgement HTTP400; source JS/CSS SHA256 matches build"
+      },
+      "substantive_skill_coverage": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "Angular",
+        "TypeScript"
+      ],
+      "additional_domain_capabilities": [
+        "Validated evidence ingestion and portable SQLite workspace persistence",
+        "Lexical/entity graph retrieval through LangChain Runnable pipeline",
+        "Multi-hop cited evidence synthesis with contradiction/supersession guards",
+        "LangGraph durable investigate/review/publish interrupts",
+        "Failed retrieval reprocessing and restart checkpoint resume",
+        "Exportable evidence dossier, retrieval evaluation and operational traces"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
     }
   ],
   "dry_runs": [
@@ -1708,13 +1916,15 @@
     },
     {
       "date": "2026-10-13",
-      "status": "delivery_verified_portfolio_release_pending",
+      "status": "complete",
       "target": 3,
-      "completed_projects": 0,
+      "completed_projects": 3,
       "delivery_verified_projects": 3,
       "run_record": "runs/2026-10-13.json",
-      "last_updated_at": "2026-10-15T15:19:30Z",
-      "portfolio_integration": "local_tests_and_build_passed_release_pending"
+      "last_updated_at": "2026-10-15T15:28:00Z",
+      "portfolio_integration": "production_verified",
+      "completed_at": "2026-10-15T15:28:00Z",
+      "report": "runs/2026-10-13-report.md"
     }
   ],
   "profile_baseline": {
@@ -3212,6 +3422,214 @@
           "No recommendation-quality claim"
         ]
       }
+    },
+    {
+      "title": "Loadstone",
+      "industry": "Energy operations",
+      "classification": "resume",
+      "core_language": "C++",
+      "stack": [
+        "C++",
+        "WebAssembly",
+        "React",
+        "TypeScript",
+        "IndexedDB"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 19,
+      "path": "Oaks_October/2026-10-13-Loadstone",
+      "stage": "complete",
+      "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "capabilities": [
+        "Validated profile import and transactional local workspace",
+        "Exact dispatch solver with conservation and terminal reserve",
+        "Outage and tariff scenario comparison",
+        "Version-bound plan review and approval",
+        "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
+        "Digest-bound audit export and operating cost/SOC view"
+      ],
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e",
+      "project_id": "prj_fUqT9ViEE0zTe5r8mcGfjF3BkVQM",
+      "deployment_id": "dpl_6jsqxZWprdHG828NZMckXsoJpJaU",
+      "live_url": "https://loadstone-20261013.vercel.app/",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-Loadstone",
+      "integration": "portfolio_verified",
+      "deployed_source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e",
+      "completion_ordinal": 19,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "public_workflows_verified",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "problem": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
+      "visual_theme": "Ivory, ochre and charcoal dispatch workbench",
+      "tests": {
+        "core_groups": 5,
+        "oracle_cases": 240,
+        "clean_install_build": true,
+        "browser": "Live desktop and 390px iframe: solve, scenario comparison, review/approve, interruption/reload/resume to COMPLETE; real IndexedDB two-connection CAS and idempotency checks passed",
+        "test_groups": 7,
+        "source_integrity": "JS/CSS/WASM SHA256 matches current clean build; runs/2026-10-13-public-api-source.json"
+      },
+      "substantive_skill_coverage": [
+        "C++",
+        "WebAssembly",
+        "React",
+        "TypeScript",
+        "IndexedDB"
+      ],
+      "additional_domain_capabilities": [
+        "Validated profile import and transactional local workspace",
+        "Exact dispatch solver with conservation and terminal reserve",
+        "Outage and tariff scenario comparison",
+        "Version-bound plan review and approval",
+        "Checkpointed dispatch rehearsal with failure/resume and duplicate guards",
+        "Digest-bound audit export and operating cost/SOC view"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
+    },
+    {
+      "title": "PatchBay",
+      "industry": "Software supply-chain security",
+      "classification": "new",
+      "core_language": "Kotlin",
+      "stack": [
+        "Kotlin",
+        "JVM",
+        "SQLite JDBC"
+      ],
+      "delivery_mode": "github_only",
+      "planned_ordinal": 20,
+      "path": "Oaks_October/2026-10-13-PatchBay",
+      "stage": "complete",
+      "core": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "capabilities": [
+        "Atomic validated graph/advisory import into SQLite",
+        "SCC and shortest exposure-path analysis",
+        "Exact coverage/cost planning with independent subset oracle",
+        "Versioned plans and separate recorded approval",
+        "Transactional apply/rollback and crash/failure recovery",
+        "Provenance/audit export, status and integrity inspection"
+      ],
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "source_commit": "a74ef58f07bb2c57a80046669eea4807423da6e7",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay",
+      "integration": "portfolio_verified",
+      "live_url": null,
+      "deployment_id": null,
+      "completion_ordinal": 20,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "intentionally_not_required",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "problem": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
+      "visual_theme": "Amber terminal with graph and receipt inspection",
+      "tests": {
+        "oracle_cases": 300,
+        "cli": "import/replay/analysis/plan/review/apply/rollback/export",
+        "failure_cases": [
+          "invalid input",
+          "stale plan",
+          "conflicting ID",
+          "6-process concurrent receipt race",
+          "injected precommit failure",
+          "killed SQLite writer recovery",
+          "audit corruption rejection"
+        ],
+        "ci": "https://github.com/pranavp2418/Oaks_October/actions/runs/38602773573"
+      },
+      "substantive_skill_coverage": [
+        "Kotlin",
+        "JVM",
+        "SQLite JDBC"
+      ],
+      "additional_domain_capabilities": [
+        "Atomic validated graph/advisory import into SQLite",
+        "SCC and shortest exposure-path analysis",
+        "Exact coverage/cost planning with independent subset oracle",
+        "Versioned plans and separate recorded approval",
+        "Transactional apply/rollback and crash/failure recovery",
+        "Provenance/audit export, status and integrity inspection"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
+    },
+    {
+      "title": "ProofHarbor",
+      "industry": "Infrastructure incident investigation",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "Angular",
+        "TypeScript"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 21,
+      "path": "Oaks_October/2026-10-13-ProofHarbor",
+      "stage": "complete",
+      "core": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "capabilities": [
+        "Validated evidence ingestion and portable SQLite workspace persistence",
+        "Lexical/entity graph retrieval through LangChain Runnable pipeline",
+        "Multi-hop cited evidence synthesis with contradiction/supersession guards",
+        "LangGraph durable investigate/review/publish interrupts",
+        "Failed retrieval reprocessing and restart checkpoint resume",
+        "Exportable evidence dossier, retrieval evaluation and operational traces"
+      ],
+      "source_commit": "e4d5bea2a47b4a775ee8d9fad199899339ebc2c8",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-ProofHarbor",
+      "integration": "portfolio_verified",
+      "project_id": "prj_XsZswAMJs9QQXiVtIMTpD9MIMjPN",
+      "deployment_id": "dpl_7Lwv2M6K4EY3hoyAzyiEts9jEJBK",
+      "deployed_source_commit": "3abef7d7250af01604af6b935cc6722a34803874",
+      "live_url": "https://proofharbor-20261013.vercel.app/",
+      "verification": "local_ci_and_applicable_public_workflows_passed",
+      "completion_ordinal": 21,
+      "portfolio_deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+      "portfolio_source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "date": "2026-10-13",
+      "status": "complete",
+      "counted": true,
+      "implementation": "implemented_and_pushed",
+      "deployment": "public_workflows_verified",
+      "portfolio_integration": "production_verified",
+      "core_technical_contribution": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "problem": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
+      "visual_theme": "Ink, paper and sea-green evidence desk",
+      "tests": {
+        "browser": "Live desktop and 390px iframe import, failed retrieval, reload/retry, six exact citations, contradiction review and publication passed; portable workspace downloaded as valid schema-1 journal; real IndexedDB race passed",
+        "api": "HTTP 200 reviewed replay, stable semantic state on repeated request; schema and missing-acknowledgement HTTP400; source JS/CSS SHA256 matches build"
+      },
+      "substantive_skill_coverage": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "Angular",
+        "TypeScript"
+      ],
+      "additional_domain_capabilities": [
+        "Validated evidence ingestion and portable SQLite workspace persistence",
+        "Lexical/entity graph retrieval through LangChain Runnable pipeline",
+        "Multi-hop cited evidence synthesis with contradiction/supersession guards",
+        "LangGraph durable investigate/review/publish interrupts",
+        "Failed retrieval reprocessing and restart checkpoint resume",
+        "Exportable evidence dossier, retrieval evaluation and operational traces"
+      ],
+      "verified_at": "2026-10-15T15:28:00Z"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -3226,8 +3644,8 @@
   "portfolio": {
     "path": "portfolio-site",
     "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
-    "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
-    "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+    "deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+    "source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
     "alias": "https://impranavpatel.com/",
     "verification": {
       "local_tests_passed": 21,
@@ -3420,6 +3838,11 @@
         },
         "verified_at": "2026-10-11T17:13:02.855090+00:00",
         "evidence": "runs/2026-10-11-portfolio-release.json"
+      },
+      {
+        "type": "pre_oct13_reconciliation",
+        "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
+        "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks"
       }
     ],
     "city": {
@@ -3428,12 +3851,12 @@
       "path": "portfolio-site/projects.html",
       "url": "https://impranavpatel.com/projects.html",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/portfolio-site",
-      "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
-      "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
+      "source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
       "preview_deployment_id": "dpl_FtP5J17SyGAxHFbDpMf3y8ycoJmN",
       "counted_daily_project": false,
-      "catalog_entries": 17,
-      "daily_entries": 15,
+      "catalog_entries": 26,
+      "daily_entries": 21,
       "shared_daily_manifest": "portfolio-site/public/projects.json",
       "featured_manifest": "portfolio-site/public/featured-projects.json",
       "stack": [
@@ -3590,12 +4013,12 @@
         }
       ],
       "mobile_screenshot": "runs/evidence/2026-10-07-island-covers-mobile.jpg",
-      "shared_manifest_entries": 15,
-      "counted_daily_entries": 12,
+      "shared_manifest_entries": 24,
+      "counted_daily_entries": 21,
       "prior_building_positions_preserved": 14,
       "scenery_changed": false,
       "performance_evidence": "runs/2026-10-11-island-performance.json",
-      "project_lots_preserved": 17,
+      "project_lots_preserved": 23,
       "scenery_layout_changed": false,
       "rendering_policy": {
         "native_antialiasing": true,
@@ -3613,13 +4036,13 @@
       }
     },
     "reconciled_current_release": {
-      "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
-      "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
+      "source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
       "root_directory": "portfolio-site",
-      "verified_from": "Vercel metadata/build logs, exact compiled-asset hashes and desktop/mobile public workflows",
-      "date": "2026-10-11",
-      "shared_manifest_entries": 15,
-      "counted_collection_projects": 12,
+      "verified_from": "Vercel build completion logs, exact manifest, public browser and redirect checks",
+      "date": "2026-10-15",
+      "shared_manifest_entries": 24,
+      "counted_collection_projects": 21,
       "canonical_url": "https://impranavpatel.com/"
     },
     "pending_run": null,
@@ -3705,7 +4128,7 @@
     },
     "pending_trio_integration": null,
     "canonical_url": "https://impranavpatel.com/",
-    "verified_at": "2026-10-11T17:13:02.855090+00:00",
+    "verified_at": "2026-10-15T15:28:00Z",
     "pending_daily_integration": null,
     "project_presentation_policy": {
       "effective_date": "2026-10-11",
@@ -3719,15 +4142,15 @@
     },
     "pending_maintenance": null,
     "latest_daily_integration": {
-      "date": "2026-10-11",
-      "source_commit": "14d978e26a24f7c2cc014fd61bcc9aa651554c9c",
-      "deployment_id": "dpl_6RJwwyr6vqY9bfYngxGZUU9M4ke3",
+      "date": "2026-10-13",
+      "source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+      "deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
       "status": "production_verified",
-      "verification": "runs/2026-10-11-trio-portfolio-public.json",
+      "verification": "runs/2026-10-13-portfolio-release.json",
       "entries": [
-        "grainlab",
-        "veilledger",
-        "spanpack"
+        "loadstone",
+        "patchbay",
+        "proofharbor"
       ]
     }
   },
@@ -3743,11 +4166,11 @@
     "github_only_standard": "Complete useful native/CLI/library/engine/backend workflow, clean-environment setup, meaningful tests and input-to-output execution evidence, rerun/recovery checks, complete README and source push.",
     "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
     "completed_counts": {
-      "web_deployed": 17,
-      "github_only": 1,
-      "total": 18
+      "web_deployed": 19,
+      "github_only": 2,
+      "total": 21
     },
-    "next_planned_completion_ordinal": 19,
+    "next_planned_completion_ordinal": 22,
     "next_planned_delivery_mode": "web_deployed"
   },
   "domain_depth_policy": {

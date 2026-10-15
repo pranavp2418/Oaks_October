@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-10-15T15:28:00Z",
+  "status": "passed_with_documented_limits",
+  "source_commit": "004a4d976324482d76a09f7a2fd8545e04b2cf0d",
+  "deployment_id": "dpl_GyijRBVCwhbvgrLB6M6VZ8kbJPaJ",
+  "canonical_url": "https://impranavpatel.com/",
+  "local_tests": 26,
+  "production_build": "passed; build completion and deployment completion logs inspected",
+  "http": ["Homepage, Projects and exact source projects.json returned HTTP200", "Both legacy host and www returned HTTP308 preserving /projects.html?project=proofharbor"],
+  "browser": ["Desktop country ProofHarbor details, source link, Pip purpose/stack match and navigation", "Opt-in ProofHarbor iframe rendered its actual Python/Angular workspace", "PatchBay country details show complete code-only, source and walkthrough without a live action", "Homepage Loadstone detail opens with working demo/source actions", "Homepage search PatchBay opens source-only dialog with walkthrough and no live preview", "390px country: expand compact directory, search Loadstone, select building and inspect date-free details and cover"],
+  "preservation": ["24 shared manifest entries, 26 country entries including flagships/historical dry run", "Original scenery source untouched; existing lots stable in automated test", "Accepted renderer performance paths unchanged", "CraftsmanAI, Market Analysis and original assets retained"],
+  "limits": ["Cloud browser substituted for unavailable gstack Chromium", "Mobile used iframe viewport, not physical hardware", "Read-only iframe geometry evaluation was unavailable; no measured overflow or frame-rate claim", "Browser extension telemetry errors were observed, not application failures"],
+  "screenshot": "oct13-portfolio-mobile.jpg"
+}
