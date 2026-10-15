@@ -286,6 +286,9 @@ function App() {
             <button className="quiet" onClick={reload} disabled={disabled}>
               Reopen saved
             </button>
+            <button className="quiet" onClick={() => openEditor("workspace")} disabled={disabled}>
+              Restore workspace
+            </button>
             <button
               className="quiet"
               onClick={() =>
