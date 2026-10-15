@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.toolchain/
+public/engine.wasm
+public/wasm_exec.js
+public/core-identity.json
+wirewake-cli
+*.lock
+*.tmp

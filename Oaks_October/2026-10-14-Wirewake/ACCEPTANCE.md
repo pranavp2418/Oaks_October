@@ -1,0 +1,29 @@
+# Wirewake: product and engineering contract
+
+A protocol implementer needs to discover the shortest observable disagreement between a declared contract and a candidate state machine, reduce noisy failure traces, review a repair and retain reproducible proof. This is controlled finite-state protocol analysis of original synthetic contracts, not probing external systems. Go is the substantive core language, absent from the verified supplied profile; dated current primary hiring evidence is retained privately. Planned web completion ordinal24. Do not count this or its Go integration before verification.
+
+Alternatives were trace-only replay, random mutation/fuzzing and exact finite-state product exploration. Choose exact reachable-product BFS for shortest distinguishing inputs, independent trace shrinking for imported failures, and a mutation campaign that exposes undetected/equivalent cases. This differs from prior WAL/storage engines, static policy checks and general orchestration projects: the compiler, conformance engine, repair verification and persisted agent state are Go, compiled into the actual web runtime. Browser UI is a native typed protocol workbench; server Node is only fixed-origin inference/Go integration transport. No persistent Go server is assumed on Vercel.
+
+## Connected capabilities
+
+1. Compile and validate two bounded deterministic Mealy contracts: named states, alphabet, initial state and transitions; reject duplicate edges, unknown references, ambiguous data and oversized input. Import and persist schema-versioned workspaces.
+2. Exact BFS over reachable state pairs finds a shortest output disagreement, or exhausts the finite product as an equivalence proof under the stated semantics. Missing transition yields REJECT and retains state.
+3. Replay imported traces with per-step contract/candidate state/output evidence; delta-debug a failing trace to a one-deletion-minimal counterexample. Distinguish that guarantee from globally shortest BFS.
+4. Generate bounded single-transition output/next-state mutations; run the real checker per mutant and report witnessed/equivalent cases, not a fabricated model accuracy score.
+5. Propose a contract-derived transition repair; require human review bound to candidate digest, then atomically apply only a globally equivalent candidate. Failed repair retains original candidate and evidence. Repeat request IDs are idempotent; conflicting bodies fail.
+6. A bounded agent chooses inspect/check/shrink/suggest tools against that same Go engine, with saved evidence IDs, real zero-price provider receipts, explicit continue/review states, replay without inference and recoverable failure.
+7. Export a portable proof dossier and reusable regression traces; inspect reachable pairs, trace length, mutation coverage, journal integrity, model decisions and measured runtime costs.
+
+The Go engine owns validation, conformance, trace reduction, campaign, patch state and agent command authorization. A native CLI uses atomic durable snapshots with revision/receipt checks and a real process lock where available; the hosted edition is explicitly single-user IndexedDB CAS, not multiuser service persistence. No arbitrary uploaded code is executed. Finite-machine semantic proof does not prove a real deployed service matches its supplied model.
+
+## Invariants and verification plan
+
+Deterministic transition lookup and strict alphabet membership; each counterexample actually disagrees; no shorter trace exists when BFS claims shortest; equivalence exhausts all reachable product pairs; shrink result still fails and cannot delete one symbol while retaining failure; applied repair is independently rechecked; reviewed digest must match; duplicate request cannot repeat a mutation; interrupted/invalid command leaves saved state unchanged; model tools cannot apply or approve repair; finish needs valid evidence citations; bounded steps/artifact sizes. Go native tests, independent exhaustive trace enumeration, mutation/fuzz/invalid cases, persistence/replay/concurrency/recovery tests, actual Go/WASM parity and real HTTP/provider/browser flows must pass. Measured benchmarks include compiler/OS/workload/seed/warmup/repetitions and a bounded enumeration baseline. All seven complexity axes are pending until concrete receipts exist.
+
+## Art direction before UI implementation
+
+Audience: protocol engineers. A precise signal-analysis instrument: charcoal, warm white, electric cyan and restrained amber. Split contract editor above a state-pair graph and horizontal token/output trace; command rail and a compact proof drawer. Native DOM/SVG and TypeScript keep the core outside a UI framework; Go loads lazily with visible initialization/failure states. Monospace semantic data, system sans explanations, 16px body, 12px metadata, 32/52px headings, 8px spacing. Mobile stacks editors/trace with labelled scrollable lanes and no whole-page overflow. Equivalent native motion uses 140ms opacity/transform, reduced-motion zero duration, no continuous decorative loops. Palette tool exploration, code-native diagrams, original cover and screenshots are documented accurately; no locally authored SVG is called generated-tool output.
+
+## Planning disposition
+
+The user authorizes routine choices and publishing; preserve the full seven connected capabilities, exact-two private hiring opportunities across the trio and two-resume/one-new split. Office-hours challenge and engineering/design/eval planning are applied; no invented customer, benchmark, outside consensus or infrastructure integration. Go's own compiled state machine controls the agent workflow because its proof/repair state is the core contract; no extra graph framework is added merely for a badge. Existing provider policy may be reused as an implementation pattern, with original self-contained code and no paid fallback. No portfolio integration until all three pass applicable gates.
