@@ -1,0 +1,4 @@
+node_modules/
+dist/
+public/route.wasm
+public/core-identity.json

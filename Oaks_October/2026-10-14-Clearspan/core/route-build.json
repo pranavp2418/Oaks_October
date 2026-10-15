@@ -1,0 +1,5 @@
+{
+  "compiler": "Zig0.14.1 C++20 -O3 wasm32-freestanding",
+  "source_sha256": "93b8839bbd0c3a5ee37ba8211c4f216fd7560a6fadce0b03b2b33b939ce7f1dd",
+  "wasm_sha256": "b447ca5a4abd1d332047598ce8af2b5a18cd01aa188e34d093910effc4e6b474"
+}

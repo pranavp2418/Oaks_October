@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Clearspan workflow verification</title>
+  </head>
+  <body>
+    <main>
+      <h1>Clearspan browser-native verification</h1>
+      <p>
+        Real product iframe; isolated IndexedDB race; no model call from these
+        diagnostics.
+      </p>
+      <button id="storage">Test eight competing saves and reopen</button
+      ><button id="mobile">390px product</button
+      ><button id="desktop">Wide product</button>
+      <pre id="result" role="status">No check executed.</pre>
+      <iframe
+        id="product"
+        src="/"
+        width="1150"
+        height="940"
+        title="Real Clearspan workflow"
+      ></iframe>
+    </main>
+    <script type="module" src="/src/verification.mjs"></script>
+  </body>
+</html>
