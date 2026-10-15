@@ -3,7 +3,8 @@ import { sample, canonical } from "../src/workspace.mjs";
 const base = process.argv[2];
 if (!base?.startsWith("https://"))
   throw Error("Explicit hosted HTTPS base URL required");
-async function post(body) {
+const failedAttempts = [];
+async function once(body) {
   const start = performance.now(),
     response = await fetch(base.replace(/\/$/, "") + "/api/workspace", {
       method: "POST",
@@ -13,6 +14,17 @@ async function post(body) {
     }),
     value = await response.json();
   return { status: response.status, value, ms: performance.now() - start };
+}
+async function post(body) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const result = await once(body);
+    const agent = ["agent_start","agent_continue"].includes(body.command?.kind);
+    if (agent && !body.provider_failure && !body.fail && [400,503].includes(result.status)) {
+      failedAttempts.push({command:body.command.id,attempt:attempt+1,status:result.status,error:result.value.error,saved_unchanged:result.value.saved_workspace_unchanged});
+      if (attempt < 2) continue;
+    }
+    return result;
+  }
 }
 const cases = [
     {
@@ -24,7 +36,7 @@ const cases = [
     {
       name: "budget_comparison",
       required: "compare_budgets",
-      goal: "Use compare_budgets for budgets20 and42. Explain the coverage tradeoff, then finish with exact evidence citations.",
+      goal: "Call compare_budgets with budgets equal to [20,42] (an array of integers, never a string). Explain the coverage tradeoff, then finish with exact evidence citations.",
       budget: 42,
     },
     {
@@ -38,11 +50,12 @@ const cases = [
     recorded_at: new Date().toISOString(),
     passed: false,
     cases: [],
+    failed_attempts: failedAttempts,
     scope:
       "visible development integration pilot; no held-out generalization claim",
   };
 try {
-  for (const c of cases) {
+  for (const c of cases.filter(c => !process.env.CASE_FILTER || c.name.includes(process.env.CASE_FILTER))) {
     let response = await post({
       command: {
         id: "import",
@@ -136,7 +149,7 @@ try {
       receipts,
       citations: state.agent.citations,
       checkpoint: state.agent.checkpoint,
-      stock_mutated: false,
+      mission_mutated: false,
       replay_equal: true,
       duplicate_no_inference: true,
       injected_provider_recovery: true,

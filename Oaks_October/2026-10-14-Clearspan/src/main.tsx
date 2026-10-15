@@ -39,12 +39,14 @@ function App() {
     [providerFailure, setProviderFailure] = useState(false),
     [modal, setModal] = useState(""),
     [text, setText] = useState(""),
-    [dialogError, setDialogError] = useState("");
+    [dialogError, setDialogError] = useState(""),
+    [manualReducedMotion, setManualReducedMotion] = useState(false);
   const db = useRef<Any>(null),
     lastFailure = useRef(""),
     dialog = useRef<HTMLDialogElement>(null),
     cells = useRef<(HTMLButtonElement | null)[]>([]),
-    reduced = useReducedMotion();
+    systemReduced = useReducedMotion();
+  const reduced = systemReduced || manualReducedMotion;
   async function request(body: Any) {
     const r = await fetch("/api/workspace", {
         method: "POST",
@@ -174,7 +176,7 @@ function App() {
     </button>
   );
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig reducedMotion={manualReducedMotion ? "always" : "user"}>
       <div className="shell" aria-busy={busy}>
         <a className="skip" href="#workbench">
           Skip to mission workbench
@@ -884,12 +886,20 @@ function App() {
         </footer>
         <dialog
           ref={dialog}
+          aria-labelledby="workspace-dialog-title"
+          onKeyDown={e => {
+            if (e.key !== "Tab") return;
+            const controls=Array.from(e.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled),textarea:not(:disabled)'));
+            const first=controls[0],last=controls.at(-1);
+            if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}
+            if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}
+          }}
           onCancel={() => setModal("")}
           onClose={() => setModal("")}
         >
           <form onSubmit={submit}>
             <div className="section-title">
-              <h2>
+              <h2 id="workspace-dialog-title">
                 {modal === "map"
                   ? "Import synthetic map"
                   : "Restore portable workspace"}
@@ -934,6 +944,7 @@ function App() {
             </div>
           </form>
         </dialog>
+        <label className="motion-control"><input type="checkbox" checked={manualReducedMotion} onChange={e=>setManualReducedMotion(e.target.checked)}/>Reduce motion</label>
         <PerformanceEvidence />
       </div>
     </MotionConfig>

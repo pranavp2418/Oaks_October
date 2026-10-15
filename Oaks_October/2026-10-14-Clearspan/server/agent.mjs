@@ -198,15 +198,10 @@ export function makeInvestigator(engine) {
     };
   };
 }
+const emptyParameters = { type: "object", properties: {}, additionalProperties: false };
 export const toolSchemas = [
-  { name: "inspect_map", arguments: {} },
-  { name: "plan_route", arguments: {} },
-  {
-    name: "compare_budgets",
-    arguments: { budgets: "one to three integer budgets0..512" },
-  },
-  {
-    name: "finish",
-    arguments: { summary: "3..2000 characters", citations: "existing E IDs" },
-  },
+  { name: "inspect_map", parameters: emptyParameters, example: {tool:"inspect_map",arguments:{}} },
+  { name: "plan_route", parameters: emptyParameters, example: {tool:"plan_route",arguments:{}} },
+  { name: "compare_budgets", parameters: {type:"object",properties:{budgets:{type:"array",items:{type:"integer",minimum:0,maximum:512},minItems:1,maxItems:3}},required:["budgets"],additionalProperties:false},example:{tool:"compare_budgets",arguments:{budgets:[20,42]}} },
+  { name: "finish", parameters: {type:"object",properties:{summary:{type:"string",minLength:3,maxLength:2000},citations:{type:"array",items:{type:"string"},minItems:1,maxItems:4}},required:["summary","citations"],additionalProperties:false},example:{tool:"finish",arguments:{summary:"Review the exact tool evidence.",citations:["E1"]}} },
 ];
