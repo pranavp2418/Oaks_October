@@ -49,8 +49,10 @@ def request_json(url, body=None, token=None):
         raise ProviderUnavailable("Provider transport/response failed; saved checkpoint is unchanged") from None
 
 
-def choose_live(goal, observations, tools):
-    token = os.environ.get("AI_GATEWAY_API_KEY") or os.environ.get("VERCEL_OIDC_TOKEN")
+def choose_live(goal, observations, tools, *, oidc_token=None):
+    # Vercel Function identity arrives in the platform-injected request header;
+    # the environment token is the build/local-development fallback, not runtime.
+    token = os.environ.get("AI_GATEWAY_API_KEY") or oidc_token or os.environ.get("VERCEL_OIDC_TOKEN")
     if not token:
         raise ProviderUnavailable("No existing Gateway API key or deployment OIDC token is configured")
     catalog = request_json(GATEWAY + "/models")

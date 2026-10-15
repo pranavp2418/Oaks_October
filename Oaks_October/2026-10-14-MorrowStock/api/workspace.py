@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler
+from functools import partial
 from pathlib import Path
 import json
 import sqlite3
@@ -6,7 +7,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from workspace import materialize, MAX_BYTES
-from agent import ProviderUnavailable
+from agent import ProviderUnavailable, choose_live
 
 
 class handler(BaseHTTPRequestHandler):
@@ -23,7 +24,8 @@ class handler(BaseHTTPRequestHandler):
             if not 1 <= size <= MAX_BYTES:
                 raise ValueError("Request requires 1–256 KiB")
             payload = json.loads(self.rfile.read(size))
-            self.send_json(materialize(payload))
+            chooser = partial(choose_live, oidc_token=self.headers.get("x-vercel-oidc-token"))
+            self.send_json(materialize(payload, live_chooser=chooser))
         except ProviderUnavailable as e:
             self.send_json({"error": str(e), "recoverable": True, "saved_workspace_unchanged": True}, 503)
         except (ValueError, TypeError, KeyError, RecursionError, sqlite3.IntegrityError) as e:

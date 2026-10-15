@@ -123,6 +123,13 @@ class AgentTests(unittest.TestCase):
             with patch("agent.request_json", return_value={"data": []}):
                 with self.assertRaises(ProviderUnavailable):
                     choose_live("Synthetic request", [], [])
+        with patch.dict("os.environ", {}, clear=True):
+            responses = [{"data":[{"id":"nvidia/nemotron-3.5-lightning-free","pricing":{"input":"0","output":"0"}}]},
+                         {"id":"fixture-generation","choices":[{"message":{"content":'{"tool":"inspect_inventory","arguments":{}}'}}]}]
+            with patch("agent.request_json", side_effect=responses) as call:
+                answer = choose_live("Synthetic inventory request", [], [], oidc_token="runtime-header-fixture-not-a-secret")
+                self.assertEqual(answer["choice"]["tool"],"inspect_inventory")
+                self.assertEqual(call.call_args_list[1].args[2],"runtime-header-fixture-not-a-secret")
 
     def test_concurrent_inventory_change_during_provider_wait_rejects_observation(self):
         # Independent second connection represents another local CLI process.
