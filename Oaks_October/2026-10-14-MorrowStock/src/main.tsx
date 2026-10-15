@@ -1284,6 +1284,8 @@ function App() {
           <input
             ref={file}
             className="sr-only"
+            tabIndex={-1}
+            aria-hidden="true"
             type="file"
             accept="application/json,.json"
             onChange={async (e) => {
