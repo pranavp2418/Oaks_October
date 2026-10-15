@@ -27,12 +27,20 @@ document.querySelector('#storage').onclick = async () => {
 document.querySelector('#frames').onclick = () => {
   if (document.visibilityState !== 'visible') { result.textContent = 'Not measured: page hidden'; return; }
   result.textContent = 'Measuring 120 frame intervals. Keep the page visible.';
-  const intervals = []; let last;
+  const intervals = []; let last; let interrupted = false;
+  const onVisibility = () => { if (document.visibilityState !== 'visible') interrupted = true; };
+  document.addEventListener('visibilitychange', onVisibility);
   function tick(t) {
+    if (interrupted || document.visibilityState !== 'visible') {
+      document.removeEventListener('visibilitychange', onVisibility);
+      result.textContent = 'Not measured: visibility changed during sampling. Keep the tab visible and start a fresh measurement.';
+      return;
+    }
     if (last !== undefined) intervals.push(t - last);
     last = t;
     if (intervals.length < 120) requestAnimationFrame(tick);
     else {
+      document.removeEventListener('visibilitychange', onVisibility);
       intervals.sort((a,b) => a-b);
       result.textContent = JSON.stringify({samples:120,frame_interval_p50_ms:intervals[59],frame_interval_p95_ms:intervals[113],max_ms:intervals[119],user_agent:navigator.userAgent,scope:'Visible steady-state browser/frame wrapper; not input latency, physical mobile or production load'},null,2);
     }
