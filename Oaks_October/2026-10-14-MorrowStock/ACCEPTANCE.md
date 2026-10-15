@@ -50,3 +50,5 @@ Scope fixed by the user's build brief and six-capability standard; no feature cu
 | Release | Web delivery verified; portfolio held | Clean installs/build, CI38777359033, pushed functional source bf936f0, source-matched deployment dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz and actual public workflows; portfolio awaits all three |
 
 These are bounded evidence dispositions, not claims of physical-mobile performance, a complete assistive-technology audit, prompt-injection immunity or security certification. The daily trio remains incomplete. See [release verification](QA_REPORT.md) for exact commands, receipts and unresolved UI timing evidence.
+
+Final disposition: applicable project delivery checks passed at source7b9ae36cf7c10f789f823b9639308093c1f3aa40. Final keyboard/input fixes and measurements are in QA_REPORT.md; earlier incomplete statuses are historical. Trio/portfolio publication remains separate.

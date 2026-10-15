@@ -1,6 +1,6 @@
 # MorrowStock release verification
 
-Status: functional delivery verified with the limitations below; portfolio integration awaits the other two projects. Source/runtime candidate `bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb`; production deployment `dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz`. This document is a later documentation-only checkpoint, not a different runtime claim.
+Status: applicable project delivery checks passed; portfolio integration awaits the complete trio. Final deployed source `7b9ae36cf7c10f789f823b9639308093c1f3aa40`, deployment `dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK`. Earlier observations below are retained as history, superseded by the final follow-up where stated.
 
 ## Boundaries and commands
 
@@ -41,3 +41,13 @@ Public assets matched local build byte-for-byte: app-BI8X4iiI.js SHA256 abff40be
 ## Honest remaining limits
 
 Public synthetic demo, not authenticated multiuser operations. Browser deletion loses saved work; export is backup. Portable records and their model metadata are user-editable, not signed attestations. Lost model responses can repeat a zero-price request before its journal save. No customer, production scale, prompt-injection immunity, compliance or bug-free claim. Portfolio/archive/country integration is intentionally withheld until all three agent products pass.
+
+## Final input and keyboard follow-up
+
+Final source CI passed: https://github.com/pranavp2418/Oaks_October/actions/runs/38789258130 . Six JS tests,20 Python groups, clean install/build. Existing stock/agent implementation was unchanged by these UI-only repairs; the full stock lifecycle, actual model pilot and390px recovery evidence above remain applicable.
+
+Removed layout-width animation, added explicit Reduce motion control, isolated trusted-input diagnostics and repaired RAF/listener cleanup. Hidden interruption is discarded; slow visible events remain. Final public Chrome sample13 trusted clicks/keys: dispatch p50=2.8ms,p95/max=21ms; next callback p50=17.2ms,p95/max=94.3ms; zero hidden discards. Earlier14-event follow-up measured p95=21.8ms dispatch/35.5ms next frame. These are bounded product interaction samples, not INP, physical-mobile FPS, or a whole-site performance certification. The earlier120-frame one-second-tail result remains recorded and is not converted into a pass.
+
+Final native modal keyboard cycle: Close→JSON textarea→Choose file→Cancel→Close; ShiftTab Close→Cancel; disabled Validate skipped; hidden file input excluded. Escape closed safely. Checked Reduce motion and Enter-driven section navigation. Malformed restore rejected in-dialog and actual exported journal restored without inference, retaining104 cases/5 picked and reviewed evidence at revision15.
+
+Final public assets equal clean local build: app-CmtJonvW.js350332bytes SHA2562d60d1b74495cb64d9943c5f7cdbe1b5f395a4b2d95fe4fd5cc90c4e18d4b529; CSS17189bytes SHA2568060c213115eca03c8da9bb8fe8bedce84d28c5b4700938fa07701d046ff0c12; journal2022bytes SHA256d139b1b8bf831be605f457ac4ec7d5ad77be6a1baed8ba3c575f502f84ebae0f. Final app gzip111.69kB. Build completion and source SHA inspected. Representative keyboard/input follow-up is closed; full screen-reader/physical-device/scanner certification remains unclaimed.

@@ -1710,6 +1710,259 @@
         "Exportable evidence dossier, retrieval evaluation and operational traces"
       ],
       "verified_at": "2026-10-15T15:28:00Z"
+    },
+    {
+      "title": "MorrowStock",
+      "path": "Oaks_October/2026-10-14-MorrowStock",
+      "classification": "resume",
+      "core_language": "Python",
+      "stack": [
+        "Python",
+        "SQLite",
+        "LangGraph",
+        "LangChain",
+        "React"
+      ],
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 22,
+      "stage": "applicable_delivery_passed",
+      "acceptance": "Oaks_October/2026-10-14-MorrowStock/ACCEPTANCE.md",
+      "completed": true,
+      "verification": {
+        "core_commit": "b000b0df40899bf011c420a6027a2cccd33074d3",
+        "deployment_id": "dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK",
+        "immutable_deployment_url": "https://morrowstock-20261014-5rpukqugh-resnesmee.vercel.app/",
+        "verification_candidate_url": "https://morrowstock-20261014.vercel.app/",
+        "completion_claim": true,
+        "local": {
+          "python_test_groups": 20,
+          "javascript_tests": 6,
+          "independent_exhaustive_allocation_cases": 400,
+          "adversarial_tool_choices": 24,
+          "sqlite_racing_processes": 6,
+          "clean_python_install": "passed",
+          "clean_node_install": "passed",
+          "typescript_vite_build": "passed",
+          "sqlite_killed_writer_recovery": "passed",
+          "langgraph_sqlite_checkpoint_reopen": "passed"
+        },
+        "ci": {
+          "status": "success",
+          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38789258130",
+          "commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40"
+        },
+        "hosted": {
+          "service_get_status": 200,
+          "synthetic_import_status": 200,
+          "synthetic_allocation": {
+            "stock_cases": 4,
+            "demand_cases": 6,
+            "served": 4,
+            "shortage": 2,
+            "objective": 6020
+          },
+          "provider_request": "passed_three_case_live_pilot",
+          "provider_error": null,
+          "build_logs": "deployment completion inspected",
+          "static_assets": [
+            {
+              "path": "/assets/app-BI8X4iiI.js",
+              "sha256": "abff40be2a0334184057b836fe2b2aa086f044330c7d4e0f869dbf12b900617e",
+              "local_equal": true
+            },
+            {
+              "path": "/assets/journal-IymR7jYX.js",
+              "sha256": "d139b1b8bf831be605f457ac4ec7d5ad77be6a1baed8ba3c575f502f84ebae0f",
+              "local_equal": true
+            },
+            {
+              "path": "/assets/app-CgjDG7Yq.css",
+              "sha256": "8060c213115eca03c8da9bb8fe8bedce84d28c5b4700938fa07701d046ff0c12",
+              "local_equal": true
+            }
+          ],
+          "pilot": "runs/2026-10-14-morrowstock-live-pilot.json"
+        },
+        "browser": {
+          "method": "permitted cloud browser; not native gstack Chromium",
+          "desktop_passed": [
+            "Seed141022 review/reserve rollback/retry/pick5/reload",
+            "Recall LOT-01 blocked plan; PICKED5/RESERVED6 exposure; release retained picks and closed plan",
+            "Propose/review/receive8 LEAF; original96 cases became104, shortage16 to8",
+            "Malformed restore rejected; actual 13-operation download restored without inference; evidence dossier downloaded/parsed"
+          ],
+          "full_workflow": "applicable_desktop_and_390px_flows_passed",
+          "mobile": "390px real iframe: stale-tab rejected/reopen recovered current journal; actual trace_lot checkpoint/interruption/continue/review passed; clientWidth=scrollWidth375; physical touch not tested",
+          "indexeddb_race": {
+            "writers": 8,
+            "successes": 1,
+            "conflicts": 7,
+            "reopened_revision": 1,
+            "scope": "isolated actual browser DB, product data untouched"
+          },
+          "performance_accessibility_full": "Representative input/key/reduced-motion checks passed; no full assistive-technology/scanner certification claim",
+          "keyboard": "Visible modal forward/backward focus wraps, Escape safely dismisses, Enter navigation and explicit reduce motion verified",
+          "frame_sample": {
+            "samples": 120,
+            "p50_ms": 16.7,
+            "p95_ms": 1016.4,
+            "max_ms": 1016.5,
+            "environment": "cloud Chrome154 Linux visible wrapper; not physical mobile/production",
+            "passed_claim": false
+          },
+          "screenshots": [
+            "runs/evidence/morrowstock-release-20261015/morrowstock-desktop-agent-reviewed.jpg",
+            "runs/evidence/morrowstock-release-20261015/morrowstock-mobile-agent-reviewed.jpg"
+          ],
+          "exports": [
+            {
+              "path": "runs/evidence/morrowstock-release-20261015/morrowstock-workspace.json",
+              "bytes": 10398,
+              "sha256": "02d03d12b0c9ba5dfede3f95d2e888cacef93420399f22722f0ed4644ab75696"
+            },
+            {
+              "path": "runs/evidence/morrowstock-release-20261015/morrowstock-evidence.json",
+              "bytes": 40385,
+              "sha256": "3117cfeab0386c2011d0e33015dfbb9f06c66a955e78b7c3fcb87d5c66fda4d9"
+            }
+          ],
+          "real_browser_generations": [
+            {
+              "id": "gen_01M509ZCC1A536FXTRX5ETHF0K",
+              "tokens": 1860,
+              "cost": "0"
+            },
+            {
+              "id": "gen_01M50A10NMJJCEPPCBQ7YA5H6D",
+              "tokens": 1940,
+              "cost": "0"
+            }
+          ],
+          "final_input_sample": {
+            "samples": 13,
+            "dispatch_p50_ms": 2.8,
+            "dispatch_p95_ms": 21,
+            "next_callback_p50_ms": 17.2,
+            "next_callback_p95_ms": 94.3,
+            "hidden_discards": 0,
+            "scope": "trusted product clicks/keys, not INP or physical FPS"
+          }
+        },
+        "gstack": {
+          "native_adversarial_passes": 3,
+          "findings_fixed": 4,
+          "zero_edit_last_native_pass": "no remaining substantiated defect before final runtime identity plumbing",
+          "concurrency_regression": "failed at intended ValueError assertion before repair; passed afterwards",
+          "test_value_audit": "five files screened, zero retirement candidates, no tests removed",
+          "cso_run": "1792079964614-fbfc07a251b6bd6d",
+          "cso_completeness": "partial",
+          "scanner_runtime_limitation": "trusted local Docker unavailable",
+          "outside_review": "unavailable; no authenticated outside CLI configured",
+          "final_review": "Applicable bounded release checks passed with documented scanner/physical-device limitations",
+          "native_findings_fixed_total": 5,
+          "verification_bench_regression": "5000ms hidden/visible interruption reproduced red; repaired green, independent fix-only pass confirmed cleanup",
+          "documentation_review": "Native read-only pass: no substantiated doc gaps; counts/exports matched; live observations not independently verified"
+        },
+        "benchmark": {
+          "environment": {
+            "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14",
+            "compiler": "Clang 22.1.3",
+            "machine": "x86_64",
+            "logical_cpu_count": 9,
+            "process_affinity_count": 9
+          },
+          "workload": {
+            "seed": 141022,
+            "lots": 24,
+            "orders": 24,
+            "lot_cases": 104,
+            "demand_cases": 114,
+            "warmup": 3,
+            "repetitions": 25,
+            "method": "Sequential perf_counter_ns wall clock; p95 nearest rank; separate tracemalloc run; shared container without CPU isolation"
+          },
+          "exact_min_cost_flow": {
+            "p50_ms": 5.7226,
+            "p95_ms": 7.0833,
+            "objective": 240430,
+            "served": 82,
+            "traced_peak_bytes": 37472,
+            "min_ms": 4.8998,
+            "max_ms": 8.2529
+          },
+          "priority_nearest_greedy": {
+            "p50_ms": 0.0732,
+            "p95_ms": 0.0904,
+            "objective": 257390,
+            "served": 77,
+            "traced_peak_bytes": 1680,
+            "min_ms": 0.0719,
+            "max_ms": 0.1365
+          },
+          "limits": "One small synthetic workload; greedy is not an optimal oracle; no production throughput/scale extrapolation"
+        },
+        "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+        "qa_report": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+        "release_evidence": "runs/evidence/morrowstock-release-20261015"
+      },
+      "vercel_project_id": "prj_lpAwyc4mHeLwXhrIWfgGv0fZUZVv",
+      "date": "2026-10-14",
+      "industry": "Perishable inventory and grocery operations",
+      "problem": "Connect expiry-compatible exact allocation to reviewed reservation/picking, recall containment and replenishment through a bounded read-only investigator",
+      "core_technical_contribution": "Integral min-cost flow with explicit priority-weighted shortage arcs, transactional conserved stock lifecycle, and version-bound checkpointed read-only tools",
+      "invariants": [
+        "No lot/order over-allocation",
+        "Arrival <= due <= expiry",
+        "Review binds exact current version and digest",
+        "Duplicate operation IDs are idempotent; conflicting bodies fail",
+        "Failed stock transaction changes no stock/receipt/audit head",
+        "Recalled stock cannot be picked",
+        "Post-inference observation uses a consistent inventory version",
+        "Model tools cannot mutate stock"
+      ],
+      "visual_theme": "Produce-market dispatch ledger, olive/limestone/tomato, allocation ribbon and compact case rows",
+      "capabilities": [
+        "Validated bounded synthetic import and SQLite WAL operations",
+        "Exact allocation and missing-lot/demand scenarios",
+        "Digest-bound draft/review/reservation",
+        "Idempotent picking and precommit recovery",
+        "Recall exposure and release preserving picked history",
+        "Reviewed replenishment and receiving",
+        "Actual LangChain tools, LangGraph SQLite checkpoint interrupts, zero-price hosted inference and reviewed evidence",
+        "Inspectable audit/evidence exports and measured operational solver view"
+      ],
+      "substantive_skill_coverage": [
+        "Python",
+        "SQL",
+        "SQLite",
+        "LangChain",
+        "LangGraph",
+        "React",
+        "TypeScript",
+        "Integration testing",
+        "Git",
+        "CI/CD"
+      ],
+      "skill_evidence_scope": "Actual implementation/local/CI and hosted model/tool workflows passed; single-user journal, not multiuser DB; no general accuracy or certification claim.",
+      "status": "complete",
+      "implementation": "implemented_source_pushed",
+      "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-MorrowStock",
+      "verification_candidate_url": "https://morrowstock-20261014.vercel.app/",
+      "verification_deployment_id": "dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz",
+      "verification_deployed_source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+      "live_url": "https://morrowstock-20261014.vercel.app/",
+      "deployment_id": "dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK",
+      "deployment": "public_workflows_verified",
+      "integration": "withheld_until_trio_passes",
+      "portfolio_integration": "not_added",
+      "completion_ordinal": 22,
+      "counted": true,
+      "external_blocker": null,
+      "last_updated_at": "2026-10-15T18:58:18.015Z",
+      "deployed_source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+      "verified_at": "2026-10-15T18:58:18.015Z"
     }
   ],
   "dry_runs": [
@@ -3681,18 +3934,18 @@
       ],
       "delivery_mode": "web_deployed",
       "planned_ordinal": 22,
-      "stage": "functional_workflows_verified_release_followup",
+      "stage": "applicable_delivery_passed",
       "acceptance": "Oaks_October/2026-10-14-MorrowStock/ACCEPTANCE.md",
-      "completed": false,
+      "completed": true,
       "verification": {
         "core_commit": "b000b0df40899bf011c420a6027a2cccd33074d3",
-        "deployment_id": "dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz",
-        "immutable_deployment_url": "https://morrowstock-20261014-mz7caiazo-resnesmee.vercel.app/",
+        "deployment_id": "dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK",
+        "immutable_deployment_url": "https://morrowstock-20261014-5rpukqugh-resnesmee.vercel.app/",
         "verification_candidate_url": "https://morrowstock-20261014.vercel.app/",
-        "completion_claim": false,
+        "completion_claim": true,
         "local": {
           "python_test_groups": 20,
-          "javascript_tests": 4,
+          "javascript_tests": 6,
           "independent_exhaustive_allocation_cases": 400,
           "adversarial_tool_choices": 24,
           "sqlite_racing_processes": 6,
@@ -3704,8 +3957,8 @@
         },
         "ci": {
           "status": "success",
-          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38777359033",
-          "commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb"
+          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38789258130",
+          "commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40"
         },
         "hosted": {
           "service_get_status": 200,
@@ -3747,7 +4000,7 @@
             "Propose/review/receive8 LEAF; original96 cases became104, shortage16 to8",
             "Malformed restore rejected; actual 13-operation download restored without inference; evidence dossier downloaded/parsed"
           ],
-          "full_workflow": "scoped_functional_pass; not full accessibility/performance clearance",
+          "full_workflow": "applicable_desktop_and_390px_flows_passed",
           "mobile": "390px real iframe: stale-tab rejected/reopen recovered current journal; actual trace_lot checkpoint/interruption/continue/review passed; clientWidth=scrollWidth375; physical touch not tested",
           "indexeddb_race": {
             "writers": 8,
@@ -3756,8 +4009,8 @@
             "reopened_revision": 1,
             "scope": "isolated actual browser DB, product data untouched"
           },
-          "performance_accessibility_full": "not_passed; representative input/performance follow-up and remaining accessibility checks required",
-          "keyboard": "ShiftTab navigation, Enter activate/submit and Escape dismiss checked; full focus-cycle/screen-reader and OS reduced-motion emulation unverified",
+          "performance_accessibility_full": "Representative input/key/reduced-motion checks passed; no full assistive-technology/scanner certification claim",
+          "keyboard": "Visible modal forward/backward focus wraps, Escape safely dismisses, Enter navigation and explicit reduce motion verified",
           "frame_sample": {
             "samples": 120,
             "p50_ms": 16.7,
@@ -3793,7 +4046,16 @@
               "tokens": 1940,
               "cost": "0"
             }
-          ]
+          ],
+          "final_input_sample": {
+            "samples": 13,
+            "dispatch_p50_ms": 2.8,
+            "dispatch_p95_ms": 21,
+            "next_callback_p50_ms": 17.2,
+            "next_callback_p95_ms": 94.3,
+            "hidden_discards": 0,
+            "scope": "trusted product clicks/keys, not INP or physical FPS"
+          }
         },
         "gstack": {
           "native_adversarial_passes": 3,
@@ -3805,7 +4067,7 @@
           "cso_completeness": "partial",
           "scanner_runtime_limitation": "trusted local Docker unavailable",
           "outside_review": "unavailable; no authenticated outside CLI configured",
-          "final_review": "Functional verification with concerns; overall release incomplete pending UI input/performance follow-up",
+          "final_review": "Applicable bounded release checks passed with documented scanner/physical-device limitations",
           "native_findings_fixed_total": 5,
           "verification_bench_regression": "5000ms hidden/visible interruption reproduced red; repaired green, independent fix-only pass confirmed cleanup",
           "documentation_review": "Native read-only pass: no substantiated doc gaps; counts/exports matched; live observations not independently verified"
@@ -3849,7 +4111,7 @@
           },
           "limits": "One small synthetic workload; greedy is not an optimal oracle; no production throughput/scale extrapolation"
         },
-        "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+        "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
         "qa_report": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
         "release_evidence": "runs/evidence/morrowstock-release-20261015"
       },
@@ -3891,23 +4153,25 @@
         "Git",
         "CI/CD"
       ],
-      "skill_evidence_scope": "Actual implementation/local/CI and hosted model/tool evidence; overall release incomplete; no multiuser/shared database or general model accuracy claim.",
-      "status": "incomplete_release_followup",
+      "skill_evidence_scope": "Actual implementation/local/CI and hosted model/tool workflows passed; single-user journal, not multiuser DB; no general accuracy or certification claim.",
+      "status": "complete",
       "implementation": "implemented_source_pushed",
-      "source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
+      "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-MorrowStock",
       "verification_candidate_url": "https://morrowstock-20261014.vercel.app/",
       "verification_deployment_id": "dpl_5R1pc1TP6Jes3j9H56sTFLHYL6gz",
       "verification_deployed_source_commit": "bf936f0240f84f85d9e98e7ec69d47da5a1a4ebb",
-      "live_url": null,
-      "deployment_id": null,
-      "deployment": "verification_candidate_only_not_complete",
+      "live_url": "https://morrowstock-20261014.vercel.app/",
+      "deployment_id": "dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK",
+      "deployment": "public_workflows_verified",
       "integration": "withheld_until_trio_passes",
       "portfolio_integration": "not_added",
-      "completion_ordinal": null,
-      "counted": false,
+      "completion_ordinal": 22,
+      "counted": true,
       "external_blocker": null,
-      "last_updated_at": "2026-10-15T17:53:16.270Z"
+      "last_updated_at": "2026-10-15T18:58:18.015Z",
+      "deployed_source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+      "verified_at": "2026-10-15T18:58:18.015Z"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
