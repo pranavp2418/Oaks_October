@@ -1928,12 +1928,12 @@
     },
     {
       "date": "2026-10-14",
-      "status": "blocked_external_provider_verification",
+      "status": "live_agent_passed_browser_verification_in_progress",
       "target": 3,
       "completed_projects": 0,
       "run_record": "runs/2026-10-14.json",
       "report": "runs/2026-10-14-report.md",
-      "last_updated_at": "2026-10-15T16:23:38.878Z",
+      "last_updated_at": "2026-10-15T17:28:11.084Z",
       "portfolio_integration": "withheld",
       "projects": [
         {
@@ -1960,7 +1960,8 @@
           "required_action": "Complete account verification outside this run, or explicitly authorize an existing configured provider; no secret should be pasted into chat",
           "transient": false
         }
-      ]
+      ],
+      "external_blocker": null
     },
     {
       "date": "2026-10-15",
@@ -3691,7 +3692,7 @@
       ],
       "delivery_mode": "web_deployed",
       "planned_ordinal": 22,
-      "stage": "blocked_live_provider_verification",
+      "stage": "live_agent_passed_browser_verification_in_progress",
       "acceptance": "Oaks_October/2026-10-14-MorrowStock/ACCEPTANCE.md",
       "completed": false,
       "verification": {
@@ -3727,8 +3728,8 @@
             "shortage": 2,
             "objective": 6020
           },
-          "provider_request": "attempted_real_request_rejected",
-          "provider_error": "Gateway HTTP403: customer_verification_required; no paid fallback was attempted",
+          "provider_request": "passed_three_case_live_pilot",
+          "provider_error": null,
           "build_logs": "deployment completion inspected",
           "static_assets": [
             {
@@ -3741,7 +3742,8 @@
               "sha256": "8060c213115eca03c8da9bb8fe8bedce84d28c5b4700938fa07701d046ff0c12",
               "local_equal": true
             }
-          ]
+          ],
+          "pilot": "runs/2026-10-14-morrowstock-live-pilot.json"
         },
         "browser": {
           "method": "permitted cloud browser; not native gstack Chromium",
@@ -3856,22 +3858,8 @@
       "portfolio_integration": "not_added",
       "completion_ordinal": null,
       "counted": false,
-      "external_blocker": {
-        "stage": "live_agent_provider_acceptance",
-        "service": "Vercel AI Gateway",
-        "http_status": 403,
-        "code": "customer_verification_required",
-        "application_http_status": 503,
-        "message": "Gateway HTTP403: customer_verification_required; no paid fallback was attempted",
-        "observed_on": "2026-10-15",
-        "recorded_at": "2026-10-15T16:23:38.878Z",
-        "paid_fallback_attempted": false,
-        "payment_method_added": false,
-        "credits_purchased": false,
-        "required_action": "Complete account verification outside this run, or explicitly authorize an existing configured provider; no secret should be pasted into chat",
-        "transient": false
-      },
-      "last_updated_at": "2026-10-15T16:23:38.878Z"
+      "external_blocker": null,
+      "last_updated_at": "2026-10-15T17:28:11.084Z"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
