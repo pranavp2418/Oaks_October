@@ -97,7 +97,7 @@ func unambiguousJSON(raw []byte) error {
 					return err
 				}
 				name, ok := key.(string)
-				if !ok || keys[strings.ToLower(name)] {
+				if !ok || !asciiField(name) || keys[strings.ToLower(name)] {
 					return errors.New("Duplicate or ambiguous JSON field")
 				}
 				keys[strings.ToLower(name)] = true
@@ -131,6 +131,14 @@ func unambiguousJSON(raw []byte) error {
 		return errors.New("Trailing JSON")
 	}
 	return nil
+}
+func asciiField(name string) bool {
+	for _, r := range name {
+		if r > 127 {
+			return false
+		}
+	}
+	return true
 }
 func ParseCommand(raw []byte) (Command, error) {
 	var command Command

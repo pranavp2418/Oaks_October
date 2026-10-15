@@ -13,3 +13,5 @@ Hosted deployment, actual provider evaluation and desktop/mobile browser workflo
 ```
 
 Compiled/run using Go1.27.2, Linux6.18.44 x86_64,9 logical CPUs; go run -trimpath. Wide timing tails are retained; no universal speedup or production latency claim.
+
+Follow-up review reproduced Go's Unicode simple-fold long-s field alias. The decoder now rejects non-ASCII property names before struct decoding, and the raw browser parser applies the same boundary; string values still support Unicode. Long-s/ASCII-case/escaped duplicate regressions passed with the full8 native groups,400 oracles and native/WASM integration. Runtime source changed after the initial source push; a follow-up source commit is required before release. Current Vercel deployment attempt was rejected HTTP402 api-deployments-free-per-day, retry_after86400. No deployment ID/live URL or hosted/provider/browser pass exists for Wirewake. This is a web-planned project; it is not reclassified as code-only.

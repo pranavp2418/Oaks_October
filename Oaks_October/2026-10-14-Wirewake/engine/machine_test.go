@@ -281,7 +281,7 @@ func BenchmarkProductBFS(b *testing.B) {
 }
 
 func TestCaseAliasAndDuplicateJSON(t *testing.T) {
-	for _, raw := range []string{`{"id":"a","ID":"b","kind":"check","args":{}}`, `{"id":"a","id":"b","kind":"check","args":{}}`, `null`, `{"id":"a","kind":"check","args":{}} {}`} {
+	for _, raw := range []string{`{"id":"a","ID":"b","kind":"check","args":{}}`, `{"id":"a","kind":"check","args":{"spec":{},"ſpec":{}}}`, `{"id":"a","id":"b","kind":"check","args":{}}`, `null`, `{"id":"a","kind":"check","args":{}} {}`} {
 		if _, err := ParseCommand([]byte(raw)); err == nil {
 			t.Fatalf("Ambiguous JSON accepted: %s", raw)
 		}

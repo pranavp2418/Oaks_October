@@ -10,7 +10,7 @@ export function parseStrict(text) {
       const seen = new Set();
       while (tokens[at] !== "}") {
         const key = JSON.parse(tokens[at++]).toLowerCase();
-        if (seen.has(key)) throw Error("Duplicate or ambiguous JSON field");
+        if (/[^\x00-\x7f]/.test(key) || seen.has(key)) throw Error("Duplicate or ambiguous JSON field");
         seen.add(key); at++; value(depth + 1);
         if (tokens[at] !== ",") break;
         at++;
