@@ -2,8 +2,8 @@
   "core_groups": 5,
   "independent_oracle_cases": 240,
   "clean_install_build": "passed",
-  "browser": "pending_replacement_runtime",
-  "live": "pending",
+  "browser": "live desktop and 390px iframe passed",
+  "live": "verified",
   "assumptions": "single-user synthetic microgrid",
   "test_groups": 7,
   "oracle_cases": 240,
@@ -12,5 +12,8 @@
     "downward baseline ramp",
     "close notification channel"
   ],
-  "public_workflow": "pending corrected source deployment"
+  "public_workflow": "solve/scenarios/review/approve/interruption/reload/resume to COMPLETE",
+  "transactional_browser_checks": "2 connections, one winner, exact replay idempotent, conflicting receipt rejected, persisted winner on reopen",
+  "source_integrity": "runs/2026-10-13-public-api-source.json",
+  "verified_at": "2026-10-15T15:19:30Z"
 }

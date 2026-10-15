@@ -1,0 +1,48 @@
+{
+  "verified_at": "2026-10-15T15:17:19.927Z",
+  "checks": [
+    {
+      "title": "Loadstone",
+      "file": "/assets/index-DJSNVCig.js",
+      "status": 200,
+      "sha256": "4163aa875c793139136e64a753d0a935943d6fdbb89b0c2228a6d25b411fac26",
+      "bytes": 338608
+    },
+    {
+      "title": "Loadstone",
+      "file": "/assets/index-C6kqni6D.css",
+      "status": 200,
+      "sha256": "5840bce869350875068b6b2a667609fbe0897ff4e82e7ae2b89068c75cbfd398",
+      "bytes": 6224
+    },
+    {
+      "title": "Loadstone",
+      "file": "/dispatch.wasm",
+      "status": 200,
+      "sha256": "480d2fe9fee4996a76cee27ebccd63411d71d5ebf668db7de65e89c851759391",
+      "bytes": 6300
+    },
+    {
+      "title": "ProofHarbor",
+      "file": "styles-6PUFQCHG.css",
+      "status": 200,
+      "sha256": "b92e8bb5da7655ad1f014b608b6209b65e4809e9fbba46fcbf78777f4a7f189a",
+      "bytes": 12487
+    },
+    {
+      "title": "ProofHarbor",
+      "file": "main-XMYADIIL.js",
+      "status": 200,
+      "sha256": "845af6bb47f9f831a5dcd18d67986ead03e4a77ce8f3d3c62d9d48f17ba6def9",
+      "bytes": 185447
+    }
+  ],
+  "api": {
+    "workflow": "import → injected retrieval failure → retry → reviewed publication",
+    "revision": 4,
+    "citations": 6,
+    "repeated_request": "identical semantic state excluding elapsed_ms and generated checkpoint IDs",
+    "invalid_schema": 400,
+    "unacknowledged_conflict": 400
+  }
+}

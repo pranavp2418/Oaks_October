@@ -559,5 +559,91 @@
     "live": "https://twintrace-20261012.vercel.app/",
     "cover": "/assets/twintrace-cover.svg",
     "counted_daily_project": true
+  },
+  {
+    "title": "Loadstone",
+    "slug": "loadstone",
+    "domain": "Energy operations",
+    "stack": [
+      "C++",
+      "WebAssembly",
+      "React",
+      "IndexedDB"
+    ],
+    "description": "Optimize a microgrid dispatch, compare outage scenarios, then review and rehearse a recoverable plan.",
+    "details": "Exact integer dynamic programming over battery charge and generator ramp state, checked against 240 independent oracle cases. Version-bound review, interruption recovery and transactional operation receipts. Synthetic, lossless model; browser-local workspace; no physical device control.",
+    "visual": "Energy balance → exact dispatch → recoverable rehearsal",
+    "theme": "loadstone",
+    "classification": "resume",
+    "city": {
+      "district": "industry",
+      "archetype": "factory"
+    },
+    "live": "https://loadstone-20261013.vercel.app/",
+    "embed": true,
+    "date": "2026-10-13",
+    "month": "2026-10",
+    "delivery_mode": "web_deployed",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-Loadstone",
+    "cover": "/assets/loadstone-cover.svg",
+    "counted_daily_project": true
+  },
+  {
+    "title": "PatchBay",
+    "slug": "patchbay",
+    "domain": "Software supply-chain security",
+    "stack": [
+      "Kotlin",
+      "JVM",
+      "SQLite",
+      "Exact set cover"
+    ],
+    "description": "Trace runtime dependency exposures and apply reviewed remediation rehearsals with transactional rollback.",
+    "details": "Native dependency-remediation workbench with SCC analysis, shortest exposure paths and exact compatible weighted set-cover search. SQLite WAL, explicit review, idempotent receipts, recovery and integrity exports. Verified with 300 independent comparisons and six-process receipt races; no real package changes or security certification.",
+    "visual": "Dependency graph → exact remediation → transactional evidence",
+    "theme": "patchbay",
+    "classification": "new",
+    "city": {
+      "district": "infrastructure",
+      "archetype": "signal"
+    },
+    "live": null,
+    "embed": false,
+    "walkthrough": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay#walkthrough",
+    "date": "2026-10-13",
+    "month": "2026-10",
+    "delivery_mode": "github_only",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay",
+    "cover": "/assets/patchbay-cover.svg",
+    "counted_daily_project": true
+  },
+  {
+    "title": "ProofHarbor",
+    "slug": "proofharbor",
+    "domain": "Infrastructure investigation",
+    "stack": [
+      "Python",
+      "LangGraph",
+      "LangChain",
+      "SQLite",
+      "Angular"
+    ],
+    "description": "Follow linked evidence, retain contradictory observations and review a recoverable, citation-checked dossier.",
+    "details": "Lexical and bounded graph retrieval with exact quotations, supersession filtering and explicit unresolved contradictions. Real LangGraph SQLite checkpoints and LangChain retrieval pipeline. Single-user browser journal reconstructs request-local state; deterministic extractive output, no model API or causal inference.",
+    "visual": "Source evidence → graph paths → reviewed dossier",
+    "theme": "proofharbor",
+    "classification": "resume",
+    "city": {
+      "district": "infrastructure",
+      "archetype": "campus"
+    },
+    "live": "https://proofharbor-20261013.vercel.app/",
+    "embed": true,
+    "date": "2026-10-13",
+    "month": "2026-10",
+    "delivery_mode": "web_deployed",
+    "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-ProofHarbor",
+    "cover": "/assets/proofharbor-cover.svg",
+    "counted_daily_project": true
   }
 ]

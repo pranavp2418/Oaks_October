@@ -1,10 +1,10 @@
 {
   "date": "2026-10-13",
-  "owner": "codex-build-20261013-2018",
+  "owner": "codex-resume-20261015",
   "started_at": "2026-10-13T20:23:32.735441+00:00",
-  "last_updated_at": "2026-10-13T20:44:02.278120+00:00",
-  "lease_expires_at": "2026-10-13T23:23:32.735441+00:00",
-  "status": "acceptance_defined",
+  "last_updated_at": "2026-10-15T15:19:30Z",
+  "lease_expires_at": "2026-10-15T17:19:30Z",
+  "status": "delivery_verified_portfolio_release_pending",
   "target": 3,
   "completed_projects": 0,
   "projects": [
@@ -23,7 +23,7 @@
       "delivery_mode": "web_deployed",
       "planned_ordinal": 19,
       "path": "Oaks_October/2026-10-13-Loadstone",
-      "stage": "live_desktop_verified_mobile_pending",
+      "stage": "delivery_verified_portfolio_pending",
       "core": "Exact finite-horizon battery/generator dispatch with SOC and ramp state, bounded integer DP and action reconstruction",
       "capabilities": [
         "Validated profile import and transactional local workspace",
@@ -37,12 +37,17 @@
         "core_groups": 5,
         "oracle_cases": 240,
         "clean_install_build": true,
-        "browser": "1200px and 390px complete local workflow passed; no page errors"
+        "browser": "Live desktop and 390px iframe: solve, scenario comparison, review/approve, interruption/reload/resume to COMPLETE; real IndexedDB two-connection CAS and idempotency checks passed",
+        "test_groups": 7,
+        "source_integrity": "JS/CSS/WASM SHA256 matches current clean build; runs/2026-10-13-public-api-source.json"
       },
-      "source_commit": "94af62de10ed38da7fa4ff4ec4de9562cb0da63b",
+      "source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e",
       "project_id": "prj_fUqT9ViEE0zTe5r8mcGfjF3BkVQM",
-      "deployment_id": "dpl_7AGBtHAmWfdRutTUFpgRd7r8m6cA",
-      "live_url": "https://loadstone-20261013.vercel.app/"
+      "deployment_id": "dpl_6jsqxZWprdHG828NZMckXsoJpJaU",
+      "live_url": "https://loadstone-20261013.vercel.app/",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-Loadstone",
+      "integration": "pending_release",
+      "deployed_source_commit": "e26d82a9d38a81eaef3dfaa6398d2289d473947e"
     },
     {
       "title": "PatchBay",
@@ -57,7 +62,7 @@
       "delivery_mode": "github_only",
       "planned_ordinal": 20,
       "path": "Oaks_October/2026-10-13-PatchBay",
-      "stage": "clean_cli_verified_ready_to_push",
+      "stage": "delivery_verified_portfolio_pending",
       "core": "Cycle-aware runtime dependency reachability and exact weighted remediation-bundle set cover with explicit incompatibilities",
       "capabilities": [
         "Atomic validated graph/advisory import into SQLite",
@@ -78,8 +83,14 @@
           "injected precommit failure",
           "killed SQLite writer recovery",
           "audit corruption rejection"
-        ]
-      }
+        ],
+        "ci": "https://github.com/pranavp2418/Oaks_October/actions/runs/38602773573"
+      },
+      "source_commit": "a74ef58f07bb2c57a80046669eea4807423da6e7",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-PatchBay",
+      "integration": "pending_release",
+      "live_url": null,
+      "deployment_id": null
     },
     {
       "title": "ProofHarbor",
@@ -97,7 +108,7 @@
       "delivery_mode": "web_deployed",
       "planned_ordinal": 21,
       "path": "Oaks_October/2026-10-13-ProofHarbor",
-      "stage": "acceptance_defined",
+      "stage": "delivery_verified_portfolio_pending",
       "core": "Evidence graph traversal, contradiction/supersession-aware retrieval and citation-checked extractive incident synthesis inside real checkpointed human review",
       "capabilities": [
         "Validated evidence ingestion and portable SQLite workspace persistence",
@@ -106,12 +117,31 @@
         "LangGraph durable investigate/review/publish interrupts",
         "Failed retrieval reprocessing and restart checkpoint resume",
         "Exportable evidence dossier, retrieval evaluation and operational traces"
-      ]
+      ],
+      "source_commit": "e4d5bea2a47b4a775ee8d9fad199899339ebc2c8",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-13-ProofHarbor",
+      "integration": "pending_release",
+      "project_id": "prj_XsZswAMJs9QQXiVtIMTpD9MIMjPN",
+      "deployment_id": "dpl_7Lwv2M6K4EY3hoyAzyiEts9jEJBK",
+      "deployed_source_commit": "3abef7d7250af01604af6b935cc6722a34803874",
+      "live_url": "https://proofharbor-20261013.vercel.app/",
+      "verification": {
+        "browser": "Live desktop and 390px iframe import, failed retrieval, reload/retry, six exact citations, contradiction review and publication passed; portable workspace downloaded as valid schema-1 journal; real IndexedDB race passed",
+        "api": "HTTP 200 reviewed replay, stable semantic state on repeated request; schema and missing-acknowledgement HTTP400; source JS/CSS SHA256 matches build"
+      }
     }
   ],
   "blockers": [],
-  "portfolio_integration": "withheld_until_all_three_verified",
+  "portfolio_integration": "local_tests_and_build_passed_release_pending",
   "source_baseline": "b27b676e0f90c15979678f57cdc28c3402b313b0",
   "flagship_progress_ref": "pranavp2418/AtlasForge/PROGRESS.json",
-  "profile_public_access": "LinkedIn fetch HTTP 999; current Library resume and supplied profile read; no direct-profile claim"
+  "profile_public_access": "LinkedIn fetch HTTP 999; current Library resume and supplied profile read; no direct-profile claim",
+  "delivery_verified_projects": 3,
+  "progress_evidence": {
+    "ci": "https://github.com/pranavp2418/Oaks_October/actions/runs/38602773573",
+    "public_api_source": "runs/2026-10-13-public-api-source.json",
+    "portfolio_tests": 24,
+    "portfolio_build": "npm run build passed",
+    "browser_substitution": "Permitted cloud browser used for gstack QA; physical devices not tested"
+  }
 }

@@ -4,10 +4,14 @@
   "native_checkpoint_process_restart": "passed",
   "citation_negative_cases": "passed",
   "angular_aot_build": "passed",
-  "public_workflow": "pending",
+  "public_workflow": "live desktop and 390px iframe passed",
   "delivery_mode": "web_deployed",
   "review_fixes": [
     "compact journal backup separate from dossier",
     "prefixed run IDs remain reviewable at maximum length"
-  ]
+  ],
+  "browser": "import/inject failure/reload/retry/citations/conflict acknowledgement/publish/export",
+  "transactional_browser_checks": "2 connections, one winner, stale response rejected, reopened journal retained",
+  "source_integrity": "runs/2026-10-13-public-api-source.json",
+  "verified_at": "2026-10-15T15:19:30Z"
 }
