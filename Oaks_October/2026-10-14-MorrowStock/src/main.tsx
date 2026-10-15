@@ -1246,6 +1246,13 @@ function App() {
         </main>
         <dialog
           ref={editorRef}
+          onKeyDown={e => {
+            if (e.key !== "Tab") return;
+            const controls = Array.from(e.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled),textarea:not(:disabled),input:not(:disabled):not([tabindex="-1"])'));
+            const first = controls[0], last = controls.at(-1);
+            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last?.focus(); }
+            if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first?.focus(); }
+          }}
           onCancel={() => setEditor(null)}
           aria-labelledby="import-title"
         >
