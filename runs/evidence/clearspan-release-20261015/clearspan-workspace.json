@@ -1,0 +1,438 @@
+{
+  "schema": 1,
+  "journal": [
+    {
+      "command": {
+        "id": "b1f2f224-cae2-4392-a5e8-043ff48da0a3",
+        "kind": "import",
+        "args": {
+          "map": {
+            "width": 10,
+            "height": 8,
+            "base": 70,
+            "budget": 42,
+            "blocked": [
+              13,
+              23,
+              33,
+              43,
+              53,
+              55,
+              56,
+              57,
+              58,
+              25,
+              35
+            ],
+            "targets": [
+              {
+                "id": "PUMP",
+                "cell": 11,
+                "priority": 8
+              },
+              {
+                "id": "VALVE",
+                "cell": 18,
+                "priority": 5
+              },
+              {
+                "id": "SEAL",
+                "cell": 41,
+                "priority": 9
+              },
+              {
+                "id": "GAUGE",
+                "cell": 67,
+                "priority": 6
+              },
+              {
+                "id": "JOINT",
+                "cell": 76,
+                "priority": 4
+              },
+              {
+                "id": "PANEL",
+                "cell": 6,
+                "priority": 3
+              }
+            ]
+          }
+        }
+      },
+      "fingerprint": "4460ac8251894237d5e084033e099ce5e9bfd03918a201a40ca3c3d13c694af0",
+      "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "fc8f90d3790a537965a5d3c3a8a667aedbd98425f72972e80674f5f794044212"
+    },
+    {
+      "command": {
+        "id": "28cf8e3c-8b5e-4c38-aeb4-2c30aa6c087e",
+        "kind": "plan",
+        "args": {}
+      },
+      "fingerprint": "1072c541656fb867d707cff4985587e3bbde93441a7c8fc45cf5ccef6b6b96ad",
+      "previous": "fc8f90d3790a537965a5d3c3a8a667aedbd98425f72972e80674f5f794044212",
+      "hash": "7a380f562833a030227aba18c692c916024260b1cfb75a2a0ab1dbec227858a4"
+    },
+    {
+      "command": {
+        "id": "86a413e4-7aa3-4f08-9662-8824031b4897",
+        "kind": "review",
+        "args": {
+          "note": "Checked exclusion boundaries, priorities and return reserve."
+        }
+      },
+      "fingerprint": "f95a137d46a640f89e93ec33d152734fc7e41ccea8579ff093b9b64c0d717684",
+      "previous": "7a380f562833a030227aba18c692c916024260b1cfb75a2a0ab1dbec227858a4",
+      "hash": "9b4301d19a6e6f31fb8844d8fee2aa0b3153fb54c3ecf9814b27efd30e9a6983"
+    },
+    {
+      "command": {
+        "id": "19bf5b21-983b-4dec-a905-ce6e7ba12f29",
+        "kind": "start",
+        "args": {}
+      },
+      "fingerprint": "44de40aaa90d191c485c45378b4a19b540ae3bd2502d224c1df815509cc8a077",
+      "previous": "9b4301d19a6e6f31fb8844d8fee2aa0b3153fb54c3ecf9814b27efd30e9a6983",
+      "hash": "79f823bcb8c9783fcd85cef968090ac9b4840e8824c69db8c18c7a44c9fe0dd5"
+    },
+    {
+      "command": {
+        "id": "ff448643-55b7-40fa-85c0-ff453298cdba",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "0fcc328db37f48658bc43e2da793f975120e5ddc57e4dfe06769ff17ab130ee9",
+      "previous": "79f823bcb8c9783fcd85cef968090ac9b4840e8824c69db8c18c7a44c9fe0dd5",
+      "hash": "b3676cab44cc84c5140ada366086b93e904b867c06777849cab6efc7c737a945"
+    },
+    {
+      "command": {
+        "id": "f48dfb97-fc20-4cdb-a8f6-30d36fbeab81",
+        "kind": "step",
+        "args": {
+          "result": "ISSUE",
+          "note": "Synthetic seal discoloration; held for operator review."
+        }
+      },
+      "fingerprint": "8850d386312ecf964945574237bfd1a0991b9dfc8f31bdfbc3ab74d71c9b407e",
+      "previous": "b3676cab44cc84c5140ada366086b93e904b867c06777849cab6efc7c737a945",
+      "hash": "1532becf70b3f4f992bb6a5b330d41f065cda8c149f2692a3c596e7c688aaae3"
+    },
+    {
+      "command": {
+        "id": "6fb1c7c3-58b5-499b-8a07-d521b5130678",
+        "kind": "pause",
+        "args": {}
+      },
+      "fingerprint": "0a39cdda1bf34599a2489f716e5e02430a346182e4820ac1beee6b0298ab63b2",
+      "previous": "1532becf70b3f4f992bb6a5b330d41f065cda8c149f2692a3c596e7c688aaae3",
+      "hash": "ac31267ec65ff93776ad912c3965963e72664660fbfb14a15f6d2ee69a0dc03a"
+    },
+    {
+      "command": {
+        "id": "89412303-39b1-493d-9759-0430cc9b1f8c",
+        "kind": "exclude",
+        "args": {
+          "cell": 0,
+          "blocked": true
+        }
+      },
+      "fingerprint": "7fd61091fe479ccf109ff87b957bceba54cacd81f092e041406674bc5b42049d",
+      "previous": "ac31267ec65ff93776ad912c3965963e72664660fbfb14a15f6d2ee69a0dc03a",
+      "hash": "a3bb74bb75fbd4611ae2c16033e7ff7fa90dbaa91636dfe8cb7bf8c6117bc642"
+    },
+    {
+      "command": {
+        "id": "3c010d13-527d-4de3-9fe8-d10cac772dbf",
+        "kind": "plan",
+        "args": {}
+      },
+      "fingerprint": "c93251b7462184a93573211d5e5ba68048ce8d4b63f7879deb239da59275c893",
+      "previous": "a3bb74bb75fbd4611ae2c16033e7ff7fa90dbaa91636dfe8cb7bf8c6117bc642",
+      "hash": "a90aec68ffebcb1a035108a45771b909e688a22a0d8079b392edf616342a5201"
+    },
+    {
+      "command": {
+        "id": "5800d586-c7a5-4ef7-9359-276bd18a1f2d",
+        "kind": "review",
+        "args": {
+          "note": "Checked exclusion boundaries, priorities and return reserve."
+        }
+      },
+      "fingerprint": "01a00d460209b87a08e9d1762b408b49f3e0688bc6c9cfb8793502e88185362d",
+      "previous": "a90aec68ffebcb1a035108a45771b909e688a22a0d8079b392edf616342a5201",
+      "hash": "fadb6d264b6338d7b701ec74d3de27f2949840ca9c2631499d01da28ac97c3cd"
+    },
+    {
+      "command": {
+        "id": "d7cd5379-6343-4e60-9c1d-d7cbf63a62e6",
+        "kind": "start",
+        "args": {}
+      },
+      "fingerprint": "1db6a6731ae9fba0fcf8eb80635a612d3ac62b1633b1827bd8521c145098a36a",
+      "previous": "fadb6d264b6338d7b701ec74d3de27f2949840ca9c2631499d01da28ac97c3cd",
+      "hash": "5c024d404584fd1e34fdaa814345c9ebb184e843a34a3b7ffeec10800e171717"
+    },
+    {
+      "command": {
+        "id": "8af18539-5960-4c2f-af1e-e52c181a4ab6",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "7a8de0f0085fb6d3a43ebed9061c0441c09885a4b0b2ffc3deb960bbb96a7079",
+      "previous": "5c024d404584fd1e34fdaa814345c9ebb184e843a34a3b7ffeec10800e171717",
+      "hash": "4da992f45a2563a4ecd2e242a146a8fdd2ce069fc0e1a9d6d35126d446558428"
+    },
+    {
+      "command": {
+        "id": "ae588489-e8e4-47d0-9a41-23b884082c3c",
+        "kind": "step",
+        "args": {
+          "result": "PASS",
+          "note": "Synthetic visual check passed at the planned checkpoint."
+        }
+      },
+      "fingerprint": "fc995a9df56e86da99c551165881a28ea8a1a4af84a3310f5d0b0798c8822a76",
+      "previous": "4da992f45a2563a4ecd2e242a146a8fdd2ce069fc0e1a9d6d35126d446558428",
+      "hash": "44a7ea4c7ed4118040c4584cdd28d3f028f7f6bcd84852451d2486062319cf8f"
+    },
+    {
+      "command": {
+        "id": "fc5c4a82-5fe6-4659-852c-3aa48149666c",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "deaca92e57c7b14fdbb939fff8db6555643bbdbd5bb0eb0d95f2cd268f728345",
+      "previous": "44a7ea4c7ed4118040c4584cdd28d3f028f7f6bcd84852451d2486062319cf8f",
+      "hash": "ec38536040ebb8cde2c616d80b4bf54488f4bd26722243ccfec3e2cab4be05cc"
+    },
+    {
+      "command": {
+        "id": "2a57d222-8ff2-4eb9-8a25-0a0fa0a1c757",
+        "kind": "step",
+        "args": {
+          "result": "PASS",
+          "note": "Synthetic visual check passed at the planned checkpoint."
+        }
+      },
+      "fingerprint": "58b129d47f567a9f3711bc028851a836f121ac680858eafbb675db9b00f78cb5",
+      "previous": "ec38536040ebb8cde2c616d80b4bf54488f4bd26722243ccfec3e2cab4be05cc",
+      "hash": "7319d2dcd7f47b3fae68a4cec6a355e8f3e8525e657b6dd8e317cfe2adef3d81"
+    },
+    {
+      "command": {
+        "id": "e3558811-38d3-40fd-ac97-990265bd8f30",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "f380370ed70c4e6d829788ef99dc5ecfb156e153454dce3cb407e53b4db94ae9",
+      "previous": "7319d2dcd7f47b3fae68a4cec6a355e8f3e8525e657b6dd8e317cfe2adef3d81",
+      "hash": "7944c76d5c42df393cff3daf9cb925853830e26cb49c987efef92be6eec20e50"
+    },
+    {
+      "command": {
+        "id": "7fdbfbae-58a3-4f08-9014-e9900ef9f93b",
+        "kind": "step",
+        "args": {
+          "result": "PASS",
+          "note": "Synthetic visual check passed at the planned checkpoint."
+        }
+      },
+      "fingerprint": "f0d5819e486001e1502e1e010d594f71fc30e439b0ac65d4c6704ac3bcff9d1e",
+      "previous": "7944c76d5c42df393cff3daf9cb925853830e26cb49c987efef92be6eec20e50",
+      "hash": "c73023faf7fe348950912eae9939eb17278ca02812b1e97d9964807e33859233"
+    },
+    {
+      "command": {
+        "id": "63392b8b-de09-4aa1-b4be-f19e05cfffd5",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "8cb963ebae61a7339028463c8c5fed5235d0fc6ea346293a3561a64378926e93",
+      "previous": "c73023faf7fe348950912eae9939eb17278ca02812b1e97d9964807e33859233",
+      "hash": "93159aff7cc35523d859e7153a58d43a9e866ae4f8eca6cdac9276fa24ff87d6"
+    },
+    {
+      "command": {
+        "id": "5011f1a8-0792-47de-9c7b-ebda4ef2f10d",
+        "kind": "step",
+        "args": {
+          "result": "PASS",
+          "note": "Synthetic visual check passed at the planned checkpoint."
+        }
+      },
+      "fingerprint": "6e3e690bb811ee2672be18e0b4c3ed9f35e24e5f920a0d9185b09d9723ed30be",
+      "previous": "93159aff7cc35523d859e7153a58d43a9e866ae4f8eca6cdac9276fa24ff87d6",
+      "hash": "eee4e4fe353809d7ba25d1ab8036ed65924cdac92c21bfee502f2a0a4376703e"
+    },
+    {
+      "command": {
+        "id": "8f6938eb-489c-48e2-a408-990fede08c1e",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "813056654ced1b0fefff3278f79b7da64a859690348554930866a0dbba7ea158",
+      "previous": "eee4e4fe353809d7ba25d1ab8036ed65924cdac92c21bfee502f2a0a4376703e",
+      "hash": "2675aa60616fb7c7ac738155e4c1ed83ede9fbaa3d2d89f4d51228b104d91641"
+    },
+    {
+      "command": {
+        "id": "bfa1c446-720d-43c8-8b12-15d109706ff3",
+        "kind": "step",
+        "args": {
+          "result": "PASS",
+          "note": "Synthetic visual check passed at the planned checkpoint."
+        }
+      },
+      "fingerprint": "88fa6095dd3203865805f4a0fefbe61aa3a6741f4e4e5d17746267543066ab81",
+      "previous": "2675aa60616fb7c7ac738155e4c1ed83ede9fbaa3d2d89f4d51228b104d91641",
+      "hash": "d01eb9d50a0682a5341213a1ff8a5411a9da17720cfa74c0dc009f84434387fd"
+    },
+    {
+      "command": {
+        "id": "1207ac34-42c1-4bbd-91c1-a651ca6fc8ad",
+        "kind": "travel",
+        "args": {}
+      },
+      "fingerprint": "183406a57da91ad807de2ed021893d3043ff678374c77d48c6dc05b94e4a3d60",
+      "previous": "d01eb9d50a0682a5341213a1ff8a5411a9da17720cfa74c0dc009f84434387fd",
+      "hash": "6145a00f701fa1937dbad9d6d59c50f31ce462f9642b6e63cea736ce8cd8b55a"
+    },
+    {
+      "command": {
+        "id": "c8cd241e-642c-4cba-95dd-e8439da7fe82",
+        "kind": "resolve",
+        "args": {
+          "target": "JOINT",
+          "note": "Synthetic issue reviewed and resolved; no physical repair claimed."
+        }
+      },
+      "fingerprint": "5dc210a98f55e93376257ec72ac2c3a458b25bc4d9edda56afc5dc300a258025",
+      "previous": "6145a00f701fa1937dbad9d6d59c50f31ce462f9642b6e63cea736ce8cd8b55a",
+      "hash": "ccb98c705bc719c40ad41d3e20677dd9ee950ccd8f19df0b5bca7bf876275530"
+    },
+    {
+      "command": {
+        "id": "15d2567e-3f54-45af-80e0-353c82f84588",
+        "kind": "close",
+        "args": {
+          "note": "Synthetic issue reviewed and resolved; no physical repair claimed."
+        }
+      },
+      "fingerprint": "c91fea0e07bab8bd00d4d6c56e87d2d1e0cd93caedbc13f9b93dce1a0065d7a3",
+      "previous": "ccb98c705bc719c40ad41d3e20677dd9ee950ccd8f19df0b5bca7bf876275530",
+      "hash": "e8c99b7f02e612e6b1e36fb017a2eb34301e3b105363332dac33e7c817ea67a0"
+    },
+    {
+      "command": {
+        "id": "5f68ad17-dde0-45bd-8d92-342e990f4503",
+        "kind": "agent_start",
+        "args": {
+          "goal": "Use inspect_map to explain the current position, exclusions and remaining energy. Then finish with exact evidence citations. Do not change or approve anything.",
+          "decision": {
+            "choice": {
+              "tool": "inspect_map",
+              "arguments": {}
+            },
+            "provider": {
+              "generation_id": "gen_01M50F7KNJJCAJYNH3CR30B30F",
+              "model": "nvidia/nemotron-3.5-lightning-free",
+              "usage": {
+                "prompt_tokens": 229,
+                "completion_tokens": 612,
+                "total_tokens": 841,
+                "cost": 0,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": null,
+                  "upstream_inference_prompt_cost": 0,
+                  "upstream_inference_completions_cost": 0
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 599,
+                  "image_tokens": 0
+                },
+                "cache_creation_input_tokens": 0,
+                "market_cost": 0
+              },
+              "pricing_input": "0",
+              "pricing_output": "0",
+              "retention": "Free provider may retain synthetic prompts/responses"
+            }
+          }
+        }
+      },
+      "fingerprint": "249cc8bb8153f0c855f698b1ac5b299b81bebd4238ca1573e9aaf5e5c36f6bd4",
+      "previous": "e8c99b7f02e612e6b1e36fb017a2eb34301e3b105363332dac33e7c817ea67a0",
+      "hash": "ba4dceabb7c385cdd2ab333a89a097c03601d71b4a37003cb0fa8a604644a668"
+    },
+    {
+      "command": {
+        "id": "b0f42be4-d0e4-465b-9f03-7037c2e89fdc",
+        "kind": "agent_continue",
+        "args": {
+          "decision": {
+            "choice": {
+              "tool": "finish",
+              "arguments": {
+                "summary": "Position 70, remaining energy 4, exclusions at cells [0,13,23,25,33,35,43,53,55,56,57,58]",
+                "citations": [
+                  "E1"
+                ]
+              }
+            },
+            "provider": {
+              "generation_id": "gen_01M50F9NF3SK1D7CQ10162VVH8",
+              "model": "nvidia/nemotron-3.5-lightning-free",
+              "usage": {
+                "prompt_tokens": 431,
+                "completion_tokens": 1721,
+                "total_tokens": 2152,
+                "cost": 0,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": null,
+                  "upstream_inference_prompt_cost": 0,
+                  "upstream_inference_completions_cost": 0
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 1651,
+                  "image_tokens": 0
+                },
+                "cache_creation_input_tokens": 0,
+                "market_cost": 0
+              },
+              "pricing_input": "0",
+              "pricing_output": "0",
+              "retention": "Free provider may retain synthetic prompts/responses"
+            }
+          }
+        }
+      },
+      "fingerprint": "11070c2f141213a1e98ec58b7528870406398f74fd180f8918d236f87ffbf425",
+      "previous": "ba4dceabb7c385cdd2ab333a89a097c03601d71b4a37003cb0fa8a604644a668",
+      "hash": "1677ce33c4a97f4fa89f7563fb0494624dd84252b8c487db089f16167aaf5555"
+    },
+    {
+      "command": {
+        "id": "6ed07cb2-6497-44b1-9ae0-90a780225b10",
+        "kind": "agent_review",
+        "args": {}
+      },
+      "fingerprint": "4b3d5b055fe17a4e2c28390993fcf321463b1006bd80a6adafc524b2575ee3ad",
+      "previous": "1677ce33c4a97f4fa89f7563fb0494624dd84252b8c487db089f16167aaf5555",
+      "hash": "a0772efb097f58b56be740527a22a5ae7673ddd231274fdf0ef23b64bb28ebeb"
+    }
+  ],
+  "head": "a0772efb097f58b56be740527a22a5ae7673ddd231274fdf0ef23b64bb28ebeb"
+}

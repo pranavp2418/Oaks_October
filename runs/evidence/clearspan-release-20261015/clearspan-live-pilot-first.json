@@ -1,0 +1,230 @@
+{
+  "recorded_at": "2026-10-15T18:55:14.883Z",
+  "passed": false,
+  "cases": [
+    {
+      "name": "constrained_coverage",
+      "passed": true,
+      "tool": "plan_route",
+      "decisions": 2,
+      "receipts": [
+        {
+          "generation_id": "gen_01M50EPDP7VZ8AFRDCS086HD51",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 230,
+            "completion_tokens": 2576,
+            "total_tokens": 2806,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2564,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M50EQ1Z5NEPNNBWSFCPXEQ4N",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 599,
+            "completion_tokens": 1504,
+            "total_tokens": 2103,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1385,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "checkpoint": {
+        "nodes": [],
+        "persisted_by": "validated decision journal; reconstructed LangGraph MemorySaver execution",
+        "decision_count": 2
+      },
+      "stock_mutated": false,
+      "replay_equal": true,
+      "duplicate_no_inference": true,
+      "injected_provider_recovery": true,
+      "request_ms": [
+        12037.264513999999,
+        15612.458125999998
+      ],
+      "exact_observation": {
+        "id": "E1",
+        "tool": "plan_route",
+        "arguments": {},
+        "result": {
+          "cost": 27,
+          "priority": 21,
+          "covered": [
+            "PUMP",
+            "SEAL",
+            "JOINT"
+          ],
+          "steps": [
+            {
+              "cell": 71,
+              "kind": "move"
+            },
+            {
+              "cell": 72,
+              "kind": "move"
+            },
+            {
+              "cell": 73,
+              "kind": "move"
+            },
+            {
+              "cell": 74,
+              "kind": "move"
+            },
+            {
+              "cell": 75,
+              "kind": "move"
+            },
+            {
+              "cell": 76,
+              "kind": "move"
+            },
+            {
+              "cell": 76,
+              "kind": "inspect"
+            },
+            {
+              "cell": 66,
+              "kind": "move"
+            },
+            {
+              "cell": 65,
+              "kind": "move"
+            },
+            {
+              "cell": 64,
+              "kind": "move"
+            },
+            {
+              "cell": 63,
+              "kind": "move"
+            },
+            {
+              "cell": 62,
+              "kind": "move"
+            },
+            {
+              "cell": 52,
+              "kind": "move"
+            },
+            {
+              "cell": 42,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "inspect"
+            },
+            {
+              "cell": 31,
+              "kind": "move"
+            },
+            {
+              "cell": 21,
+              "kind": "move"
+            },
+            {
+              "cell": 11,
+              "kind": "move"
+            },
+            {
+              "cell": 11,
+              "kind": "inspect"
+            },
+            {
+              "cell": 21,
+              "kind": "move"
+            },
+            {
+              "cell": 31,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "move"
+            },
+            {
+              "cell": 51,
+              "kind": "move"
+            },
+            {
+              "cell": 61,
+              "kind": "move"
+            },
+            {
+              "cell": 71,
+              "kind": "move"
+            },
+            {
+              "cell": 70,
+              "kind": "move"
+            }
+          ],
+          "expanded": 828,
+          "uncovered": [
+            {
+              "id": "VALVE",
+              "reason": "budget or disconnected"
+            },
+            {
+              "id": "GAUGE",
+              "reason": "budget or disconnected"
+            },
+            {
+              "id": "PANEL",
+              "reason": "budget or disconnected"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "visible development integration pilot; no held-out generalization claim"
+}

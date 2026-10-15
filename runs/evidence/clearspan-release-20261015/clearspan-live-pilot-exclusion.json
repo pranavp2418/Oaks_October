@@ -1,0 +1,149 @@
+{
+  "recorded_at": "2026-10-15T18:58:41.602Z",
+  "passed": true,
+  "cases": [
+    {
+      "name": "exclusion_audit",
+      "passed": true,
+      "tool": "inspect_map",
+      "decisions": 2,
+      "receipts": [
+        {
+          "generation_id": "gen_01M50EWPNJKB6GW195SG7WP3ST",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 229,
+            "completion_tokens": 658,
+            "total_tokens": 887,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 645,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M50EWWTG8QSTRDKX5A9ES3YG",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 3233,
+            "total_tokens": 3643,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3053,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "checkpoint": {
+        "nodes": [],
+        "persisted_by": "validated decision journal; reconstructed LangGraph MemorySaver execution",
+        "decision_count": 2
+      },
+      "mission_mutated": false,
+      "replay_equal": true,
+      "duplicate_no_inference": true,
+      "injected_provider_recovery": true,
+      "request_ms": [
+        2686.609245,
+        15013.91704
+      ],
+      "exact_observation": {
+        "id": "E1",
+        "tool": "inspect_map",
+        "arguments": {},
+        "result": {
+          "width": 10,
+          "height": 8,
+          "base": 70,
+          "position": 70,
+          "remaining": 42,
+          "exclusions": [
+            13,
+            23,
+            25,
+            33,
+            35,
+            43,
+            53,
+            55,
+            56,
+            57,
+            58
+          ],
+          "checkpoints": [
+            {
+              "id": "PUMP",
+              "cell": 11,
+              "priority": 8
+            },
+            {
+              "id": "VALVE",
+              "cell": 18,
+              "priority": 5
+            },
+            {
+              "id": "SEAL",
+              "cell": 41,
+              "priority": 9
+            },
+            {
+              "id": "GAUGE",
+              "cell": 67,
+              "priority": 6
+            },
+            {
+              "id": "JOINT",
+              "cell": 76,
+              "priority": 4
+            },
+            {
+              "id": "PANEL",
+              "cell": 6,
+              "priority": 3
+            }
+          ],
+          "already_inspected": []
+        }
+      }
+    }
+  ],
+  "scope": "visible development integration pilot; no held-out generalization claim"
+}

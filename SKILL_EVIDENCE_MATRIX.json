@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-15T19:18:44.150Z",
   "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
   "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
   "skills": [
@@ -9,15 +9,20 @@
       "aliases": [
         "DeBugging"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/tests/verification.regression-1.test.mjs",
-        "Oaks_October/2026-10-14-MorrowStock/ENGINEERING_REVIEW.md"
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -30,6 +35,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -39,14 +61,19 @@
         "Integration Testing"
       ],
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Wirewake",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+        "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+        "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+        "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+        "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+        "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -59,6 +86,55 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
+        },
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        },
+        {
+          "project": "Wirewake",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+            "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+            "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+            "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+            "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+          "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
       ]
     },
@@ -93,15 +169,20 @@
         "dATABASES",
         "SQL"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
         "Oaks_October/2026-10-14-MorrowStock/core.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -114,6 +195,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -158,24 +256,62 @@
       "aliases": [
         "Automoated Deployment"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+        "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+            "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+            "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "054ac5887c93ba4bdf7c1e93444ef2dcabc31c37",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred."
+        }
+      ]
     },
     {
       "skill": "Git",
       "aliases": [
         "Git"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+        "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+            "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+            "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "054ac5887c93ba4bdf7c1e93444ef2dcabc31c37",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred."
+        }
+      ]
     },
     {
       "skill": "CI/CD",
@@ -184,12 +320,31 @@
         "CI/CD",
         "DevOps & CI/CD"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+        "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+            "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+            "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "054ac5887c93ba4bdf7c1e93444ef2dcabc31c37",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred."
+        }
+      ]
     },
     {
       "skill": "Jenkins",
@@ -208,12 +363,31 @@
       "aliases": [
         "DevOps & CI/CD"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+        "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/vercel.json",
+            "Oaks_October/2026-10-14-MorrowStock/package-lock.json",
+            "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "054ac5887c93ba4bdf7c1e93444ef2dcabc31c37",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Actual sequential Git CAS releases and Vercel production delivery at7b9ae36c; later audited build dependency maintenance CI green and runtime assets unchanged. No Jenkins/Docker/Kubernetes/AWS integration inferred."
+        }
+      ]
     },
     {
       "skill": "OpenAI APIs",
@@ -232,15 +406,20 @@
       "aliases": [
         "LLMs"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
         "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
         "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -253,6 +432,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -261,15 +457,20 @@
       "aliases": [
         "GenAI"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
         "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
         "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -282,6 +483,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -331,15 +549,20 @@
       "aliases": [
         "JSON"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
         "Oaks_October/2026-10-14-MorrowStock/workspace.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_workspace.py"
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -352,6 +575,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -361,15 +601,20 @@
         "API",
         "REST"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/api/workspace.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py"
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -382,6 +627,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -487,36 +749,105 @@
       "aliases": [
         "Responsive UI Development"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        }
+      ]
     },
     {
       "skill": "Responsive web design",
       "aliases": [
         "Respolnsive Web Design"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        }
+      ]
     },
     {
       "skill": "CSS",
       "aliases": [
         "CSS"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        }
+      ]
     },
     {
       "skill": "HTML5",
@@ -524,12 +855,35 @@
         "HTML5",
         "HTML"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        }
+      ]
     },
     {
       "skill": "Angular",
@@ -548,15 +902,18 @@
       "aliases": [
         "React"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
         "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
-        "Oaks_October/2026-10-14-MorrowStock/src/transition-panel.tsx"
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -569,6 +926,21 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
         }
       ]
     },
@@ -577,12 +949,35 @@
       "aliases": [
         "React.Front-End"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_bounded_project_scope",
+      "project": "MorrowStock",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+        "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+        "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale.",
+      "evidence_history": [
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        }
+      ]
     },
     {
       "skill": "Object-oriented design",
@@ -625,12 +1020,35 @@
       "aliases": [
         "Express.js"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "Clearspan",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+        "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+        "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+        "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+        "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+      ],
+      "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_history": [
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        }
+      ]
     },
     {
       "skill": "Microservices",
@@ -673,12 +1091,37 @@
       "aliases": [
         "C++"
       ],
-      "status": "prior_projects_require_source_audit",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "Clearspan",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+        "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+        "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+        "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+        "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+        "Oaks_October/2026-10-14-Clearspan/tests/core.test.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_history": [
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+            "Oaks_October/2026-10-14-Clearspan/tests/core.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        }
+      ]
     },
     {
       "skill": "Java",
@@ -698,14 +1141,19 @@
         "earlier verified profile"
       ],
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Wirewake",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
-        "Oaks_October/2026-10-14-MorrowStock/src/types.ts"
+        "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+        "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+        "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+        "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+        "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -718,6 +1166,38 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        },
+        {
+          "project": "Wirewake",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+            "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+            "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+            "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+            "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+          "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
       ]
     },
@@ -727,14 +1207,17 @@
         "earlier verified profile"
       ],
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Clearspan",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/src/journal.mjs",
-        "Oaks_October/2026-10-14-MorrowStock/src/verification.mjs"
+        "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+        "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+        "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+        "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+        "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -747,6 +1230,36 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        },
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
       ]
     },
@@ -755,16 +1268,20 @@
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
         "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
         "Oaks_October/2026-10-14-MorrowStock/workspace.py",
-        "Oaks_October/2026-10-14-MorrowStock/agent.py"
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -778,6 +1295,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -859,14 +1393,19 @@
         "current primary hiring evidence"
       ],
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Wirewake",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
-        "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md"
+        "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+        "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+        "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+        "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+        "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -879,6 +1418,38 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/src/main.tsx",
+            "Oaks_October/2026-10-14-MorrowStock/src/style.css",
+            "Oaks_October/2026-10-14-MorrowStock/src/performance-probe.mjs",
+            "Oaks_October/2026-10-14-MorrowStock/benchmark.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/performance-probe.test.mjs"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        },
+        {
+          "project": "Wirewake",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+            "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+            "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+            "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+            "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+          "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
       ]
     },
@@ -887,16 +1458,20 @@
       "aliases": [
         "current primary hiring evidence"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/EVAL_PREREG.md",
-        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+        "Oaks_October/2026-10-14-MorrowStock/core.py",
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -910,6 +1485,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -935,14 +1527,17 @@
       ],
       "purpose": "Stateful workflow graphs with checkpoints, recoverable execution and human review where the project calls for them.",
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Clearspan",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/agent.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+        "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+        "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+        "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+        "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+        "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -955,6 +1550,38 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
+        },
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
       ]
     },
@@ -966,14 +1593,17 @@
       ],
       "purpose": "Actual retrieval/model/tool integrations with evaluations and documented runtime limits.",
       "status": "verified_component_scope_project_release_pending",
-      "project": "MorrowStock",
+      "project": "Clearspan",
       "implementation_files": [
-        "Oaks_October/2026-10-14-MorrowStock/agent.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py"
+        "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+        "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+        "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+        "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+        "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
-      "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+      "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -986,6 +1616,38 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
+        },
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
       ]
     },
@@ -996,12 +1658,54 @@
         "earlier retained profile"
       ],
       "purpose": "Previously retained backend runtime; explicit matrix row.",
-      "status": "coverage_requested_evidence_pending",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+      "status": "verified_component_scope_project_release_pending",
+      "project": "Wirewake",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+        "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+        "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+        "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+        "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
+      ],
+      "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+      "evidence_date": "2026-10-15",
+      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
+      "evidence_history": [
+        {
+          "project": "Clearspan",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
+            "Oaks_October/2026-10-14-Clearspan/src/engine.mjs",
+            "Oaks_October/2026-10-14-Clearspan/api/workspace.mjs",
+            "Oaks_October/2026-10-14-Clearspan/server/agent.mjs",
+            "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+          "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        },
+        {
+          "project": "Wirewake",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+            "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go",
+            "Oaks_October/2026-10-14-Wirewake/src/worker.ts",
+            "Oaks_October/2026-10-14-Wirewake/src/main.ts",
+            "Oaks_October/2026-10-14-Wirewake/tests/integration.mjs",
+            "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+          "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
+        }
+      ]
     },
     {
       "skill": "SQLite",
@@ -1009,15 +1713,20 @@
         "earlier retained profile"
       ],
       "purpose": "Previously retained relational database; explicit matrix row.",
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "MorrowStock",
       "implementation_files": [
         "Oaks_October/2026-10-14-MorrowStock/core.py",
-        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py"
+        "Oaks_October/2026-10-14-MorrowStock/agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+        "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+        "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
       ],
       "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
       "evidence_date": "2026-10-15",
-      "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy.",
+      "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1030,6 +1739,23 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "Actual bounded component evidence, not proficiency/LinkedIn attribution or complete release. Single-user synthetic model, no production/multiuser or UI performance pass. Live model cases visible development, not held-out accuracy."
+        },
+        {
+          "project": "MorrowStock",
+          "implementation_files": [
+            "Oaks_October/2026-10-14-MorrowStock/core.py",
+            "Oaks_October/2026-10-14-MorrowStock/agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/workspace.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_core.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_agent.py",
+            "Oaks_October/2026-10-14-MorrowStock/tests/test_http_cli.py",
+            "Oaks_October/2026-10-14-MorrowStock/live_pilot.py"
+          ],
+          "evidence_date": "2026-10-15",
+          "source_commit": "7b9ae36cf7c10f789f823b9639308093c1f3aa40",
+          "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
+          "status": "verified_bounded_project_scope",
+          "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
         }
       ]
     },
@@ -1062,5 +1788,23 @@
       "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
     }
   ],
-  "scope": "Daily three-project collection; AtlasForge evidence tracked separately"
+  "scope": "Daily three-project collection; AtlasForge evidence tracked separately",
+  "new_core_technologies": [
+    {
+      "technology": "Go1.27.2",
+      "project": "Wirewake",
+      "classification": "new",
+      "evidence_date": "2026-10-15",
+      "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+      "implementation_files": [
+        "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
+        "Oaks_October/2026-10-14-Wirewake/engine/store_linux.go"
+      ],
+      "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+      "demand_evidence": "Dated fresh primary hiring/engineering evidence retained privately before selection",
+      "status": "verified_component_scope_project_release_pending",
+      "limits": "No current proficiency/profile edit or live delivery inferred; original supplied profile comparison remains baseline where public profile inaccessible."
+    }
+  ]
 }
