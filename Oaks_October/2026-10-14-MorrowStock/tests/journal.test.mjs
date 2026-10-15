@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { empty, replace, validateRecord } from "../src/journal.mjs";
+import { resolveSku } from "../src/selection.mjs";
 test("compare-and-swap rejects stale cross-tab write and leaves current unchanged", () => {
   const initial = empty(),
     next = replace(initial, 0, { schema: 1, journal: [{ id: "one" }] });
@@ -18,4 +19,10 @@ test("malformed local and remote envelope fail before persistence", () => {
   ])
     assert.throws(() => validateRecord(x));
   assert.throws(() => replace(empty(), 0, { schema: 1, journal: null }));
+});
+test('custom imports/restores use the displayed SKU for proposal submission', () => {
+  assert.equal(resolveSku([{sku:'ROOT'}], 'APPLE'), 'ROOT');
+  assert.equal(resolveSku([{sku:'ROOT'}, {sku:'LEAF'}], 'LEAF'), 'LEAF');
+  assert.equal(resolveSku([{sku:'CITRUS'}], 'ROOT'), 'CITRUS');
+  assert.equal(resolveSku([], 'APPLE'), '');
 });

@@ -4,6 +4,7 @@ import { MotionConfig, motion, useReducedMotion } from "motion/react";
 import { TransitionPanel } from "./transition-panel";
 import { openStore, read, save, empty } from "./journal.mjs";
 import { sample } from "./sample";
+import { resolveSku } from "./selection.mjs";
 import type { Result, Workspace } from "./types";
 import "./style.css";
 
@@ -101,6 +102,7 @@ function App() {
     if (editor) editorRef.current?.showModal();
     else editorRef.current?.close();
   }, [editor]);
+  const selectedSku = resolveSku(result?.state.orders ?? [], sku);
   const state = result?.state,
     solution = scenario ?? result?.solution,
     plan = state?.plans.find((p) => p.id === planId) ?? state?.plans[0],
@@ -981,7 +983,7 @@ function App() {
                         <label>
                           SKU
                           <select
-                            value={sku}
+                            value={selectedSku}
                             onChange={(e) => setSku(e.target.value)}
                           >
                             {[
@@ -1043,7 +1045,7 @@ function App() {
                         onClick={() =>
                           act("purchase", {
                             purchase_id: id("purchase"),
-                            sku,
+                            sku: selectedSku,
                             quantity,
                             arrival,
                             expiry,
