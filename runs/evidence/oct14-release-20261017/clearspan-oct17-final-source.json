@@ -1,0 +1,44 @@
+[
+  {
+    "file": "assets/app-BzjpKEpR.css",
+    "status": 200,
+    "bytes": 12343,
+    "sha256": "8a1da4e27e5adb89af36f5342d124c1f7650de924f87414a1aee6717ce6f3627",
+    "local_equal": true
+  },
+  {
+    "file": "assets/app-orqSDb90.js",
+    "status": 200,
+    "bytes": 342309,
+    "sha256": "2fd6243976835c42adaf9b5581898dd8001bff8539abea2e8cabeb7160bf47ec",
+    "local_equal": true
+  },
+  {
+    "file": "assets/store-BRRNEkD6.js",
+    "status": 200,
+    "bytes": 1602,
+    "sha256": "b6d420f7ef7b3ece9921339b8d555731b6d6548d8b353eb4662c23b9de6f2cdf",
+    "local_equal": true
+  },
+  {
+    "file": "assets/verification-HYfbvggx.js",
+    "status": 200,
+    "bytes": 1485,
+    "sha256": "80988e2190880467ea495884447cb555a6944ddc4e1e44f6e383583238217bc1",
+    "local_equal": true
+  },
+  {
+    "file": "core-identity.json",
+    "status": 200,
+    "bytes": 160,
+    "sha256": "6e5a361caf189027e4ef4669a6271541dfa14f94649b1948cfec42e45bfe1de8",
+    "local_equal": true
+  },
+  {
+    "file": "route.wasm",
+    "status": 200,
+    "bytes": 11101,
+    "sha256": "b447ca5a4abd1d332047598ce8af2b5a18cd01aa188e34d093910effc4e6b474",
+    "local_equal": true
+  }
+]

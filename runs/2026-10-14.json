@@ -1,11 +1,11 @@
 {
   "date": "2026-10-14",
-  "last_updated_at": "2026-10-17T22:06:00Z",
+  "last_updated_at": "2026-10-17T22:08:36.234775Z",
   "status": "final_browser_verification",
   "owner": "codex-oct14-resume-20261017",
   "lease_expires_at": "2026-10-17T23:19:48.688Z",
   "target": 3,
-  "completed_projects": 1,
+  "completed_projects": 2,
   "projects": [
     {
       "title": "MorrowStock",
@@ -288,22 +288,22 @@
       "path": "Oaks_October/2026-10-14-Clearspan",
       "delivery_mode": "web_deployed",
       "planned_ordinal": 23,
-      "completion_ordinal": null,
-      "counted": false,
-      "completed": false,
-      "status": "incomplete_release_pending",
-      "stage": "final_source_hosted_pilots_passed_browser_followup",
+      "completion_ordinal": 23,
+      "counted": true,
+      "completed": true,
+      "status": "complete",
+      "stage": "applicable_delivery_passed",
       "implementation": "implemented_and_pushed",
-      "source_commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Clearspan",
-      "live_url": null,
-      "deployment_id": null,
+      "live_url": "https://clearspan-20261014.vercel.app/",
+      "deployment_id": "dpl_AMHA7ejRm43JY5djzuCyyqwoFScD",
       "vercel_project_id": "prj_NxK1rWrfXzAnJCGHMwBZWLu1aklG",
       "verification_candidate_url": "https://clearspan-20261014.vercel.app/",
-      "verification_deployment_id": "dpl_JBgnDNsdr12wQkHAiUDuA4dGa3rs",
-      "verification_deployed_source_commit": "6e34d6a116713df954415e7c763725f48d4ad51a",
-      "deployment": "earlier_candidate_live_final_fixes_not_deployed",
-      "integration": "withheld_until_trio_passes",
+      "verification_deployment_id": "dpl_AMHA7ejRm43JY5djzuCyyqwoFScD",
+      "verification_deployed_source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "deployment": "public_workflows_verified",
+      "integration": "awaiting_trio_portfolio_release",
       "portfolio_integration": "not_added",
       "visual_theme": "Survey sheet, ocean blue and safety orange; spatial map, mission rail and findings sheet",
       "core_technical_contribution": "C++ BFS metric closure and exact prize-orienteering subset DP with reconstructed return route; context-bound mission and checkpointed read-only investigator",
@@ -342,7 +342,7 @@
       ],
       "verification": {
         "local": {
-          "groups": 9,
+          "groups": 10,
           "independent_exhaustive_route_cases": 360,
           "unsafe_choices": 24,
           "clean_install_build": "passed",
@@ -351,23 +351,70 @@
         },
         "ci": {
           "status": "success",
-          "commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
-          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38792441819"
+          "commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39073557726"
         },
         "hosted": {
-          "source": "6e34d6a116713df954415e7c763725f48d4ad51a",
-          "api_get": 200,
-          "invalid_and_tampered_input": 400,
-          "source_assets": "WASM plus four JS/CSS files byte-equal clean build",
-          "pilot_cases_passed": 2,
+          "source": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+          "deployment_id": "dpl_AMHA7ejRm43JY5djzuCyyqwoFScD",
+          "api_replay_status": 200,
+          "repeated_state_equal": true,
+          "invalid_command_status": 400,
+          "tampered_head_status": 400,
+          "build_logs": "Deployment completed inspected",
+          "static_assets": [
+            {
+              "file": "assets/app-BzjpKEpR.css",
+              "status": 200,
+              "bytes": 12343,
+              "sha256": "8a1da4e27e5adb89af36f5342d124c1f7650de924f87414a1aee6717ce6f3627",
+              "local_equal": true
+            },
+            {
+              "file": "assets/app-orqSDb90.js",
+              "status": 200,
+              "bytes": 342309,
+              "sha256": "2fd6243976835c42adaf9b5581898dd8001bff8539abea2e8cabeb7160bf47ec",
+              "local_equal": true
+            },
+            {
+              "file": "assets/store-BRRNEkD6.js",
+              "status": 200,
+              "bytes": 1602,
+              "sha256": "b6d420f7ef7b3ece9921339b8d555731b6d6548d8b353eb4662c23b9de6f2cdf",
+              "local_equal": true
+            },
+            {
+              "file": "assets/verification-HYfbvggx.js",
+              "status": 200,
+              "bytes": 1485,
+              "sha256": "80988e2190880467ea495884447cb555a6944ddc4e1e44f6e383583238217bc1",
+              "local_equal": true
+            },
+            {
+              "file": "core-identity.json",
+              "status": 200,
+              "bytes": 160,
+              "sha256": "6e5a361caf189027e4ef4669a6271541dfa14f94649b1948cfec42e45bfe1de8",
+              "local_equal": true
+            },
+            {
+              "file": "route.wasm",
+              "status": 200,
+              "bytes": 11101,
+              "sha256": "b447ca5a4abd1d332047598ce8af2b5a18cd01aa188e34d093910effc4e6b474",
+              "local_equal": true
+            }
+          ],
+          "pilot_cases_passed": 3,
           "pilot_cases_total": 3,
-          "pilot_failures": "Budget case: malformed string-valued tool array and repeated invalid model JSON; schema repair in new source has not been live-evaluated",
-          "browser_model_flow": "actual inspect_map, injected interruption, resume, citations and REVIEWED at revision27",
-          "provider_receipts": "saved in exported27-operation workspace and successful pilot reports"
+          "pilot_scope": "Visible development integration cases; not held-out accuracy. Retained malformed response/429 attempts and no paid fallback. Backend/core unchanged by final UI-only repair.",
+          "pilot_report": "runs/evidence/oct14-release-20261017/clearspan-oct17-live.json",
+          "final_replay_report": "runs/evidence/oct14-release-20261017/final-hosted-replay.json"
         },
         "browser": {
           "desktop": "Six inspections, precommit rollback/retry, pause/exclusion/replan, open-finding closure rejection, resolve and CLOSED;38spent+4remaining=42",
-          "mobile": "390px frame client/scroll375, keyboard navigation, stale restore rejected, reopen and valid27-operation replay without inference",
+          "mobile": "390px iframe clientWidth=scrollWidth375; keyboard proof navigation, saved revision4 RUNNING reopened. Earlier full27-command CLOSED/RESOLVED/REVIEWED journal replayed on final deployed API without inference.",
           "cas": {
             "writers": 8,
             "successes": 1,
@@ -389,29 +436,102 @@
             "next_callback_max_ms": 1021,
             "scope": "cloud-wrapper sample; not a performance pass"
           },
-          "pending": "Manual reduced motion/focus source changes and representative input follow-up need public deployment; physical-device/full screen-reader/scanner clearance not claimed"
+          "pending": null,
+          "final_source": "Final CSS/typed-tool source deployed; source assets byte-equal clean build",
+          "keyboard": "Final modal Tab and Shift+Tab wrap, Escape, Enter route navigation and manual Reduce motion checked",
+          "final_input_sample": {
+            "samples": 22,
+            "dispatch_p95_ms": 22.5,
+            "next_callback_p95_ms": 985.3,
+            "scope": "Cloud browser scheduling included; callback tail retained as concern, no physical FPS/INP pass claimed"
+          },
+          "screenshots": [
+            "runs/evidence/oct14-release-20261017/clearspan-final-mobile.jpg"
+          ]
         },
         "qa_report": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-        "known_npm_vulnerabilities": 0
+        "known_npm_vulnerabilities": 0,
+        "gstack_followup": {
+          "native_adversarial": "Empty pilot selection false success reproduced, red-to-green in both CLIs; no other substantiated new defect in scoped pass",
+          "browser_findings_fixed": "Wirewake explicit modal boundary; Clearspan bounded reduced-motion checkbox removes4px overflow",
+          "limits": "No outside-model consensus, full external scanner, physical-device or assistive-tech certification; actual frame scheduling tails retained"
+        }
       },
-      "external_blocker": {
-        "observed_at": "2026-10-15T18:56:18.343Z",
-        "http_status": 402,
-        "resource": "api-deployments-free-per-day",
-        "retry_after_seconds": 86400,
-        "affected": [
-          "Wirewake initial deployment",
-          "portfolio trio integration release"
-        ],
-        "access_verification_issue": false
-      },
-      "remaining": [
-        "Deploy final source to existing dedicated project",
-        "Repeat all three actual-provider cases successfully, retaining prior failures",
-        "Verify final desktop/mobile focus, reduced-motion and representative response",
-        "Final public source identity and delivery signoff"
+      "external_blocker": null,
+      "remaining": [],
+      "last_updated_at": "2026-10-17T22:08:36.234775Z",
+      "verification_history": [
+        {
+          "stage": "earlier_incomplete_checkpoint",
+          "verification": {
+            "local": {
+              "groups": 9,
+              "independent_exhaustive_route_cases": 360,
+              "unsafe_choices": 24,
+              "clean_install_build": "passed",
+              "actual_http_lifecycle": "passed",
+              "reconstructed_langgraph_checkpoint": "passed"
+            },
+            "ci": {
+              "status": "success",
+              "commit": "fa998c6852e96369f4c0cb91ec71833ce44c6fad",
+              "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38792441819"
+            },
+            "hosted": {
+              "source": "6e34d6a116713df954415e7c763725f48d4ad51a",
+              "api_get": 200,
+              "invalid_and_tampered_input": 400,
+              "source_assets": "WASM plus four JS/CSS files byte-equal clean build",
+              "pilot_cases_passed": 2,
+              "pilot_cases_total": 3,
+              "pilot_failures": "Budget case: malformed string-valued tool array and repeated invalid model JSON; schema repair in new source has not been live-evaluated",
+              "browser_model_flow": "actual inspect_map, injected interruption, resume, citations and REVIEWED at revision27",
+              "provider_receipts": "saved in exported27-operation workspace and successful pilot reports"
+            },
+            "browser": {
+              "desktop": "Six inspections, precommit rollback/retry, pause/exclusion/replan, open-finding closure rejection, resolve and CLOSED;38spent+4remaining=42",
+              "mobile": "390px frame client/scroll375, keyboard navigation, stale restore rejected, reopen and valid27-operation replay without inference",
+              "cas": {
+                "writers": 8,
+                "successes": 1,
+                "conflicts": 7,
+                "reopened_revision": 1
+              },
+              "workspace_export": {
+                "bytes": 16100,
+                "sha256": "b6b69ae0a4c9f5ead611bdb0f723b1724dfbf3ebd7063245621e499be14a1801"
+              },
+              "dossier": "download triggered/browser filename observed; main-container bytes/hash not verified",
+              "input_sample": {
+                "samples": 32,
+                "dispatch_p50_ms": 4.5,
+                "dispatch_p95_ms": 13.2,
+                "dispatch_max_ms": 47.2,
+                "next_callback_p50_ms": 345,
+                "next_callback_p95_ms": 1011.9,
+                "next_callback_max_ms": 1021,
+                "scope": "cloud-wrapper sample; not a performance pass"
+              },
+              "pending": "Manual reduced motion/focus source changes and representative input follow-up need public deployment; physical-device/full screen-reader/scanner clearance not claimed"
+            },
+            "qa_report": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
+            "known_npm_vulnerabilities": 0
+          },
+          "external_blocker": {
+            "observed_at": "2026-10-15T18:56:18.343Z",
+            "http_status": 402,
+            "resource": "api-deployments-free-per-day",
+            "retry_after_seconds": 86400,
+            "affected": [
+              "Wirewake initial deployment",
+              "portfolio trio integration release"
+            ],
+            "access_verification_issue": false
+          }
+        }
       ],
-      "last_updated_at": "2026-10-15T19:17:57.219Z"
+      "deployed_source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "verified_at": "2026-10-17T22:08:36.234775Z"
     },
     {
       "date": "2026-10-14",
@@ -540,18 +660,9 @@
     24
   ],
   "ordinal_note": "Provisional until earlier completed projects are reconciled; not completion claims",
-  "next_stage": "Final Wirewake keyboard boundary source, release verification, then portfolio trio integration",
+  "next_stage": "Portfolio integration after three applicable releases",
   "remaining": [
-    "Clearspan: Deploy final source to existing dedicated project",
-    "Clearspan: Repeat all three actual-provider cases successfully, retaining prior failures",
-    "Clearspan: Verify final desktop/mobile focus, reduced-motion and representative response",
-    "Clearspan: Final public source identity and delivery signoff",
-    "Wirewake: Deploy actual Go/WASM build from pushed source to dedicated Vercel project",
-    "Wirewake: Run all three preregistered actual-provider cases with receipts and failure/replay checks",
-    "Wirewake: Desktop/mobile complete worker/API/review/repair/persistence/export/keyboard/motion/input workflows",
-    "Wirewake: Verify live assets/core identity and final delivery signoff",
-    "Portfolio: after all3 pass, append manifest/covers once, verify cards/archive/country/Pip, deploy existing portfolio project, check canonical domain and redirects",
-    "October15: separate trio not implemented or counted"
+    "Verify all three portfolio cards/archive/Projects country/Pip, existing content and redirects on production"
   ],
   "external_blocker": null,
   "limitations": [
@@ -614,6 +725,14 @@
     {
       "at": "2026-10-17T22:06:00Z",
       "message": "Quota cleared. Clearspan fa998 and Wirewake e1ed READY with all three unique real-provider pilot cases each; failure attempts retained. Fresh browser core/recovery/export/CAS checked. Wirewake modal focus loop repair awaiting deployment; no new completion claimed yet."
+    },
+    {
+      "at": "2026-10-17T22:08:36.234775Z",
+      "project": "Clearspan",
+      "stage": "applicable_delivery_passed",
+      "completed_projects": 2,
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "deployment_id": "dpl_AMHA7ejRm43JY5djzuCyyqwoFScD"
     }
   ],
   "provider_blocker_history": [

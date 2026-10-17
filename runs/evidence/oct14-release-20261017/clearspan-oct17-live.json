@@ -1,0 +1,557 @@
+{
+  "recorded_at": "2026-10-17T21:51:28.582Z",
+  "passed": true,
+  "cases": [
+    {
+      "name": "constrained_coverage",
+      "passed": true,
+      "tool": "plan_route",
+      "decisions": 2,
+      "receipts": [
+        {
+          "generation_id": "gen_01M55XJGXGM6KY3N2PWMSE5SKY",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 428,
+            "completion_tokens": 1205,
+            "total_tokens": 1633,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1193,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M55XJSQGRRCP2DHPEENR48DK",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 797,
+            "completion_tokens": 4824,
+            "total_tokens": 5621,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4752,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "checkpoint": {
+        "nodes": [],
+        "persisted_by": "validated decision journal; reconstructed LangGraph MemorySaver execution",
+        "decision_count": 2
+      },
+      "mission_mutated": false,
+      "replay_equal": true,
+      "duplicate_no_inference": true,
+      "injected_provider_recovery": true,
+      "request_ms": [
+        5157.548809,
+        21870.776733
+      ],
+      "exact_observation": {
+        "id": "E1",
+        "tool": "plan_route",
+        "arguments": {},
+        "result": {
+          "cost": 27,
+          "priority": 21,
+          "covered": [
+            "PUMP",
+            "SEAL",
+            "JOINT"
+          ],
+          "steps": [
+            {
+              "cell": 71,
+              "kind": "move"
+            },
+            {
+              "cell": 72,
+              "kind": "move"
+            },
+            {
+              "cell": 73,
+              "kind": "move"
+            },
+            {
+              "cell": 74,
+              "kind": "move"
+            },
+            {
+              "cell": 75,
+              "kind": "move"
+            },
+            {
+              "cell": 76,
+              "kind": "move"
+            },
+            {
+              "cell": 76,
+              "kind": "inspect"
+            },
+            {
+              "cell": 66,
+              "kind": "move"
+            },
+            {
+              "cell": 65,
+              "kind": "move"
+            },
+            {
+              "cell": 64,
+              "kind": "move"
+            },
+            {
+              "cell": 63,
+              "kind": "move"
+            },
+            {
+              "cell": 62,
+              "kind": "move"
+            },
+            {
+              "cell": 52,
+              "kind": "move"
+            },
+            {
+              "cell": 42,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "inspect"
+            },
+            {
+              "cell": 31,
+              "kind": "move"
+            },
+            {
+              "cell": 21,
+              "kind": "move"
+            },
+            {
+              "cell": 11,
+              "kind": "move"
+            },
+            {
+              "cell": 11,
+              "kind": "inspect"
+            },
+            {
+              "cell": 21,
+              "kind": "move"
+            },
+            {
+              "cell": 31,
+              "kind": "move"
+            },
+            {
+              "cell": 41,
+              "kind": "move"
+            },
+            {
+              "cell": 51,
+              "kind": "move"
+            },
+            {
+              "cell": 61,
+              "kind": "move"
+            },
+            {
+              "cell": 71,
+              "kind": "move"
+            },
+            {
+              "cell": 70,
+              "kind": "move"
+            }
+          ],
+          "expanded": 828,
+          "uncovered": [
+            {
+              "id": "VALVE",
+              "reason": "budget or disconnected"
+            },
+            {
+              "id": "GAUGE",
+              "reason": "budget or disconnected"
+            },
+            {
+              "id": "PANEL",
+              "reason": "budget or disconnected"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "budget_comparison",
+      "passed": true,
+      "tool": "compare_budgets",
+      "decisions": 3,
+      "receipts": [
+        {
+          "generation_id": "gen_01M55XKF29960FFCD9SKA9JWP3",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 437,
+            "completion_tokens": 1824,
+            "total_tokens": 2261,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1802,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M55XMS8PJYDFMAQ18PT9FQ0E",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 596,
+            "completion_tokens": 3190,
+            "total_tokens": 3786,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3168,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M55XNDH0ZE7XDWK4G88QFT3N",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 756,
+            "completion_tokens": 2643,
+            "total_tokens": 3399,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2534,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        }
+      ],
+      "citations": [
+        "E1",
+        "E2"
+      ],
+      "checkpoint": {
+        "nodes": [],
+        "persisted_by": "validated decision journal; reconstructed LangGraph MemorySaver execution",
+        "decision_count": 3
+      },
+      "mission_mutated": false,
+      "replay_equal": true,
+      "duplicate_no_inference": true,
+      "injected_provider_recovery": true,
+      "request_ms": [
+        6686.207861000003,
+        15692.182774,
+        17061.751735000013
+      ],
+      "exact_observation": {
+        "id": "E1",
+        "tool": "compare_budgets",
+        "arguments": {
+          "budgets": [
+            20,
+            42
+          ]
+        },
+        "result": [
+          {
+            "budget": 20,
+            "cost": 16,
+            "priority": 17,
+            "covered": [
+              "PUMP",
+              "SEAL"
+            ],
+            "uncovered": [
+              {
+                "id": "VALVE",
+                "reason": "budget or disconnected"
+              },
+              {
+                "id": "GAUGE",
+                "reason": "budget or disconnected"
+              },
+              {
+                "id": "JOINT",
+                "reason": "budget or disconnected"
+              },
+              {
+                "id": "PANEL",
+                "reason": "budget or disconnected"
+              }
+            ]
+          },
+          {
+            "budget": 42,
+            "cost": 38,
+            "priority": 35,
+            "covered": [
+              "PUMP",
+              "VALVE",
+              "SEAL",
+              "GAUGE",
+              "JOINT",
+              "PANEL"
+            ],
+            "uncovered": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "exclusion_audit",
+      "passed": true,
+      "tool": "inspect_map",
+      "decisions": 2,
+      "receipts": [
+        {
+          "generation_id": "gen_01M55XNT6M20BANF723NRYRGZE",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 427,
+            "completion_tokens": 1836,
+            "total_tokens": 2263,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1823,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        },
+        {
+          "generation_id": "gen_01M55XP3F77WT0TG4R13EMPZW7",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 608,
+            "completion_tokens": 1344,
+            "total_tokens": 1952,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1209,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "retention": "Free provider may retain synthetic prompts/responses"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "checkpoint": {
+        "nodes": [],
+        "persisted_by": "validated decision journal; reconstructed LangGraph MemorySaver execution",
+        "decision_count": 2
+      },
+      "mission_mutated": false,
+      "replay_equal": true,
+      "duplicate_no_inference": true,
+      "injected_provider_recovery": true,
+      "request_ms": [
+        6999.14607599999,
+        7080.275913000005
+      ],
+      "exact_observation": {
+        "id": "E1",
+        "tool": "inspect_map",
+        "arguments": {},
+        "result": {
+          "width": 10,
+          "height": 8,
+          "base": 70,
+          "position": 70,
+          "remaining": 42,
+          "exclusions": [
+            13,
+            23,
+            25,
+            33,
+            35,
+            43,
+            53,
+            55,
+            56,
+            57,
+            58
+          ],
+          "checkpoints": [
+            {
+              "id": "PUMP",
+              "cell": 11,
+              "priority": 8
+            },
+            {
+              "id": "VALVE",
+              "cell": 18,
+              "priority": 5
+            },
+            {
+              "id": "SEAL",
+              "cell": 41,
+              "priority": 9
+            },
+            {
+              "id": "GAUGE",
+              "cell": 67,
+              "priority": 6
+            },
+            {
+              "id": "JOINT",
+              "cell": 76,
+              "priority": 4
+            },
+            {
+              "id": "PANEL",
+              "cell": 6,
+              "priority": 3
+            }
+          ],
+          "already_inspected": []
+        }
+      }
+    }
+  ],
+  "failed_attempts": [
+    {
+      "command": "continue1",
+      "attempt": 1,
+      "status": 503,
+      "error": "Model did not return bounded JSON decision (finish=length, characters=0); saved checkpoint unchanged",
+      "saved_unchanged": true
+    },
+    {
+      "command": "continue2",
+      "attempt": 1,
+      "status": 503,
+      "error": "Gateway HTTP429: rate_limit_exceeded; no paid fallback",
+      "saved_unchanged": true
+    }
+  ],
+  "scope": "visible development integration pilot; no held-out generalization claim"
+}
