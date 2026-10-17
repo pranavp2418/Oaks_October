@@ -1,9 +1,9 @@
 {
   "date": "2026-10-14",
-  "last_updated_at": "2026-10-17T22:10:35.672803Z",
-  "status": "portfolio_local_verified_release_pending",
-  "owner": "codex-oct14-resume-20261017",
-  "lease_expires_at": "2026-10-17T23:19:48.688Z",
+  "last_updated_at": "2026-10-17T22:18:54.287168Z",
+  "status": "complete",
+  "owner": null,
+  "lease_expires_at": null,
   "target": 3,
   "completed_projects": 3,
   "projects": [
@@ -251,8 +251,8 @@
       "live_url": "https://morrowstock-20261014.vercel.app/",
       "deployment_id": "dpl_3R7tqoVSaW6sPPjedr5WpNGjxhqK",
       "deployment": "public_workflows_verified",
-      "integration": "withheld_until_trio_passes",
-      "portfolio_integration": "not_added",
+      "integration": "portfolio_verified",
+      "portfolio_integration": "production_verified",
       "completion_ordinal": 22,
       "counted": true,
       "external_blocker": null,
@@ -266,7 +266,9 @@
         "generated_runtime_assets": "all four JS/CSS SHA256 equal current verified production",
         "deployed": false,
         "scope": "build dependency maintenance only; no new completion"
-      }
+      },
+      "portfolio_source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+      "portfolio_deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD"
     },
     {
       "date": "2026-10-14",
@@ -303,8 +305,8 @@
       "verification_deployment_id": "dpl_AMHA7ejRm43JY5djzuCyyqwoFScD",
       "verification_deployed_source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
       "deployment": "public_workflows_verified",
-      "integration": "awaiting_trio_portfolio_release",
-      "portfolio_integration": "not_added",
+      "integration": "portfolio_verified",
+      "portfolio_integration": "production_verified",
       "visual_theme": "Survey sheet, ocean blue and safety orange; spatial map, mission rail and findings sheet",
       "core_technical_contribution": "C++ BFS metric closure and exact prize-orienteering subset DP with reconstructed return route; context-bound mission and checkpointed read-only investigator",
       "invariants": [
@@ -531,7 +533,9 @@
         }
       ],
       "deployed_source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
-      "verified_at": "2026-10-17T22:08:36.234775Z"
+      "verified_at": "2026-10-17T22:08:36.234775Z",
+      "portfolio_source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+      "portfolio_deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD"
     },
     {
       "date": "2026-10-14",
@@ -561,8 +565,8 @@
       "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
       "vercel_project_id": "prj_amHH44VeKlARL5UGkbHSLfxi1wYP",
       "deployment": "public_workflows_verified",
-      "integration": "awaiting_trio_portfolio_release",
-      "portfolio_integration": "not_added",
+      "integration": "portfolio_verified",
+      "portfolio_integration": "production_verified",
       "visual_theme": "Charcoal bench instrument, cyan state paths and amber fault markers; native DOM/SVG/text evidence",
       "core_technical_contribution": "Go strict finite Mealy compiler, reachable-product shortest-witness BFS, ddmin plus one-deletion minimality, mutation analysis and proof-bound repair transactions shared across native CLI and actual WASM worker/API",
       "invariants": [
@@ -779,7 +783,9 @@
       "deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
       "verification_deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
       "verification_deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
-      "verified_at": "2026-10-17T22:09:27.143007Z"
+      "verified_at": "2026-10-17T22:09:27.143007Z",
+      "portfolio_source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+      "portfolio_deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD"
     }
   ],
   "product_direction": "Three distinct agent products; not development-worker delegation",
@@ -795,10 +801,8 @@
     24
   ],
   "ordinal_note": "Provisional until earlier completed projects are reconciled; not completion claims",
-  "next_stage": "Portfolio integration after three applicable releases",
-  "remaining": [
-    "Verify all three portfolio cards/archive/Projects country/Pip, existing content and redirects on production"
-  ],
+  "next_stage": null,
+  "remaining": [],
   "external_blocker": null,
   "limitations": [
     "Exactly1/3 applicable daily deliveries complete;2 implemented projects remain release-pending",
@@ -883,6 +887,14 @@
       "completed_projects": 3,
       "tests": 28,
       "next": "Push shared manifest/covers and release existing portfolio project"
+    },
+    {
+      "at": "2026-10-17T22:18:54.287168Z",
+      "stage": "portfolio_archive_country_pip_production_verified",
+      "completed_projects": 3,
+      "source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+      "deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD",
+      "october15_completed_projects": 0
     }
   ],
   "provider_blocker_history": [
@@ -902,10 +914,10 @@
       "transient": false
     }
   ],
-  "last_owner": "codex-oct14-finish",
-  "lease_released_at": "2026-10-15T19:19:41.801Z",
+  "last_owner": "codex-oct14-resume-20261017",
+  "lease_released_at": "2026-10-17T22:18:54.287168Z",
   "flagship_progress": {
-    "checked_at": "2026-10-15T19:17:57.219Z",
+    "checked_at": "2026-10-17T22:18:54.287168Z",
     "progress_source": "https://github.com/pranavp2418/AtlasForge/blob/main/PROGRESS.json",
     "latest_report": "runs/2026-10-13.md",
     "new_verified_work_today": false,
@@ -940,6 +952,14 @@
     "local_tests": 28,
     "production_build": "passed; original film parts restored with SHA256 verification",
     "source_scene_changes": false,
-    "production_status": "pending"
-  }
+    "production_status": "production_verified",
+    "source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+    "deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD",
+    "verification": "runs/2026-10-14-portfolio-release.json",
+    "canonical_url": "https://impranavpatel.com/",
+    "projects_url": "https://impranavpatel.com/projects.html",
+    "catalog_entries": 29
+  },
+  "delivery_verified_projects": 3,
+  "completed_at": "2026-10-17T22:18:54.287168Z"
 }

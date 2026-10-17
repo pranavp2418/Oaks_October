@@ -27,3 +27,19 @@ Audience: protocol engineers. A precise signal-analysis instrument: charcoal, wa
 ## Planning disposition
 
 The user authorizes routine choices and publishing; preserve the full seven connected capabilities, exact-two private hiring opportunities across the trio and two-resume/one-new split. Office-hours challenge and engineering/design/eval planning are applied; no invented customer, benchmark, outside consensus or infrastructure integration. Go's own compiled state machine controls the agent workflow because its proof/repair state is the core contract; no extra graph framework is added merely for a badge. Existing provider policy may be reused as an implementation pattern, with original self-contained code and no paid fallback. No portfolio integration until all three pass applicable gates.
+
+## Final evidence disposition
+
+Applicable delivery and portfolio integration passed at 2026-10-17T22:18:54.287168Z. The pre-code pending notes above are historical.
+
+| Complexity axis | Concrete final evidence | Disposition |
+|---|---|---|
+| Custom algorithm | Independent exhaustive oracle comparisons, invariants and runnable measured baseline | Passed bounded scope |
+| Connected product depth | All seven connected capabilities implemented; actual review/operation/evidence flow exercised | Passed |
+| State and persistence | Journal replay/tamper, duplicate/conflict, actual native/browser concurrency and reopened state | Passed for declared single-user architecture |
+| Failure/recovery | Precommit/provider interruption, retry, stale revision and validated restore | Passed |
+| Agent decisions | Three actual-provider development cases, exact tools/citations, saved receipts and human review | Passed; no held-out accuracy claim |
+| UI and operations | Desktop/390px, keyboard/reduced-motion, measured input, proof/metrics and export | Passed with retained cloud frame-callback concern; no physical or assistive certification |
+| Release | Clean build/CI, source-bound public deployment, static identity, portfolio cards/country/Pip and redirects | Passed |
+
+See QA_REPORT.md, PROJECT_LEDGER.json and runs/2026-10-14-portfolio-release.json for receipts and exact limitations. No infrastructure integration inferred from configuration.

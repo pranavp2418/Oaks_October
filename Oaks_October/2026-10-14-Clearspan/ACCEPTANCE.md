@@ -27,3 +27,19 @@ Audience: inspection coordinators. Art direction: aerial survey sheet and dispat
 User already authorizes autonomous scope choices and publication; no routine approval question is needed. Office-hours premise challenge, engineering/design/eval planning are applied to this contract; outside-model review is unavailable rather than fabricated. Reuse the existing fixed-origin, exact-zero-price provider policy and bounded storage patterns only where their contracts fit, with self-contained source in this folder. LangGraph/LangChain are the user's requested tools for checkpointed reviewed agents; they take precedence over a generic framework default. A process-local checkpointer is only a request execution engine: durability comes from validated persisted decisions and deterministic reconstruction, explicitly tested. No infrastructure badge is claimed from configuration.
 
 Current disposition: all connected capabilities implemented and local9-group verification passed. Original hosted mission/inspection/recovery/review workflows passed, but budget-model evaluation failed and exposed a model-facing schema repair. Final changed source is release-pending under the actual daily Vercel deployment quota; final eval/UI response checks remain unchecked. Not counted complete. See QA_REPORT.md and retained failed pilot artifacts.
+
+## Final evidence disposition
+
+Applicable delivery and portfolio integration passed at 2026-10-17T22:18:54.287168Z. The pre-code pending notes above are historical.
+
+| Complexity axis | Concrete final evidence | Disposition |
+|---|---|---|
+| Custom algorithm | Independent exhaustive oracle comparisons, invariants and runnable measured baseline | Passed bounded scope |
+| Connected product depth | All seven connected capabilities implemented; actual review/operation/evidence flow exercised | Passed |
+| State and persistence | Journal replay/tamper, duplicate/conflict, actual native/browser concurrency and reopened state | Passed for declared single-user architecture |
+| Failure/recovery | Precommit/provider interruption, retry, stale revision and validated restore | Passed |
+| Agent decisions | Three actual-provider development cases, exact tools/citations, saved receipts and human review | Passed; no held-out accuracy claim |
+| UI and operations | Desktop/390px, keyboard/reduced-motion, measured input, proof/metrics and export | Passed with retained cloud frame-callback concern; no physical or assistive certification |
+| Release | Clean build/CI, source-bound public deployment, static identity, portfolio cards/country/Pip and redirects | Passed |
+
+See QA_REPORT.md, PROJECT_LEDGER.json and runs/2026-10-14-portfolio-release.json for receipts and exact limitations. No infrastructure integration inferred from configuration.

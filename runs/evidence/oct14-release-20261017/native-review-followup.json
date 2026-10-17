@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-10-17T22:20:22.533975Z",
+  "reviewer": "native read-only adversarial follow-up",
+  "scope": [
+    "Both live pilot selection guards and process regressions",
+    "Wirewake modal Tab guard",
+    "Clearspan reduced-motion checkbox CSS"
+  ],
+  "checks": {
+    "unmatched_filter_regressions_passed": 2,
+    "network_calls": 0,
+    "metadata": [
+      "selected_cases",
+      "case_filter",
+      "full_suite"
+    ],
+    "modal": "Enabled first/last controls wrap; Escape not intercepted",
+    "checkbox": "Width override plus44px label target"
+  },
+  "remaining_substantiated_findings": 0,
+  "limits": "No independent hosted/browser/provider verification; parent CUA/API receipts are separate."
+}

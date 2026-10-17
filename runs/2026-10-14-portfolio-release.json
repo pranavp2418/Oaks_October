@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-10-17T22:16:37.566Z",
+  "source_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+  "deployment_id": "dpl_4hYcBWbUAvr22yHEsGigNKGPGfeD",
+  "http": [
+    {
+      "url": "https://impranavpatel.com/",
+      "status": 200,
+      "bytes": 14613
+    },
+    {
+      "url": "https://impranavpatel.com/projects.html",
+      "status": 200,
+      "bytes": 7264
+    },
+    {
+      "slug": "morrowstock",
+      "live": "https://morrowstock-20261014.vercel.app/",
+      "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-MorrowStock",
+      "live_status": 200,
+      "cover_status": 200,
+      "cover_source_equal": true
+    },
+    {
+      "slug": "clearspan",
+      "live": "https://clearspan-20261014.vercel.app/",
+      "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Clearspan",
+      "live_status": 200,
+      "cover_status": 200,
+      "cover_source_equal": true
+    },
+    {
+      "slug": "wirewake",
+      "live": "https://wirewake-20261014.vercel.app/",
+      "source": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Wirewake",
+      "live_status": 200,
+      "cover_status": 200,
+      "cover_source_equal": true
+    },
+    {
+      "url": "https://pranav-patel.vercel.app/projects.html?project=wirewake",
+      "status": 308,
+      "location": "https://impranavpatel.com/projects.html?project=wirewake"
+    },
+    {
+      "url": "https://www.impranavpatel.com/projects.html?project=wirewake",
+      "status": 308,
+      "location": "https://impranavpatel.com/projects.html?project=wirewake"
+    },
+    {
+      "manifest_entries": 27,
+      "source_equal": true,
+      "sha256": "ebd296aa079065d78956aa4f19c069bea9116011c74396a22fa830498432a55e"
+    }
+  ],
+  "browser": {
+    "method": "Permitted CUA Chrome, gstack Chromium unavailable",
+    "archive": "All3new cards/dialogs, source/demo links;27entries; final page5/5; all3cover naturalWidth>0; opt-in real embeds loaded, Wirewake sample import/exact core and Clearspan sample import exercised",
+    "pip": "Wirewake Go/protocol, MorrowStock Python/inventory/recall and Clearspan C++/inspection/mission queries selected correct catalog project and purpose/stack; navigation and source links observed",
+    "country": "29catalog buildings; new Wirewake deep link/detail and opt-in real preview checked; existing scenery/rendering source unchanged;28tests include placement preservation",
+    "mobile_archive": {
+      "iframe_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "flow": "MorrowStock search, rendered corrected cover and source/demo/preview dialog controls"
+    },
+    "mobile_country": {
+      "iframe_width": 390,
+      "client_width": 390,
+      "scroll_width": 390,
+      "flow": "Expand directory, Go technology filter, Wirewake selection/detail/source/step-inside; map retained"
+    },
+    "dates": "No new project dates/timelines visible in card/dialog/country/Pip; internal paths unchanged; Houston clock and CraftsmanAI timeline retained",
+    "screenshots": [
+      "runs/evidence/oct14-release-20261017/portfolio-trio-complete.jpg",
+      "runs/evidence/oct14-release-20261017/portfolio-mobile-country.jpg"
+    ],
+    "limits": [
+      "Cloud browser/iframe verification, not physical touch or full assistive-technology certification",
+      "Weather showed explicit unavailable state during country QA; weather implementation unchanged",
+      "Heavy city chunks remain lazy-loaded; no new physical GPU/frame-rate guarantee"
+    ]
+  },
+  "status": "production_verified",
+  "verified_at": "2026-10-17T22:18:54.287168Z",
+  "local_tests": 28,
+  "build": "passed; original film restored with checksum verification",
+  "all_existing_manifest_objects_preserved": 24,
+  "svg_cover_validation": "All referenced archive SVG assets parse; all3new live cover bytes equal source and natural dimensions nonzero",
+  "findings_fixed": [
+    "Empty live-pilot selection falsely passing zero cases, regression red-to-green in both runners",
+    "Wirewake native dialog Tab boundary, final deployed forward/backward retest passed",
+    "Clearspan reduce-motion checkbox4px overflow, final375/375retet passed",
+    "MorrowStock source/portfolio cover malformed path closings, all referenced SVG XML and actual browser rendering verified"
+  ]
+}
