@@ -1,0 +1,65 @@
+[
+  {
+    "file": "GO_RUNTIME_LICENSE.txt",
+    "status": 200,
+    "bytes": 1453,
+    "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+    "local_equal": true
+  },
+  {
+    "file": "assets/app-D2fWnleA.js",
+    "status": 200,
+    "bytes": 20784,
+    "sha256": "11db48523c28322b5103014a56e6b7e7eb1afdb5ac60da02cb9d63c60890e998",
+    "local_equal": true
+  },
+  {
+    "file": "assets/app-axLVqB9W.css",
+    "status": 200,
+    "bytes": 14141,
+    "sha256": "c3e89d03498a6e351d9a0e99f7edda2f9f41a7aa353f28b402261c28091aa4f8",
+    "local_equal": true
+  },
+  {
+    "file": "assets/store-JmqdrTSh.js",
+    "status": 200,
+    "bytes": 1596,
+    "sha256": "169d2e7e83e7b2e556b247aec008a539797434a3e8693bdc3f5903b34f96d0c2",
+    "local_equal": true
+  },
+  {
+    "file": "assets/verification-CR-VsPfc.js",
+    "status": 200,
+    "bytes": 1486,
+    "sha256": "39f7627f2d17281252f8df032095fc249258c2fe9bd9a4cbcadd650157f96972",
+    "local_equal": true
+  },
+  {
+    "file": "assets/worker-CvqH9rB1.js",
+    "status": 200,
+    "bytes": 619,
+    "sha256": "75b66895c5ee2b370ff50323e67a5e747f748e9d8ab5981dfcef34692c866b69",
+    "local_equal": true
+  },
+  {
+    "file": "core-identity.json",
+    "status": 200,
+    "bytes": 271,
+    "sha256": "83ca021d1d46db79dfb225d82bbe81e6c379d5f4b3515d4c4384399806975edc",
+    "local_equal": true
+  },
+  {
+    "file": "engine.wasm",
+    "status": 200,
+    "bytes": 4887806,
+    "sha256": "11fe62bd520555bfc3ecf746f3df7c6fde67006a8cd7514a336c3004d215150d",
+    "local_equal": true
+  },
+  {
+    "file": "wasm_exec.js",
+    "status": 200,
+    "bytes": 16992,
+    "sha256": "0c949f4996f9a89698e4b5c586de32249c3b69b7baadb64d220073cc04acba14",
+    "local_equal": true
+  }
+]

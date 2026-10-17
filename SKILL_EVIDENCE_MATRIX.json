@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-15T19:18:44.150Z",
+  "updated": "2026-10-17T22:10:00Z",
   "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
   "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
   "skills": [
@@ -60,7 +60,7 @@
       "aliases": [
         "Integration Testing"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Wirewake",
       "implementation_files": [
         "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
@@ -72,8 +72,8 @@
         "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
       "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -136,7 +136,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
-      ]
+      ],
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "Query optimization",
@@ -1020,7 +1022,7 @@
       "aliases": [
         "Express.js"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Clearspan",
       "implementation_files": [
         "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
@@ -1030,8 +1032,8 @@
         "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
       "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "Clearspan",
@@ -1048,7 +1050,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
-      ]
+      ],
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "Microservices",
@@ -1091,7 +1095,7 @@
       "aliases": [
         "C++"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Clearspan",
       "implementation_files": [
         "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
@@ -1102,8 +1106,8 @@
         "Oaks_October/2026-10-14-Clearspan/tests/core.test.mjs"
       ],
       "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "Clearspan",
@@ -1121,7 +1125,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
-      ]
+      ],
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "Java",
@@ -1140,7 +1146,7 @@
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Wirewake",
       "implementation_files": [
         "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
@@ -1152,8 +1158,8 @@
         "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
       "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1199,14 +1205,16 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
-      ]
+      ],
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "JavaScript",
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Clearspan",
       "implementation_files": [
         "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
@@ -1216,8 +1224,8 @@
         "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
       "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1261,7 +1269,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
-      ]
+      ],
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "Python",
@@ -1392,7 +1402,7 @@
       "aliases": [
         "current primary hiring evidence"
       ],
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Wirewake",
       "implementation_files": [
         "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
@@ -1404,8 +1414,8 @@
         "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
       "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1451,7 +1461,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
-      ]
+      ],
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "AI evaluation / model lifecycle",
@@ -1526,7 +1538,7 @@
         "LangGraph"
       ],
       "purpose": "Stateful workflow graphs with checkpoints, recoverable execution and human review where the project calls for them.",
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Clearspan",
       "implementation_files": [
         "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
@@ -1536,8 +1548,8 @@
         "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
       "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1583,7 +1595,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
-      ]
+      ],
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "LangChain",
@@ -1592,7 +1606,7 @@
         "LangChain"
       ],
       "purpose": "Actual retrieval/model/tool integrations with evaluations and documented runtime limits.",
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Clearspan",
       "implementation_files": [
         "Oaks_October/2026-10-14-Clearspan/core/route.cpp",
@@ -1602,8 +1616,8 @@
         "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md"
       ],
       "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "MorrowStock",
@@ -1649,7 +1663,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
         }
-      ]
+      ],
+      "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "Node.js",
@@ -1658,7 +1674,7 @@
         "earlier retained profile"
       ],
       "purpose": "Previously retained backend runtime; explicit matrix row.",
-      "status": "verified_component_scope_project_release_pending",
+      "status": "verified_bounded_project_scope",
       "project": "Wirewake",
       "implementation_files": [
         "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
@@ -1670,8 +1686,8 @@
         "Oaks_October/2026-10-14-Wirewake/cmd/bench/main.go"
       ],
       "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
-      "evidence_date": "2026-10-15",
-      "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput.",
+      "evidence_date": "2026-10-17",
+      "limits": "Actual implementation/local/CI/hosted tools and bounded synthetic development model cases verified. Single-user journal, no shared database/physical or general model accuracy claim. Browser scheduling tails retained.",
       "evidence_history": [
         {
           "project": "Clearspan",
@@ -1705,7 +1721,9 @@
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
         }
-      ]
+      ],
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "release_evidence": "runs/evidence/oct14-release-20261017/"
     },
     {
       "skill": "SQLite",
@@ -1794,8 +1812,8 @@
       "technology": "Go1.27.2",
       "project": "Wirewake",
       "classification": "new",
-      "evidence_date": "2026-10-15",
-      "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+      "evidence_date": "2026-10-17",
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
       "implementation_files": [
         "Oaks_October/2026-10-14-Wirewake/engine/machine.go",
         "Oaks_October/2026-10-14-Wirewake/engine/workspace.go",
@@ -1803,8 +1821,8 @@
       ],
       "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
       "demand_evidence": "Dated fresh primary hiring/engineering evidence retained privately before selection",
-      "status": "verified_component_scope_project_release_pending",
-      "limits": "No current proficiency/profile edit or live delivery inferred; original supplied profile comparison remains baseline where public profile inaccessible."
+      "status": "verified_bounded_project_scope",
+      "limits": "Actual Go engine, native CLI/locking/recovery, Node-hosted Go WASM, desktop/mobile UI and actual diagnostic model cases verified. No proficiency, external protocol/security or physical-device claim."
     }
   ]
 }

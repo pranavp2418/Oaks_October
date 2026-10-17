@@ -2236,6 +2236,254 @@
       ],
       "deployed_source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
       "verified_at": "2026-10-17T22:08:36.234775Z"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Wirewake",
+      "industry": "Developer infrastructure and protocol verification",
+      "problem": "Find finite protocol disagreements and shrink reproductions, then bind human-reviewed repairs to exact equivalence proofs with bounded investigating agents",
+      "classification": "new",
+      "core_language": "Go",
+      "stack": [
+        "Go1.27.2",
+        "WebAssembly worker",
+        "TypeScript",
+        "Node.js"
+      ],
+      "path": "Oaks_October/2026-10-14-Wirewake",
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 24,
+      "completion_ordinal": 24,
+      "counted": true,
+      "completed": true,
+      "status": "complete",
+      "stage": "applicable_delivery_passed",
+      "implementation": "implemented_and_pushed",
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Wirewake",
+      "live_url": "https://wirewake-20261014.vercel.app/",
+      "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
+      "vercel_project_id": "prj_amHH44VeKlARL5UGkbHSLfxi1wYP",
+      "deployment": "public_workflows_verified",
+      "integration": "awaiting_trio_portfolio_release",
+      "portfolio_integration": "not_added",
+      "visual_theme": "Charcoal bench instrument, cyan state paths and amber fault markers; native DOM/SVG/text evidence",
+      "core_technical_contribution": "Go strict finite Mealy compiler, reachable-product shortest-witness BFS, ddmin plus one-deletion minimality, mutation analysis and proof-bound repair transactions shared across native CLI and actual WASM worker/API",
+      "invariants": [
+        "No ambiguous transition/state references",
+        "Shortest observable witness or exhaustive finite-model equivalence",
+        "Missing edge emits REJECT and retains state",
+        "Shrink remains failing and one-deletion minimal",
+        "Repair review binds current spec/candidate/version; apply rechecks proof",
+        "Atomic bounded native snapshots, stale head fencing and hash replay",
+        "Browser saves bind captured starting revision; restores cannot overlap",
+        "Agent tools cannot approve or apply repairs"
+      ],
+      "capabilities": [
+        "Strict contract import/compile and persisted replay journal",
+        "Exact disagreement/equivalence and step trace",
+        "Failure shrinking and mutation campaign",
+        "Proposal/review/apply with stale-proof rejection",
+        "Native flock/fsync/rename crash recovery and browser CAS",
+        "Go-owned bounded tool agent state/checkpoint/review plus real provider adapter",
+        "Workspace/proof/regression export and operational view",
+        "Reproducible native benchmark with enumeration baseline"
+      ],
+      "substantive_skill_coverage": [
+        "Go",
+        "WebAssembly",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Integration testing",
+        "Git",
+        "CI/CD",
+        "Performance profiling / benchmarking"
+      ],
+      "verification": {
+        "local": {
+          "native_groups": 9,
+          "raw_editor_groups": 1,
+          "independent_trace_oracles": 400,
+          "native_wasm_full_state_parity": true,
+          "actual_cli_writers": 8,
+          "killed_prepared_writer_recovery": true,
+          "held_lock_busy_then_same_id_retry": true,
+          "large_snapshot_reopen": true,
+          "ambiguous_ascii_escaped_unicode_keys_rejected": true,
+          "clean_install_build": "passed",
+          "provider_calls": 0
+        },
+        "ci": {
+          "status": "success",
+          "commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39073471161"
+        },
+        "hosted": {
+          "source": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+          "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
+          "api_replay_status": 200,
+          "repeated_state_equal": true,
+          "invalid_command_status": 400,
+          "tampered_head_status": 400,
+          "build_logs": "Deployment completed inspected",
+          "static_assets": [
+            {
+              "file": "GO_RUNTIME_LICENSE.txt",
+              "status": 200,
+              "bytes": 1453,
+              "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+              "local_equal": true
+            },
+            {
+              "file": "assets/app-D2fWnleA.js",
+              "status": 200,
+              "bytes": 20784,
+              "sha256": "11db48523c28322b5103014a56e6b7e7eb1afdb5ac60da02cb9d63c60890e998",
+              "local_equal": true
+            },
+            {
+              "file": "assets/app-axLVqB9W.css",
+              "status": 200,
+              "bytes": 14141,
+              "sha256": "c3e89d03498a6e351d9a0e99f7edda2f9f41a7aa353f28b402261c28091aa4f8",
+              "local_equal": true
+            },
+            {
+              "file": "assets/store-JmqdrTSh.js",
+              "status": 200,
+              "bytes": 1596,
+              "sha256": "169d2e7e83e7b2e556b247aec008a539797434a3e8693bdc3f5903b34f96d0c2",
+              "local_equal": true
+            },
+            {
+              "file": "assets/verification-CR-VsPfc.js",
+              "status": 200,
+              "bytes": 1486,
+              "sha256": "39f7627f2d17281252f8df032095fc249258c2fe9bd9a4cbcadd650157f96972",
+              "local_equal": true
+            },
+            {
+              "file": "assets/worker-CvqH9rB1.js",
+              "status": 200,
+              "bytes": 619,
+              "sha256": "75b66895c5ee2b370ff50323e67a5e747f748e9d8ab5981dfcef34692c866b69",
+              "local_equal": true
+            },
+            {
+              "file": "core-identity.json",
+              "status": 200,
+              "bytes": 271,
+              "sha256": "83ca021d1d46db79dfb225d82bbe81e6c379d5f4b3515d4c4384399806975edc",
+              "local_equal": true
+            },
+            {
+              "file": "engine.wasm",
+              "status": 200,
+              "bytes": 4887806,
+              "sha256": "11fe62bd520555bfc3ecf746f3df7c6fde67006a8cd7514a336c3004d215150d",
+              "local_equal": true
+            },
+            {
+              "file": "wasm_exec.js",
+              "status": 200,
+              "bytes": 16992,
+              "sha256": "0c949f4996f9a89698e4b5c586de32249c3b69b7baadb64d220073cc04acba14",
+              "local_equal": true
+            }
+          ],
+          "pilot_cases_passed": 3,
+          "pilot_cases_total": 3,
+          "pilot_scope": "Visible development integration cases; not held-out accuracy. Retained malformed response/429 attempts and no paid fallback. Backend/core unchanged by final UI-only repair.",
+          "pilot_report": "runs/evidence/oct14-release-20261017/wirewake-pilot-coverage.json",
+          "final_replay_report": "runs/evidence/oct14-release-20261017/final-hosted-replay.json"
+        },
+        "qa_report": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+        "known_npm_vulnerabilities": 0,
+        "browser": {
+          "method": "Permitted CUA Chrome substitution for unavailable gstack Chromium",
+          "desktop": "Shortest connect/read witness; ddmin10calls,12/12sample mutation witnesses; proposal/review/precommit failure/retry/APPLIED/equivalent candidatev2; reload; actual2generation diagnosis/interruption/resume/REVIEWED; malformed and actual exported10command restore without inference",
+          "keyboard": "Enter navigation; final deployed modal Tab/Shift+Tab wrap and Escape; manual Reduce motion checked",
+          "mobile": "390px iframe clientWidth=scrollWidth375; saved reviewed agent discoverable through keyboard navigation; not physical device",
+          "cas": {
+            "writers": 8,
+            "successes": 1,
+            "conflicts": 7,
+            "reopened_revision": 1
+          },
+          "input_sample": {
+            "samples": 8,
+            "dispatch_p95_ms": 16.8,
+            "next_callback_p95_ms": 503,
+            "scope": "Cloud scheduling included; retained concern, no physical FPS/INP pass"
+          },
+          "exports": "runs/evidence/oct14-release-20261017/wirewake-browser-{workspace,dossier,traces}.json",
+          "screenshots": [
+            "runs/evidence/oct14-release-20261017/wirewake-oct17-desktop.jpg",
+            "runs/evidence/oct14-release-20261017/wirewake-oct17-mobile.jpg"
+          ]
+        },
+        "local_followup": "9native groups,400independent oracles,8CLI writers,killed writer,busy/retry,full native/WASM state parity,2Node regression tests; clean Go/WASM/TS/Vite build",
+        "gstack_followup": {
+          "native_adversarial": "Empty pilot selection false success reproduced, red-to-green in both CLIs; no other substantiated new defect in scoped pass",
+          "browser_findings_fixed": "Wirewake explicit modal boundary; Clearspan bounded reduced-motion checkbox removes4px overflow",
+          "limits": "No outside-model consensus, full external scanner, physical-device or assistive-tech certification; actual frame scheduling tails retained"
+        }
+      },
+      "new_core_baseline": "Absent from current verified supplied resume/profile baseline; no claim of reading inaccessible LinkedIn",
+      "new_core_demand_evidence": "Current primary hiring sources checked privately before selection; dated notes retained; no public inspiration attribution",
+      "external_blocker": null,
+      "remaining": [],
+      "last_updated_at": "2026-10-17T22:09:27.143007Z",
+      "verification_history": [
+        {
+          "stage": "earlier_incomplete_checkpoint",
+          "verification": {
+            "local": {
+              "native_groups": 9,
+              "raw_editor_groups": 1,
+              "independent_trace_oracles": 400,
+              "native_wasm_full_state_parity": true,
+              "actual_cli_writers": 8,
+              "killed_prepared_writer_recovery": true,
+              "held_lock_busy_then_same_id_retry": true,
+              "large_snapshot_reopen": true,
+              "ambiguous_ascii_escaped_unicode_keys_rejected": true,
+              "clean_install_build": "passed",
+              "provider_calls": 0
+            },
+            "ci": {
+              "status": "success",
+              "commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+              "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38792453005",
+              "prior_failed_run": "https://github.com/pranavp2418/Oaks_October/actions/runs/38791600889",
+              "prior_failure_and_repair": "Initial native race test assumed first-attempt lock acquisition; bounded busy-only retries and forced busy/recovery case now verified"
+            },
+            "hosted": {
+              "deployment": false,
+              "actual_provider_evaluation": false,
+              "browser_desktop_mobile": false
+            },
+            "qa_report": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+            "known_npm_vulnerabilities": 0
+          },
+          "external_blocker": {
+            "observed_at": "2026-10-15T18:56:18.343Z",
+            "http_status": 402,
+            "resource": "api-deployments-free-per-day",
+            "retry_after_seconds": 86400,
+            "affected": [
+              "Wirewake initial deployment",
+              "portfolio trio integration release"
+            ],
+            "access_verification_issue": false
+          }
+        }
+      ],
+      "deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "verification_deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
+      "verification_deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "verified_at": "2026-10-17T22:09:27.143007Z"
     }
   ],
   "dry_runs": [
@@ -2454,15 +2702,15 @@
     },
     {
       "date": "2026-10-14",
-      "status": "final_browser_verification",
+      "status": "project_delivery_verified_portfolio_pending",
       "target": 3,
-      "completed_projects": 2,
+      "completed_projects": 3,
       "run_record": "runs/2026-10-14.json",
-      "last_updated_at": "2026-10-17T22:08:36.234775Z",
+      "last_updated_at": "2026-10-17T22:09:27.143007Z",
       "product_direction": "Three distinct agent products; not development-worker delegation",
       "portfolio_integration": "pending",
       "external_blocker": null,
-      "delivery_verified_projects": 2
+      "delivery_verified_projects": 3
     },
     {
       "date": "2026-10-15",
@@ -4722,19 +4970,19 @@
       "path": "Oaks_October/2026-10-14-Wirewake",
       "delivery_mode": "web_deployed",
       "planned_ordinal": 24,
-      "completion_ordinal": null,
-      "counted": false,
-      "completed": false,
-      "status": "incomplete_deployment_blocked",
-      "stage": "source_local_ci_verified_no_hosted_release",
+      "completion_ordinal": 24,
+      "counted": true,
+      "completed": true,
+      "status": "complete",
+      "stage": "applicable_delivery_passed",
       "implementation": "implemented_and_pushed",
-      "source_commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+      "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
       "source_url": "https://github.com/pranavp2418/Oaks_October/tree/main/Oaks_October/2026-10-14-Wirewake",
-      "live_url": null,
-      "deployment_id": null,
+      "live_url": "https://wirewake-20261014.vercel.app/",
+      "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
       "vercel_project_id": "prj_amHH44VeKlARL5UGkbHSLfxi1wYP",
-      "deployment": "initial_deployment_rejected_quota",
-      "integration": "withheld_until_trio_passes",
+      "deployment": "public_workflows_verified",
+      "integration": "awaiting_trio_portfolio_release",
       "portfolio_integration": "not_added",
       "visual_theme": "Charcoal bench instrument, cyan state paths and amber fault markers; native DOM/SVG/text evidence",
       "core_technical_contribution": "Go strict finite Mealy compiler, reachable-product shortest-witness BFS, ddmin plus one-deletion minimality, mutation analysis and proof-bound repair transactions shared across native CLI and actual WASM worker/API",
@@ -4785,39 +5033,174 @@
         },
         "ci": {
           "status": "success",
-          "commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
-          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38792453005",
-          "prior_failed_run": "https://github.com/pranavp2418/Oaks_October/actions/runs/38791600889",
-          "prior_failure_and_repair": "Initial native race test assumed first-attempt lock acquisition; bounded busy-only retries and forced busy/recovery case now verified"
+          "commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+          "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39073471161"
         },
         "hosted": {
-          "deployment": false,
-          "actual_provider_evaluation": false,
-          "browser_desktop_mobile": false
+          "source": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+          "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
+          "api_replay_status": 200,
+          "repeated_state_equal": true,
+          "invalid_command_status": 400,
+          "tampered_head_status": 400,
+          "build_logs": "Deployment completed inspected",
+          "static_assets": [
+            {
+              "file": "GO_RUNTIME_LICENSE.txt",
+              "status": 200,
+              "bytes": 1453,
+              "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+              "local_equal": true
+            },
+            {
+              "file": "assets/app-D2fWnleA.js",
+              "status": 200,
+              "bytes": 20784,
+              "sha256": "11db48523c28322b5103014a56e6b7e7eb1afdb5ac60da02cb9d63c60890e998",
+              "local_equal": true
+            },
+            {
+              "file": "assets/app-axLVqB9W.css",
+              "status": 200,
+              "bytes": 14141,
+              "sha256": "c3e89d03498a6e351d9a0e99f7edda2f9f41a7aa353f28b402261c28091aa4f8",
+              "local_equal": true
+            },
+            {
+              "file": "assets/store-JmqdrTSh.js",
+              "status": 200,
+              "bytes": 1596,
+              "sha256": "169d2e7e83e7b2e556b247aec008a539797434a3e8693bdc3f5903b34f96d0c2",
+              "local_equal": true
+            },
+            {
+              "file": "assets/verification-CR-VsPfc.js",
+              "status": 200,
+              "bytes": 1486,
+              "sha256": "39f7627f2d17281252f8df032095fc249258c2fe9bd9a4cbcadd650157f96972",
+              "local_equal": true
+            },
+            {
+              "file": "assets/worker-CvqH9rB1.js",
+              "status": 200,
+              "bytes": 619,
+              "sha256": "75b66895c5ee2b370ff50323e67a5e747f748e9d8ab5981dfcef34692c866b69",
+              "local_equal": true
+            },
+            {
+              "file": "core-identity.json",
+              "status": 200,
+              "bytes": 271,
+              "sha256": "83ca021d1d46db79dfb225d82bbe81e6c379d5f4b3515d4c4384399806975edc",
+              "local_equal": true
+            },
+            {
+              "file": "engine.wasm",
+              "status": 200,
+              "bytes": 4887806,
+              "sha256": "11fe62bd520555bfc3ecf746f3df7c6fde67006a8cd7514a336c3004d215150d",
+              "local_equal": true
+            },
+            {
+              "file": "wasm_exec.js",
+              "status": 200,
+              "bytes": 16992,
+              "sha256": "0c949f4996f9a89698e4b5c586de32249c3b69b7baadb64d220073cc04acba14",
+              "local_equal": true
+            }
+          ],
+          "pilot_cases_passed": 3,
+          "pilot_cases_total": 3,
+          "pilot_scope": "Visible development integration cases; not held-out accuracy. Retained malformed response/429 attempts and no paid fallback. Backend/core unchanged by final UI-only repair.",
+          "pilot_report": "runs/evidence/oct14-release-20261017/wirewake-pilot-coverage.json",
+          "final_replay_report": "runs/evidence/oct14-release-20261017/final-hosted-replay.json"
         },
         "qa_report": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
-        "known_npm_vulnerabilities": 0
+        "known_npm_vulnerabilities": 0,
+        "browser": {
+          "method": "Permitted CUA Chrome substitution for unavailable gstack Chromium",
+          "desktop": "Shortest connect/read witness; ddmin10calls,12/12sample mutation witnesses; proposal/review/precommit failure/retry/APPLIED/equivalent candidatev2; reload; actual2generation diagnosis/interruption/resume/REVIEWED; malformed and actual exported10command restore without inference",
+          "keyboard": "Enter navigation; final deployed modal Tab/Shift+Tab wrap and Escape; manual Reduce motion checked",
+          "mobile": "390px iframe clientWidth=scrollWidth375; saved reviewed agent discoverable through keyboard navigation; not physical device",
+          "cas": {
+            "writers": 8,
+            "successes": 1,
+            "conflicts": 7,
+            "reopened_revision": 1
+          },
+          "input_sample": {
+            "samples": 8,
+            "dispatch_p95_ms": 16.8,
+            "next_callback_p95_ms": 503,
+            "scope": "Cloud scheduling included; retained concern, no physical FPS/INP pass"
+          },
+          "exports": "runs/evidence/oct14-release-20261017/wirewake-browser-{workspace,dossier,traces}.json",
+          "screenshots": [
+            "runs/evidence/oct14-release-20261017/wirewake-oct17-desktop.jpg",
+            "runs/evidence/oct14-release-20261017/wirewake-oct17-mobile.jpg"
+          ]
+        },
+        "local_followup": "9native groups,400independent oracles,8CLI writers,killed writer,busy/retry,full native/WASM state parity,2Node regression tests; clean Go/WASM/TS/Vite build",
+        "gstack_followup": {
+          "native_adversarial": "Empty pilot selection false success reproduced, red-to-green in both CLIs; no other substantiated new defect in scoped pass",
+          "browser_findings_fixed": "Wirewake explicit modal boundary; Clearspan bounded reduced-motion checkbox removes4px overflow",
+          "limits": "No outside-model consensus, full external scanner, physical-device or assistive-tech certification; actual frame scheduling tails retained"
+        }
       },
       "new_core_baseline": "Absent from current verified supplied resume/profile baseline; no claim of reading inaccessible LinkedIn",
       "new_core_demand_evidence": "Current primary hiring sources checked privately before selection; dated notes retained; no public inspiration attribution",
-      "external_blocker": {
-        "observed_at": "2026-10-15T18:56:18.343Z",
-        "http_status": 402,
-        "resource": "api-deployments-free-per-day",
-        "retry_after_seconds": 86400,
-        "affected": [
-          "Wirewake initial deployment",
-          "portfolio trio integration release"
-        ],
-        "access_verification_issue": false
-      },
-      "remaining": [
-        "Deploy actual Go/WASM build from pushed source to dedicated Vercel project",
-        "Run all three preregistered actual-provider cases with receipts and failure/replay checks",
-        "Desktop/mobile complete worker/API/review/repair/persistence/export/keyboard/motion/input workflows",
-        "Verify live assets/core identity and final delivery signoff"
+      "external_blocker": null,
+      "remaining": [],
+      "last_updated_at": "2026-10-17T22:09:27.143007Z",
+      "verification_history": [
+        {
+          "stage": "earlier_incomplete_checkpoint",
+          "verification": {
+            "local": {
+              "native_groups": 9,
+              "raw_editor_groups": 1,
+              "independent_trace_oracles": 400,
+              "native_wasm_full_state_parity": true,
+              "actual_cli_writers": 8,
+              "killed_prepared_writer_recovery": true,
+              "held_lock_busy_then_same_id_retry": true,
+              "large_snapshot_reopen": true,
+              "ambiguous_ascii_escaped_unicode_keys_rejected": true,
+              "clean_install_build": "passed",
+              "provider_calls": 0
+            },
+            "ci": {
+              "status": "success",
+              "commit": "e1ed9c7f210240ce50687bb961e26965746d0aff",
+              "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/38792453005",
+              "prior_failed_run": "https://github.com/pranavp2418/Oaks_October/actions/runs/38791600889",
+              "prior_failure_and_repair": "Initial native race test assumed first-attempt lock acquisition; bounded busy-only retries and forced busy/recovery case now verified"
+            },
+            "hosted": {
+              "deployment": false,
+              "actual_provider_evaluation": false,
+              "browser_desktop_mobile": false
+            },
+            "qa_report": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
+            "known_npm_vulnerabilities": 0
+          },
+          "external_blocker": {
+            "observed_at": "2026-10-15T18:56:18.343Z",
+            "http_status": 402,
+            "resource": "api-deployments-free-per-day",
+            "retry_after_seconds": 86400,
+            "affected": [
+              "Wirewake initial deployment",
+              "portfolio trio integration release"
+            ],
+            "access_verification_issue": false
+          }
+        }
       ],
-      "last_updated_at": "2026-10-15T19:17:57.219Z"
+      "deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "verification_deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg",
+      "verification_deployed_source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
+      "verified_at": "2026-10-17T22:09:27.143007Z"
     }
   ],
   "collection_repository": "pranavp2418/Oaks_October",
@@ -5354,11 +5737,11 @@
     "github_only_standard": "Complete useful native/CLI/library/engine/backend workflow, clean-environment setup, meaningful tests and input-to-output execution evidence, rerun/recovery checks, complete README and source push.",
     "portfolio_policy": "All three entries after applicable checks pass. Code-only label and source/walkthrough links for GitHub-only entries; no live URL or deployment claim.",
     "completed_counts": {
-      "web_deployed": 21,
+      "web_deployed": 22,
       "github_only": 2,
-      "total": 23
+      "total": 24
     },
-    "next_planned_completion_ordinal": 24,
+    "next_planned_completion_ordinal": 25,
     "next_planned_delivery_mode": "web_deployed"
   },
   "domain_depth_policy": {

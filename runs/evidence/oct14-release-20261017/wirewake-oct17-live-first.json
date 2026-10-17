@@ -1,0 +1,127 @@
+{
+  "recorded_at": "2026-10-17T21:52:07.195Z",
+  "passed": false,
+  "cases": [
+    {
+      "name": "shortest_disagreement",
+      "passed": true,
+      "receipts": [
+        {
+          "generation_id": "gen_01M55XKQEEP48EQEGDDNHW0DQ7",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 254,
+            "completion_tokens": 937,
+            "total_tokens": 1191,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 923,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "cost": "0"
+        },
+        {
+          "generation_id": "gen_01M55XKY5ZEDY1Q15EFYEBVHQN",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 424,
+            "completion_tokens": 781,
+            "total_tokens": 1205,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 722,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "cost": "0"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "observation": {
+        "id": "E1",
+        "tool": "check_equivalence",
+        "arguments": {},
+        "result": {
+          "equivalent": false,
+          "guarantee": "Shortest distinguishing trace by breadth-first reachable-product exploration",
+          "reachable_pairs": 4,
+          "steps": [
+            {
+              "actual": "HELLO",
+              "after": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "before": {
+                "candidate": "IDLE",
+                "spec": "IDLE"
+              },
+              "expected": "HELLO",
+              "index": 0,
+              "input": "connect",
+              "mismatch": false
+            },
+            {
+              "actual": "DATA",
+              "after": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "before": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "expected": "DENY",
+              "index": 1,
+              "input": "read",
+              "mismatch": true
+            }
+          ],
+          "transitions": 8,
+          "witness": [
+            "connect",
+            "read"
+          ]
+        }
+      },
+      "duplicate_no_inference": true,
+      "provider_interruption_recovered": true,
+      "contract_mutated": false,
+      "replay_equal": true,
+      "request_ms": [
+        3969.734026,
+        5866.830615999999
+      ]
+    }
+  ],
+  "scope": "visible development integration pilot; not held-out accuracy"
+}

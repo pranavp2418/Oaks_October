@@ -1,0 +1,119 @@
+{
+  "alphabet": [
+    "authenticate",
+    "close",
+    "connect",
+    "read"
+  ],
+  "witness": [],
+  "reduced": [
+    "connect",
+    "read"
+  ],
+  "mutation_witnesses": [
+    {
+      "edge": 0,
+      "kind": "output",
+      "input": [
+        "connect",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 0,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "authenticate",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 1,
+      "kind": "output",
+      "input": [
+        "connect",
+        "close"
+      ]
+    },
+    {
+      "edge": 1,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "close",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 2,
+      "kind": "output",
+      "input": [
+        "connect",
+        "read"
+      ]
+    },
+    {
+      "edge": 2,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "read",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 3,
+      "kind": "output",
+      "input": [
+        "connect"
+      ]
+    },
+    {
+      "edge": 3,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 4,
+      "kind": "output",
+      "input": [
+        "connect",
+        "authenticate",
+        "close"
+      ]
+    },
+    {
+      "edge": 4,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "authenticate",
+        "close",
+        "authenticate"
+      ]
+    },
+    {
+      "edge": 5,
+      "kind": "output",
+      "input": [
+        "connect",
+        "authenticate",
+        "read"
+      ]
+    },
+    {
+      "edge": 5,
+      "kind": "next_state",
+      "input": [
+        "connect",
+        "authenticate",
+        "read",
+        "authenticate"
+      ]
+    }
+  ]
+}

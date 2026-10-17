@@ -1,0 +1,144 @@
+{
+  "recorded_at": "2026-10-17T21:54:15.582Z",
+  "passed": true,
+  "cases": [
+    {
+      "name": "failure_reduction",
+      "passed": true,
+      "receipts": [
+        {
+          "generation_id": "gen_01M55XQKRZ31B14VTTR383D0QN",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 2430,
+            "total_tokens": 2701,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2399,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "cost": "0"
+        },
+        {
+          "generation_id": "gen_01M55XQZCPFYPE5T31YKMVEHRN",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 460,
+            "completion_tokens": 862,
+            "total_tokens": 1322,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 751,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "cost": "0"
+        }
+      ],
+      "citations": [
+        "E1"
+      ],
+      "observation": {
+        "id": "E1",
+        "tool": "minimize_trace",
+        "arguments": {
+          "symbols": [
+            "read",
+            "close",
+            "connect",
+            "read",
+            "read",
+            "authenticate",
+            "close"
+          ]
+        },
+        "result": {
+          "one_minimal": true,
+          "oracle_calls": 10,
+          "original": [
+            "read",
+            "close",
+            "connect",
+            "read",
+            "read",
+            "authenticate",
+            "close"
+          ],
+          "reduced": [
+            "connect",
+            "read"
+          ],
+          "steps": [
+            {
+              "actual": "HELLO",
+              "after": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "before": {
+                "candidate": "IDLE",
+                "spec": "IDLE"
+              },
+              "expected": "HELLO",
+              "index": 0,
+              "input": "connect",
+              "mismatch": false
+            },
+            {
+              "actual": "DATA",
+              "after": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "before": {
+                "candidate": "AUTH",
+                "spec": "AUTH"
+              },
+              "expected": "DENY",
+              "index": 1,
+              "input": "read",
+              "mismatch": true
+            }
+          ]
+        }
+      },
+      "duplicate_no_inference": true,
+      "provider_interruption_recovered": true,
+      "contract_mutated": false,
+      "replay_equal": true,
+      "request_ms": [
+        8672.924641000001,
+        6127.222005000001
+      ]
+    }
+  ],
+  "scope": "visible development integration pilot; not held-out accuracy"
+}
