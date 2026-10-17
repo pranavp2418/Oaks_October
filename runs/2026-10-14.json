@@ -1,7 +1,7 @@
 {
   "date": "2026-10-14",
-  "last_updated_at": "2026-10-17T22:09:27.143007Z",
-  "status": "project_delivery_verified_portfolio_pending",
+  "last_updated_at": "2026-10-17T22:10:35.672803Z",
+  "status": "portfolio_local_verified_release_pending",
   "owner": "codex-oct14-resume-20261017",
   "lease_expires_at": "2026-10-17T23:19:48.688Z",
   "target": 3,
@@ -876,6 +876,13 @@
       "completed_projects": 3,
       "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
       "deployment_id": "dpl_DL5XrCZdWev9JAWrivmxM2z94zQg"
+    },
+    {
+      "at": "2026-10-17T22:10:35.672803Z",
+      "stage": "portfolio_local_tests_build_passed",
+      "completed_projects": 3,
+      "tests": 28,
+      "next": "Push shared manifest/covers and release existing portfolio project"
     }
   ],
   "provider_blocker_history": [
@@ -921,5 +928,18 @@
       "deployed": false
     },
     "remaining": "Durable PostgreSQL/auth/ingestion APIs, then transport/operator/cloud workflows; missing Docker/PostgreSQL CLI is a historical starting-workspace note, not freshly asserted blocker."
+  },
+  "portfolio": {
+    "entries": [
+      "morrowstock",
+      "clearspan",
+      "wirewake"
+    ],
+    "existing_entries_preserved": 24,
+    "total_manifest_entries": 27,
+    "local_tests": 28,
+    "production_build": "passed; original film parts restored with SHA256 verification",
+    "source_scene_changes": false,
+    "production_status": "pending"
   }
 }
