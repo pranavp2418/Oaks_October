@@ -267,6 +267,23 @@ function download(name: string, value: Any) {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+root.addEventListener("keydown", (event) => {
+  if (event.key !== "Tab") return;
+  const dialog = root.querySelector<HTMLDialogElement>("#restore-dialog[open]");
+  if (!dialog) return;
+  const controls = Array.from(dialog.querySelectorAll<HTMLElement>(
+    'button:not([disabled]), textarea:not([disabled]), input:not([disabled]), [tabindex="0"]',
+  ));
+  const first = controls[0], last = controls.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last?.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first?.focus();
+  }
+});
+
 root.addEventListener("click", async (event) => {
   const target = (event.target as Element).closest<HTMLElement>(
     "[data-tab],[data-action]",

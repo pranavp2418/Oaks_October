@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "api": "node server.mjs",
     "build": "node build.mjs",
-    "test": "node --test tests/strict-json.test.mjs && node tests/integration.mjs",
+    "test": "node --test tests/*.test.mjs && node tests/integration.mjs",
     "benchmark": "node tests/benchmark.mjs"
   },
   "devDependencies": {
