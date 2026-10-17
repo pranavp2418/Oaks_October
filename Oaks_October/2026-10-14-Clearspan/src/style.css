@@ -947,3 +947,6 @@ dialog textarea {
     scroll-behavior: auto !important;
   }
 }
+
+.motion-control { display: flex; align-items: center; gap: 10px; width: fit-content; max-width: 100%; min-height: 44px; margin: 8px 20px; cursor: pointer; }
+.motion-control input { flex: 0 0 auto; width: 20px; min-height: 20px; height: 20px; margin: 0; padding: 0; }

@@ -54,8 +54,13 @@ const cases = [
     scope:
       "visible development integration pilot; no held-out generalization claim",
   };
+const selectedCases = cases.filter(c => !process.env.CASE_FILTER || c.name.includes(process.env.CASE_FILTER));
+report.selected_cases = selectedCases.map(c => c.name);
+report.case_filter = process.env.CASE_FILTER || null;
+report.full_suite = selectedCases.length === cases.length;
+if (!selectedCases.length) throw Error('No pilot cases selected; refusing empty success');
 try {
-  for (const c of cases.filter(c => !process.env.CASE_FILTER || c.name.includes(process.env.CASE_FILTER))) {
+  for (const c of selectedCases) {
     let response = await post({
       command: {
         id: "import",
