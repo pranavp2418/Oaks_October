@@ -1,10 +1,50 @@
 {
   "date": "2026-10-15",
-  "last_updated_at": "2026-10-18T02:07:07.037453+00:00",
-  "status": "startup_reconciled_research_pending",
+  "last_updated_at": "2026-10-18T02:13:17.345279+00:00",
+  "status": "implementation_in_progress",
   "target": 3,
   "completed_projects": 0,
-  "projects": [],
+  "projects": [
+    {
+      "title": "Lintel",
+      "path": "Oaks_October/2026-10-15-Lintel",
+      "classification": "resume",
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 25,
+      "stage": "core_storage_checkpointed_agent_locally_verified",
+      "completed": false,
+      "acceptance": "Oaks_October/2026-10-15-Lintel/ACCEPTANCE.md",
+      "local_evidence": {
+        "command": ".venv/bin/python -m unittest discover -s tests -v",
+        "test_groups_passed": 15,
+        "independent_truth_table_cases": 400,
+        "racing_writers": 8,
+        "committed_writers": 1,
+        "checkpoint_database_reopened": true,
+        "real_model_call_verified": false
+      }
+    },
+    {
+      "title": "Portwise",
+      "path": "Oaks_October/2026-10-15-Portwise",
+      "classification": "resume",
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 26,
+      "stage": "acceptance_defined",
+      "completed": false,
+      "acceptance": "Oaks_October/2026-10-15-Portwise/ACCEPTANCE.md"
+    },
+    {
+      "title": "Fallow",
+      "path": "Oaks_October/2026-10-15-Fallow",
+      "classification": "new",
+      "delivery_mode": "web_deployed",
+      "planned_ordinal": 27,
+      "stage": "acceptance_defined",
+      "completed": false,
+      "acceptance": "Oaks_October/2026-10-15-Fallow/ACCEPTANCE.md"
+    }
+  ],
   "product_direction": "Three materially distinct agent products, as explicitly requested; not developer-worker delegation",
   "required_stack_split": {
     "resume": 2,
@@ -18,7 +58,7 @@
     27
   ],
   "ordinal_note": "Provisional until earlier completed projects are reconciled; not completion claims",
-  "next_stage": "Select and implement three distinct agents with required stack split, private inspiration and complete release checks; configured existing Gateway now has real zero-price hosted inference.",
+  "next_stage": "Finish Lintel HTTP/session and hosted persistence contracts, UI and verification; retain remaining product, film and flagship gates",
   "remaining": [
     "Ideation and private primary-source research",
     "Architecture and acceptance contracts",
@@ -59,5 +99,24 @@
     "atlasforge_head": "28458257e210399873bc62e0bf207d776fcfe2cf",
     "atlasforge_gates": "M0 only for both; M1 pending",
     "docker_daemon": "28.4.0 available; historical missing-daemon blocker not current"
+  },
+  "tooling": {
+    "gstack": {
+      "upstream_commit": "8f103baa713c2c7cdf34aeb152f022db569c7b11",
+      "setup": "./setup --host codex passed",
+      "bun": "1.4.3"
+    },
+    "brag": {
+      "upstream_commit": "069432cac935ed1895859df201c31436c07fb74e",
+      "plugin_version": "0.4.0",
+      "installed_in_cloud": true
+    },
+    "hyperframes": {
+      "version": "0.8.169",
+      "chrome": true,
+      "ffmpeg": "7.1.5",
+      "optional_tts": "not installed",
+      "rendered_film": false
+    }
   }
 }

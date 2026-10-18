@@ -1,0 +1,6 @@
+
+.venv/
+__pycache__/
+*.sqlite*
+node_modules/
+dist/
