@@ -1,10 +1,8 @@
-import '@angular/compiler';
 import {Component,signal,computed,provideZonelessChangeDetection} from '@angular/core';
 import {bootstrapApplication} from '@angular/platform-browser';
 import {CommonModule} from '@angular/common';
 import sample from '../data/sample.json';
 import {Notebook,readNotebook,saveNotebook} from './storage';
-import './style.css';
 @Component({selector:'lintel-app',standalone:true,imports:[CommonModule],template:`
 <a class="skip" href="#workspace">Skip to workspace</a>
 <header><a class="wordmark" href="#">⌑ Lintel<span>READINESS STUDIO</span></a><nav aria-label="Workspace sections"><button (click)="switchView('desk')" [attr.aria-pressed]="view()==='desk'">Drawing desk</button><button (click)="switchView('investigation')" [attr.aria-pressed]="view()==='investigation'">Investigation <i *ngIf="investigation()">●</i></button><button (click)="switchView('evidence')" [attr.aria-pressed]="view()==='evidence'">Evidence log</button></nav><span class="synthetic">SYNTHETIC FIELD STUDY</span></header>

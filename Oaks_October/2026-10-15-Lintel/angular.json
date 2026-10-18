@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "lintel": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "index": "index.html",
+            "tsConfig": "tsconfig.json",
+            "outputPath": {
+              "base": "dist",
+              "browser": ""
+            },
+            "styles": [
+              "src/style.css"
+            ],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": "/"
+              }
+            ],
+            "optimization": {
+              "scripts": true,
+              "styles": {
+                "minify": true,
+                "inlineCritical": false
+              },
+              "fonts": false
+            },
+            "outputHashing": "all",
+            "aot": true,
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "450kb",
+                "maximumError": "650kb"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

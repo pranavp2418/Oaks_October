@@ -1,0 +1,932 @@
+{
+  "journal": [
+    {
+      "key": "hosted-seed",
+      "role": "operator",
+      "command": {
+        "kind": "create",
+        "dossier": {
+          "revision": 0,
+          "deadline": 18,
+          "root": "dossier",
+          "evidence": [
+            {
+              "id": "survey",
+              "title": "Boundary survey",
+              "state": "valid",
+              "days": 4,
+              "cost": 1200,
+              "source": "Synthetic survey S-17",
+              "version": 1
+            },
+            {
+              "id": "flood",
+              "title": "Flood elevation certificate",
+              "state": "missing",
+              "days": 6,
+              "cost": 800,
+              "source": "Synthetic requirement R-2",
+              "version": 1
+            },
+            {
+              "id": "exemption",
+              "title": "Reviewed flood exemption",
+              "state": "missing",
+              "days": 3,
+              "cost": 1100,
+              "source": "Synthetic exemption alternative R-3",
+              "version": 1
+            },
+            {
+              "id": "structural",
+              "title": "Structural drawings",
+              "state": "expired",
+              "days": 5,
+              "cost": 2300,
+              "source": "Synthetic plan revision P-4",
+              "version": 2
+            },
+            {
+              "id": "energy",
+              "title": "Energy compliance worksheet",
+              "state": "missing",
+              "days": 2,
+              "cost": 350,
+              "source": "Synthetic worksheet E-1",
+              "version": 1
+            },
+            {
+              "id": "owner",
+              "title": "Owner authorization",
+              "state": "conflicting",
+              "days": 1,
+              "cost": 0,
+              "source": "Synthetic conflicting owner declarations O-1/O-2",
+              "version": 1
+            }
+          ],
+          "requirements": [
+            {
+              "id": "site",
+              "title": "Site readiness",
+              "op": "all",
+              "inputs": [
+                "survey",
+                "flood-path"
+              ],
+              "days": 2
+            },
+            {
+              "id": "flood-path",
+              "title": "Flood review path",
+              "op": "any",
+              "inputs": [
+                "flood",
+                "exemption"
+              ],
+              "days": 1
+            },
+            {
+              "id": "building",
+              "title": "Building review",
+              "op": "all",
+              "inputs": [
+                "structural",
+                "energy"
+              ],
+              "days": 3
+            },
+            {
+              "id": "dossier",
+              "title": "Submission dossier",
+              "op": "all",
+              "inputs": [
+                "site",
+                "building",
+                "owner"
+              ],
+              "days": 2
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "export": {
+    "schema_version": 1,
+    "workspace": "notebook",
+    "state": {
+      "dossier": {
+        "deadline": 18,
+        "evidence": [
+          {
+            "cost": 1200,
+            "days": 4,
+            "id": "survey",
+            "source": "Synthetic survey S-17",
+            "state": "valid",
+            "title": "Boundary survey",
+            "version": 1
+          },
+          {
+            "cost": 800,
+            "days": 6,
+            "id": "flood",
+            "source": "Synthetic requirement R-2",
+            "state": "missing",
+            "title": "Flood elevation certificate",
+            "version": 1
+          },
+          {
+            "cost": 1100,
+            "days": 3,
+            "id": "exemption",
+            "source": "Synthetic exemption alternative R-3",
+            "state": "missing",
+            "title": "Reviewed flood exemption",
+            "version": 1
+          },
+          {
+            "cost": 2300,
+            "days": 5,
+            "id": "structural",
+            "source": "Synthetic plan revision P-4",
+            "state": "expired",
+            "title": "Structural drawings",
+            "version": 2
+          },
+          {
+            "cost": 350,
+            "days": 2,
+            "id": "energy",
+            "source": "Synthetic worksheet E-1",
+            "state": "missing",
+            "title": "Energy compliance worksheet",
+            "version": 1
+          },
+          {
+            "cost": 0,
+            "days": 1,
+            "id": "owner",
+            "source": "Synthetic conflicting owner declarations O-1/O-2",
+            "state": "conflicting",
+            "title": "Owner authorization",
+            "version": 1
+          }
+        ],
+        "requirements": [
+          {
+            "days": 2,
+            "id": "site",
+            "inputs": [
+              "survey",
+              "flood-path"
+            ],
+            "op": "all",
+            "title": "Site readiness"
+          },
+          {
+            "days": 1,
+            "id": "flood-path",
+            "inputs": [
+              "flood",
+              "exemption"
+            ],
+            "op": "any",
+            "title": "Flood review path"
+          },
+          {
+            "days": 3,
+            "id": "building",
+            "inputs": [
+              "structural",
+              "energy"
+            ],
+            "op": "all",
+            "title": "Building review"
+          },
+          {
+            "days": 2,
+            "id": "dossier",
+            "inputs": [
+              "site",
+              "building",
+              "owner"
+            ],
+            "op": "all",
+            "title": "Submission dossier"
+          }
+        ],
+        "revision": 0,
+        "root": "dossier"
+      },
+      "prepared_dossier": null,
+      "proposal": null,
+      "schema_version": 1
+    },
+    "events": [
+      {
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "f191a043e710c7aca671c4efd028a4d69bdadbb355470346830c21d3247cd4c5",
+        "body": {
+          "command": {
+            "dossier": {
+              "deadline": 18,
+              "evidence": [
+                {
+                  "cost": 1200,
+                  "days": 4,
+                  "id": "survey",
+                  "source": "Synthetic survey S-17",
+                  "state": "valid",
+                  "title": "Boundary survey",
+                  "version": 1
+                },
+                {
+                  "cost": 800,
+                  "days": 6,
+                  "id": "flood",
+                  "source": "Synthetic requirement R-2",
+                  "state": "missing",
+                  "title": "Flood elevation certificate",
+                  "version": 1
+                },
+                {
+                  "cost": 1100,
+                  "days": 3,
+                  "id": "exemption",
+                  "source": "Synthetic exemption alternative R-3",
+                  "state": "missing",
+                  "title": "Reviewed flood exemption",
+                  "version": 1
+                },
+                {
+                  "cost": 2300,
+                  "days": 5,
+                  "id": "structural",
+                  "source": "Synthetic plan revision P-4",
+                  "state": "expired",
+                  "title": "Structural drawings",
+                  "version": 2
+                },
+                {
+                  "cost": 350,
+                  "days": 2,
+                  "id": "energy",
+                  "source": "Synthetic worksheet E-1",
+                  "state": "missing",
+                  "title": "Energy compliance worksheet",
+                  "version": 1
+                },
+                {
+                  "cost": 0,
+                  "days": 1,
+                  "id": "owner",
+                  "source": "Synthetic conflicting owner declarations O-1/O-2",
+                  "state": "conflicting",
+                  "title": "Owner authorization",
+                  "version": 1
+                }
+              ],
+              "requirements": [
+                {
+                  "days": 2,
+                  "id": "site",
+                  "inputs": [
+                    "survey",
+                    "flood-path"
+                  ],
+                  "op": "all",
+                  "title": "Site readiness"
+                },
+                {
+                  "days": 1,
+                  "id": "flood-path",
+                  "inputs": [
+                    "flood",
+                    "exemption"
+                  ],
+                  "op": "any",
+                  "title": "Flood review path"
+                },
+                {
+                  "days": 3,
+                  "id": "building",
+                  "inputs": [
+                    "structural",
+                    "energy"
+                  ],
+                  "op": "all",
+                  "title": "Building review"
+                },
+                {
+                  "days": 2,
+                  "id": "dossier",
+                  "inputs": [
+                    "site",
+                    "building",
+                    "owner"
+                  ],
+                  "op": "all",
+                  "title": "Submission dossier"
+                }
+              ],
+              "revision": 0,
+              "root": "dossier"
+            },
+            "kind": "create"
+          },
+          "request_hash": "925b552ec16c94ba4b2e43fb02388e91b31d63b16caff905b3f5a6726f0c5878",
+          "revision": 0,
+          "role": "operator",
+          "sequence": 1,
+          "state_hash": "8516981880cdad0b326d6def9b26713530c60d92949734da571e52c2084c9470"
+        }
+      }
+    ],
+    "head": "f191a043e710c7aca671c4efd028a4d69bdadbb355470346830c21d3247cd4c5",
+    "compiler": {
+      "schema_version": 1,
+      "revision": 0,
+      "input_hash": "14b9aa91add47a32415ee77bd5c6cf66af2312cad789f12afacb5d62a2c216bf",
+      "root": "dossier",
+      "ready": false,
+      "earliest_day": 10,
+      "deadline": 18,
+      "slack_days": 8,
+      "alternatives": [
+        {
+          "missing": [
+            "energy",
+            "flood",
+            "owner",
+            "structural"
+          ],
+          "cost": 3450,
+          "conflicts": [
+            "owner"
+          ],
+          "review_required": true,
+          "earliest_day": 11,
+          "slack_days": 7
+        },
+        {
+          "missing": [
+            "energy",
+            "exemption",
+            "owner",
+            "structural"
+          ],
+          "cost": 3750,
+          "conflicts": [
+            "owner"
+          ],
+          "review_required": true,
+          "earliest_day": 10,
+          "slack_days": 8
+        }
+      ],
+      "nodes": [
+        {
+          "id": "building",
+          "ready": false,
+          "earliest_day": 8,
+          "kind": "all",
+          "inputs": [
+            "structural",
+            "energy"
+          ]
+        },
+        {
+          "id": "dossier",
+          "ready": false,
+          "earliest_day": 10,
+          "kind": "all",
+          "inputs": [
+            "site",
+            "building",
+            "owner"
+          ]
+        },
+        {
+          "id": "energy",
+          "ready": false,
+          "earliest_day": 2,
+          "kind": "evidence",
+          "state": "missing"
+        },
+        {
+          "id": "exemption",
+          "ready": false,
+          "earliest_day": 3,
+          "kind": "evidence",
+          "state": "missing"
+        },
+        {
+          "id": "flood",
+          "ready": false,
+          "earliest_day": 6,
+          "kind": "evidence",
+          "state": "missing"
+        },
+        {
+          "id": "flood-path",
+          "ready": false,
+          "earliest_day": 4,
+          "kind": "any",
+          "inputs": [
+            "flood",
+            "exemption"
+          ]
+        },
+        {
+          "id": "owner",
+          "ready": false,
+          "earliest_day": 1,
+          "kind": "evidence",
+          "state": "conflicting"
+        },
+        {
+          "id": "site",
+          "ready": false,
+          "earliest_day": 6,
+          "kind": "all",
+          "inputs": [
+            "survey",
+            "flood-path"
+          ]
+        },
+        {
+          "id": "structural",
+          "ready": false,
+          "earliest_day": 5,
+          "kind": "evidence",
+          "state": "expired"
+        },
+        {
+          "id": "survey",
+          "ready": true,
+          "earliest_day": 0,
+          "kind": "evidence",
+          "state": "valid"
+        }
+      ],
+      "metrics": {
+        "evaluated_nodes": 10,
+        "minimal_frontiers": 2,
+        "evidence_count": 6
+      },
+      "limits": "Bounded exact prerequisites on synthetic rules; not legal or authority approval."
+    }
+  },
+  "investigation": {
+    "dossier_hash": "14b9aa91add47a32415ee77bd5c6cf66af2312cad789f12afacb5d62a2c216bf",
+    "goal": "Inspect readiness then compare the cheapest completion alternatives. Finish with citations to tool results.",
+    "mode": "live",
+    "values": {
+      "goal": "Inspect readiness then compare the cheapest completion alternatives. Finish with citations to tool results.",
+      "dossier": {
+        "deadline": 18,
+        "evidence": [
+          {
+            "cost": 1200,
+            "days": 4,
+            "id": "survey",
+            "source": "Synthetic survey S-17",
+            "state": "valid",
+            "title": "Boundary survey",
+            "version": 1
+          },
+          {
+            "cost": 800,
+            "days": 6,
+            "id": "flood",
+            "source": "Synthetic requirement R-2",
+            "state": "missing",
+            "title": "Flood elevation certificate",
+            "version": 1
+          },
+          {
+            "cost": 1100,
+            "days": 3,
+            "id": "exemption",
+            "source": "Synthetic exemption alternative R-3",
+            "state": "missing",
+            "title": "Reviewed flood exemption",
+            "version": 1
+          },
+          {
+            "cost": 2300,
+            "days": 5,
+            "id": "structural",
+            "source": "Synthetic plan revision P-4",
+            "state": "expired",
+            "title": "Structural drawings",
+            "version": 2
+          },
+          {
+            "cost": 350,
+            "days": 2,
+            "id": "energy",
+            "source": "Synthetic worksheet E-1",
+            "state": "missing",
+            "title": "Energy compliance worksheet",
+            "version": 1
+          },
+          {
+            "cost": 0,
+            "days": 1,
+            "id": "owner",
+            "source": "Synthetic conflicting owner declarations O-1/O-2",
+            "state": "conflicting",
+            "title": "Owner authorization",
+            "version": 1
+          }
+        ],
+        "requirements": [
+          {
+            "days": 2,
+            "id": "site",
+            "inputs": [
+              "survey",
+              "flood-path"
+            ],
+            "op": "all",
+            "title": "Site readiness"
+          },
+          {
+            "days": 1,
+            "id": "flood-path",
+            "inputs": [
+              "flood",
+              "exemption"
+            ],
+            "op": "any",
+            "title": "Flood review path"
+          },
+          {
+            "days": 3,
+            "id": "building",
+            "inputs": [
+              "structural",
+              "energy"
+            ],
+            "op": "all",
+            "title": "Building review"
+          },
+          {
+            "days": 2,
+            "id": "dossier",
+            "inputs": [
+              "site",
+              "building",
+              "owner"
+            ],
+            "op": "all",
+            "title": "Submission dossier"
+          }
+        ],
+        "revision": 0,
+        "root": "dossier"
+      },
+      "trace": [
+        {
+          "id": "E1",
+          "tool": "inspect_readiness",
+          "arguments": {},
+          "result": {
+            "schema_version": 1,
+            "revision": 0,
+            "input_hash": "14b9aa91add47a32415ee77bd5c6cf66af2312cad789f12afacb5d62a2c216bf",
+            "root": "dossier",
+            "ready": false,
+            "earliest_day": 10,
+            "deadline": 18,
+            "slack_days": 8,
+            "alternatives": [
+              {
+                "missing": [
+                  "energy",
+                  "flood",
+                  "owner",
+                  "structural"
+                ],
+                "cost": 3450,
+                "conflicts": [
+                  "owner"
+                ],
+                "review_required": true,
+                "earliest_day": 11,
+                "slack_days": 7
+              },
+              {
+                "missing": [
+                  "energy",
+                  "exemption",
+                  "owner",
+                  "structural"
+                ],
+                "cost": 3750,
+                "conflicts": [
+                  "owner"
+                ],
+                "review_required": true,
+                "earliest_day": 10,
+                "slack_days": 8
+              }
+            ],
+            "nodes": [
+              {
+                "id": "building",
+                "ready": false,
+                "earliest_day": 8,
+                "kind": "all",
+                "inputs": [
+                  "structural",
+                  "energy"
+                ]
+              },
+              {
+                "id": "dossier",
+                "ready": false,
+                "earliest_day": 10,
+                "kind": "all",
+                "inputs": [
+                  "site",
+                  "building",
+                  "owner"
+                ]
+              },
+              {
+                "id": "energy",
+                "ready": false,
+                "earliest_day": 2,
+                "kind": "evidence",
+                "state": "missing"
+              },
+              {
+                "id": "exemption",
+                "ready": false,
+                "earliest_day": 3,
+                "kind": "evidence",
+                "state": "missing"
+              },
+              {
+                "id": "flood",
+                "ready": false,
+                "earliest_day": 6,
+                "kind": "evidence",
+                "state": "missing"
+              },
+              {
+                "id": "flood-path",
+                "ready": false,
+                "earliest_day": 4,
+                "kind": "any",
+                "inputs": [
+                  "flood",
+                  "exemption"
+                ]
+              },
+              {
+                "id": "owner",
+                "ready": false,
+                "earliest_day": 1,
+                "kind": "evidence",
+                "state": "conflicting"
+              },
+              {
+                "id": "site",
+                "ready": false,
+                "earliest_day": 6,
+                "kind": "all",
+                "inputs": [
+                  "survey",
+                  "flood-path"
+                ]
+              },
+              {
+                "id": "structural",
+                "ready": false,
+                "earliest_day": 5,
+                "kind": "evidence",
+                "state": "expired"
+              },
+              {
+                "id": "survey",
+                "ready": true,
+                "earliest_day": 0,
+                "kind": "evidence",
+                "state": "valid"
+              }
+            ],
+            "metrics": {
+              "evaluated_nodes": 10,
+              "minimal_frontiers": 2,
+              "evidence_count": 6
+            },
+            "limits": "Bounded exact prerequisites on synthetic rules; not legal or authority approval."
+          },
+          "result_hash": "1e5481fac593303f4267011d68237e2cb27b54bc8208ba2f8e8dc4b17cd74f9f",
+          "provider": {
+            "generation_id": "gen_01M56D30AQZ1RH1802Q4NHGCN4",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 396,
+              "completion_tokens": 443,
+              "total_tokens": 839,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 429,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        },
+        {
+          "id": "E2",
+          "tool": "compare_alternatives",
+          "arguments": {},
+          "result": {
+            "alternatives": [
+              {
+                "missing": [
+                  "energy",
+                  "flood",
+                  "owner",
+                  "structural"
+                ],
+                "cost": 3450,
+                "conflicts": [
+                  "owner"
+                ],
+                "review_required": true,
+                "earliest_day": 11,
+                "slack_days": 7
+              },
+              {
+                "missing": [
+                  "energy",
+                  "exemption",
+                  "owner",
+                  "structural"
+                ],
+                "cost": 3750,
+                "conflicts": [
+                  "owner"
+                ],
+                "review_required": true,
+                "earliest_day": 10,
+                "slack_days": 8
+              }
+            ],
+            "deadline": 18,
+            "input_hash": "14b9aa91add47a32415ee77bd5c6cf66af2312cad789f12afacb5d62a2c216bf"
+          },
+          "result_hash": "bf7bb95e942ad14312079f36fae561e48cf75cd5cd7339beddb830d3b3eb24c7",
+          "provider": {
+            "generation_id": "gen_01M56D32WEARQAKMPNPM2QJBW4",
+            "model": "nvidia/nemotron-3.5-lightning-free",
+            "usage": {
+              "prompt_tokens": 1182,
+              "completion_tokens": 341,
+              "total_tokens": 1523,
+              "cost": 0,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": null,
+                "upstream_inference_prompt_cost": 0,
+                "upstream_inference_completions_cost": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 327,
+                "image_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "market_cost": 0
+            },
+            "pricing_input": "0",
+            "pricing_output": "0",
+            "provider_retention": "Free provider may retain synthetic prompts/responses"
+          }
+        }
+      ],
+      "decision": {
+        "choice": {
+          "tool": "finish",
+          "arguments": {
+            "summary": "Readiness inspection (E1) indicates the dossier is not ready, with missing evidence items energy, flood, owner, structural and a conflicting owner status. compare_alternatives (E2) provides two completion paths; the cheapest alternative costs $3,450 and has an earliest completion day of 11, missing energy, flood, owner, and structural. The other alternative costs $3,750 with earliest day 10, missing energy, exemption, owner, structural.",
+            "citations": [
+              "E1",
+              "E2"
+            ]
+          }
+        },
+        "provider": {
+          "generation_id": "gen_01M56D34883794ZMRXQVH5H5HM",
+          "model": "nvidia/nemotron-3.5-lightning-free",
+          "usage": {
+            "prompt_tokens": 1613,
+            "completion_tokens": 581,
+            "total_tokens": 2194,
+            "cost": 0,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": null,
+              "upstream_inference_prompt_cost": 0,
+              "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 456,
+              "image_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "market_cost": 0
+          },
+          "pricing_input": "0",
+          "pricing_output": "0",
+          "provider_retention": "Free provider may retain synthetic prompts/responses"
+        }
+      },
+      "steps": 3,
+      "status": "awaiting_review",
+      "report": {
+        "goal": "Inspect readiness then compare the cheapest completion alternatives. Finish with citations to tool results.",
+        "workspace_revision": 0,
+        "evidence_hash": "14b9aa91add47a32415ee77bd5c6cf66af2312cad789f12afacb5d62a2c216bf",
+        "ready": false,
+        "earliest_day": 10,
+        "slack_days": 8,
+        "conflicts": [
+          "owner"
+        ],
+        "alternatives": [
+          {
+            "missing": [
+              "energy",
+              "flood",
+              "owner",
+              "structural"
+            ],
+            "cost": 3450,
+            "conflicts": [
+              "owner"
+            ],
+            "review_required": true,
+            "earliest_day": 11,
+            "slack_days": 7
+          },
+          {
+            "missing": [
+              "energy",
+              "exemption",
+              "owner",
+              "structural"
+            ],
+            "cost": 3750,
+            "conflicts": [
+              "owner"
+            ],
+            "review_required": true,
+            "earliest_day": 10,
+            "slack_days": 8
+          }
+        ],
+        "citations": [
+          "E1",
+          "E2"
+        ],
+        "execution": "live model tool selection",
+        "claim": "Investigation only. No evidence changed, dossier submitted or approval granted."
+      },
+      "mode": "live"
+    }
+  },
+  "persistence": "Visitor-owned single-user journal persisted by the browser. Server SQLite is request-local; no multiuser database or independent reviewer identity."
+}

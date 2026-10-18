@@ -4,3 +4,5 @@ __pycache__/
 *.sqlite*
 node_modules/
 dist/
+
+.angular/
