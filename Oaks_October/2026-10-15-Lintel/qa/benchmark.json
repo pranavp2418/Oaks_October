@@ -1,0 +1,18 @@
+{
+  "seed": 151026,
+  "workloads": 100,
+  "repetitions": 5,
+  "warmup": 10,
+  "observations": 500,
+  "runtime": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "cpu": "",
+  "compiler_ms": {
+    "min": 0.045197,
+    "p50": 0.053890499999999994,
+    "p95": 0.115232,
+    "max": 0.892549
+  },
+  "correctness": "400 independent truth-table cases in tests/test_core.py",
+  "limits": "Small synthetic graph evaluation, not service load, mobile performance or production throughput."
+}
