@@ -36,7 +36,7 @@
       "start_time": "0.000000",
       "duration_ts": 691200,
       "duration": "45.000000",
-      "bit_rate": "443181",
+      "bit_rate": "453440",
       "bits_per_raw_sample": "8",
       "nb_frames": "1350",
       "extradata_size": 51,
@@ -65,7 +65,7 @@
         "language": "und",
         "handler_name": "VideoHandler",
         "vendor_id": "[0][0][0][0]",
-        "encoder": "Lavc61.19.101 libx264"
+        "encoder": "Lavc60.31.102 libx264"
       }
     },
     {
@@ -90,7 +90,7 @@
       "start_time": "0.000000",
       "duration_ts": 2160000,
       "duration": "45.000000",
-      "bit_rate": "191805",
+      "bit_rate": "191803",
       "nb_frames": "2107",
       "extradata_size": 5,
       "disposition": {
@@ -122,7 +122,7 @@
     }
   ],
   "format": {
-    "filename": "/workspace/media/final/lintel-launch.mp4",
+    "filename": "/workspace/media/published-final/lintel-launch.mp4",
     "nb_streams": 2,
     "nb_programs": 0,
     "nb_stream_groups": 0,
@@ -130,16 +130,16 @@
     "format_long_name": "QuickTime / MOV",
     "start_time": "0.000000",
     "duration": "45.000000",
-    "size": "3622905",
-    "bit_rate": "644072",
+    "size": "3680634",
+    "bit_rate": "654334",
     "probe_score": 100,
     "tags": {
       "major_brand": "isom",
       "minor_version": "512",
       "compatible_brands": "isomiso2avc1mp41",
-      "encoder": "Lavf61.7.103"
+      "encoder": "Lavf60.16.100"
     }
   },
-  "sha256": "2a580ce7119b4623341cedc6236dbc081b8627997d6acf37c9185d0f6e6df78e",
+  "sha256": "9100208f4fb3d0edee61f073524a834ff56f43a7aa0f6fb9ddc5713aa9324014",
   "artifact_name": "lintel-launch.mp4"
 }

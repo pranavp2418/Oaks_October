@@ -5,5 +5,6 @@
   "local_upload_status": 401,
   "message": "uploads.github.com returned Bad credentials for both MP4 and small poster; GitHub API release writes and Git push succeed. No secret inspection or credential replacement attempted.",
   "recovery": "Existing GitHub Actions runner renders exact committed compositions; scoped GITHUB_TOKEN uploads to draft. Download and review published candidate bytes before public playback verification.",
-  "workflow": ".github/workflows/launch-film-artifacts.yml"
+  "workflow": ".github/workflows/launch-film-artifacts.yml",
+  "ordering_correction": "The empty release was briefly published before the failed upload result was reconciled, then immediately returned to draft. That publication was not video delivery. Final publication is gated on actual candidate bytes and checks."
 }

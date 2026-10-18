@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-18T04:20:10.544167+00:00",
+  "source_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+  "driver": "gstack native headless Chromium fallback",
+  "origin": "http://127.0.0.1:5178/films.html",
+  "dialog": {
+    "video_count_open": 1,
+    "initially_paused": true,
+    "preload": "none",
+    "autoplay": false,
+    "mp4_requests_before_play": 0,
+    "video_count_after_close": 0,
+    "focus_restored": true
+  },
+  "responsive_viewports": [
+    [
+      375,
+      812
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1280,
+      720
+    ]
+  ],
+  "console_errors": [],
+  "playback": "pending final public release candidate"
+}

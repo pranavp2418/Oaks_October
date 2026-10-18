@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-18T04:15:23.780480+00:00",
+  "recorded_at": "2026-10-18T04:46:23.205141+00:00",
   "films": [
     {
       "project": "lintel",
@@ -42,7 +42,7 @@
               "start_time": "0.000000",
               "duration_ts": 691200,
               "duration": "45.000000",
-              "bit_rate": "1240220",
+              "bit_rate": "1264580",
               "bits_per_raw_sample": "8",
               "nb_frames": "1350",
               "extradata_size": 52,
@@ -71,7 +71,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -128,7 +128,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/lintel-launch-4k.mp4",
+            "filename": "/workspace/media/published-final/lintel-launch-4k.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -136,17 +136,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "45.000000",
-            "size": "8106123",
-            "bit_rate": "1441088",
+            "size": "8243168",
+            "bit_rate": "1465452",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "551215e6a801749525a98b78b5f7bccbb9fa7ac20c2cacb62b0c62b4052d1020",
+          "sha256": "316f00cd688e083d22bbe644b8abac524e612aa43f7e3ffa3c95bb3691390991",
           "artifact_name": "lintel-launch-4k.mp4"
         },
         "launch": {
@@ -187,7 +187,7 @@
               "start_time": "0.000000",
               "duration_ts": 691200,
               "duration": "45.000000",
-              "bit_rate": "443181",
+              "bit_rate": "453440",
               "bits_per_raw_sample": "8",
               "nb_frames": "1350",
               "extradata_size": 51,
@@ -216,7 +216,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -241,7 +241,7 @@
               "start_time": "0.000000",
               "duration_ts": 2160000,
               "duration": "45.000000",
-              "bit_rate": "191805",
+              "bit_rate": "191803",
               "nb_frames": "2107",
               "extradata_size": 5,
               "disposition": {
@@ -273,7 +273,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/lintel-launch.mp4",
+            "filename": "/workspace/media/published-final/lintel-launch.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -281,17 +281,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "45.000000",
-            "size": "3622905",
-            "bit_rate": "644072",
+            "size": "3680634",
+            "bit_rate": "654334",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "2a580ce7119b4623341cedc6236dbc081b8627997d6acf37c9185d0f6e6df78e",
+          "sha256": "9100208f4fb3d0edee61f073524a834ff56f43a7aa0f6fb9ddc5713aa9324014",
           "artifact_name": "lintel-launch.mp4"
         }
       },
@@ -308,8 +308,14 @@
         "target_offset": "-0.01"
       },
       "native_capture": true,
-      "editorial_status": "complete_sequence_and_native_frame_review_passed",
-      "publication": "pending"
+      "editorial_status": "published_candidate_complete_sequence_and_native_frame_review_passed",
+      "publication": "public_browser_full_playback_passed",
+      "urls": {
+        "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch.mp4",
+        "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch-4k.mp4",
+        "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-poster.jpg"
+      },
+      "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
     },
     {
       "project": "portwise",
@@ -352,7 +358,7 @@
               "start_time": "0.000000",
               "duration_ts": 768000,
               "duration": "50.000000",
-              "bit_rate": "980754",
+              "bit_rate": "983089",
               "bits_per_raw_sample": "8",
               "nb_frames": "1500",
               "extradata_size": 52,
@@ -381,7 +387,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -438,7 +444,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/portwise-launch-4k.mp4",
+            "filename": "/workspace/media/published-final/portwise-launch-4k.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -446,17 +452,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "50.000000",
-            "size": "7396739",
-            "bit_rate": "1183478",
+            "size": "7411377",
+            "bit_rate": "1185820",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "cd7d6958448e0bb9f5aad74290d1328f1d3b638544aea163eeb93e9862f03721",
+          "sha256": "238e8a6832dce39ed97b843555202f801db5ada633c4f2b79849e57c4b705288",
           "artifact_name": "portwise-launch-4k.mp4"
         },
         "launch": {
@@ -497,7 +503,7 @@
               "start_time": "0.000000",
               "duration_ts": 768000,
               "duration": "50.000000",
-              "bit_rate": "322014",
+              "bit_rate": "323748",
               "bits_per_raw_sample": "8",
               "nb_frames": "1500",
               "extradata_size": 51,
@@ -526,7 +532,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -551,7 +557,7 @@
               "start_time": "0.000000",
               "duration_ts": 2400000,
               "duration": "50.000000",
-              "bit_rate": "193660",
+              "bit_rate": "193661",
               "nb_frames": "2341",
               "extradata_size": 5,
               "disposition": {
@@ -583,7 +589,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/portwise-launch.mp4",
+            "filename": "/workspace/media/published-final/portwise-launch.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -591,17 +597,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "50.000000",
-            "size": "3279535",
-            "bit_rate": "524725",
+            "size": "3290364",
+            "bit_rate": "526458",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "e79bcba08daa18bffa0d75f2f5b998a3a0c1ab21715142be39e0f8478ace5710",
+          "sha256": "4303edd3e1e002a3bf56cfb4be15c510d5e5b7fd478428193d49940b4340da18",
           "artifact_name": "portwise-launch.mp4"
         }
       },
@@ -618,8 +624,14 @@
         "target_offset": "0.03"
       },
       "native_capture": true,
-      "editorial_status": "complete_sequence_and_native_frame_review_passed",
-      "publication": "pending"
+      "editorial_status": "published_candidate_complete_sequence_and_native_frame_review_passed",
+      "publication": "public_browser_full_playback_passed",
+      "urls": {
+        "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch.mp4",
+        "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch-4k.mp4",
+        "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-poster.jpg"
+      },
+      "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
     },
     {
       "project": "fallow",
@@ -662,7 +674,7 @@
               "start_time": "0.000000",
               "duration_ts": 691200,
               "duration": "45.000000",
-              "bit_rate": "1300862",
+              "bit_rate": "1310152",
               "bits_per_raw_sample": "8",
               "nb_frames": "1350",
               "extradata_size": 52,
@@ -691,7 +703,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -716,7 +728,7 @@
               "start_time": "0.000000",
               "duration_ts": 2160000,
               "duration": "45.000000",
-              "bit_rate": "192503",
+              "bit_rate": "192585",
               "nb_frames": "2107",
               "extradata_size": 5,
               "disposition": {
@@ -748,7 +760,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/fallow-launch-4k.mp4",
+            "filename": "/workspace/media/published-final/fallow-launch-4k.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -756,17 +768,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "45.000000",
-            "size": "8451164",
-            "bit_rate": "1502429",
+            "size": "8503913",
+            "bit_rate": "1511806",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "3532a49d748cd05f30f7c40a1f5b166fe1e5c06fb5a53cb02a74bcd4ec97e9fa",
+          "sha256": "57338d15788356dcb5981aeaa7765355a3e6a75d109f72e1a1d486ea6aa5a29e",
           "artifact_name": "fallow-launch-4k.mp4"
         },
         "launch": {
@@ -807,7 +819,7 @@
               "start_time": "0.000000",
               "duration_ts": 691200,
               "duration": "45.000000",
-              "bit_rate": "409106",
+              "bit_rate": "407209",
               "bits_per_raw_sample": "8",
               "nb_frames": "1350",
               "extradata_size": 51,
@@ -836,7 +848,7 @@
                 "language": "und",
                 "handler_name": "VideoHandler",
                 "vendor_id": "[0][0][0][0]",
-                "encoder": "Lavc61.19.101 libx264"
+                "encoder": "Lavc60.31.102 libx264"
               }
             },
             {
@@ -861,7 +873,7 @@
               "start_time": "0.000000",
               "duration_ts": 2160000,
               "duration": "45.000000",
-              "bit_rate": "192189",
+              "bit_rate": "192484",
               "nb_frames": "2107",
               "extradata_size": 5,
               "disposition": {
@@ -893,7 +905,7 @@
             }
           ],
           "format": {
-            "filename": "/workspace/media/final/fallow-launch.mp4",
+            "filename": "/workspace/media/published-final/fallow-launch.mp4",
             "nb_streams": 2,
             "nb_programs": 0,
             "nb_stream_groups": 0,
@@ -901,17 +913,17 @@
             "format_long_name": "QuickTime / MOV",
             "start_time": "0.000000",
             "duration": "45.000000",
-            "size": "3433256",
-            "bit_rate": "610356",
+            "size": "3424254",
+            "bit_rate": "608756",
             "probe_score": 100,
             "tags": {
               "major_brand": "isom",
               "minor_version": "512",
               "compatible_brands": "isomiso2avc1mp41",
-              "encoder": "Lavf61.7.103"
+              "encoder": "Lavf60.16.100"
             }
           },
-          "sha256": "4d6c9da729442ee0b478ff0cbccf4a19be05d97eeb4cec6d77bc3f78ee5b9e7e",
+          "sha256": "7bbf03a0def7bee8446e46d474ecc4820e04fd26d645b1a16c645fea66b86985",
           "artifact_name": "fallow-launch.mp4"
         }
       },
@@ -920,16 +932,25 @@
         "input_tp": "-8.29",
         "input_lra": "3.10",
         "input_thresh": "-28.14",
-        "output_i": "-17.97",
+        "output_i": "-17.98",
         "output_tp": "-8.33",
         "output_lra": "3.10",
         "output_thresh": "-28.00",
         "normalization_type": "dynamic",
-        "target_offset": "-0.03"
+        "target_offset": "-0.02"
       },
       "native_capture": true,
-      "editorial_status": "complete_sequence_and_native_frame_review_passed",
-      "publication": "pending"
+      "editorial_status": "published_candidate_complete_sequence_and_native_frame_review_passed",
+      "publication": "public_browser_full_playback_passed",
+      "urls": {
+        "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch.mp4",
+        "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch-4k.mp4",
+        "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-poster.jpg"
+      },
+      "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
     }
-  ]
+  ],
+  "release": "https://github.com/pranavp2418/Oaks_October/releases/tag/agent-product-films-v1",
+  "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b",
+  "delivery_toolchain": "v24.21.0\nffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\nbuilt with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\nconfiguration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\nlibavutil      58. 29.100 / 58. 29.100\nlibavcodec     60. 31.102 / 60. 31.102\nlibavformat    60. 16.100 / 60. 16.100\nlibavdevice    60.  3.100 / 60.  3.100\nlibavfilter     9. 12.100 /  9. 12.100\nlibswscale      7.  5.100 /  7.  5.100\nlibswresample   4. 12.100 /  4. 12.100\nlibpostproc    57.  3.100 / 57.  3.100\nGoogle Chrome for Testing 151.0.7922.34\n"
 }

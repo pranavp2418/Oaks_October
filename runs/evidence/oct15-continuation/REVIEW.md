@@ -15,3 +15,8 @@ Actual Lintel production keyboard/reduced-motion/mobile export→restore→reloa
 Recovery finding repaired: appending to a 200-operation journal previously emitted an unreplayable 201-operation notebook. Lintel and Portwise now reject before mutation; Fallow rejects before applying/saving. Lintel has 19 passing Python groups and Portwise has 11 passing Node groups, including saved-journal preservation tests. An actual Fallow browser loaded 200 valid operations, rejected the next proposal, retained the exact saved journal/version and reloaded successfully. Lintel's current live deployment predates this guard and still needs redeployment; no source/production parity claim for this new fix.
 
 Deeper keyboard flows now pass: production Lintel native selects→review→prepare→reload; local Portwise propose→review→stage→apply→reload→rollback; local Fallow prepare→review→commit and section switch. These use actual Chromium keyboard events with programmatic focus between some controls, not a physical keyboard or full Tab-order certification. Fallow's innerHTML rebuild lost active focus; repaired by preserving the active control across async renders and moving focus to main when the committed control disappears. Exact evidence and rerunnable scripts are retained alongside this report. The Fallow production bundle rebuilt successfully after this UI fix.
+
+
+## Final film artifact delivery
+
+Launch-film editorial/artifact/playback gates are now complete for all3; see FINAL_FILMS.md and public-film-playback.json. Earlier pending-film statements above describe their original checkpoint. Formal application reviews, source/hosted parity and the portfolio production deployment remain open; October15 completion remains0/3.

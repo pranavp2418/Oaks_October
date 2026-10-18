@@ -1,7 +1,7 @@
 """Every rendered second, plus native proof frames; no video editing or upscaling."""
 from pathlib import Path
 import subprocess,sys
-name=sys.argv[1];p=Path('/workspace/media/final');q=p/(name+'-qa');q.mkdir(exist_ok=True)
+name=sys.argv[1];p=Path(sys.argv[2]) if len(sys.argv)>2 else Path('/workspace/media/final');q=p/(name+'-qa');q.mkdir(exist_ok=True)
 # Clear only this helper's previous evidence images so a changed cut cannot retain stale samples.
 for pattern in ['sequence-*.jpg','frame-*.jpg']:
  for previous in q.glob(pattern):previous.unlink()

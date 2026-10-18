@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-18T04:43:26.854360+00:00",
+  "status": "review_passed",
+  "source": "Downloaded release416226965 candidates, all6MP4SHA256 and sizes match runner manifest and release digests",
+  "method": "All10ordered one-second contact sheets cover complete45/50/45second sequences; native prepared outcome, weighted repair proof and posterior chart inspected. No human-viewing claim.",
+  "findings": "Matches corrected local cut. Lintel evidence/review/prepared dossier visible; Portwise diagnosis before review/stage/apply and minimum weight12; Fallow reviewed jobs/retry/collect650 and Beta3,2posterior60%, unchanged selected allocation. Synthetic labels/no private inputs/project dates.",
+  "composition_input_hashes_match_reviewed_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+  "full_decode": "Actions39096657211 succeeded for both editions of all3",
+  "audio": {
+    "lintel": {
+      "input_i": "-18.09",
+      "input_tp": "-8.89",
+      "input_lra": "3.10",
+      "input_thresh": "-28.14",
+      "output_i": "-17.99",
+      "output_tp": "-8.76",
+      "output_lra": "3.00",
+      "output_thresh": "-28.02",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.01"
+    },
+    "portwise": {
+      "input_i": "-18.21",
+      "input_tp": "-8.95",
+      "input_lra": "3.50",
+      "input_thresh": "-28.29",
+      "output_i": "-18.03",
+      "output_tp": "-8.90",
+      "output_lra": "3.10",
+      "output_thresh": "-28.08",
+      "normalization_type": "dynamic",
+      "target_offset": "0.03"
+    },
+    "fallow": {
+      "input_i": "-18.09",
+      "input_tp": "-8.29",
+      "input_lra": "3.10",
+      "input_thresh": "-28.14",
+      "output_i": "-17.98",
+      "output_tp": "-8.33",
+      "output_lra": "3.10",
+      "output_thresh": "-28.00",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.02"
+    }
+  }
+}

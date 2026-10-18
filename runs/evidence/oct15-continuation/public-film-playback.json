@@ -1,0 +1,122 @@
+[
+  {
+    "name": "lintel",
+    "origin": "http://127.0.0.1:5179/films.html",
+    "publicVideo": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch.mp4",
+    "noMediaBeforeUserAction": true,
+    "initiallyPaused": true,
+    "playback": {
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0
+        },
+        {
+          "event": "playing",
+          "time": 0.002861
+        },
+        {
+          "event": "ended",
+          "time": 45
+        }
+      ],
+      "frames": 1350,
+      "duration": 45,
+      "currentTime": 45,
+      "width": 1920,
+      "height": 1080,
+      "rate": 1,
+      "totalVideoFrames": 1350,
+      "droppedVideoFrames": 0,
+      "decodedAudioBytes": 1079404,
+      "error": null
+    },
+    "escapeTearsDownPlayer": true,
+    "focusRestored": true,
+    "mobile": {
+      "client": 390,
+      "scroll": 390
+    },
+    "pageErrors": []
+  },
+  {
+    "name": "portwise",
+    "origin": "http://127.0.0.1:5179/films.html",
+    "publicVideo": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch.mp4",
+    "noMediaBeforeUserAction": true,
+    "initiallyPaused": true,
+    "playback": {
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0
+        },
+        {
+          "event": "playing",
+          "time": 0.003998
+        },
+        {
+          "event": "ended",
+          "time": 50
+        }
+      ],
+      "frames": 1500,
+      "duration": 50,
+      "currentTime": 50,
+      "width": 1920,
+      "height": 1080,
+      "rate": 1,
+      "totalVideoFrames": 1500,
+      "droppedVideoFrames": 0,
+      "decodedAudioBytes": 1210898,
+      "error": null
+    },
+    "escapeTearsDownPlayer": true,
+    "focusRestored": true,
+    "mobile": {
+      "client": 390,
+      "scroll": 390
+    },
+    "pageErrors": []
+  },
+  {
+    "name": "fallow",
+    "origin": "http://127.0.0.1:5179/films.html",
+    "publicVideo": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch.mp4",
+    "noMediaBeforeUserAction": true,
+    "initiallyPaused": true,
+    "playback": {
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0
+        },
+        {
+          "event": "playing",
+          "time": 0
+        },
+        {
+          "event": "ended",
+          "time": 45
+        }
+      ],
+      "frames": 1350,
+      "duration": 45,
+      "currentTime": 45,
+      "width": 1920,
+      "height": 1080,
+      "rate": 1,
+      "totalVideoFrames": 1350,
+      "droppedVideoFrames": 0,
+      "decodedAudioBytes": 1083239,
+      "error": null
+    },
+    "escapeTearsDownPlayer": true,
+    "focusRestored": true,
+    "mobile": {
+      "client": 390,
+      "scroll": 390
+    },
+    "pageErrors": []
+  }
+]

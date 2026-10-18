@@ -19,3 +19,8 @@ Production failure and repair: the first hosted API passed, but gstack browser f
 ## Continuation checkpoint (October17 local / October18 UTC)
 
 Supersedes earlier pending claims where evidence now exists. All-three connected CI run39091803191 passed atc624e9d; retained cross-tab/browser/recovery evidence and partial security review are in ../../../runs/evidence/oct15-continuation/REVIEW.md. Lintel production AOT browser workflow and actual zero-price model calls were verified; Portwise/Fallow live deployment is blocked by Vercel402 quota. Final films, formal reviews and all-three portfolio release remain pending. No completion count increased.
+
+
+## Final launch-film delivery
+
+Three-film release now includes the actual public Lintel web film and native4K master. See the project launch/FINAL_QA.md and the dated final-film report. Full public playback, encoding, native proof frames, score provenance and local portfolio-player checks are retained. This closes the film artifact gate only; hosted parity and formal application release reviews remain open.

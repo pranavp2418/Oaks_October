@@ -19,3 +19,8 @@ Local SQLite persists project revisions, operations and audit receipts. `Workspa
 Hosted persistence is a visitor-owned IndexedDB journal, transactionally fenced against stale tabs, replayed into request-local SQLite. It is not a shared database or separate reviewer identity. Human review explicitly approves only the visitor’s own synthetic notebook. Agent checkpoint restoration reruns allowlisted read-only tools and recomputes the report, without deserializing client code/database files or rerunning model inference.
 
 Remaining release gates: verify replacement AOT UI live, expand desktop/mobile keyboard/reduced-motion and cross-tab checks, complete formal reviews, clean-environment verification, additional live model/adversarial cases, launch film and portfolio integration. See `ACCEPTANCE.md`. This slice is not a completed daily product.
+
+
+## Launch film
+
+[Watch the launch film](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch.mp4) · [Native4K master](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch-4k.mp4) · [Sources, provenance and final QA](launch/FINAL_QA.md). Actual synthetic workflow, edited for time. Application release gates remain separately recorded.

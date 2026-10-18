@@ -13,3 +13,8 @@ Pending: hosted Node SQLite/API compatibility and source identity, actual live m
 Supersedes earlier pending claims where evidence now exists. All-three connected CI run39091803191 passed atc624e9d; retained cross-tab/browser/recovery evidence and partial security review are in ../../../runs/evidence/oct15-continuation/REVIEW.md. Lintel production AOT browser workflow and actual zero-price model calls were verified; Portwise/Fallow live deployment is blocked by Vercel402 quota. Final films, formal reviews and all-three portfolio release remain pending. No completion count increased.
 
 Current supplementary browser checks pass mobile width, keyboard apply/reload/rollback, reduced motion, invalid-import preservation, valid restore/reload and two-tab CAS. A full 200-operation journal rejects another mutation while remaining replayable. Clean connected CI passed at89e2e6d (run39092860271), including all three products. These do not establish the missing live Node/model path or a complete security audit.
+
+
+## Final launch-film delivery
+
+Three-film release now includes the actual public Portwise web film and native4K master. See the project launch/FINAL_QA.md and the dated final-film report. Full public playback, encoding, native proof frames, score provenance and local portfolio-player checks are retained. This closes the film artifact gate only; hosted parity and formal application release reviews remain open.

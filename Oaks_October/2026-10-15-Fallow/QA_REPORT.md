@@ -15,3 +15,8 @@ Remaining: full live source/WASM identity and workflow checks, complete formal r
 Supersedes earlier pending claims where evidence now exists. All-three connected CI run39091803191 passed atc624e9d; retained cross-tab/browser/recovery evidence and partial security review are in ../../../runs/evidence/oct15-continuation/REVIEW.md. Lintel production AOT browser workflow and actual zero-price model calls were verified; Portwise/Fallow live deployment is blocked by Vercel402 quota. Final films, formal reviews and all-three portfolio release remain pending. No completion count increased.
 
 Supplementary mobile/reduced-motion, invalid-import preservation, valid restore/reload and two-tab CAS checks pass. A full200-operation notebook remains reloadable after rejecting operation201. Deeper keyboard plan/review/commit verification found and repaired focus loss across innerHTML rebuilds; active controls are restored across async updates, with main-workspace fallback when a control disappears. Connected CI passed all-three at89e2e6d (run39092860271).
+
+
+## Final launch-film delivery
+
+Three-film release now includes the actual public Fallow web film and native4K master. See the project launch/FINAL_QA.md and the dated final-film report. Full public playback, encoding, native proof frames, score provenance and local portfolio-player checks are retained. This closes the film artifact gate only; hosted parity and formal application release reviews remain open.

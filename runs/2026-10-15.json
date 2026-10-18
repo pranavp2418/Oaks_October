@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "last_updated_at": "2026-10-18T04:16:10.166371+00:00",
+  "last_updated_at": "2026-10-18T04:46:23.205141+00:00",
   "status": "blocked_release_pending",
   "target": 3,
   "completed_projects": 0,
@@ -39,13 +39,19 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "final_render_and_editorial_review_passed_publication_pending",
+        "status": "published_and_public_playback_verified",
         "source": "Oaks_October/2026-10-15-Lintel/launch",
-        "output_directory": "/workspace/media/final",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Final retake/tighter45second edit checked; rerender queued",
+        "output_directory": "/workspace/media/published-final",
+        "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json",
+        "stage": "Final editorial, encoding, public delivery and normal-speed playback passed",
         "final_qa": "Oaks_October/2026-10-15-Lintel/launch/FINAL_QA.md",
-        "duration_seconds": 45
+        "duration_seconds": 45,
+        "urls": {
+          "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch.mp4",
+          "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch-4k.mp4",
+          "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-poster.jpg"
+        },
+        "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
       }
     },
     {
@@ -76,13 +82,19 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "final_render_and_editorial_review_passed_publication_pending",
+        "status": "published_and_public_playback_verified",
         "source": "Oaks_October/2026-10-15-Portwise/launch",
-        "output_directory": "/workspace/media/final",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Agent-before-repair retake complete; readable50second edit checked; rerender queued",
+        "output_directory": "/workspace/media/published-final",
+        "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json",
+        "stage": "Final editorial, encoding, public delivery and normal-speed playback passed",
         "final_qa": "Oaks_October/2026-10-15-Portwise/launch/FINAL_QA.md",
-        "duration_seconds": 50
+        "duration_seconds": 50,
+        "urls": {
+          "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch.mp4",
+          "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch-4k.mp4",
+          "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-poster.jpg"
+        },
+        "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
       }
     },
     {
@@ -114,13 +126,19 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "final_render_and_editorial_review_passed_publication_pending",
+        "status": "published_and_public_playback_verified",
         "source": "Oaks_October/2026-10-15-Fallow/launch",
-        "output_directory": "/workspace/media/final",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Final map/posterior45second native4K render complete; mastering and QA queued",
+        "output_directory": "/workspace/media/published-final",
+        "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json",
+        "stage": "Final editorial, encoding, public delivery and normal-speed playback passed",
         "final_qa": "Oaks_October/2026-10-15-Fallow/launch/FINAL_QA.md",
-        "duration_seconds": 45
+        "duration_seconds": 45,
+        "urls": {
+          "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch.mp4",
+          "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch-4k.mp4",
+          "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-poster.jpg"
+        },
+        "render_source": "739fa55092731b6b96ee8245a7235fa113ccfe5b"
       }
     }
   ],
@@ -140,7 +158,6 @@
   "next_stage": "Finish remaining review/editorial gates, retry Portwise/Fallow deployment after quota resets, verify hosted workflows/source/WASM identity, then release all-three portfolio integration.",
   "remaining": [
     "Formal product/engineering/design/release review gates",
-    "Final premium launch-film editing, uninterrupted playback review, posters and public artifact delivery",
     "Portwise/Fallow production deployment and actual hosted browser/model verification",
     "All-three portfolio/archive/country integration after applicable checks",
     "Verified Codex-native schedule execution path"
@@ -152,12 +169,26 @@
     "observed_at": "2026-10-18T02:49:58+00:00",
     "retry_after_seconds": 86400,
     "scope": "Portwise and Fallow deployments; not authorization",
-    "message": "More than100 deployments today; two corrected scoped production attempts rejected. Approximate retry2026-10-19T02:49:58Z is not a guaranteed reset."
+    "message": "More than100 deployments today; two corrected scoped production attempts rejected. Approximate retry2026-10-19T02:49:58Z is not a guaranteed reset.",
+    "latest_portfolio_attempt": {
+      "observed_at": "2026-10-18T04:16:44.224Z",
+      "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+      "team_id": "team_jdvw58qMPvxbKy0SCSJYCVY2",
+      "source_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+      "target": "production",
+      "status": 402,
+      "resource": "api-deployments-free-per-day",
+      "retry_after_seconds": 86400,
+      "message": "More than100 deployments; resource is limited. Try again in24hours.",
+      "request_id": "iad1:sfo1::64xkn-1792297004224-7d495dc7f937",
+      "production_updated": false,
+      "cli_credentials_present": false
+    }
   },
   "limitations": [
     "All three implementations exist, but zero October15 projects satisfy every release gate. Completed collection count remains24.",
     "Single-user synthetic notebooks; request-local hosted SQLite for Lintel/Portwise; no shared-account database or separate authenticated reviewer.",
-    "Formal review gates and final premium launch-film delivery remain unfinished.",
+    "Formal application release review gates remain unfinished; launch-film artifacts are now delivered and verified.",
     "No Codex destination task IDs or next runs verified; source ChatGPT tasks remain paused."
   ],
   "shared_provider_dependency": {
@@ -171,7 +202,9 @@
     "acquired_at": "2026-10-18T03:26:59.067966+00:00",
     "expires_at": "2026-10-18T07:26:59.067966+00:00",
     "scope": "Finalize brag films and scoped film portfolio presentation; no project completions asserted",
-    "state": "active"
+    "state": "released",
+    "released_at": "2026-10-18T04:46:23.205141+00:00",
+    "checkpoint": "Film publication and exact blockers recorded; no background task completion claim"
   },
   "startup_reconciliation": {
     "source_head": "1afe102",
@@ -205,7 +238,7 @@
       "ffmpeg": "7.1.5",
       "optional_tts": "not installed",
       "rendered_film": true,
-      "status": "Final native 4K/30fps H.264/AAC films rendered and fully decoded: Lintel45s, Portwise50s, Fallow45s; public playback pending."
+      "status": "Three native4K/30fps films and1080p web editions publicly delivered and verified; actual delivery toolchain retained."
     }
   },
   "flagship_progress": {
@@ -233,9 +266,25 @@
     "brag_upstream": "069432cac935ed1895859df201c31436c07fb74e",
     "installation": "codex plugin add brag@brag succeeded in actual cloud; plugin installed and enabled",
     "render_tools": "Hyperframes0.8.169 / FFmpeg7.1.5 / headless Chromium / Node24.19.0",
-    "status": "final_encodes_and_editorial_review_complete_publication_pending",
-    "portfolio": "Dedicated lazy-loaded film presentations prepared; archive/country/completion counts preserved",
-    "artifact_mechanism": "Authorized public GitHub release agent-product-films-v1, not yet created/published",
-    "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json"
+    "status": "three_films_published_and_verified",
+    "portfolio": "Film-room source pushed, production build/tests/browser verified; production deployment rejected402api-deployments-free-per-day.",
+    "artifact_mechanism": "https://github.com/pranavp2418/Oaks_October/releases/tag/agent-product-films-v1",
+    "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json",
+    "artifact_workflow": "https://github.com/pranavp2418/Oaks_October/actions/runs/39096657211",
+    "completion_report": "runs/evidence/oct15-continuation/FINAL_FILMS.md",
+    "portfolio_deployment": {
+      "observed_at": "2026-10-18T04:16:44.224Z",
+      "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+      "team_id": "team_jdvw58qMPvxbKy0SCSJYCVY2",
+      "source_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+      "target": "production",
+      "status": 402,
+      "resource": "api-deployments-free-per-day",
+      "retry_after_seconds": 86400,
+      "message": "More than100 deployments; resource is limited. Try again in24hours.",
+      "request_id": "iad1:sfo1::64xkn-1792297004224-7d495dc7f937",
+      "production_updated": false,
+      "cli_credentials_present": false
+    }
   }
 }

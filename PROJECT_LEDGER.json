@@ -2732,7 +2732,7 @@
       "target": 3,
       "completed_projects": 0,
       "run_record": "runs/2026-10-15.json",
-      "last_updated_at": "2026-10-18T03:16:21.786317+00:00",
+      "last_updated_at": "2026-10-18T04:46:23.205141+00:00",
       "product_direction": "Three materially distinct agent products, as explicitly requested; not developer-worker delegation",
       "portfolio_integration": "pending_all_three_release_gates",
       "external_blocker": {
@@ -2742,7 +2742,46 @@
         "observed_at": "2026-10-18T02:49:58+00:00",
         "retry_after_seconds": 86400,
         "scope": "Portwise and Fallow deployments; not authorization",
-        "message": "More than100 deployments today; two corrected scoped production attempts rejected. Approximate retry2026-10-19T02:49:58Z is not a guaranteed reset."
+        "message": "More than100 deployments today; two corrected scoped production attempts rejected. Approximate retry2026-10-19T02:49:58Z is not a guaranteed reset.",
+        "latest_portfolio_attempt": {
+          "observed_at": "2026-10-18T04:16:44.224Z",
+          "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+          "team_id": "team_jdvw58qMPvxbKy0SCSJYCVY2",
+          "source_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+          "target": "production",
+          "status": 402,
+          "resource": "api-deployments-free-per-day",
+          "retry_after_seconds": 86400,
+          "message": "More than100 deployments; resource is limited. Try again in24hours.",
+          "request_id": "iad1:sfo1::64xkn-1792297004224-7d495dc7f937",
+          "production_updated": false,
+          "cli_credentials_present": false
+        }
+      },
+      "launch_films": {
+        "status": "3/3_publicly_delivered_and_verified",
+        "report": "runs/evidence/oct15-continuation/FINAL_FILMS.md",
+        "release": "https://github.com/pranavp2418/Oaks_October/releases/tag/agent-product-films-v1",
+        "films": [
+          {
+            "title": "Lintel",
+            "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch.mp4",
+            "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-launch-4k.mp4",
+            "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/lintel-poster.jpg"
+          },
+          {
+            "title": "Portwise",
+            "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch.mp4",
+            "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch-4k.mp4",
+            "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-poster.jpg"
+          },
+          {
+            "title": "Fallow",
+            "web": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch.mp4",
+            "master": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch-4k.mp4",
+            "poster": "https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-poster.jpg"
+          }
+        ]
       }
     }
   ],
@@ -6052,6 +6091,16 @@
       "source_commit": "5201ca26e427778664692968ac403e013f6ccbb8",
       "deployment_id": "dpl_2witWesggZTNdJgMcvyu1BPLBVks",
       "completed_at": "2026-10-11T17:13:02.855090+00:00"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "daily_launch_films_and_portfolio_presentation",
+      "counted_daily_project": false,
+      "status": "films_published_verified_portfolio_production_quota_blocked",
+      "report": "runs/evidence/oct15-continuation/FINAL_FILMS.md",
+      "release": "https://github.com/pranavp2418/Oaks_October/releases/tag/agent-product-films-v1",
+      "portfolio_source": "portfolio-site/films.html",
+      "production_updated": false
     }
   ],
   "existing_project_integrations": [

@@ -17,3 +17,8 @@ Verified core only: five Rust groups, 300 independent Python Fraction/exhaustive
 A vanilla web UI now connects the Rust worker to persisted observations and calibration versions, exact reviewed sampling proposals, failed/retried/collected jobs, a three-tool deterministic checkpointed investigator, replayable evidence export and a posterior/budget operating view. Five workspace groups and local desktop/mobile browser flows pass (QA_REPORT.md).
 
 Remaining: full live verification, broader keyboard/restore/race and review gates, final launch film and portfolio integration. No model/LLM, shared database, physical instrument or scientifically validated real-world result is claimed. This core is not a completed daily project or agent product. See ACCEPTANCE.md.
+
+
+## Launch film
+
+[Watch the launch film](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch.mp4) · [Native4K master](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/fallow-launch-4k.mp4) · [Sources, provenance and final QA](launch/FINAL_QA.md). Actual synthetic workflow, edited for time. Application release gates remain separately recorded.

@@ -1,0 +1,45 @@
+{
+  "origin": "http://127.0.0.1:5179/films.html#films",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "firstTab": "Skip to films",
+  "keyboardDialogOpen": true,
+  "dialogLabel": "Lintel — launch film",
+  "tabRemainsInDialog": true,
+  "escapeClosesAndRestoresFocus": true,
+  "computedColorContrasts": [
+    {
+      "selector": "body",
+      "color": "rgb(228, 235, 243)",
+      "background": "rgb(10, 23, 41)",
+      "contrast": 14.96924020715661
+    },
+    {
+      "selector": ".intro",
+      "color": "rgb(170, 190, 213)",
+      "background": "rgba(0, 0, 0, 0)",
+      "contrast": 9.452305595774899
+    },
+    {
+      "selector": ".limit",
+      "color": "rgb(167, 184, 203)",
+      "background": "rgba(0, 0, 0, 0)",
+      "contrast": 8.875202951261894
+    },
+    {
+      "selector": ".eyebrow",
+      "color": "rgb(168, 200, 232)",
+      "background": "rgba(0, 0, 0, 0)",
+      "contrast": 10.35724752248458
+    },
+    {
+      "selector": ".actions button",
+      "color": "rgb(16, 33, 58)",
+      "background": "rgb(182, 217, 255)",
+      "contrast": 11.039030234180165
+    }
+  ],
+  "scope": "Actual Chromium keyboard/focus and computed colors, not a complete accessibility certification."
+}

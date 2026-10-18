@@ -36,7 +36,7 @@
       "start_time": "0.000000",
       "duration_ts": 691200,
       "duration": "45.000000",
-      "bit_rate": "409106",
+      "bit_rate": "407209",
       "bits_per_raw_sample": "8",
       "nb_frames": "1350",
       "extradata_size": 51,
@@ -65,7 +65,7 @@
         "language": "und",
         "handler_name": "VideoHandler",
         "vendor_id": "[0][0][0][0]",
-        "encoder": "Lavc61.19.101 libx264"
+        "encoder": "Lavc60.31.102 libx264"
       }
     },
     {
@@ -90,7 +90,7 @@
       "start_time": "0.000000",
       "duration_ts": 2160000,
       "duration": "45.000000",
-      "bit_rate": "192189",
+      "bit_rate": "192484",
       "nb_frames": "2107",
       "extradata_size": 5,
       "disposition": {
@@ -122,7 +122,7 @@
     }
   ],
   "format": {
-    "filename": "/workspace/media/final/fallow-launch.mp4",
+    "filename": "/workspace/media/published-final/fallow-launch.mp4",
     "nb_streams": 2,
     "nb_programs": 0,
     "nb_stream_groups": 0,
@@ -130,16 +130,16 @@
     "format_long_name": "QuickTime / MOV",
     "start_time": "0.000000",
     "duration": "45.000000",
-    "size": "3433256",
-    "bit_rate": "610356",
+    "size": "3424254",
+    "bit_rate": "608756",
     "probe_score": 100,
     "tags": {
       "major_brand": "isom",
       "minor_version": "512",
       "compatible_brands": "isomiso2avc1mp41",
-      "encoder": "Lavf61.7.103"
+      "encoder": "Lavf60.16.100"
     }
   },
-  "sha256": "4d6c9da729442ee0b478ff0cbccf4a19be05d97eeb4cec6d77bc3f78ee5b9e7e",
+  "sha256": "7bbf03a0def7bee8446e46d474ecc4820e04fd26d645b1a16c645fea66b86985",
   "artifact_name": "fallow-launch.mp4"
 }

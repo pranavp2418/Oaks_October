@@ -1,7 +1,7 @@
 """Retain actual encode/source evidence after final renders; publication is a separate gate."""
 from pathlib import Path
-import json,hashlib,shutil,subprocess,re,datetime
-root=Path(__file__).resolve().parents[1];media=Path('/workspace/media/final');summary=[]
+import json,hashlib,shutil,subprocess,re,datetime,sys
+root=Path(__file__).resolve().parents[1];media=Path(sys.argv[1]) if len(sys.argv)>1 else Path('/workspace/media/final');summary=[]
 for name in ['lintel','portwise','fallow']:
  launch=root/f'Oaks_October/2026-10-15-{name.title()}/launch';records={}
  for edition,dims in [('launch-4k',(3840,2160)),('launch',(1920,1080))]:

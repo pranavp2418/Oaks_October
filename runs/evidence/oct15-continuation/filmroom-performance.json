@@ -1,0 +1,56 @@
+{
+  "url": "http://127.0.0.1:5179/films.html",
+  "cpuThrottling": 4,
+  "scope": "Built page, actual Chromium and local transport; not physical-device or Internet-latency certification.",
+  "physicalDevice": false,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "width": 390,
+  "paints": [
+    {
+      "name": "first-paint",
+      "time": 284
+    },
+    {
+      "name": "first-contentful-paint",
+      "time": 284
+    }
+  ],
+  "domContentLoaded": 102.69999999925494,
+  "resources": [
+    {
+      "name": "/assets/films-CVpU-9Ye.js",
+      "bytes": 1728,
+      "duration": 33
+    },
+    {
+      "name": "/assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "bytes": 711,
+      "duration": 30
+    },
+    {
+      "name": "/assets/films-D839DgAX.css",
+      "bytes": 963,
+      "duration": 29.699999999254942
+    },
+    {
+      "name": "/assets/film-portwise.jpg",
+      "bytes": 78991,
+      "duration": 13.099999999627471
+    },
+    {
+      "name": "/assets/film-lintel.jpg",
+      "bytes": 119640,
+      "duration": 12.700000001117587
+    },
+    {
+      "name": "/favicon.ico",
+      "bytes": 0,
+      "duration": 5
+    }
+  ],
+  "mp4Requests": 0,
+  "videoElements": 0
+}

@@ -12,3 +12,8 @@ Current verified slice: seven Node test groups, including 300 independent exhaus
 The local store's role argument requires an authenticated transport before treating it as an identity boundary. No shared hosted storage, independent reviewer login, external connector delivery or model integration is claimed. The implemented React UI now connects a real LangGraph/LangChain read-only investigator to exact repair synthesis and the reviewed stage/apply/rollback case workflow. Ten Node groups and local 390px browser flows pass; see QA_REPORT.md.
 
 Remaining: live deployment and actual hosted model/workflow verification, broader failure/concurrency/keyboard/restore checks, review/security gates, launch film and portfolio integration. This slice is not a completed daily project. See ACCEPTANCE.md.
+
+
+## Launch film
+
+[Watch the launch film](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch.mp4) · [Native4K master](https://github.com/pranavp2418/Oaks_October/releases/download/agent-product-films-v1/portwise-launch-4k.mp4) · [Sources, provenance and final QA](launch/FINAL_QA.md). Actual synthetic workflow, edited for time. Application release gates remain separately recorded.
