@@ -1,0 +1,21 @@
+{
+  "viewport": {
+    "width": 960,
+    "height": 540
+  },
+  "deviceScaleFactor": 4,
+  "pixelDimensions": {
+    "width": 3840,
+    "height": 2160
+  },
+  "source": "https://lintel-20261015.vercel.app",
+  "synthetic": true,
+  "method": "Actual isolated browser workflow, native 4x screenshots; not yet a recorded motion master.",
+  "verifiedFlows": [
+    "real tool investigation",
+    "human review",
+    "evidence changes",
+    "proposal approval",
+    "dossier preparation"
+  ]
+}
