@@ -129,8 +129,8 @@
       32.5,
       42.5
     ],
-    "checked": 11,
-    "passed": 11
+    "checked": 16,
+    "passed": 16
   },
   "hdr": {
     "autoPromotion": null,
@@ -143,10 +143,10 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "f8d5cd9c-4ffb-4993-b917-ef785fd0a832",
-    "revision": null,
-    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Fallow/launch/composition/.hyperframes/artifacts/checks/f8d5cd9c-4ffb-4993-b917-ef785fd0a832.json",
-    "attribution": "unversioned"
+    "id": "f68b69ad-1e44-4ec1-bc32-d5e936ba792a",
+    "revision": "3005da63-cc97-4a91-8976-c4eec01c5d8c",
+    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Fallow/launch/composition/.hyperframes/artifacts/checks/f68b69ad-1e44-4ec1-bc32-d5e936ba792a.json",
+    "attribution": "recorded-revision"
   },
   "_meta": {
     "version": "0.8.169",

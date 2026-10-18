@@ -1,0 +1,16 @@
+{
+  "composition/index.html": "0d9d16bdebf7a3231ef49128cdbe6458a3fc8388265569101a715380af9f8530",
+  "composition/assets/original-bed.wav": "d658ad261601542959b1f5b65e5fc1accda76fb5ae2fb051c69c20b762eccc92",
+  "composition/assets/display-OFL.txt": "9cc8cef15f5e8bcbe99a13ee8d268f6f6f6a5811cd1ed05056ef4608c9b16fd1",
+  "composition/assets/capture-provenance.json": "52134ee4453155326a1d7aab1d40e5387ffcddc2917cc4e013c0d0da5d12a395",
+  "composition/assets/body.ttf": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+  "composition/assets/display.ttf": "2340c497181e9446fcbb235e1c3780558dc62879ffe0ef47906d3f7f35cf5f35",
+  "composition/assets/workflow-native4k.webm": "365857095f4de6f0430f8b89096bcfd01991f8f34cf1991750a38328d15c428c",
+  "composition/assets/score.wav": "0eeb23e60a69ae5c0eb056f59390c7305c4e09e96392c87643ff0127acb04c93",
+  "composition/assets/audio-data.js": "fddf698a8a20a0ef340735afc3bce7165cdc130c4b3c836626ea744cfa08a159",
+  "composition/assets/body-OFL.txt": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+  "composition/assets/outcome.png": "c9d2c275b54e75cf66f403254e1ca4920df39ce15a0da5e3a402966a77e6e393",
+  "composition/assets/investigation.png": "c435987854a6f8850c155bf7873b669f14506efe11ffd2dae22e691c55d2dc9c",
+  "composition/assets/opening.png": "e9a1e421c517ebc1abb4cf8326dd93d57104e5d6e3a0a4706656133fad3278b5",
+  "composition/assets/gsap.min.js": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+}

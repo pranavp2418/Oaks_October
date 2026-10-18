@@ -1,0 +1,3 @@
+# Hyperframes composition brief — Portwise
+
+Use brag-plan.md as the story contract. Native3840×2160 at30fps,50seconds. Preserve original UI/fonts/palette, continuous native-resolution source and factual output. All assets local. Use GSAP paused seek-safe timeline and framework-owned media trims. Original score plus restrained cue accents. No voice. Runtime exceeds skill default under the explicit latest user direction. Readability takes precedence over beat sync. Check layout/contrast/runtime, render sequentially on this8GiB software host, then inspect full output and transitions, bake poster frame0, derive1080p, record probes and source hashes.

@@ -1,0 +1,65 @@
+{
+  "feasible": true,
+  "initial_violations": [
+    {
+      "id": "tls",
+      "reason": "transport must equal https"
+    },
+    {
+      "id": "verify",
+      "reason": "signature must equal hmac"
+    },
+    {
+      "id": "timeout",
+      "reason": "timeout_ms must not exceed deadline_ms"
+    },
+    {
+      "id": "durable_ack",
+      "reason": "ack must equal after_persist"
+    }
+  ],
+  "cost": 12,
+  "patch": [
+    {
+      "field": "transport",
+      "before": "http",
+      "after": "https",
+      "change_cost": 2
+    },
+    {
+      "field": "signature",
+      "before": "none",
+      "after": "hmac",
+      "change_cost": 3
+    },
+    {
+      "field": "timeout_ms",
+      "before": 10000,
+      "after": 1000,
+      "change_cost": 1
+    },
+    {
+      "field": "ack",
+      "before": "immediate",
+      "after": "after_persist",
+      "change_cost": 2
+    },
+    {
+      "field": "dedup",
+      "before": false,
+      "after": true,
+      "change_cost": 4
+    }
+  ],
+  "repaired": {
+    "transport": "https",
+    "signature": "hmac",
+    "timeout_ms": 1000,
+    "deadline_ms": 5000,
+    "ack": "after_persist",
+    "dedup": true,
+    "credential_ref": "synthetic-secret-slot"
+  },
+  "assignments_checked": 88,
+  "limits": "Finite synthetic connector configuration; no external delivery or customer system touched."
+}

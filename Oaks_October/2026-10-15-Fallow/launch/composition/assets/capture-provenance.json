@@ -9,5 +9,7 @@
   "bodyZoom": 2,
   "nativePixels": true,
   "recording": "Playwright native video; not upscaled from 1080p",
-  "claimedHosted": false
+  "claimedHosted": false,
+  "underlying_application_source": "910403d862aabe0d9fe5c966d0abb0512846bedf / local working tree; underlying application files unchanged during film edits",
+  "capture_instrumentation": "Visible cursor and click feedback only; no generated results or mocked backend"
 }

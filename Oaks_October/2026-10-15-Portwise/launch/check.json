@@ -9,10 +9,10 @@
     "infoCount": 0,
     "findings": [
       {
-        "code": "studio_missing_editable_id",
+        "code": "nested_structure_needs_subcomposition",
         "severity": "warning",
-        "message": "<section data-start=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
-        "selector": "[data-composition-id]",
+        "message": "<section id=\"hook\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#hook",
         "dataAttributes": {},
         "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
         "bbox": {
@@ -22,61 +22,13 @@
           "height": 0
         },
         "time": 0,
-        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
-      },
-      {
-        "code": "studio_missing_editable_id",
-        "severity": "warning",
-        "message": "<section data-start=\"5\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {},
-        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 0,
-          "height": 0
-        },
-        "time": 0,
-        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
-      },
-      {
-        "code": "studio_missing_editable_id",
-        "severity": "warning",
-        "message": "<section data-start=\"26\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {},
-        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 0,
-          "height": 0
-        },
-        "time": 0,
-        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
-      },
-      {
-        "code": "studio_missing_editable_id",
-        "severity": "warning",
-        "message": "<section data-start=\"33\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {},
-        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 0,
-          "height": 0
-        },
-        "time": 0,
-        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+        "fixHint": "Move <section id=\"hook\"> and its contents into a sub-composition file and mount it with data-composition-src."
       },
       {
         "code": "nested_structure_needs_subcomposition",
         "severity": "warning",
-        "message": "<section> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
-        "selector": "[data-composition-id]",
+        "message": "<section id=\"workflow-label\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#workflow-label",
         "dataAttributes": {},
         "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
         "bbox": {
@@ -86,7 +38,55 @@
           "height": 0
         },
         "time": 0,
-        "fixHint": "Move <section> and its contents into a sub-composition file and mount it with data-composition-src."
+        "fixHint": "Move <section id=\"workflow-label\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"evidence\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#evidence",
+        "dataAttributes": {},
+        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"evidence\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"verified-outcome\"> is a timeline element that contains nested <img>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#verified-outcome",
+        "dataAttributes": {},
+        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"verified-outcome\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"close\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#close",
+        "dataAttributes": {},
+        "sourceFile": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"close\"> and its contents into a sub-composition file and mount it with data-composition-src."
       }
     ],
     "filesScanned": 1
@@ -104,17 +104,17 @@
     "warningCount": 0,
     "infoCount": 0,
     "findings": [],
-    "duration": 45,
+    "duration": 50,
     "samples": [
-      2.5,
-      7.5,
-      12.5,
-      17.5,
-      22.5,
-      27.5,
-      32.5,
-      37.5,
-      42.5
+      2.778,
+      8.333,
+      13.889,
+      19.444,
+      25,
+      30.556,
+      36.111,
+      41.667,
+      47.222
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -139,14 +139,14 @@
     "findings": [],
     "enabled": true,
     "samples": [
-      2.5,
-      12.5,
-      22.5,
-      32.5,
-      42.5
+      2.778,
+      13.889,
+      25,
+      36.111,
+      47.222
     ],
-    "checked": 14,
-    "passed": 14
+    "checked": 20,
+    "passed": 20
   },
   "hdr": {
     "autoPromotion": null,
@@ -159,10 +159,10 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "ab1436b5-cf9f-4bb1-bb9e-b89ae33803e8",
-    "revision": null,
-    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/.hyperframes/artifacts/checks/ab1436b5-cf9f-4bb1-bb9e-b89ae33803e8.json",
-    "attribution": "unversioned"
+    "id": "3728a737-50f9-4bae-af09-3da6640f5a3b",
+    "revision": "456d8210-fdc9-4bbd-a8cd-596736abd4f9",
+    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Portwise/launch/composition/.hyperframes/artifacts/checks/3728a737-50f9-4bae-af09-3da6640f5a3b.json",
+    "attribution": "recorded-revision"
   },
   "_meta": {
     "version": "0.8.169",

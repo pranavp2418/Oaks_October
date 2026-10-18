@@ -118,68 +118,23 @@
     "ok": true,
     "errorCount": 0,
     "warningCount": 0,
-    "infoCount": 3,
+    "infoCount": 1,
     "findings": [
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 12.5,
-        "selector": "#reveal-ui",
-        "message": "Element extends outside a clipping layout container.",
-        "rect": {
-          "left": 1372,
-          "top": 342,
-          "right": 3722,
-          "bottom": 1663.88,
-          "width": 2350,
-          "height": 1321.88
-        },
-        "containerSelector": "#reveal > div:nth-of-type(2)",
-        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
-        "containerRect": {
-          "left": 1370,
-          "top": 360,
-          "right": 3720,
-          "bottom": 1910,
-          "width": 2350,
-          "height": 1550
-        },
-        "overflow": {
-          "top": 18
-        },
-        "dataAttributes": {
-          "data-hf-authored-opacity": ""
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 1372,
-          "y": 342,
-          "width": 2350,
-          "height": 1321.88
-        },
-        "firstSeen": 12.5,
-        "lastSeen": 12.5,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          12.5
-        ]
-      },
-      {
-        "code": "container_overflow",
-        "severity": "info",
-        "time": 27.5,
+        "time": 22.5,
         "selector": "#agent-ui",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 1372,
-          "top": 343.38,
+          "top": 356.98,
           "right": 3722,
-          "bottom": 1665.25,
+          "bottom": 1678.86,
           "width": 2350,
           "height": 1321.88
         },
-        "containerSelector": "#investigate > div:nth-of-type(2)",
+        "containerSelector": "div.ui-stage",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 1370,
@@ -190,7 +145,7 @@
           "height": 1550
         },
         "overflow": {
-          "top": 16.62
+          "top": 3.02
         },
         "dataAttributes": {
           "data-hf-authored-opacity": ""
@@ -198,61 +153,16 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 1372,
-          "y": 343.38,
+          "y": 356.98,
           "width": 2350,
           "height": 1321.88
         },
-        "firstSeen": 27.5,
-        "lastSeen": 27.5,
+        "firstSeen": 22.5,
+        "lastSeen": 22.5,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          27.5
-        ]
-      },
-      {
-        "code": "container_overflow",
-        "severity": "info",
-        "time": 37.5,
-        "selector": "#prepared-ui",
-        "message": "Element extends outside a clipping layout container.",
-        "rect": {
-          "left": 1372,
-          "top": 342,
-          "right": 3722,
-          "bottom": 1663.88,
-          "width": 2350,
-          "height": 1321.88
-        },
-        "containerSelector": "#prepare > div:nth-of-type(2)",
-        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
-        "containerRect": {
-          "left": 1370,
-          "top": 360,
-          "right": 3720,
-          "bottom": 1910,
-          "width": 2350,
-          "height": 1550
-        },
-        "overflow": {
-          "top": 18
-        },
-        "dataAttributes": {
-          "data-hf-authored-opacity": ""
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 1372,
-          "y": 342,
-          "width": 2350,
-          "height": 1321.88
-        },
-        "firstSeen": 37.5,
-        "lastSeen": 37.5,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          37.5
+          22.5
         ]
       }
     ],
@@ -271,7 +181,7 @@
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
     "tolerance": 2,
-    "totalIssueCount": 3,
+    "totalIssueCount": 1,
     "truncated": false
   },
   "motion": {
@@ -297,8 +207,8 @@
       32.5,
       42.5
     ],
-    "checked": 37,
-    "passed": 37
+    "checked": 30,
+    "passed": 30
   },
   "hdr": {
     "autoPromotion": null,
@@ -311,9 +221,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "611729a8-2985-4f42-9460-23b233f46e6e",
-    "revision": "06c4b2c4-b23e-4aae-8656-9cdcff43ea34",
-    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Lintel/launch/composition/.hyperframes/artifacts/checks/611729a8-2985-4f42-9460-23b233f46e6e.json",
+    "id": "5d526200-4270-4245-a6ff-26cd8f5a1795",
+    "revision": "8ed4173c-7a8c-427e-a7b2-629f5e5c4c76",
+    "report": "/workspace/Oaks_October/Oaks_October/2026-10-15-Lintel/launch/composition/.hyperframes/artifacts/checks/5d526200-4270-4245-a6ff-26cd8f5a1795.json",
     "attribution": "recorded-revision"
   },
   "_meta": {

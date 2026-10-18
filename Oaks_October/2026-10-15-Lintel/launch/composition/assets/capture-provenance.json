@@ -1,0 +1,28 @@
+{
+  "sourceWindows": {
+    "investigation_start": 2.575,
+    "preparation_start": 7.683
+  },
+  "viewport": {
+    "width": 3840,
+    "height": 2160
+  },
+  "deviceScaleFactor": 1,
+  "bodyZoom": 4,
+  "pixelDimensions": {
+    "width": 3840,
+    "height": 2160
+  },
+  "source": "https://lintel-20261015.vercel.app",
+  "synthetic": true,
+  "method": "Continuous actual production synthetic workflow, native3840x2160 video with CSSzoom4; not enlarged from a low-resolution capture.",
+  "verifiedFlows": [
+    "real tool investigation",
+    "human review",
+    "evidence changes",
+    "proposal approval",
+    "dossier preparation"
+  ],
+  "underlying_application_source": "feacf8c07d14c57f8a4df3660e7248a42af7c815 / actual deployed production",
+  "source_video_duration": 20.16
+}

@@ -1,15 +1,29 @@
-# Lintel draft film
+# Lintel launch film
 
-brag0.4.0 upstream069432cac935ed1895859df201c31436c07fb74e was installed through the actual cloud Codex plugin interface. Its project inspection/storyboard/composition/check/render workflow produced this draft through Hyperframes0.8.169. The user's latest film direction authorizes45seconds and native4K over the skill's default short clip.
+Read brag-plan.md, composition-brief.md, PROVENANCE.md and FINAL_QA.md. Final delivery status and public assets are recorded in FINAL_QA.md; the earlier drafts remain in Git history and outside-Git media directories.
+
+Install the real upstream brag plugin in the execution environment:
 
 ```sh
-npm ci --ignore-scripts
-node launch/capture.mjs /path/to/captures
-# Copy captures and provenance to launch/composition/assets/ and launch/.
-python3 launch/music.py
-cd launch/composition
-npx --yes hyperframes@0.8.169 check
-npx --yes hyperframes@0.8.169 render --workers 1 --fps 30 --quality delivery --output /path/to/lintel-draft-4k.mp4
+codex plugin marketplace add latent-spaces/brag
+codex plugin add brag@brag
+codex plugin list
+npx --yes hyperframes@0.8.169 doctor
 ```
 
-Read brag-plan.md, composition-brief.md, EDITORIAL_REVIEW.md and probe-4k.json. The MP4 is a draft, not a final film or a completed daily-product gate. Source/live links accompany final delivery; none of the visible actions imply that an MP4 can execute a link. No heavy media is autoplayed on the portfolio.
+From the product directory, npm ci --ignore-scripts installs the pinned Playwright capture dependency. Start the documented actual app/API. Set CHROMIUM_PATH when system Chromium is elsewhere. Capture with `node launch/capture-motion.mjs /path/to/captures`; for the latter use MEDIA_ROOT to choose the parent output directory. Capture uses an isolated synthetic notebook, native3840×2160 pixels and visible real cursor/actions. Source ranges and retiming are declared explicitly in composition/index.html and capture-provenance.json.
+
+From repository root:
+
+```sh
+python3 runs/generate-film-audio.py
+# Re-extract audio bands with the installed Hyperframes creative helper if the score changes.
+export HYPERFRAMES_BROWSER_PATH=/path/to/chrome-headless-shell
+FILM_OUTPUT=/path/to/renders bash runs/render-launch-films.sh
+python3 runs/postprocess-film.py lintel /path/to/renders
+python3 runs/build-film-contact-sheets.py lintel
+```
+
+The full composition renders at native4K/30fps. The postprocessor selects a settled product-specific poster, bakes only frame0, derives a high-quality1080p MP4, probes/hashes and fully decodes both. Run one render at a time on this8GiB host. Software screenshot fallback is recorded honestly. Large final MP4s belong in the authorized GitHub release artifact mechanism, not Git blobs. No autoplaying portfolio media.
+
+Real capture and original licensed fonts/score are retained. No paid assets, services, campaign-brand content, private inspirations/profile inputs or invented customer/results. See PROVENANCE.md for bounded runtime and synthetic-data claims.

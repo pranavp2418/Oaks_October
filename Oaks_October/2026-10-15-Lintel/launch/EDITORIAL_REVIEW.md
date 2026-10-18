@@ -1,3 +1,5 @@
+> Historical draft review. See FINAL_QA.md and qa-final/ for the final cut and retained evidence.
+
 # Draft editorial/technical review
 
 Actual Hyperframes0.8.169 render completed:45seconds,3840×2160,30fps,H.264~3.466Mb/s video,AAC~192.8kb/s,20,621,455bytes,3m49.3s render time. Native composition and native3840×2160 UI captures; no low-resolution enlargement.1080p web derivative retained outside Git. Software screenshot capture path, not GPU/BeginFrame acceleration.

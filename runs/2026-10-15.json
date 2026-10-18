@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "last_updated_at": "2026-10-18T03:56:41.417027+00:00",
+  "last_updated_at": "2026-10-18T04:16:10.166371+00:00",
   "status": "blocked_release_pending",
   "target": 3,
   "completed_projects": 0,
@@ -39,11 +39,13 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "native_4k_draft_rendered_not_final_delivery",
+        "status": "final_render_and_editorial_review_passed_publication_pending",
         "source": "Oaks_October/2026-10-15-Lintel/launch",
-        "output_directory": "/workspace/media/lintel",
+        "output_directory": "/workspace/media/final",
         "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Final retake/tighter45second edit checked; rerender queued"
+        "stage": "Final retake/tighter45second edit checked; rerender queued",
+        "final_qa": "Oaks_October/2026-10-15-Lintel/launch/FINAL_QA.md",
+        "duration_seconds": 45
       }
     },
     {
@@ -74,11 +76,13 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "native_4k_draft_rendered_not_final_delivery",
+        "status": "final_render_and_editorial_review_passed_publication_pending",
         "source": "Oaks_October/2026-10-15-Portwise/launch",
-        "output_directory": "/workspace/media/portwise",
+        "output_directory": "/workspace/media/final",
         "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Agent-before-repair retake complete; readable50second edit checked; rerender queued"
+        "stage": "Agent-before-repair retake complete; readable50second edit checked; rerender queued",
+        "final_qa": "Oaks_October/2026-10-15-Portwise/launch/FINAL_QA.md",
+        "duration_seconds": 50
       }
     },
     {
@@ -110,11 +114,13 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "native_4k_draft_rendered_not_final_delivery",
+        "status": "final_render_and_editorial_review_passed_publication_pending",
         "source": "Oaks_October/2026-10-15-Fallow/launch",
-        "output_directory": "/workspace/media/fallow",
+        "output_directory": "/workspace/media/final",
         "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
-        "stage": "Final map/posterior45second native4K render complete; mastering and QA queued"
+        "stage": "Final map/posterior45second native4K render complete; mastering and QA queued",
+        "final_qa": "Oaks_October/2026-10-15-Fallow/launch/FINAL_QA.md",
+        "duration_seconds": 45
       }
     }
   ],
@@ -199,7 +205,7 @@
       "ffmpeg": "7.1.5",
       "optional_tts": "not installed",
       "rendered_film": true,
-      "status": "Three native3840\u00d72160 45-second H.264/AAC drafts rendered. Final editorial, posters and public delivery remain pending."
+      "status": "Final native 4K/30fps H.264/AAC films rendered and fully decoded: Lintel45s, Portwise50s, Fallow45s; public playback pending."
     }
   },
   "flagship_progress": {
@@ -227,8 +233,9 @@
     "brag_upstream": "069432cac935ed1895859df201c31436c07fb74e",
     "installation": "codex plugin add brag@brag succeeded in actual cloud; plugin installed and enabled",
     "render_tools": "Hyperframes0.8.169 / FFmpeg7.1.5 / headless Chromium / Node24.19.0",
-    "status": "final_editorial_cuts_checked_encoding_and_publication_pending",
+    "status": "final_encodes_and_editorial_review_complete_publication_pending",
     "portfolio": "Dedicated lazy-loaded film presentations prepared; archive/country/completion counts preserved",
-    "artifact_mechanism": "Authorized public GitHub release agent-product-films-v1, not yet created/published"
+    "artifact_mechanism": "Authorized public GitHub release agent-product-films-v1, not yet created/published",
+    "evidence": "runs/evidence/oct15-continuation/final-film-encodes.json"
   }
 }

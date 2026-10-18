@@ -1,0 +1,107 @@
+{
+  "before": {
+    "cost": 17,
+    "objective": "Maximize summed expected posterior-variance reduction in rounded nano-units; ties prefer lower cost, fewer samples, then lexicographic counts. Independent sites, beta(1,1) priors; synthetic decision support only.",
+    "posteriors": [
+      {
+        "alpha": 2,
+        "beta": 2,
+        "exceedance_mean": 0.5,
+        "id": "willow",
+        "variance": 0.05
+      },
+      {
+        "alpha": 2,
+        "beta": 1,
+        "exceedance_mean": 0.6666666666666666,
+        "id": "reed",
+        "variance": 0.05555555555555555
+      },
+      {
+        "alpha": 1,
+        "beta": 3,
+        "exceedance_mean": 0.25,
+        "id": "stone",
+        "variance": 0.0375
+      },
+      {
+        "alpha": 1,
+        "beta": 1,
+        "exceedance_mean": 0.5,
+        "id": "marsh",
+        "variance": 0.08333333333333333
+      }
+    ],
+    "regions": 2,
+    "samples": 6,
+    "selected": [
+      [
+        "willow",
+        1
+      ],
+      [
+        "reed",
+        2
+      ],
+      [
+        "marsh",
+        3
+      ]
+    ],
+    "states_explored": 140,
+    "utility_nano": 82222222
+  },
+  "after": {
+    "cost": 17,
+    "objective": "Maximize summed expected posterior-variance reduction in rounded nano-units; ties prefer lower cost, fewer samples, then lexicographic counts. Independent sites, beta(1,1) priors; synthetic decision support only.",
+    "posteriors": [
+      {
+        "alpha": 3,
+        "beta": 2,
+        "exceedance_mean": 0.6,
+        "id": "willow",
+        "variance": 0.04
+      },
+      {
+        "alpha": 2,
+        "beta": 1,
+        "exceedance_mean": 0.6666666666666666,
+        "id": "reed",
+        "variance": 0.05555555555555555
+      },
+      {
+        "alpha": 1,
+        "beta": 3,
+        "exceedance_mean": 0.25,
+        "id": "stone",
+        "variance": 0.0375
+      },
+      {
+        "alpha": 1,
+        "beta": 1,
+        "exceedance_mean": 0.5,
+        "id": "marsh",
+        "variance": 0.08333333333333333
+      }
+    ],
+    "regions": 2,
+    "samples": 6,
+    "selected": [
+      [
+        "willow",
+        1
+      ],
+      [
+        "reed",
+        2
+      ],
+      [
+        "marsh",
+        3
+      ]
+    ],
+    "states_explored": 140,
+    "utility_nano": 78888889
+  },
+  "source": "Actual committed Rust/WASM engine and shipped seed, synthetic650 collection"
+}
