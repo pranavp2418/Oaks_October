@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
-  "last_updated_at": "2026-10-18T03:02:22.161315+00:00",
-  "status": "implemented_release_pending",
+  "last_updated_at": "2026-10-18T03:16:21.786317+00:00",
+  "status": "blocked_release_pending",
   "target": 3,
   "completed_projects": 0,
   "projects": [
@@ -25,8 +25,8 @@
       },
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
-        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092860271",
+        "source_commit": "89e2e6d9b957ca10d6ced62a30983c5d6a2bc0bc",
         "status": "success"
       },
       "deployment": {
@@ -39,9 +39,10 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "draft_not_final_delivery",
+        "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Lintel/launch",
-        "output_directory": "/workspace/media/lintel"
+        "output_directory": "/workspace/media/lintel",
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
       }
     },
     {
@@ -55,8 +56,8 @@
       "acceptance": "Oaks_October/2026-10-15-Portwise/ACCEPTANCE.md",
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
-        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092860271",
+        "source_commit": "89e2e6d9b957ca10d6ced62a30983c5d6a2bc0bc",
         "status": "success"
       },
       "local_evidence": {
@@ -72,9 +73,10 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "draft_not_final_delivery",
+        "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Portwise/launch",
-        "output_directory": "/workspace/media/portwise"
+        "output_directory": "/workspace/media/portwise",
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
       }
     },
     {
@@ -88,8 +90,8 @@
       "acceptance": "Oaks_October/2026-10-15-Fallow/ACCEPTANCE.md",
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
-        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092860271",
+        "source_commit": "89e2e6d9b957ca10d6ced62a30983c5d6a2bc0bc",
         "status": "success"
       },
       "local_evidence": {
@@ -106,9 +108,10 @@
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
-        "status": "draft_not_final_delivery",
+        "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Fallow/launch",
-        "output_directory": "/workspace/media/fallow"
+        "output_directory": "/workspace/media/fallow",
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
       }
     }
   ],
@@ -158,7 +161,9 @@
     "owner": "codex-continuation",
     "acquired_at": "2026-10-18T02:07:07.037453+00:00",
     "expires_at": "2026-10-18T06:07:07.037453+00:00",
-    "scope": "October 15 trio only; no completion asserted"
+    "scope": "October 15 trio only; no completion asserted",
+    "state": "released_at_verified_checkpoint",
+    "released_at": "2026-10-18T03:16:21.786317+00:00"
   },
   "startup_reconciliation": {
     "source_head": "1afe102",
@@ -192,7 +197,7 @@
       "ffmpeg": "7.1.5",
       "optional_tts": "not installed",
       "rendered_film": true,
-      "status": "Lintel and Portwise45-second native4K draft renders complete; Fallow sequential render in progress. All final editorial/delivery gates pending."
+      "status": "Three native3840\u00d72160 45-second H.264/AAC drafts rendered. Final editorial, posters and public delivery remain pending."
     }
   },
   "flagship_progress": {

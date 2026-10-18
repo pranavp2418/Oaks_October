@@ -1,0 +1,98 @@
+{
+  "verified_at": "2026-10-18T03:16:21.786317+00:00",
+  "films": [
+    {
+      "product": "lintel",
+      "status": "draft_not_final_delivery",
+      "path": "/workspace/media/lintel/lintel-draft-4k.mp4",
+      "sha256": "9526b6210e255292e1876426088abb5d03d031cb39e2d6e1960d7dae795129f8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 3840,
+            "height": 2160,
+            "avg_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "45.000000",
+          "size": "20621455"
+        }
+      },
+      "web_derivative": "/workspace/media/lintel/lintel-draft-1080.mp4",
+      "final_editorial_signoff": false,
+      "public_delivery": false
+    },
+    {
+      "product": "portwise",
+      "status": "draft_not_final_delivery",
+      "path": "/workspace/media/portwise/portwise-draft-4k.mp4",
+      "sha256": "8f6a6bf27b8e2535cdc73dfc51931891de2ac3a27b0632736e433df3a912f14c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 3840,
+            "height": 2160,
+            "avg_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "45.000000",
+          "size": "7773725"
+        }
+      },
+      "web_derivative": "/workspace/media/portwise/portwise-draft-1080.mp4",
+      "final_editorial_signoff": false,
+      "public_delivery": false
+    },
+    {
+      "product": "fallow",
+      "status": "draft_not_final_delivery",
+      "path": "/workspace/media/fallow/fallow-draft-4k.mp4",
+      "sha256": "3d8016dec1c0caee7cb13400de28cec91c25512b01e55b4fae751ad1ddedcc3e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 3840,
+            "height": 2160,
+            "avg_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "45.000000",
+          "size": "8391760"
+        }
+      },
+      "web_derivative": "/workspace/media/fallow/fallow-draft-1080.mp4",
+      "final_editorial_signoff": false,
+      "public_delivery": false
+    }
+  ]
+}
