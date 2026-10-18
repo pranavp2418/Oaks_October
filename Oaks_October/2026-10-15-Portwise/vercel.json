@@ -8,10 +8,7 @@
   "functions": {
     "api/workspace.mjs": {
       "maxDuration": 300,
-      "includeFiles": [
-        "dist/core.js",
-        "dist/store.js"
-      ]
+      "includeFiles": "dist/{core,store}.js"
     }
   },
   "headers": [
