@@ -25,8 +25,8 @@
       },
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39091803191",
-        "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
+        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
         "status": "success"
       },
       "deployment": {
@@ -55,8 +55,8 @@
       "acceptance": "Oaks_October/2026-10-15-Portwise/ACCEPTANCE.md",
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39091803191",
-        "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
+        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
         "status": "success"
       },
       "local_evidence": {
@@ -88,8 +88,8 @@
       "acceptance": "Oaks_October/2026-10-15-Fallow/ACCEPTANCE.md",
       "verification": "runs/evidence/oct15-continuation/REVIEW.md",
       "ci": {
-        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39091803191",
-        "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+        "url": "https://github.com/pranavp2418/Oaks_October/actions/runs/39092527659",
+        "source_commit": "ded5e1af1ee770dce51a15023fc290e5ca850173",
         "status": "success"
       },
       "local_evidence": {
@@ -192,7 +192,7 @@
       "ffmpeg": "7.1.5",
       "optional_tts": "not installed",
       "rendered_film": true,
-      "status": "Lintel45-second native4K draft rendered; continuous4K Portwise/Fallow captures and draft compositions exist; rendering in progress, final editorial/delivery pending"
+      "status": "Lintel and Portwise45-second native4K draft renders complete; Fallow sequential render in progress. All final editorial/delivery gates pending."
     }
   },
   "flagship_progress": {

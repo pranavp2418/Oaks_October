@@ -1,0 +1,7 @@
+{
+  "url": "https://lintel-20261015.vercel.app/",
+  "reducedMotion": true,
+  "workflow": "Keyboard native selects → propose → type review → approve → prepare → reload",
+  "preparedRetained": true,
+  "scope": "Actual production browser keyboard events, programmatic focus between controls; not a full Tab-order audit or physical keyboard"
+}

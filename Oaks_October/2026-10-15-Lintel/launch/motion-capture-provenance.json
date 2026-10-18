@@ -1,0 +1,22 @@
+{
+  "viewport": {
+    "width": 3840,
+    "height": 2160
+  },
+  "deviceScaleFactor": 1,
+  "bodyZoom": 4,
+  "pixelDimensions": {
+    "width": 3840,
+    "height": 2160
+  },
+  "source": "https://lintel-20261015.vercel.app",
+  "synthetic": true,
+  "method": "Continuous actual production synthetic workflow, native3840x2160 video with CSSzoom4; not enlarged from a low-resolution capture.",
+  "verifiedFlows": [
+    "real tool investigation",
+    "human review",
+    "evidence changes",
+    "proposal approval",
+    "dossier preparation"
+  ]
+}

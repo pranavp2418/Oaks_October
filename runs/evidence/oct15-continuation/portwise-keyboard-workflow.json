@@ -1,0 +1,8 @@
+{
+  "origin": "http://127.0.0.1:5176",
+  "reducedMotion": true,
+  "workflow": "Keyboard propose → type review → approve → stage → apply → reload → rollback",
+  "appliedRetainedAfterReload": true,
+  "rollbackVerified": true,
+  "scope": "Actual local React/Node/SQLite workflow with browser keyboard events and programmatic focus; not hosted or full Tab-order audit"
+}

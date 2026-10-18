@@ -1,0 +1,10 @@
+{
+  "browser": "Chromium",
+  "reducedMotion": true,
+  "workflow": "Prepare proposal → enter review note → Tab to approval → approve → Tab to commit → commit → keyboard navigate investigator",
+  "focusAfterAsyncProposal": "propose",
+  "focusAfterAsyncApproval": "approve-plan",
+  "focusAfterRemovedCommitControl": "main#field",
+  "focusAfterSectionSwitch": "data-tab=agent",
+  "physicalKeyboard": false
+}

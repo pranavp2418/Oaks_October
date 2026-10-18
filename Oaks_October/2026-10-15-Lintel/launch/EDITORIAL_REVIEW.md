@@ -9,3 +9,5 @@ Status: DRAFT. Not a final premium launch-film delivery. The current film relies
 Editable HTML/GSAP, local OFL font files, actual UI captures, capture code, original synthesized audio source and provenance retained. Bundled music was not redistributed because its exact license was not verified. No paid resources or voice service used. The original score is generated locally by music.py without third-party samples.
 
 The source capture utility uses a standard Playwright dependency and a fresh isolated Chromium context. System Chromium path can be adjusted in capture.mjs. Large MP4s remain outside Git at /workspace/media/lintel/; a public final artifact link and portfolio action are not yet delivered.
+
+A later continuous actual production workflow has now been captured separately at3840×2160,25fps VP8,16.52seconds,2,533,842bytes. It includes investigation/review, source changes and prepared dossier. Source video and portable capture-motion.mjs are retained, with motion-capture-provenance.json. This footage is not yet integrated into the existing draft; the final editorial gate therefore remains open.
