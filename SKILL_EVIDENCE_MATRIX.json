@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-17T22:10:00Z",
+  "updated": "2026-10-18T03:02:22.161315+00:00",
   "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
   "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
   "skills": [
@@ -897,7 +897,21 @@
       "implementation_files": [],
       "verification": null,
       "evidence_date": null,
-      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations."
+      "limits": "Audit prior code/test evidence or implement and verify in a future daily project; do not infer LinkedIn associations.",
+      "evidence_history": [
+        {
+          "project": "Lintel",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Lintel/src/main.ts",
+            "Oaks_October/2026-10-15-Lintel/angular.json"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
+        }
+      ]
     },
     {
       "skill": "React",
@@ -943,6 +957,18 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_bounded_project_scope",
           "limits": "Desktop and390px workflows, modal keys and manual reduced motion checked; representative input metrics and measured solver benchmark, not physical-device FPS, full assistive-technology audit or production scale."
+        },
+        {
+          "project": "Portwise",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Portwise/src/main.tsx",
+            "Oaks_October/2026-10-15-Portwise/src/transition-panel.tsx"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ]
     },
@@ -1204,6 +1230,18 @@
           "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
+        },
+        {
+          "project": "Portwise",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Portwise/src/core.ts",
+            "Oaks_October/2026-10-15-Portwise/src/store.ts"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ],
       "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
@@ -1322,6 +1360,19 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_bounded_project_scope",
           "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
+        },
+        {
+          "project": "Lintel",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Lintel/core.py",
+            "Oaks_October/2026-10-15-Lintel/workspace.py",
+            "Oaks_October/2026-10-15-Lintel/agent.py"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ]
     },
@@ -1594,6 +1645,18 @@
           "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        },
+        {
+          "project": "Lintel",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Lintel/agent.py",
+            "Oaks_October/2026-10-15-Lintel/tests/test_agent.py"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ],
       "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
@@ -1662,6 +1725,18 @@
           "verification": "Oaks_October/2026-10-14-Clearspan/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "9local/CI groups,360 exhaustive route oracles, real C++WASM/Express/LangGraph integration and earlier hosted mission workflows. Budget-model schema fix and final UI follow-up unpublished; full release not verified. No physical robotics or shared DB claim."
+        },
+        {
+          "project": "Portwise",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Portwise/server/agent.mjs",
+            "Oaks_October/2026-10-15-Portwise/tests/agent.test.mjs"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ],
       "source_commit": "bfe0033d74e522e18766b828e4dad4cb9a9f3763",
@@ -1720,6 +1795,18 @@
           "verification": "Oaks_October/2026-10-14-Wirewake/QA_REPORT.md",
           "status": "verified_component_scope_project_release_pending",
           "limits": "9native groups,400 oracles, actual native/WASM parity,8CLIwriters, killed/busy recovery and measured finite-model benchmark. Go is substantive new core; no hosted browser/provider verification yet, no external protocol proof or production throughput."
+        },
+        {
+          "project": "Portwise",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Portwise/server/service.mjs",
+            "Oaks_October/2026-10-15-Portwise/api/workspace.mjs"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ],
       "source_commit": "fb9b6a3398f17408bad07d0a3bff5d7fb19ab8a9",
@@ -1774,6 +1861,18 @@
           "verification": "Oaks_October/2026-10-14-MorrowStock/QA_REPORT.md",
           "status": "verified_bounded_project_scope",
           "limits": "Delivered synthetic single-user workflow; local SQLite process concurrency and request-local hosted materialization, not multiuser database. Actual Nvidia model via Gateway; no actual OpenAI/Gemini API claim. Visible development eval, not held-out accuracy/proficiency."
+        },
+        {
+          "project": "Lintel",
+          "implementation_files": [
+            "Oaks_October/2026-10-15-Lintel/workspace.py",
+            "Oaks_October/2026-10-15-Lintel/tests/test_workspace.py"
+          ],
+          "evidence_date": "2026-10-18",
+          "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+          "verification": "runs/evidence/oct15-continuation/REVIEW.md",
+          "status": "verified_component_scope_project_release_pending",
+          "limits": "Implemented and tested bounded synthetic workflow; no completion/proficiency/multiuser claim. Prior completed evidence preserved."
         }
       ]
     },
@@ -1823,6 +1922,22 @@
       "demand_evidence": "Dated fresh primary hiring/engineering evidence retained privately before selection",
       "status": "verified_bounded_project_scope",
       "limits": "Actual Go engine, native CLI/locking/recovery, Node-hosted Go WASM, desktop/mobile UI and actual diagnostic model cases verified. No proficiency, external protocol/security or physical-device claim."
+    },
+    {
+      "technology": "Rust1.99.1 / WebAssembly",
+      "project": "Fallow",
+      "classification": "new",
+      "evidence_date": "2026-10-18",
+      "source_commit": "c624e9d778f62f41db0ac978343d0b7b426ac069",
+      "implementation_files": [
+        "Oaks_October/2026-10-15-Fallow/engine/src/lib.rs",
+        "Oaks_October/2026-10-15-Fallow/src/engine.mjs",
+        "Oaks_October/2026-10-15-Fallow/src/worker.mjs"
+      ],
+      "verification": "Oaks_October/2026-10-15-Fallow/qa/core-integrity.json",
+      "demand_evidence": "Fresh primary employer-maintained systems project evidence retained privately before selection; absent from supplied baseline",
+      "status": "verified_component_scope_project_release_pending",
+      "limits": "Exact bounded Rust allocator and actual native/WASM parity; not hosted or scientifically validated, not a completed daily release."
     }
   ]
 }

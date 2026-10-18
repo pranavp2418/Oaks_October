@@ -1,1 +1,1 @@
-{"name":"fallow","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0 --port 5177","build":"vite build","test":"node --test tests/*.test.mjs"},"devDependencies":{"vite":"7.3.7"}}
+{"name":"fallow","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0 --port 5177","build":"vite build","test":"node --test tests/*.test.mjs"},"devDependencies":{"playwright":"1.62.1","vite":"7.3.7"}}

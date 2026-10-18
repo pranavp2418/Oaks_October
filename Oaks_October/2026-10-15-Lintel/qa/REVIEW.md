@@ -15,3 +15,7 @@ Scope review: Lintel is separate from prior capacity allocation, inventory and i
 gstack upstream installation is verified. Native browser was actually used. Formal CEO/engineering/design/security/release reviews are not claimed complete by installation or by this checkpoint. Outside-model review has not run. Remaining release gates include those reviews, clean Python environment, live model evaluation, deployed API/workflows/source identity, launch film and portfolio integration.
 
 Production failure and repair: the first hosted API passed, but gstack browser found the JIT Angular page empty under the restrictive production CSP. Replaced runtime compilation with the existing collection’s Angular CLI AOT pattern, preserving the CSP. AOT emits 158.84 kB initial raw / 46.25 kB estimated transfer, versus the former ~1MB raw JIT script. Fresh live browser verification is pending; a smaller build is not a measured speed claim.
+
+## Continuation checkpoint (October17 local / October18 UTC)
+
+Supersedes earlier pending claims where evidence now exists. All-three connected CI run39091803191 passed atc624e9d; retained cross-tab/browser/recovery evidence and partial security review are in ../../../runs/evidence/oct15-continuation/REVIEW.md. Lintel production AOT browser workflow and actual zero-price model calls were verified; Portwise/Fallow live deployment is blocked by Vercel402 quota. Final films, formal reviews and all-three portfolio release remain pending. No completion count increased.

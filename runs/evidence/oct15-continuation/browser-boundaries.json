@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Lintel",
+    "twoConcurrentWriters": 2,
+    "committed": 1,
+    "staleRejected": 1,
+    "reloadRetained": true,
+    "actualBrowser": "Chromium",
+    "boundary": "IndexedDB transaction CAS, isolated same-origin pages; not a multi-user backend claim"
+  },
+  {
+    "name": "Portwise",
+    "twoConcurrentWriters": 2,
+    "committed": 1,
+    "staleRejected": 1,
+    "reloadRetained": true,
+    "actualBrowser": "Chromium",
+    "boundary": "IndexedDB transaction CAS, isolated same-origin pages; not a multi-user backend claim"
+  },
+  {
+    "name": "Fallow",
+    "twoConcurrentWriters": 2,
+    "committed": 1,
+    "staleRejected": 1,
+    "reloadRetained": true,
+    "actualBrowser": "Chromium",
+    "boundary": "IndexedDB transaction CAS, isolated same-origin pages; not a multi-user backend claim"
+  },
+  {
+    "name": "Portwise",
+    "viewport": "390x844 emulated",
+    "firstTab": "Skip to workbench",
+    "invalidImportRejected": "Unknown notebook version",
+    "reloadAfterInvalidImport": true,
+    "rejectedImportPreservedNotebook": true,
+    "validRestoreRoundtrip": true,
+    "client": 390,
+    "scroll": 390,
+    "reduced": true,
+    "consoleErrors": []
+  },
+  {
+    "name": "Fallow",
+    "viewport": "390x844 emulated",
+    "firstTab": "Skip to field notebook",
+    "invalidImportRejected": "Unknown notebook schema",
+    "reloadAfterInvalidImport": true,
+    "rejectedImportPreservedNotebook": true,
+    "validRestoreRoundtrip": true,
+    "client": 390,
+    "scroll": 390,
+    "reduced": true,
+    "consoleErrors": []
+  }
+]

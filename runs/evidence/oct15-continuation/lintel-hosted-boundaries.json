@@ -1,0 +1,12 @@
+{
+  "url": "https://lintel-20261015.vercel.app/",
+  "viewport": "390x844 emulated",
+  "firstTab": "Skip to workspace",
+  "invalidImportRejected": "Unsupported notebook schema Reopen saved notebook",
+  "exportRestoreReloadJournalEquality": true,
+  "client": 390,
+  "scroll": 390,
+  "reduced": true,
+  "pageErrors": [],
+  "scope": "Actual production Angular/Python endpoint and visitor journal; no additional model call or authentication claim"
+}

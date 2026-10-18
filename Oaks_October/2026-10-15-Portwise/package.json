@@ -13,6 +13,7 @@
     "@types/node": "24.10.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "playwright": "1.62.1",
     "typescript": "6.0.2",
     "vite": "^7.3.7"
   },
