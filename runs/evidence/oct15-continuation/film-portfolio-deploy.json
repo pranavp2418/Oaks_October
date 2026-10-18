@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-18T04:16:44.224Z",
+  "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+  "team_id": "team_jdvw58qMPvxbKy0SCSJYCVY2",
+  "source_commit": "fec8cec2858387f266a89a30b014a4e2ffa5a3c8",
+  "target": "production",
+  "status": 402,
+  "resource": "api-deployments-free-per-day",
+  "retry_after_seconds": 86400,
+  "message": "More than100 deployments; resource is limited. Try again in24hours.",
+  "request_id": "iad1:sfo1::64xkn-1792297004224-7d495dc7f937",
+  "production_updated": false,
+  "cli_credentials_present": false
+}

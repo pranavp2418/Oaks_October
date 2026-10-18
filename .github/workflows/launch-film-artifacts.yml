@@ -1,0 +1,50 @@
+name: Render and publish reviewed launch-film artifacts
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: launch-film-artifacts-v1
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    env:
+      FILM_OUTPUT: /workspace/media/final
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Install existing free rendering tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          npx --yes playwright@1.62.1 install --with-deps chromium
+          sudo mkdir -p /workspace/media/final
+          sudo chown -R "$(id -u):$(id -g)" /workspace/media
+          chrome_path=$(find "$HOME/.cache/ms-playwright" -path '*/chrome-headless-shell-linux64/chrome-headless-shell' -type f | head -1)
+          test -n "$chrome_path"
+          echo "HYPERFRAMES_BROWSER_PATH=$chrome_path" >> "$GITHUB_ENV"
+          node --version > /workspace/media/final/render-toolchain.txt
+          ffmpeg -version >> /workspace/media/final/render-toolchain.txt
+          "$chrome_path" --version >> /workspace/media/final/render-toolchain.txt
+      - name: Render the reviewed committed native compositions sequentially
+        run: bash runs/render-launch-films.sh
+      - name: Master and fully decode both editions
+        run: |
+          for film in lintel portwise fallow; do
+            python3 runs/postprocess-film.py "$film"
+            python3 runs/build-film-contact-sheets.py "$film"
+          done
+          git rev-parse HEAD > /workspace/media/final/render-source.txt
+          sha256sum /workspace/media/final/*launch*.mp4 > /workspace/media/final/SHA256SUMS
+      - name: Upload films to the existing draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload agent-product-films-v1 /workspace/media/final/*launch*.mp4 /workspace/media/final/*poster.jpg /workspace/media/final/*probe.json /workspace/media/final/render-toolchain.txt /workspace/media/final/render-source.txt /workspace/media/final/SHA256SUMS --repo "$GITHUB_REPOSITORY"
+          # Publication follows actual download/editorial/playback QA in the active task.

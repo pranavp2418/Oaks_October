@@ -1,0 +1,9 @@
+{
+  "release_id": 416226965,
+  "draft": true,
+  "local_upload_attempts": 2,
+  "local_upload_status": 401,
+  "message": "uploads.github.com returned Bad credentials for both MP4 and small poster; GitHub API release writes and Git push succeed. No secret inspection or credential replacement attempted.",
+  "recovery": "Existing GitHub Actions runner renders exact committed compositions; scoped GITHUB_TOKEN uploads to draft. Download and review published candidate bytes before public playback verification.",
+  "workflow": ".github/workflows/launch-film-artifacts.yml"
+}
