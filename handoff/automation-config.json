@@ -1,0 +1,33 @@
+{
+  "exported_at": "2026-10-18T00:36:14.497Z",
+  "timezone": "America/Chicago",
+  "activation_status": "Existing ChatGPT tasks were already paused at handoff; no Codex schedule has been created or enabled by this export.",
+  "tasks": [
+    {
+      "id": "6ac6a4e71e708191b6ca433d010d1699",
+      "title": "Three Advanced Projects",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261007T151500\nRRULE:FREQ=DAILY;UNTIL=20270308T055959\nEND:VEVENT",
+      "default_timezone": "America/Chicago",
+      "timing_mode": "exact_schedule",
+      "is_enabled": false,
+      "last_run_time": "2026-10-14T20:20:46.976716+00:00",
+      "updated_at": "2026-10-14T20:21:51.580700+00:00",
+      "prompt_file": "handoff/three-advanced-projects.prompt.txt",
+      "prompt_utf8_sha256": "59b42c52acff61413b876bf79be6079d24ebdb4887fbdbb48740b30fea7797e0",
+      "prompt_utf8_bytes": 37869
+    },
+    {
+      "id": "6ace8b05529481918f7ce0f54898d2bf",
+      "title": "Build Two Flagships",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261014T090000\nRRULE:FREQ=DAILY;UNTIL=20261201T055959\nEND:VEVENT",
+      "default_timezone": "America/Chicago",
+      "timing_mode": "flexible_schedule",
+      "is_enabled": false,
+      "last_run_time": "2026-10-14T14:57:38.079424+00:00",
+      "updated_at": "2026-10-14T14:58:41.498001+00:00",
+      "prompt_file": "handoff/two-flagships.prompt.txt",
+      "prompt_utf8_sha256": "9cd49f4672ddddeaa24abd2edc78262cbf84b980c841c0da2c36496dba948fe6",
+      "prompt_utf8_bytes": 9955
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "Frozen instruction exports only; current run/ledger/progress files intentionally remain mutable",
+  "files": [
+    {
+      "path": "handoff/three-advanced-projects.prompt.txt",
+      "bytes": 37869,
+      "sha256": "59b42c52acff61413b876bf79be6079d24ebdb4887fbdbb48740b30fea7797e0"
+    },
+    {
+      "path": "handoff/two-flagships.prompt.txt",
+      "bytes": 9955,
+      "sha256": "9cd49f4672ddddeaa24abd2edc78262cbf84b980c841c0da2c36496dba948fe6"
+    },
+    {
+      "path": "handoff/USER_FOLLOWUPS.md",
+      "bytes": 2157,
+      "sha256": "e3cf11b29d4818e4409f58a36837f7a9b7cd8a690ef94b4ca3dc445eec8a5cdc"
+    },
+    {
+      "path": "handoff/gstack-workflow.SKILL.md",
+      "bytes": 4979,
+      "sha256": "af2072b13edc2b4de6c6b004d3e52a018626e1c06b749e88881268f004bf0fe0"
+    },
+    {
+      "path": "handoff/automation-config.json",
+      "bytes": 1543,
+      "sha256": "8f72a6c6e254be5d35f3708396f700e33f001f91309ae2265a669d366c619129"
+    }
+  ]
+}
