@@ -1,0 +1,1 @@
+{"name":"portwise","version":"0.1.0","private":true,"type":"module","scripts":{"build":"tsc","test":"npm run build && node --test tests/*.test.mjs"},"devDependencies":{"typescript":"6.0.2","@types/node":"24.10.0"}}
