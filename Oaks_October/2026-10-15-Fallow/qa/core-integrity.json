@@ -1,15 +1,16 @@
 {
   "toolchain": "rustc1.99.1",
   "files": {
-    "engine/Cargo.toml": "64207de9a1a5e635455aa8aac26333ac47214269cc5040704e8c1cd9888f2416",
+    "engine/Cargo.toml": "2d111abba559b3e23fc271e3f259c1e29364a578adcaf52079f5a58b89468f75",
     "engine/Cargo.lock": "088cd0bacf2205681b9b650f34df678de8bc8303301999d30e46d252b46f3eb3",
     "engine/src/lib.rs": "9025a90fc50ac098e2f114cc97ddfe538b640f8a82cdf3d1f6213fec83998bce",
-    "public/fallow-core.wasm": "5c3bc6b18bbfc209b7e23d8446cd9a35fded94e1dff46cf0ee72a371d80d9432"
+    "public/fallow-core.wasm": "ddd4b1b39f4ffac638bfb574b0b082681b25a9548599d0d0f2262f2e5436f838"
   },
   "verification": {
     "rust_groups": 5,
     "independent_python_fraction_cases": 300,
     "native_wasm_parity_cases": 100,
     "seed": 151027
-  }
+  },
+  "reproducibility": "Cargo and project paths remapped; release symbols stripped; identical rebuild verified in a second source directory. CI compares without replacing the committed artifact."
 }

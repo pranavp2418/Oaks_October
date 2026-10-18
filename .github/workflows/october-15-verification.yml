@@ -65,8 +65,7 @@ jobs:
       - run: cargo test --manifest-path engine/Cargo.toml --locked
       - run: cargo build --manifest-path engine/Cargo.toml --locked --release
       - run: python3 tests/oracle.py
-      - run: cargo build --manifest-path engine/Cargo.toml --locked --target wasm32-unknown-unknown --release
-      - run: cmp engine/target/wasm32-unknown-unknown/release/fallow_core.wasm public/fallow-core.wasm
+      - run: bash tools/build-wasm.sh --check
       - run: node tests/wasm-parity.mjs
       - run: npm ci --ignore-scripts
       - run: npm test
