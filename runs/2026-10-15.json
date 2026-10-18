@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "last_updated_at": "2026-10-18T03:16:21.786317+00:00",
+  "last_updated_at": "2026-10-18T03:56:41.417027+00:00",
   "status": "blocked_release_pending",
   "target": 3,
   "completed_projects": 0,
@@ -42,7 +42,8 @@
         "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Lintel/launch",
         "output_directory": "/workspace/media/lintel",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
+        "stage": "Final retake/tighter45second edit checked; rerender queued"
       }
     },
     {
@@ -76,7 +77,8 @@
         "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Portwise/launch",
         "output_directory": "/workspace/media/portwise",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
+        "stage": "Agent-before-repair retake complete; readable50second edit checked; rerender queued"
       }
     },
     {
@@ -111,7 +113,8 @@
         "status": "native_4k_draft_rendered_not_final_delivery",
         "source": "Oaks_October/2026-10-15-Fallow/launch",
         "output_directory": "/workspace/media/fallow",
-        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json"
+        "evidence": "runs/evidence/oct15-continuation/film-artifacts.json",
+        "stage": "Final map/posterior45second native4K render complete; mastering and QA queued"
       }
     }
   ],
@@ -158,12 +161,11 @@
     "scope": "Configured model path only; exact zero prices checked before every call"
   },
   "lease": {
-    "owner": "codex-continuation",
-    "acquired_at": "2026-10-18T02:07:07.037453+00:00",
-    "expires_at": "2026-10-18T06:07:07.037453+00:00",
-    "scope": "October 15 trio only; no completion asserted",
-    "state": "released_at_verified_checkpoint",
-    "released_at": "2026-10-18T03:16:21.786317+00:00"
+    "owner": "codex-launch-film-followup",
+    "acquired_at": "2026-10-18T03:26:59.067966+00:00",
+    "expires_at": "2026-10-18T07:26:59.067966+00:00",
+    "scope": "Finalize brag films and scoped film portfolio presentation; no project completions asserted",
+    "state": "active"
   },
   "startup_reconciliation": {
     "source_head": "1afe102",
@@ -216,5 +218,17 @@
     "created_codex_task_ids": [],
     "verified_codex_next_runs": [],
     "configuration": "handoff/automation-config.json unchanged"
+  },
+  "film_followup": {
+    "requirement_commit": "efba137",
+    "included_in_head": true,
+    "quality_revision_commit": "1afe102",
+    "brag_version": "0.4.0",
+    "brag_upstream": "069432cac935ed1895859df201c31436c07fb74e",
+    "installation": "codex plugin add brag@brag succeeded in actual cloud; plugin installed and enabled",
+    "render_tools": "Hyperframes0.8.169 / FFmpeg7.1.5 / headless Chromium / Node24.19.0",
+    "status": "final_editorial_cuts_checked_encoding_and_publication_pending",
+    "portfolio": "Dedicated lazy-loaded film presentations prepared; archive/country/completion counts preserved",
+    "artifact_mechanism": "Authorized public GitHub release agent-product-films-v1, not yet created/published"
   }
 }
