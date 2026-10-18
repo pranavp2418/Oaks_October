@@ -20,4 +20,11 @@ class ServiceTest(unittest.TestCase):
   with self.assertRaises(ServiceError):handle({'journal':j,'investigation':inv,'action':{'kind':'review_investigation','review':{}}})
   for payload in ({'journal':[]},{'journal':j,'pickle':'bad'},{'journal':j,'action':{'kind':'submit'}}):
    with self.assertRaises(ServiceError):handle(payload)
+ def test_full_journal_remains_replayable_after_rejected_append(self):
+  journal=self.journal()*200
+  before=handle({'journal':journal})
+  with self.assertRaises(ServiceError) as ctx:
+   handle({'journal':journal,'action':{'kind':'mutate','operation':{'key':'next','role':'operator','command':{'kind':'evidence','expected_revision':0,'id':'owner','state':'valid','source':'Synthetic'}}}})
+  self.assertIn('reached200operations',str(ctx.exception))
+  self.assertEqual(handle({'journal':journal}),before)
 if __name__=='__main__':unittest.main()

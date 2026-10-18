@@ -51,5 +51,12 @@
     "scroll": 390,
     "reduced": true,
     "consoleErrors": []
+  },
+  {
+    "name": "Fallow",
+    "fullJournal": 200,
+    "rejectedAppendBeforeSave": true,
+    "reloadStillWorks": true,
+    "limitMessage": "Notebook reached200operations; export is still available. No change was saved."
   }
 ]

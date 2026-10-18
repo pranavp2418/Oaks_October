@@ -19,6 +19,7 @@ def handle(payload,oidc_token=None):
     store.mutate('notebook',operation['key'],operation['command'],operation['role'])
    exported=store.export('notebook');state=exported['state'];kind=action['kind'];investigation=None
    if kind=='mutate':
+    if len(journal)>=200:raise ContractError('Notebook reached200operations; export is still available. No change was saved.')
     if set(action)!={'kind','operation'}:raise ContractError('Invalid mutate action')
     operation=action['operation']
     if not isinstance(operation,dict) or set(operation)!={'key','command','role'}:raise ContractError('Invalid operation')

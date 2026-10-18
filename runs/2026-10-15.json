@@ -15,7 +15,7 @@
       "completed": false,
       "acceptance": "Oaks_October/2026-10-15-Lintel/ACCEPTANCE.md",
       "local_evidence": {
-        "test_groups_passed": 18,
+        "test_groups_passed": 19,
         "independent_truth_table_cases": 400,
         "racing_writers": 8,
         "committed_writers": 1,
@@ -34,7 +34,8 @@
         "project_id": "prj_QK50RmmImewG1Vk9GvcxJMM4NHHf",
         "source_commit": "feacf8c07d14c57f8a4df3660e7248a42af7c815",
         "url": "https://lintel-20261015.vercel.app",
-        "status": "production_workflow_verified"
+        "status": "production_workflow_verified",
+        "pending_source_change": "Journal-limit guard is pushed after the verified production deployment; requires redeployment and live recheck after quota clears."
       },
       "browser_boundaries": "runs/evidence/oct15-continuation/browser-boundaries.json",
       "film": {
@@ -59,7 +60,7 @@
         "status": "success"
       },
       "local_evidence": {
-        "test_groups_passed": 10,
+        "test_groups_passed": 11,
         "independent_boolean_repair_cases": 300,
         "real_langgraph_checkpoint_review": true,
         "repair_apply_rollback_reopen": true,
