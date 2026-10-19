@@ -50,3 +50,11 @@ test('legacy upgrades follow the existing three cards, preserve city lots and ha
   const previous=assignBuildings(createCatalog(daily.slice(0,3),[{slug:'craftsmanai',title:'CraftsmanAI',city:{district:'creative',archetype:'gem'}},{slug:'jmcrm-ai',title:'JMCRM',city:{district:'commerce',archetype:'exchange'}},{slug:'reconciliation-engine',title:'Reconciliation',city:{district:'commerce',archetype:'vault'}},featured.find(x=>x.slug==='workorder-triage')]));
   for(const p of previous){const next=catalog.find(x=>x.slug===p.slug);assert.deepEqual([next.x,next.z,next.archetype],[p.x,p.z,p.archetype]);}
 });
+
+test('live-only projects can explicitly require a new tab without invented source links',()=>{
+  const [project]=createCatalog([{slug:'live-only',title:'Care workspace',delivery_mode:'web_deployed',live:'https://example.com/',embed:false}]);
+  assert.equal(project.live,'https://example.com/');
+  assert.equal(project.source,null);
+  assert.equal(project.walkthrough,null);
+  assert.equal(project.embed,false);
+});
