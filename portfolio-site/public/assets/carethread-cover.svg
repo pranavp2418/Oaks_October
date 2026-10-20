@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350" role="img" aria-labelledby="title desc">
+<title id="title">CareThread — care coordination</title>
+<desc id="desc">A connected workflow from intake through reviewed evidence to a documented handoff. Changes to evidence reopen dependent work.</desc>
+<rect width="600" height="350" rx="18" fill="#edf1e8"/>
+<path d="M30 52h24m-12-12v24" stroke="#4e725d" stroke-width="3" stroke-linecap="round"/>
+<g fill="#203c33" font-family="system-ui,sans-serif">
+<text x="68" y="60" font-size="25" font-weight="650" letter-spacing="-.8">CareThread</text>
+<text x="32" y="100" font-size="11" letter-spacing="2" fill="#4d6558">A CLEAR NEXT STEP.</text>
+<text x="32" y="132" font-size="14" fill="#4d6558">Care coordination, with the handoffs accounted for.</text>
+</g>
+<path d="M70 213h462" fill="none" stroke="#94b39b" stroke-width="2"/>
+<g font-family="system-ui,sans-serif">
+<g transform="translate(32 169)"><rect width="160" height="99" rx="12" fill="#fff" stroke="#c5d3c5"/><circle cx="22" cy="24" r="11" fill="#e1ecde"/><text x="22" y="28" text-anchor="middle" font-size="11" fill="#385a43">1</text><text x="16" y="59" font-size="16" font-weight="600" fill="#203c33">Intake</text><text x="16" y="80" font-size="11" fill="#586d5c">A request. An owner.</text></g>
+<g transform="translate(220 169)"><rect width="160" height="99" rx="12" fill="#fff" stroke="#c5d3c5"/><circle cx="22" cy="24" r="11" fill="#e1ecde"/><path d="m17 24 3 3 6-7" stroke="#385a43" stroke-width="1.8" fill="none" stroke-linecap="round"/><text x="16" y="59" font-size="16" font-weight="600" fill="#203c33">Evidence review</text><text x="16" y="80" font-size="11" fill="#586d5c">Decisions stay traceable.</text></g>
+<g transform="translate(408 169)"><rect width="160" height="99" rx="12" fill="#203c33"/><circle cx="22" cy="24" r="11" fill="#496953"/><path d="M17 24h10m-4-4 4 4-4 4" stroke="#e7f0e2" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="16" y="59" font-size="16" font-weight="600" fill="#f1f5ed">Handoff</text><text x="16" y="80" font-size="11" fill="#d1dfca">The next person can act.</text></g>
+<text x="32" y="310" font-size="12" fill="#4d6558">Evidence changes? Dependent work reopens.</text>
+<text x="568" y="310" text-anchor="end" font-size="10" fill="#4d6558" letter-spacing="1">SYNTHETIC DEMO</text>
+</g>
+</svg>

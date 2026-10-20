@@ -18,7 +18,8 @@ test('verified web projects retain their live actions and opt-in preview',()=>{
   for(const project of projects.filter(x=>x.delivery_mode==='web_deployed')){
     assert.ok(livePreviewURL(project));
     assert.match(archiveCard(project),/Open live project/);
-    assert.match(archiveDetails(project),/load-live-preview/);
+    if(project.embed!==false)assert.match(archiveDetails(project),/load-live-preview/);
+    else assert.doesNotMatch(archiveDetails(project),/load-live-preview/);
   }
 });
 test('archive ignores unsafe links and escapes repository-derived text',()=>{

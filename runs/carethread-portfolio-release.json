@@ -1,0 +1,127 @@
+{
+  "project": "CareThread",
+  "type": "existing_private_project_portfolio_integration",
+  "counted_daily_project": false,
+  "status": "production_verified",
+  "verified_at": "2026-10-20T00:05:30Z",
+  "placement": {
+    "surface": "home archive",
+    "batch": 3,
+    "first_card": true,
+    "index_zero_based": 12,
+    "page_size": 6,
+    "island_district": "Care Gardens"
+  },
+  "public_entry": {
+    "demo": "https://carethread-pranav.vercel.app/",
+    "portfolio": "https://impranavpatel.com/?project=carethread#project-archive",
+    "source_links": [],
+    "creation_metadata": false,
+    "embed": false,
+    "synthetic_data_disclosed": true
+  },
+  "release": {
+    "base_production_commit": "0ecbf217f57871fcc9b156e8da6f71f225c9195f",
+    "source_commit": "26dd648d71e21d6bf847aa14c37e42f6f2d789a3",
+    "branch": "portfolio-carethread-release",
+    "deployment_id": "dpl_HQezozZuER3kZUcJVj8Qu8odZjcq",
+    "preview_deployment_id": "dpl_BrziegWHLY1VnW4ztP37FcHUb2bW",
+    "project_id": "prj_N6mhS4yAsQ6EOSdW87f4wm74IBpI",
+    "root_directory": "portfolio-site"
+  },
+  "verification": {
+    "clean_install": "passed; npm ci --ignore-scripts; 19 packages audited, zero vulnerabilities reported",
+    "tests": {
+      "command": "node --test tests/*.test.js",
+      "passed": 29,
+      "failed": 0,
+      "skipped": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "passed": true,
+      "film_asset_checksum": "verified by restore-assets.js",
+      "known_warning": "Existing Three.js chunk exceeds 500 kB"
+    },
+    "contracts": {
+      "first_in_third_batch": true,
+      "live_app_links_only": true,
+      "no_date_or_source_metadata_in_entry": true,
+      "original_island_lots_preserved": 29,
+      "new_catalog_size": 30,
+      "shared_archive_size": 28,
+      "care_gardens_mapping": true,
+      "pip_title_and_stack_matching": true
+    },
+    "regression": {
+      "issue": "createCatalog ignored explicit embed:false for a live project",
+      "before": "explicit no-embed fixture produced embed:true",
+      "after": "fixture produces embed:false; source and walkthrough remain null",
+      "test_value": "Protects the public catalog contract that session-based applications can require a new tab, without adding a test-only seam."
+    },
+    "browser": {
+      "driver": "gstack headless Chromium",
+      "local_and_production_home": [
+        {
+          "viewport": "1100x900",
+          "batch": "3 / 5",
+          "first": "carethread",
+          "live_link_only": true,
+          "creation_dates_absent": true,
+          "cover_loaded": true,
+          "search": true,
+          "NestJS_filter": true,
+          "keyboard_close": true,
+          "no_horizontal_overflow": true
+        },
+        {
+          "viewport": "390x844",
+          "batch": "3 / 5",
+          "first": "carethread",
+          "live_link_only": true,
+          "creation_dates_absent": true,
+          "cover_loaded": true,
+          "search": true,
+          "NestJS_filter": true,
+          "keyboard_close": true,
+          "no_horizontal_overflow": true
+        }
+      ],
+      "island_rendering": "not reverified: detail selection timed out in the available headless environment with default and software-WebGL drivers; catalog and placement checks passed. No scenery or rendering source was changed."
+    },
+    "production_http": {
+      "manifest_exact_match": true,
+      "cover_exact_match": true,
+      "homepage": 200,
+      "projects_page": 200,
+      "live_demo": 200,
+      "legacy_domain_redirect": 308,
+      "www_redirect": 308,
+      "source_and_project_metadata_match": true
+    },
+    "review": {
+      "workflow": "User-selected gstack checklist, test-value audit, gate scan, scoped release verification",
+      "version": "1.91.158.0",
+      "findings_resolved": [
+        "Explicit embed:false was overridden by live URL fallback; corrected in shared catalog normalization and tested."
+      ],
+      "gate_scan": "listed=2 eligible=1 inspected=1 unread=0 tagged={}; archive assertion now checks both opted-in and explicitly disabled previews.",
+      "cso": "not applicable to this presentation-only change; no auth, data access or ingestion changes",
+      "limits": [
+        "No external model review was run.",
+        "No physical-device or hardware GPU performance claim.",
+        "Screenshot files were captured remotely; this host could not display their binary contents."
+      ]
+    }
+  },
+  "preservation": {
+    "prior_page_structure": true,
+    "scenery_and_renderer_source": true,
+    "craftsmanai": true,
+    "existing_archive_entries": true,
+    "pending_main_film_room_changes_preserved": true,
+    "prior_domain_redirects": true,
+    "credentials_or_private_project_source_published": false
+  },
+  "scope_note": "The five CareThread files are also applied to the latest main without discarding the pending film-room work. The production release intentionally starts from the previous verified production commit, so unrelated unpublished changes are not released."
+}
