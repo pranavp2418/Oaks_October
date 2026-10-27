@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#172323"/>
+<text x="32" y="52" fill="#e6f2e8" font-size="15" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">RECONCILIATION / EXCEPTIONS</text>
+<rect x="993" y="27" width="171" height="32" rx="16" fill="#29403b"/>
+<text x="1008" y="49" fill="#b3dbc5" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">REVIEW MODE</text>
+<text x="32" y="123" fill="#e6f2e8" font-size="41" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">Find the reason.</text>
+<text x="32" y="163" fill="#9eaea6" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Compare the records. Resolve the exception with context.</text>
+<rect x="31" y="206" width="1139" height="56" rx="7" fill="#253632"/>
+<text x="52" y="241" fill="#9eaea6" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Search by reference…</text>
+<text x="1129" y="241" fill="#b3dbc5" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="0">UNMATCHED  ↓</text>
+<rect x="31" y="288" width="552" height="338" rx="8" fill="#e4ebe1"/>
+<rect x="609" y="288" width="561" height="338" rx="8" fill="#e4ebe1"/>
+<text x="52" y="331" fill="#5f7669" font-size="13" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">BANK RECORD</text>
+<text x="630" y="331" fill="#5f7669" font-size="13" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">LEDGER RECORD</text>
+<text x="52" y="380" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Reference</text>
+<text x="263" y="380" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">SAMPLE-014</text>
+<line x1="52" y1="402" x2="560" y2="402" stroke="#ccd8c9" stroke-width="1"/>
+<text x="52" y="442" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Amount</text>
+<text x="263" y="442" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">$250.00</text>
+<line x1="52" y1="464" x2="560" y2="464" stroke="#ccd8c9" stroke-width="1"/>
+<text x="52" y="504" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Description</text>
+<text x="263" y="504" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Service payment</text>
+<line x1="52" y1="526" x2="560" y2="526" stroke="#ccd8c9" stroke-width="1"/>
+<text x="52" y="566" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Status</text>
+<text x="263" y="566" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Pending match</text>
+<line x1="52" y1="588" x2="560" y2="588" stroke="#ccd8c9" stroke-width="1"/>
+<text x="630" y="380" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Reference</text>
+<text x="841" y="380" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">SAMPLE-014</text>
+<line x1="630" y1="402" x2="1138" y2="402" stroke="#ccd8c9" stroke-width="1"/>
+<text x="630" y="442" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Amount</text>
+<text x="841" y="442" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">$250.00</text>
+<line x1="630" y1="464" x2="1138" y2="464" stroke="#ccd8c9" stroke-width="1"/>
+<text x="630" y="504" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Description</text>
+<text x="841" y="504" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Service payment</text>
+<line x1="630" y1="526" x2="1138" y2="526" stroke="#ccd8c9" stroke-width="1"/>
+<text x="630" y="566" fill="#6e8174" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Status</text>
+<text x="841" y="566" fill="#263b2f" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Review required</text>
+<line x1="630" y1="588" x2="1138" y2="588" stroke="#ccd8c9" stroke-width="1"/>
+<rect x="31" y="651" width="1139" height="62" rx="8" fill="#2d4237"/>
+<circle cx="62" cy="682" r="12" fill="#b3dbc5"/>
+<text x="62" y="688" fill="#1b382b" font-size="17" font-weight="400" class="" text-anchor="middle" letter-spacing="0">i</text>
+<text x="88" y="689" fill="#b3dbc5" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Both records remain visible while you decide.</text>
+<rect x="856" y="664" width="291" height="36" rx="5" fill="#b3dbc5"/>
+<text x="1002" y="688" fill="#1b382b" font-size="16" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Confirm sample match  →</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#ffffff" stroke-width="0.5"/>
+<text x="40" y="777" fill="#a1a8b3" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#a1a8b3" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>

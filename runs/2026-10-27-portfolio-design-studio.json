@@ -1,0 +1,234 @@
+{
+  "verified_at": "2026-10-27T21:05:17.096875+00:00",
+  "source_commit": "2379bc16cdf86566e919c3880d81d2e6c31309a8",
+  "deployment_id": "dpl_9tqgDKn5xEzZz6Qm2o6sA47QCzof",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 16812,
+      "exact_build_match": true
+    },
+    {
+      "path": "/classic.html",
+      "status": 200,
+      "bytes": 14678,
+      "exact_build_match": true
+    },
+    {
+      "path": "/projects.html",
+      "status": 200,
+      "bytes": 7288,
+      "exact_build_match": true
+    },
+    {
+      "path": "/outside-tech.html",
+      "status": 200,
+      "bytes": 6150,
+      "exact_build_match": true
+    },
+    {
+      "path": "/assets/pranav-patel-resume.pdf",
+      "status": 200,
+      "bytes": 113840,
+      "exact_build_match": true
+    },
+    {
+      "path": "/projects.json",
+      "status": 200,
+      "bytes": 32354,
+      "exact_build_match": true
+    },
+    {
+      "path": "/featured-projects.json",
+      "status": 200,
+      "bytes": 1444,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/manifest.json",
+      "status": 200,
+      "bytes": 16072,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/01-jewelry-brief.svg",
+      "status": 200,
+      "bytes": 6217,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/02-design-review.svg",
+      "status": 200,
+      "bytes": 4805,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/03-quote-builder.svg",
+      "status": 200,
+      "bytes": 5017,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/04-gemshot.svg",
+      "status": 200,
+      "bytes": 5773,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/05-care-intake.svg",
+      "status": 200,
+      "bytes": 5615,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/06-care-timeline.svg",
+      "status": 200,
+      "bytes": 5255,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/07-referral-packet.svg",
+      "status": 200,
+      "bytes": 6250,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/08-supervisor-review.svg",
+      "status": 200,
+      "bytes": 5787,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/09-revenue-workspace.svg",
+      "status": 200,
+      "bytes": 4524,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/10-flight-replay.svg",
+      "status": 200,
+      "bytes": 6337,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/11-reconciliation.svg",
+      "status": 200,
+      "bytes": 5582,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/12-agent-trace.svg",
+      "status": 200,
+      "bytes": 5837,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/13-merchant-onboarding.svg",
+      "status": 200,
+      "bytes": 4293,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/14-command-palette.svg",
+      "status": 200,
+      "bytes": 5373,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/15-type-system.svg",
+      "status": 200,
+      "bytes": 3568,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/16-accessibility.svg",
+      "status": 200,
+      "bytes": 5015,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/17-mobile-handoff.svg",
+      "status": 200,
+      "bytes": 5750,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/18-search-library.svg",
+      "status": 200,
+      "bytes": 4570,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/19-empty-states.svg",
+      "status": 200,
+      "bytes": 4172,
+      "exact_build_match": true
+    },
+    {
+      "path": "/design-studies/20-motion-controls.svg",
+      "status": 200,
+      "bytes": 4236,
+      "exact_build_match": true
+    },
+    {
+      "path": "/assets/fonts.css",
+      "status": 200,
+      "bytes": 1288,
+      "exact_build_match": true
+    },
+    {
+      "path": "/assets/main-DgSl9Yqg.js",
+      "status": 200,
+      "bytes": 28845,
+      "exact_build_match": true
+    },
+    {
+      "path": "/assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "status": 200,
+      "bytes": 711,
+      "exact_build_match": true
+    },
+    {
+      "path": "/assets/main-DthacYDo.css",
+      "status": 200,
+      "bytes": 35194,
+      "exact_build_match": true
+    }
+  ],
+  "redirects": [
+    {
+      "url": "https://pranav-patel.vercel.app/projects.html?project=wirewake",
+      "status": 308,
+      "location": "https://impranavpatel.com/projects.html?project=wirewake"
+    },
+    {
+      "url": "https://www.impranavpatel.com/?design=20-motion-controls",
+      "status": 308,
+      "location": "https://impranavpatel.com/?design=20-motion-controls"
+    }
+  ],
+  "status": "production_verified",
+  "canonical_url": "https://impranavpatel.com/",
+  "new_structure": [
+    "Resume overview",
+    "20 original interface concept studies",
+    "3 product case studies",
+    "30 searchable existing projects"
+  ],
+  "backup": {
+    "branch": "portfolio-backup-before-design-revamp",
+    "commit": "26dd648d71e21d6bf847aa14c37e42f6f2d789a3",
+    "route": "https://impranavpatel.com/classic.html"
+  },
+  "verification": {
+    "tests_passed": 32,
+    "tests_failed": 0,
+    "build": "passed for isolated production release and current main with pending film entry retained",
+    "browser": "Cloud Browser desktop and 390x844 iframe viewport; mobile is not physical-device testing",
+    "live_assets": "32 routes/assets returned 200 and exact local-build bytes",
+    "project_data_and_island": "unchanged",
+    "main_integration": "Preserve all current main files outside the 34 scoped design-studio paths; retain films entry without deploying pending film work."
+  },
+  "review": "User-selected gstack checklists applied; automated executables unavailable because installed launchers target an expired workspace and Bun is absent. No full-suite or external-model certification claimed."
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#e8edf6"/>
+<text x="42" y="59" fill="#182a51" font-size="43" font-weight="600" class="" text-anchor="start" letter-spacing="-1">From a pickup to a clear handoff.</text>
+<text x="42" y="102" fill="#7182a2" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">A mobile journey study / Three moments that need a useful signal.</text>
+<rect x="106" y="154" width="278" height="553" rx="33" fill="#152b55"/>
+<rect x="113" y="161" width="264" height="539" rx="27" fill="#fcfcf9"/>
+<rect x="196" y="171" width="98" height="16" rx="8" fill="#152b55"/>
+<text x="132" y="229" fill="#182a51" font-size="21" font-weight="400" class="" text-anchor="start" letter-spacing="0">←</text>
+<text x="358" y="228" fill="#8192ab" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="0">01</text>
+<text x="132" y="285" fill="#182a51" font-size="26" font-weight="600" class="" text-anchor="start" letter-spacing="0">Your next stop.</text>
+<rect x="131" y="309" width="227" height="181" rx="10" fill="#e6edf7"/>
+<path d="M147 437 L194 384 L254 408 L329 344" stroke="#91a9d6" stroke-width="4" fill="none" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="194" cy="384" r="8" fill="#315fa3"/>
+<circle cx="329" cy="344" r="10" fill="#315fa3"/>
+<text x="132" y="535" fill="#182a51" font-size="19" font-weight="600" class="" text-anchor="start" letter-spacing="0">Sample pickup</text>
+<text x="132" y="567" fill="#8192ab" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">View the pickup details.</text>
+<rect x="131" y="612" width="227" height="51" rx="8" fill="#315fa3"/>
+<text x="244" y="644" fill="#fff" font-size="16" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Open pickup  →</text>
+<rect x="469" y="154" width="278" height="553" rx="33" fill="#152b55"/>
+<rect x="476" y="161" width="264" height="539" rx="27" fill="#fcfcf9"/>
+<rect x="559" y="171" width="98" height="16" rx="8" fill="#152b55"/>
+<text x="495" y="229" fill="#182a51" font-size="21" font-weight="400" class="" text-anchor="start" letter-spacing="0">←</text>
+<text x="721" y="228" fill="#8192ab" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="0">02</text>
+<text x="495" y="285" fill="#182a51" font-size="25" font-weight="600" class="" text-anchor="start" letter-spacing="0">Ready to collect?</text>
+<text x="495" y="324" fill="#8192ab" font-size="10" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">CHECK THE HANDOFF</text>
+<rect x="494" y="351" width="227" height="61" rx="8" fill="#edf2f8"/>
+<circle cx="515" cy="381" r="10" fill="#315fa3"/>
+<text x="536" y="386" fill="#182a51" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Confirm the order</text>
+<rect x="494" y="429" width="227" height="61" rx="8" fill="#edf2f8"/>
+<circle cx="515" cy="459" r="10" fill="#315fa3"/>
+<text x="536" y="464" fill="#182a51" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Check package count</text>
+<rect x="494" y="507" width="227" height="61" rx="8" fill="#edf2f8"/>
+<circle cx="515" cy="537" r="10" fill="#d2dbe8"/>
+<text x="536" y="542" fill="#182a51" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Record pickup</text>
+<rect x="494" y="612" width="227" height="51" rx="8" fill="#315fa3"/>
+<text x="607" y="644" fill="#fff" font-size="16" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Confirm pickup</text>
+<rect x="832" y="154" width="278" height="553" rx="33" fill="#152b55"/>
+<rect x="839" y="161" width="264" height="539" rx="27" fill="#fcfcf9"/>
+<rect x="922" y="171" width="98" height="16" rx="8" fill="#152b55"/>
+<text x="858" y="229" fill="#182a51" font-size="21" font-weight="400" class="" text-anchor="start" letter-spacing="0">←</text>
+<text x="1084" y="228" fill="#8192ab" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="0">03</text>
+<circle cx="971" cy="333" r="53" fill="#d9e9d9"/>
+<path d="M946 333 L963 350 L998 314" stroke="#407956" stroke-width="6" fill="none" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="971" y="435" fill="#182a51" font-size="24" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Handoff recorded.</text>
+<text x="971" y="476" fill="#8192ab" font-size="14" font-weight="400" class="" text-anchor="middle" letter-spacing="0">A clear completion state.</text>
+<rect x="857" y="518" width="227" height="63" rx="8" fill="#edf2f8"/>
+<text x="874" y="545" fill="#8192ab" font-size="10" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">STATUS</text>
+<text x="874" y="568" fill="#182a51" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Ready for the next step</text>
+<rect x="857" y="612" width="227" height="51" rx="8" fill="#315fa3"/>
+<text x="970" y="644" fill="#fff" font-size="16" font-weight="600" class="" text-anchor="middle" letter-spacing="0">View next stop  →</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>

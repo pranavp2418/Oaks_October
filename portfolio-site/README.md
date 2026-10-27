@@ -1,5 +1,12 @@
 # Pranav Patel — Portfolio
 
+## Current production: design studio
+
+The homepage at https://impranavpatel.com/ now presents a concise resume, twenty original interface concept studies, three existing-product case studies and all thirty existing projects. New concept artwork is explicitly labeled and is not represented as shipped UI or validated research. Native motion preserves the existing Vite stack.
+
+The original homepage remains at `/classic.html`; the unchanged island remains at `/projects.html`. The exact pre-redesign source is preserved on `portfolio-backup-before-design-revamp`. See `DESIGN_REVAMP.md`, `REVAMP_QA.md`, screenshots in `evidence/`, and `runs/2026-10-27-portfolio-design-studio.json` for actual checks and rollback identity. Production release source is `2379bc16cdf86566e919c3880d81d2e6c31309a8`. Main also retains its prior pending film-room source; that unrelated work is not included in this isolated production release.
+
+
 Production: https://pranav-patel.vercel.app/
 
 A navy and electric-blue portfolio featuring a real-time Three.js hero, GSAP scroll motion, CraftsmanAI case study, accessible project dialogs, work history, and contact actions.

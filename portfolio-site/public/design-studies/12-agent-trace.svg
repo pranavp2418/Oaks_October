@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#f7f8fa"/>
+<text x="36" y="58" fill="#182337" font-size="28" font-weight="600" class="" text-anchor="start" letter-spacing="0">Trace inspector</text>
+<text x="1165" y="56" fill="#7b879b" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">EVIDENCE / EXECUTION / RECOVERY</text>
+<rect x="30" y="100" width="376" height="614" rx="11" fill="#edf0f5"/>
+<text x="55" y="144" fill="#182337" font-size="21" font-weight="600" class="" text-anchor="start" letter-spacing="0">Execution path</text>
+<line x1="217" y1="262" x2="217" y2="308" stroke="#b7c5db" stroke-width="2"/>
+<rect x="55" y="189" width="327" height="83" rx="8" fill="#fff" stroke="#dbe1eb" stroke-width="1"/>
+<circle cx="83" cy="217" r="10" fill="#d3dce9"/>
+<text x="104" y="222" fill="#182337" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Receive request</text>
+<text x="104" y="249" fill="#7b879b" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Validate the input</text>
+<line x1="217" y1="384" x2="217" y2="430" stroke="#b7c5db" stroke-width="2"/>
+<rect x="55" y="311" width="327" height="83" rx="8" fill="#fff" stroke="#dbe1eb" stroke-width="1"/>
+<circle cx="83" cy="339" r="10" fill="#d3dce9"/>
+<text x="104" y="344" fill="#182337" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Retrieve evidence</text>
+<text x="104" y="371" fill="#7b879b" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Attach source references</text>
+<line x1="217" y1="506" x2="217" y2="552" stroke="#b7c5db" stroke-width="2"/>
+<rect x="55" y="433" width="327" height="83" rx="8" fill="#e5edff" stroke="#91aafa" stroke-width="1"/>
+<circle cx="83" cy="461" r="10" fill="#557fe2"/>
+<text x="104" y="466" fill="#182337" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Human review</text>
+<text x="104" y="493" fill="#7b879b" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">A decision is required</text>
+<rect x="55" y="555" width="327" height="83" rx="8" fill="#fff" stroke="#dbe1eb" stroke-width="1"/>
+<circle cx="83" cy="583" r="10" fill="#d3dce9"/>
+<text x="104" y="588" fill="#182337" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Resume execution</text>
+<text x="104" y="615" fill="#7b879b" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Continue from checkpoint</text>
+<text x="445" y="144" fill="#182337" font-size="33" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">A pause, with context.</text>
+<rect x="1008" y="117" width="156" height="32" rx="16" fill="#e6edff"/>
+<text x="1023" y="139" fill="#4268ba" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">CHECKPOINT</text>
+<text x="445" y="191" fill="#7b879b" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Every step should explain what happened next.</text>
+<rect x="445" y="228" width="718" height="236" rx="9" fill="#172339"/>
+<text x="468" y="266" fill="#8da9dd" font-size="12" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">checkpoint / sample</text>
+<text x="468" y="311" fill="#8da9dd" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">state:</text>
+<text x="666" y="311" fill="#c6d6fa" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">awaiting_review</text>
+<text x="468" y="349" fill="#8da9dd" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">evidence:</text>
+<text x="666" y="349" fill="#c6d6fa" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">attached</text>
+<text x="468" y="387" fill="#8da9dd" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">decision:</text>
+<text x="666" y="387" fill="#c6d6fa" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">required</text>
+<text x="468" y="425" fill="#8da9dd" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">resume_from:</text>
+<text x="666" y="425" fill="#c6d6fa" font-size="16" font-weight="400" class="mono" text-anchor="start" letter-spacing="0">review_gate</text>
+<text x="445" y="511" fill="#7b879b" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">REVIEW THE EVIDENCE</text>
+<rect x="445" y="535" width="718" height="75" rx="8" fill="#fff" stroke="#dbe1eb" stroke-width="1"/>
+<text x="466" y="566" fill="#182337" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Source references</text>
+<text x="466" y="591" fill="#7b879b" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Inspect the sample documents before continuing.</text>
+<rect x="445" y="642" width="718" height="52" rx="7" fill="#5275d0"/>
+<text x="804" y="674" fill="#fff" font-size="18" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Record decision and resume  →</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>
