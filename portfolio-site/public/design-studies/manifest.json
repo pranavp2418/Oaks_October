@@ -1,0 +1,362 @@
+[
+  {
+    "id": "01",
+    "slug": "01-jewelry-brief",
+    "title": "A brief worth building",
+    "category": "Commerce",
+    "summary": "Interface concept informed by CraftsmanAI: a focused material-selection step.",
+    "problem": "A custom jewelry request needs enough detail to begin without overwhelming the customer.",
+    "decisions": [
+      "Divide the brief into named steps with a visible current position.",
+      "Use material swatches beside plain-language labels.",
+      "Keep the product starting point beside editable choices."
+    ],
+    "interaction": "Select a material, then continue to the next step.",
+    "nextTest": "Test whether a first-time requester can choose materials without explanation.",
+    "accent": "#b49560",
+    "file": "/design-studies/01-jewelry-brief.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "02",
+    "slug": "02-design-review",
+    "title": "Decisions beside the design",
+    "category": "Commerce",
+    "summary": "Interface concept informed by CraftsmanAI: an approval room with anchored feedback.",
+    "problem": "Design feedback becomes difficult to act on when comments are separated from the visual.",
+    "decisions": [
+      "Anchor comments to numbered points on the design.",
+      "Place the design response directly beneath each request.",
+      "Separate reviewing a direction from final product approval."
+    ],
+    "interaction": "Select an annotation to reveal its feedback and the next decision.",
+    "nextTest": "Observe whether reviewers can explain what changed before approving.",
+    "accent": "#f1a390",
+    "file": "/design-studies/02-design-review.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "03",
+    "slug": "03-quote-builder",
+    "title": "The estimate, explained",
+    "category": "Commerce",
+    "summary": "Interface concept informed by CraftsmanAI Metrix: a transparent cost review.",
+    "problem": "A jeweler needs to inspect estimate assumptions before preparing a customer quote.",
+    "decisions": [
+      "Separate cost lines from the pricing adjustment.",
+      "Label illustrative values as estimates.",
+      "Make assumptions accessible beside each component."
+    ],
+    "interaction": "Review cost components, adjust pricing and prepare a quote.",
+    "nextTest": "Ask a jeweler to identify an uncertain cost and revise its assumption.",
+    "accent": "#496b44",
+    "file": "/design-studies/03-quote-builder.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "04",
+    "slug": "04-gemshot",
+    "title": "Objects of attention",
+    "category": "Commerce",
+    "summary": "Interface concept informed by GemShot: an editorial jewelry catalog workspace.",
+    "problem": "A catalog should make individual pieces easy to scan without burying them in administration.",
+    "decisions": [
+      "Prioritize product imagery above interface chrome.",
+      "Keep identifiers consistent across the collection.",
+      "Expose an add action without disrupting the contact sheet."
+    ],
+    "interaction": "Open a piece from the contact sheet and inspect its details.",
+    "nextTest": "Check whether catalog users can locate a specific piece from visual cues.",
+    "accent": "#a48a52",
+    "file": "/design-studies/04-gemshot.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "05",
+    "slug": "05-care-intake",
+    "title": "Start with the need",
+    "category": "Care",
+    "summary": "Interface concept informed by CareThread: a progressive support-needs intake.",
+    "problem": "A care coordinator needs a clear request without collecting unnecessary information upfront.",
+    "decisions": [
+      "Lead with support needs before administrative details.",
+      "Use persistent selection feedback beyond color alone.",
+      "Keep the next step and save action explicit."
+    ],
+    "interaction": "Choose support needs, retain selections and continue to documents.",
+    "nextTest": "Test whether coordinators can complete the need selection using only a keyboard.",
+    "accent": "#457855",
+    "file": "/design-studies/05-care-intake.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "06",
+    "slug": "06-care-timeline",
+    "title": "A handoff you can follow",
+    "category": "Care",
+    "summary": "Interface concept informed by CareThread: document readiness as a timeline.",
+    "problem": "A case can stall when a missing document is hidden among completed tasks.",
+    "decisions": [
+      "Arrange readiness as an ordered sequence.",
+      "Use status words beside completion markers.",
+      "Make the open item visually prominent without hiding completed context."
+    ],
+    "interaction": "Inspect an open requirement and move to its document action.",
+    "nextTest": "Ask a reviewer to identify the next required action without opening every step.",
+    "accent": "#76649b",
+    "file": "/design-studies/06-care-timeline.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "07",
+    "slug": "07-referral-packet",
+    "title": "A useful packet",
+    "category": "Care",
+    "summary": "Interface concept informed by CareThread: assembling a reviewable referral packet.",
+    "problem": "A handoff document needs a clear preview and intentional information inclusion.",
+    "decisions": [
+      "Separate included sections, document preview and export checks.",
+      "Keep consent and destination checks beside export.",
+      "Use a document-like hierarchy instead of a generic dashboard."
+    ],
+    "interaction": "Include a section, preview the packet and review export readiness.",
+    "nextTest": "Test whether users can remove unnecessary information before export.",
+    "accent": "#275a7a",
+    "file": "/design-studies/07-referral-packet.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "08",
+    "slug": "08-supervisor-review",
+    "title": "Review with context",
+    "category": "Care",
+    "summary": "Interface concept informed by CareThread: a supervisor decision workspace.",
+    "problem": "A supervisor needs the review queue and relevant evidence in the same place.",
+    "decisions": [
+      "Keep the queue visible while inspecting a case.",
+      "Summarize readiness before the review note.",
+      "Give approve and request-changes distinct actions."
+    ],
+    "interaction": "Select a sample case, add a review note and choose a decision.",
+    "nextTest": "Check whether reviewers understand the consequence of each decision.",
+    "accent": "#50728c",
+    "file": "/design-studies/08-supervisor-review.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "09",
+    "slug": "09-revenue-workspace",
+    "title": "Know what is coming",
+    "category": "Commerce",
+    "summary": "Interface concept informed by RevCue: a creator revenue overview.",
+    "problem": "A creator needs to distinguish expected income from a confirmed payout.",
+    "decisions": [
+      "Use explicit expected and confirmation labels.",
+      "Group revenue by source rather than decorative metrics.",
+      "Give the next payout a separate place in the hierarchy."
+    ],
+    "interaction": "Inspect an income source and review the payout status.",
+    "nextTest": "Ask creators to distinguish an estimate from money ready to withdraw.",
+    "accent": "#c88164",
+    "file": "/design-studies/09-revenue-workspace.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "10",
+    "slug": "10-flight-replay",
+    "title": "Follow the decision",
+    "category": "Systems",
+    "summary": "Interface concept informed by AeroTrace: a flight decision replay surface.",
+    "problem": "A replay must explain why a route changed while preserving spatial and event context.",
+    "decisions": [
+      "Connect the selected timeline event to its location.",
+      "Place the explanation beside the map.",
+      "Keep playback controls independent from inspection."
+    ],
+    "interaction": "Select an event, inspect the decision and move through the replay.",
+    "nextTest": "Check whether a reviewer can connect a route change to its recorded evidence.",
+    "accent": "#9ddfce",
+    "file": "/design-studies/10-flight-replay.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "11",
+    "slug": "11-reconciliation",
+    "title": "Find the reason",
+    "category": "Systems",
+    "summary": "An exception-matching interface study for financial operations.",
+    "problem": "A reviewer needs to compare records before confirming a match.",
+    "decisions": [
+      "Show both records at equal visual weight.",
+      "Align comparable fields across the split view.",
+      "Keep the action specific to the records under inspection."
+    ],
+    "interaction": "Select an exception, compare record fields and confirm a sample match.",
+    "nextTest": "Test whether reviewers notice a mismatched field before confirmation.",
+    "accent": "#b3dbc5",
+    "file": "/design-studies/11-reconciliation.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "12",
+    "slug": "12-agent-trace",
+    "title": "A pause with context",
+    "category": "Systems",
+    "summary": "An execution-inspection study for a human-reviewed AI workflow.",
+    "problem": "A paused workflow is hard to resume safely when its state and evidence are unclear.",
+    "decisions": [
+      "Show the path, checkpoint and references in one view.",
+      "Use explicit state names rather than a generic loading indicator.",
+      "Require a visible decision before resuming."
+    ],
+    "interaction": "Inspect the checkpoint, review references and record a resume decision.",
+    "nextTest": "Ask an operator to explain what will happen after resume.",
+    "accent": "#5275d0",
+    "file": "/design-studies/12-agent-trace.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "13",
+    "slug": "13-merchant-onboarding",
+    "title": "Small steps. Ready store.",
+    "category": "Commerce",
+    "summary": "A mobile onboarding concept for an independent merchant.",
+    "problem": "A new merchant needs a useful starting point before configuration becomes a burden.",
+    "decisions": [
+      "Ask one essential question on each screen.",
+      "Make progress visible without emphasizing a long checklist.",
+      "Explain which decisions can be changed later."
+    ],
+    "interaction": "Name the store and continue while preserving the draft.",
+    "nextTest": "Observe where a first-time merchant hesitates during the first setup step.",
+    "accent": "#b7684b",
+    "file": "/design-studies/13-merchant-onboarding.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "14",
+    "slug": "14-command-palette",
+    "title": "Keyboard first",
+    "category": "Interaction",
+    "summary": "A command-palette interaction and focus-state study.",
+    "problem": "Frequent actions should remain quick to reach without crowding the permanent navigation.",
+    "decisions": [
+      "Use a single search field for navigation and actions.",
+      "Show keyboard hints at the point of use.",
+      "Keep the selected result distinct from background content."
+    ],
+    "interaction": "Open the palette, move with arrow keys and select a command.",
+    "nextTest": "Verify focus return and escape behavior with keyboard-only participants.",
+    "accent": "#91aa8d",
+    "file": "/design-studies/14-command-palette.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "15",
+    "slug": "15-type-system",
+    "title": "A system for clarity",
+    "category": "Interaction",
+    "summary": "A typography study in scale, spacing, labels and reading rhythm.",
+    "problem": "A visual hierarchy needs to remain clear across expressive headlines and practical interface copy.",
+    "decisions": [
+      "Use a strong display scale with compact tracking.",
+      "Separate semantic text roles before choosing sizes.",
+      "Give labels a consistent monospace rhythm."
+    ],
+    "interaction": "Compare display, heading, body and label roles as one system.",
+    "nextTest": "Check actual reading comfort at narrow and wide viewport widths.",
+    "accent": "#f15226",
+    "file": "/design-studies/15-type-system.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "16",
+    "slug": "16-accessibility",
+    "title": "Don’t make people guess",
+    "category": "Interaction",
+    "summary": "A form-state concept with explicit errors, visible focus and completion feedback.",
+    "problem": "A form must explain errors and success without depending only on color.",
+    "decisions": [
+      "Keep field labels visible after typing.",
+      "Describe how to correct an invalid entry.",
+      "Show a clear keyboard focus ring and written success feedback."
+    ],
+    "interaction": "Enter an invalid address, correct it and save a preference.",
+    "nextTest": "Verify keyboard order, screen-reader error association and color contrast.",
+    "accent": "#72578d",
+    "file": "/design-studies/16-accessibility.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "17",
+    "slug": "17-mobile-handoff",
+    "title": "Three moments of clarity",
+    "category": "Commerce",
+    "summary": "A mobile delivery-handoff journey concept.",
+    "problem": "A courier needs an obvious next action at pickup, confirmation and completion.",
+    "decisions": [
+      "Give each moment one primary action.",
+      "Present a checklist at the point of collection.",
+      "Use an explicit recorded state before moving to the next stop."
+    ],
+    "interaction": "Open a pickup, confirm its checklist and review the recorded handoff.",
+    "nextTest": "Test whether the three stages remain understandable without prior training.",
+    "accent": "#315fa3",
+    "file": "/design-studies/17-mobile-handoff.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "18",
+    "slug": "18-search-library",
+    "title": "Start with the evidence",
+    "category": "Systems",
+    "summary": "A knowledge-search concept that keeps source context beside a result.",
+    "problem": "A useful search result should be easy to verify against its supporting source.",
+    "decisions": [
+      "Keep the query visible while reading results.",
+      "Separate the excerpt from its source context.",
+      "Make opening a reference a direct action."
+    ],
+    "interaction": "Search a sample question and inspect the supporting reference.",
+    "nextTest": "Check whether readers can distinguish an excerpt from a synthesized answer.",
+    "accent": "#8b7743",
+    "file": "/design-studies/18-search-library.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "19",
+    "slug": "19-empty-states",
+    "title": "Useful at every state",
+    "category": "Interaction",
+    "summary": "A component study for empty content, recoverable errors and zero-result searches.",
+    "problem": "An empty or interrupted screen should still help the person move forward.",
+    "decisions": [
+      "Explain the specific state in plain language.",
+      "Pair each state with a relevant recovery action.",
+      "Use illustrations to support the message without replacing it."
+    ],
+    "interaction": "Create a first item, retry an interrupted action or clear search filters.",
+    "nextTest": "Ask users to choose a next action for each state without prompting.",
+    "accent": "#2547b1",
+    "file": "/design-studies/19-empty-states.svg",
+    "status": "Concept study"
+  },
+  {
+    "id": "20",
+    "slug": "20-motion-controls",
+    "title": "Motion with a purpose",
+    "category": "Interaction",
+    "summary": "An interaction-preference concept with a complete reduced-motion alternative.",
+    "problem": "Expressive motion needs an equally usable experience when movement is reduced.",
+    "decisions": [
+      "Make movement preferences visible and reversible.",
+      "Treat immediate transitions as a complete interaction state.",
+      "Keep optional sound off until intentionally enabled."
+    ],
+    "interaction": "Change motion preferences and preview the resulting transition.",
+    "nextTest": "Verify system reduced-motion preference, saved choices and immediate feedback.",
+    "accent": "#d4ed69",
+    "file": "/design-studies/20-motion-controls.svg",
+    "status": "Concept study"
+  }
+]

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#eeeef9"/>
+<rect x="0" y="0" width="282" height="752" rx="0" fill="#26223f"/>
+<text x="35" y="62" fill="#f0effb" font-size="21" font-weight="700" class="" text-anchor="start" letter-spacing="0">CARE / THREAD</text>
+<text x="35" y="144" fill="#a6a2c2" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">CASE WORKSPACE</text>
+<text x="36" y="192" fill="#b8b4ce" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Overview</text>
+<rect x="18" y="226" width="246" height="51" rx="9" fill="#3c365d"/>
+<text x="36" y="257" fill="#fff" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Readiness timeline</text>
+<text x="36" y="322" fill="#b8b4ce" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Documents</text>
+<text x="36" y="387" fill="#b8b4ce" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Referral packet</text>
+<text x="323" y="63" fill="#272344" font-size="37" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">A handoff you can follow.</text>
+<text x="323" y="103" fill="#817a9b" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Sample case / coordination view</text>
+<rect x="995" y="43" width="162" height="32" rx="16" fill="#dedaf1"/>
+<text x="1010" y="65" fill="#51416d" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">2 OPEN ITEMS</text>
+<rect x="323" y="141" width="835" height="82" rx="10" fill="#fff"/>
+<text x="349" y="174" fill="#272344" font-size="17" font-weight="600" class="" text-anchor="start" letter-spacing="0">Referral readiness</text>
+<rect x="349" y="190" width="660" height="8" rx="4" fill="#e7e3f2"/>
+<rect x="349" y="190" width="440" height="8" rx="4" fill="#76649b"/>
+<text x="1129" y="184" fill="#76649b" font-size="17" font-weight="600" class="" text-anchor="end" letter-spacing="0">Review</text>
+<line x1="349" y1="292" x2="349" y2="397" stroke="#d4cfe2" stroke-width="2"/>
+<circle cx="349" cy="284" r="13" fill="#fff" stroke="#5b8067" stroke-width="3"/>
+<text x="381" y="284" fill="#272344" font-size="23" font-weight="600" class="" text-anchor="start" letter-spacing="0">Support needs captured</text>
+<text x="381" y="317" fill="#817a94" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Transport and appointment assistance</text>
+<rect x="1010" y="263" width="147" height="32" rx="16" fill="#e3e9df"/>
+<text x="1025" y="285" fill="#5b8067" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Complete</text>
+<line x1="349" y1="402" x2="349" y2="507" stroke="#d4cfe2" stroke-width="2"/>
+<circle cx="349" cy="394" r="13" fill="#fff" stroke="#5b8067" stroke-width="3"/>
+<text x="381" y="394" fill="#272344" font-size="23" font-weight="600" class="" text-anchor="start" letter-spacing="0">Consent documented</text>
+<text x="381" y="427" fill="#817a94" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Consent recorded in sample workflow</text>
+<rect x="1010" y="373" width="147" height="32" rx="16" fill="#e3e9df"/>
+<text x="1025" y="395" fill="#5b8067" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Complete</text>
+<line x1="349" y1="512" x2="349" y2="617" stroke="#d4cfe2" stroke-width="2"/>
+<circle cx="349" cy="504" r="13" fill="#fff" stroke="#a26b38" stroke-width="3"/>
+<text x="381" y="504" fill="#272344" font-size="23" font-weight="600" class="" text-anchor="start" letter-spacing="0">Insurance document</text>
+<text x="381" y="537" fill="#817a94" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">A document still needs to be attached</text>
+<rect x="1010" y="483" width="147" height="32" rx="16" fill="#f3e8d6"/>
+<text x="1025" y="505" fill="#a26b38" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Action needed</text>
+<circle cx="349" cy="614" r="13" fill="#fff" stroke="#80788f" stroke-width="3"/>
+<text x="381" y="614" fill="#272344" font-size="23" font-weight="600" class="" text-anchor="start" letter-spacing="0">Supervisor review</text>
+<text x="381" y="647" fill="#817a94" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Available after documents are ready</text>
+<rect x="1010" y="593" width="147" height="32" rx="16" fill="#e6e3ed"/>
+<text x="1025" y="615" fill="#80788f" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Next</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>

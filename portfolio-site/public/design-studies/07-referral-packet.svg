@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#eef0f2"/>
+<rect x="0" y="0" width="1200" height="79" rx="0" fill="#17314b"/>
+<text x="31" y="50" fill="#fff" font-size="25" font-weight="600" class="" text-anchor="start" letter-spacing="0">Referral packet</text>
+<text x="1165" y="48" fill="#b8c9db" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="2">PREVIEW BEFORE SHARING</text>
+<rect x="27" y="108" width="280" height="603" rx="10" fill="#fff"/>
+<text x="47" y="152" fill="#172c42" font-size="20" font-weight="600" class="" text-anchor="start" letter-spacing="0">Included in this packet</text>
+<rect x="42" y="189" width="250" height="57" rx="6" fill="#eaf0f7"/>
+<rect x="57" y="205" width="22" height="25" rx="2" fill="#eef2f5" stroke="#bac6d0" stroke-width="1"/>
+<text x="91" y="224" fill="#172c42" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Cover summary</text>
+<text x="274" y="224" fill="#53816b" font-size="16" font-weight="400" class="" text-anchor="end" letter-spacing="0">✓</text>
+<rect x="42" y="262" width="250" height="57" rx="6" fill="#fff"/>
+<rect x="57" y="278" width="22" height="25" rx="2" fill="#eef2f5" stroke="#bac6d0" stroke-width="1"/>
+<text x="91" y="297" fill="#172c42" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Support needs</text>
+<text x="274" y="297" fill="#53816b" font-size="16" font-weight="400" class="" text-anchor="end" letter-spacing="0">✓</text>
+<rect x="42" y="335" width="250" height="57" rx="6" fill="#fff"/>
+<rect x="57" y="351" width="22" height="25" rx="2" fill="#eef2f5" stroke="#bac6d0" stroke-width="1"/>
+<text x="91" y="370" fill="#172c42" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Consent record</text>
+<text x="274" y="370" fill="#53816b" font-size="16" font-weight="400" class="" text-anchor="end" letter-spacing="0">✓</text>
+<rect x="42" y="408" width="250" height="57" rx="6" fill="#fff"/>
+<rect x="57" y="424" width="22" height="25" rx="2" fill="#eef2f5" stroke="#bac6d0" stroke-width="1"/>
+<text x="91" y="443" fill="#172c42" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Document checklist</text>
+<text x="274" y="443" fill="#53816b" font-size="16" font-weight="400" class="" text-anchor="end" letter-spacing="0">✓</text>
+<text x="47" y="630" fill="#172c42" font-size="15" font-weight="600" class="" text-anchor="start" letter-spacing="0">Data minimization</text>
+<text x="47" y="657" fill="#697e8e" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Only include what is needed.</text>
+<rect x="340" y="107" width="526" height="604" rx="9" fill="#dae0e5"/>
+<rect x="373" y="129" width="460" height="555" rx="0" fill="#fff"/>
+<text x="404" y="182" fill="#617c92" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">REFERRAL SUMMARY</text>
+<text x="404" y="231" fill="#172c42" font-size="29" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">A coordinated next step.</text>
+<line x1="404" y1="259" x2="801" y2="259" stroke="#d6dfe6" stroke-width="1"/>
+<text x="404" y="294" fill="#748593" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Sample case</text>
+<text x="404" y="327" fill="#172c42" font-size="22" font-weight="600" class="" text-anchor="start" letter-spacing="0">Support request</text>
+<circle cx="410" cy="373" r="3" fill="#7d9aab"/>
+<text x="426" y="378" fill="#526a7e" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Transportation to an appointment</text>
+<circle cx="410" cy="413" r="3" fill="#7d9aab"/>
+<text x="426" y="418" fill="#526a7e" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">A clear point of contact</text>
+<circle cx="410" cy="453" r="3" fill="#7d9aab"/>
+<text x="426" y="458" fill="#526a7e" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">An accessible handoff summary</text>
+<rect x="404" y="510" width="398" height="120" rx="4" fill="#f2f5f6"/>
+<text x="422" y="542" fill="#6d8191" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">DOCUMENT READINESS</text>
+<text x="422" y="576" fill="#172c42" font-size="16" font-weight="400" class="" text-anchor="start" letter-spacing="0">Review all documents before sharing.</text>
+<text x="422" y="607" fill="#7c8f9d" font-size="13" font-weight="400" class="" text-anchor="start" letter-spacing="0">Sample information for design review.</text>
+<text x="897" y="148" fill="#172c42" font-size="22" font-weight="600" class="" text-anchor="start" letter-spacing="0">Before you export</text>
+<text x="897" y="191" fill="#172c42" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Review inclusion</text>
+<text x="897" y="222" fill="#172c42" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Check destination</text>
+<text x="897" y="253" fill="#172c42" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Confirm consent</text>
+<line x1="897" y1="289" x2="1167" y2="289" stroke="#ccd7df" stroke-width="1"/>
+<rect x="897" y="323" width="271" height="54" rx="7" fill="#17314b"/>
+<text x="1033" y="357" fill="#fff" font-size="17" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Export packet  ↗</text>
+<text x="897" y="423" fill="#687f91" font-size="13" font-weight="400" class="" text-anchor="start" letter-spacing="0">No patient data in this study.</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>

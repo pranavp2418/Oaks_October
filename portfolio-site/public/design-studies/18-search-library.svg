@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#f3eee3"/>
+<text x="43" y="61" fill="#3b392b" font-size="32" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">The reference room.</text>
+<text x="1156" y="58" fill="#8e856b" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="2">A KNOWLEDGE SEARCH STUDY</text>
+<rect x="43" y="105" width="1113" height="69" rx="9" fill="#fffcf5" stroke="#d8cfbb" stroke-width="1"/>
+<text x="66" y="149" fill="#8e856b" font-size="28" font-weight="400" class="" text-anchor="start" letter-spacing="0">⌕</text>
+<text x="110" y="149" fill="#3b392b" font-size="22" font-weight="400" class="" text-anchor="start" letter-spacing="0">How should a decision be documented?</text>
+<rect x="1011" y="119" width="128" height="42" rx="6" fill="#8b7743"/>
+<text x="1075" y="147" fill="#fffcf5" font-size="16" font-weight="600" class="" text-anchor="middle" letter-spacing="0">Search  ↗</text>
+<text x="43" y="224" fill="#3b392b" font-size="39" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">Start with the evidence.</text>
+<text x="43" y="263" fill="#8e856b" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">Search results and supporting sources stay in the same view.</text>
+<rect x="43" y="304" width="687" height="391" rx="9" fill="#fffcf5"/>
+<text x="67" y="350" fill="#9e8a52" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">REFERENCE / 01</text>
+<text x="67" y="395" fill="#3b392b" font-size="29" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">Make decisions traceable.</text>
+<text x="67" y="437" fill="#736e5b" font-size="20" font-weight="400" class="" text-anchor="start" letter-spacing="0">Document the context, the alternatives and the</text>
+<text x="67" y="469" fill="#736e5b" font-size="20" font-weight="400" class="" text-anchor="start" letter-spacing="0">reason for choosing a path. Link the evidence</text>
+<text x="67" y="501" fill="#736e5b" font-size="20" font-weight="400" class="" text-anchor="start" letter-spacing="0">so another person can follow the same trail.</text>
+<line x1="67" y1="538" x2="705" y2="538" stroke="#e1dac8" stroke-width="1"/>
+<rect x="67" y="563" width="166" height="32" rx="16" fill="#eee5cb"/>
+<text x="82" y="585" fill="#8b7743" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Source excerpt</text>
+<text x="67" y="643" fill="#8b7743" font-size="18" font-weight="600" class="" text-anchor="start" letter-spacing="0">Open reference  ↗</text>
+<rect x="758" y="304" width="398" height="391" rx="9" fill="#e4dbc4"/>
+<text x="783" y="350" fill="#8e7c4c" font-size="12" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">SOURCE CONTEXT</text>
+<text x="783" y="393" fill="#3b392b" font-size="21" font-weight="600" class="" text-anchor="start" letter-spacing="0">Decision log</text>
+<text x="783" y="422" fill="#8d8062" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">A sample reference document</text>
+<line x1="783" y1="442" x2="1130" y2="442" stroke="#cfc3a7" stroke-width="1"/>
+<text x="783" y="484" fill="#3b392b" font-size="21" font-weight="600" class="" text-anchor="start" letter-spacing="0">Evidence notes</text>
+<text x="783" y="513" fill="#8d8062" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Supporting context and constraints</text>
+<line x1="783" y1="533" x2="1130" y2="533" stroke="#cfc3a7" stroke-width="1"/>
+<text x="783" y="575" fill="#3b392b" font-size="21" font-weight="600" class="" text-anchor="start" letter-spacing="0">Review checklist</text>
+<text x="783" y="604" fill="#8d8062" font-size="14" font-weight="400" class="" text-anchor="start" letter-spacing="0">Questions before the next step</text>
+<line x1="783" y1="624" x2="1130" y2="624" stroke="#cfc3a7" stroke-width="1"/>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>

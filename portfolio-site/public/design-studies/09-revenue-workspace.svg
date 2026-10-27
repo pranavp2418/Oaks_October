@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img"><style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.mono{font-family:monospace}</style><rect width="1200" height="800" fill="#f5eee8"/>
+<text x="43" y="60" fill="#3b2826" font-size="30" font-weight="700" class="" text-anchor="start" letter-spacing="0">RevCue</text>
+<text x="1154" y="57" fill="#8b716d" font-size="12" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">OVERVIEW     PAYOUTS     SOURCES</text>
+<text x="43" y="145" fill="#3b2826" font-size="49" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">Know what is coming.</text>
+<text x="43" y="184" fill="#8b716d" font-size="18" font-weight="400" class="" text-anchor="start" letter-spacing="0">A revenue workspace for an independent creator.</text>
+<rect x="43" y="226" width="737" height="271" rx="12" fill="#eec3af"/>
+<text x="72" y="271" fill="#775548" font-size="12" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">EXPECTED / SAMPLE</text>
+<text x="72" y="339" fill="#3b2826" font-size="66" font-weight="500" class="" text-anchor="start" letter-spacing="0">$4,820</text>
+<text x="72" y="378" fill="#775548" font-size="17" font-weight="400" class="" text-anchor="start" letter-spacing="0">Across your connected income streams</text>
+<path d="M355 415 C420 412 423 361 470 363 S535 406 579 332 S673 371 748 291" stroke="#a65d49" stroke-width="4" fill="none" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M355 415 C420 412 423 361 470 363 S535 406 579 332 S673 371 748 291 L748 465 L355 465 Z" stroke="none" stroke-width="0" fill="#d99478" opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="806" y="226" width="350" height="271" rx="12" fill="#392d2a"/>
+<text x="834" y="271" fill="#c7aaa0" font-size="12" font-weight="400" class="mono" text-anchor="start" letter-spacing="2">NEXT PAYOUT</text>
+<text x="834" y="331" fill="#fff6ef" font-size="47" font-weight="400" class="" text-anchor="start" letter-spacing="0">$1,240</text>
+<text x="834" y="379" fill="#fff6ef" font-size="20" font-weight="400" class="" text-anchor="start" letter-spacing="0">Brand partnership</text>
+<rect x="834" y="421" width="241" height="32" rx="16" fill="#5d4540"/>
+<text x="849" y="443" fill="#f1c2ad" font-size="14" font-weight="600" class="" text-anchor="start" letter-spacing="0">Awaiting confirmation</text>
+<text x="43" y="548" fill="#3b2826" font-size="26" font-weight="400" class="serif" text-anchor="start" letter-spacing="0">One view. Every source.</text>
+<line x1="43" y1="576" x2="397" y2="576" stroke="#d8c4b9" stroke-width="1"/>
+<text x="43" y="615" fill="#3b2826" font-size="19" font-weight="600" class="" text-anchor="start" letter-spacing="0">Partnerships</text>
+<text x="43" y="658" fill="#3b2826" font-size="34" font-weight="400" class="" text-anchor="start" letter-spacing="0">$2,400</text>
+<text x="43" y="693" fill="#8b716d" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Invoice pending</text>
+<line x1="423" y1="576" x2="777" y2="576" stroke="#d8c4b9" stroke-width="1"/>
+<text x="423" y="615" fill="#3b2826" font-size="19" font-weight="600" class="" text-anchor="start" letter-spacing="0">Memberships</text>
+<text x="423" y="658" fill="#3b2826" font-size="34" font-weight="400" class="" text-anchor="start" letter-spacing="0">$1,680</text>
+<text x="423" y="693" fill="#8b716d" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Recurring revenue</text>
+<line x1="803" y1="576" x2="1157" y2="576" stroke="#d8c4b9" stroke-width="1"/>
+<text x="803" y="615" fill="#3b2826" font-size="19" font-weight="600" class="" text-anchor="start" letter-spacing="0">Digital products</text>
+<text x="803" y="658" fill="#3b2826" font-size="34" font-weight="400" class="" text-anchor="start" letter-spacing="0">$740</text>
+<text x="803" y="693" fill="#8b716d" font-size="15" font-weight="400" class="" text-anchor="start" letter-spacing="0">Sales awaiting payout</text>
+<line x1="38" y1="752" x2="1162" y2="752" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="start" letter-spacing="1">PRANAV PATEL / INTERFACE EXPLORATIONS</text>
+<text x="1160" y="777" fill="#63676d" font-size="11" font-weight="400" class="mono" text-anchor="end" letter-spacing="1">CONCEPT STUDY · SAMPLE DATA</text>
+</svg>
